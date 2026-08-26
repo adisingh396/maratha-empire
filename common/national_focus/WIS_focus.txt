@@ -1,0 +1,30 @@
+focus_tree = {
+	id = WIS_focus
+	country = { factor = 0 modifier = { add = 10 tag = WIS } }
+	default = no
+	focus = {
+		id = WIS_gujarat_enterprise
+		icon = GFX_goal_generic_production
+		x = 5 y = 0 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_gujarat_enterprise" 428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = WIS_port_of_bombay_claim
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = WIS_gujarat_enterprise }
+		x = 5 y = 1 cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_port_of_bombay_claim" create_wargoal = { target = MAR type = take_state_focus target_state = 429 } }
+	}
+	focus = {
+		id = WIS_unify_gujarat
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = WIS_port_of_bombay_claim }
+		x = 5 y = 2 cost = 10
+		ai_will_do = { factor = 15 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_unify_gujarat" hidden_effect = { maratha_claim_india_effect = yes } }
+	}
+}

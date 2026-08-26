@@ -1,0 +1,27 @@
+capital = 433
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.30
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+}
+set_convoys = 8
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 15
+	communism = 5
+	neutrality = 75
+}
+add_ideas = { RJP_rajput_legacy }
+recruit_character = RJP_ganga
+promote_character = RJP_ganga
+set_oob = "RJP_1936"

@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		MDR_militia_legacy = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_militia
+			modifier = {
+				army_core_defence_factor = 0.05
+				conscription_factor = -0.10
+			}
+		}
+		ORI_militia_legacy = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_militia
+			modifier = { army_core_defence_factor = 0.05 }
+		}
+		ASM_militia_legacy = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_jungle
+			modifier = { acclimatization_cold_jungle_factor = 0.20 }
+		}
+		HIN_militia_legacy = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { political_power_gain = 0.10 }
+		}
+		PJB_militia_legacy = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_cavalry
+			modifier = { division_attack_factor = 0.05 }
+		}
+		MPU_militia_legacy = {
+			allowed = { original_tag = MPU }
+			removal_cost = -1
+			picture = generic_tribal
+			modifier = { resistance_growth = -0.10 }
+		}
+		HYD_nizam_legacy = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_monarchy
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		MYS_wadiyar_legacy = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_industry
+			modifier = { industrial_capacity_factory = 0.10 }
+		}
+		RJP_rajput_legacy = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.08 }
+		}
+		WIS_gujarat_legacy = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_oil
+			modifier = { industrial_capacity_dockyard = 0.10 }
+		}
+		SIN_sindhi_legacy = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_navy
+			modifier = { navy_org_factor = 0.08 }
+		}
+		KAS_kashmir_legacy = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_mountaineers
+			modifier = { acclimatization_cold_factor = 0.20 }
+		}
+	}
+}

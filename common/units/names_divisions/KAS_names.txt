@@ -1,0 +1,11 @@
+KAS_INF_01 = {
+  name = "KAS Infantry Division"
+  for_countries = { KAS }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d KAS Division"
+  ordered = {
+    1 = { "%d KAS Division" }
+    2 = { "%d KAS Division" }
+  }
+}

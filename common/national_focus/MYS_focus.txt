@@ -1,0 +1,62 @@
+focus_tree = {
+	id = MYS_focus
+	country = {
+		factor = 0
+		modifier = { add = 10 tag = MYS }
+	}
+	default = no
+	focus = {
+		id = MYS_wadiyar_legacy
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MYS_wadiyar_legacy"
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MYS_silk_industry
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = MYS_wadiyar_legacy }
+		x = 5
+		y = 1
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MYS_silk_industry"
+			425 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = MYS_karnataka_unite
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MYS_silk_industry }
+		x = 5
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MYS_karnataka_unite"
+			982 = { add_claim_by = MYS }
+			423 = { add_claim_by = MYS }
+		}
+	}
+	focus = {
+		id = MYS_southern_empire
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = MYS_karnataka_unite }
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 15 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MYS_southern_empire"
+			create_wargoal = { target = MDR type = annex_everything }
+		}
+	}
+}

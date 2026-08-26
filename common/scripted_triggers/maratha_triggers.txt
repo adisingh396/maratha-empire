@@ -1,0 +1,25 @@
+is_indian_princely = {
+	OR = {
+		tag = HYD
+		tag = MYS
+		tag = RJP
+		tag = WIS
+		tag = SIN
+		tag = KAS
+		tag = MDR
+		tag = ORI
+		tag = ASM
+		tag = HIN
+		tag = PJB
+		tag = MPU
+		tag = BAN
+	}
+}
+
+is_maratha_unifier = {
+	OR = {
+		tag = MAR
+		tag = HYD
+		tag = RJP
+	}
+}

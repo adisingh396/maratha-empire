@@ -1,0 +1,11 @@
+MYS_INF_01 = {
+  name = "MYS Infantry Division"
+  for_countries = { MYS }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d MYS Division"
+  ordered = {
+    1 = { "%d MYS Division" }
+    2 = { "%d MYS Division" }
+  }
+}

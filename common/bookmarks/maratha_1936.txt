@@ -1,0 +1,51 @@
+bookmarks = {
+	bookmark = {
+		name = "MARATHA_1936_NAME"
+		desc = "MARATHA_1936_DESC"
+		date = 1936.1.1.12
+		picture = GFX_select_date_1936
+		default_country = MAR
+
+		MAR = {
+			history = MAR_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas = {
+				MAR_peshwai_legacy
+				MAR_rajput_dominance
+			}
+			focuses = {
+				MAR_legacy_of_the_peshwas
+				MAR_restore_the_peshwai
+				MAR_angre_naval_legacy
+			}
+		}
+		HYD = {
+			history = HYD_GATHERING_STORM_DESC
+			ideology = neutrality
+			ideas = { HYD_nizam_legacy }
+			focuses = { HYD_form_deccan_sultanate }
+		}
+		MYS = {
+			history = MYS_GATHERING_STORM_DESC
+			ideology = neutrality
+		}
+		RJP = {
+			history = RJP_GATHERING_STORM_DESC
+			ideology = neutrality
+		}
+		SIN = {
+			history = SIN_GATHERING_STORM_DESC
+			ideology = neutrality
+		}
+		HIN = {
+			history = HIN_GATHERING_STORM_DESC
+			ideology = neutrality
+		}
+		"---" = {
+			history = MAR_OTHER_DESC
+		}
+		effect = {
+			randomize_weather = 1936
+		}
+	}
+}

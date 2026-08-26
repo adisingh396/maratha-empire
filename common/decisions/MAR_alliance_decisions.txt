@@ -1,0 +1,77 @@
+MAR_diplomacy_category = {
+	icon = generic_alliance
+	allowed = { tag = MAR }
+	visible = { tag = MAR }
+
+	MAR_ally_hyderabad = {
+		icon = generic_alliance
+		allowed = { tag = MAR }
+		available = {
+			has_completed_focus = MAR_mandal_of_influence
+			HYD = { NOT = { has_war_with = MAR } }
+			has_opinion = { target = HYD value > 30 }
+		}
+		visible = { tag = MAR }
+		cost = 50
+		ai_will_do = { factor = 10 }
+		complete_effect = {
+			add_opinion_modifier = { target = HYD modifier = maratha_cultural_ties }
+			HYD = { add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } }
+			if = {
+				limit = { HYD = { is_ai = no } }
+				custom_effect_tooltip = MAR_alliance_invite_tt
+			}
+			hidden_effect = {
+				HYD = { country_event = { id = MAR_diplo.1 days = 1 } }
+			}
+		}
+	}
+
+	MAR_ally_rajput = {
+		icon = generic_alliance
+		allowed = { tag = MAR }
+		available = {
+			has_completed_focus = MAR_mandal_of_influence
+			RJP = { NOT = { has_war_with = MAR } }
+		}
+		visible = { tag = MAR }
+		cost = 50
+		complete_effect = {
+			add_opinion_modifier = { target = RJP modifier = maratha_cultural_ties }
+			RJP = { add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } }
+		}
+	}
+
+	MAR_fund_revolution_in_hyderabad = {
+		icon = generic_propaganda
+		allowed = { tag = MAR }
+		available = {
+			has_completed_focus = MAR_hindu_rashtra_vanguard
+			HYD = { has_stability < 0.45 }
+		}
+		visible = { tag = MAR }
+		cost = 75
+		ai_will_do = { factor = 5 }
+		complete_effect = {
+			HYD = { add_stability = -0.10 }
+			HYD = { country_event = { id = MAR_revolt.1 days = 2 } }
+			custom_effect_tooltip = MAR_fund_revolt_tt
+		}
+	}
+
+	MAR_world_colonize_claim = {
+		icon = generic_navy
+		allowed = { tag = MAR }
+		available = {
+			has_completed_focus = MAR_pax_marathica
+			has_navy_size = { size > 20 }
+		}
+		visible = { tag = MAR }
+		cost = 100
+		complete_effect = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+			custom_effect_tooltip = MAR_world_colonize_tt
+			hidden_effect = { country_event = { id = MAR_news.3 days = 1 } }
+		}
+	}
+}

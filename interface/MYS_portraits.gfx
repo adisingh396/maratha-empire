@@ -1,0 +1,4 @@
+spriteTypes = {
+	spriteType = { name = "GFX_portrait_mys_wadiyar" texturefile = "gfx/leaders/MYS/portrait_mys_wadiyar.dds" }
+	spriteType = { name = "GFX_portrait_mys_wadiyar_small" texturefile = "gfx/leaders/MYS/portrait_mys_wadiyar_small.dds" }
+}

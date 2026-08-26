@@ -1,0 +1,11 @@
+MDR_INF_01 = {
+  name = "MDR Infantry Division"
+  for_countries = { MDR }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d MDR Division"
+  ordered = {
+    1 = { "%d MDR Division" }
+    2 = { "%d MDR Division" }
+  }
+}

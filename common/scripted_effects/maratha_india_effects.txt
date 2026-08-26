@@ -1,0 +1,33 @@
+maratha_claim_india_effect = {
+	every_state = {
+		limit = {
+			OR = {
+				state = 423
+				state = 424
+				state = 425
+				state = 426
+				state = 427
+				state = 428
+				state = 430
+				state = 431
+				state = 432
+				state = 433
+				state = 436
+				state = 437
+				state = 438
+				state = 439
+			}
+		}
+		add_claim_by = MAR
+		enable_state_integration_80_compliance = yes
+	}
+}
+
+maratha_core_india_effect = {
+	hidden_effect = {
+		every_state = {
+			limit = { is_claim_of = MAR }
+			add_core_of = MAR
+		}
+	}
+}

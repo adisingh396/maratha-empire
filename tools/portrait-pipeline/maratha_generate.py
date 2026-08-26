@@ -92,29 +92,44 @@ def split_grid_pil(img_path: Path, out_dir: Path):
     return saved
 
 
-async def generate_one_grid(idx: int, prompt: str, cookies_tuple, progress):
+async def generate_one_grid(idx: int, prompt: str, cookies_tuple, progress, total_grids: int, force: bool = False):
     """Generate one 2x2 grid image via Gemini and split into 4 quadrants."""
     grid_key = f"grid_{idx:02d}"
-    if grid_key in progress["completed"]:
-        print(f"  [{idx:02d}/50] {grid_key} already done - skip")
-        return True
-
     out_dir = GEN_DIR / grid_key
     out_dir.mkdir(parents=True, exist_ok=True)
     grid_path = out_dir / "grid.png"
+    quad_files = [out_dir / f"{k}.png" for k in ["top_left", "top_right", "bottom_left", "bottom_right"]]
+    is_completed = grid_key in progress["completed"]
+    all_quads_exist = all(p.exists() for p in quad_files)
 
-    # If grid already exists, just split
-    if grid_path.exists():
-        quad_files = [out_dir / f"{k}.png" for k in ["top_left", "top_right", "bottom_left", "bottom_right"]]
-        if all(p.exists() for p in quad_files):
-            print(f"  [{idx:02d}/50] {grid_key} already split - skip")
-            if grid_key not in progress["completed"]:
-                progress["completed"].append(grid_key)
-                save_progress(progress)
+    # Robust skip logic: only skip if completed AND files actually exist, unless --force
+    if is_completed and not force:
+        if grid_path.exists() and all_quads_exist:
+            print(f"  [{idx:02d}/{total_grids:02d}] {grid_key} already done (progress + files) - skip (--force to regenerate)")
             return True
+        elif grid_path.exists() or any(p.exists() for p in quad_files):
+            # Stale progress entry but missing files -> needs regeneration, not skip
+            print(f"  [{idx:02d}/{total_grids:02d}] {grid_key} marked completed but files missing - regenerating...")
+            # Remove stale entry so it will be re-added after success
+            if grid_key in progress["completed"]:
+                progress["completed"].remove(grid_key)
+                save_progress(progress)
+        else:
+            # Completed but no files at all -> also stale
+            print(f"  [{idx:02d}/{total_grids:02d}] {grid_key} completed but no files found - regenerating...")
+            progress["completed"].remove(grid_key)
+            save_progress(progress)
+
+    # If not forced and grid already exists fully split, just ensure progress
+    if not force and grid_path.exists() and all_quads_exist:
+        print(f"  [{idx:02d}/{total_grids:02d}] {grid_key} already split - skip")
+        if grid_key not in progress["completed"]:
+            progress["completed"].append(grid_key)
+            save_progress(progress)
+        return True
 
     print(f"\n{'='*60}")
-    print(f"[{idx:02d}/50] Generating {grid_key}")
+    print(f"[{idx:02d}/{total_grids:02d}] Generating {grid_key}")
     print(f"{'='*60}")
     print(f"  Prompt: {prompt[:120]}...")
 
@@ -205,9 +220,11 @@ async def generate_one_grid(idx: int, prompt: str, cookies_tuple, progress):
 
 async def main():
     import argparse
-    parser = argparse.ArgumentParser(description="Vedic 200-image generator (50 grids x4)")
+    parser = argparse.ArgumentParser(description="Maratha 4x portrait generator (N grids x4) - vedic clone with robust skip")
     parser.add_argument("--limit", type=int, default=0, help="Only generate first N grids")
     parser.add_argument("--dry-run", action="store_true", help="Print prompts without generating")
+    parser.add_argument("--force", action="store_true", help="Force regenerate even if progress says completed (fixes 'skipping for no reason')")
+    parser.add_argument("--clear-progress", action="store_true", help="Clear progress.json and regenerate all")
     args = parser.parse_args()
 
     prompts = load_prompts()
@@ -217,7 +234,8 @@ async def main():
 
     if args.limit and args.limit > 0:
         prompts = prompts[:args.limit]
-        print(f"Limited to first {len(prompts)} grids")
+        total = len(prompts)
+        print(f"Limited to first {total} grids")
 
     if args.dry_run:
         for i, p in enumerate(prompts, 1):
@@ -225,20 +243,28 @@ async def main():
             print(p[:300])
         return
 
+    if args.clear_progress:
+        print(f"[progress] clearing progress.json")
+        if PROGRESS_FILE.exists():
+            PROGRESS_FILE.unlink()
+        print(f"  cleared")
+
     cookies_tuple = load_cookies()
     print(f"[auth] Cookies loaded")
 
     progress = load_progress()
     progress_before = set(progress["completed"])
-    print(f"[progress] completed={len(progress['completed'])} failed={len(progress['failed'])}")
+    print(f"[progress] completed={len(progress['completed'])} failed={len(progress['failed'])} (use --force to override)")
+    if args.force:
+        print(f"[force] will regenerate all grids regardless of progress")
 
     for idx, prompt in enumerate(prompts, 1):
-        success = await generate_one_grid(idx, prompt, cookies_tuple, progress)
+        success = await generate_one_grid(idx, prompt, cookies_tuple, progress, total, force=args.force)
         if not success:
             print(f"\n[warn] Grid {idx} failed, continuing...")
 
         # Rate limit only between actual API requests, not skips
-        if idx < len(prompts) and success and f"grid_{idx:02d}" not in progress_before:
+        if idx < len(prompts) and success and f"grid_{idx:02d}" not in progress_before and not args.force:
             print(f"  [sleep] {RATE_LIMIT_DELAY}s before next request...")
             await asyncio.sleep(RATE_LIMIT_DELAY)
 

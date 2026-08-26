@@ -1,0 +1,60 @@
+add_namespace = MAR_revolt
+
+# Generic princely revolt if stability low
+country_event = {
+	id = MAR_revolt.1
+	title = MAR_revolt_1_title
+	desc = MAR_revolt_1_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_revolt_1_opt_a
+		add_stability = 0.05
+		add_political_power = -50
+	}
+	option = {
+		name = MAR_revolt_1_opt_b
+		add_stability = -0.05
+		add_manpower = -5000
+		hidden_effect = {
+			random_state = {
+				limit = { is_owned_by = ROOT }
+				add_resistance = 30
+			}
+		}
+	}
+}
+
+# Rare MAR revolution if not strong (low stab + war support)
+country_event = {
+	id = MAR_revolt.10
+	title = MAR_revolt_10_title
+	desc = MAR_revolt_10_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_revolt_10_opt
+		add_stability = 0.10
+		add_war_support = 0.05
+		custom_effect_tooltip = MAR_revolt_crushed_tt
+	}
+}
+
+# Diplomatic invite from MAR
+country_event = {
+	id = MAR_diplo.1
+	title = MAR_diplo_1_title
+	desc = MAR_diplo_1_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MAR_diplo_1_accept
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		hidden_effect = { MAR = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } } }
+	}
+	option = {
+		name = MAR_diplo_1_refuse
+		add_opinion_modifier = { target = MAR modifier = maratha_betrayal }
+	}
+}

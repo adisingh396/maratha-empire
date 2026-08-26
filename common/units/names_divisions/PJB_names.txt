@@ -1,0 +1,11 @@
+PJB_INF_01 = {
+  name = "PJB Infantry Division"
+  for_countries = { PJB }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d PJB Division"
+  ordered = {
+    1 = { "%d PJB Division" }
+    2 = { "%d PJB Division" }
+  }
+}
