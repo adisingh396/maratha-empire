@@ -1,0 +1,4 @@
+# Maratha mod - balkanized India: RAJ reduced to residual, remove overlapping divisions
+# No units - they will be in Aden enclave only via event if needed
+units = {
+}

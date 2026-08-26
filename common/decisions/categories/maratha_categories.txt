@@ -1,0 +1,8 @@
+decision_categories = {
+	MAR_integration_category = {
+		icon = generic_form_nation
+		picture = GFX_decision_category_generic
+		allowed = { original_tag = MAR }
+		visible = { original_tag = MAR }
+	}
+}

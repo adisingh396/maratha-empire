@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	maratha_cultural_ties = {
+		value = 25
+	}
+}

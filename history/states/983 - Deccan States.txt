@@ -1,0 +1,31 @@
+state={
+	id=983
+	name="STATE_983" # Kolhapur - Deccan
+	manpower = 8697161 
+	state_category = city
+	buildings_max_level_factor = 1.4
+	resources={
+		tungsten=14
+		steel=10
+		chromium=8
+	}
+	history={
+		owner = MAR
+		add_core_of = MAR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 5
+			dockyard = 1
+			air_base = 2
+		}
+		victory_points = {
+			12295 8 # Kolhapur
+			4395 5
+		}
+	}
+	provinces={
+		4291 4395 7250 7411 10259 10799 12105 12208 12295
+	}
+	local_supplies=0.0 
+}

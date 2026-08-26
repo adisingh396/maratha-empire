@@ -1,0 +1,35 @@
+MAR_INF_01 = {
+	name = "Maratha Infantry Division"
+	for_countries = { MAR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d Maratha Division"
+	ordered = {
+		1 = { "%dst Maratha 'Chatrapati' Division" }
+		2 = { "%dnd Maratha 'Baji Rao' Division" }
+		3 = { "%drd Peshwa Guard Division" }
+		4 = { "%dth Rajput 'Shivaji' Division" }
+		5 = { "%dth Maratha 'Sahyadri' Division" }
+		6 = { "%dth Konkan Division" }
+		7 = { "%dth Deccan Division" }
+		8 = { "%dth Pune Division" }
+		9 = { "%dth Nagpur Division" }
+		10 = { "%dth Maratha 'Bhagwa' Division" }
+		11 = { "%dth Maratha Division" }
+		12 = { "%dth Maratha Division" }
+	}
+}
+MAR_GAR_01 = {
+	name = "Maratha Garrison"
+	for_countries = { MAR }
+	can_use = { always = yes }
+	division_types = { "garrison" }
+	fallback_name = "%d Garrison Division"
+	ordered = {
+		1 = { "Pune Garrison" }
+		2 = { "Satara Garrison" }
+		3 = { "Kolhapur Garrison" }
+		4 = { "Nashik Garrison" }
+		5 = { "Nagpur Garrison" }
+	}
+}

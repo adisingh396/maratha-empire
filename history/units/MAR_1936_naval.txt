@@ -1,0 +1,30 @@
+units = {
+	fleet = {
+		name = "Maratha Western Fleet"
+		naval_base = 1349
+		task_force = {
+			name = "Bombay Striking Force"
+			location = 1349
+			ship = { name = "INS Shivaji" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Pratapgad" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Rajgad" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Sindhudurg" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Vagai" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Angre I" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Angre II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Angre III" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Angre IV" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Angre V" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Angre VI" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+		}
+		task_force = {
+			name = "Konkan Patrol"
+			location = 1349
+			ship = { name = "INS Koli" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Malvan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Ratnagiri" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Dandi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS Alibag" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR } } }
+		}
+	}
+}

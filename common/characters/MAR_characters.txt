@@ -1,0 +1,40 @@
+MAR_madhavrao_III = {
+	name = "Madhavrao III"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_MAR_madhavrao
+		}
+		army = {
+			large = GFX_portrait_MAR_madhavrao
+		}
+	}
+	country_leader = {
+		ideology = neutrality
+		traits = { conservative_leader }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = theorist
+		allowed = { always = yes }
+		ai_will_do = { factor = 10 }
+		idea_token = MAR_peshwa_theorist
+		cost = 150
+		removal_cost = 10
+		traits = { MAR_thinker_legacy }
+	}
+}
+
+MAR_ibrahim_gardi = {
+	name = "Ibrahim Khan Gardi"
+	portraits = {
+		army = { large = GFX_portrait_GENERIC_army }
+	}
+	advisor = {
+		slot = army_chief
+		allowed = { always = yes }
+		idea_token = MAR_gardi_chief
+		traits = { army_offensive_trait }
+	}
+}
+

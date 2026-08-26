@@ -1,0 +1,17 @@
+# HOI4 mod gitignore - keep only source, ignore build/cache/logs
+*.log
+*.tmp
+*.cache
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+# Paradox launcher cache not needed
+*.bin
+# Local sync backup
+*.bak
+# OS
+Desktop.ini

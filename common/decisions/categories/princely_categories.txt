@@ -1,0 +1,15 @@
+HYD_expansionist_category = {
+	icon = generic_conquer
+	allowed = { original_tag = HYD }
+	visible = { original_tag = HYD }
+}
+RJP_alliance_category = {
+	icon = generic_defence
+	allowed = { original_tag = RJP }
+	visible = { original_tag = RJP }
+}
+MYS_category = {
+	icon = generic_industry
+	allowed = { original_tag = MYS }
+	visible = { original_tag = MYS }
+}

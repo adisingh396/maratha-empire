@@ -1,0 +1,54 @@
+add_namespace = MAR_news
+
+# World tension style news - triggered by focuses via country_event
+country_event = {
+	id = MAR_news.1
+	title = MAR_news_1_title
+	desc = MAR_news_1_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_1_opt
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = MAR_news.2
+	title = MAR_news_2_title
+	desc = MAR_news_2_desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_2_opt
+	}
+}
+
+country_event = {
+	id = MAR_news.3
+	title = MAR_news_3_title
+	desc = MAR_news_3_desc
+	picture = GFX_report_event_generic_navy
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_3_opt
+		hidden_effect = {
+			every_country = { country_event = { id = MAR_news.3 days = 1 } }
+		}
+	}
+}
+
+news_event = {
+	id = MAR_news.10
+	title = MAR_news_10_title
+	desc = MAR_news_10_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_10_opt
+	}
+}

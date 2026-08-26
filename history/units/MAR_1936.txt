@@ -1,0 +1,48 @@
+division_template = {
+	name = "Rajput Infantry Division"
+	division_names_group = MAR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 3 }
+		recon = { x = 1 y = 3 }
+		artillery = { x = 2 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Maratha Garrison"
+	division_names_group = MAR_GAR_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	# Western Command - Pune
+	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
+	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
+	division = { division_template = "Rajput Infantry Division" location = 12781 start_experience_factor = 0.10 start_equipment_factor = 0.60 }
+	division = { division_template = "Rajput Infantry Division" location = 12137 start_experience_factor = 0.10 start_equipment_factor = 0.60 }
+	division = { division_template = "Rajput Infantry Division" location = 10843 start_experience_factor = 0.10 start_equipment_factor = 0.60 }
+	division = { division_template = "Rajput Infantry Division" location = 1497 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
+	division = { division_template = "Rajput Infantry Division" location = 11955 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
+	# Garrison
+	division = { division_template = "Maratha Garrison" location = 4291 start_experience_factor = 0.05 start_equipment_factor = 0.40 }
+	division = { division_template = "Maratha Garrison" location = 8011 start_experience_factor = 0.05 start_equipment_factor = 0.40 }
+	division = { division_template = "Maratha Garrison" location = 1908 start_experience_factor = 0.05 start_equipment_factor = 0.40 }
+}

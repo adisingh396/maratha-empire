@@ -1,0 +1,8 @@
+graphical_culture = indian_gfx
+graphical_culture_2d = indian_2d
+
+color = { 255 102 0 }
+color_ui = { 255 140 0 }
+
+# ponytail: saffron bhagwa, single color definition
+

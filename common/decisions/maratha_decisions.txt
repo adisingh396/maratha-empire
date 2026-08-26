@@ -1,0 +1,37 @@
+MAR_integration_category = {
+	MAR_integrate_deccan_states = {
+		icon = generic_form_nation
+		allowed = { original_tag = MAR }
+		available = { has_completed_focus = MAR_saffron_banner_over_delhi }
+		visible = { original_tag = MAR }
+		cost = 50
+		complete_effect = {
+			427 = { add_core_of = MAR }
+			add_stability = 0.02
+		}
+	}
+	MAR_integrate_rajputana = {
+		icon = generic_form_nation
+		allowed = { original_tag = MAR }
+		available = { has_completed_focus = MAR_maratha_military_mission }
+		visible = { original_tag = MAR }
+		cost = 50
+		complete_effect = {
+			433 = { add_core_of = MAR }
+			991 = { add_core_of = MAR }
+			add_political_power = -10
+		}
+	}
+	MAR_integrate_bengal_bihar = {
+		icon = generic_form_nation
+		allowed = { original_tag = MAR }
+		available = { has_completed_focus = MAR_rapid_industrial_surge }
+		visible = { original_tag = MAR }
+		cost = 75
+		complete_effect = {
+			430 = { add_core_of = MAR }
+			431 = { add_core_of = MAR }
+			435 = { add_core_of = MAR }
+		}
+	}
+}

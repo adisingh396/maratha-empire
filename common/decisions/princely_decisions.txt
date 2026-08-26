@@ -1,0 +1,100 @@
+HYD_expansionist_category = {
+	icon = generic_conquer
+	allowed = { original_tag = HYD }
+	visible = { original_tag = HYD }
+
+	HYD_form_deccan_sultanate = {
+		icon = generic_claim_state
+		allowed = { original_tag = HYD }
+		available = {
+			controls_state = 427
+			controls_state = 425
+			controls_state = 428
+			has_war = no
+		}
+		visible = { original_tag = HYD }
+		cost = 75
+		complete_effect = {
+			425 = { add_core_of = HYD }
+			428 = { add_core_of = HYD }
+			add_political_power = -50
+			custom_effect_tooltip = HYD_deccan_tt
+			hidden_effect = { country_event = { id = MAR_news.10 } }
+		}
+	}
+	HYD_alliance_with_maratha = {
+		icon = generic_alliance
+		allowed = { original_tag = HYD }
+		available = { has_opinion = { target = MAR value > 20 } }
+		visible = { original_tag = HYD }
+		cost = 25
+		complete_effect = {
+			add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+			custom_effect_tooltip = HYD_alliance_tt
+		}
+	}
+	HYD_betray_maratha = {
+		icon = generic_war
+		allowed = { original_tag = HYD }
+		available = {
+			has_completed_focus = MAR_maratha_military_mission
+			has_war = no
+		}
+		visible = { original_tag = HYD }
+		cost = 50
+		complete_effect = {
+			create_wargoal = { target = MAR type = take_state_focus target_state = 429 }
+			add_stability = -0.05
+		}
+	}
+}
+
+RJP_alliance_category = {
+	icon = generic_defence
+	allowed = { original_tag = RJP }
+	visible = { original_tag = RJP }
+
+	RJP_form_rajput_confederation = {
+		icon = generic_form_nation
+		allowed = { original_tag = RJP }
+		available = {
+			controls_state = 433
+			controls_state = 989
+			controls_state = 991
+		}
+		visible = { original_tag = RJP }
+		cost = 50
+		complete_effect = {
+			989 = { add_core_of = RJP }
+			991 = { add_core_of = RJP }
+			add_manpower = 20000
+			custom_effect_tooltip = RJP_confed_tt
+		}
+	}
+	RJP_backstab_maratha = {
+		icon = generic_war
+		allowed = { original_tag = RJP }
+		available = { has_war_with = MAR }
+		visible = { original_tag = RJP }
+		cost = 25
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+MYS_category = {
+	icon = generic_industry
+	allowed = { original_tag = MYS }
+	visible = { original_tag = MYS }
+	MYS_expand_karnataka = {
+		icon = generic_claim_state
+		allowed = { original_tag = MYS }
+		available = { controls_state = 425 }
+		visible = { original_tag = MYS }
+		cost = 40
+		complete_effect = {
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+		}
+	}
+}

@@ -1,0 +1,77 @@
+ideas = {
+	country = {
+		MAR_peshwai_legacy = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.08
+			}
+		}
+		MAR_rajput_dominance = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = {
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.08
+				division_attack_factor = 0.05
+			}
+		}
+		MAR_moderate_industrial_base = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		MAR_agrarian_hinterland = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_land_reform
+			modifier = {
+				supply_consumption_factor = -0.05
+				conscription_factor = -0.10
+			}
+		}
+		MAR_rapid_industrialization_spirit = {
+			allowed = { original_tag = MAR }
+			picture = generic_industrial_bonus
+			modifier = {
+				industrial_capacity_factory = 0.15
+				construction_speed = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		MAR_hindavi_swarajya = {
+			allowed = { original_tag = MAR }
+			picture = generic_national_unity
+			modifier = {
+				war_support_factor = 0.10
+				justification_on_allies_shorten = -0.25
+				ideology_drift_defense_factor = 0.20
+			}
+		}
+		MAR_maratha_navy_tradition = {
+			allowed = { original_tag = MAR }
+			picture = generic_naval_bonus
+			modifier = {
+				navy_org_factor = 0.10
+				naval_speed_factor = 0.08
+				dockyard_output = 0.12
+			}
+		}
+		MAR_world_mark = {
+			allowed = { original_tag = MAR }
+			picture = generic_political_pressure
+			modifier = {
+				political_power_factor = 0.15
+				justify_war_goal_time = -0.15
+			}
+		}
+	}
+}
