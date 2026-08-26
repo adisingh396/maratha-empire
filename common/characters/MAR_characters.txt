@@ -1,11 +1,80 @@
-MAR_madhavrao_III = {
-	name = "Madhavrao III"
+MAR_shivaji = {
+	name = "Chhatrapati Shivaji Maharaj"
+	desc = "MAR_shivaji_desc"
 	portraits = {
 		civilian = {
-			large = GFX_portrait_MAR_madhavrao
+			large = GFX_portrait_mar_shivaji
+			small = GFX_portrait_mar_shivaji_small
 		}
 		army = {
-			large = GFX_portrait_MAR_madhavrao
+			large = GFX_portrait_mar_shivaji
+			small = GFX_portrait_mar_shivaji_small
+		}
+	}
+	advisor = {
+		slot = theorist
+		allowed = { always = yes }
+		idea_token = MAR_shivaji_legacy
+		cost = 100
+		traits = { MAR_shivaji_trait }
+	}
+}
+
+MAR_bajirao = {
+	name = "Peshwa Baji Rao I"
+	desc = "MAR_bajirao_desc"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
+		}
+		army = {
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
+		}
+	}
+	country_leader = {
+		ideology = neutrality
+		traits = { aggressive_leader }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = chief_of_army
+		allowed = { always = yes }
+		idea_token = MAR_bajirao_strategist
+		traits = { army_offensive_trait }
+	}
+}
+
+MAR_tarabai = {
+	name = "Maharani Tarabai"
+	desc = "MAR_tarabai_desc"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_tarabai
+			small = GFX_portrait_mar_tarabai_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { always = yes }
+		idea_token = MAR_tarabai_regent
+		traits = { MAR_tarabai_trait }
+	}
+}
+
+MAR_madhavrao_III = {
+	name = "Peshwa Madhavrao III"
+	desc = "MAR_madhavrao_desc"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_madhavrao
+			small = GFX_portrait_mar_madhavrao_small
+		}
+		army = {
+			large = GFX_portrait_mar_madhavrao
+			small = GFX_portrait_mar_madhavrao_small
 		}
 	}
 	country_leader = {
@@ -17,18 +86,20 @@ MAR_madhavrao_III = {
 	advisor = {
 		slot = theorist
 		allowed = { always = yes }
-		ai_will_do = { factor = 10 }
 		idea_token = MAR_peshwa_theorist
 		cost = 150
-		removal_cost = 10
 		traits = { MAR_thinker_legacy }
 	}
 }
 
 MAR_ibrahim_gardi = {
 	name = "Ibrahim Khan Gardi"
+	desc = "MAR_gardi_desc"
 	portraits = {
-		army = { large = GFX_portrait_GENERIC_army }
+		army = { 
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
+		}
 	}
 	advisor = {
 		slot = army_chief
@@ -37,4 +108,3 @@ MAR_ibrahim_gardi = {
 		traits = { army_offensive_trait }
 	}
 }
-
