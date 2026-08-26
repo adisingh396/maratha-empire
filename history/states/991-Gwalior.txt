@@ -11,7 +11,7 @@ state={
 		add_core_of = RJP
 		add_core_of = CIP
 		buildings = {
-			industrial_complex = 1
+			industrial_complex = 3
 			arms_factory = 2
 			infrastructure = 1
 		}

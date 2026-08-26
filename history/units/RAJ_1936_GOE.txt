@@ -1,0 +1,3 @@
+# Empty - Maratha mod: RAJ reduced to western enclave, no exiled divisions
+units = {}
+

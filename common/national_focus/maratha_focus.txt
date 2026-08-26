@@ -62,7 +62,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = { name = air_bonus bonus = 0.5 uses = 2 category = air_equipment }
-			add_building_construction = { type = air_base level = 2 instant_build = yes }
+			429 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
 		}
 	}
 	focus = {
@@ -422,7 +422,7 @@ focus_tree = {
 		completion_reward = {
 			add_navy_experience = 30
 			add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_equipment }
-			add_building_construction = { type = dockyard level = 2 instant_build = yes }
+			429 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
 		}
 	}
 	focus = {
@@ -692,10 +692,92 @@ focus_tree = {
 		x = 8
 		y = 11
 		cost = 10
+		ai_will_do = { factor = 20 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAR_pax_marathica"
 			add_war_support = 0.15
 			add_stability = 0.07
 			custom_effect_tooltip = MAR_pax_marathica_tt
+		}
+	}
+	focus = {
+		id = MAR_overseas_zanzibar
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = MAR_pax_marathica }
+		x = 6
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAR_overseas_zanzibar"
+			add_navy_experience = 25
+			create_wargoal = { target = ENG type = take_state_focus target_state = 992 }
+			custom_effect_tooltip = MAR_zanzibar_tt
+		}
+	}
+	focus = {
+		id = MAR_world_trade_network
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = MAR_pax_marathica }
+		x = 8
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAR_world_trade_network"
+			add_ideas = MAR_world_trade_idea
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = MAR_volunteer_corps
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = MAR_world_trade_network }
+		x = 10
+		y = 12
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAR_volunteer_corps"
+			add_manpower = 20000
+			add_command_power = 25
+			custom_effect_tooltip = MAR_volunteers_tt
+		}
+	}
+	focus = {
+		id = MAR_propaganda_ministry
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = MAR_pax_marathica }
+		x = 8
+		y = 13
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAR_propaganda_ministry"
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = MAR_propaganda_idea
+		}
+	}
+	focus = {
+		id = MAR_intelligence_network
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = MAR_propaganda_ministry }
+		x = 8
+		y = 14
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MAR_intelligence_network"
+			add_intel_network = 10
+			create_operative_leader = {
+				name = "Nana Phadnis"
+				GFX = GFX_portrait_mar_shivaji
+				traits = { operative_tough }
+			}
 		}
 	}
 

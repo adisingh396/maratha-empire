@@ -14,7 +14,7 @@ state={
 		owner = CIP
 		add_core_of = CIP
 		buildings = {
-			industrial_complex = 1
+			industrial_complex = 3
 			arms_factory = 1
 			infrastructure = 1 #was: 5
 		}

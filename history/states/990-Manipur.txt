@@ -10,7 +10,7 @@ state={
 		owner = MPU
 		add_core_of = MPU
 		buildings = {
-			industrial_complex = 1
+			industrial_complex = 3
 			arms_factory = 0
 			infrastructure = 1
 		}

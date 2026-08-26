@@ -1,0 +1,39 @@
+princely_build_civ = {
+	enable = {
+		OR = {
+			tag = HYD
+			tag = RJP
+			tag = MYS
+			tag = MAR
+			tag = HIN
+			tag = PJB
+		}
+	}
+	type = building
+	id = industrial_complex
+	value = 100
+}
+princely_build_navy = {
+	enable = {
+		OR = {
+			tag = MAR
+			tag = HYD
+			tag = SIN
+		}
+	}
+	type = building
+	id = dockyard
+	value = 100
+}
+princely_research_navy = {
+	enable = { tag = MAR }
+	type = research_weight_factor
+	id = naval_equipment
+	value = 200
+}
+princely_no_convoy_spam = {
+	enable = { tag = MAR }
+	type = equipment_production
+	id = convoy
+	value = -50
+}
