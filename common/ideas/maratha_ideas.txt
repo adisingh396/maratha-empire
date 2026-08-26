@@ -73,5 +73,72 @@ ideas = {
 				justify_war_goal_time = -0.15
 			}
 		}
+		MAR_shivaji_legacy = {
+			allowed = { original_tag = MAR }
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		MAR_tarabai_regent = {
+			allowed = { original_tag = MAR }
+			picture = generic_political_pressure
+			modifier = {
+				political_power_gain = 0.10
+			}
+		}
+		MAR_nana_advisor = {
+			allowed = { original_tag = MAR }
+			picture = generic_civilian_factory
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		MAR_moropant_theorist = {
+			allowed = { original_tag = MAR }
+			picture = generic_army_doctrines
+			modifier = {
+				military_theorist_cost_factor = -0.10
+			}
+		}
+		MAR_angre_admiral = {
+			allowed = { original_tag = MAR }
+			picture = generic_naval_bonus
+			modifier = {
+				navy_org_factor = 0.10
+			}
+		}
+		MAR_gardi_chief = {
+			allowed = { original_tag = MAR }
+			picture = generic_army_chief
+			modifier = {
+				army_core_attack_factor = 0.05
+			}
+		}
+		MAR_bajirao_strategist = {
+			allowed = { original_tag = MAR }
+			picture = generic_army_chief
+			modifier = {
+				divisions_speed_factor = 0.05
+			}
+		}
+		MAR_world_trade_idea = {
+			allowed = { original_tag = MAR }
+			picture = generic_trade
+			modifier = {
+				trade_opinion_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		MAR_propaganda_idea = {
+			allowed = { original_tag = MAR }
+			picture = generic_propaganda
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
 	}
 }

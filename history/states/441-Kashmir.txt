@@ -9,7 +9,7 @@ state={
 	history={
 		owner = KAS
 		buildings = {
-			industrial_complex = 1
+			industrial_complex = 3
 			arms_factory = 1
 			infrastructure = 1
 		}

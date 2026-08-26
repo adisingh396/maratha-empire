@@ -1,0 +1,5 @@
+MAR = {
+	male = { Shivaji Baji Madhav Rao Santaji Moropant Kanhoji Ibrahim Nana Ganga Hari }
+	female = { Tarabai Jijabai Ahilyabai Rani }
+	surnames = { Bhonsle Holkar Scindia Gaekwad Peshwe Angre Ghorpade Fadnavis More Jadhav Shinde }
+}

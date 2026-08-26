@@ -50,7 +50,21 @@ recruit_character = MAR_bajirao
 recruit_character = MAR_tarabai
 recruit_character = MAR_madhavrao_III
 recruit_character = MAR_ibrahim_gardi
+recruit_character = MAR_nana_fadnavis
+recruit_character = MAR_moropant_trimbak
+recruit_character = MAR_kanhoji_angre_iii
+recruit_character = MAR_santaji_ghorpade_ii
+recruit_character = MAR_noor_operative
 promote_character = MAR_madhavrao_III
+
+create_country_leader = {
+	name = "Peshwa Madhavrao III"
+	desc = "POLITICS_MADHAVRAO_III_DESC"
+	picture = "GFX_portrait_mar_madhavrao"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = { conservative_leader }
+}
 
 # advisors / generals via characters file
 

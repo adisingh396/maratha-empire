@@ -6,16 +6,12 @@ MAR_shivaji = {
 			large = GFX_portrait_mar_shivaji
 			small = GFX_portrait_mar_shivaji_small
 		}
-		army = {
-			large = GFX_portrait_mar_shivaji
-			small = GFX_portrait_mar_shivaji_small
-		}
 	}
 	advisor = {
-		slot = theorist
+		slot = political_advisor
 		allowed = { always = yes }
 		idea_token = MAR_shivaji_legacy
-		cost = 100
+		cost = 75
 		traits = { MAR_shivaji_trait }
 	}
 }
@@ -34,7 +30,7 @@ MAR_bajirao = {
 		}
 	}
 	country_leader = {
-		ideology = neutrality
+		ideology = fascism
 		traits = { aggressive_leader }
 		expire = "1965.1.1"
 		id = -1
@@ -60,6 +56,7 @@ MAR_tarabai = {
 		slot = political_advisor
 		allowed = { always = yes }
 		idea_token = MAR_tarabai_regent
+		cost = 75
 		traits = { MAR_tarabai_trait }
 	}
 }
@@ -83,12 +80,83 @@ MAR_madhavrao_III = {
 		expire = "1965.1.1"
 		id = -1
 	}
+}
+
+# --- Advisors, theorists, admirals, generals, intel ---
+
+MAR_nana_fadnavis = {
+	name = "Nana Fadnavis"
+	desc = "MAR_nana_desc"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_shivaji
+			small = GFX_portrait_mar_shivaji_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { always = yes }
+		idea_token = MAR_nana_advisor
+		traits = { political_operator }
+	}
+}
+
+MAR_moropant_trimbak = {
+	name = "Moropant Trimbak"
+	desc = "MAR_moropant_desc"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
+		}
+	}
 	advisor = {
 		slot = theorist
 		allowed = { always = yes }
-		idea_token = MAR_peshwa_theorist
-		cost = 150
-		traits = { MAR_thinker_legacy }
+		idea_token = MAR_moropant_theorist
+		traits = { military_theorist }
+	}
+}
+
+MAR_kanhoji_angre_iii = {
+	name = "Kanhoji Angre III"
+	desc = "MAR_angre_desc"
+	portraits = {
+		army = {
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
+		}
+		navy = {
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
+		}
+	}
+	advisor = {
+		slot = chief_of_navy
+		allowed = { always = yes }
+		idea_token = MAR_angre_admiral
+		traits = { naval_maneuver_trait }
+	}
+	unit_leader = {
+		is_admiral = yes
+		traits = { superior_tactician }
+		skill = 3
+	}
+}
+
+MAR_santaji_ghorpade_ii = {
+	name = "Santaji Ghorpade II"
+	desc = "MAR_santaji_desc"
+	portraits = {
+		army = {
+			large = GFX_portrait_mar_shivaji
+			small = GFX_portrait_mar_shivaji_small
+		}
+	}
+	unit_leader = {
+		is_general = yes
+		traits = { aggressive_assaulter }
+		skill = 3
 	}
 }
 
@@ -97,8 +165,8 @@ MAR_ibrahim_gardi = {
 	desc = "MAR_gardi_desc"
 	portraits = {
 		army = { 
-			large = GFX_portrait_mar_bajirao
-			small = GFX_portrait_mar_bajirao_small
+			large = GFX_portrait_mar_madhavrao
+			small = GFX_portrait_mar_madhavrao_small
 		}
 	}
 	advisor = {
@@ -107,4 +175,21 @@ MAR_ibrahim_gardi = {
 		idea_token = MAR_gardi_chief
 		traits = { army_offensive_trait }
 	}
+	unit_leader = {
+		is_general = yes
+		traits = { artillery_expert }
+		skill = 3
+	}
+}
+
+MAR_noor_operative = {
+	name = "Noor Inayat"
+	desc = "MAR_noor_desc"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_tarabai
+			small = GFX_portrait_mar_tarabai_small
+		}
+	}
+	operative = yes
 }
