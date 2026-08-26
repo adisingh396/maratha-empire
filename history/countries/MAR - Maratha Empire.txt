@@ -45,6 +45,9 @@ add_ideas = {
 	MAR_agrarian_hinterland
 }
 
+recruit_character = MAR_shivaji
+recruit_character = MAR_bajirao
+recruit_character = MAR_tarabai
 recruit_character = MAR_madhavrao_III
 recruit_character = MAR_ibrahim_gardi
 promote_character = MAR_madhavrao_III

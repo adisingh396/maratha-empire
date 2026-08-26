@@ -1,6 +1,43 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_portrait_mar_shivaji"
+		texturefile = "gfx/leaders/MAR/portrait_mar_shivaji.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_shivaji_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_shivaji_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_bajirao"
+		texturefile = "gfx/leaders/MAR/portrait_mar_bajirao.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_bajirao_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_bajirao_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_tarabai"
+		texturefile = "gfx/leaders/MAR/portrait_mar_tarabai.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_tarabai_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_tarabai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_madhavrao"
+		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_madhavrao_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao_small.dds"
+	}
+	# Backward compatibility alias (uppercase MAR)
+	spriteType = {
 		name = "GFX_portrait_MAR_madhavrao"
-		texturefile = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic.dds"
+		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_MAR_madhavrao_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao_small.dds"
 	}
 }
