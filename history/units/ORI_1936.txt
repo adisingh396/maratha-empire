@@ -1,0 +1,14 @@
+division_template = {
+    name = "ORI Infantry Division"
+    division_names_group = ORI_INF_01
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+    }
+}
+units = {
+    division = { division_template = "ORI Infantry Division" location = 10190 start_experience_factor = 0.1 start_equipment_factor = 0.5 }
+    division = { division_template = "ORI Infantry Division" location = 10190 start_experience_factor = 0.1 start_equipment_factor = 0.5 }
+}

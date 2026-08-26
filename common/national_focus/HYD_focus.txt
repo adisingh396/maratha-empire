@@ -1,0 +1,153 @@
+focus_tree = {
+	id = HYD_focus
+	country = {
+		factor = 0
+		modifier = { add = 10 tag = HYD }
+	}
+	default = no
+	focus = {
+		id = HYD_osman_legacy
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_osman_legacy"
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = HYD_deccan_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HYD_osman_legacy }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_deccan_industry"
+			427 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = HYD_modern_nizam_forces
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_deccan_industry }
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_modern_nizam_forces"
+			add_army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+		}
+	}
+	focus = {
+		id = HYD_french_advisors
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = HYD_deccan_industry }
+		x = 7
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_french_advisors"
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery }
+		}
+	}
+	focus = {
+		id = HYD_deccan_sultanate_proclaimed
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_modern_nizam_forces }
+		prerequisite = { focus = HYD_french_advisors }
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 15 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_deccan_sultanate_proclaimed"
+			425 = { add_claim_by = HYD }
+			428 = { add_claim_by = HYD }
+			add_war_support = 0.10
+			country_event = { id = MAR_news.10 days = 1 }
+		}
+	}
+	focus = {
+		id = HYD_confront_maratha
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = HYD_deccan_sultanate_proclaimed }
+		x = 5
+		y = 4
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_confront_maratha"
+			create_wargoal = { target = MAR type = take_state_focus target_state = 429 }
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = HYD_alliance_or_war
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = HYD_confront_maratha }
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_alliance_or_war"
+			add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		}
+	}
+	focus = {
+		id = HYD_pan_islamic_vision
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = HYD_confront_maratha }
+		x = 7
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_pan_islamic_vision"
+			create_wargoal = { target = PJB type = annex_everything }
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HYD_indian_empire
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = HYD_alliance_or_war }
+		prerequisite = { focus = HYD_pan_islamic_vision }
+		x = 5
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 20 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_indian_empire"
+			hidden_effect = { maratha_claim_india_effect = yes }
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = HYD_world_colonize
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = HYD_indian_empire }
+		x = 5
+		y = 7
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_world_colonize"
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_equipment }
+			add_navy_experience = 50
+		}
+	}
+}

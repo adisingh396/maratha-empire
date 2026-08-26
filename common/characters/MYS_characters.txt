@@ -1,0 +1,13 @@
+MYS_wadiyar = {
+	name = "Jayachamarajendra Wadiyar"
+	desc = "MYS_wadiyar_desc"
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	country_leader = {
+		ideology = neutrality
+		traits = { conservative_leader }
+		expire = "1965.1.1"
+		id = -1
+	}
+}

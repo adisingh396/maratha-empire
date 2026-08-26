@@ -1,0 +1,11 @@
+HIN_INF_01 = {
+  name = "HIN Infantry Division"
+  for_countries = { HIN }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d HIN Division"
+  ordered = {
+    1 = { "%d HIN Division" }
+    2 = { "%d HIN Division" }
+  }
+}

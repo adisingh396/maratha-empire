@@ -2,3 +2,51 @@ MAR = {
 	color = rgb { 255 102 0 }
 	color_ui = rgb { 255 140 0 }
 }
+HYD = {
+	color = rgb { 180 40 40 }
+	color_ui = rgb { 220 60 60 }
+}
+MYS = {
+	color = rgb { 60 140 80 }
+	color_ui = rgb { 90 180 110 }
+}
+RJP = {
+	color = rgb { 200 170 110 }
+	color_ui = rgb { 230 200 140 }
+}
+WIS = {
+	color = rgb { 180 130 60 }
+	color_ui = rgb { 210 160 90 }
+}
+SIN = {
+	color = rgb { 70 120 170 }
+	color_ui = rgb { 100 150 200 }
+}
+HIN = {
+	color = rgb { 220 190 110 }
+	color_ui = rgb { 240 210 140 }
+}
+MDR = {
+	color = rgb { 120 100 150 }
+	color_ui = rgb { 150 130 180 }
+}
+ORI = {
+	color = rgb { 100 160 120 }
+	color_ui = rgb { 130 190 150 }
+}
+ASM = {
+	color = rgb { 80 150 130 }
+	color_ui = rgb { 110 180 160 }
+}
+PJB = {
+	color = rgb { 200 180 80 }
+	color_ui = rgb { 230 210 110 }
+}
+MPU = {
+	color = rgb { 150 120 180 }
+	color_ui = rgb { 180 150 210 }
+}
+BAN = {
+	color = rgb { 180 80 80 }
+	color_ui = rgb { 210 110 110 }
+}

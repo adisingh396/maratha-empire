@@ -1,0 +1,13 @@
+HYD_osman_ali = {
+	name = "Osman Ali Khan"
+	desc = "HYD_osman_desc"
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	country_leader = {
+		ideology = neutrality
+		traits = { conservative_leader }
+		expire = "1965.1.1"
+		id = -1
+	}
+}

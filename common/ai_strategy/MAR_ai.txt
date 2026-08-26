@@ -1,0 +1,32 @@
+MAR_industrial_focus = {
+	enable = { tag = MAR }
+	type = research_weight_factor
+	id = industry
+	value = 200
+}
+MAR_naval_focus = {
+	enable = { tag = MAR }
+	type = research_weight_factor
+	id = naval_equipment
+	value = 150
+}
+MAR_alliance_prio = {
+	enable = { tag = MAR }
+	type = alliance
+	id = HYD
+	value = 50
+}
+MAR_princely_aggressive = {
+	enable = {
+		OR = {
+			tag = HYD
+			tag = RJP
+			tag = MYS
+			tag = MDR
+			tag = HIN
+		}
+	}
+	type = antagonize
+	id = MAR
+	value = 25
+}

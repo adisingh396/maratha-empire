@@ -1,0 +1,21 @@
+MAR_historical = {
+	name = "Maratha historical"
+	desc = "MAR AI follows Peshwa restoration"
+	allowed = { tag = MAR }
+	enable = { has_game_rule = { rule = MAR_ai_historical value = yes } }
+	ai_strategy = {
+		type = focus
+		id = MAR_legacy_of_the_peshwas
+		value = 100
+	}
+	ai_strategy = {
+		type = focus
+		id = MAR_restore_the_peshwai
+		value = 100
+	}
+	ai_strategy = {
+		type = focus
+		id = MAR_peshwa_privy_council
+		value = 100
+	}
+}

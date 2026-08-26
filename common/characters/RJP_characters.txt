@@ -1,0 +1,14 @@
+RJP_ganga = {
+	name = "Ganga Singh"
+	desc = "RJP_ganga_desc"
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	country_leader = {
+		ideology = neutrality
+		traits = { aggressive_leader }
+		expire = "1965.1.1"
+		id = -1
+	}
+}

@@ -1,0 +1,29 @@
+capital = 432
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.20
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_recon = 1
+    gw_artillery = 1
+    tech_trucks = 1
+}
+set_convoys = 10
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1934.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    democratic = 10
+    fascism = 10
+    communism = 5
+    neutrality = 75
+}
+add_ideas = {
+    ASM_militia_legacy
+}
+set_oob = "ASM_1936"

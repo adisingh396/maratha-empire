@@ -1,0 +1,11 @@
+WIS_INF_01 = {
+  name = "WIS Infantry Division"
+  for_countries = { WIS }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d WIS Division"
+  ordered = {
+    1 = { "%d WIS Division" }
+    2 = { "%d WIS Division" }
+  }
+}
