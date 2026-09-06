@@ -1,0 +1,518 @@
+focus_tree = {
+	id = ORI_focus
+	country = {
+		factor = 0
+		modifier = { add = 10 tag = ORI }
+	}
+	default = no
+	focus = {
+		id = ORI_kalinga_legacy
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_kalinga_legacy"
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = ORI_ashoka_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ORI_kalinga_legacy }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_ashoka_memory"
+			add_stability = 0.05
+			add_war_support = -0.02
+		}
+	}
+	focus = {
+		id = ORI_kharavela_pride
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ORI_ashoka_memory }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_kharavela_pride"
+			add_war_support = 0.06
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = ORI_dhauli_stupa
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ORI_kharavela_pride }
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_dhauli_stupa"
+			add_stability = 0.05
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = ORI_puri_temple
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ORI_kalinga_legacy }
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_puri_temple"
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = ORI_konark_wheel
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ORI_puri_temple }
+		x = 3
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_konark_wheel"
+			add_stability = 0.04
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = ORI_lingaraj_endow
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ORI_konark_wheel }
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_lingaraj_endow"
+			add_political_power = 70
+			426 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = ORI_temple_towns
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ORI_lingaraj_endow }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_temple_towns"
+			add_stability = 0.04
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ORI_rath_yatra
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ORI_temple_towns }
+		x = 3
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_rath_yatra"
+			add_war_support = 0.05
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = ORI_bali_yatra
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = ORI_kalinga_legacy }
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_bali_yatra"
+			navy_experience = 25
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = ORI_kalinga_ships
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ORI_bali_yatra }
+		x = 7
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_kalinga_ships"
+			426 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = ORI_chandbali_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ORI_kalinga_ships }
+		x = 7
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_chandbali_port"
+			426 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+		}
+	}
+	focus = {
+		id = ORI_gopalpur_yard
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = ORI_chandbali_port }
+		x = 7
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_gopalpur_yard"
+			navy_experience = 30
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+		}
+	}
+	focus = {
+		id = ORI_java_run
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = ORI_gopalpur_yard }
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_java_run"
+			navy_experience = 35
+			add_political_power = 60
+			add_ideas = ORI_maritime_spirit
+		}
+	}
+	focus = {
+		id = ORI_suvarnabhumi
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ORI_java_run }
+		x = 7
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_suvarnabhumi"
+			add_political_power = 100
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = ORI_cuttack_workshops
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ORI_kalinga_legacy }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_cuttack_workshops"
+			426 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = ORI_talcher_mines
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ORI_cuttack_workshops }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_talcher_mines"
+			426 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_manpower = 8000
+		}
+	}
+	focus = {
+		id = ORI_rice_delta
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ORI_talcher_mines }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_rice_delta"
+			add_manpower = 15000
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = ORI_chilika_fisheries
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ORI_rice_delta }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed ORI_chilika_fisheries" add_political_power = 60 add_manpower = 6000 }
+	}
+	focus = {
+		id = ORI_sambalpur_mills
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ORI_chilika_fisheries }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_sambalpur_mills"
+			984 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = ORI_hirakud_survey
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ORI_sambalpur_mills }
+		x = 1
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_hirakud_survey"
+			426 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = ORI_paika_memory
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ORI_kalinga_legacy }
+		x = 9
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_paika_memory"
+			army_experience = 20
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = ORI_paika_akhadas
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ORI_paika_memory }
+		x = 9
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_paika_akhadas"
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+		}
+	}
+	focus = {
+		id = ORI_gajapati_guards
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = ORI_paika_akhadas }
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_gajapati_guards"
+			army_experience = 20
+			add_manpower = 10000
+			add_ideas = ORI_paika_spirit
+		}
+	}
+	focus = {
+		id = ORI_barabati_arsenal
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = ORI_gajapati_guards }
+		x = 9
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_barabati_arsenal"
+			426 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+		}
+	}
+	focus = {
+		id = ORI_khurda_levies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ORI_barabati_arsenal }
+		x = 9
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_khurda_levies"
+			add_manpower = 15000
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = ORI_cuttack_cantonment
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = ORI_khurda_levies }
+		x = 9
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_cuttack_cantonment"
+			426 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = ORI_kondh_hills
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = ORI_dhauli_stupa }
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_kondh_hills"
+			add_manpower = 10000
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = ORI_saora_tracks
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ORI_kondh_hills }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_saora_tracks"
+			984 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_manpower = 6000
+		}
+	}
+	focus = {
+		id = ORI_koraput_coffee
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ORI_saora_tracks }
+		x = 5
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_koraput_coffee"
+			add_political_power = 60
+			984 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = ORI_bastar_link
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = ORI_koraput_coffee }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_bastar_link"
+			add_stability = 0.04
+			add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		}
+	}
+	focus = {
+		id = ORI_gauda_claim
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ORI_java_run }
+		prerequisite = { focus = ORI_bastar_link }
+		x = 7
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_gauda_claim"
+			430 = { add_claim_by = ORI }
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ORI_magadha_claim
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ORI_gauda_claim }
+		x = 7
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1940.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_magadha_claim"
+			435 = { add_claim_by = ORI }
+			create_wargoal = { target = BEN type = take_state_focus generator = { 430 } }
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = ORI_kalinga_chakravarti
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ORI_magadha_claim }
+		prerequisite = { focus = ORI_cuttack_cantonment }
+		x = 5
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_kalinga_chakravarti"
+			add_ideas = ORI_chakravarti_spirit
+			add_stability = 0.05
+			add_war_support = 0.08
+		}
+	}
+}

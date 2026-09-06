@@ -1,0 +1,9 @@
+KAS = {
+	male = {
+		names = { Abdullah Amit Arjun Bakshi Dev Hari Karan Kishan Mahajan Pratap Rajinder Ravi Rohan Suraj Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
+}

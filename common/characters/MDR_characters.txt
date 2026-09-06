@@ -1,0 +1,33 @@
+characters = {
+MDR_bobbili = {
+	name = "Raja of Bobbili"
+	portraits = {
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+MDR_rajaji = {
+	name = "C. Rajagopalachari"
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	country_leader = {
+		ideology = liberalism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_rajaji_counsel
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+}

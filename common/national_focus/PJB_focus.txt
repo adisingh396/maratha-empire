@@ -1,0 +1,979 @@
+focus_tree = {
+	id = PJB_focus
+	country = {
+		factor = 0
+		modifier = { add = 10 tag = PJB }
+	}
+	default = no
+	focus = {
+		id = PJB_khalsa_legacy
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_khalsa_legacy"
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = PJB_lyallpur_canals
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_khalsa_legacy }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_lyallpur_canals"
+			440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_manpower = 15000
+		}
+	}
+	focus = {
+		id = PJB_amritsar_workshops
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_lyallpur_canals }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_amritsar_workshops"
+			440 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = PJB_lahore_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PJB_amritsar_workshops }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_lahore_arsenal"
+			986 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = PJB_mandi_industry
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = PJB_lahore_arsenal }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_mandi_industry"
+			986 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			440 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = PJB_war_industry
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_mandi_industry }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_war_industry"
+			add_ideas = PJB_war_industry_spirit
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = PJB_fauj_i_khas
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_khalsa_legacy }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_fauj_i_khas"
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+		}
+	}
+	focus = {
+		id = PJB_ghorcharha_school
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = PJB_fauj_i_khas }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_ghorcharha_school"
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
+	}
+	focus = {
+		id = PJB_sikh_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = PJB_ghorcharha_school }
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_sikh_artillery"
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery }
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = PJB_akal_volunteers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_sikh_artillery }
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_akal_volunteers"
+			add_manpower = 25000
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = PJB_khalsa_armor
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = PJB_akal_volunteers }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_khalsa_armor"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = armor }
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = PJB_lahore_flying_club
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = PJB_amritsar_workshops }
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_lahore_flying_club"
+			air_experience = 30
+			986 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = PJB_punjab_air_arm
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = PJB_lahore_flying_club }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_punjab_air_arm"
+			air_experience = 30
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+		}
+	}
+	focus = {
+		id = PJB_akali_question
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PJB_khalsa_legacy }
+		x = 9
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_akali_question"
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = PJB_sgpc_charter
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_akali_question }
+		x = 9
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_sgpc_charter"
+			add_stability = 0.06
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = PJB_khalsa_raj
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_sgpc_charter }
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_khalsa_raj"
+			add_ideas = PJB_khalsa_raj_spirit
+			add_stability = 0.04
+		}
+	}
+	focus = {
+		id = PJB_lahore_durbar
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = PJB_khalsa_raj }
+		x = 9
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_lahore_durbar"
+			add_political_power = 120
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = PJB_jallianwala_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_lahore_durbar }
+		x = 9
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_jallianwala_memory"
+			add_war_support = 0.10
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = PJB_claim_delhi
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PJB_war_industry }
+		prerequisite = { focus = PJB_khalsa_armor }
+		x = 3
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_claim_delhi"
+			create_wargoal = { target = HIN type = take_state_focus generator = { 439 } }
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = PJB_claim_frontier
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PJB_jallianwala_memory }
+		prerequisite = { focus = PJB_khalsa_armor }
+		x = 7
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_claim_frontier"
+			create_wargoal = { target = PAK type = take_state_focus generator = { 442 } }
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = PJB_sikh_empire
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = PJB_claim_delhi }
+		prerequisite = { focus = PJB_claim_frontier }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 15 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_sikh_empire"
+			440 = { add_core_of = PJB }
+			986 = { add_core_of = PJB }
+			add_stability = 0.05
+			add_war_support = 0.10
+			add_ideas = PJB_empire_spirit
+		}
+	}
+	focus = {
+		id = PJB_court_pune
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = PJB_sgpc_charter }
+		x = 11
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_court_pune"
+			add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = PJB_northern_march
+		icon = GFX_focus_generic_mountain_troops
+		prerequisite = { focus = PJB_court_pune }
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 6 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_northern_march"
+			create_wargoal = { target = KAS type = take_state_focus generator = { 441 } }
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = PJB_montgomery_mills
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_khalsa_legacy }
+		x = 0 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_montgomery_mills" 440 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_manpower = 10000 }
+	}
+	focus = {
+		id = PJB_okara_farms
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_montgomery_mills }
+		x = 0 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_okara_farms" add_stability = 0.03 add_manpower = 12000 }
+	}
+	focus = {
+		id = PJB_ghee_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PJB_okara_farms }
+		x = 0 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_ghee_trade" add_political_power = 70 440 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_wool_mandi
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PJB_ghee_trade }
+		x = 0 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_wool_mandi" add_political_power = 60 add_stability = 0.02 }
+	}
+	focus = {
+		id = PJB_cotton_press
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PJB_wool_mandi }
+		x = 0 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_cotton_press" 986 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = PJB_agrarian_credit
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_cotton_press }
+		x = 0 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_agrarian_credit" add_stability = 0.04 add_political_power = 60 add_ideas = PJB_credit_spirit }
+	}
+	focus = {
+		id = PJB_doaba_foundries
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PJB_khalsa_legacy }
+		x = 2 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_doaba_foundries" 986 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_jullundur_sports
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_doaba_foundries }
+		x = 2 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_jullundur_sports" add_political_power = 60 986 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_phagwara_sugar
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_jullundur_sports }
+		x = 2 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_phagwara_sugar" add_stability = 0.03 add_manpower = 8000 }
+	}
+	focus = {
+		id = PJB_hoshiarpur_timber
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_phagwara_sugar }
+		x = 2 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_hoshiarpur_timber" 986 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_emigration_remit
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PJB_hoshiarpur_timber }
+		x = 2 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_emigration_remit" add_political_power = 100 add_stability = 0.02 }
+	}
+	focus = {
+		id = PJB_khalsa_academy
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = PJB_khalsa_armor }
+		x = 4 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_khalsa_academy" army_experience = 30 add_command_power = 10 }
+	}
+	focus = {
+		id = PJB_sikh_pioneers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_khalsa_academy }
+		bypass = { has_completed_focus = PJB_frontier_force }
+		x = 4 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_sikh_pioneers" army_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } add_ideas = PJB_pioneer_doctrine }
+	}
+	focus = {
+		id = PJB_frontier_force
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = PJB_khalsa_academy }
+		bypass = { has_completed_focus = PJB_sikh_pioneers }
+		x = 6 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_frontier_force" army_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } add_ideas = PJB_frontier_doctrine }
+	}
+	focus = {
+		id = PJB_punjab_command
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = PJB_sikh_pioneers }
+		prerequisite = { focus = PJB_frontier_force }
+		x = 5 y = 8 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_punjab_command" army_experience = 30 add_war_support = 0.03 }
+	}
+	focus = {
+		id = PJB_attock_forts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PJB_punjab_command }
+		x = 5 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_attock_forts" 440 = { add_building_construction = { type = land_fort level = 2 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = PJB_khyber_posts
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PJB_attock_forts }
+		x = 5 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_khyber_posts" add_war_support = 0.04 army_experience = 15 }
+	}
+	focus = {
+		id = PJB_tank_school
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = PJB_khyber_posts }
+		x = 5 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_tank_school" add_tech_bonus = { bonus = 0.5 uses = 1 category = armor } army_experience = 15 }
+	}
+	focus = {
+		id = PJB_nankana_memory
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_akali_question }
+		x = 8 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_nankana_memory" add_stability = -0.01 add_war_support = 0.05 add_political_power = 40 }
+	}
+	focus = {
+		id = PJB_morcha_tradition
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_nankana_memory }
+		x = 8 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_morcha_tradition" add_war_support = 0.05 add_manpower = 10000 }
+	}
+	focus = {
+		id = PJB_gurdwara_fund
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_morcha_tradition }
+		x = 8 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_gurdwara_fund" add_political_power = 70 440 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_akal_takht
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_gurdwara_fund }
+		x = 8 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_akal_takht" add_stability = 0.05 add_war_support = 0.04 add_ideas = PJB_takht_spirit }
+	}
+	focus = {
+		id = PJB_partition_winds
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_jallianwala_memory }
+		x = 9 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_partition_winds" add_stability = -0.02 add_war_support = 0.05 }
+	}
+	focus = {
+		id = PJB_refugee_columns
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_partition_winds }
+		x = 9 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_refugee_columns" add_manpower = 25000 add_stability = -0.02 }
+	}
+	focus = {
+		id = PJB_amritsar_corridor
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_refugee_columns }
+		x = 9 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_amritsar_corridor" 440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_manpower = 10000 }
+	}
+	focus = {
+		id = PJB_wahga_post
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PJB_amritsar_corridor }
+		x = 9 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_wahga_post" 440 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = PJB_divided_punjab
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_wahga_post }
+		x = 9 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_divided_punjab" add_stability = -0.02 add_war_support = 0.08 add_ideas = PJB_divided_spirit }
+	}
+	focus = {
+		id = PJB_lahore_resolution_echo
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_divided_punjab }
+		x = 9 y = 11 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_lahore_resolution_echo" add_war_support = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = PJB_khalsa_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = PJB_khalsa_legacy }
+		x = 10 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_khalsa_college" add_research_slot = 1 add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } }
+	}
+	focus = {
+		id = PJB_punjabi_university_seed
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = PJB_khalsa_college }
+		x = 10 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_punjabi_university_seed" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_stability = 0.02 }
+	}
+	focus = {
+		id = PJB_singh_sabha
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_punjabi_university_seed }
+		x = 10 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_singh_sabha" add_stability = 0.04 add_war_support = 0.02 }
+	}
+	focus = {
+		id = PJB_gurmat_schools
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_singh_sabha }
+		x = 10 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_gurmat_schools" add_manpower = 12000 add_stability = 0.02 }
+	}
+	focus = {
+		id = PJB_chief_khalsa_diwan
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PJB_gurmat_schools }
+		x = 10 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_chief_khalsa_diwan" add_stability = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = PJB_gurmukhi_press
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_chief_khalsa_diwan }
+		x = 10 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_gurmukhi_press" add_war_support = 0.03 add_political_power = 50 add_ideas = PJB_press_spirit }
+	}
+	focus = {
+		id = PJB_lower_bari_doab
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_war_industry }
+		x = 1 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_lower_bari_doab" 440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_manpower = 10000 }
+	}
+	focus = {
+		id = PJB_balloki_headworks
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_lower_bari_doab }
+		x = 1 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_balloki_headworks" 440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = PJB_sulaimanki_weir
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_balloki_headworks }
+		x = 1 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_sulaimanki_weir" add_manpower = 10000 440 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_dipalpur_canal
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_sulaimanki_weir }
+		x = 1 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_dipalpur_canal" 440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = PJB_pakpattan_shrine
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_dipalpur_canal }
+		x = 1 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_pakpattan_shrine" add_stability = 0.04 add_political_power = 40 }
+	}
+	focus = {
+		id = PJB_cotton_exchange
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PJB_pakpattan_shrine }
+		x = 1 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_cotton_exchange" add_political_power = 80 add_ideas = PJB_exchange_spirit }
+	}
+	focus = {
+		id = PJB_sikh_regiment
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_punjab_air_arm }
+		x = 3 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_sikh_regiment" army_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } }
+	}
+	focus = {
+		id = PJB_punjab_regiment
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_sikh_regiment }
+		x = 3 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_punjab_regiment" army_experience = 25 add_manpower = 10000 }
+	}
+	focus = {
+		id = PJB_guides_cavalry
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = PJB_punjab_regiment }
+		x = 3 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_guides_cavalry" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } }
+	}
+	focus = {
+		id = PJB_frontier_guns
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = PJB_guides_cavalry }
+		x = 3 y = 8 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_frontier_guns" add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery } army_experience = 15 }
+	}
+	focus = {
+		id = PJB_kohat_battery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = PJB_frontier_guns }
+		x = 3 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_kohat_battery" army_experience = 20 add_war_support = 0.02 }
+	}
+	focus = {
+		id = PJB_bannu_brigade
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_kohat_battery }
+		x = 3 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_bannu_brigade" add_manpower = 15000 army_experience = 15 add_ideas = PJB_bannu_spirit }
+	}
+	focus = {
+		id = PJB_lahore_airport
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = PJB_claim_frontier }
+		x = 7 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_lahore_airport" 986 = { add_building_construction = { type = air_base level = 1 instant_build = yes } } air_experience = 25 }
+	}
+	focus = {
+		id = PJB_rawalpindi_airfield
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = PJB_lahore_airport }
+		x = 7 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_rawalpindi_airfield" 440 = { add_building_construction = { type = air_base level = 1 instant_build = yes } } air_experience = 25 }
+	}
+	focus = {
+		id = PJB_peshawar_link
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = PJB_rawalpindi_airfield }
+		x = 7 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_peshawar_link" add_opinion_modifier = { target = PAK modifier = maratha_cultural_ties } add_political_power = 50 }
+	}
+	focus = {
+		id = PJB_night_mail
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = PJB_peshawar_link }
+		x = 7 y = 10 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_night_mail" air_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment } }
+	}
+	focus = {
+		id = PJB_parachute_school
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = PJB_night_mail }
+		x = 7 y = 11 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_parachute_school" air_experience = 30 army_experience = 10 }
+	}
+	focus = {
+		id = PJB_golden_temple
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_sikh_empire }
+		x = 5 y = 8 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_golden_temple" add_stability = 0.06 add_political_power = 60 }
+	}
+	focus = {
+		id = PJB_langar_system
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_golden_temple }
+		x = 5 y = 9 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_langar_system" add_manpower = 20000 add_stability = 0.03 }
+	}
+	focus = {
+		id = PJB_akal_bunga
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_langar_system }
+		x = 5 y = 10 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_akal_bunga" add_war_support = 0.05 add_stability = 0.03 add_ideas = PJB_bunga_spirit }
+	}
+	focus = {
+		id = PJB_ramgarhia_bunga
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_akal_bunga }
+		x = 5 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_ramgarhia_bunga" 440 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_guru_ram_das
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_ramgarhia_bunga }
+		x = 5 y = 12 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_guru_ram_das" add_stability = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = PJB_sikh_misls
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_northern_march }
+		x = 11 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_sikh_misls" add_stability = 0.04 add_war_support = 0.03 }
+	}
+	focus = {
+		id = PJB_cis_sutlej
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PJB_sikh_misls }
+		x = 11 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_cis_sutlej" 986 = { add_core_of = PJB } add_stability = 0.03 }
+	}
+	focus = {
+		id = PJB_trans_sutlej
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PJB_cis_sutlej }
+		x = 11 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_trans_sutlej" 440 = { add_core_of = PJB } add_war_support = 0.04 }
+	}
+	focus = {
+		id = PJB_jamrud_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_trans_sutlej }
+		x = 11 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_jamrud_memory" add_war_support = 0.06 army_experience = 10 }
+	}
+	focus = {
+		id = PJB_peshawar_throne
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_jamrud_memory }
+		x = 11 y = 9 cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1941.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_peshawar_throne" create_wargoal = { target = PAK type = take_state_focus generator = { 442 } } add_war_support = 0.06 add_ideas = PJB_throne_spirit }
+	}
+	focus = {
+		id = PJB_dasuya_timber
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_emigration_remit }
+		x = 2 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_dasuya_timber" 986 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_mukerian_foundry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = PJB_dasuya_timber }
+		x = 2 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_mukerian_foundry" 986 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_tanda_sports
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PJB_mukerian_foundry }
+		x = 2 y = 8 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_tanda_sports" add_political_power = 60 986 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_kartarpur_corridor
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_tanda_sports }
+		x = 2 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_kartarpur_corridor" add_stability = 0.05 add_political_power = 60 add_ideas = PJB_corridor_spirit }
+	}
+	focus = {
+		id = PJB_dera_baba_nanak
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_kartarpur_corridor }
+		x = 2 y = 10 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_dera_baba_nanak" add_stability = 0.04 add_war_support = 0.02 }
+	}
+	focus = {
+		id = PJB_beas_bridge
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PJB_dera_baba_nanak }
+		x = 2 y = 11 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed PJB_beas_bridge" 986 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = PJB_mandala_circle
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PJB_beas_bridge }
+		x = 9
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_mandala_circle"
+			add_political_power = 80
+			set_country_flag = mandala_circle_read
+			country_event = { id = MAR_mandala.1 days = 2 }
+		}
+	}
+}

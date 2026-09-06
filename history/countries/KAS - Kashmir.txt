@@ -1,0 +1,50 @@
+capital = 441
+set_research_slots = 2
+set_stability = 0.55
+set_war_support = 0.20
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	gw_artillery = 1
+
+	CAS1 = 1
+	early_fighter = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		CAS1 = 1
+	}
+}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_convoys = 5
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	fascism = 5
+	communism = 5
+	neutrality = 75
+}
+add_ideas = {
+	KAS_kashmir_legacy
+}
+recruit_character = KAS_hari
+recruit_character = KAS_abdullah
+recruit_character = KAS_bakshi
+recruit_character = KAS_rajinder
+recruit_character = KAS_mahajan
+promote_character = KAS_hari
+set_oob = "KAS_1936"
+set_naval_oob = "KAS_1936_naval"
+set_air_oob = "KAS_1936_air"

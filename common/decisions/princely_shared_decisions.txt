@@ -1,0 +1,202 @@
+princely_shared_category = {
+
+	princely_hold_durbar = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 49 }
+		visible = { always = yes }
+		cost = 50
+		days_re_enable = 60
+		ai_will_do = { base = 10 }
+		complete_effect = {
+			add_stability = 0.04
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+
+	princely_military_parade = {
+		icon = generic_manpower
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 39 has_war_support < 0.9 }
+		visible = { always = yes }
+		cost = 40
+		days_re_enable = 90
+		ai_will_do = { base = 8 }
+		complete_effect = {
+			add_war_support = 0.05
+			army_experience = 5
+			custom_effect_tooltip = princely_parade_tt
+		}
+	}
+
+	princely_industrial_drive = {
+		icon = generic_production
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 74 }
+		visible = { always = yes }
+		cost = 75
+		days_re_enable = 120
+		ai_will_do = { base = 8 }
+		complete_effect = {
+			random_owned_state = {
+				add_building_construction = { type = industrial_complex level = 1 instant_build = no }
+			}
+			custom_effect_tooltip = princely_drive_tt
+		}
+	}
+
+	princely_court_intrigue = {
+		icon = generic_intrigue
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_stability > 0.4 }
+		visible = { always = yes }
+		cost = 0
+		days_re_enable = 45
+		ai_will_do = { base = 5 }
+		complete_effect = {
+			add_stability = -0.03
+			add_political_power = 100
+			custom_effect_tooltip = princely_intrigue_tt
+		}
+	}
+
+	princely_send_mission_pune = {
+		icon = generic_alliance
+		allowed = {
+			NOT = { original_tag = MAR }
+		}
+		available = {
+			has_political_power > 24
+			NOT = { has_war_with = MAR }
+		}
+		visible = {
+			NOT = { original_tag = MAR }
+		}
+		cost = 25
+		days_re_enable = 90
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+			MAR = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+			custom_effect_tooltip = princely_mission_tt
+		}
+	}
+	princely_grand_grand_review = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_war_support = 0.05
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_state_banquet = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_stability = 0.05
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_war_bonds = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_political_power = 120
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_militia_muster = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_manpower = 15000
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_naval_review = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			navy_experience = 25
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_air_display = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			air_experience = 25
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_census_update = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_political_power = 60
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_arsenal_audit = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			army_experience = 15
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+	princely_grand_durbar_oath = {
+		icon = generic_crown
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = { has_political_power > 89 }
+		visible = { always = yes }
+		cost = 90
+		days_re_enable = 180
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_stability = 0.03
+			add_war_support = 0.03
+			custom_effect_tooltip = princely_durbar_tt
+		}
+	}
+}

@@ -4,24 +4,26 @@ state={
 	name="STATE_436" # Central provinces, was Jabalpur
 	manpower = 17990937
 	
-	state_category = rural
+	state_category = town
+	buildings_max_level_factor=1.800
 	
 	resources={
-		chromium=4 # was: 6
-		coal = 7 #initial distribution
+		chromium=4
+		steel=7
 	}
 
 	history={
-		owner = CIP
-		add_core_of = CIP
+		owner = MAR
+		add_extra_state_shared_building_slots = 8
+		add_core_of = MAR
 		
 		buildings = {
-			industrial_complex = 3
-			arms_factory = 2
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 8
+			arms_factory = 4
 		}
 		victory_points = {
-			4950 5
+		4950 5
 		}
 
 	}

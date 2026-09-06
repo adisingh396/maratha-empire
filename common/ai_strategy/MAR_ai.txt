@@ -1,20 +1,92 @@
 MAR_industrial_focus = {
+	allowed = { original_tag = MAR }
 	enable = { tag = MAR }
-	type = research_weight_factor
-	id = industry
-	value = 200
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = research_weight_factor
+		id = concentrated_industry
+		value = 200
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 100
+	}
 }
 MAR_naval_focus = {
+	allowed = { original_tag = MAR }
 	enable = { tag = MAR }
-	type = research_weight_factor
-	id = naval_equipment
-	value = 150
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = research_weight_factor
+		id = mtg_landing_craft
+		value = 150
+	}
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 100
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 15
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 60
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 10
+	}
+}
+MAR_convoy_discipline = {
+	allowed = { original_tag = MAR }
+	enable = { tag = MAR }
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = -10
+	}
+}
+MAR_army_build = {
+	allowed = { original_tag = MAR }
+	enable = { tag = MAR }
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 45
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
 }
 MAR_alliance_prio = {
+	allowed = { original_tag = MAR }
 	enable = { tag = MAR }
-	type = alliance
-	id = HYD
-	value = 50
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = alliance
+		id = HYD
+		value = 50
+	}
 }
 MAR_princely_aggressive = {
 	enable = {
@@ -26,7 +98,10 @@ MAR_princely_aggressive = {
 			tag = HIN
 		}
 	}
-	type = antagonize
-	id = MAR
-	value = 25
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = antagonize
+		id = MAR
+		value = 25
+	}
 }

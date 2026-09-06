@@ -7,7 +7,22 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
+
+	CAS1 = 1
+	early_fighter = 1
 }
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		CAS1 = 1
+	}
+}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
 set_convoys = 8
 set_politics = {
 	ruling_party = neutrality
@@ -23,5 +38,10 @@ set_popularities = {
 }
 add_ideas = { RJP_rajput_legacy }
 recruit_character = RJP_ganga
+recruit_character = RJP_man_singh
+recruit_character = RJP_umaid
+recruit_character = RJP_bhupal
+recruit_character = RJP_manubhai
 promote_character = RJP_ganga
 set_oob = "RJP_1936"
+set_air_oob = "RJP_1936_air"

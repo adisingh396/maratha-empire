@@ -1,0 +1,9 @@
+HYD = {
+	male = {
+		names = { Abid Amit Arjun Bahadur Dev El Karan Kasim Kishan Laik Moin Osman Pratap Ravi Rohan Suraj Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { Ali Das Edroos Gupta Hasan Khan Kulkarni Nair Nawaz Patel Razvi Reddy Sharma Singh Verma Yar }
+}

@@ -1,0 +1,39 @@
+characters = {
+ASM_saadulah = {
+	name = ASM_saadulah
+	portraits = {
+		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+ASM_bordoloi = {
+	name = ASM_bordoloi
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	country_leader = {
+		ideology = liberalism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+ASM_fakhruddin = {
+	name = ASM_fakhruddin
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_fakhruddin_counsel
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+}

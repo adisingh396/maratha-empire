@@ -1,0 +1,103 @@
+units = {
+	fleet = {
+		name = "BEN Main Fleet"
+		naval_base = 4245
+		task_force = {
+			name = "BEN Battle Squadron"
+			location = 4245
+			ship = { name = "INS BEN BAT 1" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BEN version_name = "Battleship Class" } } }
+			ship = { name = "INS BEN BAT 2" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BEN version_name = "Battleship Class" } } }
+			ship = { name = "INS BEN BAT 3" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BEN version_name = "Battleship Class" } } }
+			ship = { name = "INS BEN BAT 4" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BEN version_name = "Battleship Class" } } }
+			ship = { name = "INS BEN HEA 5" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 6" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 7" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 8" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 9" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 10" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 11" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 12" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS BEN HEA 13" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BEN version_name = "Heavy_Cruiser Class" } } }
+		}
+		task_force = {
+			name = "BEN Cruiser Squadron"
+			location = 4245
+			ship = { name = "INS BEN LIG 14" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 15" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 16" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 17" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 18" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 19" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 20" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 21" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 22" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 23" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 24" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN LIG 25" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BEN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS BEN DES 26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 30" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 31" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 32" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 33" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 34" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 35" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 36" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 37" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 38" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 39" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 40" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 41" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 42" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 43" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 44" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 45" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 46" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 47" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 48" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 49" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+			ship = { name = "INS BEN DES 50" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BEN version_name = "Destroyer Class" } } }
+		}
+		task_force = {
+			name = "BEN Submarine Flotilla"
+			location = 4245
+			ship = { name = "INS BEN SS 51" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 52" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 53" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 54" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 56" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 57" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 58" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 59" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 60" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 61" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 62" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 63" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 64" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 65" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 66" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 67" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 68" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 69" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 70" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 71" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 72" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 73" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 74" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 75" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 76" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 77" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 78" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 79" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 80" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 81" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 82" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 83" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 84" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+			ship = { name = "INS BEN SS 85" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BEN version_name = "Submarine Class" } } }
+		}
+	}
+}

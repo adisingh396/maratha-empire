@@ -1,0 +1,9 @@
+SIN = {
+	male = {
+		names = { Allah Amit Arjun Dev Karan Kishan Pratap Ravi Rohan Soomro Suraj Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { "Bakhsh Soomro" Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
+}

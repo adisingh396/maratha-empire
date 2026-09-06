@@ -1,0 +1,34 @@
+characters = {
+BEN_huq = {
+	name = "A. K. Fazlul Huq"
+	portraits = {
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+BEN_bose = {
+	name = "Subhas Chandra Bose"
+	portraits = {
+		army = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { warmonger }
+		expire = "1965.1.1"
+		id = -1
+	}
+	corps_commander = {
+		traits = { aggressive_assaulter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+}

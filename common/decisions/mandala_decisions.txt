@@ -1,0 +1,313 @@
+mandala_politics_category = {
+
+	mandala_read_the_circle = {
+		icon = generic_intelligence
+		allowed = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_political_power > 24
+			NOT = { has_country_flag = mandala_circle_read }
+		}
+		visible = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 25
+		ai_will_do = { base = 10 }
+		complete_effect = {
+			set_country_flag = mandala_circle_read
+			country_event = { id = MAR_mandala.1 days = 1 }
+		}
+	}
+
+	mandala_mark_the_ari = {
+		icon = generic_war
+		allowed = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_country_flag = mandala_circle_read
+			has_political_power > 19
+		}
+		visible = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 20
+		ai_will_do = { base = 8 }
+		complete_effect = {
+			country_event = { id = MAR_mandala.2 days = 1 }
+		}
+	}
+
+	mandala_court_mitra = {
+		icon = generic_alliance
+		allowed = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_country_flag = mandala_circle_read
+			has_political_power > 29
+		}
+		visible = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 30
+		ai_will_do = { base = 8 }
+		complete_effect = {
+			country_event = { id = MAR_mandala.3 days = 1 }
+		}
+	}
+
+	mandala_hire_mleccha_mercenaries = {
+		icon = generic_manpower
+		allowed = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+				original_tag = SIN
+				original_tag = KAS
+				original_tag = WIS
+				original_tag = ORI
+				original_tag = ASM
+				original_tag = PAK
+			}
+		}
+		available = {
+			has_manpower > 9999
+			has_political_power > 39
+		}
+		visible = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+				original_tag = SIN
+				original_tag = KAS
+				original_tag = WIS
+				original_tag = ORI
+				original_tag = ASM
+				original_tag = PAK
+			}
+		}
+		cost = 40
+		ai_will_do = { base = 6 }
+		complete_effect = {
+			add_manpower = 20000
+			add_stability = -0.02
+			add_war_support = 0.02
+			custom_effect_tooltip = MAR_mandala_mercenary_tt
+		}
+	}
+
+	mandala_proclaim_digvijaya = {
+		icon = generic_national_unity
+		allowed = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_war_support > 0.5
+			has_political_power > 74
+			NOT = { has_country_flag = mandala_chakravartin }
+		}
+		visible = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 75
+		ai_will_do = { base = 5 }
+		complete_effect = {
+			country_event = { id = MAR_mandala.7 days = 1 }
+		}
+	}
+
+	mandala_convene_league = {
+		icon = generic_major_alliance
+		allowed = {
+			OR = {
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_opinion = { target = MAR value < 0 }
+			has_political_power > 49
+			NOT = { has_country_flag = mandala_league_member }
+			has_war = no
+		}
+		visible = {
+			OR = {
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 50
+		ai_will_do = { base = 5 }
+		complete_effect = {
+			country_event = { id = MAR_mandala.4 days = 1 }
+		}
+	}
+
+	mandala_accept_maratha_silver = {
+		icon = generic_trade
+		allowed = {
+			OR = {
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_country_flag = mandala_league_member
+			has_war = no
+		}
+		visible = {
+			OR = {
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 0
+		ai_will_do = { base = 3 }
+		complete_effect = {
+			country_event = { id = MAR_mandala.5 days = 1 }
+		}
+	}
+
+	mandala_feed_the_network = {
+		icon = generic_resistance
+		allowed = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		available = {
+			has_stability < 0.50
+			has_political_power > 29
+		}
+		visible = {
+			OR = {
+				original_tag = MAR
+				original_tag = HYD
+				original_tag = MYS
+				original_tag = RJP
+				original_tag = HIN
+				original_tag = PJB
+				original_tag = BEN
+				original_tag = MDR
+			}
+		}
+		cost = 30
+		ai_will_do = { base = 4 }
+		complete_effect = {
+			country_event = { id = MAR_mandala.6 days = 1 }
+		}
+	}
+}

@@ -1,9 +1,10 @@
 air_wings = {
-	1349 = {
-		fighter = { owner = MAR amount = 40 version_name = "early_fighter" }
-		cas = { owner = MAR amount = 20 version_name = "CAS1" }
+	429 = {
+		fighter_equipment_0 = { owner = "MAR" amount = 200 }
+		CAS_equipment_1 = { owner = "MAR" amount = 200 }
+		CAS_equipment_1 = { owner = "MAR" amount = 100 }
 	}
-	12137 = {
-		fighter = { owner = MAR amount = 20 version_name = "early_fighter" }
+	983 = {
+		fighter_equipment_0 = { owner = "MAR" amount = 200 }
 	}
 }

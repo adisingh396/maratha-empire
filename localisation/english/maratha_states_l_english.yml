@@ -1,31 +1,96 @@
-l_english:
- STATE_428:0 "Gujarat"
- STATE_435:0 "Bihar"
+﻿l_english:
+
+ STATE_428:0 "Lata"
+
+ STATE_435:0 "Magadha"
+
  STATE_436:0 "Avanti"
+
  STATE_437:0 "Mahakoshal"
+
  STATE_438:0 "Awadh"
+
  STATE_430:0 "Bengal"
- STATE_431:0 "Bengal"
- STATE_442:0 "Peshawar"
- STATE_443:0 "Sindh"
- STATE_1012:0 "Kalat"
+ STATE_431:0 "Calcutta"
+
+ STATE_442:0 "Gandhara"
+
+ STATE_443:0 "Sindhu"
+ BEN:0 "Bengal"
+ BEN_DEF:0 "Bengal"
+ BEN_ADJ:0 "Bengali"
  STATE_444:0 "Makran"
+
  STATE_445:0 "Quetta"
+
  STATE_423:0 "Tamilakam"
+
  STATE_982:0 "Tamilakam"
- STATE_439:0 "Delhi"
- PAK:0 "Sikh Empire"
- PAK_DEF:0 "the Sikh Empire"
- PAK_ADJ:0 "Sikh"
- BAN:0 "Bengal"
- BAN_DEF:0 "Bengal"
- BAN_ADJ:0 "Bengali"
+
+ STATE_439:0 "Indraprastha"
+
+ PAK:0 "Gandhara"
+
+ PAK_DEF:0 "Gandhara"
+
+ PAK_ADJ:0 "Gandharan"
+
+
+
+
  WIS:0 "Gujarat"
+
  WIS_DEF:0 "Gujarat"
+
  WIS_ADJ:0 "Gujarati"
+
  SIN:0 "Sindh"
- HIN:0 "Awadh Federation"
+
+ HIN:0 "Awadh"
+
+ HIN_DEF:0 "Awadh"
+
+ HIN_ADJ:0 "Awadhi"
+
  MDR:0 "Dravida Nadu"
+
  ORI:0 "Kalinga"
+
  ASM:0 "Assam"
+
  PJB:0 "Sikh Empire"
+
+ STATE_425:0 "Karnata"
+
+ STATE_427:0 "Golconda"
+
+ STATE_429:0 "Aparanta"
+
+ STATE_433:0 "Maru"
+
+ STATE_439:0 "Indraprastha"
+
+ STATE_440:0 "Madra"
+
+ STATE_441:0 "Kashmira"
+
+ STATE_426:0 "Kalinga"
+
+ STATE_432:0 "Kamarupa"
+
+ STATE_434:0 "Lohit"
+
+ STATE_983:0 "Maharashtra"
+
+ STATE_984:0 "Dandakaranya"
+
+ STATE_986:0 "Malwa"
+
+ STATE_989:0 "Audumbara"
+
+ STATE_990:0 "Kangleipak"
+
+ STATE_991:0 "Gopagiri"
+
+ STATE_424:0 "Andhra"
+

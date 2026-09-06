@@ -1,0 +1,28 @@
+characters = {
+WIS_gaekwad = {
+	name = "Pratap Singh Gaekwad"
+	portraits = {
+		civilian = { large = GFX_portrait_mar_madhavrao small = GFX_portrait_mar_madhavrao_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+WIS_jamsahib = {
+	name = "Digvijaysinhji Jam Sahib"
+	portraits = {
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	corps_commander = {
+		traits = { aggressive_assaulter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+}

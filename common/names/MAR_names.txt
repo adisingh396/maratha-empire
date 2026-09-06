@@ -1,5 +1,9 @@
 MAR = {
-	male = { Shivaji Baji Madhav Rao Santaji Moropant Kanhoji Ibrahim Nana Ganga Hari }
-	female = { Tarabai Jijabai Ahilyabai Rani }
-	surnames = { Bhonsle Holkar Scindia Gaekwad Peshwe Angre Ghorpade Fadnavis More Jadhav Shinde }
+	male = {
+		names = { Amit Arjun Bajirao Chhatrapati Dev Ibrahim Kanhoji Karan Kishan Madhavrao Maharani Moropant Nana Peshwa Pratap Ravi Rohan Santaji Shivaji Suraj Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Noor Saraswati Savitri Tara Tarabai }
+	}
+	surnames = { "Angre III" "Angre Iii" "Baji Rao I" "Ghorpade II" "Ghorpade Ii" "Khan Gardi" "Madhavrao III" "Shivaji Maharaj" Das Fadnavis Gardi Gupta Iii Inayat Khan Kulkarni Nair Operative Patel Reddy Sharma Singh Tarabai Trimbak Verma }
 }

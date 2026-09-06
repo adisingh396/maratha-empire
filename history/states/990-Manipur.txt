@@ -5,18 +5,20 @@ state={
 		1525 1553 12322  
 	}
 	state_category = rural
-	manpower = 445606
+	manpower = 600000
 	history={
 		owner = MPU
+		add_extra_state_shared_building_slots = 1
 		add_core_of = MPU
 		buildings = {
+			air_base = 1
 			industrial_complex = 3
 			arms_factory = 0
 			infrastructure = 1
 		}
 
 		victory_points = {
-			1553 5
+		1553 5
 		}
 	}
 	buildings_max_level_factor=1.000

@@ -4,14 +4,15 @@ state={
 
 	history={
 		owner = HIN
+		add_extra_state_shared_building_slots = 6
 		add_core_of = HIN
 		victory_points = {
-			4516 1 
+		4516 1
 		}
 		buildings = {
-			industrial_complex = 3
-			arms_factory = 1
-			infrastructure = 3 #was: 5
+			industrial_complex = 8
+			arms_factory = 2
+			infrastructure = 3
 
 		}
 
@@ -23,11 +24,11 @@ state={
 	manpower=36574500
 
 	resources = {
-		coal = 15 # initial distribution
+		steel = 14
 	}
 
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = town
 
 	local_supplies=0.0 
 }

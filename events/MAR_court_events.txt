@@ -1,0 +1,127 @@
+# MAR_court events (MAR_court.1 -> MAR_court.6 court chain, MAR_court.10 news)
+# Court chain (MAR_court.1 -> MAR_court.6), Betrayal news (MAR_court.10)
+
+add_namespace = MAR_court
+
+country_event = {
+	id = MAR_court.1
+	title = MAR_court_1_title
+	desc = MAR_court_1_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_1_opt_a
+		add_political_power = 50
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+	option = {
+		name = MAR_court_1_opt_b
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_court.2
+	title = MAR_court_2_title
+	desc = MAR_court_2_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_2_opt_a
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		MAR = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		set_country_flag = nizam_courted
+	}
+	option = {
+		name = MAR_court_2_opt_b
+		add_political_power = 60
+		add_war_support = 0.05
+		set_country_flag = nizam_spurned
+	}
+}
+
+country_event = {
+	id = MAR_court.3
+	title = MAR_court_3_title
+	desc = MAR_court_3_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_3_opt_a
+		add_war_support = 0.08
+		create_wargoal = { target = RJP type = take_state_focus generator = { 433 } }
+		hidden_effect = { news_event = { id = MAR_court.10 hours = 6 } }
+	}
+	option = {
+		name = MAR_court_3_opt_b
+		add_stability = 0.05
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = MAR_court.4
+	title = MAR_court_4_title
+	desc = MAR_court_4_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_4_opt_a
+		add_political_power = 70
+		428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+	}
+	option = {
+		name = MAR_court_4_opt_b
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_court.5
+	title = MAR_court_5_title
+	desc = MAR_court_5_desc
+	picture = GFX_report_event_generic_navy
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_5_opt_a
+		navy_experience = 25
+		add_opinion_modifier = { target = HYD modifier = maratha_cultural_ties }
+	}
+	option = {
+		name = MAR_court_5_opt_b
+		add_political_power = 60
+		add_war_support = 0.04
+	}
+}
+
+country_event = {
+	id = MAR_court.6
+	title = MAR_court_6_title
+	desc = MAR_court_6_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_6_opt_a
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		MAR = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		set_country_flag = kashmir_courted
+	}
+	option = {
+		name = MAR_court_6_opt_b
+		add_stability = 0.04
+		create_wargoal = { target = PAK type = take_state_focus generator = { 442 } }
+	}
+}
+
+news_event = {
+	id = MAR_court.10
+	title = MAR_court_10_title
+	desc = MAR_court_10_desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = MAR_court_10_opt
+	}
+}

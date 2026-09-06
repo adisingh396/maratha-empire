@@ -12,17 +12,19 @@ state={
 	history = {
 
 		owner = ASM
+		add_extra_state_shared_building_slots = 2
 		add_core_of = ASM
 		add_core_of = TIB
 
 		buildings = {
-			industrial_complex = 3
-			arms_factory = 0
+			air_base = 1
+			industrial_complex = 1
+			arms_factory = 1
 			infrastructure = 1
 		}
 
 		victory_points = {
-			1116 1 # Itanagar 
+		1116 1
 		}
 
 	}

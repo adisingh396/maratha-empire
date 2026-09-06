@@ -8,7 +8,7 @@
 
 ## Features
 - **New country** `MAR = "countries/Maratha.txt"` • saffron `255,102,0` • `MAR_INF_01`/`MAR_GAR_01` names
-- **Balkanized India** — 26 state overrides `history/states/*.txt`: `HYD` 427 Hyderabad strong (5civ/4mil), `MYS` 425, `RJP` 433/989/991, `WIS` 428 Gujarat, `SIN` 443, `KAS` 441 Kashmir, `PAK` 440/442 Punjab, `BAN` 430/431 Bengal, `CIP` 436/437 etc. RAJ reduced to residual (RAJ_1936 empty `units={}`).
+- **Balkanized India** — 26 state overrides `history/states/*.txt`: `HYD` 427 Hyderabad strong (5civ/4mil), `MYS` 425, `RJP` 433/989/991, `WIS` 428 Gujarat, `SIN` 443, `KAS` 441 Kashmir, `PAK` 440/442 Punjab, `BEN` 430/431 Bengal, `CIP` 436/437 etc. RAJ reduced to residual (RAJ_1936 empty `units={}`).
 - **Focus tree** `common/national_focus/maratha_focus.txt` — 50 focuses (Germany/Kaiserreich-scale): Modernist/Industrial (Tata Steel/Bombay Stock/Synthetic, Pune Univ), Rajput martial + Sainik/Gardi artillery (Udgir 1760 history), Peshwa restoration (Peshwa Privy → Hindavi Swarajya vs Modernist Republic), Soft vs Hard `Mandal of Influence` (Cultural Diplomacy vs Military Mission → Hyderabad/Mysore annex vs Himalayan puppets), Akhand Bharat unification (cores all empire states), Angre navy → Blue-Water → Carrier → World Navy → `Pax Marathica`. All `GFX_goal_generic_*` validated, decompressed layout `x0-15`.
 - **Leaders** `common/characters/MAR_characters.txt` (Madhavrao III + Ibrahim Khan Gardi) + `interface/MAR_portraits.gfx` fallback to `RAJ` generic DDS.
 - **Ideas** `MAR_peshwai_legacy`/`MAR_rajput_dominance`/`MAR_moderate_industrial_base` + 4 more.

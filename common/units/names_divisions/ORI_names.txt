@@ -1,0 +1,11 @@
+ORI_INF_01 = {
+  name = "ORI Infantry Division"
+  for_countries = { ORI }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d ORI Division"
+  ordered = {
+    1 = { "%d ORI Division" }
+    2 = { "%d ORI Division" }
+  }
+}

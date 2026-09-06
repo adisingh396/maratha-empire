@@ -1,202 +1,4513 @@
 ﻿l_english:
+
  MAR: "Maratha Empire"
+
  MAR_DEF: "the Maratha Empire"
+
  MAR_ADJ: "Marathi"
+
+ HYD: "Hyderabad"
+
+ HYD_DEF: "Hyderabad"
+
+ HYD_ADJ: "Hyderabadi"
+
+ MYS: "Mysore"
+
+ MYS_DEF: "Mysore"
+
+ MYS_ADJ: "Mysorean"
+ BEN: "Bengal"
+ BEN_DEF: "Bengal"
+ BEN_ADJ: "Bengali"
+ RJP_DEF: "Rajputana"
+
+ RJP_ADJ: "Rajput"
+
+ HIN: "Awadh"
+
+ HIN_DEF: "Awadh"
+
+ HIN_ADJ: "Awadhi"
+
+ PJB: "Sikh Empire"
+
+ PJB_DEF: "the Sikh Empire"
+
+ PJB_ADJ: "Sikh"
+
+ BEN: "Bengal"
+
+ BEN_DEF: "Bengal"
+
+ BEN_ADJ: "Bengali"
+
+ MDR: "Tamilakam"
+
+ MDR_DEF: "Tamilakam"
+
+ MDR_ADJ: "Tamil"
+
+ TRV: "Travancore"
+
+ TRV_DEF: "Travancore"
+
+ TRV_ADJ: "Travancorean"
+
+ WIS: "Gujarat"
+
+ WIS_DEF: "Gujarat"
+
+ WIS_ADJ: "Gujarati"
+
+ SIN: "Sindh"
+
+ SIN_DEF: "Sindh"
+
+ SIN_ADJ: "Sindhi"
+
+ KAS: "Kashmir"
+
+ KAS_DEF: "Kashmir"
+
+ KAS_ADJ: "Kashmiri"
+
+ PAK: "Gandhara"
+
+ PAK_DEF: "Gandhara"
+
+ PAK_ADJ: "Gandharan"
+
+ ORI: "Kalinga"
+
+ ORI_DEF: "Kalinga"
+
+ ORI_ADJ: "Kalingan"
+
+ ASM: "Assam"
+
+ ASM_DEF: "Assam"
+
+ ASM_ADJ: "Assamese"
+
+ MPU: "Manipur"
+
+ MPU_DEF: "Manipur"
+
+ MPU_ADJ: "Manipuri"
+
  MAR_peshwai_legacy: "Peshwai Legacy"
+
  MAR_peshwai_legacy_desc: "The shadow of the Peshwas still guides Pune."
+
  MAR_rajput_dominance: "Rajput Martial Dominance"
+
  MAR_rajput_dominance_desc: "Rajput infantry forms the steel spine of the Maratha Army."
+
  MAR_moderate_industrial_base: "Moderate Industrial Base"
+
  MAR_moderate_industrial_base_desc: "Not America, not Raj—Pune forges its own path."
+
  MAR_agrarian_hinterland: "Agrarian Hinterland"
+
  MAR_moderate_industrial_base_desc2: ""
+
  MAR_rapid_industrialization_spirit: "Rapid Industrial Surge"
+
  MAR_hindavi_swarajya: "Hindavi Swarajya"
+
  MAR_maratha_navy_tradition: "Angre Naval Tradition"
+
  MAR_world_mark: "World Mark"
+
  POLITICS_MADHAVRAO_III_DESC: "Restored Peshwa, balancing tradition and modern cannons."
 
+
+
  MAR_legacy_of_the_peshwas: "Legacy of the Peshwas"
+
  MAR_legacy_of_the_peshwas_desc: "The Maratha Confederacy did not crumble. Reclaim Baji Rao's dream with factories and fleets."
+
  MAR_retool_the_orange_soil: "Retool the Orange Soil"
+
  MAR_dakshina_industrial_corridor: "Dakshina Industrial Corridor"
+
  MAR_hindustan_aeronautics_revival: "Hindustan Aeronautics Revival"
+
  MAR_pune_university_expansion: "Expand Pune University"
+
  MAR_marathi_literacy_mission: "Marathi Literacy Mission"
+
  MAR_rapid_industrial_surge: "Rapid Industrial Surge"
+
  MAR_rajput_martial_dominance: "Rajput Martial Dominance"
+
  MAR_sainik_schools: "Sainik Schools"
+
  MAR_restore_the_peshwai: "Restore the Peshwai"
+
  MAR_peshwa_privy_council: "Peshwa Privy Council"
+
  MAR_hindavi_swarajya: "Hindavi Swarajya"
+
  MAR_modernist_republic: "Modernist Republic"
+
  MAR_saffron_banner_over_delhi: "Saffron Banner over Delhi"
+
  MAR_hindu_rashtra_vanguard: "Hindu Rashtra Vanguard"
+
  MAR_sangathan_militia: "Sangathan Militia"
+
  MAR_world_mark_diplomacy: "World Mark Diplomacy"
+
  MAR_mandal_of_influence: "Mandal of Influence"
+
  MAR_cultural_diplomacy: "Cultural Diplomacy (Soft Power)"
+
  MAR_akhand_economic_sphere: "Akhand Economic Sphere"
+
  MAR_puppet_the_himalayas: "Secure the Himalayas"
+
  MAR_maratha_military_mission: "Maratha Military Mission (Hard Power)"
+
  MAR_annex_hyderabad_mysore: "Integrate Hyderabad & Mysore"
+
  MAR_war_for_the_indus: "War for the Indus"
+
  MAR_dominate_indian_ocean: "Dominate the Indian Ocean"
+
  MAR_akhand_bharat_unification: "Akhand Bharat Unification"
+
  MAR_angre_naval_legacy: "Angre Naval Legacy"
+
  MAR_bombay_dockyard_expansion: "Bombay Dockyard Expansion"
+
  MAR_konkan_fleet: "Konkan Fleet"
+
  MAR_blue_water_ambition: "Blue-Water Ambition"
+
  MAR_carrier_dream: "Carrier Dream"
+
  MAR_indian_ocean_lifeline: "Indian Ocean Lifeline"
+
  MAR_project_world_navy: "Project World Navy"
+
  MAR_seat_at_the_table: "Seat at the Table"
+
  MAR_export_the_model: "Export the Model"
 
+
+
  MAR_legacy_tt: "Opens the path to empire"
+
  MAR_mandal_tt: "Choose soft puppetry or hard conquest for South Asia"
+
  MAR_soft_integration_tt: "Southern states embrace the sphere"
+
  MAR_akhand_bharat_tt: "All Indian states become cores — the empire made whole"
+
  MAR_world_navy_tt: "The fleet can contest any ocean"
 
+
+
  MAR_integrate_deccan_states: "Integrate Deccan States"
+
  MAR_integrate_deccan_states_desc: "Hyderabad's Nizam yields to Pune."
+
  MAR_integrate_rajputana: "Integrate Rajputana"
+
  MAR_integrate_rajputana_desc: "Rajput sardars formalize their oath."
+
  MAR_integrate_bengal_bihar: "Integrate Bengal & Bihar"
+
  MAR_integration_category: "Imperial Integration"
+
  MAR_integration_category_desc: "Forge a unified core from conquest."
 
+
+
  MAR_retool_the_orange_soil_desc: ""
+
  MAR_dakshina_industrial_corridor_desc: ""
+
  MAR_hindustan_aeronautics_revival_desc: ""
+
  MAR_pune_university_expansion_desc: ""
+
  MAR_marathi_literacy_mission_desc: ""
+
  MAR_rapid_industrial_surge_desc: ""
+
  MAR_rajput_martial_dominance_desc: ""
+
  MAR_sainik_schools_desc: ""
+
  MAR_restore_the_peshwai_desc: ""
+
  MAR_peshwa_privy_council_desc: ""
+
  MAR_hindavi_swarajya_desc: ""
+
  MAR_modernist_republic_desc: ""
+
  MAR_saffron_banner_over_delhi_desc: ""
+
  MAR_hindu_rashtra_vanguard_desc: ""
+
  MAR_sangathan_militia_desc: ""
+
  MAR_world_mark_diplomacy_desc: ""
+
  MAR_mandal_of_influence_desc: ""
+
  MAR_cultural_diplomacy_desc: ""
+
  MAR_akhand_economic_sphere_desc: ""
+
  MAR_puppet_the_himalayas_desc: ""
+
  MAR_maratha_military_mission_desc: ""
+
  MAR_annex_hyderabad_mysore_desc: ""
+
  MAR_war_for_the_indus_desc: ""
+
  MAR_dominate_indian_ocean_desc: ""
+
  MAR_akhand_bharat_unification_desc: ""
+
  MAR_angre_naval_legacy_desc: ""
+
  MAR_bombay_dockyard_expansion_desc: ""
+
  MAR_konkan_fleet_desc: ""
+
  MAR_blue_water_ambition_desc: ""
+
  MAR_carrier_dream_desc: ""
+
  MAR_indian_ocean_lifeline_desc: ""
+
  MAR_project_world_navy_desc: ""
+
  MAR_seat_at_the_table_desc: ""
+
  MAR_export_the_model_desc: ""
+
  MAR_tata_steel_consortium_desc: ""
+
  MAR_bombay_stock_exchange_desc: ""
+
  MAR_synthetic_refineries_desc: ""
+
  MAR_social_reforms_desc: ""
+
  MAR_armored_corps_desc: ""
+
  MAR_mountain_warfare_desc: ""
+
  MAR_modern_artillery_foundries_desc: ""
+
  MAR_constituent_assembly_desc: ""
+
  MAR_secular_civil_code_desc: ""
+
  MAR_federal_reforms_desc: ""
+
  MAR_air_force_modernization_desc: ""
+
  MAR_gardi_artillery_legacy_desc: ""
+
  MAR_joint_naval_exercises_desc: ""
+
  MAR_foreign_military_mission_desc: ""
+
  MAR_pax_marathica_desc: ""
+
  MAR_tata_steel_consortium: "Tata Steel Consortium"
+
  MAR_bombay_stock_exchange: "Bombay Stock Exchange"
+
  MAR_synthetic_refineries: "Synthetic Refineries"
+
  MAR_social_reforms: "Social Reforms"
+
  MAR_armored_corps: "Armored Corps"
+
  MAR_mountain_warfare: "Mountain Warfare School"
+
  MAR_modern_artillery_foundries: "Modern Artillery Foundries"
+
  MAR_constituent_assembly: "Constituent Assembly"
+
  MAR_secular_civil_code: "Secular Civil Code"
+
  MAR_federal_reforms: "Federal Reforms"
+
  MAR_air_force_modernization: "Air Force Modernization"
+
  MAR_gardi_artillery_legacy: "Gardi Artillery Legacy"
+
  MAR_joint_naval_exercises: "Joint Naval Exercises"
+
  MAR_foreign_military_mission: "Foreign Military Mission"
+
  MAR_pax_marathica: "Pax Marathica"
+
  MAR_news_1_title: "Peshwa Privy Council Restored"
+
  MAR_news_1_desc: "Pune announces the restoration of the Peshwai; the ghost of Udgir returns."
+
  MAR_news_1_opt: "Hindavi Swarajya lives"
+
  MAR_news_2_title: "Akhand Bharat Proclaimed"
+
  MAR_news_2_desc: "Maratha drums declare the subcontinent unified — the world watches."
+
  MAR_news_2_opt: "Witness history"
+
  MAR_news_3_title: "Gardi Artillery Returns"
+
  MAR_news_3_desc: "Ibrahim Khans legacy fires again from Pune foundries."
+
  MAR_news_3_opt: "For the Peshwa"
+
  MAR_news_10_title: "Deccan Stirs"
+
  MAR_news_10_desc: "Hyderabad eyes its lost dominion."
+
  MAR_news_10_opt: "Watch closely"
+
  HYD_deccan_tt: "Hyderabad cores Mysore and Konkan"
+
  HYD_alliance_tt: "Hyderabad aligns with Pune"
+
  RJP_confed_tt: "Rajput clans unite"
+
  MAR_pax_marathica_tt: "The Maratha order spans from Khyber to Cape Comorin"
+
  HYD_form_deccan_sultanate: "Form Deccan Sultanate"
+
  HYD_form_deccan_sultanate_desc: "Reclaim the Nizams 1759 domains."
+
  HYD_alliance_with_maratha: "Court the Marathas"
+
  HYD_betray_maratha: "Betray the Marathas"
+
  RJP_form_rajput_confederation: "Form Rajput Confederation"
+
  RJP_backstab_maratha: "Backstab Maratha"
+
  MYS_expand_karnataka: "Expand Karnatakan Workshops"
+
  MAR_shivaji: "Chhatrapati Shivaji Maharaj"
+
  MAR_shivaji_desc: "Founder of Hindavi Swarajya — the immortal ideal that guides every Maratha rifle."
+
  MAR_shivaji_legacy: "Shivaji Legacy"
+
  MAR_shivaji_trait: "Shivaji Legacy"
+
  MAR_shivaji_trait_desc: "Founder buff: stability and defense."
+
  MAR_bajirao: "Peshwa Baji Rao I"
+
  MAR_bajirao_desc: "Undefeated Peshwa — 41 battles, 41 victories. The archetype of Maratha blitzkrieg."
+
  MAR_bajirao_strategist: "Peshwa Strategist"
+
  MAR_tarabai: "Maharani Tarabai"
+
  MAR_tarabai_desc: "Warrior queen who held the empire against Mughals and British alike."
+
  MAR_tarabai_regent: "Tarabai Regent"
+
  MAR_tarabai_trait: "Regent"
+
  MAR_tarabai_trait_desc: "Political power and stability."
+
  MAR_madhavrao_desc: "Modern Peshwa — balances Peshwai tradition with khaki modernity. Leader of Akhand Bharat."
+
  MAR_gardi_desc: "Master of the Gardi guns — Udgir 1760 legacy, Maratha artillery reborn."
- MAR_gardi_chief: "Gardi Chief"l_english:
+
+ MAR_gardi_chief: "Gardi Chief"
+
  MARATHA_1936_NAME: "Maratha Dawn"
+
  MARATHA_1936_DESC: "Balkanized India 1936 — Maratha holds Maharashtra, princely states vie for Delhi"
+
  MAR_GATHERING_STORM_DESC: "The Peshwa's shadow over a fragmented subcontinent."
+
  HYD_GATHERING_STORM_DESC: "The Nizam eyes the Deccan."
+
  MYS_GATHERING_STORM_DESC: "Wadiyars weave silk and steel."
+
  RJP_GATHERING_STORM_DESC: "Rajput clans ready."
+
  SIN_GATHERING_STORM_DESC: "Indus calls."
+
  HIN_GATHERING_STORM_DESC: "Ganga's heart."
+
  MAR_OTHER_DESC: "Other Indian powers"
+
  HYD_osman_desc: "Asaf Jahi, faithful to the Nizam."
+
  MYS_wadiyar_desc: "Enlightened Mysore."
+
  RJP_ganga_desc: "Bikaner's hawk."
+
  KAS_hari_desc: "Lion of Kashmir."
+
  HYD_osman_legacy: "Nizam's Pride"
+
  MYS_wadiyar_legacy: "Wadiyar Silk"
+
  RJP_rajput_legacy: "Rajput Honor"
+
  MAR_overseas_zanzibar: "Zanzibar Expedition"
+
  MAR_overseas_zanzibar_desc: "Reclaim the Omani-Maratha trade post."
+
  MAR_zanzibar_tt: "Claims Zanzibar (992) from Britain"
+
  MAR_world_trade_network: "Global Maratha Trade"
+
  MAR_world_trade_network_desc: "From Pune to London, our dhows carry steel."
+
  MAR_volunteer_corps: "Maratha Volunteer Corps"
+
  MAR_volunteer_corps_desc: "Send volunteers where dharma calls."
+
  MAR_volunteers_tt: "Enables volunteer divisions"
+
  MAR_propaganda_ministry: "Ministry of Hindavi Propaganda"
+
  MAR_propaganda_ministry_desc: "The Peshwa's voice in every village."
+
  MAR_intelligence_network: "Maratha Intelligence Bureau"
+
  MAR_intelligence_network_desc: "Nana's spies abroad."
+
  MAR_world_trade_idea: "World Traders"
+
  MAR_propaganda_idea: "Hindavi Spirit"
+
+ MAR_bargir_host: "Bargir Host"
+
+ MAR_bargir_host_desc: "The old cavalry rides again."
+
+ MAR_silladari_system: "Silladari System"
+
+ MAR_silladari_system_desc: "Horsemen bring their own mounts."
+
+ MAR_pindari_scouts: "Pindari Scouts"
+
+ MAR_pindari_scouts_desc: "Reformed raiders range ahead."
+
+ MAR_maratha_lancers: "Maratha Lancers"
+
+ MAR_maratha_lancers_desc: "Spearhead of the Deccan."
+
+ MAR_cavalry_school_pune: "Pune Cavalry School"
+
+ MAR_cavalry_school_pune_desc: "Drill at the parade ground."
+
+ MAR_deccan_horse: "Deccan Horse"
+
+ MAR_deccan_horse_desc: "Bhimthadi steeds."
+
+ MAR_armored_recon: "Armored Recon"
+
+ MAR_armored_recon_desc: "Wheels for the horsemen."
+
+ MAR_tank_hunters: "Tank Hunters"
+
+ MAR_tank_hunters_desc: "Guns against steel."
+
+ MAR_vijaydurg_restore: "Vijaydurg Restored"
+
+ MAR_vijaydurg_restore_desc: "The oldest naval base breathes."
+
+ MAR_sindhudurg_glory: "Glory of Sindhudurg"
+
+ MAR_sindhudurg_glory_desc: "1664: Shivaji's rock in the sea."
+
+ MAR_suvarnadurg_guns: "Suvarnadurg Guns"
+
+ MAR_suvarnadurg_guns_desc: "Golden fort, iron guns."
+
+ MAR_watching_janjira: "Watching Janjira"
+
+ MAR_watching_janjira_desc: "The Siddis' rock, watched."
+
+ MAR_coastal_batteries: "Coastal Batteries"
+
+ MAR_coastal_batteries_desc: "Every creek a gun."
+
+ MAR_marine_garrison: "Marine Garrison"
+
+ MAR_marine_garrison_desc: "Soldiers of the forts."
+
+ MAR_fort_supply_fleet: "Fort Supply Fleet"
+
+ MAR_fort_supply_fleet_desc: "Grain boats under guard."
+
+ MAR_sea_fort_command: "Sea Fort Command"
+
+ MAR_sea_fort_command_desc: "One command, forty forts."
+
+ MAR_sea_fort_spirit: "Sea Fort Spirit"
+
+ MAR_sea_fort_spirit_desc: "The sea is a Maratha lake."
+
+ MAR_ibrahim_legacy: "Ibrahim's Legacy"
+
+ MAR_ibrahim_legacy_desc: "Gardi guns, reborn."
+
+ MAR_de_boigne_mission: "De Boigne Mission"
+
+ MAR_de_boigne_mission_desc: "Savoyard drill for Scindia's heirs."
+
+ MAR_french_gunners: "French Gunners"
+
+ MAR_french_gunners_desc: "Perron's batteries."
+
+ MAR_french_guns: "French Guns"
+
+ MAR_french_guns_desc: "The best artillery in India."
+
+ MAR_artillery_parks: "Artillery Parks"
+
+ MAR_artillery_parks_desc: "Parks of brass and iron."
+
+ MAR_siege_train: "Siege Train"
+
+ MAR_siege_train_desc: "Batter down any wall."
+
+ MAR_rocket_troops: "Rocket Troops"
+
+ MAR_rocket_troops_desc: "Fire arrows of the new age."
+
+ MAR_heavy_battery: "Heavy Battery"
+
+ MAR_heavy_battery_desc: "The big guns speak."
+
+ MAR_heavy_guns: "Heavy Guns"
+
+ MAR_heavy_guns_desc: "Weight of metal."
+
+ MAR_ashtapradhan: "Ashtapradhan"
+
+ MAR_ashtapradhan_desc: "Shivaji's council of eight, restored."
+
+ MAR_ashta_spirit: "Ashtapradhan Spirit"
+
+ MAR_ashta_spirit_desc: "Eight pillars, one roof."
+
+ MAR_peshwa_office: "Peshwa's Office"
+
+ MAR_peshwa_office_desc: "The chief minister rules daily."
+
+ MAR_amatya_finance: "Amatya's Finance"
+
+ MAR_amatya_finance_desc: "Count every damdi."
+
+ MAR_sachiv_records: "Sachiv's Records"
+
+ MAR_sachiv_records_desc: "Write everything down."
+
+ MAR_mantri_foreign: "Mantri Abroad"
+
+ MAR_mantri_foreign_desc: "Envoys in every durbar."
+
+ MAR_nyayadhish_courts: "Nyayadhish Courts"
+
+ MAR_nyayadhish_courts_desc: "Justice without price."
+
+ MAR_panditrao_alms: "Panditrao's Alms"
+
+ MAR_panditrao_alms_desc: "Dharma funded."
+
+ MAR_sumant_diplomacy: "Sumant's Diplomacy"
+
+ MAR_sumant_diplomacy_desc: "The foreign minister's web."
+
+ MAR_baroda_overture: "Baroda Overture"
+
+ MAR_baroda_overture_desc: "The Gaekwad listens."
+
+ MAR_indore_compact: "Indore Compact"
+
+ MAR_indore_compact_desc: "Holkar signs."
+
+ MAR_gwalior_accord: "Gwalior Accord"
+
+ MAR_gwalior_accord_desc: "Scindia agrees."
+
+ MAR_nagpur_treaty: "Nagpur Treaty"
+
+ MAR_nagpur_treaty_desc: "Bhonsle seals it."
+
+ MAR_sardar_durbar: "Sardars' Durbar"
+
+ MAR_sardar_durbar_desc: "Every chief under one roof."
+
+ MAR_sardar_spirit: "Sardar Spirit"
+
+ MAR_sardar_spirit_desc: "The confederacy stands."
+
+ MAR_confederate_army: "Confederate Army"
+
+ MAR_confederate_army_desc: "One lakh horse, one command."
+
+ MAR_maratha_commonwealth: "Maratha Commonwealth"
+
+ MAR_maratha_commonwealth_desc: "Equals under the Bhagwa."
+
+ MAR_tribute_fleet: "Tribute Fleet"
+
+ MAR_tribute_fleet_desc: "Sardars' ships, Peshwa's flag."
+
+ MAR_deccan_treaty: "Deccan Treaty"
+
+ MAR_deccan_treaty_desc: "Peace with the neighbors."
+
+ MAR_submarine_pens: "Submarine Pens"
+
+ MAR_submarine_pens_desc: "Concrete over the water."
+
+ MAR_underwater_wing: "Underwater Wing"
+
+ MAR_underwater_wing_desc: "Silent hunters."
+
+ MAR_mine_warfare: "Mine Warfare"
+
+ MAR_mine_warfare_desc: "Sow the sea."
+
+ MAR_frogmen_corps: "Frogmen Corps"
+
+ MAR_frogmen_corps_desc: "Swimmers with knives."
+
+ MAR_deccan_flyers: "Deccan Flyers"
+
+ MAR_deccan_flyers_desc: "First Maratha wings."
+
+ MAR_fighter_command: "Fighter Command"
+
+ MAR_fighter_command_desc: "Knights of the Deccan sky."
+
+ MAR_bomber_command: "Bomber Command"
+
+ MAR_bomber_command_desc: "Long arm of Pune."
+
+ MAR_transport_command: "Transport Command"
+
+ MAR_transport_command_desc: "Move armies by air."
+
+ MAR_wireless_experiments: "Wireless Experiments"
+
+ MAR_wireless_experiments_desc: "Talk without wires."
+
+ MAR_air_academy_ozar: "Air Academy at Ozar"
+
+ MAR_air_academy_ozar_desc: "Pilots from Nashik."
+
+ MAR_shaniwarwada: "Shaniwarwada"
+
+ MAR_shaniwarwada_desc: "The Peshwa's palace-fort."
+
+ MAR_pune_municipality: "Pune Municipality"
+
+ MAR_pune_municipality_desc: "Drains, lamps, order."
+
+ MAR_deccan_college: "Deccan College"
+
+ MAR_deccan_college_desc: "1868: learning on the hill."
+
+ MAR_fergusson_college: "Fergusson College"
+
+ MAR_fergusson_college_desc: "1885: Tilak's school."
+
+ MAR_khadakwasla_water: "Khadakwasla Water"
+
+ MAR_khadakwasla_water_desc: "Dam the Mutha."
+
+ MAR_sinhagad_road: "Sinhagad Road"
+
+ MAR_sinhagad_road_desc: "Pave the lion's fort."
+
+ HYD_osman_ali: "Osman Ali Khan"
+
+ HYD_laik_ali: "Mir Laik Ali"
+
+ HYD_laik_ali_desc: "Businessman-premier of the late Nizamate; held Hyderabad together through 1947."
+
+ HYD_laik_ali_admin: "Laik Ali Administration"
+
+ HYD_moin_nawaz: "Moin Nawaz Jung"
+
+ HYD_moin_nawaz_desc: "Salar Jung kin and finance minister; the Nizam's purse."
+
+ HYD_moin_purse: "Nizam's Purse"
+
+ HYD_el_edroos: "Syed Ahmed El Edroos"
+
+ HYD_el_edroos_desc: "Arab general commanding the Hyderabad State Forces."
+
+ HYD_el_edroos_cmd: "El Edroos Command"
+
+ HYD_abid_hasan: "Abid Hasan"
+
+ HYD_abid_hasan_desc: "Hyderabadi officer of the Indian National Army; coined 'Jai Hind'."
+
+ HYD_kasim_razvi: "Kasim Razvi"
+
+ HYD_kasim_razvi_desc: "Majlis president and Razakar founder; independence or ruin."
+
+ HYD_bahadur_yar: "Bahadur Yar Jung"
+
+ HYD_bahadur_yar_desc: "Firebrand founder of the Ittehad; dead 1944, his shadow marches on."
+
+ HYD_salar_legacy: "Salar Jung Reforms"
+
+ HYD_salar_legacy_desc: "Salar Jung I's 19th-century administration still runs the Deccan."
+
+ HYD_nizam_railway: "Nizam's Guaranteed Railway"
+
+ HYD_nizam_railway_desc: "Standard gauge from Secunderabad to every corner, 1879 vintage."
+
+ HYD_shakkar_nagar: "Shakkar Nagar Sugar"
+
+ HYD_shakkar_nagar_desc: "The Nizam Sugar Factory rises at Bodhan, 1937."
+
+ HYD_azam_jahi_mills: "Azam Jahi Mills"
+
+ HYD_azam_jahi_mills_desc: "Warangal's looms clothe the Deccan."
+
+ HYD_allwyn_works: "Allwyn Metal Works"
+
+ HYD_allwyn_works_desc: "Buses today, guns tomorrow."
+
+ HYD_rtc_roads: "Road Transport Corporation"
+
+ HYD_rtc_roads_desc: "First in India: buses under one roof, 1932."
+
+ HYD_begumpet_airfield: "Begumpet Airfield"
+
+ HYD_begumpet_airfield_desc: "Green roundels over Hyderabad."
+
+ HYD_mill_concil_spirit: "Mill Conciliation"
+
+ HYD_mill_concil_spirit_desc: "The durbar listens to the looms."
+
+ HYD_nizam_1_title: "Reorganize the Railways"
+
+ HYD_nizam_1_desc: "The Guaranteed State Railway is a patchwork of gauges, debts and British engineers."
+
+ HYD_nizam_1_opt_a: "State gauge, state control"
+
+ HYD_nizam_1_opt_b: "Charter the merchants"
+
+ HYD_nizam_2_title: "Strike at Warangal"
+
+ HYD_nizam_2_desc: "The Azam Jahi mills stop. Twelve thousand weavers want eight annas more."
+
+ HYD_nizam_2_opt_a: "Concede the annas"
+
+ HYD_nizam_2_opt_b: "Send the State Police"
+
+ HYD_nizam_3_title: "The RTC Dividend"
+
+ HYD_nizam_3_desc: "The road transport concern turns its first profit. Everyone wants it."
+
+ HYD_nizam_3_opt_a: "Feed the treasury"
+
+ HYD_nizam_3_opt_b: "Feed the drivers"
+
+ HYD_nizam_4_title: "Wings over Begumpet"
+
+ HYD_nizam_4_desc: "The Deccan's first squadron takes the sky as the Nizam watches."
+
+ HYD_nizam_4_opt_a: "Fund the air arm"
+
+ HYD_nizam_4_opt_b: "A parade is enough"
+
+ HYD_ittehad_crisis: "The Ittehad Question"
+
+ HYD_ittehad_crisis_desc: "Kasim Razvi's Majlis demands arms for its Razakars."
+
+ HYD_nizam_5_title: "The Ittehad Demands Arms"
+
+ HYD_nizam_5_desc: "Razvi fills the courtyard: ten thousand Razakars await the Nizam's word."
+
+ HYD_nizam_5_opt_a: "Permit the Razakars"
+
+ HYD_nizam_5_opt_b: "Restrain the Ittehad"
+
+ HYD_nizam_6_title: "Pune's Note"
+
+ HYD_nizam_6_desc: "The Peshwa demands the Razakars disband. The envelope smells of gunpowder."
+
+ HYD_nizam_6_opt_a: "Defy Pune"
+
+ HYD_nizam_6_opt_b: "Disband them quietly"
+
+ HYD_nizam_7_title: "The Hyderabad Question"
+
+ HYD_nizam_7_desc: "Hyderabad defies the Maratha order. The durbar must answer."
+
+ HYD_nizam_7_opt_a: "Prepare the military mission"
+
+ HYD_nizam_7_opt_b: "Send a final embassy"
+
+ HYD_nizam_8_title: "Standstill"
+
+ HYD_nizam_8_desc: "Envoys agree: no war this year. Both courts sharpen swords in private."
+
+ HYD_nizam_8_opt_a: "Sign the standstill"
+
+ HYD_nizam_8_opt_b: "Keep the powder dry"
+
+ MYS_wadiyar: "Krishnaraja Wadiyar IV"
+
+ MYS_jayachamarajendra: "Jayachamarajendra Wadiyar"
+
+ MYS_jayachamarajendra_desc: "The Yuvaraja: philosopher, musician, heir."
+
+ MYS_jaya_court: "Yuvaraja's Court"
+
+ MYS_visvesvaraya: "M. Visvesvaraya"
+
+ MYS_visvesvaraya_desc: "Deewan 1912-18; dammed the Kaveri at Krishnaraja Sagara."
+
+ MYS_visvesvaraya_plan: "Visvesvaraya Plan"
+
+ MYS_mirza_ismail: "Mirza Ismail"
+
+ MYS_mirza_ismail_desc: "Deewan since 1926; paved Bangalore."
+
+ MYS_ismail_admin: "Ismail Administration"
+
+ MYS_thimayya: "K. S. Thimayya"
+
+ MYS_thimayya_desc: "Coorg officer, Sandhurst; the army's coming man."
+
+ MYS_cariappa: "K. M. Cariappa"
+
+ MYS_cariappa_desc: "First Indian to command a battalion; Coorg's gift to the army."
+
+ MYS_cariappa_cmd: "Cariappa Command"
+
+ RJP_ganga: "Ganga Singh"
+
+ RJP_man_singh: "Sawai Man Singh II"
+
+ RJP_man_singh_desc: "Maharaja of Jaipur; polo, planes and the Sawai Man Guards."
+
+ RJP_man_singh_cmd: "Man Singh Command"
+
+ RJP_umaid: "Umaid Singh"
+
+ RJP_umaid_desc: "Maharaja of Jodhpur; raised Umaid Bhawan as famine relief, stone by stone."
+
+ RJP_umaid_palace: "Palace Works"
+
+ RJP_bhupal: "Bhupal Singh"
+
+ RJP_bhupal_desc: "Maharana of Mewar; Udaipur's honor in human form."
+
+ RJP_manubhai: "Manubhai Mehta"
+
+ RJP_manubhai_desc: "Deewan of Bikaner; dug the Gang Canal through the desert."
+
+ RJP_canal_vision: "Canal Vision"
+
+ HIN_chhatari: "Ahmad Said Khan"
+
+ HIN_chhatari_desc: "Nawab of Chhatari; UP's bridge between durbar and Delhi."
+
+ HIN_pant: "Govind Ballabh Pant"
+
+ HIN_pant_desc: "Almora's lion; the Congress colossus of the United Provinces."
+
+ HIN_sapru: "Tej Bahadur Sapru"
+
+ HIN_sapru_desc: "Liberal lion of Allahabad; constitutionalist to the bone."
+
+ HIN_sapru_counsel: "Sapru Counsel"
+
+ HIN_chaudhuri: "J. N. Chaudhuri"
+
+ HIN_chaudhuri_desc: "Young gunner officer; a future army chief in embryo."
+
+ KAS_abdullah: "Sheikh Abdullah"
+
+ KAS_abdullah_desc: "Sher-e-Kashmir; the Lion who would be kingmaker."
+
+ KAS_bakshi: "Bakshi Ghulam Mohammad"
+
+ KAS_bakshi_desc: "The Lion's deputy; Srinagar's organizer."
+
+ KAS_bakshi_admin: "Bakshi Administration"
+
+ KAS_rajinder: "Rajinder Singh"
+
+ KAS_rajinder_desc: "Saviour of Kashmir; held the frontier villages in 1947."
+
+ KAS_mahajan: "Meher Chand Mahajan"
+
+ KAS_mahajan_desc: "Jurist-premier; held the valley's law together."
+
+ KAS_mahajan_counsel: "Mahajan Counsel"
+
+ PAK_sahib: "Dr. Khan Sahib"
+
+ PAK_sahib_desc: "Elder brother of the Frontier Gandhi; the NWFP's first premier."
+
+ PAK_sahib_admin: "Khan Sahib Administration"
+
+ PAK_akbar: "Akbar Khan"
+
+ PAK_akbar_desc: "Young PMA officer; ambition in uniform."
+
+ PAK_khan: "Abdul Ghaffar Khan"
+
+ PAK_khan_desc: "Frontier Gandhi; non-violence as a Pathan army."
+
+ MYS_kolar_gold: "Kolar Gold Fields"
+
+ MYS_kolar_gold_desc: "British capital, Mysore soil, gold for the treasury."
+
+ MYS_bhadravati_steel: "Bhadravati Iron Works"
+
+ MYS_bhadravati_steel_desc: "Visvesvaraya's furnace, 1923."
+
+ MYS_krs_dam: "Krishnaraja Sagara"
+
+ MYS_krs_dam_desc: "The Kaveri dammed at Kannambadi; light and water for a million acres."
+
+ MYS_hal_aerodrome: "HAL Aerodrome"
+
+ MYS_hal_aerodrome_desc: "Hindustan Aircraft takes land at Bangalore, 1940."
+
+ MYS_mysore_lancers: "Mysore Lancers"
+
+ MYS_mysore_lancers_desc: "Silk pagris, steel lances."
+
+ MYS_king_is_dead: "The King Is Dead"
+
+ MYS_king_is_dead_desc: "August 1940 approaches. The Rajarshi fails; the Yuvaraja waits."
+
+ MYS_kgf_spirit: "Gold Field Wages"
+
+ MYS_kgf_spirit_desc: "Kolar pays in gold."
+
+ MYS_dam_1_title: "Waters of the Kaveri"
+
+ MYS_dam_1_desc: "The dam fills. Tanjore downstream demands its share; Mysore's ryots demand power."
+
+ MYS_dam_1_opt_a: "Release for Tanjore"
+
+ MYS_dam_1_opt_b: "Hold for Mysore"
+
+ MYS_dam_2_title: "Kolar Demands"
+
+ MYS_dam_2_desc: "The gold miners strike for the eight-hour day."
+
+ MYS_dam_2_opt_a: "Grant the hours"
+
+ MYS_dam_2_opt_b: "Protect the output"
+
+ MYS_dam_3_title: "August 1940"
+
+ MYS_dam_3_desc: "Krishnaraja Wadiyar IV is dead. Bells toll from Mysore to Bangalore."
+
+ MYS_dam_3_opt_a: "Long live Jayachamarajendra"
+
+ MYS_dam_3_opt_b: "Mourn, then march on"
+
+ PJB_khalsa_legacy: "Khalsa Legacy"
+
+ PJB_khalsa_legacy_desc: "Ranjit Singh's Sarkar Khalsaji did not fall; it waits."
+
+ PJB_lyallpur_canals: "Lyallpur Canal Colonies"
+
+ PJB_lyallpur_canals_desc: "Chenab waters, Sikh settlers, wheat for armies."
+
+ PJB_amritsar_workshops: "Amritsar Workshops"
+
+ PJB_amritsar_workshops_desc: "Ramgarhia mistris turn to shells."
+
+ PJB_lahore_arsenal: "Lahore Arsenal"
+
+ PJB_lahore_arsenal_desc: "The foundries Ranjit built, rebuilt."
+
+ PJB_mandi_industry: "Mandi Industry"
+
+ PJB_mandi_industry_desc: "Hill factories, plains markets."
+
+ PJB_war_industry: "War Industry"
+
+ PJB_war_industry_desc: "Every town a supplier."
+
+ PJB_war_industry_spirit: "War Industry"
+
+ PJB_war_industry_spirit_desc: "The Khalsa produces."
+
+ PJB_fauj_i_khas: "Fauj-i-Khas Revived"
+
+ PJB_fauj_i_khas_desc: "Ventura and Allard's drill, Punjabi steel."
+
+ PJB_ghorcharha_school: "Ghorcharha School"
+
+ PJB_ghorcharha_school_desc: "The irregular horse, regularized."
+
+ PJB_sikh_artillery: "Sikh Artillery"
+
+ PJB_sikh_artillery_desc: "Guns that shook the Khyber."
+
+ PJB_akal_volunteers: "Akali Volunteers"
+
+ PJB_akal_volunteers_desc: "Jathas ready to march."
+
+ PJB_khalsa_armor: "Khalsa Armor"
+
+ PJB_khalsa_armor_desc: "Horse spirit, steel skin."
+
+ PJB_lahore_flying_club: "Lahore Flying Club"
+
+ PJB_lahore_flying_club_desc: "Turbans in open cockpits."
+
+ PJB_punjab_air_arm: "Punjab Air Arm"
+
+ PJB_punjab_air_arm_desc: "The Khalsa takes the sky."
+
+ PJB_akali_question: "The Akali Question"
+
+ PJB_akali_question_desc: "Who holds the gurdwaras holds the Panth."
+
+ PJB_sgpc_charter: "SGPC Charter"
+
+ PJB_sgpc_charter_desc: "1925's settlement, carved in law."
+
+ PJB_khalsa_raj: "Khalsa Raj"
+
+ PJB_khalsa_raj_desc: "The rule of the Pure, proclaimed."
+
+ PJB_khalsa_raj_spirit: "Khalsa Raj"
+
+ PJB_khalsa_raj_spirit_desc: "Deg Tegh Fateh."
+
+ PJB_lahore_durbar: "Lahore Durbar"
+
+ PJB_lahore_durbar_desc: "The court of the Lion, restored."
+
+ PJB_jallianwala_memory: "Jallianwala Memory"
+
+ PJB_jallianwala_memory_desc: "1919 is not forgiven."
+
+ PJB_claim_delhi: "Claim of Delhi"
+
+ PJB_claim_delhi_desc: "The throne the Khalsa once taxed."
+
+ PJB_claim_frontier: "Claim of the Frontier"
+
+ PJB_claim_frontier_desc: "Peshawar was Ranjit's."
+
+ PJB_sikh_empire: "Sikh Empire"
+
+ PJB_sikh_empire_desc: "From the Sutlej to the Khyber, one writ."
+
+ PJB_empire_spirit: "Sikh Empire"
+
+ PJB_empire_spirit_desc: "Raj Karega Khalsa."
+
+ PJB_court_pune: "Court Pune"
+
+ PJB_court_pune_desc: "Old allies, older slights."
+
+ PJB_northern_march: "Northern March"
+
+ PJB_northern_march_desc: "The hills pay tribute or bleed."
+
+ MDR_chola_legacy: "Chola Legacy"
+
+ MDR_chola_legacy_desc: "Rajaraja's ships reached Srivijaya; ours will go further."
+
+ MDR_nagapattinam_yard: "Nagapattinam Yard"
+
+ MDR_nagapattinam_yard_desc: "Keels on the Coromandel shore."
+
+ MDR_chola_marines: "Chola Marines"
+
+ MDR_chola_marines_desc: "Sea-soldiers of the Kaveri delta."
+
+ MDR_bay_squadron: "Bay Squadron"
+
+ MDR_bay_squadron_desc: "The Bay of Bengal is a Tamil lake."
+
+ MDR_madras_harbor: "Madras Harbor"
+
+ MDR_madras_harbor_desc: "Breakwaters against cyclone and enemy alike."
+
+ MDR_buckingham_mills: "Buckingham Mills"
+
+ MDR_buckingham_mills_desc: "1876 vintage; Madras cotton for the world."
+
+ MDR_tvs_motors: "TVS Motors"
+
+ MDR_tvs_motors_desc: "Buses from Madurai workshops."
+
+ MDR_mettur_dam: "Mettur Dam"
+
+ MDR_mettur_dam_desc: "1934: the Kaveri tamed in concrete."
+
+ MDR_simpson_works: "Simpson Works"
+
+ MDR_simpson_works_desc: "Engines from Perambur."
+
+ MDR_madras_regiment: "Madras Regiment"
+
+ MDR_madras_regiment_desc: "The oldest regiment; sepoy blood, 1758."
+
+ MDR_sepoy_tradition: "Sepoy Tradition"
+
+ MDR_sepoy_tradition_desc: "Two centuries of drill."
+
+ MDR_coastal_guns: "Coastal Guns"
+
+ MDR_coastal_guns_desc: "Forts from Gingee to the sea."
+
+ MDR_madras_airfield: "Madras Airfield"
+
+ MDR_madras_airfield_desc: "Meenambakkam takes wings."
+
+ MDR_justice_party: "Justice Party"
+
+ MDR_justice_party_desc: "Non-Brahmin pride since 1916."
+
+ MDR_self_respect: "Self-Respect"
+
+ MDR_self_respect_desc: "Periyar's fire, 1925."
+
+ MDR_anti_hindi: "Anti-Hindi Agitation"
+
+ MDR_anti_hindi_desc: "1937: Tamil will not bow."
+
+ MDR_tamil_sangam: "Tamil Sangam"
+
+ MDR_tamil_sangam_desc: "The academy's heirs gather."
+
+ MDR_sangam_spirit: "Sangam Spirit"
+
+ MDR_sangam_spirit_desc: "Three thousand years unbroken."
+
+ MDR_unite_tamilakam: "Unite Tamilakam"
+
+ MDR_unite_tamilakam_desc: "One writ from the hills to Kanyakumari."
+
+ MDR_carnatic_war: "Carnatic War"
+
+ MDR_carnatic_war_desc: "Mysore took the Carnatic once; never again."
+
+ MDR_chola_mandala: "Chola Mandala"
+
+ MDR_chola_mandala_desc: "Tribute fleets from every shore."
+
+ MDR_mandala_spirit: "Mandala Spirit"
+
+ MDR_mandala_spirit_desc: "The mandala turns."
+
+ MDR_court_pune: "Court Pune"
+
+ MDR_court_pune_desc: "Silk and steel for the Peshwa."
+
+ MDR_straits_claim: "Straits Claim"
+
+ MDR_straits_claim_desc: "Chola waters, Chola tolls."
+
+ BEN_delta_spirit: "Delta Spirit"
+
+ BEN_delta_spirit_desc: "The delta remembers the Palas."
+
+ BEN_krishak_praja: "Krishak Praja"
+
+ BEN_krishak_praja_desc: "Huq's peasants enter the assembly, 1929."
+
+ BEN_debt_relief: "Debt Relief"
+
+ BEN_debt_relief_desc: "Wipe the mahajan's ledgers."
+
+ BEN_peasant_levies: "Peasant Levies"
+
+ BEN_peasant_levies_desc: "Every village a company."
+
+ BEN_lahore_resolution: "Lahore Resolution"
+
+ BEN_lahore_resolution_desc: "Huq moves it, 1940."
+
+ BEN_resolution_spirit: "Resolution Spirit"
+
+ BEN_resolution_spirit_desc: "1940's thunder."
+
+ BEN_league_compact: "League Compact"
+
+ BEN_league_compact_desc: "A paper bridge to the League."
+
+ BEN_communal_levy: "Communal Levy"
+
+ BEN_communal_levy_desc: "Faith musters."
+
+ BEN_dacca_nawab: "Dacca Nawab"
+
+ BEN_dacca_nawab_desc: "The Nawabs of Dacca bankroll order."
+
+ BEN_jute_mills: "Jute Mills"
+
+ BEN_jute_mills_desc: "Golden fibre, Titagarh to Kankinara."
+
+ BEN_burn_locomotives: "Burn Locomotives"
+
+ BEN_burn_locomotives_desc: "Howrah builds engines."
+
+ BEN_burnpur_steel: "Burnpur Steel"
+
+ BEN_burnpur_steel_desc: "IISCO's furnaces, 1918."
+
+ BEN_hooghly_docks: "Hooghly Docks"
+
+ BEN_hooghly_docks_desc: "Kidderpore cranes."
+
+ BEN_bengal_volunteers: "Bengal Volunteers"
+
+ BEN_bengal_volunteers_desc: "Anushilan's grandchildren drill."
+
+ BEN_chittagong_legacy: "Chittagong Legacy"
+
+ BEN_chittagong_legacy_desc: "Surya Sen's armoury raid, 1930."
+
+ BEN_delta_artillery: "Delta Artillery"
+
+ BEN_delta_artillery_desc: "Guns for the volunteers."
+
+ BEN_forward_bloc: "Forward Bloc"
+
+ BEN_forward_bloc_desc: "Subhas Bose's left road, 1939."
+
+ BEN_forward_spirit: "Forward Spirit"
+
+ BEN_forward_spirit_desc: "Delhi Chalo, someday."
+
+ BEN_hooghly_flotilla: "Hooghly Flotilla"
+
+ BEN_hooghly_flotilla_desc: "River gunboats, delta teeth."
+
+ BEN_dum_dum_field: "Dum Dum Field"
+
+ BEN_dum_dum_field_desc: "1924: Bengal flies."
+
+ BEN_bengal_air_arm: "Bengal Air Arm"
+
+ BEN_bengal_air_arm_desc: "Green-white roundels."
+
+ BEN_gauda_vanga: "Bengal Union"
+
+ BEN_gauda_vanga_desc: "One delta, one writ."
+
+ BEN_claim_assam: "Claim of Assam"
+
+ BEN_claim_assam_desc: "The Brahmaputra drains our hills."
+
+ BEN_claim_orissa: "Claim of Orissa"
+
+ BEN_claim_orissa_desc: "The coast road runs through Kalinga."
+
+ BEN_bengal_sultanate: "Bengal Sultanate"
+
+ BEN_bengal_sultanate_desc: "The Ilyas Shahis ride again."
+
+ BEN_sultanate_spirit: "Sultanate Spirit"
+
+ BEN_sultanate_spirit_desc: "Gaur's drums."
+
+ BEN_court_pune: "Court Pune"
+
+ BEN_court_pune_desc: "Mangoes for the Peshwa."
+
+ HIN_ganga_legacy: "Ganga Legacy"
+
+ HIN_ganga_legacy_desc: "The river crowns its own."
+
+ HIN_delhi_industry: "Delhi Industry"
+
+ HIN_delhi_industry_desc: "Shahjahanabad's workshops."
+
+ HIN_claim_bharat: "Claim of Bharat"
+
+ HIN_claim_bharat_desc: "The heartland claims the body."
+
+ HIN_taluqdars: "Taluqdars"
+
+ HIN_taluqdars_desc: "Oudh's barons pay for peace."
+
+ HIN_lucknow_university: "Lucknow University"
+
+ HIN_lucknow_university_desc: "1921: Canning College grown tall."
+
+ HIN_jamia_aligarh: "Jamia and Aligarh"
+
+ HIN_jamia_aligarh_desc: "1920 and 1875: the two schools of the Muslims."
+
+ HIN_kanpur_mills: "Kanpur Mills"
+
+ HIN_kanpur_mills_desc: "Elgin and Muir spin for the army."
+
+ HIN_cawnpore_arsenal: "Cawnpore Arsenal"
+
+ HIN_cawnpore_arsenal_desc: "1857's guns, recast."
+
+ HIN_kisan_sabha: "Kisan Sabha"
+
+ HIN_kisan_sabha_desc: "Sahajanand's peasants march."
+
+ HIN_red_fort: "Red Fort"
+
+ HIN_red_fort_desc: "Shahjahan's walls, our throne."
+
+ HIN_chandni_chowk: "Chandni Chowk"
+
+ HIN_chandni_chowk_desc: "The moonlit market funds the state."
+
+ HIN_awadh_rifles: "Awadh Rifles"
+
+ HIN_awadh_rifles_desc: "Nawabi regiments, re-raised."
+
+ HIN_lucknow_arsenal: "Lucknow Arsenal"
+
+ HIN_lucknow_arsenal_desc: "Shells on the Gomti."
+
+ HIN_peasant_levies: "Peasant Levies"
+
+ HIN_peasant_levies_desc: "Every village a company."
+
+ HIN_ganga_command: "Ganga Command"
+
+ HIN_ganga_command_desc: "One command from Delhi to Patna."
+
+ HIN_ganga_bridges: "Ganga Bridges"
+
+ HIN_ganga_bridges_desc: "Bridge every crossing."
+
+ HIN_delhi_durbar: "Delhi Durbar"
+
+ HIN_delhi_durbar_desc: "1911's pomp, our power."
+
+ HIN_mughal_legacy: "Mughal Legacy"
+
+ HIN_mughal_legacy_desc: "Babur to Bahadur Shah: the Peacock Throne casts long shade."
+
+ HIN_mughal_spirit: "Mughal Legacy"
+
+ HIN_mughal_spirit_desc: "The throne's long shade."
+
+ HIN_court_pune: "Court Pune"
+
+ HIN_court_pune_desc: "Mangoes for the Peshwa."
+
+ HIN_delhi_throne: "Delhi Throne"
+
+ HIN_delhi_throne_desc: "The throne is here. The question is whose."
+
+ KAS_mountain_kingdom: "Mountain Kingdom"
+
+ KAS_mountain_kingdom_desc: "Gulab Singh's purchase, Hari's burden."
+
+ KAS_srinagar_industry: "Srinagar Industry"
+
+ KAS_srinagar_industry_desc: "Silk house looms."
+
+ KAS_claim_north: "Claim of the North"
+
+ KAS_claim_north_desc: "The hills owe tribute."
+
+ KAS_jammu_durbar: "Jammu Durbar"
+
+ KAS_jammu_durbar_desc: "Winter capital, Dogra pride."
+
+ KAS_ranbir_canal: "Ranbir Canal"
+
+ KAS_ranbir_canal_desc: "Water for Jammu's fields."
+
+ KAS_srinagar_silk: "Srinagar Silk"
+
+ KAS_srinagar_silk_desc: "The state filature spins."
+
+ KAS_shawl_trade: "Shawl Trade"
+
+ KAS_shawl_trade_desc: "Pashmina for the world's rich."
+
+ KAS_gilgit_agency: "Gilgit Agency"
+
+ KAS_gilgit_agency_desc: "1935: the British lease the passes back."
+
+ KAS_gilgit_scouts: "Gilgit Scouts"
+
+ KAS_gilgit_scouts_desc: "Mountaineers of the high passes."
+
+ KAS_frontier_levies: "Frontier Levies"
+
+ KAS_frontier_levies_desc: "Every valley a platoon."
+
+ KAS_srinagar_arsenal: "Srinagar Arsenal"
+
+ KAS_srinagar_arsenal_desc: "Rifles under Chinar shade."
+
+ KAS_pahalgam_levies: "Pahalgam Levies"
+
+ KAS_pahalgam_levies_desc: "Shepherds with rifles."
+
+ KAS_court_pune: "Court Pune"
+
+ KAS_court_pune_desc: "Shawls for the Peshwa."
+
+ KAS_accession_dilemma: "Accession Dilemma"
+
+ KAS_accession_dilemma_desc: "Delhi, Pune, or alone: Hari must choose."
+
+ KAS_northern_claims: "Northern Claims"
+
+ KAS_northern_claims_desc: "Hunza and Nagar owe Srinagar."
+
+ KAS_himalayan_crown: "Himalayan Crown"
+
+ KAS_himalayan_crown_desc: "A throne above the clouds."
+
+ KAS_crown_spirit: "Himalayan Crown"
+
+ KAS_crown_spirit_desc: "Above the clouds."
+
+ KAS_kashmir_gate: "Kashmir Gate"
+
+ KAS_kashmir_gate_desc: "Fortify the Banihal."
+
+ SIN_indus_spirit: "Indus Spirit"
+
+ SIN_indus_spirit_desc: "The river gives, the river takes."
+
+ SIN_karachi_port: "Karachi Port"
+
+ SIN_karachi_port_desc: "The delta's mouth to the world."
+
+ SIN_claim_indus: "Claim of the Indus"
+
+ SIN_claim_indus_desc: "Every drop from Kashmor to the sea."
+
+ SIN_sukkur_barrage: "Sukkur Barrage"
+
+ SIN_sukkur_barrage_desc: "Lloyd's barrage, 1932: desert into garden."
+
+ SIN_khairpur_court: "Khairpur Court"
+
+ SIN_khairpur_court_desc: "The Mirs hold the left bank."
+
+ SIN_karachi_docks: "Karachi Docks"
+
+ SIN_karachi_docks_desc: "Cranes over Keamari."
+
+ SIN_sindhi_merchants: "Sindhi Merchants"
+
+ SIN_sindhi_merchants_desc: "From Hyderabad to Hong Kong."
+
+ SIN_manora_works: "Manora Works"
+
+ SIN_manora_works_desc: "Shells by the sea."
+
+ SIN_baluchi_levy: "Baluchi Levy"
+
+ SIN_baluchi_levy_desc: "The sardars send riders."
+
+ SIN_indus_rifles: "Indus Rifles"
+
+ SIN_indus_rifles_desc: "Riverine infantry."
+
+ SIN_indus_flotilla: "Indus Flotilla"
+
+ SIN_indus_flotilla_desc: "Gunboats from Kotri to the mouth."
+
+ SIN_keamari_base: "Keamari Base"
+
+ SIN_keamari_base_desc: "A naval station worthy of the name."
+
+ SIN_drigh_road: "Drigh Road"
+
+ SIN_drigh_road_desc: "1929: Sindh flies."
+
+ SIN_shah_latif: "Shah Latif"
+
+ SIN_shah_latif_desc: "The saint's verses bind Sindh."
+
+ SIN_indus_delta: "Indus Delta"
+
+ SIN_indus_delta_desc: "One river, one writ."
+
+ SIN_delta_spirit: "Delta Spirit"
+
+ SIN_delta_spirit_desc: "The river's writ."
+
+ SIN_makran_venture: "Makran Venture"
+
+ SIN_makran_venture_desc: "Westward the dhows sail."
+
+ SIN_court_hyderabad: "Court Hyderabad"
+
+ SIN_court_hyderabad_desc: "The Nizam is kin and rival both."
+
+ SIN_lower_indus: "Lower Indus"
+
+ SIN_lower_indus_desc: "The tail of the river."
+
+ WIS_gujarat_enterprise: "Gujarat Enterprise"
+
+ WIS_gujarat_enterprise_desc: "Bania capital seeks returns."
+
+ WIS_port_of_bombay_claim: "Claim of Bombay"
+
+ WIS_port_of_bombay_claim_desc: "The island was dowry; the hinterland is ours."
+
+ WIS_unify_gujarat: "Unify Gujarat"
+
+ WIS_unify_gujarat_desc: "Kathiawar to Surat, one writ."
+
+ WIS_ahmedabad_mills: "Ahmedabad Mills"
+
+ WIS_ahmedabad_mills_desc: "The Manchester of India."
+
+ WIS_calico_expansion: "Calico Expansion"
+
+ WIS_calico_expansion_desc: "1888's print works grow."
+
+ WIS_surat_port: "Surat Port"
+
+ WIS_surat_port_desc: "The old roadstead wakes."
+
+ WIS_kathiawar_durbar: "Kathiawar Durbar"
+
+ WIS_kathiawar_durbar_desc: "Two hundred princes, one tent."
+
+ WIS_jamnagar_honor: "Jamnagar Honor"
+
+ WIS_jamnagar_honor_desc: "The Jam Sahib's cricket and cannons."
+
+ WIS_baroda_succession: "Baroda Succession"
+
+ WIS_baroda_succession_desc: "1939: Sayajirao dies; Pratap inherits the reforms."
+
+ WIS_kathiawar_levies: "Kathiawar Levies"
+
+ WIS_kathiawar_levies_desc: "Rajput horse, bania coin."
+
+ WIS_gujarati_dhows: "Gujarati Dhows"
+
+ WIS_gujarati_dhows_desc: "Lateen sails from Malacca to Malindi."
+
+ WIS_merchant_princes: "Merchant Princes"
+
+ WIS_merchant_princes_desc: "The bania funds the battalion."
+
+ WIS_surat_claim: "Surat Claim"
+
+ WIS_surat_claim_desc: "Customs were ours before the Marathas."
+
+ WIS_lata_crown: "Lata Crown"
+
+ WIS_lata_crown_desc: "The coast crowned."
+
+ WIS_lata_spirit: "Lata Spirit"
+
+ WIS_lata_spirit_desc: "Trade winds blow fair."
+
+ WIS_zanzibar_trade: "Zanzibar Trade"
+
+ WIS_zanzibar_trade_desc: "Cloves and ivory for cloth and steel."
+
+ WIS_court_bombay: "Court Bombay"
+
+ WIS_court_bombay_desc: "Smile at Pune; count the rupees."
+
+ WIS_saurashtra_gate: "Saurashtra Gate"
+
+ WIS_saurashtra_gate_desc: "Wall the peninsula."
+
+ WIS_diamond_trade: "Diamond Trade"
+
+ WIS_diamond_trade_desc: "Surat cuts the world's stones."
+
+ WIS_sayajirao_legacy: "Sayajirao's Legacy"
+
+ WIS_sayajirao_legacy_desc: "The reforming Gaekwad's schools and laws endure."
+
+ WIS_baroda_bank: "Bank of Baroda"
+
+ WIS_baroda_bank_desc: "1908: the Gaekwad's own bank."
+
+ WIS_baroda_college: "Baroda College"
+
+ WIS_baroda_college_desc: "Scholars for the state."
+
+ WIS_compulsory_education: "Compulsory Education"
+
+ WIS_compulsory_education_desc: "1906: first in India, free and forced."
+
+ WIS_panchayat_rule: "Panchayat Rule"
+
+ WIS_panchayat_rule_desc: "Village republics, Gaekwad style."
+
+ WIS_womens_schools: "Women's Schools"
+
+ WIS_womens_schools_desc: "Half the state to school."
+
+ WIS_salt_pans: "Salt Pans"
+
+ WIS_salt_pans_desc: "White harvests of the Rann."
+
+ WIS_mithapur_chemicals: "Mithapur Chemicals"
+
+ WIS_mithapur_chemicals_desc: "1939: Tata soda on the coast."
+
+ WIS_fisheries_board: "Fisheries Board"
+
+ WIS_fisheries_board_desc: "Trawlers for Veraval."
+
+ WIS_dandi_memory: "Memory of Dandi"
+
+ WIS_dandi_memory_desc: "1930: salt shook an empire."
+
+ WIS_salt_spirit: "Salt Spirit"
+
+ WIS_salt_spirit_desc: "The Rann pays."
+
+ WIS_salt_revenue: "Salt Revenue"
+
+ WIS_salt_revenue_desc: "Tax the white gold."
+
+ WIS_soda_ash: "Soda Ash"
+
+ WIS_soda_ash_desc: "Chemistry for industry."
+
+ WIS_jamnagar_brigade: "Jamnagar Brigade"
+
+ WIS_jamnagar_brigade_desc: "The Jam's own infantry."
+
+ WIS_princely_guard: "Princely Guard"
+
+ WIS_princely_guard_desc: "Palace steel, parade perfect."
+
+ WIS_guard_doctrine: "Guard Doctrine"
+
+ WIS_guard_doctrine_desc: "Hold everything."
+
+ WIS_state_artillery: "State Artillery"
+
+ WIS_state_artillery_desc: "Guns for the salute states."
+
+ WIS_gun_doctrine: "Gun Doctrine"
+
+ WIS_gun_doctrine_desc: "Answer in shells."
+
+ WIS_riding_school: "Riding School"
+
+ WIS_riding_school_desc: "Rajkot trains officers."
+
+ WIS_desert_patrol: "Desert Patrol"
+
+ WIS_desert_patrol_desc: "Rann riders."
+
+ WIS_armored_cars: "Armored Cars"
+
+ WIS_armored_cars_desc: "Wheels over sand."
+
+ WIS_rann_outposts: "Rann Outposts"
+
+ WIS_rann_outposts_desc: "Mud forts, real guns."
+
+ WIS_mandvi_port: "Mandvi Port"
+
+ WIS_mandvi_port_desc: "Dhows built and berthed."
+
+ WIS_dhow_registry: "Dhow Registry"
+
+ WIS_dhow_registry_desc: "Every lateen sail counted."
+
+ WIS_red_sea_run: "Red Sea Run"
+
+ WIS_red_sea_run_desc: "Aden, Jeddah, Suez."
+
+ WIS_suez_dividend: "Suez Dividend"
+
+ WIS_suez_dividend_desc: "The canal pays tribute."
+
+ WIS_suez_spirit: "Suez Spirit"
+
+ WIS_suez_spirit_desc: "East of Suez, Gujarati sails."
+
+ WIS_sabarmati_ashram: "Sabarmati Ashram"
+
+ WIS_sabarmati_ashram_desc: "1917: the Mahatma's laboratory."
+
+ WIS_khadi_mission: "Khadi Mission"
+
+ WIS_khadi_mission_desc: "Spin freedom."
+
+ WIS_temple_entry: "Temple Entry"
+
+ WIS_temple_entry_desc: "Open the sanctums."
+
+ WIS_praja_mandal: "Praja Mandal"
+
+ WIS_praja_mandal_desc: "The states' peoples organize."
+
+ SIN_larkana_rice: "Larkana Rice"
+
+ SIN_larkana_rice_desc: "The rice bowl of Sindh."
+
+ SIN_shikarpur_grain: "Shikarpur Grain"
+
+ SIN_shikarpur_grain_desc: "Mandis fat with wheat."
+
+ SIN_cotton_gin: "Cotton Gin"
+
+ SIN_cotton_gin_desc: "Gins along the Indus."
+
+ SIN_textile_mills: "Textile Mills"
+
+ SIN_textile_mills_desc: "Cloth for the province."
+
+ SIN_export_mandi: "Export Mandi"
+
+ SIN_export_mandi_desc: "Karachi buys everything."
+
+ SIN_mandi_spirit: "Mandi Spirit"
+
+ SIN_mandi_spirit_desc: "The market provides."
+
+ SIN_agrarian_bank: "Agrarian Bank"
+
+ SIN_agrarian_bank_desc: "Credit for the hari."
+
+ SIN_ibrahim_hydri: "Ibrahim Hydri"
+
+ SIN_ibrahim_hydri_desc: "The fishing village feeds Karachi."
+
+ SIN_fish_harbor: "Fish Harbor"
+
+ SIN_fish_harbor_desc: "Trawlers at Keamari."
+
+ SIN_boat_builders: "Boat Builders"
+
+ SIN_boat_builders_desc: "Teak hulls, lateen sails."
+
+ SIN_dried_fish_trade: "Dried Fish Trade"
+
+ SIN_dried_fish_trade_desc: "Bombay ducks for distant tables."
+
+ SIN_kotri_bridge: "Kotri Bridge"
+
+ SIN_kotri_bridge_desc: "1900: the Indus bridged."
+
+ SIN_sindh_rifles: "Sindh Rifles"
+
+ SIN_sindh_rifles_desc: "Regulars of the delta."
+
+ SIN_camel_corps: "Camel Corps"
+
+ SIN_camel_corps_desc: "Ships of the Thar."
+
+ SIN_camel_doctrine: "Camel Doctrine"
+
+ SIN_camel_doctrine_desc: "Outlast, outride."
+
+ SIN_motor_patrol: "Motor Patrol"
+
+ SIN_motor_patrol_desc: "Wheels over dunes."
+
+ SIN_motor_doctrine: "Motor Doctrine"
+
+ SIN_motor_doctrine_desc: "Speed is armor."
+
+ SIN_mirpurkhas_depot: "Mirpurkhas Depot"
+
+ SIN_mirpurkhas_depot_desc: "Shells in the desert."
+
+ SIN_thatta_forts: "Thatta Forts"
+
+ SIN_thatta_forts_desc: "Mud walls, real guns."
+
+ SIN_kutch_posts: "Kutch Posts"
+
+ SIN_kutch_posts_desc: "Watch the Rann."
+
+ SIN_desert_column: "Desert Column"
+
+ SIN_desert_column_desc: "A flying column of the sands."
+
+ SIN_sehwan_sharif: "Sehwan Sharif"
+
+ SIN_sehwan_sharif_desc: "Lal Shahbaz answers prayers."
+
+ SIN_urs_festival: "Urs Festival"
+
+ SIN_urs_festival_desc: "Drums for the saint."
+
+ SIN_shrine_endowments: "Shrine Endowments"
+
+ SIN_shrine_endowments_desc: "Endow the dargahs."
+
+ SIN_sufi_schools: "Sufi Schools"
+
+ SIN_sufi_schools_desc: "Verses and arithmetic."
+
+ SIN_sindhi_language: "Sindhi Language"
+
+ SIN_sindhi_language_desc: "Our tongue in our schools."
+
+ SIN_language_spirit: "Language Spirit"
+
+ SIN_language_spirit_desc: "Sindhi first."
+
+ SIN_gwadar_port: "Gwadar Port"
+
+ SIN_gwadar_port_desc: "The Omani cove; buy it, build it."
+
+ SIN_pasni_fisheries: "Pasni Fisheries"
+
+ SIN_pasni_fisheries_desc: "Tuna for Karachi."
+
+ SIN_ormara_base: "Ormara Base"
+
+ SIN_ormara_base_desc: "A naval station west."
+
+ SIN_makran_claim: "Makran Claim"
+
+ SIN_makran_claim_desc: "The coast to the border."
+
+ HIN_patna_university: "Patna University"
+
+ HIN_patna_university_desc: "1917: Magadha reads again."
+
+ HIN_nalanda_revival: "Nalanda Revival"
+
+ HIN_nalanda_revival_desc: "The mahavihara's lamp relit."
+
+ HIN_magadha_mines: "Magadha Mines"
+
+ HIN_magadha_mines_desc: "Iron of the old empire."
+
+ HIN_bodh_gaya: "Bodh Gaya"
+
+ HIN_bodh_gaya_desc: "The tree, the temple, the tourists."
+
+ HIN_magadhan_levies: "Magadhan Levies"
+
+ HIN_magadhan_levies_desc: "Footmen of the middle land."
+
+ HIN_rajgir_forts: "Rajgir Forts"
+
+ HIN_rajgir_forts_desc: "Cyclopean walls, new guns."
+
+ HIN_doab_canals: "Doab Canals"
+
+ HIN_doab_canals_desc: "1854: the Ganga made to work."
+
+ HIN_meerut_cantonment: "Meerut Cantonment"
+
+ HIN_meerut_cantonment_desc: "1857 began here; so will the new army."
+
+ HIN_agra_workshops: "Agra Workshops"
+
+ HIN_agra_workshops_desc: "Shoes and saddles for millions."
+
+ HIN_tannery_kanpur: "Kanpur Tanneries"
+
+ HIN_tannery_kanpur_desc: "Leather city."
+
+ HIN_mathura_dairy: "Mathura Dairy"
+
+ HIN_mathura_dairy_desc: "Ghee for the troops."
+
+ HIN_red_battalions: "Red Battalions"
+
+ HIN_red_battalions_desc: "Lal Kurti, new cut."
+
+ HIN_delhi_sowars: "Delhi Sowars"
+
+ HIN_delhi_sowars_desc: "Horse of the old capital."
+
+ HIN_sowar_doctrine: "Sowar Doctrine"
+
+ HIN_sowar_doctrine_desc: "Ride far, strike hard."
+
+ HIN_purbia_infantry: "Purbia Infantry"
+
+ HIN_purbia_infantry_desc: "Eastern matchlocks, modern rifles."
+
+ HIN_purbia_doctrine: "Purbia Doctrine"
+
+ HIN_purbia_doctrine_desc: "Stand and volley."
+
+ HIN_mughal_artillery_park: "Mughal Artillery Park"
+
+ HIN_mughal_artillery_park_desc: "Bronze lions, steel throats."
+
+ HIN_delhi_magazine: "Delhi Magazine"
+
+ HIN_delhi_magazine_desc: "Powder under the Ridge."
+
+ HIN_kashmiri_gate_forts: "Kashmiri Gate Forts"
+
+ HIN_kashmiri_gate_forts_desc: "Wall Delhi properly."
+
+ HIN_victory_column: "Victory Column"
+
+ HIN_victory_column_desc: "A pillar for every victory."
+
+ HIN_chandni_municipal: "Chandni Municipality"
+
+ HIN_chandni_municipal_desc: "Drains for the moonlit street."
+
+ HIN_jama_masjid: "Jama Masjid"
+
+ HIN_jama_masjid_desc: "The great mosque stands surety."
+
+ HIN_durbar_police: "Durbar Police"
+
+ HIN_durbar_police_desc: "Lathis for the capital."
+
+ HIN_raisina_press: "Raisina Press"
+
+ HIN_raisina_press_desc: "Gazettes from the Hill."
+
+ HIN_peacock_throne: "Peacock Throne"
+
+ HIN_peacock_throne_desc: "Sit it, and Asia kneels."
+
+ HIN_throne_spirit: "Throne Spirit"
+
+ HIN_throne_spirit_desc: "Takht or tabut."
+
+ HIN_subah_system: "Subah System"
+
+ HIN_subah_system_desc: "Akbar's provinces, our steel frame."
+
+ HIN_badshahi_mint: "Badshahi Mint"
+
+ HIN_badshahi_mint_desc: "Coin the realm's face."
+
+ MDR_coimbatore_mills: "Coimbatore Mills"
+
+ MDR_coimbatore_mills_desc: "The Manchester of the south."
+
+ MDR_tiruchi_workshops: "Tiruchi Workshops"
+
+ MDR_tiruchi_workshops_desc: "Golden Rock builds engines, 1928."
+
+ MDR_salem_magnesite: "Salem Magnesite"
+
+ MDR_salem_magnesite_desc: "White hills, steel future."
+
+ MDR_dalmia_cement: "Dalmia Cement"
+
+ MDR_dalmia_cement_desc: "Concrete for the presidency."
+
+ MDR_parry_sugar: "Parry Sugar"
+
+ MDR_parry_sugar_desc: "1842: India's oldest joint-stock."
+
+ MDR_parry_spirit: "Parry Spirit"
+
+ MDR_parry_spirit_desc: "Commerce since 1788."
+
+ MDR_paper_board: "Paper Board"
+
+ MDR_paper_board_desc: "Reams for the presses."
+
+ MDR_tanjore_temples: "Tanjore Temples"
+
+ MDR_tanjore_temples_desc: "The Big Temple watches."
+
+ MDR_kumbakonam_brass: "Kumbakonam Brass"
+
+ MDR_kumbakonam_brass_desc: "Gods cast in metal."
+
+ MDR_kanchipuram_silk: "Kanchipuram Silk"
+
+ MDR_kanchipuram_silk_desc: "Temple gold on silk."
+
+ MDR_bronze_foundry: "Bronze Foundry"
+
+ MDR_bronze_foundry_desc: "Chola bronze, modern shells."
+
+ MDR_temple_towns: "Temple Towns"
+
+ MDR_temple_towns_desc: "Every gopuram a treasury."
+
+ MDR_temple_spirit: "Temple Spirit"
+
+ MDR_temple_spirit_desc: "Faith funds."
+
+ MDR_vellore_rifles: "Vellore Rifles"
+
+ MDR_vellore_rifles_desc: "1806's mutineers, re-raised loyal."
+
+ MDR_pallava_guards: "Pallava Guards"
+
+ MDR_pallava_guards_desc: "Mamallapuram's heirs."
+
+ MDR_pallava_doctrine: "Pallava Doctrine"
+
+ MDR_pallava_doctrine_desc: "Strike from stone."
+
+ MDR_chola_levy: "Chola Levy"
+
+ MDR_chola_levy_desc: "The nadus muster."
+
+ MDR_levy_doctrine: "Levy Doctrine"
+
+ MDR_levy_doctrine_desc: "Numbers have a quality."
+
+ BEN_howrah_foundry: "Howrah Foundry"
+
+ BEN_howrah_foundry_desc: "Iron across the river."
+
+ BEN_shalimar_works: "Shalimar Works"
+
+ BEN_shalimar_works_desc: "Howrah builds engines."
+
+ BEN_garden_reach: "Garden Reach"
+
+ BEN_garden_reach_desc: "Shipwrights of the Hooghly."
+
+ BEN_titagarh_wagons: "Titagarh Wagons"
+
+ BEN_titagarh_wagons_desc: "Railway carriages for India."
+
+ BEN_tramways_calcutta: "Calcutta Tramways"
+
+ BEN_tramways_calcutta_desc: "1873: Asia's first trams."
+
+ BEN_electric_supply: "Electric Supply"
+
+ BEN_electric_supply_desc: "CESC lights the city."
+
+ BEN_power_spirit: "Power Spirit"
+
+ BEN_power_spirit_desc: "Current affairs."
+
+ BEN_telephone_exchange: "Telephone Exchange"
+
+ BEN_telephone_exchange_desc: "Hello, Calcutta?"
+
+ BEN_presidency_college: "Presidency College"
+
+ BEN_presidency_college_desc: "1817: Bengal learns."
+
+ BEN_calcutta_university: "Calcutta University"
+
+ BEN_calcutta_university_desc: "1857: degrees by the thousand."
+
+ BEN_medical_college: "Medical College"
+
+ BEN_medical_college_desc: "1835: Asia's first."
+
+ BEN_tagore_santiniketan: "Tagore's Santiniketan"
+
+ BEN_tagore_santiniketan_desc: "1901: school under the chhatim trees."
+
+ BEN_tagore_spirit: "Tagore Spirit"
+
+ BEN_tagore_spirit_desc: "Where the mind is without fear."
+
+ BEN_vivekananda_mission: "Vivekananda Mission"
+
+ BEN_vivekananda_mission_desc: "1897: serve man as God."
+
+ BEN_vidyasagar_schools: "Vidyasagar Schools"
+
+ BEN_vidyasagar_schools_desc: "Widows to school."
+
+ BEN_gosaba_coop: "Gosaba Cooperative"
+
+ BEN_gosaba_coop_desc: "Hamilton's model village."
+
+ BEN_tiger_reserve: "Tiger Reserve"
+
+ BEN_tiger_reserve_desc: "Spare the striped king."
+
+ BEN_matla_embankments: "Matla Embankments"
+
+ BEN_matla_embankments_desc: "Hold back the tide."
+
+ BEN_canning_port: "Canning Port"
+
+ BEN_canning_port_desc: "A failed dream, revived."
+
+ BEN_diamond_harbour: "Diamond Harbour"
+
+ BEN_diamond_harbour_desc: "Pilots board here."
+
+ BEN_eastern_command: "Eastern Command"
+
+ BEN_eastern_command_desc: "One command east."
+
+ BEN_jessore_cantonment: "Jessore Cantonment"
+
+ BEN_jessore_cantonment_desc: "Barracks of the delta."
+
+ BEN_saidpur_arsenal: "Saidpur Arsenal"
+
+ BEN_saidpur_arsenal_desc: "Shells upcountry."
+
+ BEN_dinajpur_rifles: "Dinajpur Rifles"
+
+ BEN_dinajpur_rifles_desc: "North Bengal steel."
+
+ BEN_rangpur_battery: "Rangpur Battery"
+
+ BEN_rangpur_battery_desc: "Guns of the north."
+
+ BEN_dumdum_expansion: "Dum Dum Expansion"
+
+ BEN_dumdum_expansion_desc: "Lengthen the runway."
+
+ BEN_chittagong_airfield: "Chittagong Airfield"
+
+ BEN_chittagong_airfield_desc: "Wings over the port."
+
+ BEN_coxs_strip: "Cox's Strip"
+
+ BEN_coxs_strip_desc: "Land on the beach."
+
+ BEN_night_flying: "Night Flying"
+
+ BEN_night_flying_desc: "Flares over the delta."
+
+ BEN_bengal_flying_club: "Bengal Flying Club"
+
+ BEN_bengal_flying_club_desc: "1929: gentlemen aviators."
+
+ BEN_pala_revival: "Pala Revival"
+
+ BEN_pala_revival_desc: "750: Dharmapala's empire remembered."
+
+ BEN_pala_spirit: "Pala Spirit"
+
+ BEN_pala_spirit_desc: "Buddhist kings."
+
+ BEN_vikramshila: "Vikramshila"
+
+ BEN_vikramshila_desc: "Dharmapala's university."
+
+ BEN_somapura: "Somapura"
+
+ BEN_somapura_desc: "Paharpur's pyramid."
+
+ BEN_buddhist_missions: "Buddhist Missions"
+
+ BEN_buddhist_missions_desc: "Send monks east."
+
+ BEN_buddhist_spirit: "Buddhist Spirit"
+
+ BEN_buddhist_spirit_desc: "The middle path."
+
+ BEN_nalanda_link: "Nalanda Link"
+
+ BEN_nalanda_link_desc: "Magadha's lamp, Bengal's oil."
+
+ BEN_ration_calcutta: "Ration Calcutta"
+
+ BEN_ration_calcutta_desc: "Feed the city first."
+
+ BEN_relief_camps: "Relief Camps"
+
+ BEN_relief_camps_desc: "Gruel and hope."
+
+ BEN_grow_more_food: "Grow More Food"
+
+ BEN_grow_more_food_desc: "Every tank a paddy."
+
+ BEN_famine_code: "Famine Code"
+
+ BEN_famine_code_desc: "Never again."
+
+ BEN_famine_spirit: "Famine Spirit"
+
+ BEN_famine_spirit_desc: "Remember hunger."
+
+ BEN_hooghly_pilots: "Hooghly Pilots"
+
+ BEN_hooghly_pilots_desc: "Masters of the shifting river."
+
+ BEN_budge_budge: "Budge Budge"
+
+ BEN_budge_budge_desc: "Oil jetties south."
+
+ BEN_khejuri_memory: "Khejuri Memory"
+
+ BEN_khejuri_memory_desc: "The old port silts."
+
+ BEN_murshidabad_silk: "Murshidabad Silk"
+
+ BEN_murshidabad_silk_desc: "Baluchar butis."
+
+ BEN_silk_board: "Silk Board"
+
+ BEN_silk_board_desc: "Grade every skein."
+
+ BEN_silk_spirit: "Silk Spirit"
+
+ BEN_silk_spirit_desc: "Woven wealth."
+
+ BEN_writers_building: "Writers' Building"
+
+ BEN_writers_building_desc: "The secretariat rules."
+
+ BEN_eden_gardens: "Eden Gardens"
+
+ BEN_eden_gardens_desc: "Cricket and crowds."
+
+ BEN_fort_william: "Fort William"
+
+ BEN_fort_william_desc: "Garrison of the east."
+
+ BEN_maidan_parade: "Maidan Parade"
+
+ BEN_maidan_parade_desc: "March on the green."
+
+ HIN_residency_lucknow: "Lucknow Residency"
+
+ HIN_residency_lucknow_desc: "1857's ruins, kept as warning."
+
+ HIN_bithoor_memory: "Bithoor Memory"
+
+ HIN_bithoor_memory_desc: "Nana Sahib's vanished peshwaship."
+
+ HIN_taluqdar_college: "Taluqdar College"
+
+ HIN_taluqdar_college_desc: "Colvin's school for barons."
+
+ HIN_shia_processions: "Shia Processions"
+
+ HIN_shia_processions_desc: "Moharram in Lucknow."
+
+ HIN_awadh_akhbarat: "Awadh Akhbarat"
+
+ HIN_awadh_akhbarat_desc: "Urdu presses of Lucknow."
+
+ HIN_lucknow_pact: "Lucknow Pact"
+
+ HIN_lucknow_pact_desc: "1916: Congress and League shake hands."
+
+ HIN_pact_spirit: "Pact Spirit"
+
+ HIN_pact_spirit_desc: "Unity, however brief."
+
+ HIN_gaya_temple: "Vishnupad Temple"
+
+ HIN_gaya_temple_desc: "Gaya's priests count pilgrims."
+
+ HIN_sasaram_tomb: "Sasaram Tomb"
+
+ HIN_sasaram_tomb_desc: "Sher Shah sleeps in stone."
+
+ HIN_patna_high_court: "Patna High Court"
+
+ HIN_patna_high_court_desc: "1916: justice for Bihar."
+
+ HIN_bihar_assembly: "Bihar Assembly"
+
+ HIN_bihar_assembly_desc: "Patna legislates."
+
+ HIN_champaran_memory: "Champaran Memory"
+
+ HIN_champaran_memory_desc: "1917: Gandhi's first satyagraha."
+
+ HIN_champaran_spirit: "Champaran Spirit"
+
+ HIN_champaran_spirit_desc: "Indigo out, freedom in."
+
+ HIN_aligarh_muslim_uni: "Aligarh Muslim University"
+
+ HIN_aligarh_muslim_uni_desc: "1920: Syed's school grown tall."
+
+ HIN_benares_hindu_uni: "Benares Hindu University"
+
+ HIN_benares_hindu_uni_desc: "1916: Malaviya's dream."
+
+ HIN_ganga_jamuni: "Ganga-Jamuni"
+
+ HIN_ganga_jamuni_desc: "Two rivers, one culture."
+
+ HIN_prayag_kumbh: "Prayag Kumbh"
+
+ HIN_prayag_kumbh_desc: "The greatest gathering on earth."
+
+ HIN_sangam_city: "Sangam City"
+
+ HIN_sangam_city_desc: "Allahabad modernized."
+
+ HIN_new_delhi_works: "New Delhi Works"
+
+ HIN_new_delhi_works_desc: "Lutyens builds an empire's capital."
+
+ HIN_india_gate: "India Gate"
+
+ HIN_india_gate_desc: "Arch of the fallen."
+
+ HIN_parliament_house: "Parliament House"
+
+ HIN_parliament_house_desc: "Circular debates."
+
+ HIN_connaught_place: "Connaught Place"
+
+ HIN_connaught_place_desc: "Shopping in circles."
+
+ HIN_janpath_hospitals: "Janpath Hospitals"
+
+ HIN_janpath_hospitals_desc: "Beds for the capital."
+
+ HIN_radio_delhi: "Radio Delhi"
+
+ HIN_radio_delhi_desc: "1936: Akashvani begins."
+
+ HIN_broadcast_spirit: "Broadcast Spirit"
+
+ HIN_broadcast_spirit_desc: "The capital speaks."
+
+ HIN_bengal_sappers: "Bengal Sappers"
+
+ HIN_bengal_sappers_desc: "Roorkee's engineers since 1803."
+
+ HIN_garhwal_rifles: "Garhwal Rifles"
+
+ HIN_garhwal_rifles_desc: "Hillmen of the high valleys."
+
+ HIN_garhwal_doctrine: "Garhwal Doctrine"
+
+ HIN_garhwal_doctrine_desc: "Climb and hold."
+
+ HIN_kumaon_battalion: "Kumaon Battalion"
+
+ HIN_kumaon_battalion_desc: "Ranbankura steel."
+
+ HIN_kumaon_doctrine: "Kumaon Doctrine"
+
+ HIN_kumaon_doctrine_desc: "Stand like the hills."
+
+ HIN_delhi_contingent: "Delhi Contingent"
+
+ HIN_delhi_contingent_desc: "The capital's own."
+
+ HIN_viceroy_guard: "Viceroy's Guard"
+
+ HIN_viceroy_guard_desc: "Bodyguards of power."
+
+ HIN_battle_honours: "Battle Honours"
+
+ HIN_battle_honours_desc: "Colors heavy with names."
+
+ HIN_roorkee_college: "Roorkee College"
+
+ HIN_roorkee_college_desc: "1847: Thomason's engineers."
+
+ HIN_fatehpuri_mosque: "Fatehpuri Mosque"
+
+ HIN_fatehpuri_mosque_desc: "1650: the west gate's mosque."
+
+ HIN_ballimaran_lanes: "Ballimaran Lanes"
+
+ HIN_ballimaran_lanes_desc: "Ghalib's street."
+
+ HIN_ghalib_academy: "Ghalib Academy"
+
+ HIN_ghalib_academy_desc: "Verses for the republic."
+
+ HIN_old_delhi_walls: "Old Delhi Walls"
+
+ HIN_old_delhi_walls_desc: "Shahjahanabad fortified."
+
+ HIN_firozabad_glass: "Firozabad Glass"
+
+ HIN_firozabad_glass_desc: "Bangles for India."
+
+ HIN_moradabad_brass: "Moradabad Brass"
+
+ HIN_moradabad_brass_desc: "Peetal nagri."
+
+ HIN_okhla_barrage: "Okhla Barrage"
+
+ HIN_okhla_barrage_desc: "Tame the Yamuna."
+
+ HIN_garhmukteshwar_fair: "Garhmukteshwar Fair"
+
+ HIN_garhmukteshwar_fair_desc: "Ganga bathes millions."
+
+ HIN_lodhi_gardens: "Lodhi Gardens"
+
+ HIN_lodhi_gardens_desc: "Tombs in a park."
+
+ HIN_humayun_tomb: "Humayun's Tomb"
+
+ HIN_humayun_tomb_desc: "Prototype of the Taj."
+
+ HIN_safdarjung_tomb: "Safdarjung's Tomb"
+
+ HIN_safdarjung_tomb_desc: "The last Mughal tomb."
+
+ HIN_hauz_khas: "Hauz Khas"
+
+ HIN_hauz_khas_desc: "Alauddin's tank, new village."
+
+ HIN_agra_fort_palace: "Agra Fort Palace"
+
+ HIN_agra_fort_palace_desc: "Jahangir's red walls."
+
+ HIN_fatehpur_sikri: "Fatehpur Sikri"
+
+ HIN_fatehpur_sikri_desc: "Akbar's abandoned dream."
+
+ HIN_fateh_spirit: "Fateh Spirit"
+
+ HIN_fateh_spirit_desc: "Victory in stone."
+
+ HIN_sikandra_tomb: "Sikandra Tomb"
+
+ HIN_sikandra_tomb_desc: "Akbar sleeps."
+
+ HIN_itmad_ud_daula: "Itmad-ud-Daula"
+
+ HIN_itmad_ud_daula_desc: "The baby Taj."
+
+ PJB_partition_winds: "Partition Winds"
+
+ PJB_partition_winds_desc: "1940s thunder gathers."
+
+ PJB_refugee_columns: "Refugee Columns"
+
+ PJB_refugee_columns_desc: "Roads choked with carts."
+
+ PJB_amritsar_corridor: "Amritsar Corridor"
+
+ PJB_amritsar_corridor_desc: "Keep the holy city fed."
+
+ PJB_wahga_post: "Wahga Post"
+
+ PJB_wahga_post_desc: "A gate on the Grand Trunk."
+
+ PJB_divided_punjab: "Divided Punjab"
+
+ PJB_divided_punjab_desc: "The province may split."
+
+ PJB_divided_spirit: "Divided Spirit"
+
+ PJB_divided_spirit_desc: "Hold together."
+
+ PJB_lahore_resolution_echo: "Lahore Echo"
+
+ PJB_lahore_resolution_echo_desc: "1940's words haunt."
+
+ PJB_khalsa_college: "Khalsa College"
+
+ PJB_khalsa_college_desc: "1892: Amritsar learns."
+
+ PJB_punjabi_university_seed: "Punjabi University Seed"
+
+ PJB_punjabi_university_seed_desc: "A university for the language."
+
+ PJB_singh_sabha: "Singh Sabha"
+
+ PJB_singh_sabha_desc: "1873: reform the Panth."
+
+ PJB_gurmat_schools: "Gurmat Schools"
+
+ PJB_gurmat_schools_desc: "Scripture for children."
+
+ PJB_chief_khalsa_diwan: "Chief Khalsa Diwan"
+
+ PJB_chief_khalsa_diwan_desc: "1902: the Panth organized."
+
+ PJB_gurmukhi_press: "Gurmukhi Press"
+
+ PJB_gurmukhi_press_desc: "Print the script."
+
+ PJB_press_spirit: "Press Spirit"
+
+ PJB_press_spirit_desc: "Ink for freedom."
+
+ PJB_lower_bari_doab: "Lower Bari Doab"
+
+ PJB_lower_bari_doab_desc: "Canal water, wheat seas."
+
+ PJB_balloki_headworks: "Balloki Headworks"
+
+ PJB_balloki_headworks_desc: "Regulate the Ravi."
+
+ PJB_sulaimanki_weir: "Sulaimanki Weir"
+
+ PJB_sulaimanki_weir_desc: "Bar the Sutlej."
+
+ PJB_dipalpur_canal: "Dipalpur Canal"
+
+ PJB_dipalpur_canal_desc: "Water for Montgomery."
+
+ PJB_pakpattan_shrine: "Pakpattan Shrine"
+
+ PJB_pakpattan_shrine_desc: "Baba Farid's town."
+
+ PJB_cotton_exchange: "Cotton Exchange"
+
+ PJB_cotton_exchange_desc: "Multan prices."
+
+ PJB_exchange_spirit: "Exchange Spirit"
+
+ PJB_exchange_spirit_desc: "Trade winds."
+
+ PJB_sikh_regiment: "Sikh Regiment"
+
+ PJB_sikh_regiment_desc: "1846: Ludhiana raised."
+
+ PJB_punjab_regiment: "Punjab Regiment"
+
+ PJB_punjab_regiment_desc: "The senior line."
+
+ PJB_guides_cavalry: "Guides Cavalry"
+
+ PJB_guides_cavalry_desc: "Mardan's corps d'elite."
+
+ PJB_frontier_guns: "Frontier Guns"
+
+ PJB_frontier_guns_desc: "Mountain batteries."
+
+ PJB_kohat_battery: "Kohat Battery"
+
+ PJB_kohat_battery_desc: "Guns above Kohat."
+
+ PJB_bannu_brigade: "Bannu Brigade"
+
+ PJB_bannu_brigade_desc: "Brigade of the Tochi."
+
+ PJB_bannu_spirit: "Bannu Spirit"
+
+ PJB_bannu_spirit_desc: "Hold the frontier."
+
+ PJB_lahore_airport: "Lahore Airport"
+
+ PJB_lahore_airport_desc: "Walton takes wings."
+
+ PJB_rawalpindi_airfield: "Rawalpindi Airfield"
+
+ PJB_rawalpindi_airfield_desc: "Chaklala's runways."
+
+ PJB_peshawar_link: "Peshawar Link"
+
+ PJB_peshawar_link_desc: "Flights over the Indus."
+
+ PJB_night_mail: "Night Mail"
+
+ PJB_night_mail_desc: "Carry the dak by dark."
+
+ PJB_parachute_school: "Parachute School"
+
+ PJB_parachute_school_desc: "Jump masters."
+
+ PJB_golden_temple: "Golden Temple"
+
+ PJB_golden_temple_desc: "Harmandir Sahib stands surety."
+
+ PJB_langar_system: "Langar System"
+
+ PJB_langar_system_desc: "Feed all who come."
+
+ PJB_akal_bunga: "Akal Bunga"
+
+ PJB_akal_bunga_desc: "Timeless throne's banner."
+
+ PJB_bunga_spirit: "Bunga Spirit"
+
+ PJB_bunga_spirit_desc: "Miri piri in brick."
+
+ PJB_ramgarhia_bunga: "Ramgarhia Bunga"
+
+ PJB_ramgarhia_bunga_desc: "Misl artillery's home."
+
+ PJB_guru_ram_das: "Guru Ram Das"
+
+ PJB_guru_ram_das_desc: "Founder of Amritsar."
+
+ PJB_sikh_misls: "Sikh Misls"
+
+ PJB_sikh_misls_desc: "Twelve confederate bands."
+
+ PJB_cis_sutlej: "Cis-Sutlej States"
+
+ PJB_cis_sutlej_desc: "Patiala, Nabha, Jind, Faridkot."
+
+ PJB_trans_sutlej: "Trans-Sutlej"
+
+ PJB_trans_sutlej_desc: "Across the river."
+
+ PJB_jamrud_memory: "Jamrud Memory"
+
+ PJB_jamrud_memory_desc: "1837: Hari Singh fell at the fort."
+
+ PJB_peshawar_throne: "Peshawar Throne"
+
+ PJB_peshawar_throne_desc: "Ranjit held it; hold it again."
+
+ PJB_throne_spirit: "Throne Spirit"
+
+ PJB_throne_spirit_desc: "Peshawar's seat."
+
+ PJB_dasuya_timber: "Dasuya Timber"
+
+ PJB_dasuya_timber_desc: "Shivalik deodars."
+
+ PJB_mukerian_foundry: "Mukerian Foundry"
+
+ PJB_mukerian_foundry_desc: "Iron in the Doaba."
+
+ PJB_tanda_sports: "Tanda Sports"
+
+ PJB_tanda_sports_desc: "Balls for the empire."
+
+ PJB_kartarpur_corridor: "Kartarpur Corridor"
+
+ PJB_kartarpur_corridor_desc: "The Guru's last home, open."
+
+ PJB_corridor_spirit: "Corridor Spirit"
+
+ PJB_corridor_spirit_desc: "Pilgrims pass."
+
+ PJB_dera_baba_nanak: "Dera Baba Nanak"
+
+ PJB_dera_baba_nanak_desc: "Where Nanak settled."
+
+ PJB_beas_bridge: "Beas Bridge"
+
+ PJB_beas_bridge_desc: "Span the river."
+
+ MDR_wellington_staff: "Wellington Staff"
+
+ MDR_wellington_staff_desc: "1905: the staff college in the hills."
+
+ MDR_nilgiri_battery: "Nilgiri Battery"
+
+ MDR_nilgiri_battery_desc: "Guns above the clouds."
+
+ MDR_doddabetta_posts: "Doddabetta Posts"
+
+ MDR_doddabetta_posts_desc: "The peak watches."
+
+ MDR_cordite_factory: "Cordite Factory"
+
+ MDR_cordite_factory_desc: "1904: Aruvankadu makes powder."
+
+ MDR_meenakshi_temple: "Meenakshi Temple"
+
+ MDR_meenakshi_temple_desc: "Madurai's goddess guards the south."
+
+ MDR_madurai_towers: "Madurai Towers"
+
+ MDR_madurai_towers_desc: "Gopurams over the Vaigai."
+
+ MDR_tamil_isai: "Tamil Isai"
+
+ MDR_tamil_isai_desc: "Music in Tamil, for Tamils."
+
+ MDR_annamalai_university: "Annamalai University"
+
+ MDR_annamalai_university_desc: "1929: Chidambaram learns."
+
+ MDR_jallikattu: "Jallikattu"
+
+ MDR_jallikattu_desc: "The bull embraces the brave."
+
+ ORI_kalinga_legacy: "Kalinga Legacy"
+
+ ORI_kalinga_legacy_desc: "Unconquered before Ashoka; unbowed after."
+
+ ORI_ashoka_memory: "Ashoka's Remorse"
+
+ ORI_ashoka_memory_desc: "261 BC: the river ran red, the emperor wept."
+
+ ORI_kharavela_pride: "Kharavela's Pride"
+
+ ORI_kharavela_pride_desc: "Hathigumpha records a king who bowed to none."
+
+ ORI_dhauli_stupa: "Dhauli Stupa"
+
+ ORI_dhauli_stupa_desc: "Peace carved where war raged."
+
+ ORI_puri_temple: "Puri Temple"
+
+ ORI_puri_temple_desc: "Jagannath's twelve-year Nabakalebara."
+
+ ORI_konark_wheel: "Konark Wheel"
+
+ ORI_konark_wheel_desc: "Narasimhadeva's chariot of the sun, 1250."
+
+ ORI_lingaraj_endow: "Lingaraj Endowment"
+
+ ORI_lingaraj_endow_desc: "Bhubaneswar's thousand shrines."
+
+ ORI_temple_towns: "Temple Towns"
+
+ ORI_temple_towns_desc: "Every town a tirtha."
+
+ ORI_rath_yatra: "Rath Yatra"
+
+ ORI_rath_yatra_desc: "The cars roll to Gundicha."
+
+ ORI_bali_yatra: "Bali Yatra"
+
+ ORI_bali_yatra_desc: "Cuttack remembers the ships to Java."
+
+ ORI_kalinga_ships: "Kalinga Ships"
+
+ ORI_kalinga_ships_desc: "Boitas built at Chandbali."
+
+ ORI_chandbali_port: "Chandbali Port"
+
+ ORI_chandbali_port_desc: "Harbor on the Baitarani."
+
+ ORI_gopalpur_yard: "Gopalpur Yard"
+
+ ORI_gopalpur_yard_desc: "Keels on the south coast."
+
+ ORI_java_run: "Java Run"
+
+ ORI_java_run_desc: "Sail the ancestors' route."
+
+ ORI_maritime_spirit: "Maritime Spirit"
+
+ ORI_maritime_spirit_desc: "The sea remembers Kalinga."
+
+ ORI_suvarnabhumi: "Suvarnabhumi"
+
+ ORI_suvarnabhumi_desc: "The golden land across the bay."
+
+ ORI_cuttack_workshops: "Cuttack Workshops"
+
+ ORI_cuttack_workshops_desc: "Silver filigree and shells."
+
+ ORI_talcher_mines: "Talcher Mines"
+
+ ORI_talcher_mines_desc: "Coal and iron of the interior."
+
+ ORI_rice_delta: "Rice Delta"
+
+ ORI_rice_delta_desc: "Mahanadi's gift."
+
+ ORI_chilika_fisheries: "Chilika Fisheries"
+
+ ORI_chilika_fisheries_desc: "The lagoon feeds lakhs."
+
+ ORI_sambalpur_mills: "Sambalpur Mills"
+
+ ORI_sambalpur_mills_desc: "Weave the west."
+
+ ORI_hirakud_survey: "Hirakud Survey"
+
+ ORI_hirakud_survey_desc: "Dam the Mahanadi someday."
+
+ ORI_paika_memory: "Paika Memory"
+
+ ORI_paika_memory_desc: "1817: Bakshi Jagabandhu rose first."
+
+ ORI_paika_akhadas: "Paika Akhadas"
+
+ ORI_paika_akhadas_desc: "Stick-fighting schools of Khurda."
+
+ ORI_gajapati_guards: "Gajapati Guards"
+
+ ORI_gajapati_guards_desc: "Lords of elephants."
+
+ ORI_paika_spirit: "Paika Spirit"
+
+ ORI_paika_spirit_desc: "The peasant soldier."
+
+ ORI_barabati_arsenal: "Barabati Arsenal"
+
+ ORI_barabati_arsenal_desc: "Guns in the old fort."
+
+ ORI_khurda_levies: "Khurda Levies"
+
+ ORI_khurda_levies_desc: "The rebellion's grandchildren."
+
+ ORI_cuttack_cantonment: "Cuttack Cantonment"
+
+ ORI_cuttack_cantonment_desc: "Barracks by the Mahanadi."
+
+ ORI_kondh_hills: "Kondh Hills"
+
+ ORI_kondh_hills_desc: "The highlanders keep their gods."
+
+ ORI_saora_tracks: "Saora Tracks"
+
+ ORI_saora_tracks_desc: "Roads into the hills."
+
+ ORI_koraput_coffee: "Koraput Coffee"
+
+ ORI_koraput_coffee_desc: "Highland beans."
+
+ ORI_bastar_link: "Bastar Link"
+
+ ORI_bastar_link_desc: "Dandakaranya joins Kalinga."
+
+ ORI_gauda_claim: "Claim of Bengal"
+
+ ORI_gauda_claim_desc: "Old wars, old debts."
+
+ ORI_magadha_claim: "Claim of Magadha"
+
+ ORI_magadha_claim_desc: "The Nandas took Kalinga once."
+
+ ORI_kalinga_chakravarti: "Kalinga Chakravarti"
+
+ ORI_kalinga_chakravarti_desc: "Wheel-turning king of the east."
+
+ ORI_chakravarti_spirit: "Chakravarti Spirit"
+
+ ORI_chakravarti_spirit_desc: "Turn the wheel."
+
+ ORI_gajapati: "Krushna Chandra Gajapati"
+
+ ORI_gajapati_desc: "Maharaja of Paralakhemundi; Odisha's first premier."
+
+ ORI_mahatab: "Harekrushna Mahatab"
+
+ ORI_mahatab_desc: "The Congress lion of Odisha."
+
+ ORI_biju: "Biju Patnaik"
+
+ ORI_biju_desc: "Daredevil pilot; Kalinga's wings."
+
+ ORI_biju_wings: "Biju's Wings"
+
+ ASM_ahom_legacy: "Ahom Legacy"
+
+ ASM_ahom_legacy_desc: "Six hundred years of the Tai sword."
+
+ ASM_sukaphaa_memory: "Sukaphaa's Memory"
+
+ ASM_sukaphaa_memory_desc: "1228: across the Patkai."
+
+ ASM_charaideo_maidams: "Charaideo Maidams"
+
+ ASM_charaideo_maidams_desc: "The first capital's mounds."
+
+ ASM_rang_ghar: "Rang Ghar"
+
+ ASM_rang_ghar_desc: "Asia's oldest amphitheatre."
+
+ ASM_saraighat_memory: "Saraighat Memory"
+
+ ASM_saraighat_memory_desc: "1671: Lachit broke the Mughals on the river."
+
+ ASM_lachit_guards: "Lachit Guards"
+
+ ASM_lachit_guards_desc: "The Borphukan's own."
+
+ ASM_ahom_flotilla: "Ahom Flotilla"
+
+ ASM_ahom_flotilla_desc: "War boats of the Brahmaputra."
+
+ ASM_flotilla_doctrine: "Flotilla Doctrine"
+
+ ASM_flotilla_doctrine_desc: "Rule the river."
+
+ ASM_saraighat_forts: "Saraighat Forts"
+
+ ASM_saraighat_forts_desc: "Mud walls that stopped emperors."
+
+ ASM_fort_doctrine: "Fort Doctrine"
+
+ ASM_fort_doctrine_desc: "Hold the ghats."
+
+ ASM_sibsagar_cantonment: "Sibsagar Cantonment"
+
+ ASM_sibsagar_cantonment_desc: "Barracks by the tank."
+
+ ASM_naga_levies: "Naga Levies"
+
+ ASM_naga_levies_desc: "Hillmen with spears."
+
+ ASM_maniram_tea: "Maniram's Tea"
+
+ ASM_maniram_tea_desc: "First Indian planter; hanged 1858."
+
+ ASM_jorhat_gardens: "Jorhat Gardens"
+
+ ASM_jorhat_gardens_desc: "Tea capital of the world."
+
+ ASM_tea_auction: "Tea Auction"
+
+ ASM_tea_auction_desc: "Guwahati sets the price."
+
+ ASM_digboi_oil: "Digboi Oil"
+
+ ASM_digboi_oil_desc: "1889: Asia's first oil."
+
+ ASM_oil_royalty: "Oil Royalty"
+
+ ASM_oil_royalty_desc: "The province owns the wells."
+
+ ASM_oil_spirit: "Oil Spirit"
+
+ ASM_oil_spirit_desc: "Black gold."
+
+ ASM_oil_pipeline: "Oil Pipeline"
+
+ ASM_oil_pipeline_desc: "Pipe it to the river."
+
+ ASM_rsn_steamers: "River Steamers"
+
+ ASM_rsn_steamers_desc: "Paddle boats to Dhubri."
+
+ ASM_dibrugarh_port: "Dibrugarh Port"
+
+ ASM_dibrugarh_port_desc: "Upper Assam's harbor."
+
+ ASM_ferry_fleet: "Ferry Fleet"
+
+ ASM_ferry_fleet_desc: "A hundred crossings."
+
+ ASM_brahmaputra_bridges: "Brahmaputra Bridges"
+
+ ASM_brahmaputra_bridges_desc: "Span the sorrow of Assam."
+
+ ASM_sankardev: "Sankardev"
+
+ ASM_sankardev_desc: "The saint who made Assamese."
+
+ ASM_sattras: "Sattras"
+
+ ASM_sattras_desc: "Monasteries of song."
+
+ ASM_bihu_festival: "Bihu Festival"
+
+ ASM_bihu_festival_desc: "Dance the new year."
+
+ ASM_muga_silk: "Muga Silk"
+
+ ASM_muga_silk_desc: "Golden thread."
+
+ ASM_bell_metal: "Bell Metal"
+
+ ASM_bell_metal_desc: "Sarthebari's craft."
+
+ ASM_naga_hills: "Naga Hills"
+
+ ASM_naga_hills_desc: "The high tribes watch."
+
+ ASM_kohima_track: "Kohima Track"
+
+ ASM_kohima_track_desc: "A road to the frontier."
+
+ ASM_tribal_levy: "Tribal Levy"
+
+ ASM_tribal_levy_desc: "Spears for the state."
+
+ ASM_frontier_posts: "Frontier Posts"
+
+ ASM_frontier_posts_desc: "Flags past Kohima."
+
+ ASM_mughal_memory: "Mughal Memory"
+
+ ASM_mughal_memory_desc: "Mir Jumla came; Ram Singh failed."
+
+ ASM_bihar_claim: "Claim of Bihar"
+
+ ASM_bihar_claim_desc: "Old scores with the west."
+
+ ASM_kamarupa_crown: "Kamarupa Crown"
+
+ ASM_kamarupa_crown_desc: "Pragjyotishpura reborn."
+
+ ASM_crown_spirit: "Crown Spirit"
+
+ ASM_crown_spirit_desc: "The east crowned."
+
+ ASM_saadulah: "Muhammad Saadulah"
+
+ ASM_saadulah_desc: "Assam's premier; the League's man in the east."
+
+ ASM_bordoloi: "Gopinath Bordoloi"
+
+ ASM_bordoloi_desc: "Lokapriya; Assam's Congress colossus."
+
+ ASM_fakhruddin: "Fakhruddin Ali Ahmed"
+
+ ASM_fakhruddin_desc: "Young advocate of Guwahati."
+
+ ASM_fakhruddin_counsel: "Fakhruddin Counsel"
+
+ PAK_gandhara_legacy: "Gandhara Legacy"
+
+ PAK_gandhara_legacy_desc: "Taxila's wisdom, Peshawar's sword."
+
+ PAK_taxila_digs: "Taxila Digs"
+
+ PAK_taxila_digs_desc: "Marshall uncovers empires."
+
+ PAK_peshawar_museum: "Peshawar Museum"
+
+ PAK_peshawar_museum_desc: "1907: Gandharan Buddhas in glass."
+
+ PAK_gor_khatri: "Gor Khatri"
+
+ PAK_gor_khatri_desc: "The Mughal caravanserai stands guard."
+
+ PAK_qissa_khwani: "Qissa Khwani"
+
+ PAK_qissa_khwani_desc: "1930: the street of storytellers ran red."
+
+ PAK_khudai_khidmatgar: "Khudai Khidmatgar"
+
+ PAK_khudai_khidmatgar_desc: "1929: the Red Shirts serve God by serving men."
+
+ PAK_khidmatgar_spirit: "Khidmatgar Spirit"
+
+ PAK_khidmatgar_spirit_desc: "Non-violent soldiers."
+
+ PAK_bacha_schools: "Bacha Schools"
+
+ PAK_bacha_schools_desc: "Azad schools for free Pathans."
+
+ PAK_islamia_college: "Islamia College"
+
+ PAK_islamia_college_desc: "1913: Aligarh's frontier child."
+
+ PAK_edwards_college: "Edwards College"
+
+ PAK_edwards_college_desc: "1900: Peshawar learns."
+
+ PAK_tribal_schools: "Tribal Schools"
+
+ PAK_tribal_schools_desc: "Tents with blackboards."
+
+ PAK_khyber_levies: "Khyber Levies"
+
+ PAK_khyber_levies_desc: "Guardians of the pass."
+
+ PAK_afridi_rifles: "Afridi Rifles"
+
+ PAK_afridi_rifles_desc: "Tirah's finest shots."
+
+ PAK_waziristan_posts: "Waziristan Posts"
+
+ PAK_waziristan_posts_desc: "Razmak, Wana, Miranshah."
+
+ PAK_khattak_militia: "Khattak Militia"
+
+ PAK_khattak_militia_desc: "Khushhal's kin muster."
+
+ PAK_mahsud_talks: "Mahsud Talks"
+
+ PAK_mahsud_talks_desc: "Jirga with the wolves."
+
+ PAK_attock_guard: "Attock Guard"
+
+ PAK_attock_guard_desc: "Hold the Indus crossing."
+
+ PAK_jewellers_row: "Jewellers' Row"
+
+ PAK_jewellers_row_desc: "Gold of three empires."
+
+ PAK_dry_fruit_mandi: "Dry Fruit Mandi"
+
+ PAK_dry_fruit_mandi_desc: "Kabul's harvest, Peshawar's price."
+
+ PAK_shoba_bazaar: "Shoba Bazaar"
+
+ PAK_shoba_bazaar_desc: "Cloth from every loom."
+
+ PAK_kabul_river: "Kabul River"
+
+ PAK_kabul_river_desc: "Warsak's waters harnessed."
+
+ PAK_storytellers_bazaar: "Storytellers' Bazaar"
+
+ PAK_storytellers_bazaar_desc: "News travels by tongue."
+
+ PAK_khyber_railway: "Khyber Railway"
+
+ PAK_khyber_railway_desc: "1925: rails through the pass."
+
+ PAK_jamrud_fort: "Jamrud Fort"
+
+ PAK_jamrud_fort_desc: "Hari Singh's fort, our guns."
+
+ PAK_ali_masjid: "Ali Masjid"
+
+ PAK_ali_masjid_desc: "The narrowest point."
+
+ PAK_jirga_assembly: "Jirga Assembly"
+
+ PAK_jirga_assembly_desc: "Every tribe, one circle."
+
+ PAK_pakhtun_crown: "Pakhtun Crown"
+
+ PAK_pakhtun_crown_desc: "Ahmad Shah's dream reborn."
+
+ PAK_crown_spirit: "Crown Spirit"
+
+ PAK_crown_spirit_desc: "The tribes crowned."
+
+ PAK_frontier_claims: "Frontier Claims"
+
+ PAK_frontier_claims_desc: "The Durand line is a suggestion."
+
+ HYD_jacob_diamond: "Jacob Diamond"
+
+ HYD_jacob_diamond_desc: "The Nizam's paperweight, worth kingdoms."
+
+ HYD_falaknuma_palace: "Falaknuma Palace"
+
+ HYD_falaknuma_palace_desc: "Mirror of the sky, 1893."
+
+ HYD_chowmahalla_court: "Chowmahalla Court"
+
+ HYD_chowmahalla_court_desc: "Four palaces, one durbar."
+
+ HYD_purana_haveli: "Purana Haveli"
+
+ HYD_purana_haveli_desc: "The old mansion's wardrobes."
+
+ HYD_jewellery_export: "Jewellery Export"
+
+ HYD_jewellery_export_desc: "Nizam jewels for world necks."
+
+ HYD_toshakhana_audit: "Toshakhana Audit"
+
+ HYD_toshakhana_audit_desc: "Count the treasury."
+
+ HYD_toshakhana_spirit: "Toshakhana Spirit"
+
+ HYD_toshakhana_spirit_desc: "Wealth beyond measure."
+
+ HYD_falaknuma_guard: "Falaknuma Guard"
+
+ HYD_falaknuma_guard_desc: "Palace troops in scarlet."
+
+ HYD_osmania_medical: "Osmania Medical College"
+
+ HYD_osmania_medical_desc: "1846: among India's oldest."
+
+ HYD_unani_hospital: "Unani Hospital"
+
+ HYD_unani_hospital_desc: "Greco-Arab medicine, state funded."
+
+ HYD_nizam_college: "Nizam College"
+
+ HYD_nizam_college_desc: "1887: Hyderabad learns English."
+
+ HYD_arts_college: "Arts College"
+
+ HYD_arts_college_desc: "Poets and painters."
+
+ HYD_engineering_college: "Engineering College"
+
+ HYD_engineering_college_desc: "Builders of the Deccan."
+
+ HYD_state_library: "State Central Library"
+
+ HYD_state_library_desc: "Manuscripts by the lakh."
+
+ HYD_golconda_brigade: "Golconda Brigade"
+
+ HYD_golconda_brigade_desc: "Regulars of the fort."
+
+ HYD_hyderabad_lancers: "Hyderabad Lancers"
+
+ HYD_hyderabad_lancers_desc: "The Nizam's own horse."
+
+ HYD_arab_contingent: "Arab Contingent"
+
+ HYD_arab_contingent_desc: "Hadhrami steel since the 1800s."
+
+ HYD_arab_spirit: "Arab Spirit"
+
+ HYD_arab_spirit_desc: "Loyal to the salt."
+
+ HYD_artillery_school: "Artillery School"
+
+ HYD_artillery_school_desc: "French guns, Deccani crews."
+
+ HYD_signals_wing: "Signals Wing"
+
+ HYD_signals_wing_desc: "Wires for the army."
+
+ HYD_ordnance_depot: "Ordnance Depot"
+
+ HYD_ordnance_depot_desc: "Shells by the crore."
+
+ HYD_staff_ride: "Staff Ride"
+
+ HYD_staff_ride_desc: "Officers study old battles."
+
+ HYD_jamia_nizamia: "Jamia Nizamia"
+
+ HYD_jamia_nizamia_desc: "1872: the Deccan's Azhar."
+
+ HYD_darul_uloom: "Darul Uloom"
+
+ HYD_darul_uloom_desc: "Schools in every taluq."
+
+ HYD_urdu_quran: "Urdu Quran"
+
+ HYD_urdu_quran_desc: "Scripture in the people's tongue."
+
+ HYD_haj_subsidy: "Haj Subsidy"
+
+ HYD_haj_subsidy_desc: "Ships for the pilgrims."
+
+ HYD_mecca_embassy: "Mecca Embassy"
+
+ HYD_mecca_embassy_desc: "The Nizam's man in the Hejaz."
+
+ HYD_mecca_spirit: "Mecca Spirit"
+
+ HYD_mecca_spirit_desc: "Servant of the holy cities."
+
+ HYD_masulipatnam_patrol: "Masulipatnam Patrol"
+
+ HYD_masulipatnam_patrol_desc: "Gunboats off the Coromandel."
+
+ HYD_coromandel_squadron: "Coromandel Squadron"
+
+ HYD_coromandel_squadron_desc: "The Nizam's cruisers."
+
+ HYD_bay_command: "Bay Command"
+
+ HYD_bay_command_desc: "One flag over the bay."
+
+ HYD_andaman_eyes: "Eyes on the Andamans"
+
+ HYD_andaman_eyes_desc: "Watch the islands."
+
+ HYD_ocean_ambition: "Ocean Ambition"
+
+ HYD_ocean_ambition_desc: "Beyond the bay, the world."
+
+ HYD_ocean_spirit: "Ocean Spirit"
+
+ HYD_ocean_spirit_desc: "The Nizam's ocean."
+
+ HYD_deccan_chronicle: "Deccan Chronicle"
+
+ HYD_deccan_chronicle_desc: "1938: Hyderabad reads English."
+
+ HYD_radio_deccan: "Radio Deccan"
+
+ HYD_radio_deccan_desc: "The durbar on air."
+
+ HYD_census_1941: "Census of 1941"
+
+ HYD_census_1941_desc: "Count every soul."
+
+ HYD_ration_system: "Ration System"
+
+ HYD_ration_system_desc: "Grain for war years."
+
+ HYD_assembly_1946: "Assembly of 1946"
+
+ HYD_assembly_1946_desc: "Reforms with teeth."
+
+ HYD_responsible_govt: "Responsible Government"
+
+ HYD_responsible_govt_desc: "1946: Frost's reforms."
+
+ HYD_reform_crown: "Reform Crown"
+
+ HYD_reform_crown_desc: "Reform from the throne."
+
+ HYD_deccan_dominion: "Deccan Dominion"
+
+ HYD_deccan_dominion_desc: "Neither Delhi nor Pune: Hyderabad."
+
+ HYD_faithful_ally: "Faithful Ally"
+
+ HYD_faithful_ally_desc: "The British title, earned."
+
+ HYD_paramountcy_talks: "Paramountcy Talks"
+
+ HYD_paramountcy_talks_desc: "Negotiate the Crown's shadow."
+
+ HYD_standstill_draft: "Standstill Draft"
+
+ HYD_standstill_draft_desc: "1947 drafted early."
+
+ HYD_standstill_spirit: "Standstill Spirit"
+
+ HYD_standstill_spirit_desc: "Not yet, not ever."
+
+ HYD_himayat_sagar: "Himayat Sagar"
+
+ HYD_himayat_sagar_desc: "The second lake."
+
+ HYD_musi_floodworks: "Musi Floodworks"
+
+ HYD_musi_floodworks_desc: "1908 never again."
+
+ HYD_lift_irrigation: "Lift Irrigation"
+
+ HYD_lift_irrigation_desc: "Pump the Deccan green."
+
+ HYD_airmail_service: "Airmail Service"
+
+ HYD_airmail_service_desc: "Letters by air."
+
+ HYD_monsoon_flying: "Monsoon Flying"
+
+ HYD_monsoon_flying_desc: "Fly through the rains."
+
+ HYD_pilot_school: "Pilot School"
+
+ HYD_pilot_school_desc: "Begumpet breeds eagles."
+
+ MPU_kangleipak_legacy: "Kangleipak Legacy"
+
+ MPU_kangleipak_legacy_desc: "Two thousand years in the valley."
+
+ MPU_khongjom_memory: "Khongjom Memory"
+
+ MPU_khongjom_memory_desc: "1891: Tikendrajit hanged, Manipur fell."
+
+ MPU_tikendrajit_guards: "Tikendrajit Guards"
+
+ MPU_tikendrajit_guards_desc: "Named for the martyr prince."
+
+ MPU_khongjom_spirit: "Khongjom Spirit"
+
+ MPU_khongjom_spirit_desc: "Remember 1891."
+
+ MPU_polo_origin: "Birthplace of Polo"
+
+ MPU_polo_origin_desc: "Sagol Kangjei: the world learned it here."
+
+ MPU_sagol_kangjei: "Sagol Kangjei"
+
+ MPU_sagol_kangjei_desc: "Horsemanship as religion."
+
+ MPU_polo_spirit: "Polo Spirit"
+
+ MPU_polo_spirit_desc: "Ride like the gods."
+
+ MPU_manipur_lancers: "Manipur Lancers"
+
+ MPU_manipur_lancers_desc: "Pony cavalry, modern rifles."
+
+ MPU_arambai_militia: "Arambai Militia"
+
+ MPU_arambai_militia_desc: "Dart-throwers of the valley."
+
+ MPU_loktak_fisheries: "Loktak Fisheries"
+
+ MPU_loktak_fisheries_desc: "The floating lake feeds."
+
+ MPU_handloom_board: "Handloom Board"
+
+ MPU_handloom_board_desc: "Moirangphi for the world."
+
+ MPU_moreh_trade: "Moreh Trade"
+
+ MPU_moreh_trade_desc: "The gate to Burma."
+
+ MPU_burma_road: "Burma Road"
+
+ MPU_burma_road_desc: "Track to Tamu."
+
+ MPU_imphal_plain: "Imphal Plain"
+
+ MPU_imphal_plain_desc: "Rice bowl of the hills."
+
+ MPU_govindajee_temple: "Govindajee Temple"
+
+ MPU_govindajee_temple_desc: "The palace god."
+
+ MPU_ras_leela: "Ras Leela"
+
+ MPU_ras_leela_desc: "Dance of the divine."
+
+ MPU_kangla_fort: "Kangla Fort"
+
+ MPU_kangla_fort_desc: "Seat of the Ningthouja."
+
+ MPU_govt_school: "Government School"
+
+ MPU_govt_school_desc: "Johnstone's legacy."
+
+ MPU_naga_raids: "Naga Raids"
+
+ MPU_naga_raids_desc: "The hills stir."
+
+ MPU_hill_posts: "Hill Posts"
+
+ MPU_hill_posts_desc: "Stockades on the ridges."
+
+ MPU_kuki_levy: "Kuki Levy"
+
+ MPU_kuki_levy_desc: "Thadou spears."
+
+ MPU_imphal_durbar: "Imphal Durbar"
+
+ MPU_imphal_durbar_desc: "The Pakhangba throne."
+
+ MPU_manipur_crown: "Manipur Crown"
+
+ MPU_manipur_crown_desc: "Sana konung's writ."
+
+ MPU_crown_spirit: "Crown Spirit"
+
+ MPU_crown_spirit_desc: "The valley crowned."
+
+ MPU_court_pune: "Court Pune"
+
+ MPU_court_pune_desc: "Ponies for the Peshwa."
+
+ MPU_churachand: "Churachand Singh"
+
+ MPU_churachand_desc: "Maharaja since 1891; rebuilt the state."
+
+ MPU_bodhchandra: "Bodhchandra Singh"
+
+ MPU_bodhchandra_desc: "The Yuvaraja; schools and hospitals."
+
+ MPU_bodh_court: "Yuvaraja's Court"
+
+ RJP_ganga_canal: "Ganga Canal"
+
+ RJP_ganga_canal_desc: "1927: Sutlej waters for Bikaner."
+
+ RJP_canal_colonies: "Canal Colonies"
+
+ RJP_canal_colonies_desc: "Jat settlers, new towns."
+
+ RJP_bikaner_industry: "Bikaner Industry"
+
+ RJP_bikaner_industry_desc: "Workshops in the walled city."
+
+ RJP_wool_trade: "Wool Trade"
+
+ RJP_wool_trade_desc: "Bikaneri wool for Ludhiana mills."
+
+ RJP_camel_fairs: "Camel Fairs"
+
+ RJP_camel_fairs_desc: "Pushkar and beyond."
+
+ RJP_ganganagar_city: "Ganganagar City"
+
+ RJP_ganganagar_city_desc: "A city the canal built."
+
+ RJP_risala_fund: "Risala Fund"
+
+ RJP_risala_fund_desc: "Endow the camel corps."
+
+ RJP_sambhar_salt: "Sambhar Salt"
+
+ RJP_sambhar_salt_desc: "The lake pays."
+
+ RJP_makrana_marble: "Makrana Marble"
+
+ RJP_makrana_marble_desc: "Taj stone, still quarried."
+
+ RJP_jodhpur_workshops: "Jodhpur Workshops"
+
+ RJP_jodhpur_workshops_desc: "Soor Sagar hammers."
+
+ RJP_marwar_mills: "Marwar Mills"
+
+ RJP_marwar_mills_desc: "Cloth for the desert."
+
+ RJP_umaid_bhawan: "Umaid Bhawan"
+
+ RJP_umaid_bhawan_desc: "1929: a palace as famine relief."
+
+ RJP_palace_spirit: "Palace Spirit"
+
+ RJP_palace_spirit_desc: "Build through hunger."
+
+ RJP_famine_works: "Famine Works"
+
+ RJP_famine_works_desc: "No one starves idle."
+
+ RJP_shekhawati_havelis: "Shekhawati Havelis"
+
+ RJP_shekhawati_havelis_desc: "Painted mansions, counting houses."
+
+ RJP_marwari_network: "Marwari Network"
+
+ RJP_marwari_network_desc: "From Fatehpur to every bazaar in Asia."
+
+ RJP_marwari_spirit: "Marwari Spirit"
+
+ RJP_marwari_spirit_desc: "Capital finds a way."
+
+ RJP_birla_mills: "Birla Mills"
+
+ RJP_birla_mills_desc: "Pilani money, Bombay mills."
+
+ RJP_pilani_institute: "Pilani Institute"
+
+ RJP_pilani_institute_desc: "1929: a school in the sand."
+
+ RJP_calcutta_houses: "Calcutta Houses"
+
+ RJP_calcutta_houses_desc: "Burrabazar counts crores."
+
+ RJP_bombay_agency: "Bombay Agency"
+
+ RJP_bombay_agency_desc: "An office facing the Gateway."
+
+ RJP_ganga_risala: "Ganga Risala"
+
+ RJP_ganga_risala_desc: "The camel corps rides."
+
+ RJP_jodhpur_lancers: "Jodhpur Lancers"
+
+ RJP_jodhpur_lancers_desc: "Rathore steel on horseback."
+
+ RJP_lancer_doctrine: "Lancer Doctrine"
+
+ RJP_lancer_doctrine_desc: "Charge home."
+
+ RJP_jaipur_guards: "Jaipur Guards"
+
+ RJP_jaipur_guards_desc: "Sawai Man's household troops."
+
+ RJP_guard_doctrine: "Guard Doctrine"
+
+ RJP_guard_doctrine_desc: "Die at the palace door."
+
+ RJP_mewar_bhils: "Mewar Bhils"
+
+ RJP_mewar_bhils_desc: "Bowmen of the Aravalli."
+
+ RJP_desert_maneuvers: "Desert Maneuvers"
+
+ RJP_desert_maneuvers_desc: "War games in the Thar."
+
+ RJP_marwar_battery: "Marwar Battery"
+
+ RJP_marwar_battery_desc: "Guns of Mandore."
+
+ RJP_jodhpur_airfield: "Jodhpur Airfield"
+
+ RJP_jodhpur_airfield_desc: "The Maharaja flies himself."
+
+ RJP_chittor_vow: "Chittor Vow"
+
+ RJP_chittor_vow_desc: "Never bow, never forget."
+
+ RJP_sisodia_court: "Sisodia Court"
+
+ RJP_sisodia_court_desc: "Udaipur's quiet pride."
+
+ RJP_udaipur_lakes: "Udaipur Lakes"
+
+ RJP_udaipur_lakes_desc: "Pichola mirrors palaces."
+
+ RJP_zawar_mines: "Zawar Mines"
+
+ RJP_zawar_mines_desc: "Zinc since the ancients."
+
+ RJP_haldighati_memory: "Haldighati Memory"
+
+ RJP_haldighati_memory_desc: "1576: Pratap's stand."
+
+ RJP_eklingji_trust: "Eklingji Trust"
+
+ RJP_eklingji_trust_desc: "The god owns Mewar; the Maharana serves."
+
+ RJP_mewar_spirit: "Mewar Spirit"
+
+ RJP_mewar_spirit_desc: "Honor above thrones."
+
+ RJP_ajmer_enclave: "Ajmer Enclave"
+
+ RJP_ajmer_enclave_desc: "British Ajmer sits in Rajputana's heart."
+
+ RJP_mayo_college: "Mayo College"
+
+ RJP_mayo_college_desc: "1875: Eton of the princes."
+
+ RJP_ajmer_workshops: "Ajmer Workshops"
+
+ RJP_ajmer_workshops_desc: "Locomotives of Rajputana."
+
+ RJP_ajmer_claim: "Claim of Ajmer"
+
+ RJP_ajmer_claim_desc: "The enclave must come home."
+
+ RJP_rajputana_assembly: "Rajputana Assembly"
+
+ RJP_rajputana_assembly_desc: "Every clan, one tent."
+
+ PJB_montgomery_mills: "Montgomery Mills"
+
+ PJB_montgomery_mills_desc: "Sahiwal's new town industry."
+
+ PJB_okara_farms: "Okara Farms"
+
+ PJB_okara_farms_desc: "Crown lands, Sikh settlers."
+
+ PJB_ghee_trade: "Ghee Trade"
+
+ PJB_ghee_trade_desc: "Clarified gold."
+
+ PJB_wool_mandi: "Wool Mandi"
+
+ PJB_wool_mandi_desc: "Fazilka wool for the mills."
+
+ PJB_cotton_press: "Cotton Press"
+
+ PJB_cotton_press_desc: "Bales for Bombay."
+
+ PJB_agrarian_credit: "Agrarian Credit"
+
+ PJB_agrarian_credit_desc: "Free the peasant from the sahukar."
+
+ PJB_credit_spirit: "Credit Spirit"
+
+ PJB_credit_spirit_desc: "Debt-free ploughs."
+
+ PJB_doaba_foundries: "Doaba Foundries"
+
+ PJB_doaba_foundries_desc: "Iron between the rivers."
+
+ PJB_jullundur_sports: "Jullundur Sports"
+
+ PJB_jullundur_sports_desc: "Balls and bats for the empire."
+
+ PJB_phagwara_sugar: "Phagwara Sugar"
+
+ PJB_phagwara_sugar_desc: "Sweeten the Doaba."
+
+ PJB_hoshiarpur_timber: "Hoshiarpur Timber"
+
+ PJB_hoshiarpur_timber_desc: "Shivalik deodars."
+
+ PJB_emigration_remit: "Emigration Remittances"
+
+ PJB_emigration_remit_desc: "Hong Kong, California, gold by post."
+
+ PJB_khalsa_academy: "Khalsa Academy"
+
+ PJB_khalsa_academy_desc: "Officers of the Panth."
+
+ PJB_sikh_pioneers: "Sikh Pioneers"
+
+ PJB_sikh_pioneers_desc: "Sappers of the empire."
+
+ PJB_pioneer_doctrine: "Pioneer Doctrine"
+
+ PJB_pioneer_doctrine_desc: "Dig, bridge, assault."
+
+ PJB_frontier_force: "Frontier Force"
+
+ PJB_frontier_force_desc: "Piffers of the passes."
+
+ PJB_frontier_doctrine: "Frontier Doctrine"
+
+ PJB_frontier_doctrine_desc: "Hold the passes."
+
+ PJB_punjab_command: "Punjab Command"
+
+ PJB_punjab_command_desc: "One command, five rivers."
+
+ PJB_attock_forts: "Attock Forts"
+
+ PJB_attock_forts_desc: "Akbar's fort, new guns."
+
+ PJB_khyber_posts: "Khyber Posts"
+
+ PJB_khyber_posts_desc: "Watch the pass."
+
+ PJB_tank_school: "Tank School"
+
+ PJB_tank_school_desc: "Steel elephants."
+
+ PJB_nankana_memory: "Nankana Memory"
+
+ PJB_nankana_memory_desc: "1921's martyrs march still."
+
+ PJB_morcha_tradition: "Morcha Tradition"
+
+ PJB_morcha_tradition_desc: "Jatha after jatha."
+
+ PJB_gurdwara_fund: "Gurdwara Fund"
+
+ PJB_gurdwara_fund_desc: "Golaks full for the Panth."
+
+ PJB_akal_takht: "Akal Takht"
+
+ PJB_akal_takht_desc: "The throne of the Timeless."
+
+ PJB_takht_spirit: "Takht Spirit"
+
+ PJB_takht_spirit_desc: "Miri piri."
+
+ BEN_darjeeling_tea: "Darjeeling Tea"
+
+ BEN_darjeeling_tea_desc: "Champagne of teas."
+
+ BEN_dooars_tea: "Dooars Tea"
+
+ BEN_dooars_tea_desc: "Elephant country tea."
+
+ BEN_tea_auction: "Tea Auction"
+
+ BEN_tea_auction_desc: "Calcutta sets the world price."
+
+ BEN_titagarh_paper: "Titagarh Paper"
+
+ BEN_titagarh_paper_desc: "Reams for the presses."
+
+ BEN_match_factory: "Match Factory"
+
+ BEN_match_factory_desc: "Strike anywhere."
+
+ BEN_export_agency: "Export Agency"
+
+ BEN_export_agency_desc: "Sell the delta."
+
+ BEN_agency_spirit: "Agency Spirit"
+
+ BEN_agency_spirit_desc: "Commission on everything."
+
+ BEN_toy_train: "Toy Train"
+
+ BEN_toy_train_desc: "1881: Darjeeling Himalayan Railway."
+
+ BEN_cinchona_gardens: "Cinchona Gardens"
+
+ BEN_cinchona_gardens_desc: "Mungpoo quinine for fevers."
+
+ BEN_hill_stations: "Hill Stations"
+
+ BEN_hill_stations_desc: "Darjeeling summers."
+
+ BEN_forest_dept: "Forest Department"
+
+ BEN_forest_dept_desc: "Sal and teak, managed."
+
+ BEN_terai_levies: "Terai Levies"
+
+ BEN_terai_levies_desc: "Jungle infantry."
+
+ BEN_sundarbans_patrol: "Sundarbans Patrol"
+
+ BEN_sundarbans_patrol_desc: "Tigers and smugglers."
+
+ BEN_padma_flotilla: "Padma Flotilla"
+
+ BEN_padma_flotilla_desc: "The great river's guns."
+
+ BEN_padma_doctrine: "Padma Doctrine"
+
+ BEN_padma_doctrine_desc: "Rule the distributaries."
+
+ BEN_meghna_flotilla: "Meghna Flotilla"
+
+ BEN_meghna_flotilla_desc: "The eastern river's teeth."
+
+ BEN_meghna_doctrine: "Meghna Doctrine"
+
+ BEN_meghna_doctrine_desc: "Strike from the chars."
+
+ BEN_chittagong_base: "Chittagong Base"
+
+ BEN_chittagong_base_desc: "A naval station east."
+
+ BEN_cox_bazar: "Cox's Bazar"
+
+ BEN_cox_bazar_desc: "The longest beach guards."
+
+ BEN_saint_martins: "Saint Martin's"
+
+ BEN_saint_martins_desc: "A coral outpost."
+
+ BEN_suhrawardy_ministry: "Suhrawardy Ministry"
+
+ BEN_suhrawardy_ministry_desc: "1946's premier plays for time."
+
+ BEN_united_bengal: "United Bengal"
+
+ BEN_united_bengal_desc: "1947: Sarat and Suhrawardy dream one Bengal."
+
+ BEN_united_spirit: "United Spirit"
+
+ BEN_united_spirit_desc: "One delta, undivided."
+
+ BEN_direct_action: "Direct Action"
+
+ BEN_direct_action_desc: "1946: Calcutta burns."
+
+ BEN_peace_committees: "Peace Committees"
+
+ BEN_peace_committees_desc: "Gandhi walks Noakhali."
+
+ BEN_calcutta_corporation: "Calcutta Corporation"
+
+ BEN_calcutta_corporation_desc: "The city's purse."
+
+ MYS_shivasamudram_power: "Shivasamudram Power"
+
+ MYS_shivasamudram_power_desc: "1902: Asia's first hydro station lights Kolar."
+
+ MYS_sandalwood_oil: "Sandalwood Oil"
+
+ MYS_sandalwood_oil_desc: "The government owns every tree."
+
+ MYS_sandal_export: "Sandal Export"
+
+ MYS_sandal_export_desc: "Mysore sandal for the world."
+
+ MYS_sandal_spirit: "Sandal Spirit"
+
+ MYS_sandal_spirit_desc: "Sweet wood, sweet revenue."
+
+ MYS_mysore_mines: "Mysore Mines"
+
+ MYS_mysore_mines_desc: "Dig the bedrock."
+
+ MYS_chamundi_power: "Chamundi Power"
+
+ MYS_chamundi_power_desc: "The hill lights the city."
+
+ MYS_bangalore_trams: "Bangalore Trams"
+
+ MYS_bangalore_trams_desc: "Rails in the cantonment."
+
+ MYS_baba_budan: "Baba Budan Hills"
+
+ MYS_baba_budan_desc: "1670: seven seeds from Mecca."
+
+ MYS_coorg_coffee: "Coorg Coffee"
+
+ MYS_coorg_coffee_desc: "Planters of Mercara."
+
+ MYS_coffee_board: "Coffee Board"
+
+ MYS_coffee_board_desc: "Grade every bean."
+
+ MYS_curing_works: "Curing Works"
+
+ MYS_curing_works_desc: "Roast at Kushalnagar."
+
+ MYS_export_coffee: "Export Coffee"
+
+ MYS_export_coffee_desc: "London drinks Coorg."
+
+ MYS_coffee_spirit: "Coffee Spirit"
+
+ MYS_coffee_spirit_desc: "Filter kaapi forever."
+
+ MYS_mercara_board: "Mercara Board"
+
+ MYS_mercara_board_desc: "Rule the hills."
+
+ MYS_mysore_pioneers: "Mysore Pioneers"
+
+ MYS_mysore_pioneers_desc: "Sappers of the south."
+
+ MYS_sappers_miners: "Sappers and Miners"
+
+ MYS_sappers_miners_desc: "Madras Sappers, Bangalore home."
+
+ MYS_sapper_doctrine: "Sapper Doctrine"
+
+ MYS_sapper_doctrine_desc: "Breach everything."
+
+ MYS_palace_guard: "Palace Guard"
+
+ MYS_palace_guard_desc: "Amba Vilas never sleeps."
+
+ MYS_guard_doctrine: "Guard Doctrine"
+
+ MYS_guard_doctrine_desc: "Die at the door."
+
+ MYS_bangalore_cantonment: "Bangalore Cantonment"
+
+ MYS_bangalore_cantonment_desc: "1860s barracks, modern army."
+
+ MYS_deccan_artillery: "Deccan Artillery"
+
+ MYS_deccan_artillery_desc: "Guns of Seringapatam's heirs."
+
+ MYS_armored_squadron: "Armored Squadron"
+
+ MYS_armored_squadron_desc: "Steel elephants."
+
+ MYS_meg_centre: "MEG Centre"
+
+ MYS_meg_centre_desc: "Engineers headquartered."
+
+ MYS_dasara_durbar: "Dasara Durbar"
+
+ MYS_dasara_durbar_desc: "The procession of the goddess."
+
+ MYS_chamundi_hill: "Chamundi Hill"
+
+ MYS_chamundi_hill_desc: "The goddess overlooks."
+
+ MYS_university_mysore: "University of Mysore"
+
+ MYS_university_mysore_desc: "1916: Karnataka's first."
+
+ MYS_kannada_parishat: "Kannada Parishat"
+
+ MYS_kannada_parishat_desc: "1915: the language organized."
+
+ MYS_dewan_reforms: "Dewan Reforms"
+
+ MYS_dewan_reforms_desc: "Ismail's clockwork state."
+
+ MYS_reform_spirit: "Reform Spirit"
+
+ MYS_reform_spirit_desc: "Model state, model citizens."
+
+ MYS_assembly_franchise: "Assembly Franchise"
+
+ MYS_assembly_franchise_desc: "Widen the vote."
+
+ MYS_court_madras: "Court Madras"
+
+ MYS_court_madras_desc: "Silk for the Tamils."
+
+ MYS_deccan_compact: "Deccan Compact"
+
+ MYS_deccan_compact_desc: "A paper bridge to Hyderabad."
+
+ MYS_nilgiri_accord: "Nilgiri Accord"
+
+ MYS_nilgiri_accord_desc: "Hill stations agree."
+
+ MYS_pondicherry_eyes: "Eyes on Pondicherry"
+
+ MYS_pondicherry_eyes_desc: "The French enclave watches back."
+
+ MYS_jaya_accession: "Jaya's Accession"
+
+ MYS_jaya_accession_desc: "1940: the philosopher mounts the throne."
+
+ MYS_wadiyar_crown: "Wadiyar Crown"
+
+ MYS_wadiyar_crown_desc: "Six centuries, one crown."
+
+ MYS_crown_spirit: "Crown Spirit"
+
+ MYS_crown_spirit_desc: "The throne endures."
+
+ MYS_south_claim: "Claim of the South"
+
+ MYS_south_claim_desc: "The peninsula is Mysore's garden."
+
+ MYS_peninsular_pact: "Peninsular Pact"
+
+ MYS_peninsular_pact_desc: "Treaties over wars."
+
+ HYD_merchant_houses: "Merchant Houses"
+
+ HYD_merchant_houses_desc: "Gujarati and Marwari capital seeks the Nizam's favor."
+
+ HYD_state_bank: "State Bank"
+
+ HYD_state_bank_desc: "1941: Hyderabad's own bank of issue."
+
+ HYD_bank_spirit: "State Bank"
+
+ HYD_bank_spirit_desc: "Osmania siccas, sound as rock."
+
+ HYD_stock_exchange: "Stock Exchange"
+
+ HYD_stock_exchange_desc: "Paper fortunes in Secunderabad."
+
+ HYD_insurance_pool: "Insurance Pool"
+
+ HYD_insurance_pool_desc: "Underwrite the monsoon."
+
+ HYD_private_steel: "Private Steel"
+
+ HYD_private_steel_desc: "Parsi furnaces at Hakimpet."
+
+ HYD_export_houses: "Export Houses"
+
+ HYD_export_houses_desc: "Deccan goods for world ports."
+
+ HYD_export_spirit: "Export Houses"
+
+ HYD_export_spirit_desc: "Sell everywhere."
+
+ HYD_deccan_airways: "Deccan Airways"
+
+ HYD_deccan_airways_desc: "1945: among India's first airlines."
+
+ HYD_godavari_anecut: "Godavari Anicut"
+
+ HYD_godavari_anecut_desc: "Barrage the great river."
+
+ HYD_cotton_belt: "Cotton Belt"
+
+ HYD_cotton_belt_desc: "White gold of the Deccan."
+
+ HYD_groundnut_oil: "Groundnut Oil"
+
+ HYD_groundnut_oil_desc: "Crushers and refineries."
+
+ HYD_famine_stocks: "Famine Stocks"
+
+ HYD_famine_stocks_desc: "Never again 1876."
+
+ HYD_agri_college: "Agricultural College"
+
+ HYD_agri_college_desc: "Science for the ryot."
+
+ HYD_osman_sagar_second: "Second Sagar"
+
+ HYD_osman_sagar_second_desc: "Another lake, another lifeline."
+
+ HYD_standing_army: "Standing Army"
+
+ HYD_standing_army_desc: "Regulars, not retainers."
+
+ HYD_french_mission: "French Mission"
+
+ HYD_french_mission_desc: "Raymond's heirs return: guns and drill."
+
+ HYD_french_doctrine: "French Doctrine"
+
+ HYD_french_doctrine_desc: "The offensive at all costs."
+
+ HYD_british_mission: "British Mission"
+
+ HYD_british_mission_desc: "Sandhurst drill for the State Forces."
+
+ HYD_british_drill: "British Drill"
+
+ HYD_british_drill_desc: "Slow, steady, unbreakable."
+
+ HYD_golconda_artillery: "Golconda Artillery"
+
+ HYD_golconda_artillery_desc: "The fort's guns, modernized."
+
+ HYD_african_cavalry: "African Cavalry"
+
+ HYD_african_cavalry_desc: "Siddi horsemen, centuries of service."
+
+ HYD_staff_college: "Staff College"
+
+ HYD_staff_college_desc: "Bolarum trains thinkers."
+
+ HYD_monsoon_maneuvers: "Monsoon Maneuvers"
+
+ HYD_monsoon_maneuvers_desc: "War games in the rains."
+
+ HYD_observation_squadron: "Observation Squadron"
+
+ HYD_observation_squadron_desc: "Eyes over the Deccan."
+
+ HYD_fighter_wing: "Fighter Wing"
+
+ HYD_fighter_wing_desc: "Green roundels, sharp teeth."
+
+ HYD_bomber_wing: "Bomber Wing"
+
+ HYD_bomber_wing_desc: "The Nizam's long arm."
+
+ HYD_transport_wing: "Transport Wing"
+
+ HYD_transport_wing_desc: "Move battalions by air."
+
+ HYD_air_defence: "Air Defence"
+
+ HYD_air_defence_desc: "Guns against the sky."
+
+ HYD_municipal_reforms: "Municipal Reforms"
+
+ HYD_municipal_reforms_desc: "Drains and lamps for the old city."
+
+ HYD_press_act: "Press Act"
+
+ HYD_press_act_desc: "Licensed truth."
+
+ HYD_girls_schools: "Girls' Schools"
+
+ HYD_girls_schools_desc: "Mehboobia's heirs multiply."
+
+ HYD_legislative_council: "Legislative Council"
+
+ HYD_legislative_council_desc: "A talking shop with teeth."
+
+ KAS_walnut_wood: "Walnut Wood"
+
+ KAS_walnut_wood_desc: "Carvers of Srinagar."
+
+ KAS_papier_mache: "Papier-Mache"
+
+ KAS_papier_mache_desc: "Painted boxes for the world."
+
+ KAS_carpet_trade: "Carpet Trade"
+
+ KAS_carpet_trade_desc: "Knots upon knots of value."
+
+ KAS_craft_spirit: "Craft Spirit"
+
+ KAS_craft_spirit_desc: "Hands that earn."
+
+ KAS_handicraft_board: "Handicraft Board"
+
+ KAS_handicraft_board_desc: "Organize the artisans."
+
+ KAS_export_depot: "Export Depot"
+
+ KAS_export_depot_desc: "Rawalpindi road, open."
+
+ KAS_kashmir_agency: "Kashmir Agency"
+
+ KAS_kashmir_agency_desc: "A residency of our own."
+
+ KAS_pampore_saffron: "Pampore Saffron"
+
+ KAS_pampore_saffron_desc: "Redder than gold."
+
+ KAS_apple_orchards: "Apple Orchards"
+
+ KAS_apple_orchards_desc: "Orchard rows to the horizon."
+
+ KAS_dairy_coop: "Dairy Cooperatives"
+
+ KAS_dairy_coop_desc: "Gujjar milk in tins."
+
+ KAS_wool_mills: "Wool Mills"
+
+ KAS_wool_mills_desc: "Pashmina, mechanized."
+
+ KAS_seed_farm: "Seed Farm"
+
+ KAS_seed_farm_desc: "Science in the valley."
+
+ KAS_dogra_rifles: "Dogra Rifles"
+
+ KAS_dogra_rifles_desc: "Jammu's steel."
+
+ KAS_mountain_battery: "Mountain Battery"
+
+ KAS_mountain_battery_desc: "Guns that climb."
+
+ KAS_battery_doctrine: "Battery Doctrine"
+
+ KAS_battery_doctrine_desc: "Shell the passes."
+
+ KAS_frontier_constabulary: "Frontier Constabulary"
+
+ KAS_frontier_constabulary_desc: "Police the high valleys."
+
+ KAS_constab_drill: "Constabulary Drill"
+
+ KAS_constab_drill_desc: "Order above all."
+
+ KAS_srinagar_academy: "Srinagar Academy"
+
+ KAS_srinagar_academy_desc: "Officers of the mountains."
+
+ KAS_winter_warfare: "Winter Warfare"
+
+ KAS_winter_warfare_desc: "Fight in the snow."
+
+ KAS_uri_defences: "Uri Defences"
+
+ KAS_uri_defences_desc: "Wall the Jhelum gorge."
+
+ KAS_mountaineer_corps: "Mountaineer Corps"
+
+ KAS_mountaineer_corps_desc: "The high corps."
+
+ KAS_leh_trade: "Leh Trade"
+
+ KAS_leh_trade_desc: "The Silk Road's last mart."
+
+ KAS_hemis_gompa: "Hemis Gompa"
+
+ KAS_hemis_gompa_desc: "Blessings of the lamas."
+
+ KAS_ladakh_scouts: "Ladakh Scouts"
+
+ KAS_ladakh_scouts_desc: "Snow soldiers."
+
+ KAS_karakoram_posts: "Karakoram Posts"
+
+ KAS_karakoram_posts_desc: "Flags on the roof of the world."
+
+ KAS_mountaineering_school: "Mountaineering School"
+
+ KAS_mountaineering_school_desc: "Climb to see."
+
+ KAS_national_conference: "National Conference"
+
+ KAS_national_conference_desc: "1932: Abdullah's machine awakens."
+
+ KAS_quit_kashmir: "Quit Kashmir"
+
+ KAS_quit_kashmir_desc: "1946: Naya Kashmir or else."
+
+ KAS_quit_spirit: "Quit Spirit"
+
+ KAS_quit_spirit_desc: "The valley roars."
+
+ KAS_praja_sabha: "Praja Sabha"
+
+ KAS_praja_sabha_desc: "1934's assembly grows teeth."
+
+ KAS_plebiscite_promise: "Plebiscite Promise"
+
+ KAS_plebiscite_promise_desc: "Let the people speak — someday."
+
+ KAS_instrument_choice: "Instrument of Choice"
+
+ KAS_instrument_choice_desc: "1947 looms. Hari must sign something."
+
+ BEN_huq: "A. K. Fazlul Huq"
+
+ BEN_huq_desc: "Sher-e-Bangla, the peasant champion of Bengal."
+
+ BEN_bose: "Subhas Chandra Bose"
+
+ BEN_bose_desc: "Netaji of Bengal, the INA legend."
+
+ MAR_madhavrao_III: "Peshwa Madhavrao III"
+
+ MAR_madhavrao_III_desc: "The young Peshwa who holds Pune."
+
+ MAR_nana_fadnavis: "Nana Fadnavis"
+
+ MAR_nana_fadnavis_desc: "The wise minister of Pune."
+
+ MAR_moropant_trimbak: "Moropant Trimbak"
+
+ MAR_moropant_trimbak_desc: "Peshwa court strategist."
+
+ MAR_kanhoji_angre_iii: "Kanhoji Angre III"
+
+ MAR_kanhoji_angre_iii_desc: "Sea lord of the Konkan."
+
+ MAR_santaji_ghorpade_ii: "Santaji Ghorpade II"
+
+ MAR_santaji_ghorpade_ii_desc: "Cavalry commander of the Deccan."
+
+ MAR_ibrahim_gardi: "Ibrahim Khan Gardi"
+
+ MAR_ibrahim_gardi_desc: "Artillery master of Udgir."
+
+ MAR_noor_operative: "Noor Inayat Khan"
+
+ MAR_noor_operative_desc: "SOE operative of princely India."
+
+ MDR_bobbili: "Raja of Bobbili"
+
+ MDR_bobbili_desc: "Premier of Madras, the Justice Party stalwart."
+
+ MDR_rajaji: "C. Rajagopalachari"
+
+ MDR_rajaji_desc: "Rajaji of Salem, the Congress brain."
+
+ MDR_rajaji_counsel: "Rajaji Counsel"
+
+ MDR_rajaji_counsel_desc: "Counsel of Madras."
+
+ PJB_bhupinder: "Bhupinder Singh"
+
+ PJB_bhupinder_desc: "Maharaja of Patiala (d.1938), the Sikh grandee."
+
+ PJB_yadavindra: "Yadavindra Singh"
+
+ PJB_yadavindra_desc: "Maharaja of Patiala, the young Sikh modernist."
+
+ SIN_soomro: "Allah Bakhsh Soomro"
+
+ SIN_soomro_desc: "Premier of Sindh, the Soomro statesman."
+
+ TRV_thirunal: "Chithira Thirunal"
+
+ TRV_thirunal_desc: "Maharaja of Travancore, the temple-entry reformer."
+
+ TRV_cp: "C. P. Ramaswami Iyer"
+
+ TRV_cp_desc: "Dewan of Travancore, the brilliant administrator."
+
+ TRV_dewan_admin: "Dewan Administration"
+
+ TRV_dewan_admin_desc: "Administration of the Travancore Dewan."
+
+ WIS_gaekwad: "Pratap Singh Gaekwad"
+
+ WIS_gaekwad_desc: "Maharaja of Baroda, the Gaekwad heir."
+
+ WIS_jamsahib: "Digvijaysinhji Jam Sahib"
+
+ WIS_jamsahib_desc: "Maharaja of Nawanagar, Jam Sahib of the Rann."
+
+ KAS_hari: "Hari Singh"
+
+ KAS_hari_desc: "Maharaja of Kashmir."
+
+ BEN_bengal_legacy: "Bengal Legacy"
+
+ BEN_bengal_legacy_desc: "Delta legacy."
+
+ TRV_kerala_legacy: "Kerala Legacy"
+
+ TRV_kerala_legacy_desc: "Spice coast legacy."
+
+ MAR_mandala_1_title: "The Circle Read Anew"
+
+ MAR_mandala_1_desc: "The pandits unroll the old Mandala: the neighbour is Ari, the enemy; the power beyond him, Mitra. Shall the durbar rule by fear of the near, or friendship of the far?"
+
+ MAR_mandala_1_opt_ari: "Fear the near (Ari)"
+
+ MAR_mandala_1_opt_mitra: "Court the far (Mitra)"
+
+ MAR_mandala_ari_tt: "The durbar will watch its borders with suspicion."
+
+ MAR_mandala_mitra_tt: "The durbar will seek friends beyond its enemies."
+
+ MAR_mandala_2_title: "Ari on the Border"
+
+ MAR_mandala_2_desc: "Across the frontier, drums beat in a rival capital. The sardars demand an answer: denounce the neighbour, or smother him in gifts?"
+
+ MAR_mandala_2_opt_denounce: "Denounce the Ari"
+
+ MAR_mandala_2_opt_gifts: "Send mangoes and gold"
+
+ MAR_mandala_3_title: "Mitra Beyond the Enemy"
+
+ MAR_mandala_3_desc: "Beyond our enemy sits another throne that fears him as we do. An embassy could turn geometry into friendship."
+
+ MAR_mandala_3_opt_embassy: "Send the embassy"
+
+ MAR_mandala_3_opt_spies: "Send spies instead"
+
+ MAR_mandala_4_title: "The Quadruple League"
+
+ MAR_mandala_4_desc: "As Nana Fadnavis did in 1780, the thrones of Hindustan are invited to stand together against the hegemon of the hour. Separation is death; together, arithmetic."
+
+ MAR_mandala_4_opt_join: "Sign the league compact"
+
+ MAR_mandala_4_opt_out: "Smile and stay out"
+
+ MAR_mandala_5_title: "Thirty Pieces of Silver"
+
+ MAR_mandala_5_desc: "A courier arrives at midnight with a chest that clinks. The hegemon buys one throne at a time — this time, yours."
+
+ MAR_mandala_5_opt_silver: "Take the silver"
+
+ MAR_mandala_5_opt_loyal: "Stay loyal to the league"
+
+ MAR_mandala_6_title: "Chapati and Lotus"
+
+ MAR_mandala_6_desc: "Bread and flowers pass village to village in the night. The countryside whispers as one. The durbar must answer before the whisper becomes a roar."
+
+ MAR_mandala_6_opt_crackdown: "Crack down hard"
+
+ MAR_mandala_6_opt_concede: "Concede and calm"
+
+ MAR_mandala_7_title: "Proclaim the Digvijaya"
+
+ MAR_mandala_7_desc: "The priests have read the stars and the generals have counted the battalions. Let the horse run to the four quarters and return: Chakravartin."
+
+ MAR_mandala_7_opt_proclaim: "Proclaim it!"
+
+ MAR_mandala_7_opt_delay: "Not yet"
+
+ MAR_mandala_10_title: "A League Rises in Hindustan"
+
+ MAR_mandala_10_desc: "Thrones that hated each other for a century have signed one compact. The hegemon's clerks are already counting the cost."
+
+ MAR_mandala_10_opt: "The game begins"
+
+ MAR_mandala_mercenary_tt: "Foreign blades, local pay. They will not die for the cause."
+
+ mandala_politics_category: "Mandala Politics"
+
+ mandala_politics_category_desc: "Ari, Mitra, Madhyama — the old geometry of power."
+
+ mandala_read_the_circle: "Read the Circle"
+
+ mandala_read_the_circle_desc: "Summon the pandits and map every throne as friend, foe, or fulcrum."
+
+ mandala_mark_the_ari: "Mark the Ari"
+
+ mandala_mark_the_ari_desc: "Name the neighbouring enemy and put the border on a war footing."
+
+ mandala_court_mitra: "Court the Mitra"
+
+ mandala_court_mitra_desc: "Befriend the power beyond your enemy."
+
+ mandala_hire_mleccha_mercenaries: "Hire Mleccha Mercenaries"
+
+ mandala_hire_mleccha_mercenaries_desc: "Foreign professionals ask no questions about dharma, only about pay."
+
+ mandala_proclaim_digvijaya: "Proclaim the Digvijaya"
+
+ mandala_proclaim_digvijaya_desc: "Send the sacrificial horse to the four quarters."
+
+ mandala_convene_league: "Convene the League"
+
+ mandala_convene_league_desc: "Invite three thrones to stand against the hegemon, as in 1780."
+
+ mandala_accept_maratha_silver: "Accept the Silver"
+
+ mandala_accept_maratha_silver_desc: "There is always a courier at midnight."
+
+ mandala_feed_the_network: "Feed the Network"
+
+ mandala_feed_the_network_desc: "Bread and lotus for the whispering villages."
+
+ MAR_mandala_circle: "The Maratha Mandala"
+
+ MAR_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ HYD_mandala_circle: "The Hyderabadi Mandala"
+
+ HYD_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ RJP_mandala_circle: "The Rajput Mandala"
+
+ RJP_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ MYS_mandala_circle: "The Mysore Mandala"
+
+ MYS_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ HIN_mandala_circle: "The Awadhi Mandala"
+
+ HIN_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ PJB_mandala_circle: "The Sikh Mandala"
+
+ PJB_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ BEN_mandala_circle: "The Bengal Mandala"
+
+ BEN_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ MDR_mandala_circle: "The Tamil Mandala"
+
+ MDR_mandala_circle_desc: "Let the pandits map every throne as Ari, Mitra, or Madhyama."
+
+ MAR_RULE_GROUP: "Maratha Empire"
+ MAR_RULE_HISTORICAL: "Maratha AI Historical"
+ MAR_RULE_HISTORICAL_DESC: "The Maratha AI follows the Peshwa restoration path."
+ MAR_RULE_REVOLTS: "Princely Revolts"
+ MAR_RULE_REVOLTS_DESC: "Low-stability thrones can erupt in revolt."
+ MAR_RULE_YES: "Yes"
+ MAR_RULE_NO: "No"

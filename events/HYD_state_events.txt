@@ -1,0 +1,63 @@
+# HYD_state events (HYD_state.1 -> HYD_state.3 Nizam's economy chain)
+
+add_namespace = HYD_state
+
+country_event = {
+	id = HYD_state.1
+	title = HYD_state_1_title
+	desc = HYD_state_1_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = HYD_state_1_opt_a
+		427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_ideas = HYD_railway_state_spirit
+		hidden_effect = { country_event = { id = HYD_state.2 days = 45 } }
+	}
+	option = {
+		name = HYD_state_1_opt_b
+		add_political_power = 100
+		427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = HYD_state.2 days = 45 } }
+	}
+}
+
+country_event = {
+	id = HYD_state.2
+	title = HYD_state_2_title
+	desc = HYD_state_2_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = HYD_state_2_opt_a
+		add_stability = -0.04
+		add_war_support = 0.08
+		add_ideas = HYD_mill_reforms_spirit
+		hidden_effect = { country_event = { id = HYD_state.3 days = 60 } }
+	}
+	option = {
+		name = HYD_state_2_opt_b
+		add_stability = 0.05
+		add_war_support = -0.03
+		add_political_power = 40
+		hidden_effect = { country_event = { id = HYD_state.3 days = 60 } }
+	}
+}
+
+country_event = {
+	id = HYD_state.3
+	title = HYD_state_3_title
+	desc = HYD_state_3_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = HYD_state_3_opt_a
+		add_stability = 0.06
+		add_war_support = 0.04
+	}
+	option = {
+		name = HYD_state_3_opt_b
+		add_political_power = 120
+		add_stability = -0.02
+	}
+}

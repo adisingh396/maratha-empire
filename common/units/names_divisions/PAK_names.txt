@@ -1,0 +1,11 @@
+PAK_INF_01 = {
+  name = "PAK Frontier Division"
+  for_countries = { PAK }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d PAK Division"
+  ordered = {
+    1 = { "%d PAK Division" }
+    2 = { "%d PAK Division" }
+  }
+}

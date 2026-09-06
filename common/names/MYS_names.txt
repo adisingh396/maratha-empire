@@ -1,0 +1,9 @@
+MYS = {
+	male = {
+		names = { Amit Arjun Cariappa Dev Jayachamarajendra Karan Kishan Mirza Pratap Ravi Rohan Suraj Thimayya Vikram Visvesvaraya Wadiyar }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { Das Gupta Ismail Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
+}

@@ -1,0 +1,34 @@
+characters = {
+PJB_bhupinder = {
+	name = "Bhupinder Singh"
+	portraits = {
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1938.4.1"
+		id = -1
+	}
+}
+PJB_yadavindra = {
+	name = "Yadavindra Singh"
+	portraits = {
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	corps_commander = {
+		traits = { aggressive_assaulter }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+}

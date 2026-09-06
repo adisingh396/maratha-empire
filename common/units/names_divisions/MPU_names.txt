@@ -1,0 +1,11 @@
+MPU_INF_01 = {
+  name = "MPU Infantry Division"
+  for_countries = { MPU }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d MPU Division"
+  ordered = {
+    1 = { "%d MPU Division" }
+    2 = { "%d MPU Division" }
+  }
+}

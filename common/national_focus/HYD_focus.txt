@@ -44,7 +44,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed HYD_modern_nizam_forces"
-			add_army_experience = 25
+			army_experience = 25
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
 		}
 	}
@@ -89,7 +89,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed HYD_confront_maratha"
-			create_wargoal = { target = MAR type = take_state_focus target_state = 429 }
+			create_wargoal = { target = MAR type = take_state_focus generator = { 429 } }
 			add_stability = -0.05
 		}
 	}
@@ -147,7 +147,1261 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed HYD_world_colonize"
 			add_tech_bonus = { bonus = 0.5 uses = 2 category = naval_equipment }
-			add_navy_experience = 50
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = HYD_nizam_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYD_deccan_industry }
+		x = 1
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_nizam_railway"
+			427 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			country_event = { id = HYD_nizam.1 days = 3 }
+		}
+	}
+	focus = {
+		id = HYD_shakkar_nagar
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_nizam_railway }
+		x = 1
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_shakkar_nagar"
+			427 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = HYD_azam_jahi_mills
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HYD_shakkar_nagar }
+		x = 1
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_azam_jahi_mills"
+			427 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			country_event = { id = HYD_nizam.2 days = 3 }
+		}
+	}
+	focus = {
+		id = HYD_allwyn_works
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = HYD_azam_jahi_mills }
+		x = 1
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_allwyn_works"
+			427 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = HYD_rtc_roads
+		icon = GFX_focus_generic_truck
+		prerequisite = { focus = HYD_allwyn_works }
+		x = 1
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_rtc_roads"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+			427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_begumpet_airfield
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_rtc_roads }
+		x = 1
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_begumpet_airfield"
+			427 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+			country_event = { id = HYD_nizam.4 days = 3 }
+		}
+	}
+	focus = {
+		id = HYD_ittehad_crisis
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_deccan_sultanate_proclaimed }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_ittehad_crisis"
+			add_stability = -0.03
+			country_event = { id = HYD_nizam.5 days = 3 }
+		}
+	}
+	focus = {
+		id = HYD_merchant_houses
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HYD_deccan_industry }
+		x = 0
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_merchant_houses"
+			add_political_power = 80
+			427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_state_bank
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_merchant_houses }
+		x = 0
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_state_bank"
+			add_political_power = 60
+			add_stability = 0.02
+			add_ideas = HYD_bank_spirit
+		}
+	}
+	focus = {
+		id = HYD_stock_exchange
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_state_bank }
+		x = 0
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_stock_exchange"
+			add_political_power = 100
+			427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_insurance_pool
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_stock_exchange }
+		x = 0
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_insurance_pool"
+			add_stability = 0.04
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = HYD_private_steel
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HYD_insurance_pool }
+		x = 0
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_private_steel"
+			427 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = HYD_export_houses
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HYD_private_steel }
+		x = 0
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_export_houses"
+			add_political_power = 80
+			add_ideas = HYD_export_spirit
+		}
+	}
+	focus = {
+		id = HYD_deccan_airways
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_export_houses }
+		x = 0
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_deccan_airways"
+			air_experience = 30
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+		}
+	}
+	focus = {
+		id = HYD_godavari_anecut
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYD_nizam_railway }
+		x = 2
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_godavari_anecut"
+			427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = HYD_cotton_belt
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_godavari_anecut }
+		x = 2
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_cotton_belt"
+			427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_groundnut_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = HYD_cotton_belt }
+		x = 2
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_groundnut_oil"
+			add_political_power = 60
+			427 = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_famine_stocks
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_groundnut_oil }
+		x = 2
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_famine_stocks"
+			add_stability = 0.05
+			add_manpower = 12000
+		}
+	}
+	focus = {
+		id = HYD_agri_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_famine_stocks }
+		x = 2
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_agri_college"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = HYD_osman_sagar_second
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYD_agri_college }
+		x = 2
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_osman_sagar_second"
+			427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HYD_standing_army
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_modern_nizam_forces }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_standing_army"
+			army_experience = 25
+			add_manpower = 15000
+		}
+	}
+	focus = {
+		id = HYD_french_mission
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = HYD_standing_army }
+		bypass = { has_completed_focus = HYD_british_mission }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_french_mission"
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery }
+			add_ideas = HYD_french_doctrine
+		}
+	}
+	focus = {
+		id = HYD_british_mission
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = HYD_standing_army }
+		bypass = { has_completed_focus = HYD_french_mission }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_british_mission"
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = infantry_weapons }
+			add_ideas = HYD_british_drill
+		}
+	}
+	focus = {
+		id = HYD_golconda_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HYD_french_mission }
+		x = 4
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_golconda_artillery"
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+		}
+	}
+	focus = {
+		id = HYD_african_cavalry
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = HYD_british_mission }
+		x = 6
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_african_cavalry"
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
+	}
+	focus = {
+		id = HYD_staff_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_golconda_artillery }
+		prerequisite = { focus = HYD_african_cavalry }
+		x = 5
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_staff_college"
+			army_experience = 30
+			add_command_power = 15
+	}
+	}
+	focus = {
+		id = HYD_monsoon_maneuvers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_staff_college }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_monsoon_maneuvers"
+			army_experience = 25
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HYD_observation_squadron
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_french_advisors }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_observation_squadron"
+			air_experience = 25
+			427 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_fighter_wing
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_observation_squadron }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_fighter_wing"
+			air_experience = 30
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+		}
+	}
+	focus = {
+		id = HYD_bomber_wing
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = HYD_fighter_wing }
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_bomber_wing"
+			air_experience = 30
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+		}
+	}
+	focus = {
+		id = HYD_transport_wing
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_bomber_wing }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_transport_wing"
+			air_experience = 20
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = HYD_air_defence
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HYD_transport_wing }
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_air_defence"
+			427 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HYD_municipal_reforms
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_deccan_sultanate_proclaimed }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_municipal_reforms"
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = HYD_press_act
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HYD_municipal_reforms }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_press_act"
+			add_war_support = 0.04
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_girls_schools
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_press_act }
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_girls_schools"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HYD_legislative_council
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_girls_schools }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_legislative_council"
+			add_stability = 0.06
+			add_political_power = 80
+		}
+	}
+
+	focus = {
+		id = HYD_jacob_diamond
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_begumpet_airfield }
+		x = 11
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_jacob_diamond"
+			add_political_power = 100
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_falaknuma_palace
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_jacob_diamond }
+		x = 11
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_falaknuma_palace"
+			add_stability = 0.04
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = HYD_chowmahalla_court
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_falaknuma_palace }
+		x = 11
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_chowmahalla_court"
+			add_stability = 0.04
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = HYD_purana_haveli
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_chowmahalla_court }
+		x = 11
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_purana_haveli"
+			add_stability = 0.03
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = HYD_jewellery_export
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HYD_purana_haveli }
+		x = 11
+		y = 18
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_jewellery_export"
+			add_political_power = 100
+			427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_toshakhana_audit
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_jewellery_export }
+		x = 11
+		y = 19
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_toshakhana_audit"
+			add_political_power = 120
+			add_ideas = HYD_toshakhana_spirit
+		}
+	}
+	focus = {
+		id = HYD_osmania_medical
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_shakkar_nagar }
+		x = 12
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_osmania_medical"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_unani_hospital
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_osmania_medical }
+		x = 12
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_unani_hospital"
+			add_stability = 0.04
+			add_manpower = 8000
+		}
+	}
+	focus = {
+		id = HYD_nizam_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_unani_hospital }
+		x = 12
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_nizam_college"
+			add_research_slot = 1
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_arts_college
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HYD_nizam_college }
+		x = 12
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_arts_college"
+			add_war_support = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HYD_engineering_college
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HYD_arts_college }
+		x = 12
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_engineering_college"
+			427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = HYD_state_library
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HYD_engineering_college }
+		x = 12
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_state_library"
+			add_stability = 0.03
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = HYD_golconda_brigade
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_monsoon_maneuvers }
+		x = 13
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_golconda_brigade"
+			army_experience = 25
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = HYD_hyderabad_lancers
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = HYD_golconda_brigade }
+		x = 13
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_hyderabad_lancers"
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
+	}
+	focus = {
+		id = HYD_arab_contingent
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_hyderabad_lancers }
+		x = 13
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_arab_contingent"
+			army_experience = 20
+			add_manpower = 8000
+			add_ideas = HYD_arab_spirit
+		}
+	}
+	focus = {
+		id = HYD_artillery_school
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HYD_arab_contingent }
+		x = 13
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_artillery_school"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery }
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = HYD_signals_wing
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_artillery_school }
+		x = 13
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_signals_wing"
+			army_experience = 15
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+		}
+	}
+	focus = {
+		id = HYD_ordnance_depot
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HYD_signals_wing }
+		x = 13
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_ordnance_depot"
+			427 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_staff_ride
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_ordnance_depot }
+		x = 13
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_staff_ride"
+			army_experience = 25
+			add_command_power = 10
+		}
+	}
+	focus = {
+		id = HYD_jamia_nizamia
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HYD_ittehad_crisis }
+		x = 14
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_jamia_nizamia"
+			add_stability = 0.04
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HYD_darul_uloom
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_jamia_nizamia }
+		x = 14
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_darul_uloom"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_urdu_quran
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HYD_darul_uloom }
+		x = 14
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_urdu_quran"
+			add_stability = 0.04
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = HYD_haj_subsidy
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_urdu_quran }
+		x = 14
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_haj_subsidy"
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HYD_mecca_embassy
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = HYD_haj_subsidy }
+		x = 14
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_mecca_embassy"
+			add_political_power = 80
+			add_ideas = HYD_mecca_spirit
+		}
+	}
+	focus = {
+		id = HYD_masulipatnam_patrol
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = HYD_world_colonize }
+		x = 9
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_masulipatnam_patrol"
+			navy_experience = 30
+			add_manpower = 6000
+		}
+	}
+	focus = {
+		id = HYD_coromandel_squadron
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = HYD_masulipatnam_patrol }
+		x = 9
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_coromandel_squadron"
+			navy_experience = 35
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+		}
+	}
+	focus = {
+		id = HYD_bay_command
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HYD_coromandel_squadron }
+		x = 9
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_bay_command"
+			navy_experience = 40
+			add_command_power = 10
+		}
+	}
+	focus = {
+		id = HYD_andaman_eyes
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = HYD_bay_command }
+		x = 9
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_andaman_eyes"
+			navy_experience = 25
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HYD_ocean_ambition
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = HYD_andaman_eyes }
+		x = 9
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_ocean_ambition"
+			navy_experience = 40
+			add_ideas = HYD_ocean_spirit
+		}
+	}
+	focus = {
+		id = HYD_deccan_chronicle
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HYD_legislative_council }
+		x = 10
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_deccan_chronicle"
+			add_war_support = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HYD_radio_deccan
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HYD_deccan_chronicle }
+		x = 10
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_radio_deccan"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = HYD_census_1941
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_radio_deccan }
+		x = 10
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_census_1941"
+			add_manpower = 15000
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = HYD_ration_system
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_census_1941 }
+		x = 10
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_ration_system"
+			add_stability = 0.04
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = HYD_assembly_1946
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_ration_system }
+		x = 10
+		y = 12
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_assembly_1946"
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = HYD_responsible_govt
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_assembly_1946 }
+		x = 10
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_responsible_govt"
+			add_stability = 0.05
+			add_ideas = HYD_reform_crown
+		}
+	}
+	focus = {
+		id = HYD_deccan_dominion
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_indian_empire }
+		x = 5
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_deccan_dominion"
+			427 = { add_core_of = HYD }
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HYD_faithful_ally
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = HYD_deccan_dominion }
+		x = 5
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_faithful_ally"
+			add_opinion_modifier = { target = ENG modifier = maratha_cultural_ties }
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = HYD_paramountcy_talks
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_faithful_ally }
+		x = 5
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_paramountcy_talks"
+			add_stability = 0.04
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = HYD_standstill_draft
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HYD_paramountcy_talks }
+		x = 5
+		y = 18
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_standstill_draft"
+			add_stability = 0.06
+			add_ideas = HYD_standstill_spirit
+		}
+	}
+	focus = {
+		id = HYD_himayat_sagar
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYD_osman_sagar_second }
+		x = 2
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_himayat_sagar"
+			427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HYD_musi_floodworks
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HYD_himayat_sagar }
+		x = 2
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_musi_floodworks"
+			427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HYD_lift_irrigation
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HYD_musi_floodworks }
+		x = 2
+		y = 17
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_lift_irrigation"
+			add_manpower = 12000
+			427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = HYD_airmail_service
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_air_defence }
+		x = 8
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_airmail_service"
+			air_experience = 20
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = HYD_monsoon_flying
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HYD_airmail_service }
+		x = 8
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_monsoon_flying"
+			air_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+		}
+	}
+	focus = {
+		id = HYD_pilot_school
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = HYD_monsoon_flying }
+		x = 8
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_pilot_school"
+			air_experience = 30
+			add_manpower = 4000
+		}
+	}
+
+	focus = {
+		id = HYD_falaknuma_guard
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HYD_toshakhana_audit }
+		x = 11
+		y = 20
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_falaknuma_guard"
+			army_experience = 20
+			add_manpower = 8000
+		}
+	}
+	focus = {
+		id = HYD_mandala_circle
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HYD_falaknuma_guard }
+		x = 12
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HYD_mandala_circle"
+			add_political_power = 80
+			set_country_flag = mandala_circle_read
+			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
 }

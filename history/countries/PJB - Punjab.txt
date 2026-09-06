@@ -1,5 +1,5 @@
 capital = 986
-set_research_slots = 3
+set_research_slots = 4
 set_stability = 0.55
 set_war_support = 0.20
 set_technology = {
@@ -9,7 +9,22 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     tech_trucks = 1
+
+	CAS1 = 1
+	early_fighter = 1
 }
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		CAS1 = 1
+	}
+}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
 set_convoys = 10
 set_politics = {
     ruling_party = neutrality
@@ -26,4 +41,8 @@ set_popularities = {
 add_ideas = {
     PJB_militia_legacy
 }
+recruit_character = PJB_bhupinder
+recruit_character = PJB_yadavindra
+promote_character = PJB_bhupinder
 set_oob = "PJB_1936"
+set_air_oob = "PJB_1936_air"

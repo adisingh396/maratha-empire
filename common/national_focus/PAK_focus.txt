@@ -1,0 +1,416 @@
+focus_tree = {
+	id = PAK_focus
+	country = {
+		factor = 0
+		modifier = { add = 10 tag = PAK }
+	}
+	default = no
+	focus = {
+		id = PAK_gandhara_legacy
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_gandhara_legacy"
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = PAK_taxila_digs
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = PAK_gandhara_legacy }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_taxila_digs"
+			add_political_power = 60
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = PAK_peshawar_museum
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAK_taxila_digs }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_peshawar_museum"
+			add_stability = 0.04
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = PAK_gor_khatri
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PAK_peshawar_museum }
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_gor_khatri"
+			442 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = PAK_qissa_khwani
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PAK_gor_khatri }
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_qissa_khwani"
+			add_war_support = 0.06
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = PAK_khudai_khidmatgar
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PAK_qissa_khwani }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_khudai_khidmatgar"
+			add_manpower = 20000
+			add_war_support = 0.05
+			add_ideas = PAK_khidmatgar_spirit
+		}
+	}
+	focus = {
+		id = PAK_bacha_schools
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PAK_khudai_khidmatgar }
+		x = 5
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_bacha_schools"
+			add_stability = 0.04
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = PAK_islamia_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = PAK_gandhara_legacy }
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_islamia_college"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = PAK_edwards_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = PAK_islamia_college }
+		x = 3
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_edwards_college"
+			add_research_slot = 1
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = PAK_tribal_schools
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PAK_edwards_college }
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_tribal_schools"
+			add_manpower = 10000
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = PAK_khyber_levies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PAK_gandhara_legacy }
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_khyber_levies"
+			army_experience = 20
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = PAK_afridi_rifles
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PAK_khyber_levies }
+		x = 7
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_afridi_rifles"
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+		}
+	}
+	focus = {
+		id = PAK_waziristan_posts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PAK_afridi_rifles }
+		x = 7
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_waziristan_posts"
+			442 = { add_building_construction = { type = land_fort level = 2 instant_build = yes } }
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = PAK_khattak_militia
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PAK_waziristan_posts }
+		x = 7
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_khattak_militia"
+			add_manpower = 15000
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = PAK_mahsud_talks
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PAK_khattak_militia }
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_mahsud_talks"
+			add_stability = 0.04
+			add_manpower = 8000
+		}
+	}
+	focus = {
+		id = PAK_attock_guard
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PAK_mahsud_talks }
+		x = 7
+		y = 6
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_attock_guard"
+			442 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = PAK_jewellers_row
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PAK_gandhara_legacy }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_jewellers_row"
+			add_political_power = 60
+			442 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = PAK_dry_fruit_mandi
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = PAK_jewellers_row }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_dry_fruit_mandi"
+			add_political_power = 60
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = PAK_shoba_bazaar
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = PAK_dry_fruit_mandi }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_shoba_bazaar"
+			442 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = PAK_kabul_river
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PAK_shoba_bazaar }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_kabul_river"
+			442 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_manpower = 6000
+		}
+	}
+	focus = {
+		id = PAK_storytellers_bazaar
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PAK_kabul_river }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_storytellers_bazaar"
+			add_stability = 0.04
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = PAK_khyber_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = PAK_attock_guard }
+		x = 9
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_khyber_railway"
+			442 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = PAK_jamrud_fort
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = PAK_khyber_railway }
+		x = 9
+		y = 8
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_jamrud_fort"
+			442 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = PAK_ali_masjid
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PAK_jamrud_fort }
+		x = 9
+		y = 9
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_ali_masjid"
+			add_war_support = 0.05
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = PAK_jirga_assembly
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAK_bacha_schools }
+		prerequisite = { focus = PAK_tribal_schools }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_jirga_assembly"
+			add_stability = 0.05
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = PAK_pakhtun_crown
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PAK_jirga_assembly }
+		prerequisite = { focus = PAK_ali_masjid }
+		x = 5
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_pakhtun_crown"
+			add_ideas = PAK_crown_spirit
+			add_stability = 0.05
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = PAK_frontier_claims
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = PAK_pakhtun_crown }
+		x = 5
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1940.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PAK_frontier_claims"
+			440 = { add_claim_by = PAK }
+			add_war_support = 0.05
+		}
+	}
+}

@@ -1,0 +1,38 @@
+characters = {
+ORI_gajapati = {
+	name = ORI_gajapati
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+ORI_mahatab = {
+	name = ORI_mahatab
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	country_leader = {
+		ideology = liberalism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+ORI_biju = {
+	name = ORI_biju
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	advisor = {
+		slot = air_chief
+		allowed = { original_tag = ORI }
+		idea_token = ORI_biju_wings
+		traits = { military_theorist }
+	}
+}
+}

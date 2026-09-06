@@ -1,0 +1,263 @@
+# MPU_ev events (MPU_ev.0 chain, MPU_ev.5+ singles)
+
+add_namespace = MPU_ev
+
+country_event = {
+	id = MPU_ev.0
+	title = MPU_ev.0_title
+	desc = MPU_ev.0_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.0_a
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = { country_event = { id = MPU_ev.1 days = 30 } }
+	}
+	option = {
+		name = MPU_ev.0_b
+		add_stability = 0.04
+		add_war_support = 0.03
+		hidden_effect = { country_event = { id = MPU_ev.1 days = 30 } }
+	}
+}
+
+country_event = {
+	id = MPU_ev.1
+	title = MPU_ev.1_title
+	desc = MPU_ev.1_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.1_a
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = { country_event = { id = MPU_ev.2 days = 30 } }
+		hidden_effect = { country_event = { id = MPU_ev.7 days = 45 } }
+	}
+	option = {
+		name = MPU_ev.1_b
+		add_stability = 0.04
+		add_war_support = 0.03
+		hidden_effect = { country_event = { id = MPU_ev.2 days = 30 } }
+	}
+}
+
+country_event = {
+	id = MPU_ev.2
+	title = MPU_ev.2_title
+	desc = MPU_ev.2_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.2_a
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = { country_event = { id = MPU_ev.3 days = 30 } }
+	}
+	option = {
+		name = MPU_ev.2_b
+		add_stability = 0.04
+		add_war_support = 0.03
+		hidden_effect = { country_event = { id = MPU_ev.3 days = 30 } }
+	}
+}
+
+country_event = {
+	id = MPU_ev.3
+	title = MPU_ev.3_title
+	desc = MPU_ev.3_desc
+	picture = GFX_report_event_generic_navy
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.3_a
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = { country_event = { id = MPU_ev.4 days = 30 } }
+		hidden_effect = { country_event = { id = MPU_ev.9 days = 45 } }
+	}
+	option = {
+		name = MPU_ev.3_b
+		add_stability = 0.04
+		add_war_support = 0.03
+		hidden_effect = { country_event = { id = MPU_ev.4 days = 30 } }
+	}
+}
+
+country_event = {
+	id = MPU_ev.4
+	title = MPU_ev.4_title
+	desc = MPU_ev.4_desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.4_a
+		add_political_power = 50
+		add_stability = 0.02
+	}
+	option = {
+		name = MPU_ev.4_b
+		add_stability = 0.04
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = MPU_ev.5
+	title = MPU_ev.5_title
+	desc = MPU_ev.5_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.5_a
+		add_war_support = 0.04
+		add_manpower = 8000
+	}
+	option = {
+		name = MPU_ev.5_b
+		add_war_support = 0.04
+		add_manpower = 8000
+	}
+}
+
+country_event = {
+	id = MPU_ev.6
+	title = MPU_ev.6_title
+	desc = MPU_ev.6_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.6_a
+		add_political_power = 60
+		add_stability = 0.02
+	}
+	option = {
+		name = MPU_ev.6_b
+		add_political_power = 60
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = MPU_ev.7
+	title = MPU_ev.7_title
+	desc = MPU_ev.7_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.7_a
+		add_stability = 0.05
+	}
+	option = {
+		name = MPU_ev.7_b
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = MPU_ev.8
+	title = MPU_ev.8_title
+	desc = MPU_ev.8_desc
+	picture = GFX_report_event_generic_navy
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.8_a
+		add_stability = -0.02
+		add_political_power = 70
+	}
+	option = {
+		name = MPU_ev.8_b
+		add_stability = -0.02
+		add_political_power = 70
+	}
+}
+
+country_event = {
+	id = MPU_ev.9
+	title = MPU_ev.9_title
+	desc = MPU_ev.9_desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.9_a
+		add_war_support = 0.03
+		add_stability = 0.02
+	}
+	option = {
+		name = MPU_ev.9_b
+		add_war_support = 0.03
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = MPU_ev.10
+	title = MPU_ev.10_title
+	desc = MPU_ev.10_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.10_a
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_political_power = 30
+	}
+	option = {
+		name = MPU_ev.10_b
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = MPU_ev.11
+	title = MPU_ev.11_title
+	desc = MPU_ev.11_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.11_a
+		add_war_support = 0.03
+		add_political_power = 30
+	}
+	option = {
+		name = MPU_ev.11_b
+		add_war_support = 0.03
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = MPU_ev.12
+	title = MPU_ev.12_title
+	desc = MPU_ev.12_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.12_a
+		add_manpower = 10000
+		army_experience = 10
+	}
+	option = {
+		name = MPU_ev.12_b
+		add_manpower = 10000
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = MPU_ev.13
+	title = MPU_ev.13_title
+	desc = MPU_ev.13_desc
+	picture = GFX_report_event_generic_navy
+	is_triggered_only = yes
+	option = {
+		name = MPU_ev.13_a
+		add_political_power = 50
+		add_stability = 0.02
+	}
+	option = {
+		name = MPU_ev.13_b
+		add_political_power = 50
+		add_stability = 0.02
+	}
+}

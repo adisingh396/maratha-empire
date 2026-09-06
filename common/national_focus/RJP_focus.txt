@@ -42,7 +42,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed RJP_cavalry_tradition"
-			add_army_experience = 20
+			army_experience = 20
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
 		}
 	}
@@ -100,7 +100,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed RJP_claim_delhi"
-			create_wargoal = { target = HIN type = take_state_focus target_state = 439 }
+			create_wargoal = { target = HIN type = take_state_focus generator = { 439 } }
 		}
 	}
 	focus = {
@@ -115,6 +115,357 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed RJP_unify_rajputana_india"
 			hidden_effect = { maratha_claim_india_effect = yes }
+		}
+	}
+	focus = {
+		id = RJP_ganga_canal
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RJP_rajput_clans }
+		x = 0 y = 1 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_ganga_canal" 989 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_manpower = 10000 }
+	}
+	focus = {
+		id = RJP_canal_colonies
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RJP_ganga_canal }
+		x = 0 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_canal_colonies" add_manpower = 15000 add_stability = 0.02 }
+	}
+	focus = {
+		id = RJP_bikaner_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RJP_canal_colonies }
+		x = 0 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_bikaner_industry" 989 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = RJP_wool_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = RJP_bikaner_industry }
+		x = 0 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_wool_trade" add_political_power = 70 989 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = RJP_camel_fairs
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RJP_wool_trade }
+		x = 0 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_camel_fairs" add_manpower = 12000 add_stability = 0.02 }
+	}
+	focus = {
+		id = RJP_ganganagar_city
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RJP_camel_fairs }
+		x = 0 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_ganganagar_city" add_stability = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = RJP_risala_fund
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = RJP_ganganagar_city }
+		x = 0 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_risala_fund" army_experience = 20 add_manpower = 8000 }
+	}
+	focus = {
+		id = RJP_sambhar_salt
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RJP_desert_industry }
+		x = 2 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_sambhar_salt" 433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = RJP_makrana_marble
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RJP_sambhar_salt }
+		x = 2 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_makrana_marble" add_political_power = 70 433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = RJP_jodhpur_workshops
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = RJP_makrana_marble }
+		x = 2 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_jodhpur_workshops" 433 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = RJP_marwar_mills
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RJP_jodhpur_workshops }
+		x = 2 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_marwar_mills" 433 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = RJP_umaid_bhawan
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RJP_marwar_mills }
+		x = 2 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_umaid_bhawan" add_stability = 0.07 add_manpower = 15000 add_ideas = RJP_palace_spirit }
+	}
+	focus = {
+		id = RJP_famine_works
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RJP_umaid_bhawan }
+		x = 2 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_famine_works" add_stability = 0.04 add_war_support = 0.02 add_manpower = 10000 }
+	}
+	focus = {
+		id = RJP_shekhawati_havelis
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = RJP_desert_industry }
+		x = 1 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_shekhawati_havelis" add_political_power = 70 433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = RJP_marwari_network
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = RJP_shekhawati_havelis }
+		x = 1 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_marwari_network" add_political_power = 80 add_ideas = RJP_marwari_spirit }
+	}
+	focus = {
+		id = RJP_birla_mills
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RJP_marwari_network }
+		x = 1 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_birla_mills" 433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } 433 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = RJP_pilani_institute
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = RJP_birla_mills }
+		x = 1 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_pilani_institute" add_research_slot = 1 add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } }
+	}
+	focus = {
+		id = RJP_calcutta_houses
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = RJP_pilani_institute }
+		x = 1 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_calcutta_houses" add_political_power = 90 add_stability = 0.02 }
+	}
+	focus = {
+		id = RJP_bombay_agency
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = RJP_calcutta_houses }
+		x = 1 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_bombay_agency" add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_political_power = 60 }
+	}
+	focus = {
+		id = RJP_ganga_risala
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = RJP_confederation }
+		x = 4 y = 4 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_ganga_risala" army_experience = 25 add_manpower = 10000 }
+	}
+	focus = {
+		id = RJP_jodhpur_lancers
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = RJP_ganga_risala }
+		bypass = { has_completed_focus = RJP_jaipur_guards }
+		x = 4 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_jodhpur_lancers" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } add_ideas = RJP_lancer_doctrine }
+	}
+	focus = {
+		id = RJP_jaipur_guards
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RJP_ganga_risala }
+		bypass = { has_completed_focus = RJP_jodhpur_lancers }
+		x = 6 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_jaipur_guards" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } add_ideas = RJP_guard_doctrine }
+	}
+	focus = {
+		id = RJP_mewar_bhils
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RJP_jodhpur_lancers }
+		prerequisite = { focus = RJP_jaipur_guards }
+		x = 5 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_mewar_bhils" add_manpower = 18000 army_experience = 15 }
+	}
+	focus = {
+		id = RJP_desert_maneuvers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RJP_mewar_bhils }
+		x = 5 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_desert_maneuvers" army_experience = 25 add_war_support = 0.03 }
+	}
+	focus = {
+		id = RJP_marwar_battery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = RJP_desert_maneuvers }
+		x = 5 y = 8 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_marwar_battery" add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery } army_experience = 15 }
+	}
+	focus = {
+		id = RJP_jodhpur_airfield
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = RJP_marwar_battery }
+		x = 5 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_jodhpur_airfield" 433 = { add_building_construction = { type = air_base level = 1 instant_build = yes } } air_experience = 25 }
+	}
+	focus = {
+		id = RJP_chittor_vow
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RJP_confederation }
+		x = 8 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_chittor_vow" add_stability = 0.05 add_war_support = 0.03 }
+	}
+	focus = {
+		id = RJP_sisodia_court
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RJP_chittor_vow }
+		x = 8 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_sisodia_court" add_stability = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = RJP_udaipur_lakes
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RJP_sisodia_court }
+		x = 8 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_udaipur_lakes" 433 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = RJP_zawar_mines
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RJP_udaipur_lakes }
+		x = 8 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_zawar_mines" add_political_power = 70 433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = RJP_haldighati_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RJP_zawar_mines }
+		x = 8 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_haldighati_memory" add_war_support = 0.06 army_experience = 10 }
+	}
+	focus = {
+		id = RJP_eklingji_trust
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RJP_haldighati_memory }
+		x = 8 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_eklingji_trust" add_stability = 0.05 add_political_power = 50 add_ideas = RJP_mewar_spirit }
+	}
+	focus = {
+		id = RJP_ajmer_enclave
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = RJP_alliance_game }
+		x = 10 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_ajmer_enclave" add_war_support = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = RJP_mayo_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = RJP_ajmer_enclave }
+		x = 10 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_mayo_college" army_experience = 15 add_political_power = 40 }
+	}
+	focus = {
+		id = RJP_ajmer_workshops
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RJP_mayo_college }
+		x = 10 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_ajmer_workshops" 433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = RJP_ajmer_claim
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = RJP_ajmer_workshops }
+		x = 10 y = 8 cost = 10
+		ai_will_do = { factor = 6 modifier = { factor = 0 date < 1941.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_ajmer_claim" add_war_support = 0.06 add_political_power = 80 add_opinion_modifier = { target = ENG modifier = maratha_betrayal } }
+	}
+	focus = {
+		id = RJP_rajputana_assembly
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RJP_ajmer_claim }
+		x = 10 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed RJP_rajputana_assembly" add_stability = 0.05 add_political_power = 80 }
+	}
+	focus = {
+		id = RJP_mandala_circle
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RJP_rajputana_assembly }
+		x = 10
+		y = 10
+		cost = 10
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_mandala_circle"
+			add_political_power = 80
+			set_country_flag = mandala_circle_read
+			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
 }

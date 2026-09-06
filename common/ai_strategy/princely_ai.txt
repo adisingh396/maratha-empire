@@ -7,11 +7,34 @@ princely_build_civ = {
 			tag = MAR
 			tag = HIN
 			tag = PJB
+			tag = BEN
 		}
 	}
-	type = building
-	id = industrial_complex
-	value = 100
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 100
+	}
+}
+princely_build_mils = {
+	enable = {
+		OR = {
+			tag = HYD
+			tag = RJP
+			tag = MYS
+			tag = MAR
+			tag = HIN
+			tag = PJB
+			tag = BEN
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 80
+	}
 }
 princely_build_navy = {
 	enable = {
@@ -19,21 +42,48 @@ princely_build_navy = {
 			tag = MAR
 			tag = HYD
 			tag = SIN
+			tag = BEN
 		}
 	}
-	type = building
-	id = dockyard
-	value = 100
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 100
+	}
 }
 princely_research_navy = {
 	enable = { tag = MAR }
-	type = research_weight_factor
-	id = naval_equipment
-	value = 200
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = research_weight_factor
+		id = mtg_landing_craft
+		value = 200
+	}
 }
-princely_no_convoy_spam = {
-	enable = { tag = MAR }
-	type = equipment_production
-	id = convoy
-	value = -50
+princely_army_gear = {
+	enable = {
+		OR = {
+			tag = HYD
+			tag = RJP
+			tag = MYS
+			tag = MAR
+			tag = HIN
+			tag = PJB
+			tag = BEN
+			tag = PAK
+			tag = KAS
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 15
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 30
+	}
 }

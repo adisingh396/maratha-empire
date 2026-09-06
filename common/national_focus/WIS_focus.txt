@@ -16,7 +16,7 @@ focus_tree = {
 		prerequisite = { focus = WIS_gujarat_enterprise }
 		x = 5 y = 1 cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_port_of_bombay_claim" create_wargoal = { target = MAR type = take_state_focus target_state = 429 } }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_port_of_bombay_claim" create_wargoal = { target = MAR type = take_state_focus generator = { 429 } } }
 	}
 	focus = {
 		id = WIS_unify_gujarat
@@ -26,5 +26,387 @@ focus_tree = {
 		ai_will_do = { factor = 15 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_unify_gujarat" hidden_effect = { maratha_claim_india_effect = yes } }
+	}
+	focus = {
+		id = WIS_ahmedabad_mills
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_gujarat_enterprise }
+		x = 3 y = 1 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_ahmedabad_mills" 428 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = WIS_calico_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = WIS_ahmedabad_mills }
+		x = 3 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_calico_expansion" 428 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } army_experience = 10 }
+	}
+	focus = {
+		id = WIS_surat_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = WIS_calico_expansion }
+		x = 3 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_surat_port" 428 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } } navy_experience = 20 }
+	}
+	focus = {
+		id = WIS_kathiawar_durbar
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = WIS_gujarat_enterprise }
+		x = 7 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_kathiawar_durbar" add_stability = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = WIS_jamnagar_honor
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = WIS_kathiawar_durbar }
+		x = 7 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_jamnagar_honor" add_war_support = 0.05 army_experience = 15 }
+	}
+	focus = {
+		id = WIS_baroda_succession
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = WIS_jamnagar_honor }
+		x = 7 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_baroda_succession" add_stability = -0.02 add_political_power = 100 add_war_support = 0.03 }
+	}
+	focus = {
+		id = WIS_kathiawar_levies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = WIS_surat_port }
+		x = 3 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_kathiawar_levies" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } }
+	}
+	focus = {
+		id = WIS_gujarati_dhows
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = WIS_kathiawar_levies }
+		x = 3 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_gujarati_dhows" navy_experience = 30 add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment } }
+	}
+	focus = {
+		id = WIS_merchant_princes
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = WIS_baroda_succession }
+		x = 7 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_merchant_princes" 428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 60 }
+	}
+	focus = {
+		id = WIS_surat_claim
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = WIS_merchant_princes }
+		x = 7 y = 5 cost = 10
+		ai_will_do = { factor = 6 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_surat_claim" add_war_support = 0.06 navy_experience = 20 }
+	}
+	focus = {
+		id = WIS_lata_crown
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = WIS_unify_gujarat }
+		prerequisite = { focus = WIS_gujarati_dhows }
+		x = 5 y = 3 cost = 10
+		ai_will_do = { factor = 15 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_lata_crown" 428 = { add_core_of = WIS } add_stability = 0.05 add_war_support = 0.08 add_ideas = WIS_lata_spirit }
+	}
+	focus = {
+		id = WIS_zanzibar_trade
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = WIS_lata_crown }
+		x = 5 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_zanzibar_trade" add_political_power = 80 navy_experience = 25 }
+	}
+	focus = {
+		id = WIS_court_bombay
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = WIS_kathiawar_durbar }
+		x = 9 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_court_bombay" add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_political_power = 60 }
+	}
+	focus = {
+		id = WIS_saurashtra_gate
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = WIS_zanzibar_trade }
+		x = 5 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_saurashtra_gate" 428 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = WIS_diamond_trade
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_saurashtra_gate }
+		x = 5 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_diamond_trade" add_political_power = 100 add_stability = 0.02 }
+	}
+	focus = {
+		id = WIS_sayajirao_legacy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = WIS_gujarat_enterprise }
+		x = 0 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_sayajirao_legacy" add_stability = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = WIS_baroda_bank
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_sayajirao_legacy }
+		x = 0 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_baroda_bank" add_political_power = 80 428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = WIS_baroda_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = WIS_baroda_bank }
+		x = 0 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_baroda_college" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_research_slot = 1 }
+	}
+	focus = {
+		id = WIS_compulsory_education
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = WIS_baroda_college }
+		x = 0 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_compulsory_education" add_stability = 0.05 add_war_support = 0.02 }
+	}
+	focus = {
+		id = WIS_panchayat_rule
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = WIS_compulsory_education }
+		x = 0 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_panchayat_rule" add_stability = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = WIS_womens_schools
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = WIS_panchayat_rule }
+		x = 0 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_womens_schools" add_stability = 0.03 add_manpower = 10000 }
+	}
+	focus = {
+		id = WIS_salt_pans
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_gujarat_enterprise }
+		x = 2 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_salt_pans" 428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = WIS_mithapur_chemicals
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = WIS_salt_pans }
+		x = 2 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_mithapur_chemicals" 428 = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = WIS_fisheries_board
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = WIS_mithapur_chemicals }
+		x = 2 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_fisheries_board" add_political_power = 60 add_manpower = 8000 }
+	}
+	focus = {
+		id = WIS_dandi_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = WIS_fisheries_board }
+		x = 2 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_dandi_memory" add_war_support = 0.06 add_stability = -0.01 add_ideas = WIS_salt_spirit }
+	}
+	focus = {
+		id = WIS_salt_revenue
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_dandi_memory }
+		x = 2 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_salt_revenue" add_political_power = 90 428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = WIS_soda_ash
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = WIS_salt_revenue }
+		x = 2 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_soda_ash" add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } add_political_power = 50 }
+	}
+	focus = {
+		id = WIS_jamnagar_brigade
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = WIS_kathiawar_levies }
+		x = 4 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_jamnagar_brigade" army_experience = 25 add_manpower = 10000 }
+	}
+	focus = {
+		id = WIS_princely_guard
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = WIS_jamnagar_brigade }
+		bypass = { has_completed_focus = WIS_state_artillery }
+		x = 4 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_princely_guard" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } add_ideas = WIS_guard_doctrine }
+	}
+	focus = {
+		id = WIS_state_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = WIS_jamnagar_brigade }
+		bypass = { has_completed_focus = WIS_princely_guard }
+		x = 6 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_state_artillery" add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery } add_ideas = WIS_gun_doctrine }
+	}
+	focus = {
+		id = WIS_riding_school
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = WIS_princely_guard }
+		prerequisite = { focus = WIS_state_artillery }
+		x = 5 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_riding_school" army_experience = 30 add_command_power = 10 }
+	}
+	focus = {
+		id = WIS_desert_patrol
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = WIS_riding_school }
+		x = 5 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_desert_patrol" army_experience = 20 add_war_support = 0.03 }
+	}
+	focus = {
+		id = WIS_armored_cars
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = WIS_desert_patrol }
+		x = 5 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_armored_cars" add_tech_bonus = { bonus = 0.5 uses = 1 category = armor } army_experience = 15 }
+	}
+	focus = {
+		id = WIS_rann_outposts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = WIS_armored_cars }
+		x = 5 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_rann_outposts" 428 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = WIS_mandvi_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = WIS_surat_port }
+		x = 8 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_mandvi_port" 428 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } } navy_experience = 20 }
+	}
+	focus = {
+		id = WIS_dhow_registry
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = WIS_mandvi_port }
+		x = 8 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_dhow_registry" navy_experience = 30 add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment } }
+	}
+	focus = {
+		id = WIS_red_sea_run
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = WIS_dhow_registry }
+		x = 8 y = 6 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_red_sea_run" add_political_power = 70 navy_experience = 25 }
+	}
+	focus = {
+		id = WIS_suez_dividend
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = WIS_red_sea_run }
+		x = 8 y = 7 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_suez_dividend" add_political_power = 90 add_ideas = WIS_suez_spirit }
+	}
+	focus = {
+		id = WIS_sabarmati_ashram
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = WIS_kathiawar_durbar }
+		x = 10 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_sabarmati_ashram" add_stability = -0.01 add_war_support = 0.05 add_political_power = 40 }
+	}
+	focus = {
+		id = WIS_khadi_mission
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_sabarmati_ashram }
+		x = 10 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_khadi_mission" 428 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = WIS_temple_entry
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = WIS_khadi_mission }
+		x = 10 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_temple_entry" add_stability = 0.05 add_war_support = 0.02 }
+	}
+	focus = {
+		id = WIS_praja_mandal
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = WIS_temple_entry }
+		x = 10 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_praja_mandal" add_political_power = 80 add_stability = 0.03 set_country_flag = gujarat_awake }
 	}
 }

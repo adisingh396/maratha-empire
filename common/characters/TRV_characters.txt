@@ -1,0 +1,27 @@
+characters = {
+TRV_thirunal = {
+	name = "Chithira Thirunal"
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+TRV_cp = {
+	name = "C. P. Ramaswami Iyer"
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_dewan_admin
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+}

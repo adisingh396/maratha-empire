@@ -1,0 +1,9 @@
+PJB = {
+	male = {
+		names = { Amit Arjun Bhupinder Dev Karan Kishan Pratap Ravi Rohan Suraj Vikram Yadavindra }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
+}

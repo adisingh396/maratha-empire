@@ -1,0 +1,6 @@
+air_wings = {
+	443 = {
+		fighter_equipment_0 = { owner = "SIN" amount = 80 }
+		nav_bomber_equipment_1 = { owner = "SIN" amount = 20 }
+	}
+}

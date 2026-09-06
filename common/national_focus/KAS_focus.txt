@@ -27,4 +27,387 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_claim_north" create_wargoal = { target = PJB type = annex_everything } }
 	}
+	focus = {
+		id = KAS_jammu_durbar
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = KAS_mountain_kingdom }
+		x = 3 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_jammu_durbar" add_stability = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = KAS_ranbir_canal
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = KAS_jammu_durbar }
+		x = 3 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_ranbir_canal" 441 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_manpower = 8000 }
+	}
+	focus = {
+		id = KAS_srinagar_silk
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = KAS_srinagar_industry }
+		x = 1 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_srinagar_silk" 441 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
+	}
+	focus = {
+		id = KAS_shawl_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = KAS_srinagar_silk }
+		x = 1 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_shawl_trade" add_political_power = 80 add_stability = 0.02 }
+	}
+	focus = {
+		id = KAS_gilgit_agency
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = KAS_srinagar_industry }
+		x = 7 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_gilgit_agency" add_war_support = 0.05 army_experience = 10 }
+	}
+	focus = {
+		id = KAS_gilgit_scouts
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_gilgit_agency }
+		x = 7 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_gilgit_scouts" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } }
+	}
+	focus = {
+		id = KAS_frontier_levies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_gilgit_scouts }
+		x = 7 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_frontier_levies" add_manpower = 12000 add_war_support = 0.04 }
+	}
+	focus = {
+		id = KAS_srinagar_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = KAS_ranbir_canal }
+		x = 3 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_srinagar_arsenal" 441 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = KAS_pahalgam_levies
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = KAS_srinagar_arsenal }
+		x = 3 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_pahalgam_levies" army_experience = 15 add_manpower = 8000 }
+	}
+	focus = {
+		id = KAS_court_pune
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = KAS_shawl_trade }
+		x = 1 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_court_pune" add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_political_power = 60 }
+	}
+	focus = {
+		id = KAS_accession_dilemma
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_claim_north }
+		prerequisite = { focus = KAS_frontier_levies }
+		x = 5 y = 3 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_accession_dilemma" add_stability = -0.02 add_political_power = 80 add_war_support = 0.05 }
+	}
+	focus = {
+		id = KAS_northern_claims
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = KAS_accession_dilemma }
+		x = 5 y = 4 cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_northern_claims" create_wargoal = { target = PAK type = take_state_focus generator = { 442 } } add_war_support = 0.05 }
+	}
+	focus = {
+		id = KAS_himalayan_crown
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_northern_claims }
+		prerequisite = { focus = KAS_pahalgam_levies }
+		x = 5 y = 5 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_himalayan_crown" add_ideas = KAS_crown_spirit add_stability = 0.05 add_political_power = 100 }
+	}
+	focus = {
+		id = KAS_kashmir_gate
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = KAS_himalayan_crown }
+		x = 5 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_kashmir_gate" 441 = { add_building_construction = { type = land_fort level = 2 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = KAS_walnut_wood
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = KAS_jammu_durbar }
+		x = 0 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_walnut_wood" 441 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
+	}
+	focus = {
+		id = KAS_papier_mache
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = KAS_walnut_wood }
+		x = 0 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_papier_mache" add_political_power = 60 add_stability = 0.02 }
+	}
+	focus = {
+		id = KAS_carpet_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = KAS_papier_mache }
+		x = 0 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_carpet_trade" add_political_power = 80 add_ideas = KAS_craft_spirit }
+	}
+	focus = {
+		id = KAS_handicraft_board
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_carpet_trade }
+		x = 0 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_handicraft_board" 441 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = KAS_export_depot
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = KAS_handicraft_board }
+		x = 0 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_export_depot" add_political_power = 80 add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = KAS_kashmir_agency
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = KAS_export_depot }
+		x = 0 y = 7 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_kashmir_agency" add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_political_power = 60 }
+	}
+	focus = {
+		id = KAS_pampore_saffron
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = KAS_ranbir_canal }
+		x = 2 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_pampore_saffron" add_political_power = 70 add_stability = 0.02 }
+	}
+	focus = {
+		id = KAS_apple_orchards
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = KAS_pampore_saffron }
+		x = 2 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_apple_orchards" add_manpower = 8000 add_stability = 0.02 }
+	}
+	focus = {
+		id = KAS_dairy_coop
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_apple_orchards }
+		x = 2 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_dairy_coop" add_stability = 0.04 add_war_support = 0.02 }
+	}
+	focus = {
+		id = KAS_wool_mills
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = KAS_dairy_coop }
+		x = 2 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_wool_mills" 441 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = KAS_seed_farm
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = KAS_wool_mills }
+		x = 2 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_seed_farm" add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } add_manpower = 6000 }
+	}
+	focus = {
+		id = KAS_dogra_rifles
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_pahalgam_levies }
+		x = 4 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_dogra_rifles" army_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } }
+	}
+	focus = {
+		id = KAS_mountain_battery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = KAS_dogra_rifles }
+		bypass = { has_completed_focus = KAS_frontier_constabulary }
+		x = 4 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_mountain_battery" add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery } add_ideas = KAS_battery_doctrine }
+	}
+	focus = {
+		id = KAS_frontier_constabulary
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = KAS_dogra_rifles }
+		bypass = { has_completed_focus = KAS_mountain_battery }
+		x = 6 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_frontier_constabulary" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } add_ideas = KAS_constab_drill }
+	}
+	focus = {
+		id = KAS_srinagar_academy
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = KAS_mountain_battery }
+		prerequisite = { focus = KAS_frontier_constabulary }
+		x = 5 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_srinagar_academy" army_experience = 30 add_command_power = 10 }
+	}
+	focus = {
+		id = KAS_winter_warfare
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_srinagar_academy }
+		x = 5 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_winter_warfare" army_experience = 20 add_war_support = 0.03 }
+	}
+	focus = {
+		id = KAS_uri_defences
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = KAS_winter_warfare }
+		x = 5 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_uri_defences" 441 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = KAS_mountaineer_corps
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_uri_defences }
+		x = 5 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_mountaineer_corps" army_experience = 25 add_manpower = 8000 }
+	}
+	focus = {
+		id = KAS_leh_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = KAS_court_pune }
+		x = 8 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_leh_trade" add_political_power = 70 441 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = KAS_hemis_gompa
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_leh_trade }
+		x = 8 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_hemis_gompa" add_stability = 0.05 add_political_power = 40 }
+	}
+	focus = {
+		id = KAS_ladakh_scouts
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = KAS_hemis_gompa }
+		x = 8 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_ladakh_scouts" army_experience = 20 add_manpower = 6000 }
+	}
+	focus = {
+		id = KAS_karakoram_posts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = KAS_ladakh_scouts }
+		x = 8 y = 8 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_karakoram_posts" add_war_support = 0.04 add_political_power = 50 }
+	}
+	focus = {
+		id = KAS_mountaineering_school
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = KAS_karakoram_posts }
+		x = 8 y = 9 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_mountaineering_school" army_experience = 15 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } }
+	}
+	focus = {
+		id = KAS_national_conference
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = KAS_accession_dilemma }
+		x = 10 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_national_conference" add_stability = -0.02 add_political_power = 80 }
+	}
+	focus = {
+		id = KAS_quit_kashmir
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = KAS_national_conference }
+		x = 10 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_quit_kashmir" add_war_support = 0.06 add_stability = -0.02 add_ideas = KAS_quit_spirit }
+	}
+	focus = {
+		id = KAS_praja_sabha
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_quit_kashmir }
+		x = 10 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_praja_sabha" add_stability = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = KAS_plebiscite_promise
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = KAS_praja_sabha }
+		x = 10 y = 7 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_plebiscite_promise" add_stability = 0.04 add_war_support = 0.02 add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } }
+	}
+	focus = {
+		id = KAS_instrument_choice
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_plebiscite_promise }
+		x = 10 y = 8 cost = 10
+		ai_will_do = { factor = 6 modifier = { factor = 0 date < 1946.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_instrument_choice" add_political_power = 120 add_stability = 0.03 set_country_flag = kashmir_decided }
+	}
 }

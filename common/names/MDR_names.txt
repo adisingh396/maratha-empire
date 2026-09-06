@@ -1,0 +1,9 @@
+MDR = {
+	male = {
+		names = { "C." Amit Arjun Bobbili Dev Karan Kishan Pratap Raja Rajaji Ravi Rohan Suraj Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { "of Bobbili" Das Gupta Khan Kulkarni Nair Patel Rajagopalachari Reddy Sharma Singh Verma }
+}

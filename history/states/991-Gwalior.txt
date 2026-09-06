@@ -8,12 +8,12 @@ state={
 	manpower = 3523000
 	history={
 		owner = RJP
+		add_extra_state_shared_building_slots = 5
 		add_core_of = RJP
-		add_core_of = CIP
 		buildings = {
-			industrial_complex = 3
-			arms_factory = 2
-			infrastructure = 1
+			industrial_complex = 4
+			arms_factory = 3
+			infrastructure = 2
 		}
 	}
 	buildings_max_level_factor=1.000

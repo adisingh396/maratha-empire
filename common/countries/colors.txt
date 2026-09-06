@@ -46,7 +46,7 @@ MPU = {
 	color = rgb { 150 120 180 }
 	color_ui = rgb { 180 150 210 }
 }
-BAN = {
+BEN = {
 	color = rgb { 180 80 80 }
 	color_ui = rgb { 210 110 110 }
 }

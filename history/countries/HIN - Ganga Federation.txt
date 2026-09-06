@@ -1,5 +1,5 @@
-capital = 439
-set_research_slots = 3
+capital = 438
+set_research_slots = 4
 set_stability = 0.55
 set_war_support = 0.20
 set_technology = {
@@ -9,8 +9,39 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     tech_trucks = 1
+
+	CAS1 = 1
+	early_fighter = 1
 }
-set_convoys = 10
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		CAS1 = 1
+	}
+}
+
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+	}
+}
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_convoys = 5
 set_politics = {
     ruling_party = neutrality
     last_election = "1934.1.1"
@@ -26,4 +57,11 @@ set_popularities = {
 add_ideas = {
     HIN_militia_legacy
 }
+recruit_character = HIN_chhatari
+recruit_character = HIN_pant
+recruit_character = HIN_sapru
+recruit_character = HIN_chaudhuri
+promote_character = HIN_chhatari
 set_oob = "HIN_1936"
+set_naval_oob = "HIN_1936_naval"
+set_air_oob = "HIN_1936_air"

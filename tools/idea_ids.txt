@@ -1,0 +1,165 @@
+HYD_godavari_plan_spirit_0
+HYD_godavari_plan_spirit_1
+HYD_godavari_plan_spirit_2
+HYD_godavari_plan_spirit_3
+HYD_hyderabad_caliphate_spirit_0
+HYD_hyderabad_caliphate_spirit_1
+HYD_hyderabad_caliphate_spirit_2
+MYS_carnatic_crown_spirit_0
+MYS_carnatic_crown_spirit_1
+MYS_carnatic_crown_spirit_2
+MYS_kaveri_plan_spirit_0
+MYS_kaveri_plan_spirit_1
+MYS_kaveri_plan_spirit_2
+MYS_kaveri_plan_spirit_3
+RJP_delhi_crown_spirit_0
+RJP_delhi_crown_spirit_1
+RJP_delhi_crown_spirit_2
+RJP_thar_plan_spirit_0
+RJP_thar_plan_spirit_1
+RJP_thar_plan_spirit_2
+RJP_thar_plan_spirit_3
+HIN_delhi_crown_spirit_0
+HIN_delhi_crown_spirit_1
+HIN_delhi_crown_spirit_2
+HIN_ganga_plan_spirit_0
+HIN_ganga_plan_spirit_1
+HIN_ganga_plan_spirit_2
+HIN_ganga_plan_spirit_3
+
+PJB_lahore_crown_spirit_0
+PJB_lahore_crown_spirit_1
+PJB_lahore_crown_spirit_2
+PJB_punjab_plan_spirit_0
+PJB_punjab_plan_spirit_1
+PJB_punjab_plan_spirit_2
+PJB_punjab_plan_spirit_3
+BAN_delta_plan_spirit_0
+BAN_delta_plan_spirit_1
+BAN_delta_plan_spirit_2
+BAN_delta_plan_spirit_3
+BAN_gauda_crown_spirit_0
+BAN_gauda_crown_spirit_1
+BAN_gauda_crown_spirit_2
+MDR_coromandel_fleet_spirit_0
+MDR_coromandel_fleet_spirit_1
+MDR_coromandel_fleet_spirit_2
+MDR_kaveri_mills_spirit_0
+MDR_kaveri_mills_spirit_1
+MDR_kaveri_mills_spirit_2
+MDR_kaveri_mills_spirit_3
+MDR_tamil_crown_spirit_0
+MDR_tamil_crown_spirit_1
+MDR_tamil_crown_spirit_2
+ORI_mahanadi_plan_spirit_0
+ORI_mahanadi_plan_spirit_1
+ORI_mahanadi_plan_spirit_2
+ORI_mahanadi_plan_spirit_3
+ASM_brahmaputra_plan_spirit_0
+ASM_brahmaputra_plan_spirit_1
+ASM_brahmaputra_plan_spirit_2
+ASM_brahmaputra_plan_spirit_3
+MPU_loktak_plan_spirit_0
+MPU_loktak_plan_spirit_1
+MPU_loktak_plan_spirit_2
+MPU_loktak_plan_spirit_3
+WIS_sabarmati_plan_spirit_0
+WIS_sabarmati_plan_spirit_1
+WIS_sabarmati_plan_spirit_2
+WIS_sabarmati_plan_spirit_3
+WIS_surat_crown_spirit_0
+WIS_surat_crown_spirit_1
+WIS_surat_crown_spirit_2
+SIN_indus_plan_spirit_0
+SIN_indus_plan_spirit_1
+SIN_indus_plan_spirit_2
+SIN_indus_plan_spirit_3
+SIN_sehwan_crown_spirit_0
+SIN_sehwan_crown_spirit_1
+SIN_sehwan_crown_spirit_2
+KAS_jhelum_plan_spirit_0
+KAS_jhelum_plan_spirit_1
+KAS_jhelum_plan_spirit_2
+KAS_jhelum_plan_spirit_3
+KAS_srinagar_crown_spirit_0
+KAS_srinagar_crown_spirit_1
+KAS_srinagar_crown_spirit_2
+PAK_khyber_plan_spirit_0
+PAK_khyber_plan_spirit_1
+PAK_khyber_plan_spirit_2
+PAK_khyber_plan_spirit_3
+MAR_advisor_00_idea|MAR|political_power_gain = 0.10
+MAR_advisor_01_idea|MAR|stability_factor = 0.05
+MAR_advisor_02_idea|MAR|war_support_factor = 0.08
+MAR_advisor_03_idea|MAR|army_core_attack_factor = 0.05
+MAR_advisor_04_idea|MAR|army_core_defence_factor = 0.05
+HYD_advisor_00_idea|HYD|stability_factor = 0.05
+HYD_advisor_01_idea|HYD|war_support_factor = 0.08
+HYD_advisor_02_idea|HYD|army_core_attack_factor = 0.05
+HYD_advisor_03_idea|HYD|army_core_defence_factor = 0.05
+HYD_advisor_04_idea|HYD|army_attack_factor = 0.05
+MYS_advisor_00_idea|MYS|war_support_factor = 0.08
+MYS_advisor_01_idea|MYS|army_core_attack_factor = 0.05
+MYS_advisor_02_idea|MYS|army_core_defence_factor = 0.05
+MYS_advisor_03_idea|MYS|army_attack_factor = 0.05
+MYS_advisor_04_idea|MYS|army_speed_factor = 0.03
+RJP_advisor_00_idea|RJP|army_core_attack_factor = 0.05
+RJP_advisor_01_idea|RJP|army_core_defence_factor = 0.05
+RJP_advisor_02_idea|RJP|army_attack_factor = 0.05
+RJP_advisor_03_idea|RJP|army_speed_factor = 0.03
+RJP_advisor_04_idea|RJP|industrial_capacity_factory = 0.05
+HIN_advisor_00_idea|HIN|army_core_defence_factor = 0.05
+HIN_advisor_01_idea|HIN|army_attack_factor = 0.05
+HIN_advisor_02_idea|HIN|army_speed_factor = 0.03
+HIN_advisor_03_idea|HIN|industrial_capacity_factory = 0.05
+HIN_advisor_04_idea|HIN|production_speed_buildings_factor = 0.10
+PJB_advisor_00_idea|PJB|army_attack_factor = 0.05
+PJB_advisor_01_idea|PJB|army_speed_factor = 0.03
+PJB_advisor_02_idea|PJB|industrial_capacity_factory = 0.05
+PJB_advisor_03_idea|PJB|production_speed_buildings_factor = 0.10
+PJB_advisor_04_idea|PJB|production_speed_industrial_complex_factor = 0.10
+BAN_advisor_00_idea|BAN|army_speed_factor = 0.03
+BAN_advisor_01_idea|BAN|industrial_capacity_factory = 0.05
+BAN_advisor_02_idea|BAN|production_speed_buildings_factor = 0.10
+BAN_advisor_03_idea|BAN|production_speed_industrial_complex_factor = 0.10
+BAN_advisor_04_idea|BAN|production_speed_arms_factory_factor = 0.10
+MDR_advisor_00_idea|MDR|industrial_capacity_factory = 0.05
+MDR_advisor_01_idea|MDR|production_speed_buildings_factor = 0.10
+MDR_advisor_02_idea|MDR|production_speed_industrial_complex_factor = 0.10
+MDR_advisor_03_idea|MDR|production_speed_arms_factory_factor = 0.10
+MDR_advisor_04_idea|MDR|production_speed_infrastructure_factor = 0.10
+ORI_advisor_00_idea|ORI|production_speed_buildings_factor = 0.10
+ORI_advisor_01_idea|ORI|production_speed_industrial_complex_factor = 0.10
+ORI_advisor_02_idea|ORI|production_speed_arms_factory_factor = 0.10
+ORI_advisor_03_idea|ORI|production_speed_infrastructure_factor = 0.10
+ORI_advisor_04_idea|ORI|production_factory_max_efficiency_factor = 0.08
+ASM_advisor_00_idea|ASM|production_speed_industrial_complex_factor = 0.10
+ASM_advisor_01_idea|ASM|production_speed_arms_factory_factor = 0.10
+ASM_advisor_02_idea|ASM|production_speed_infrastructure_factor = 0.10
+ASM_advisor_03_idea|ASM|production_factory_max_efficiency_factor = 0.08
+ASM_advisor_04_idea|ASM|supply_consumption_factor = -0.05
+MPU_advisor_00_idea|MPU|production_speed_arms_factory_factor = 0.10
+MPU_advisor_01_idea|MPU|production_speed_infrastructure_factor = 0.10
+MPU_advisor_02_idea|MPU|production_factory_max_efficiency_factor = 0.08
+MPU_advisor_03_idea|MPU|supply_consumption_factor = -0.05
+MPU_advisor_04_idea|MPU|conscription_factor = 0.10
+WIS_advisor_00_idea|WIS|production_speed_infrastructure_factor = 0.10
+WIS_advisor_01_idea|WIS|production_factory_max_efficiency_factor = 0.08
+WIS_advisor_02_idea|WIS|supply_consumption_factor = -0.05
+WIS_advisor_03_idea|WIS|conscription_factor = 0.10
+WIS_advisor_04_idea|WIS|navy_org_factor = 0.08
+SIN_advisor_00_idea|SIN|production_factory_max_efficiency_factor = 0.08
+SIN_advisor_01_idea|SIN|supply_consumption_factor = -0.05
+SIN_advisor_02_idea|SIN|conscription_factor = 0.10
+SIN_advisor_03_idea|SIN|navy_org_factor = 0.08
+SIN_advisor_04_idea|SIN|political_power_factor = 0.10
+KAS_advisor_00_idea|KAS|supply_consumption_factor = -0.05
+KAS_advisor_01_idea|KAS|conscription_factor = 0.10
+KAS_advisor_02_idea|KAS|navy_org_factor = 0.08
+KAS_advisor_03_idea|KAS|political_power_factor = 0.10
+KAS_advisor_04_idea|KAS|justify_war_goal_time = -0.10
+PAK_advisor_00_idea|PAK|conscription_factor = 0.10
+PAK_advisor_01_idea|PAK|navy_org_factor = 0.08
+PAK_advisor_02_idea|PAK|political_power_factor = 0.10
+PAK_advisor_03_idea|PAK|justify_war_goal_time = -0.10
+PAK_advisor_04_idea|PAK|drift_defence_factor = 0.15

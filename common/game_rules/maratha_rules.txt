@@ -1,0 +1,23 @@
+MAR_ai_historical = {
+	name = "MAR_RULE_HISTORICAL"
+	group = "MAR_RULE_GROUP"
+	option = {
+		name = yes
+		text = MAR_RULE_YES
+	}
+	option = {
+		name = no
+		text = MAR_RULE_NO
+	}
+}
+MAR_revolts = {
+	group = "MAR_RULE_GROUP"
+	option = {
+		name = yes
+		text = MAR_RULE_YES
+	}
+	option = {
+		name = no
+		text = MAR_RULE_NO
+	}
+}

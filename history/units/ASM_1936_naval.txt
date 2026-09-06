@@ -1,0 +1,3 @@
+# ASM is landlocked: no starting navy (would spawn in a portless province and crash)
+units = {
+}

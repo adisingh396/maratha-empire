@@ -1,0 +1,61 @@
+# MYS_dam events (MYS_dam.1 -> MYS_dam.3 Kaveri works and succession)
+
+add_namespace = MYS_dam
+
+country_event = {
+	id = MYS_dam.1
+	title = MYS_dam_1_title
+	desc = MYS_dam_1_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = MYS_dam_1_opt_a
+		add_stability = 0.04
+		add_political_power = 40
+		hidden_effect = { country_event = { id = MYS_dam.2 days = 60 } }
+	}
+	option = {
+		name = MYS_dam_1_opt_b
+		add_political_power = 80
+		hidden_effect = { country_event = { id = MYS_dam.2 days = 60 } }
+	}
+}
+
+country_event = {
+	id = MYS_dam.2
+	title = MYS_dam_2_title
+	desc = MYS_dam_2_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MYS_dam_2_opt_a
+		add_stability = -0.02
+		add_war_support = 0.05
+		add_ideas = MYS_kgf_spirit
+	}
+	option = {
+		name = MYS_dam_2_opt_b
+		add_stability = 0.03
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = MYS_dam.3
+	title = MYS_dam_3_title
+	desc = MYS_dam_3_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MYS_dam_3_opt_a
+		add_stability = -0.05
+		add_political_power = 100
+		set_country_flag = jaya_accession
+	}
+	option = {
+		name = MYS_dam_3_opt_b
+		add_stability = 0.03
+		add_war_support = 0.04
+		set_country_flag = jaya_accession
+	}
+}

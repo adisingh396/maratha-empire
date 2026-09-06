@@ -8,20 +8,24 @@ state={
 		1321 1409 7288 7402 12247 
 	}
 	manpower = 7600000
-	buildings_max_level_factor=1.000
-	state_category=rural
+	buildings_max_level_factor=2.000
+	state_category = city
 	local_supplies=0.000
 	history={
-		owner = MDR
-		add_core_of = MDR
-		add_core_of = RAS
+		owner = TRV
+		add_core_of = TRV
 		buildings = {
+			infrastructure = 2
 			industrial_complex = 3
 			arms_factory = 1
-			infrastructure = 1
+			dockyard = 2
+			air_base = 1
+			1321 = {
+				naval_base = 2
+			}
 		}
 		victory_points = {
-			1321 3 
+		1321 3
 		}
 
 	}

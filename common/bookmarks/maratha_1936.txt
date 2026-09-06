@@ -23,7 +23,7 @@ bookmarks = {
 			history = HYD_GATHERING_STORM_DESC
 			ideology = neutrality
 			ideas = { HYD_nizam_legacy }
-			focuses = { HYD_form_deccan_sultanate }
+			focuses = { HYD_osman_legacy }
 		}
 		MYS = {
 			history = MYS_GATHERING_STORM_DESC

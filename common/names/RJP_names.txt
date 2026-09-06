@@ -1,0 +1,9 @@
+RJP = {
+	male = {
+		names = { Amit Arjun Bhupal Dev Ganga Karan Kishan Man Manubhai Pratap Ravi Rohan Suraj Umaid Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
+}

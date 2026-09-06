@@ -1,0 +1,10 @@
+air_wings = {
+	423 = {
+		fighter_equipment_0 = { owner = "MDR" amount = 100 }
+		CAS_equipment_1 = { owner = "MDR" amount = 100 }
+	}
+	424 = {
+		fighter_equipment_0 = { owner = "MDR" amount = 100 }
+		nav_bomber_equipment_1 = { owner = "MDR" amount = 100 }
+	}
+}

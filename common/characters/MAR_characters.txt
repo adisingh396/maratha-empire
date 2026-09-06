@@ -1,6 +1,6 @@
+characters = {
 MAR_shivaji = {
 	name = "Chhatrapati Shivaji Maharaj"
-	desc = "MAR_shivaji_desc"
 	portraits = {
 		civilian = {
 			large = GFX_portrait_mar_shivaji
@@ -12,13 +12,12 @@ MAR_shivaji = {
 		allowed = { always = yes }
 		idea_token = MAR_shivaji_legacy
 		cost = 75
-		traits = { MAR_shivaji_trait }
+		traits = { popular_figurehead }
 	}
 }
 
 MAR_bajirao = {
 	name = "Peshwa Baji Rao I"
-	desc = "MAR_bajirao_desc"
 	portraits = {
 		civilian = {
 			large = GFX_portrait_mar_bajirao
@@ -30,22 +29,21 @@ MAR_bajirao = {
 		}
 	}
 	country_leader = {
-		ideology = fascism
-		traits = { aggressive_leader }
+		ideology = fascism_ideology
+		traits = { warmonger }
 		expire = "1965.1.1"
 		id = -1
 	}
 	advisor = {
-		slot = chief_of_army
+		slot = army_chief
 		allowed = { always = yes }
 		idea_token = MAR_bajirao_strategist
-		traits = { army_offensive_trait }
+		traits = { army_chief_army_high_command }
 	}
 }
 
 MAR_tarabai = {
 	name = "Maharani Tarabai"
-	desc = "MAR_tarabai_desc"
 	portraits = {
 		civilian = {
 			large = GFX_portrait_mar_tarabai
@@ -57,13 +55,12 @@ MAR_tarabai = {
 		allowed = { always = yes }
 		idea_token = MAR_tarabai_regent
 		cost = 75
-		traits = { MAR_tarabai_trait }
+		traits = { popular_figurehead }
 	}
 }
 
 MAR_madhavrao_III = {
 	name = "Peshwa Madhavrao III"
-	desc = "MAR_madhavrao_desc"
 	portraits = {
 		civilian = {
 			large = GFX_portrait_mar_madhavrao
@@ -75,8 +72,8 @@ MAR_madhavrao_III = {
 		}
 	}
 	country_leader = {
-		ideology = neutrality
-		traits = { conservative_leader }
+		ideology = despotism
+		traits = { conservative_grandee }
 		expire = "1965.1.1"
 		id = -1
 	}
@@ -86,24 +83,22 @@ MAR_madhavrao_III = {
 
 MAR_nana_fadnavis = {
 	name = "Nana Fadnavis"
-	desc = "MAR_nana_desc"
 	portraits = {
 		civilian = {
-			large = GFX_portrait_mar_shivaji
-			small = GFX_portrait_mar_shivaji_small
+			large = GFX_portrait_mar_bajirao
+			small = GFX_portrait_mar_bajirao_small
 		}
 	}
 	advisor = {
 		slot = political_advisor
 		allowed = { always = yes }
 		idea_token = MAR_nana_advisor
-		traits = { political_operator }
+		traits = { backroom_backstabber }
 	}
 }
 
 MAR_moropant_trimbak = {
 	name = "Moropant Trimbak"
-	desc = "MAR_moropant_desc"
 	portraits = {
 		civilian = {
 			large = GFX_portrait_mar_bajirao
@@ -120,76 +115,73 @@ MAR_moropant_trimbak = {
 
 MAR_kanhoji_angre_iii = {
 	name = "Kanhoji Angre III"
-	desc = "MAR_angre_desc"
 	portraits = {
 		army = {
-			large = GFX_portrait_mar_bajirao
-			small = GFX_portrait_mar_bajirao_small
+			large = GFX_portrait_mar_madhavrao
+			small = GFX_portrait_mar_madhavrao_small
 		}
 		navy = {
-			large = GFX_portrait_mar_bajirao
-			small = GFX_portrait_mar_bajirao_small
+			large = GFX_portrait_mar_madhavrao
+			small = GFX_portrait_mar_madhavrao_small
 		}
 	}
 	advisor = {
-		slot = chief_of_navy
+		slot = navy_chief
 		allowed = { always = yes }
 		idea_token = MAR_angre_admiral
-		traits = { naval_maneuver_trait }
+		traits = { navy_chief_maneuver_2 }
 	}
-	unit_leader = {
-		is_admiral = yes
+	navy_leader = {
 		traits = { superior_tactician }
 		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 }
 
 MAR_santaji_ghorpade_ii = {
 	name = "Santaji Ghorpade II"
-	desc = "MAR_santaji_desc"
 	portraits = {
 		army = {
-			large = GFX_portrait_mar_shivaji
-			small = GFX_portrait_mar_shivaji_small
+			large = GFX_portrait_mar_madhavrao
+			small = GFX_portrait_mar_madhavrao_small
 		}
 	}
-	unit_leader = {
-		is_general = yes
+	corps_commander = {
 		traits = { aggressive_assaulter }
 		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 }
 
 MAR_ibrahim_gardi = {
 	name = "Ibrahim Khan Gardi"
-	desc = "MAR_gardi_desc"
 	portraits = {
 		army = { 
-			large = GFX_portrait_mar_madhavrao
-			small = GFX_portrait_mar_madhavrao_small
+			large = GFX_portrait_mar_shivaji
+			small = GFX_portrait_mar_shivaji_small
 		}
 	}
 	advisor = {
 		slot = army_chief
 		allowed = { always = yes }
 		idea_token = MAR_gardi_chief
-		traits = { army_offensive_trait }
+		traits = { army_chief_army_high_command }
 	}
-	unit_leader = {
-		is_general = yes
-		traits = { artillery_expert }
+	corps_commander = {
+		traits = { bearer_of_artillery }
 		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 }
 
-MAR_noor_operative = {
-	name = "Noor Inayat"
-	desc = "MAR_noor_desc"
-	portraits = {
-		civilian = {
-			large = GFX_portrait_mar_tarabai
-			small = GFX_portrait_mar_tarabai_small
-		}
-	}
-	operative = yes
+
 }

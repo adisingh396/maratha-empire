@@ -1,0 +1,187 @@
+# Rajput martial core: stronger line infantry, early artillery
+infantry_rajput = {
+	available_for = { RJP MAR }
+	role = infantry
+	upgrade_prio = { factor = 9 modifier = { factor = 1 } }
+
+	infantry_default_rajput = {
+		division_names_group = RJP_INF_01
+		upgrade_prio = { factor = 2 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regimental_support = {
+				fire_support = 1
+				field_guns = 1
+			}
+			regiments = {
+				infantry = 9
+				artillery_brigade = 1
+			}
+		}
+	}
+}
+
+# Deccan / general princely infantry: 7inf+art, cheaper than majors
+infantry_princely = {
+	available_for = { HYD MYS HIN PJB BEN MDR ORI ASM MPU WIS SIN }
+	role = infantry
+	upgrade_prio = { factor = 8 modifier = { factor = 1 } }
+
+	infantry_default_princely = {
+		division_names_group = HIN_INF_01
+		upgrade_prio = { factor = 2 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regimental_support = {
+				fire_support = 1
+				field_guns = 1
+			}
+			regiments = {
+				infantry = 7
+				artillery_brigade = 1
+			}
+		}
+		replace_at_match = 0.9
+		replace_with = infantry_improved_princely
+		target_min_match = 0.9
+	}
+
+	infantry_improved_princely = {
+		division_names_group = HIN_INF_01
+		upgrade_prio = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_tech = infantry_weapons2
+			}
+		}
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+				signal_company = 1
+			}
+			regimental_support = {
+				anti_tank_battery = 1
+				fire_support = 1
+				field_guns = 1
+			}
+			regiments = {
+				infantry = 9
+				artillery_brigade = 1
+			}
+		}
+	}
+}
+
+# Himalayan mountaineers: Kashmir + frontier
+mountaineer_himalayan = {
+	available_for = { KAS PAK }
+	role = mountaineers
+	upgrade_prio = { factor = 8 modifier = { factor = 1 } }
+
+	mountaineer_default_himalayan = {
+		division_names_group = KAS_INF_01
+		upgrade_prio = { factor = 2 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regimental_support = {
+				fire_support = 1
+			}
+			regiments = {
+				mountaineers = 6
+				artillery_brigade = 1
+			}
+		}
+	}
+}
+
+# Coastal marines: Tamilakam + Sindh
+marines_coastal = {
+	available_for = { MDR SIN }
+	role = marines
+	upgrade_prio = {
+		factor = 4
+		modifier = {
+			factor = 3
+			has_tech = marines
+		}
+	}
+
+	marines_default_coastal = {
+		division_names_group = MDR_INF_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+			}
+			regimental_support = {
+				fire_support = 1
+			}
+			regiments = {
+				marine = 4
+				infantry = 2
+			}
+		}
+	}
+}
+
+# Garrison / suppression for every durbar
+garrison_princely = {
+	available_for = { HYD MYS RJP HIN PJB BEN MDR ORI ASM MPU WIS SIN KAS PAK }
+	role = garrison
+	upgrade_prio = { factor = 4 modifier = { factor = 1 } }
+
+	garrison_default_princely = {
+		division_names_group = HIN_INF_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				military_police = 1
+			}
+			regiments = {
+				cavalry = 3
+				infantry = 2
+			}
+		}
+	}
+}
+
+# Sikh armour: Punjab mechanizes first
+armor_punjab = {
+	available_for = { PJB }
+	role = armor
+	upgrade_prio = {
+		base = 0
+		modifier = {
+			factor = 4
+			OR = {
+				has_tech = basic_light_tank
+				has_tech = basic_light_tank_chassis
+			}
+		}
+	}
+
+	light_armor_punjab = {
+		division_names_group = PJB_INF_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+			}
+			regiments = {
+				light_armor = 2
+				motorized = 4
+			}
+		}
+	}
+}

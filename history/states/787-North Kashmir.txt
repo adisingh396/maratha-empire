@@ -1,0 +1,25 @@
+state={
+	id=787
+	name="STATE_787"
+	manpower = 1672000
+
+	state_category = rural
+
+	history={
+		victory_points = {
+		1910 1
+		}
+		owner = KAS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KAS
+		add_core_of = PAK
+	}
+
+	provinces={
+		1910 2041 2084 10821
+	}
+
+	local_supplies=0.0
+}

@@ -1,0 +1,11 @@
+BEN_INF_01 = {
+  name = "BEN Infantry Division"
+  for_countries = { BEN }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d BEN Division"
+  ordered = {
+    1 = { "%d BEN Division" }
+    2 = { "%d BEN Division" }
+  }
+}

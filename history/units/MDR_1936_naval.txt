@@ -1,0 +1,108 @@
+units = {
+	fleet = {
+		name = "MDR Main Fleet"
+		naval_base = 10278
+		task_force = {
+			name = "MDR Battle Squadron"
+			location = 10278
+			ship = { name = "INS MDR BAT 1" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MDR version_name = "Battleship Class" } } }
+			ship = { name = "INS MDR BAT 2" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MDR version_name = "Battleship Class" } } }
+			ship = { name = "INS MDR BAT 3" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MDR version_name = "Battleship Class" } } }
+			ship = { name = "INS MDR BAT 4" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MDR version_name = "Battleship Class" } } }
+			ship = { name = "INS MDR BAT 5" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MDR version_name = "Battleship Class" } } }
+			ship = { name = "INS MDR HEA 6" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 7" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 8" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 9" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 10" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 11" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 12" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 13" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 14" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MDR HEA 15" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MDR version_name = "Heavy_Cruiser Class" } } }
+		}
+		task_force = {
+			name = "MDR Cruiser Squadron"
+			location = 10278
+			ship = { name = "INS MDR LIG 16" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 17" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 18" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 19" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 20" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 21" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 22" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 23" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 24" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 25" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 26" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR LIG 27" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MDR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MDR DES 28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 30" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 31" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 32" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 33" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 34" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 35" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 36" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 37" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 38" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 39" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 40" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 41" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 42" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 43" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 44" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 45" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 46" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 47" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 48" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 49" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 50" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 51" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 52" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MDR DES 53" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MDR version_name = "Destroyer Class" } } }
+		}
+		task_force = {
+			name = "MDR Submarine Flotilla"
+			location = 10278
+			ship = { name = "INS MDR SS 54" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 56" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 57" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 58" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 59" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 60" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 61" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 62" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 63" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 64" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 65" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 66" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 67" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 68" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 69" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 70" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 71" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 72" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 73" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 74" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 75" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 76" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 77" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 78" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 79" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 80" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 81" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 82" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 83" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 84" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 85" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 86" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 87" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 88" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 89" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+			ship = { name = "INS MDR SS 90" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MDR version_name = "Submarine Class" } } }
+		}
+	}
+}

@@ -1,0 +1,7 @@
+air_wings = {
+	425 = {
+		fighter_equipment_0 = { owner = "MYS" amount = 350 }
+		CAS_equipment_1 = { owner = "MYS" amount = 150 }
+		CAS_equipment_1 = { owner = "MYS" amount = 100 }
+	}
+}

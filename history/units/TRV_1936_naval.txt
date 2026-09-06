@@ -1,0 +1,73 @@
+units = {
+	fleet = {
+		name = "TRV Main Fleet"
+		naval_base = 1321
+		task_force = {
+			name = "TRV Battle Squadron"
+			location = 1321
+			ship = { name = "INS TRV BAT 1" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRV version_name = "Battleship Class" } } }
+			ship = { name = "INS TRV BAT 2" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TRV version_name = "Battleship Class" } } }
+			ship = { name = "INS TRV HEA 3" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TRV version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS TRV HEA 4" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TRV version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS TRV HEA 5" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TRV version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS TRV HEA 6" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TRV version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS TRV HEA 7" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TRV version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS TRV HEA 8" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TRV version_name = "Heavy_Cruiser Class" } } }
+		}
+		task_force = {
+			name = "TRV Cruiser Squadron"
+			location = 1321
+			ship = { name = "INS TRV LIG 9" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 10" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 11" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 12" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 13" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 14" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 15" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 16" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 17" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV LIG 18" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TRV version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS TRV DES 19" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 20" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 21" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 22" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 25" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 30" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 31" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 32" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+			ship = { name = "INS TRV DES 33" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TRV version_name = "Destroyer Class" } } }
+		}
+		task_force = {
+			name = "TRV Submarine Flotilla"
+			location = 1321
+			ship = { name = "INS TRV SS 34" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 35" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 36" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 37" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 38" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 42" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 48" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 51" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 52" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 53" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 54" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+			ship = { name = "INS TRV SS 55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = TRV version_name = "Submarine Class" } } }
+		}
+	}
+}

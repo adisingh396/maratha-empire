@@ -1,14 +1,51 @@
 division_template = {
-    name = "MPU Infantry Division"
-    division_names_group = MPU_INF_01
-    regiments = {
-        infantry = { x = 0 y = 0 }
-        infantry = { x = 0 y = 1 }
-        infantry = { x = 1 y = 0 }
-        infantry = { x = 1 y = 1 }
-    }
+	name = "Manipur Infantry Division"
+	division_names_group = MPU_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 3 }
+		recon = { x = 1 y = 3 }
+		artillery = { x = 2 y = 3 }
+	}
 }
+
 units = {
-    division = { division_template = "MPU Infantry Division" location = 1553 start_experience_factor = 0.1 start_equipment_factor = 0.5 }
-    division = { division_template = "MPU Infantry Division" location = 1553 start_experience_factor = 0.1 start_equipment_factor = 0.5 }
+	division = { division_template = "Manipur Infantry Division" location = 1553 start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+	division = { division_template = "Manipur Infantry Division" location = 1525 start_experience_factor = 0.25 start_equipment_factor = 0.90 }
+	division = { division_template = "Manipur Infantry Division" location = 1553 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
+	division = { division_template = "Manipur Infantry Division" location = 1525 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
+	division = { division_template = "Manipur Infantry Division" location = 1553 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
+	division = { division_template = "Manipur Infantry Division" location = 1525 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = { type = infantry_equipment_1 creator = "MPU" }
+		requested_factories = 4
+		progress = 0.50
+		efficiency = 85
+	}
+	add_equipment_production = {
+		equipment = { type = artillery_equipment_1 creator = "MPU" }
+		requested_factories = 2
+		progress = 0.35
+		efficiency = 85
+	}
+	add_equipment_production = {
+		equipment = { type = support_equipment_1 creator = "MPU" }
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 85
+	}
 }

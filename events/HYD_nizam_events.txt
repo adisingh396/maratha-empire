@@ -1,0 +1,162 @@
+# HYD_nizam events (HYD_nizam.1 -> HYD_nizam.4 railway and mills chain)
+
+add_namespace = HYD_nizam
+
+country_event = {
+	id = HYD_nizam.1
+	title = HYD_nizam_1_title
+	desc = HYD_nizam_1_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_1_opt_a
+		427 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_stability = -0.02
+		hidden_effect = { country_event = { id = HYD_nizam.2 days = 60 } }
+	}
+	option = {
+		name = HYD_nizam_1_opt_b
+		add_political_power = 80
+		427 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = HYD_nizam.2 days = 60 } }
+	}
+}
+
+country_event = {
+	id = HYD_nizam.2
+	title = HYD_nizam_2_title
+	desc = HYD_nizam_2_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_2_opt_a
+		add_stability = -0.03
+		add_war_support = 0.06
+		add_ideas = HYD_mill_concil_spirit
+		hidden_effect = { country_event = { id = HYD_nizam.3 days = 60 } }
+	}
+	option = {
+		name = HYD_nizam_2_opt_b
+		add_stability = 0.04
+		add_political_power = 40
+		hidden_effect = { country_event = { id = HYD_nizam.3 days = 60 } }
+	}
+}
+
+country_event = {
+	id = HYD_nizam.3
+	title = HYD_nizam_3_title
+	desc = HYD_nizam_3_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_3_opt_a
+		add_political_power = 60
+		add_stability = 0.02
+	}
+	option = {
+		name = HYD_nizam_3_opt_b
+		add_stability = 0.05
+		add_war_support = -0.02
+	}
+}
+
+country_event = {
+	id = HYD_nizam.4
+	title = HYD_nizam_4_title
+	desc = HYD_nizam_4_desc
+	picture = GFX_report_event_generic_navy
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_4_opt_a
+		air_experience = 25
+		add_political_power = 40
+	}
+	option = {
+		name = HYD_nizam_4_opt_b
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = HYD_nizam.5
+	title = HYD_nizam_5_title
+	desc = HYD_nizam_5_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_5_opt_a
+		set_country_flag = razakar_permitted
+		add_stability = -0.04
+		add_war_support = 0.08
+		hidden_effect = { country_event = { id = HYD_nizam.6 days = 60 } }
+	}
+	option = {
+		name = HYD_nizam_5_opt_b
+		set_country_flag = razakar_restrained
+		add_political_power = 60
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = HYD_nizam.6
+	title = HYD_nizam_6_title
+	desc = HYD_nizam_6_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_6_opt_a
+		set_country_flag = defy_pune
+		add_opinion_modifier = { target = MAR modifier = maratha_betrayal }
+		add_war_support = 0.05
+		hidden_effect = { MAR = { country_event = { id = HYD_nizam.7 days = 30 } } }
+	}
+	option = {
+		name = HYD_nizam_6_opt_b
+		clr_country_flag = razakar_permitted
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = HYD_nizam.7
+	title = HYD_nizam_7_title
+	desc = HYD_nizam_7_desc
+	picture = GFX_report_event_indian_prince
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_7_opt_a
+		create_wargoal = { target = HYD type = take_state_focus generator = { 427 } }
+		add_war_support = 0.06
+	}
+	option = {
+		name = HYD_nizam_7_opt_b
+		add_opinion_modifier = { target = HYD modifier = maratha_cultural_ties }
+		HYD = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		add_political_power = 50
+		hidden_effect = { HYD = { country_event = { id = HYD_nizam.8 days = 90 } } }
+	}
+}
+
+country_event = {
+	id = HYD_nizam.8
+	title = HYD_nizam_8_title
+	desc = HYD_nizam_8_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = HYD_nizam_8_opt_a
+		clr_country_flag = defy_pune
+		add_stability = 0.05
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		MAR = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+	}
+	option = {
+		name = HYD_nizam_8_opt_b
+		add_war_support = 0.05
+		add_political_power = 60
+	}
+}

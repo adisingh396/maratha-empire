@@ -1,13 +1,98 @@
+characters = {
 HYD_osman_ali = {
-	name = "Osman Ali Khan"
-	desc = "HYD_osman_desc"
+	name = HYD_osman_ali
 	portraits = {
 		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
 	}
 	country_leader = {
-		ideology = neutrality
-		traits = { conservative_leader }
+		ideology = despotism
+		traits = { conservative_grandee }
 		expire = "1965.1.1"
 		id = -1
 	}
+}
+HYD_laik_ali = {
+	name = HYD_laik_ali
+	portraits = {
+		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_laik_ali_admin
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+HYD_moin_nawaz = {
+	name = HYD_moin_nawaz
+	portraits = {
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_moin_purse
+		cost = 75
+		traits = { economist }
+	}
+}
+HYD_el_edroos = {
+	name = HYD_el_edroos
+	portraits = {
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	advisor = {
+		slot = army_chief
+		allowed = { original_tag = HYD }
+		idea_token = HYD_el_edroos_cmd
+		traits = { army_chief_army_high_command }
+	}
+	corps_commander = {
+		traits = { aggressive_assaulter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+HYD_abid_hasan = {
+	name = HYD_abid_hasan
+	portraits = {
+		army = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+	}
+	corps_commander = {
+		traits = { trickster }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+HYD_kasim_razvi = {
+	name = HYD_kasim_razvi
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { warmonger }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HYD_bahadur_yar = {
+	name = HYD_bahadur_yar
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	country_leader = {
+		ideology = liberalism
+		traits = { popular_figurehead }
+		expire = "1944.6.1"
+		id = -1
+	}
+}
 }

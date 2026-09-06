@@ -23,7 +23,7 @@ MAR_GAR_01 = {
 	name = "Maratha Garrison"
 	for_countries = { MAR }
 	can_use = { always = yes }
-	division_types = { "garrison" }
+	division_types = { "infantry" }
 	fallback_name = "%d Garrison Division"
 	ordered = {
 		1 = { "Pune Garrison" }

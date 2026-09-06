@@ -1,0 +1,195 @@
+infantry_MAR = {
+	available_for = { MAR }
+	role = infantry
+	upgrade_prio = { factor = 8 modifier = { factor = 1 } }
+
+	infantry_default_MAR = {
+		division_names_group = MAR_INF_01
+		upgrade_prio = { factor = 2 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regimental_support = {
+				anti_tank_battery = 1
+				fire_support = 1
+				field_guns = 1
+			}
+			regiments = {
+				infantry = 9
+				artillery_brigade = 1
+			}
+		}
+		replace_at_match = 0.9
+		replace_with = infantry_improved_MAR
+		target_min_match = 0.9
+	}
+
+	infantry_improved_MAR = {
+		division_names_group = MAR_INF_01
+		upgrade_prio = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_tech = infantry_weapons2
+			}
+		}
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+				signal_company = 1
+				logistics_company = 1
+			}
+			regimental_support = {
+				anti_tank_battery = 1
+				fire_support = 1
+				field_guns = 1
+			}
+			regiments = {
+				infantry = 9
+				artillery_brigade = 2
+			}
+		}
+	}
+}
+
+garrison_MAR = {
+	available_for = { MAR }
+	role = garrison
+	upgrade_prio = { factor = 4 modifier = { factor = 1 } }
+
+	garrison_default_MAR = {
+		division_names_group = MAR_GAR_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				military_police = 1
+			}
+			regiments = {
+				cavalry = 4
+				infantry = 2
+			}
+		}
+	}
+}
+
+mountaineer_MAR = {
+	available_for = { MAR }
+	role = mountaineers
+	upgrade_prio = {
+		factor = 2
+		modifier = {
+			factor = 4
+			date > 1939.1.1
+		}
+	}
+
+	mountaineer_default_MAR = {
+		division_names_group = MAR_INF_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regimental_support = {
+				fire_support = 1
+			}
+			regiments = {
+				mountaineers = 6
+				artillery_brigade = 1
+			}
+		}
+	}
+}
+
+marines_MAR = {
+	available_for = { MAR }
+	role = marines
+	upgrade_prio = {
+		factor = 2
+		modifier = {
+			factor = 4
+			has_tech = marines
+		}
+	}
+
+	marines_default_MAR = {
+		division_names_group = MAR_INF_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regimental_support = {
+				fire_support = 1
+			}
+			regiments = {
+				marine = 6
+				artillery_brigade = 1
+			}
+		}
+	}
+}
+
+armor_MAR = {
+	available_for = { MAR }
+	role = armor
+	upgrade_prio = {
+		base = 0
+		modifier = {
+			factor = 4
+			OR = {
+				has_tech = basic_light_tank
+				has_tech = basic_light_tank_chassis
+			}
+		}
+	}
+
+	light_armor_MAR = {
+		division_names_group = MAR_INF_01
+		upgrade_prio = { factor = 1 modifier = { factor = 1 } }
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+			}
+			regiments = {
+				light_armor = 3
+				motorized = 4
+			}
+		}
+		replace_at_match = 1.5
+		replace_with = medium_armor_MAR
+		target_min_match = 0.75
+	}
+
+	medium_armor_MAR = {
+		division_names_group = MAR_INF_01
+		upgrade_prio = {
+			factor = 1
+			modifier = {
+				factor = 4
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = basic_medium_tank_chassis
+				}
+			}
+		}
+		target_template = {
+			support = {
+				engineer = 1
+				recon = 1
+				signal_company = 1
+			}
+			regiments = {
+				medium_armor = 4
+				motorized = 6
+			}
+		}
+	}
+}

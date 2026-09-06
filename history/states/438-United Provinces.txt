@@ -6,21 +6,21 @@ state={
 	}
 	manpower=45365364
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category = city
 	local_supplies=0.000
 	history={
 		owner = HIN
+		add_extra_state_shared_building_slots = 7
 		add_core_of = HIN
-		add_claim_by = KHL
 		victory_points = {
-			1377 10
+		1377 10
 		}
 
-
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 3
-			arms_factory = 1
+			air_base = 1
+			infrastructure = 3
+			industrial_complex = 10
+			arms_factory = 3
 		}
 
 	}

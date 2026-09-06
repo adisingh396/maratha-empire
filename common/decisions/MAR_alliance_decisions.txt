@@ -1,7 +1,4 @@
 MAR_diplomacy_category = {
-	icon = generic_alliance
-	allowed = { tag = MAR }
-	visible = { tag = MAR }
 
 	MAR_ally_hyderabad = {
 		icon = generic_alliance
@@ -13,7 +10,7 @@ MAR_diplomacy_category = {
 		}
 		visible = { tag = MAR }
 		cost = 50
-		ai_will_do = { factor = 10 }
+		ai_will_do = { base = 10 }
 		complete_effect = {
 			add_opinion_modifier = { target = HYD modifier = maratha_cultural_ties }
 			HYD = { add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } }
@@ -22,7 +19,7 @@ MAR_diplomacy_category = {
 				custom_effect_tooltip = MAR_alliance_invite_tt
 			}
 			hidden_effect = {
-				HYD = { country_event = { id = MAR_diplo.1 days = 1 } }
+				HYD = { country_event = { id = MAR_revolt.2 days = 1 } }
 			}
 		}
 	}
@@ -51,7 +48,7 @@ MAR_diplomacy_category = {
 		}
 		visible = { tag = MAR }
 		cost = 75
-		ai_will_do = { factor = 5 }
+		ai_will_do = { base = 5 }
 		complete_effect = {
 			HYD = { add_stability = -0.10 }
 			HYD = { country_event = { id = MAR_revolt.1 days = 2 } }

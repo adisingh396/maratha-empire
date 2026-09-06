@@ -1,0 +1,9 @@
+ASM = {
+	male = {
+		names = { Amit Arjun Bordoloi Dev Fakhruddin Karan Kishan Pratap Ravi Rohan Saadulah Suraj Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
+}

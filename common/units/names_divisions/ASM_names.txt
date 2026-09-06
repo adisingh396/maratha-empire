@@ -1,0 +1,11 @@
+ASM_INF_01 = {
+  name = "ASM Infantry Division"
+  for_countries = { ASM }
+  can_use = { always = yes }
+  division_types = { "infantry" }
+  fallback_name = "%d ASM Division"
+  ordered = {
+    1 = { "%d ASM Division" }
+    2 = { "%d ASM Division" }
+  }
+}

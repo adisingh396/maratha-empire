@@ -4,26 +4,25 @@ state={
 	name="STATE_441"
 	manpower = 2598027
 	
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = KAS
 		buildings = {
+			air_base = 1
 			industrial_complex = 3
 			arms_factory = 1
 			infrastructure = 1
 		}
-		add_claim_by = RAJ
 		add_claim_by = PAK
 		add_core_of = KAS
-		add_core_of = KHL 
 
 		victory_points = {
-			12754 2
+		12754 2
 		}
 
 		victory_points = {
-			8005 1
+		8005 1
 		}
 	}
 

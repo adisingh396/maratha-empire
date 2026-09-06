@@ -14,9 +14,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_army_morale
 			modifier = {
-				army_core_attack_factor = 0.08
+				army_core_attack_factor = 0.12
 				army_core_defence_factor = 0.08
-				division_attack_factor = 0.05
 			}
 		}
 		MAR_moderate_industrial_base = {
@@ -43,8 +42,7 @@ ideas = {
 			picture = generic_industrial_bonus
 			modifier = {
 				industrial_capacity_factory = 0.15
-				construction_speed = 0.10
-				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
 		MAR_hindavi_swarajya = {
@@ -52,8 +50,8 @@ ideas = {
 			picture = generic_national_unity
 			modifier = {
 				war_support_factor = 0.10
-				justification_on_allies_shorten = -0.25
-				ideology_drift_defense_factor = 0.20
+				justify_war_goal_time = -0.25
+				drift_defence_factor = 0.20
 			}
 		}
 		MAR_maratha_navy_tradition = {
@@ -62,7 +60,7 @@ ideas = {
 			modifier = {
 				navy_org_factor = 0.10
 				naval_speed_factor = 0.08
-				dockyard_output = 0.12
+				production_speed_dockyard_factor = 0.12
 			}
 		}
 		MAR_world_mark = {
@@ -99,7 +97,7 @@ ideas = {
 			allowed = { original_tag = MAR }
 			picture = generic_army_doctrines
 			modifier = {
-				military_theorist_cost_factor = -0.10
+				land_doctrine_cost_factor = -0.10
 			}
 		}
 		MAR_angre_admiral = {
@@ -120,7 +118,7 @@ ideas = {
 			allowed = { original_tag = MAR }
 			picture = generic_army_chief
 			modifier = {
-				divisions_speed_factor = 0.05
+				army_speed_factor = 0.05
 			}
 		}
 		MAR_world_trade_idea = {
@@ -138,6 +136,46 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.05
 				political_power_gain = 0.10
+			}
+		}
+		MAR_french_guns = {
+			allowed = { original_tag = MAR }
+			picture = generic_artillery
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		MAR_heavy_guns = {
+			allowed = { original_tag = MAR }
+			picture = generic_artillery
+			modifier = {
+				army_core_attack_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		MAR_ashta_spirit = {
+			allowed = { original_tag = MAR }
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}
+		MAR_sardar_spirit = {
+			allowed = { original_tag = MAR }
+			picture = generic_political_pressure
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		MAR_sea_fort_spirit = {
+			allowed = { original_tag = MAR }
+			picture = generic_naval_bonus
+			modifier = {
+				navy_org_factor = 0.08
+				naval_speed_factor = 0.05
 			}
 		}
 	}

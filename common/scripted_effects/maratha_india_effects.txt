@@ -19,14 +19,14 @@ maratha_claim_india_effect = {
 			}
 		}
 		add_claim_by = MAR
-		enable_state_integration_80_compliance = yes
+		add_compliance = 15
 	}
 }
 
 maratha_core_india_effect = {
 	hidden_effect = {
 		every_state = {
-			limit = { is_claim_of = MAR }
+			limit = { is_claimed_by = MAR }
 			add_core_of = MAR
 		}
 	}

@@ -1,0 +1,9 @@
+TRV = {
+	male = {
+		names = { "C." Amit Arjun Chithira Cp Dev Karan Kishan Pratap Ravi Rohan Suraj Thirunal Vikram }
+	}
+	female = {
+		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
+	}
+	surnames = { "P. Ramaswami Iyer" Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Thirunal Verma }
+}

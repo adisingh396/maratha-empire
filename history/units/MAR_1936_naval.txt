@@ -1,30 +1,88 @@
 units = {
 	fleet = {
-		name = "Maratha Western Fleet"
+		name = "MAR Main Fleet"
 		naval_base = 1349
 		task_force = {
-			name = "Bombay Striking Force"
+			name = "MAR Battle Squadron"
 			location = 1349
-			ship = { name = "INS Shivaji" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Pratapgad" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Rajgad" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Sindhudurg" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Vagai" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Angre I" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Angre II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Angre III" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Angre IV" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Angre V" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Angre VI" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS MAR BAT 1" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MAR version_name = "Battleship Class" } } }
+			ship = { name = "INS MAR BAT 2" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MAR version_name = "Battleship Class" } } }
+			ship = { name = "INS MAR BAT 3" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MAR version_name = "Battleship Class" } } }
+			ship = { name = "INS MAR BAT 4" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = MAR version_name = "Battleship Class" } } }
+			ship = { name = "INS MAR HEA 5" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MAR HEA 6" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MAR HEA 7" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MAR HEA 8" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MAR HEA 9" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MAR HEA 10" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS MAR HEA 11" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = MAR version_name = "Heavy_Cruiser Class" } } }
 		}
 		task_force = {
-			name = "Konkan Patrol"
+			name = "MAR Cruiser Squadron"
 			location = 1349
-			ship = { name = "INS Koli" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Malvan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Ratnagiri" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Dandi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR } } }
-			ship = { name = "INS Alibag" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR } } }
+			ship = { name = "INS MAR LIG 12" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 13" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 14" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 15" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 16" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 17" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 18" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 19" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 20" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR LIG 21" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = MAR version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS MAR DES 22" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 23" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 24" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 25" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 26" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 27" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 28" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 29" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 30" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 31" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 32" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 33" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 34" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 35" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 36" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 37" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 38" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 39" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 40" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 41" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+			ship = { name = "INS MAR DES 42" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = MAR version_name = "Destroyer Class" } } }
+		}
+		task_force = {
+			name = "MAR Submarine Flotilla"
+			location = 1349
+			ship = { name = "INS MAR SS 43" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 44" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 48" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 49" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 50" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 51" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 52" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 53" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 54" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 55" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 56" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 57" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 58" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 59" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 60" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 61" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 62" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 63" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 64" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 65" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 66" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 67" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 68" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 69" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
+			ship = { name = "INS MAR SS 70" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAR version_name = "Submarine Class" } } }
 		}
 	}
 }

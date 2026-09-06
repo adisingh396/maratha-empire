@@ -1,13 +1,86 @@
+characters = {
 MYS_wadiyar = {
-	name = "Jayachamarajendra Wadiyar"
-	desc = "MYS_wadiyar_desc"
+	name = MYS_wadiyar
 	portraits = {
 		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
 	}
 	country_leader = {
-		ideology = neutrality
-		traits = { conservative_leader }
+		ideology = despotism
+		traits = { conservative_grandee }
 		expire = "1965.1.1"
 		id = -1
 	}
+}
+MYS_jayachamarajendra = {
+	name = MYS_jayachamarajendra
+	portraits = {
+		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MYS }
+		idea_token = MYS_jaya_court
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+MYS_visvesvaraya = {
+	name = MYS_visvesvaraya
+	portraits = {
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = MYS }
+		idea_token = MYS_visvesvaraya_plan
+		traits = { military_theorist }
+	}
+}
+MYS_mirza_ismail = {
+	name = MYS_mirza_ismail
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MYS }
+		idea_token = MYS_ismail_admin
+		cost = 75
+		traits = { economist }
+	}
+}
+MYS_thimayya = {
+	name = MYS_thimayya
+	portraits = {
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	corps_commander = {
+		traits = { trickster }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+MYS_cariappa = {
+	name = MYS_cariappa
+	portraits = {
+		army = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+	}
+	advisor = {
+		slot = army_chief
+		allowed = { original_tag = MYS }
+		idea_token = MYS_cariappa_cmd
+		traits = { army_chief_defensive_1 }
+	}
+	corps_commander = {
+		traits = { defensive_doctrine }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
 }

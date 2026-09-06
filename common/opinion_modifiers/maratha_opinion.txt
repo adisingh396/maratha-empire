@@ -2,4 +2,7 @@ opinion_modifiers = {
 	maratha_cultural_ties = {
 		value = 25
 	}
+	maratha_betrayal = {
+		value = -50
+	}
 }

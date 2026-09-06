@@ -27,4 +27,809 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_claim_bharat" hidden_effect = { maratha_claim_india_effect = yes } add_war_support = 0.10 }
 	}
+	focus = {
+		id = HIN_taluqdars
+		icon = GFX_focus_generic_land_redistribution
+		prerequisite = { focus = HIN_ganga_legacy }
+		x = 3 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_taluqdars" add_stability = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_lucknow_university
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_taluqdars }
+		x = 3 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_lucknow_university" add_research_slot = 1 add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } }
+	}
+	focus = {
+		id = HIN_jamia_aligarh
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_lucknow_university }
+		x = 3 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_jamia_aligarh" add_political_power = 80 add_stability = 0.03 }
+	}
+	focus = {
+		id = HIN_kanpur_mills
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HIN_delhi_industry }
+		x = 1 y = 2 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_kanpur_mills" 438 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = HIN_cawnpore_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HIN_kanpur_mills }
+		x = 1 y = 3 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_cawnpore_arsenal" 438 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_kisan_sabha
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_ganga_legacy }
+		x = 7 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_kisan_sabha" add_manpower = 25000 add_war_support = 0.04 }
+	}
+	focus = {
+		id = HIN_red_fort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = HIN_kisan_sabha }
+		x = 7 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_red_fort" add_stability = 0.05 add_political_power = 80 }
+	}
+	focus = {
+		id = HIN_chandni_chowk
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HIN_red_fort }
+		x = 7 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_chandni_chowk" 439 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_awadh_rifles
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_jamia_aligarh }
+		x = 3 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_awadh_rifles" army_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } }
+	}
+	focus = {
+		id = HIN_lucknow_arsenal
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HIN_awadh_rifles }
+		x = 3 y = 5 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_lucknow_arsenal" 438 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery } }
+	}
+	focus = {
+		id = HIN_peasant_levies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_chandni_chowk }
+		x = 7 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_peasant_levies" add_manpower = 30000 add_war_support = 0.04 }
+	}
+	focus = {
+		id = HIN_ganga_command
+		icon = GFX_focus_generic_tank_production
+		prerequisite = { focus = HIN_peasant_levies }
+		x = 7 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ganga_command" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } }
+	}
+	focus = {
+		id = HIN_ganga_bridges
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HIN_claim_bharat }
+		x = 5 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ganga_bridges" 438 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } 439 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_delhi_durbar
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_ganga_bridges }
+		x = 5 y = 4 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_durbar" add_stability = 0.06 add_political_power = 100 add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } }
+	}
+	focus = {
+		id = HIN_mughal_legacy
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = HIN_delhi_durbar }
+		prerequisite = { focus = HIN_lucknow_arsenal }
+		x = 5 y = 6 cost = 10
+		ai_will_do = { factor = 15 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_mughal_legacy" add_ideas = HIN_mughal_spirit add_stability = 0.05 add_war_support = 0.10 }
+	}
+	focus = {
+		id = HIN_court_pune
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = HIN_red_fort }
+		x = 9 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_court_pune" add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_delhi_throne
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = HIN_court_pune }
+		x = 9 y = 4 cost = 10
+		ai_will_do = { factor = 5 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_throne" create_wargoal = { target = MAR type = take_state_focus generator = { 429 } } add_war_support = 0.06 }
+	}
+	focus = {
+		id = HIN_patna_university
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_taluqdars }
+		x = 0 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_patna_university" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_nalanda_revival
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_patna_university }
+		x = 0 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_nalanda_revival" add_stability = 0.04 add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_magadha_mines
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HIN_nalanda_revival }
+		x = 0 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_magadha_mines" 435 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } 435 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_bodh_gaya
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_magadha_mines }
+		x = 0 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_bodh_gaya" add_stability = 0.05 add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_magadhan_levies
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_bodh_gaya }
+		x = 0 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_magadhan_levies" add_manpower = 20000 add_war_support = 0.03 }
+	}
+	focus = {
+		id = HIN_rajgir_forts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = HIN_magadhan_levies }
+		x = 0 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_rajgir_forts" 435 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = HIN_doab_canals
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HIN_kanpur_mills }
+		x = 2 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_doab_canals" 438 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_manpower = 10000 }
+	}
+	focus = {
+		id = HIN_meerut_cantonment
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_doab_canals }
+		x = 2 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_meerut_cantonment" army_experience = 20 add_war_support = 0.03 }
+	}
+	focus = {
+		id = HIN_agra_workshops
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HIN_meerut_cantonment }
+		x = 2 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_agra_workshops" 438 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_tannery_kanpur
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HIN_agra_workshops }
+		x = 2 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_tannery_kanpur" add_political_power = 70 438 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_mathura_dairy
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_tannery_kanpur }
+		x = 2 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_mathura_dairy" add_stability = 0.03 add_manpower = 8000 }
+	}
+	focus = {
+		id = HIN_red_battalions
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_lucknow_arsenal }
+		x = 4 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_red_battalions" army_experience = 25 add_manpower = 10000 }
+	}
+	focus = {
+		id = HIN_delhi_sowars
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = HIN_red_battalions }
+		bypass = { has_completed_focus = HIN_purbia_infantry }
+		x = 4 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_sowars" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } add_ideas = HIN_sowar_doctrine }
+	}
+	focus = {
+		id = HIN_purbia_infantry
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_red_battalions }
+		bypass = { has_completed_focus = HIN_delhi_sowars }
+		x = 6 y = 7 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_purbia_infantry" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } add_ideas = HIN_purbia_doctrine }
+	}
+	focus = {
+		id = HIN_mughal_artillery_park
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HIN_delhi_sowars }
+		prerequisite = { focus = HIN_purbia_infantry }
+		x = 5 y = 8 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_mughal_artillery_park" add_tech_bonus = { bonus = 0.5 uses = 2 category = artillery } army_experience = 15 }
+	}
+	focus = {
+		id = HIN_delhi_magazine
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HIN_mughal_artillery_park }
+		x = 5 y = 9 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_magazine" 439 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_kashmiri_gate_forts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = HIN_delhi_magazine }
+		x = 5 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_kashmiri_gate_forts" 439 = { add_building_construction = { type = land_fort level = 2 instant_build = yes } } add_war_support = 0.03 }
+	}
+	focus = {
+		id = HIN_victory_column
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_kashmiri_gate_forts }
+		x = 5 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_victory_column" add_stability = 0.04 add_war_support = 0.04 }
+	}
+	focus = {
+		id = HIN_chandni_municipal
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_red_fort }
+		x = 8 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_chandni_municipal" add_stability = 0.04 add_political_power = 50 }
+	}
+	focus = {
+		id = HIN_jama_masjid
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_chandni_municipal }
+		x = 8 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_jama_masjid" add_stability = 0.04 add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_durbar_police
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_jama_masjid }
+		x = 8 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_durbar_police" add_manpower = 12000 add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_raisina_press
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_durbar_police }
+		x = 8 y = 6 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_raisina_press" add_political_power = 70 add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_peacock_throne
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_mughal_legacy }
+		x = 10 y = 7 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_peacock_throne" add_stability = 0.05 add_political_power = 100 add_ideas = HIN_throne_spirit }
+	}
+	focus = {
+		id = HIN_subah_system
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_peacock_throne }
+		x = 10 y = 8 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_subah_system" add_stability = 0.05 435 = { add_core_of = HIN } 438 = { add_core_of = HIN } 439 = { add_core_of = HIN } }
+	}
+	focus = {
+		id = HIN_badshahi_mint
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HIN_subah_system }
+		x = 10 y = 9 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_badshahi_mint" add_political_power = 120 439 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_residency_lucknow
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_rajgir_forts }
+		x = 0 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_residency_lucknow" add_war_support = 0.04 add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_bithoor_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_residency_lucknow }
+		x = 0 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_bithoor_memory" add_war_support = 0.04 add_manpower = 8000 }
+	}
+	focus = {
+		id = HIN_taluqdar_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_bithoor_memory }
+		x = 0 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_taluqdar_college" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_shia_processions
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_taluqdar_college }
+		x = 0 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_shia_processions" add_stability = 0.04 add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_awadh_akhbarat
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_shia_processions }
+		x = 0 y = 12 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_awadh_akhbarat" add_war_support = 0.03 add_political_power = 50 }
+	}
+	focus = {
+		id = HIN_lucknow_pact
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = HIN_awadh_akhbarat }
+		x = 0 y = 13 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_lucknow_pact" add_stability = 0.05 add_ideas = HIN_pact_spirit }
+	}
+	focus = {
+		id = HIN_gaya_temple
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_rajgir_forts }
+		x = 1 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_gaya_temple" add_stability = 0.04 add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_sasaram_tomb
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_gaya_temple }
+		x = 1 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_sasaram_tomb" add_war_support = 0.03 add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_patna_high_court
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_sasaram_tomb }
+		x = 1 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_patna_high_court" add_stability = 0.04 add_political_power = 50 }
+	}
+	focus = {
+		id = HIN_bihar_assembly
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_patna_high_court }
+		x = 1 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_bihar_assembly" add_stability = 0.04 add_manpower = 8000 }
+	}
+	focus = {
+		id = HIN_champaran_memory
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_bihar_assembly }
+		x = 1 y = 12 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_champaran_memory" add_war_support = 0.04 add_political_power = 60 add_ideas = HIN_champaran_spirit }
+	}
+	focus = {
+		id = HIN_aligarh_muslim_uni
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_mathura_dairy }
+		x = 2 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_aligarh_muslim_uni" add_research_slot = 1 add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_benares_hindu_uni
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_aligarh_muslim_uni }
+		x = 2 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_benares_hindu_uni" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_ganga_jamuni
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_benares_hindu_uni }
+		x = 2 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ganga_jamuni" add_stability = 0.05 add_political_power = 50 }
+	}
+	focus = {
+		id = HIN_prayag_kumbh
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_ganga_jamuni }
+		x = 2 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_prayag_kumbh" add_stability = 0.04 add_manpower = 12000 }
+	}
+	focus = {
+		id = HIN_sangam_city
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HIN_prayag_kumbh }
+		x = 2 y = 12 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_sangam_city" 438 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_new_delhi_works
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HIN_lucknow_arsenal }
+		x = 3 y = 6 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_new_delhi_works" 439 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_india_gate
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_new_delhi_works }
+		x = 3 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_india_gate" add_war_support = 0.04 add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_parliament_house
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_india_gate }
+		x = 3 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_parliament_house" add_stability = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_connaught_place
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HIN_parliament_house }
+		x = 3 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_connaught_place" 439 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_janpath_hospitals
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HIN_connaught_place }
+		x = 3 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_janpath_hospitals" add_stability = 0.03 add_manpower = 8000 }
+	}
+	focus = {
+		id = HIN_radio_delhi
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_janpath_hospitals }
+		x = 3 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_radio_delhi" add_war_support = 0.03 add_political_power = 50 add_ideas = HIN_broadcast_spirit }
+	}
+	focus = {
+		id = HIN_bengal_sappers
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_victory_column }
+		x = 4 y = 12 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_bengal_sappers" army_experience = 25 add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons } }
+	}
+	focus = {
+		id = HIN_garhwal_rifles
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_bengal_sappers }
+		bypass = { has_completed_focus = HIN_kumaon_battalion }
+		x = 4 y = 13 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_garhwal_rifles" army_experience = 20 add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine } add_ideas = HIN_garhwal_doctrine }
+	}
+	focus = {
+		id = HIN_kumaon_battalion
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = HIN_bengal_sappers }
+		bypass = { has_completed_focus = HIN_garhwal_rifles }
+		x = 6 y = 13 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_kumaon_battalion" army_experience = 20 add_manpower = 10000 add_ideas = HIN_kumaon_doctrine }
+	}
+	focus = {
+		id = HIN_delhi_contingent
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_garhwal_rifles }
+		prerequisite = { focus = HIN_kumaon_battalion }
+		x = 5 y = 14 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_contingent" add_manpower = 20000 army_experience = 20 }
+	}
+	focus = {
+		id = HIN_viceroy_guard
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = HIN_delhi_contingent }
+		x = 5 y = 15 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_viceroy_guard" army_experience = 20 add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_battle_honours
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_viceroy_guard }
+		x = 5 y = 16 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_battle_honours" add_war_support = 0.05 add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_roorkee_college
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_battle_honours }
+		x = 5 y = 17 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_roorkee_college" add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } army_experience = 10 }
+	}
+	focus = {
+		id = HIN_fatehpuri_mosque
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_raisina_press }
+		x = 8 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_fatehpuri_mosque" add_stability = 0.04 add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_ballimaran_lanes
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_fatehpuri_mosque }
+		x = 8 y = 8 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ballimaran_lanes" add_stability = 0.03 add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_ghalib_academy
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_ballimaran_lanes }
+		x = 8 y = 9 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ghalib_academy" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_political_power = 30 }
+	}
+	focus = {
+		id = HIN_old_delhi_walls
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = HIN_ghalib_academy }
+		x = 8 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_old_delhi_walls" 439 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_stability = 0.02 }
+	}
+	focus = {
+		id = HIN_firozabad_glass
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = HIN_sangam_city }
+		x = 2 y = 13 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_firozabad_glass" 438 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_moradabad_brass
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = HIN_firozabad_glass }
+		x = 2 y = 14 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_moradabad_brass" add_political_power = 70 438 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_okhla_barrage
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HIN_moradabad_brass }
+		x = 2 y = 15 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_okhla_barrage" 439 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_garhmukteshwar_fair
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_okhla_barrage }
+		x = 2 y = 16 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_garhmukteshwar_fair" add_stability = 0.03 add_manpower = 8000 }
+	}
+	focus = {
+		id = HIN_lodhi_gardens
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_badshahi_mint }
+		x = 10 y = 10 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_lodhi_gardens" add_stability = 0.04 add_political_power = 40 }
+	}
+	focus = {
+		id = HIN_humayun_tomb
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_lodhi_gardens }
+		x = 10 y = 11 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_humayun_tomb" add_stability = 0.04 add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_safdarjung_tomb
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_humayun_tomb }
+		x = 10 y = 12 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_safdarjung_tomb" add_stability = 0.03 add_political_power = 50 }
+	}
+	focus = {
+		id = HIN_hauz_khas
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HIN_safdarjung_tomb }
+		x = 10 y = 13 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_hauz_khas" 439 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+	}
+	focus = {
+		id = HIN_agra_fort_palace
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = HIN_hauz_khas }
+		x = 10 y = 14 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_agra_fort_palace" add_war_support = 0.04 add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_fatehpur_sikri
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_agra_fort_palace }
+		x = 10 y = 15 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_fatehpur_sikri" add_stability = 0.04 add_ideas = HIN_fateh_spirit }
+	}
+	focus = {
+		id = HIN_sikandra_tomb
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_fatehpur_sikri }
+		x = 10 y = 16 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_sikandra_tomb" add_stability = 0.03 add_war_support = 0.02 }
+	}
+	focus = {
+		id = HIN_itmad_ud_daula
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HIN_sikandra_tomb }
+		x = 10 y = 17 cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_itmad_ud_daula" add_stability = 0.03 add_political_power = 60 }
+	}
+	focus = {
+		id = HIN_mandala_circle
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_itmad_ud_daula }
+		x = 8
+		y = 11
+		cost = 10
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_mandala_circle"
+			add_political_power = 80
+			set_country_flag = mandala_circle_read
+			country_event = { id = MAR_mandala.1 days = 2 }
+		}
+	}
 }

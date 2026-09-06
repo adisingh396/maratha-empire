@@ -1,0 +1,38 @@
+units = {
+	fleet = {
+		name = "SIN Main Fleet"
+		naval_base = 3456
+		task_force = {
+			name = "SIN Battle Squadron"
+			location = 3456
+			ship = { name = "INS SIN BAT 1" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SIN version_name = "Battleship Class" } } }
+			ship = { name = "INS SIN HEA 2" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SIN version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS SIN HEA 3" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SIN version_name = "Heavy_Cruiser Class" } } }
+		}
+		task_force = {
+			name = "SIN Cruiser Squadron"
+			location = 3456
+			ship = { name = "INS SIN LIG 4" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SIN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS SIN LIG 5" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SIN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS SIN LIG 6" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SIN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS SIN LIG 7" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SIN version_name = "Light_Cruiser Class" } } }
+			ship = { name = "INS SIN DES 8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 16" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 17" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+			ship = { name = "INS SIN DES 18" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIN version_name = "Destroyer Class" } } }
+		}
+		task_force = {
+			name = "SIN Submarine Flotilla"
+			location = 3456
+			ship = { name = "INS SIN SS 19" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SIN version_name = "Submarine Class" } } }
+			ship = { name = "INS SIN SS 20" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SIN version_name = "Submarine Class" } } }
+		}
+	}
+}

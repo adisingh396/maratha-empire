@@ -1,0 +1,53 @@
+characters = {
+HIN_chhatari = {
+	name = HIN_chhatari
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HIN_pant = {
+	name = HIN_pant
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	country_leader = {
+		ideology = liberalism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HIN_sapru = {
+	name = HIN_sapru
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HIN }
+		idea_token = HIN_sapru_counsel
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+HIN_chaudhuri = {
+	name = HIN_chaudhuri
+	portraits = {
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	corps_commander = {
+		traits = { aggressive_assaulter }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+}

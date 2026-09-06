@@ -1,0 +1,177 @@
+add_namespace = MAR_mandala
+
+# The circle read anew: entry into Mandala politics (fired by mandala_read_the_circle decision)
+country_event = {
+	id = MAR_mandala.1
+	title = MAR_mandala_1_title
+	desc = MAR_mandala_1_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MAR_mandala_1_opt_ari
+		add_war_support = 0.05
+		set_country_flag = mandala_reads_ari
+		custom_effect_tooltip = MAR_mandala_ari_tt
+	}
+	option = {
+		name = MAR_mandala_1_opt_mitra
+		add_political_power = 40
+		set_country_flag = mandala_reads_mitra
+		custom_effect_tooltip = MAR_mandala_mitra_tt
+	}
+}
+
+# Ari on the border: a neighbouring throne arms (fired by mandala_mark_the_ari decision, by AI weight, or by focus hooks)
+country_event = {
+	id = MAR_mandala.2
+	title = MAR_mandala_2_title
+	desc = MAR_mandala_2_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_mandala_2_opt_denounce
+		add_war_support = 0.06
+		add_stability = -0.02
+		set_country_flag = mandala_denounced_ari
+	}
+	option = {
+		name = MAR_mandala_2_opt_gifts
+		add_political_power = -50
+		add_stability = 0.03
+		clr_country_flag = mandala_denounced_ari
+	}
+}
+
+# Mitra beyond the enemy: court the neighbour's neighbour (fired by mandala_court_mitra decision)
+country_event = {
+	id = MAR_mandala.3
+	title = MAR_mandala_3_title
+	desc = MAR_mandala_3_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MAR_mandala_3_opt_embassy
+		add_political_power = 60
+		set_country_flag = mandala_has_mitra
+		custom_effect_tooltip = MAR_mandala_mitra_tt
+	}
+	option = {
+		name = MAR_mandala_3_opt_spies
+		add_political_power = 20
+		add_war_support = 0.03
+		set_country_flag = mandala_has_mitra
+	}
+}
+
+# The Quadruple League, 1780 remembered: three thrones against the hegemon (fired by mandala_convene_league decision)
+country_event = {
+	id = MAR_mandala.4
+	title = MAR_mandala_4_title
+	desc = MAR_mandala_4_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_mandala_4_opt_join
+		set_country_flag = mandala_league_member
+		if = { limit = { NOT = { original_tag = MAR } } create_wargoal = { target = MAR type = annex_everything } }
+		if = { limit = { original_tag = MAR } add_political_power = 100 }
+		add_war_support = 0.08
+		add_stability = -0.02
+		HYD = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		MYS = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		RJP = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		HIN = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		PJB = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		BEN = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		MDR = { add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties } }
+		hidden_effect = { news_event = { id = MAR_mandala.10 days = 1 } }
+	}
+	option = {
+		name = MAR_mandala_4_opt_out
+		add_political_power = 50
+		add_stability = 0.02
+	}
+}
+
+# Thirty pieces of silver: the bribe that breaks leagues (fired by mandala_accept_maratha_silver decision)
+country_event = {
+	id = MAR_mandala.5
+	title = MAR_mandala_5_title
+	desc = MAR_mandala_5_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = MAR_mandala_5_opt_silver
+		add_political_power = 150
+		clr_country_flag = mandala_league_member
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_stability = -0.03
+	}
+	option = {
+		name = MAR_mandala_5_opt_loyal
+		add_stability = 0.05
+		add_war_support = 0.04
+	}
+}
+
+# Chapati and lotus: the secret network stirs (fired when revolt risk is high, via mandala_feed_the_network decision)
+country_event = {
+	id = MAR_mandala.6
+	title = MAR_mandala_6_title
+	desc = MAR_mandala_6_desc
+	picture = GFX_report_event_generic_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_mandala_6_opt_crackdown
+		add_manpower = -5000
+		add_stability = 0.04
+		hidden_effect = {
+			random_state = {
+				limit = { is_owned_by = ROOT }
+				add_resistance = -20
+			}
+		}
+	}
+	option = {
+		name = MAR_mandala_6_opt_concede
+		add_political_power = -40
+		add_stability = 0.06
+		add_war_support = -0.02
+	}
+}
+
+# Proclaim the Digvijaya: the Chakravartin gambit (fired by mandala_proclaim_digvijaya decision)
+country_event = {
+	id = MAR_mandala.7
+	title = MAR_mandala_7_title
+	desc = MAR_mandala_7_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_mandala_7_opt_proclaim
+		set_country_flag = mandala_chakravartin
+		add_war_support = 0.10
+		add_stability = 0.03
+		add_political_power = -50
+	}
+	option = {
+		name = MAR_mandala_7_opt_delay
+		add_political_power = 80
+		add_stability = 0.02
+	}
+}
+
+# A league has risen in Hindustan (world broadcast)
+news_event = {
+	id = MAR_mandala.10
+	title = MAR_mandala_10_title
+	desc = MAR_mandala_10_desc
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_mandala_10_opt
+	}
+}

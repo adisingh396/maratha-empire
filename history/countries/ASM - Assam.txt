@@ -9,7 +9,22 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     tech_trucks = 1
+
+	CAS1 = 1
+	early_fighter = 1
 }
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		CAS1 = 1
+	}
+}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
 set_convoys = 10
 set_politics = {
     ruling_party = neutrality
@@ -26,4 +41,10 @@ set_popularities = {
 add_ideas = {
     ASM_militia_legacy
 }
+recruit_character = ASM_saadulah
+recruit_character = ASM_bordoloi
+recruit_character = ASM_fakhruddin
+promote_character = ASM_saadulah
 set_oob = "ASM_1936"
+set_naval_oob = "ASM_1936_naval"
+set_air_oob = "ASM_1936_air"

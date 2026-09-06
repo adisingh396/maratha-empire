@@ -1,14 +1,80 @@
+characters = {
 RJP_ganga = {
-	name = "Ganga Singh"
-	desc = "RJP_ganga_desc"
+	name = RJP_ganga
 	portraits = {
 		civilian = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
 		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
 	}
 	country_leader = {
-		ideology = neutrality
-		traits = { aggressive_leader }
+		ideology = despotism
+		traits = { warmonger }
 		expire = "1965.1.1"
 		id = -1
 	}
+}
+RJP_man_singh = {
+	name = RJP_man_singh
+	portraits = {
+		army = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+	}
+	advisor = {
+		slot = army_chief
+		allowed = { original_tag = RJP }
+		idea_token = RJP_man_singh_cmd
+		traits = { army_chief_army_high_command }
+	}
+	corps_commander = {
+		traits = { cavalry_expert }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+RJP_umaid = {
+	name = RJP_umaid
+	portraits = {
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = RJP }
+		idea_token = RJP_umaid_palace
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+RJP_bhupal = {
+	name = RJP_bhupal
+	portraits = {
+		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+	}
+	corps_commander = {
+		traits = { aggressive_assaulter }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	country_leader = {
+		ideology = liberalism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+RJP_manubhai = {
+	name = RJP_manubhai
+	portraits = {
+		civilian = { large = GFX_portrait_mar_madhavrao small = GFX_portrait_mar_madhavrao_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = RJP }
+		idea_token = RJP_canal_vision
+		traits = { military_theorist }
+	}
+}
 }

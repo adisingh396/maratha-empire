@@ -6,11 +6,13 @@ state={
 	}
 	history={
 		owner = RJP
+		add_extra_state_shared_building_slots = 9
 		add_core_of = RJP
 		buildings = {
-			industrial_complex = 4
-			arms_factory = 2
-			infrastructure = 1
+			air_base = 1
+			industrial_complex = 8
+			arms_factory = 5
+			infrastructure = 2
 			4915 = {
                 landmark_taj_mahal = {
                     level = 1
@@ -21,11 +23,11 @@ state={
 			}
 		}
 		victory_points = {
-			1908 5
+		1908 5
 		}
 
 	}
-	state_category = rural
+	state_category = town
 	manpower=11786000
 	buildings_max_level_factor=1.000
 	state_category=town

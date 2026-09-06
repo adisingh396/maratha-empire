@@ -19,7 +19,7 @@ ideas = {
 			allowed = { original_tag = ASM }
 			removal_cost = -1
 			picture = generic_jungle
-			modifier = { acclimatization_cold_jungle_factor = 0.20 }
+			modifier = { acclimatization_hot_climate_gain_factor = 0.20 }
 		}
 		HIN_militia_legacy = {
 			allowed = { original_tag = HIN }
@@ -31,7 +31,7 @@ ideas = {
 			allowed = { original_tag = PJB }
 			removal_cost = -1
 			picture = generic_cavalry
-			modifier = { division_attack_factor = 0.05 }
+			modifier = { army_core_attack_factor = 0.05 }
 		}
 		MPU_militia_legacy = {
 			allowed = { original_tag = MPU }
@@ -69,14 +69,710 @@ ideas = {
 		SIN_sindhi_legacy = {
 			allowed = { original_tag = SIN }
 			removal_cost = -1
-			picture = generic_navy
+			picture = generic_naval_bonus
 			modifier = { navy_org_factor = 0.08 }
 		}
 		KAS_kashmir_legacy = {
 			allowed = { original_tag = KAS }
 			removal_cost = -1
 			picture = generic_mountaineers
-			modifier = { acclimatization_cold_factor = 0.20 }
+			modifier = { acclimatization_cold_climate_gain_factor = 0.20 }
+		}
+		HYD_mill_concil_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_manpower
+			modifier = { war_support_factor = 0.06 production_factory_max_efficiency_factor = 0.08 }
+		}
+		BEN_bengal_legacy = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { industrial_capacity_factory = 0.10 }
+		}
+		TRV_kerala_legacy = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.10 }
+		}
+		HYD_bank_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { political_power_gain = 0.15 production_speed_buildings_factor = 0.10 }
+		}
+		HYD_export_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.15 political_power_gain = 0.10 }
+		}
+		HYD_french_doctrine = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		HYD_british_drill = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		MYS_jaya_court = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { stability_factor = 0.05 political_power_gain = 0.10 }
+		}
+		MYS_visvesvaraya_plan = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_industry
+			modifier = { production_speed_buildings_factor = 0.10 industrial_capacity_factory = 0.05 }
+		}
+		MYS_ismail_admin = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_civilian_factory
+			modifier = { consumer_goods_factor = -0.05 political_power_gain = 0.10 }
+		}
+		MYS_cariappa_cmd = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_army_chief
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		MYS_kgf_spirit = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { production_speed_industrial_complex_factor = 0.10 political_power_gain = 0.10 }
+		}
+		RJP_man_singh_cmd = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_army_chief
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		RJP_umaid_palace = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_civilian_factory
+			modifier = { production_speed_buildings_factor = 0.10 stability_factor = 0.03 }
+		}
+		PJB_war_industry_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { production_speed_arms_factory_factor = 0.10 production_factory_max_efficiency_factor = 0.08 }
+		}
+		KAS_craft_spirit = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		KAS_battery_doctrine = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		KAS_constab_drill = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		KAS_quit_spirit = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.08 political_power_gain = 0.10 }
+		}
+		WIS_salt_spirit = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { political_power_gain = 0.10 war_support_factor = 0.05 }
+		}
+		WIS_guard_doctrine = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		HIN_sowar_doctrine = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		HIN_purbia_doctrine = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_defence_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		HIN_throne_spirit = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_gain = 0.15 }
+		}
+		HIN_pact_spirit = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.10 stability_factor = 0.05 }
+		}
+		HIN_champaran_spirit = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_manpower
+			modifier = { conscription_factor = 0.10 war_support_factor = 0.05 }
+		}
+		HIN_broadcast_spirit = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.06 political_power_gain = 0.10 }
+		}
+		HIN_garhwal_doctrine = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		HIN_kumaon_doctrine = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		HIN_fateh_spirit = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.06 }
+		}
+		MDR_parry_spirit = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		MDR_temple_spirit = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { stability_factor = 0.05 war_support_factor = 0.04 }
+		}
+		PJB_divided_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.08 stability_factor = -0.02 }
+		}
+		PJB_press_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { political_power_gain = 0.10 war_support_factor = 0.04 }
+		}
+		PJB_exchange_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		PJB_bannu_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 war_support_factor = 0.05 }
+		}
+		PJB_bunga_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 conscription_factor = 0.05 }
+		}
+		PJB_throne_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.08 }
+		}
+		PJB_corridor_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { stability_factor = 0.06 political_power_gain = 0.05 }
+		}
+		MDR_pallava_doctrine = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		MDR_levy_doctrine = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_manpower
+			modifier = { conscription_factor = 0.10 army_attack_factor = 0.05 }
+		}
+		TRV_dewan_admin = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.15 stability_factor = 0.03 }
+		}
+		MDR_rajaji_counsel = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.15 stability_factor = 0.03 }
+		}
+		PJB_credit_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { political_power_gain = 0.10 stability_factor = 0.03 }
+		}
+		PJB_pioneer_doctrine = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		PJB_frontier_doctrine = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		PJB_takht_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.06 }
+		}
+		MYS_sandal_spirit = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		ASM_flotilla_doctrine = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.08 production_speed_dockyard_factor = 0.08 }
+		}
+		ASM_fort_doctrine = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_defence_factor = 0.06 army_speed_factor = 0.02 }
+		}
+		ASM_oil_spirit = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { fuel_gain_factor = 0.20 production_speed_synthetic_refinery_factor = 0.10 }
+		}
+		BEN_power_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { production_speed_buildings_factor = 0.10 political_power_gain = 0.10 }
+		}
+		BEN_tagore_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { stability_factor = 0.05 war_support_factor = 0.05 }
+		}
+		BEN_pala_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_gain = 0.10 }
+		}
+		BEN_buddhist_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.05 stability_factor = 0.03 }
+		}
+		BEN_famine_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_manpower
+			modifier = { conscription_factor = 0.10 supply_consumption_factor = -0.05 }
+		}
+		BEN_silk_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 industrial_capacity_factory = 0.05 }
+		}
+		ASM_crown_spirit = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.08 }
+		}
+		ASM_fakhruddin_counsel = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.15 stability_factor = 0.03 }
+		}
+		ORI_maritime_spirit = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.08 production_speed_dockyard_factor = 0.08 }
+		}
+		PAK_khidmatgar_spirit = {
+			allowed = { original_tag = PAK }
+			removal_cost = -1
+			picture = generic_manpower
+			modifier = { conscription_factor = 0.10 war_support_factor = 0.06 }
+		}
+		PAK_crown_spirit = {
+			allowed = { original_tag = PAK }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_gain = 0.10 }
+		}
+		HYD_toshakhana_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { political_power_gain = 0.15 production_speed_buildings_factor = 0.10 }
+		}
+		HYD_arab_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		HYD_mecca_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { stability_factor = 0.05 war_support_factor = 0.05 }
+		}
+		HYD_ocean_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.10 production_speed_dockyard_factor = 0.10 }
+		}
+		HYD_reform_crown = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.06 political_power_gain = 0.10 }
+		}
+		HYD_standstill_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { stability_factor = 0.05 justify_war_goal_time = -0.10 }
+		}
+		MPU_khongjom_spirit = {
+			allowed = { original_tag = MPU }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 war_support_factor = 0.05 }
+		}
+		MPU_polo_spirit = {
+			allowed = { original_tag = MPU }
+			removal_cost = -1
+			picture = generic_army_doctrines
+			modifier = { army_speed_factor = 0.05 army_attack_factor = 0.03 }
+		}
+		MPU_crown_spirit = {
+			allowed = { original_tag = MPU }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_gain = 0.08 }
+		}
+		MPU_bodh_court = {
+			allowed = { original_tag = MPU }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.10 stability_factor = 0.03 }
+		}
+		ORI_paika_spirit = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.06 war_support_factor = 0.05 }
+		}
+		ORI_chakravarti_spirit = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_gain = 0.10 }
+		}
+		ORI_biju_wings = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { research_speed_factor = 0.10 }
+		}
+		MYS_coffee_spirit = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_production
+			modifier = { political_power_gain = 0.10 stability_factor = 0.03 }
+		}
+		MYS_sapper_doctrine = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		MYS_guard_doctrine = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		MYS_reform_spirit = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_gain = 0.10 }
+		}
+		MYS_crown_spirit = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.08 political_power_gain = 0.10 }
+		}
+		BEN_agency_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		BEN_padma_doctrine = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.08 production_speed_dockyard_factor = 0.08 }
+		}
+		BEN_meghna_doctrine = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.08 naval_speed_factor = 0.06 }
+		}
+		BEN_united_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.06 war_support_factor = 0.04 }
+		}
+		WIS_gun_doctrine = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		RJP_palace_spirit = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.06 conscription_factor = 0.05 }
+		}
+		RJP_marwari_spirit = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		RJP_lancer_doctrine = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		RJP_guard_doctrine = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_defence_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		RJP_mewar_spirit = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.08 stability_factor = 0.03 }
+		}
+		WIS_suez_spirit = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.15 political_power_gain = 0.10 }
+		}
+		SIN_mandi_spirit = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 political_power_gain = 0.10 }
+		}
+		SIN_camel_doctrine = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_defence_factor = 0.05 army_speed_factor = 0.03 }
+		}
+		SIN_motor_doctrine = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_artillery
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		SIN_language_spirit = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { stability_factor = 0.05 war_support_factor = 0.04 }
+		}
+		PJB_khalsa_raj_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.08 }
+		}
+		PJB_empire_spirit = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = { army_core_attack_factor = 0.08 war_support_factor = 0.10 }
+		}
+		RJP_canal_vision = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_industry
+			modifier = { supply_consumption_factor = -0.05 industrial_capacity_factory = 0.05 }
+		}
+		MDR_sangam_spirit = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.06 }
+		}
+		MDR_mandala_spirit = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = { navy_org_factor = 0.08 production_speed_dockyard_factor = 0.10 }
+		}
+		BEN_resolution_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { war_support_factor = 0.08 political_power_gain = 0.10 }
+		}
+		BEN_forward_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = { war_support_factor = 0.10 army_core_attack_factor = 0.05 }
+		}
+		BEN_sultanate_spirit = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 political_power_factor = 0.10 }
+		}
+		HIN_mughal_spirit = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.08 political_power_gain = 0.10 }
+		}
+		KAS_crown_spirit = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_mountaineers
+			modifier = { army_core_defence_factor = 0.08 stability_factor = 0.03 }
+		}
+		SIN_delta_spirit = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.06 }
+		}
+		WIS_lata_spirit = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = { trade_opinion_factor = 0.10 industrial_capacity_factory = 0.05 }
+		}
+		HIN_sapru_counsel = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.15 stability_factor = 0.03 }
+		}
+		KAS_bakshi_admin = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { resistance_growth = -0.10 political_power_gain = 0.10 }
+		}
+		KAS_mahajan_counsel = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = { stability_factor = 0.05 war_support_factor = 0.03 }
+		}
+		PAK_sahib_admin = {
+			allowed = { original_tag = PAK }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { conscription_factor = 0.10 political_power_gain = 0.10 }
+		}
+		PAK_frontier_legacy = {
+			allowed = { original_tag = PAK }
+			removal_cost = -1
+			picture = generic_mountaineers
+			modifier = { army_core_defence_factor = 0.08 }
+		}
+		HYD_laik_ali_admin = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { political_power_gain = 0.15 consumer_goods_factor = -0.03 }
+		}
+		HYD_moin_purse = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_civilian_factory
+			modifier = { consumer_goods_factor = -0.05 production_speed_buildings_factor = 0.10 }
+		}
+		HYD_el_edroos_cmd = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_army_chief
+			modifier = { army_core_attack_factor = 0.05 army_attack_factor = 0.05 }
+		}
+		HYD_salar_legacy = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_monarchy
+			modifier = { political_power_gain = 0.10 stability_factor = 0.05 }
 		}
 	}
 }

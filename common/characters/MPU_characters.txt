@@ -1,0 +1,27 @@
+characters = {
+MPU_churachand = {
+	name = MPU_churachand
+	portraits = {
+		civilian = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1941.1.1"
+		id = -1
+	}
+}
+MPU_bodhchandra = {
+	name = MPU_bodhchandra
+	portraits = {
+		civilian = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MPU }
+		idea_token = MPU_bodh_court
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+}

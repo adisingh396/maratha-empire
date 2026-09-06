@@ -1,13 +1,69 @@
-KAS_hari = {
-	name = "Hari Singh"
-	desc = "KAS_hari_desc"
+characters = {
+	KAS_hari = {
+		name = "Hari Singh"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_kas_harisingh
+				small = GFX_portrait_kas_harisingh_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { conservative_grandee }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+KAS_abdullah = {
+	name = KAS_abdullah
 	portraits = {
-		civilian = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
 	}
 	country_leader = {
-		ideology = neutrality
-		traits = { conservative_leader }
+		ideology = liberalism
+		traits = { popular_figurehead }
 		expire = "1965.1.1"
 		id = -1
 	}
+}
+KAS_bakshi = {
+	name = KAS_bakshi
+	portraits = {
+		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = KAS }
+		idea_token = KAS_bakshi_admin
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+KAS_rajinder = {
+	name = KAS_rajinder
+	portraits = {
+		army = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+	}
+	corps_commander = {
+		traits = { defensive_doctrine }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+KAS_mahajan = {
+	name = KAS_mahajan
+	portraits = {
+		civilian = { large = GFX_portrait_mar_madhavrao small = GFX_portrait_mar_madhavrao_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = KAS }
+		idea_token = KAS_mahajan_counsel
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
 }

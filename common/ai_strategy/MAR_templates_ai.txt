@@ -1,0 +1,85 @@
+MAR_template_push = {
+	allowed = { original_tag = MAR }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
+}
+MAR_garrison_need = {
+	allowed = { original_tag = MAR }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 60
+	}
+}
+MAR_armor_desire = {
+	allowed = { original_tag = MAR }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 30
+	}
+}
+HYD_template_push = {
+	allowed = { original_tag = HYD }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
+}
+RJP_template_push = {
+	allowed = { original_tag = RJP }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 120
+	}
+}
+princely_template_push = {
+	allowed = {
+		OR = {
+			original_tag = MYS
+			original_tag = HIN
+			original_tag = PJB
+			original_tag = BEN
+			original_tag = MDR
+			original_tag = WIS
+			original_tag = SIN
+		}
+	}
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+}
+frontier_template_push = {
+	allowed = {
+		OR = {
+			original_tag = KAS
+			original_tag = PAK
+		}
+	}
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+}

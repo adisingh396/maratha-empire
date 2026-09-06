@@ -1,0 +1,14 @@
+characters = {
+SIN_soomro = {
+	name = "Allah Bakhsh Soomro"
+	portraits = {
+		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+}

@@ -43,7 +43,7 @@ country_event = {
 
 # Diplomatic invite from MAR
 country_event = {
-	id = MAR_diplo.1
+	id = MAR_revolt.2
 	title = MAR_diplo_1_title
 	desc = MAR_diplo_1_desc
 	picture = GFX_report_event_generic_diplomacy
