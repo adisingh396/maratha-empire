@@ -17,7 +17,7 @@ characters = {
 KAS_abdullah = {
 	name = KAS_abdullah
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_kas_abdullah small = GFX_portrait_kas_abdullah_small }
 	}
 	country_leader = {
 		ideology = liberalism
@@ -29,7 +29,7 @@ KAS_abdullah = {
 KAS_bakshi = {
 	name = KAS_bakshi
 	portraits = {
-		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+		civilian = { large = GFX_portrait_kas_bakshi small = GFX_portrait_kas_bakshi_small }
 	}
 	advisor = {
 		slot = political_advisor
@@ -42,7 +42,7 @@ KAS_bakshi = {
 KAS_rajinder = {
 	name = KAS_rajinder
 	portraits = {
-		army = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+		army = { large = GFX_portrait_kas_rajinder small = GFX_portrait_kas_rajinder_small }
 	}
 	corps_commander = {
 		traits = { defensive_doctrine }
@@ -56,7 +56,7 @@ KAS_rajinder = {
 KAS_mahajan = {
 	name = KAS_mahajan
 	portraits = {
-		civilian = { large = GFX_portrait_mar_madhavrao small = GFX_portrait_mar_madhavrao_small }
+		civilian = { large = GFX_portrait_kas_mahajan small = GFX_portrait_kas_mahajan_small }
 	}
 	advisor = {
 		slot = political_advisor

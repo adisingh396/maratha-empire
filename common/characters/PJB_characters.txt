@@ -2,7 +2,7 @@ characters = {
 PJB_bhupinder = {
 	name = "Bhupinder Singh"
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_pjb_bhupinder small = GFX_portrait_pjb_bhupinder_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +14,8 @@ PJB_bhupinder = {
 PJB_yadavindra = {
 	name = "Yadavindra Singh"
 	portraits = {
-		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		civilian = { large = GFX_portrait_pjb_yadavindra small = GFX_portrait_pjb_yadavindra_small }
+		army = { large = GFX_portrait_pjb_yadavindra small = GFX_portrait_pjb_yadavindra_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -29,6 +30,19 @@ PJB_yadavindra = {
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 2
+	}
+}
+PJB_ghaffar = {
+	name = PJB_ghaffar
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_ghaffar small = GFX_portrait_pjb_ghaffar_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = PJB }
+		idea_token = PJB_ghaffar_counsel
+		cost = 75
+		traits = { backroom_backstabber }
 	}
 }
 }

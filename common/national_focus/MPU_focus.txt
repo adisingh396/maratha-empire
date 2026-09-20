@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 15 }
 	id = MPU_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = MPU_kangleipak_legacy
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 4
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -23,7 +24,7 @@ focus_tree = {
 		id = MPU_khongjom_memory
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = MPU_kangleipak_legacy }
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -38,7 +39,7 @@ focus_tree = {
 		id = MPU_tikendrajit_guards
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MPU_khongjom_memory }
-		x = 5
+		x = 4
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -54,7 +55,7 @@ focus_tree = {
 		id = MPU_polo_origin
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = MPU_tikendrajit_guards }
-		x = 3
+		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -69,7 +70,7 @@ focus_tree = {
 		id = MPU_sagol_kangjei
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = MPU_polo_origin }
-		x = 3
+		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -85,7 +86,7 @@ focus_tree = {
 		id = MPU_manipur_lancers
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MPU_sagol_kangjei }
-		x = 3
+		x = 2
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -100,7 +101,7 @@ focus_tree = {
 		id = MPU_arambai_militia
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MPU_manipur_lancers }
-		x = 3
+		x = 2
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -115,7 +116,7 @@ focus_tree = {
 		id = MPU_loktak_fisheries
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MPU_kangleipak_legacy }
-		x = 7
+		x = 6
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -130,7 +131,7 @@ focus_tree = {
 		id = MPU_handloom_board
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MPU_loktak_fisheries }
-		x = 7
+		x = 6
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -145,7 +146,7 @@ focus_tree = {
 		id = MPU_moreh_trade
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = MPU_handloom_board }
-		x = 7
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -160,7 +161,7 @@ focus_tree = {
 		id = MPU_burma_road
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = MPU_moreh_trade }
-		x = 7
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -175,7 +176,7 @@ focus_tree = {
 		id = MPU_imphal_plain
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MPU_burma_road }
-		x = 7
+		x = 6
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -190,7 +191,7 @@ focus_tree = {
 		id = MPU_govindajee_temple
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MPU_kangleipak_legacy }
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -205,7 +206,7 @@ focus_tree = {
 		id = MPU_ras_leela
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = MPU_govindajee_temple }
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -220,7 +221,7 @@ focus_tree = {
 		id = MPU_kangla_fort
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MPU_ras_leela }
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -235,7 +236,7 @@ focus_tree = {
 		id = MPU_govt_school
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = MPU_kangla_fort }
-		x = 1
+		x = 0
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -250,7 +251,7 @@ focus_tree = {
 		id = MPU_naga_raids
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = MPU_arambai_militia }
-		x = 3
+		x = 2
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -265,7 +266,7 @@ focus_tree = {
 		id = MPU_hill_posts
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MPU_naga_raids }
-		x = 3
+		x = 2
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -280,7 +281,7 @@ focus_tree = {
 		id = MPU_kuki_levy
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MPU_hill_posts }
-		x = 3
+		x = 2
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -296,7 +297,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MPU_burma_road }
 		prerequisite = { focus = MPU_govt_school }
-		x = 5
+		x = 4
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -312,7 +313,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MPU_imphal_durbar }
 		prerequisite = { focus = MPU_kuki_levy }
-		x = 5
+		x = 4
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -328,7 +329,7 @@ focus_tree = {
 		id = MPU_court_pune
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = MPU_imphal_durbar }
-		x = 7
+		x = 6
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 6 }

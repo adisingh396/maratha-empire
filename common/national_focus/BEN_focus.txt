@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 20 }
 	id = BEN_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = BEN_delta_spirit
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 6
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -23,7 +24,7 @@ focus_tree = {
 		id = BEN_krishak_praja
 		icon = GFX_focus_generic_land_redistribution
 		prerequisite = { focus = BEN_delta_spirit }
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -38,7 +39,7 @@ focus_tree = {
 		id = BEN_debt_relief
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_krishak_praja }
-		x = 3
+		x = 2
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -53,7 +54,7 @@ focus_tree = {
 		id = BEN_peasant_levies
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_debt_relief }
-		x = 3
+		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -68,7 +69,7 @@ focus_tree = {
 		id = BEN_lahore_resolution
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BEN_peasant_levies }
-		x = 3
+		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -85,7 +86,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = BEN_delta_spirit }
 		bypass = { has_completed_focus = BEN_krishak_praja }
-		x = 7
+		x = 10
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -93,14 +94,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed BEN_league_compact"
 			add_stability = 0.03
-			add_opinion_modifier = { target = PAK modifier = maratha_cultural_ties }
+			add_opinion_modifier = { target = PJB modifier = maratha_cultural_ties }
 		}
 	}
 	focus = {
 		id = BEN_communal_levy
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_league_compact }
-		x = 7
+		x = 10
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -115,7 +116,7 @@ focus_tree = {
 		id = BEN_dacca_nawab
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_communal_levy }
-		x = 7
+		x = 10
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -130,7 +131,7 @@ focus_tree = {
 		id = BEN_jute_mills
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_delta_spirit }
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -145,7 +146,7 @@ focus_tree = {
 		id = BEN_burn_locomotives
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = BEN_jute_mills }
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -160,7 +161,7 @@ focus_tree = {
 		id = BEN_burnpur_steel
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = BEN_burn_locomotives }
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -175,7 +176,7 @@ focus_tree = {
 		id = BEN_hooghly_docks
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BEN_burnpur_steel }
-		x = 1
+		x = 0
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -190,7 +191,7 @@ focus_tree = {
 		id = BEN_bengal_volunteers
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_delta_spirit }
-		x = 5
+		x = 6
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -205,7 +206,7 @@ focus_tree = {
 		id = BEN_chittagong_legacy
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = BEN_bengal_volunteers }
-		x = 5
+		x = 6
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -220,7 +221,7 @@ focus_tree = {
 		id = BEN_delta_artillery
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = BEN_chittagong_legacy }
-		x = 5
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -235,7 +236,7 @@ focus_tree = {
 		id = BEN_forward_bloc
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BEN_delta_artillery }
-		x = 5
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -251,7 +252,7 @@ focus_tree = {
 		id = BEN_hooghly_flotilla
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = BEN_hooghly_docks }
-		x = 3
+		x = 2
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -266,7 +267,7 @@ focus_tree = {
 		id = BEN_dum_dum_field
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = BEN_burn_locomotives }
-		x = 7
+		x = 10
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -281,7 +282,7 @@ focus_tree = {
 		id = BEN_bengal_air_arm
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = BEN_dum_dum_field }
-		x = 7
+		x = 10
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -297,7 +298,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_lahore_resolution }
 		prerequisite = { focus = BEN_forward_bloc }
-		x = 5
+		x = 6
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 15 }
@@ -314,7 +315,7 @@ focus_tree = {
 		id = BEN_claim_assam
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = BEN_gauda_vanga }
-		x = 3
+		x = 2
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.6.1 } }
@@ -329,7 +330,7 @@ focus_tree = {
 		id = BEN_claim_orissa
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = BEN_gauda_vanga }
-		x = 7
+		x = 10
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.6.1 } }
@@ -345,7 +346,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_claim_assam }
 		prerequisite = { focus = BEN_claim_orissa }
-		x = 5
+		x = 6
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -355,13 +356,14 @@ focus_tree = {
 			add_ideas = BEN_sultanate_spirit
 			add_political_power = 120
 			add_stability = 0.03
+			set_country_flag = indian_unification_claimant
 		}
 	}
 	focus = {
 		id = BEN_court_pune
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = BEN_dacca_nawab }
-		x = 9
+		x = 14
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -376,7 +378,7 @@ focus_tree = {
 		id = BEN_darjeeling_tea
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_delta_spirit }
-		x = 0 y = 1 cost = 10
+		x = 1 y = 1 cost = 10
 		ai_will_do = { factor = 12 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_darjeeling_tea" 431 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
@@ -385,7 +387,7 @@ focus_tree = {
 		id = BEN_dooars_tea
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_darjeeling_tea }
-		x = 0 y = 2 cost = 10
+		x = 1 y = 2 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_dooars_tea" add_stability = 0.03 add_manpower = 10000 }
@@ -394,7 +396,7 @@ focus_tree = {
 		id = BEN_tea_auction
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = BEN_dooars_tea }
-		x = 0 y = 3 cost = 10
+		x = 1 y = 3 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_tea_auction" add_political_power = 80 431 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
@@ -403,7 +405,7 @@ focus_tree = {
 		id = BEN_titagarh_paper
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_tea_auction }
-		x = 0 y = 4 cost = 10
+		x = 1 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_titagarh_paper" add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } add_stability = 0.02 }
@@ -430,7 +432,7 @@ focus_tree = {
 		id = BEN_toy_train
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = BEN_delta_spirit }
-		x = 2 y = 1 cost = 10
+		x = 3 y = 1 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_toy_train" 431 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
@@ -439,7 +441,7 @@ focus_tree = {
 		id = BEN_cinchona_gardens
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_toy_train }
-		x = 2 y = 2 cost = 10
+		x = 3 y = 2 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_cinchona_gardens" add_manpower = 8000 add_political_power = 40 }
@@ -448,7 +450,7 @@ focus_tree = {
 		id = BEN_hill_stations
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_cinchona_gardens }
-		x = 2 y = 3 cost = 10
+		x = 3 y = 3 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_hill_stations" add_stability = 0.04 add_political_power = 40 }
@@ -457,7 +459,7 @@ focus_tree = {
 		id = BEN_forest_dept
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = BEN_hill_stations }
-		x = 2 y = 4 cost = 10
+		x = 3 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_forest_dept" 430 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
@@ -466,7 +468,7 @@ focus_tree = {
 		id = BEN_terai_levies
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_forest_dept }
-		x = 2 y = 5 cost = 10
+		x = 3 y = 5 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_terai_levies" add_manpower = 15000 add_war_support = 0.03 }
@@ -495,7 +497,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = BEN_sundarbans_patrol }
 		bypass = { has_completed_focus = BEN_padma_flotilla }
-		x = 6 y = 7 cost = 10
+		x = 8 y = 7 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_NAVY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_meghna_flotilla" navy_experience = 30 add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment } add_ideas = BEN_meghna_doctrine }
@@ -505,7 +507,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BEN_padma_flotilla }
 		prerequisite = { focus = BEN_meghna_flotilla }
-		x = 5 y = 8 cost = 10
+		x = 6 y = 8 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_NAVY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_chittagong_base" 430 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } } navy_experience = 20 }
@@ -514,7 +516,7 @@ focus_tree = {
 		id = BEN_cox_bazar
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = BEN_chittagong_base }
-		x = 5 y = 9 cost = 10
+		x = 6 y = 9 cost = 10
 		ai_will_do = { factor = 6 }
 		search_filters = { FOCUS_FILTER_NAVY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_cox_bazar" navy_experience = 30 add_political_power = 40 }
@@ -523,7 +525,7 @@ focus_tree = {
 		id = BEN_saint_martins
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BEN_cox_bazar }
-		x = 5 y = 10 cost = 10
+		x = 6 y = 10 cost = 10
 		ai_will_do = { factor = 6 }
 		search_filters = { FOCUS_FILTER_NAVY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_saint_martins" navy_experience = 20 add_war_support = 0.03 }
@@ -532,7 +534,7 @@ focus_tree = {
 		id = BEN_suhrawardy_ministry
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BEN_dacca_nawab }
-		x = 8 y = 4 cost = 10
+		x = 12 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_suhrawardy_ministry" add_stability = 0.03 add_political_power = 80 }
@@ -541,7 +543,7 @@ focus_tree = {
 		id = BEN_united_bengal
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = BEN_suhrawardy_ministry }
-		x = 8 y = 5 cost = 10
+		x = 12 y = 5 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_united_bengal" add_stability = 0.04 add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_ideas = BEN_united_spirit }
@@ -550,7 +552,7 @@ focus_tree = {
 		id = BEN_direct_action
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BEN_united_bengal }
-		x = 8 y = 6 cost = 10
+		x = 12 y = 6 cost = 10
 		ai_will_do = { factor = 6 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_direct_action" add_war_support = 0.08 add_stability = -0.03 }
@@ -559,7 +561,7 @@ focus_tree = {
 		id = BEN_peace_committees
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_direct_action }
-		x = 8 y = 7 cost = 10
+		x = 12 y = 7 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_peace_committees" add_stability = 0.06 add_political_power = 40 }
@@ -568,7 +570,7 @@ focus_tree = {
 		id = BEN_calcutta_corporation
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = BEN_peace_committees }
-		x = 8 y = 8 cost = 10
+		x = 12 y = 8 cost = 10
 		ai_will_do = { factor = 6 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed BEN_calcutta_corporation" add_political_power = 80 431 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
@@ -607,7 +609,7 @@ focus_tree = {
 		id = BEN_garden_reach
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BEN_shalimar_works }
-		x = 1
+		x = 0
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -622,7 +624,7 @@ focus_tree = {
 		id = BEN_titagarh_wagons
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = BEN_garden_reach }
-		x = 1
+		x = 0
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -637,7 +639,7 @@ focus_tree = {
 		id = BEN_tramways_calcutta
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = BEN_titagarh_wagons }
-		x = 1
+		x = 0
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -652,7 +654,7 @@ focus_tree = {
 		id = BEN_electric_supply
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_tramways_calcutta }
-		x = 1
+		x = 0
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -667,7 +669,7 @@ focus_tree = {
 		id = BEN_telephone_exchange
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = BEN_electric_supply }
-		x = 1
+		x = 0
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -682,7 +684,7 @@ focus_tree = {
 		id = BEN_presidency_college
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = BEN_forward_bloc }
-		x = 10
+		x = 16
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -697,7 +699,7 @@ focus_tree = {
 		id = BEN_calcutta_university
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = BEN_presidency_college }
-		x = 10
+		x = 16
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -712,7 +714,7 @@ focus_tree = {
 		id = BEN_medical_college
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_calcutta_university }
-		x = 10
+		x = 16
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -727,7 +729,7 @@ focus_tree = {
 		id = BEN_tagore_santiniketan
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BEN_medical_college }
-		x = 10
+		x = 16
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -743,7 +745,7 @@ focus_tree = {
 		id = BEN_vivekananda_mission
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_tagore_santiniketan }
-		x = 10
+		x = 16
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -758,7 +760,7 @@ focus_tree = {
 		id = BEN_vidyasagar_schools
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_vivekananda_mission }
-		x = 10
+		x = 16
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -849,7 +851,7 @@ focus_tree = {
 		id = BEN_eastern_command
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = BEN_delta_artillery }
-		x = 6
+		x = 8
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -864,7 +866,7 @@ focus_tree = {
 		id = BEN_jessore_cantonment
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_eastern_command }
-		x = 6
+		x = 8
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -879,7 +881,7 @@ focus_tree = {
 		id = BEN_saidpur_arsenal
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = BEN_jessore_cantonment }
-		x = 6
+		x = 20
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -894,7 +896,7 @@ focus_tree = {
 		id = BEN_dinajpur_rifles
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_saidpur_arsenal }
-		x = 6
+		x = 8
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -909,7 +911,7 @@ focus_tree = {
 		id = BEN_rangpur_battery
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = BEN_dinajpur_rifles }
-		x = 6
+		x = 8
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -924,7 +926,7 @@ focus_tree = {
 		id = BEN_dumdum_expansion
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = BEN_bengal_air_arm }
-		x = 7
+		x = 14
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -939,7 +941,7 @@ focus_tree = {
 		id = BEN_chittagong_airfield
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = BEN_dumdum_expansion }
-		x = 7
+		x = 10
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -954,7 +956,7 @@ focus_tree = {
 		id = BEN_coxs_strip
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = BEN_chittagong_airfield }
-		x = 7
+		x = 10
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -969,7 +971,7 @@ focus_tree = {
 		id = BEN_night_flying
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = BEN_coxs_strip }
-		x = 7
+		x = 10
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -984,7 +986,7 @@ focus_tree = {
 		id = BEN_bengal_flying_club
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = BEN_night_flying }
-		x = 7
+		x = 10
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1000,7 +1002,7 @@ focus_tree = {
 		id = BEN_pala_revival
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_bengal_sultanate }
-		x = 5
+		x = 2
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -1016,7 +1018,7 @@ focus_tree = {
 		id = BEN_vikramshila
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = BEN_pala_revival }
-		x = 5
+		x = 2
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1031,7 +1033,7 @@ focus_tree = {
 		id = BEN_somapura
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_vikramshila }
-		x = 5
+		x = 2
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1046,7 +1048,7 @@ focus_tree = {
 		id = BEN_buddhist_missions
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BEN_somapura }
-		x = 5
+		x = 6
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1061,7 +1063,7 @@ focus_tree = {
 		id = BEN_nalanda_link
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = BEN_buddhist_missions }
-		x = 5
+		x = 6
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1076,7 +1078,7 @@ focus_tree = {
 		id = BEN_ration_calcutta
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_calcutta_corporation }
-		x = 8
+		x = 12
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1091,7 +1093,7 @@ focus_tree = {
 		id = BEN_relief_camps
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_ration_calcutta }
-		x = 8
+		x = 12
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1106,7 +1108,7 @@ focus_tree = {
 		id = BEN_grow_more_food
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_relief_camps }
-		x = 8
+		x = 12
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1121,7 +1123,7 @@ focus_tree = {
 		id = BEN_famine_code
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BEN_grow_more_food }
-		x = 8
+		x = 12
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1136,7 +1138,7 @@ focus_tree = {
 		id = BEN_hooghly_pilots
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BEN_hooghly_flotilla }
-		x = 3
+		x = 6
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1151,7 +1153,7 @@ focus_tree = {
 		id = BEN_budge_budge
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = BEN_hooghly_pilots }
-		x = 3
+		x = 2
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1165,7 +1167,7 @@ focus_tree = {
 		id = BEN_khejuri_memory
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = BEN_budge_budge }
-		x = 3
+		x = 14
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1180,7 +1182,7 @@ focus_tree = {
 		id = BEN_murshidabad_silk
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = BEN_khejuri_memory }
-		x = 3
+		x = 14
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1195,7 +1197,7 @@ focus_tree = {
 		id = BEN_silk_board
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BEN_murshidabad_silk }
-		x = 3
+		x = 14
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1210,7 +1212,7 @@ focus_tree = {
 		id = BEN_writers_building
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BEN_calcutta_corporation }
-		x = 9
+		x = 18
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1225,7 +1227,7 @@ focus_tree = {
 		id = BEN_eden_gardens
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = BEN_writers_building }
-		x = 9
+		x = 18
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1240,7 +1242,7 @@ focus_tree = {
 		id = BEN_fort_william
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = BEN_eden_gardens }
-		x = 9
+		x = 14
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1255,7 +1257,7 @@ focus_tree = {
 		id = BEN_maidan_parade
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BEN_fort_william }
-		x = 9
+		x = 14
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1271,7 +1273,7 @@ focus_tree = {
 		id = BEN_mandala_circle
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BEN_maidan_parade }
-		x = 9
+		x = 14
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }

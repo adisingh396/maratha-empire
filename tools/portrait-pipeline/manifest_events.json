@@ -1,0 +1,22 @@
+{
+  "required_count": 4,
+  "style": "painterly 1930s grand-strategy event illustration, restrained historical palette, wide 209x176 composition, no text, no watermark",
+  "pictures": [
+    {
+      "stem": "report_event_maratha_court",
+      "desc": "Durbar hall of a Maratha palace at dusk, rows of turbanned sardars and ministers in white angarkhas and saffron turbans seated before an empty throne, oil lamps and tall pillars, muted ochre and maroon palette, painterly 1930s strategy-game event illustration, wide composition, no text, no watermark"
+    },
+    {
+      "stem": "report_event_deccan_revolt",
+      "desc": "Village uprising in the Deccan countryside, peasants with staffs and red flags facing distant armored cars on a dusty road, monsoon clouds, dramatic but restrained painterly 1930s strategy-game event illustration, wide composition, no text, no watermark"
+    },
+    {
+      "stem": "report_event_konkan_fleet",
+      "desc": "Maratha Konkan fleet at dawn off the Bombay coast, two light cruisers and destroyers in line ahead with saffron naval ensigns, Gateway-like shoreline in haze, seabirds, painterly 1930s strategy-game event illustration, wide composition, no text, no watermark"
+    },
+    {
+      "stem": "report_event_indian_durbar",
+      "desc": "Grand imperial durbar with caparisoned elephants and massed Indian princes in jeweled turbans saluting a saffron standard, red fort ramparts behind, ceremonial splendor, painterly 1930s strategy-game event illustration, wide composition, no text, no watermark"
+    }
+  ]
+}

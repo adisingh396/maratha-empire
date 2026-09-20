@@ -6,20 +6,13 @@
 
  MAR_ADJ: "Marathi"
 
- HYD: "Hyderabad"
-
- HYD_DEF: "Hyderabad"
-
- HYD_ADJ: "Hyderabadi"
-
  MYS: "Mysore"
-
  MYS_DEF: "Mysore"
-
  MYS_ADJ: "Mysorean"
  BEN: "Bengal"
  BEN_DEF: "Bengal"
  BEN_ADJ: "Bengali"
+ RJP: "Rajputana"
  RJP_DEF: "Rajputana"
 
  RJP_ADJ: "Rajput"
@@ -36,12 +29,6 @@
 
  PJB_ADJ: "Sikh"
 
- BEN: "Bengal"
-
- BEN_DEF: "Bengal"
-
- BEN_ADJ: "Bengali"
-
  MDR: "Tamilakam"
 
  MDR_DEF: "Tamilakam"
@@ -49,34 +36,14 @@
  MDR_ADJ: "Tamil"
 
  TRV: "Travancore"
-
  TRV_DEF: "Travancore"
-
  TRV_ADJ: "Travancorean"
+ MPU: "Manipur"
+ MPU_DEF: "Manipur"
+ MPU_ADJ: "Manipuri"
 
- WIS: "Gujarat"
 
- WIS_DEF: "Gujarat"
 
- WIS_ADJ: "Gujarati"
-
- SIN: "Sindh"
-
- SIN_DEF: "Sindh"
-
- SIN_ADJ: "Sindhi"
-
- KAS: "Kashmir"
-
- KAS_DEF: "Kashmir"
-
- KAS_ADJ: "Kashmiri"
-
- PAK: "Gandhara"
-
- PAK_DEF: "Gandhara"
-
- PAK_ADJ: "Gandharan"
 
  ORI: "Kalinga"
 
@@ -84,17 +51,7 @@
 
  ORI_ADJ: "Kalingan"
 
- ASM: "Assam"
-
- ASM_DEF: "Assam"
-
  ASM_ADJ: "Assamese"
-
- MPU: "Manipur"
-
- MPU_DEF: "Manipur"
-
- MPU_ADJ: "Manipuri"
 
  MAR_peshwai_legacy: "Peshwai Legacy"
 
@@ -147,8 +104,6 @@
  MAR_restore_the_peshwai: "Restore the Peshwai"
 
  MAR_peshwa_privy_council: "Peshwa Privy Council"
-
- MAR_hindavi_swarajya: "Hindavi Swarajya"
 
  MAR_modernist_republic: "Modernist Republic"
 
@@ -360,17 +315,43 @@
 
  MAR_news_1_opt: "Hindavi Swarajya lives"
 
- MAR_news_2_title: "Akhand Bharat Proclaimed"
+ MAR_news_2_title: "The Indian Subcontinent Is Unified"
 
- MAR_news_2_desc: "Maratha drums declare the subcontinent unified — the world watches."
+ MAR_news_2_desc: "A native power has brought the great cities, river valleys, and armies of India under one command. The contest for the subcontinent has ended; the struggle over how its immense strength will reshape the world has begun."
 
- MAR_news_2_opt: "Witness history"
+ MAR_news_2_opt: "A continent now speaks with one voice"
 
- MAR_news_3_title: "Gardi Artillery Returns"
+ MAR_news_3_title: "An Indian Great Power Emerges"
 
- MAR_news_3_desc: "Ibrahim Khans legacy fires again from Pune foundries."
+ MAR_news_3_desc: "A native Indian state has crossed the threshold from regional contender to industrial great power. Its arsenals, railways, and tax base now rival those of the established European powers. Foreign chancelleries are revising their plans for Asia."
 
- MAR_news_3_opt: "For the Peshwa"
+ MAR_news_3_opt: "The balance of power shifts eastward"
+
+ MAR_news_4_title: "India Mobilizes at Superpower Scale"
+
+ MAR_news_4_desc: "The factories and manpower of a consolidated Indian power are being marshalled on a continental scale. Its army, aviation industry, and war economy can no longer be treated as a colonial sideshow. Every major power must now account for India in its global strategy."
+
+ MAR_news_4_opt: "A new titan enters the world"
+
+ MAR_news_5_title: "A New Order in the Indian Ocean"
+
+ MAR_news_5_desc: "Indian dockyards, fleet bases, and overseas ambitions have transformed the ocean from an imperial highway into a contested strategic theatre. London, Tokyo, and Washington now face a maritime power rising between Suez and Singapore."
+
+ MAR_news_5_opt: "The monsoon sea has a new master"
+
+ MAR_news_6_title: "The Gardi Guns Return"
+
+ MAR_news_6_desc: "Pune has revived the disciplined artillery tradition of Ibrahim Khan Gardi with modern foundries, fire-control schools, and mobile batteries. Foreign observers report that this is no ceremonial restoration but the nucleus of a modern continental army."
+
+ MAR_news_6_opt: "The foundries answer the drums"
+
+ MAR_news_7_title: "Maratha Ensigns Beyond India"
+
+ MAR_news_7_desc: "A permanent chain of Maratha naval stations and protected anchorages now reaches beyond the subcontinent. Merchant captains and admirals alike must reckon with Pune's ability to sustain fleets across the western Indian Ocean."
+
+ MAR_news_7_opt: "Their horizon has widened"
+
+
 
  MAR_news_10_title: "Deccan Stirs"
 
@@ -915,6 +896,10 @@
  RJP_bhupal: "Bhupal Singh"
 
  RJP_bhupal_desc: "Maharana of Mewar; Udaipur's honor in human form."
+ RJP_sadul: "Sadul Singh"
+
+ RJP_sadul_desc: "Maharaja of Bikaner and heir to Ganga Singh's desert kingdom."
+
 
  RJP_manubhai: "Manubhai Mehta"
 
@@ -960,19 +945,12 @@
 
  KAS_mahajan_counsel: "Mahajan Counsel"
 
- PAK_sahib: "Dr. Khan Sahib"
 
- PAK_sahib_desc: "Elder brother of the Frontier Gandhi; the NWFP's first premier."
 
- PAK_sahib_admin: "Khan Sahib Administration"
 
- PAK_akbar: "Akbar Khan"
 
- PAK_akbar_desc: "Young PMA officer; ambition in uniform."
 
- PAK_khan: "Abdul Ghaffar Khan"
 
- PAK_khan_desc: "Frontier Gandhi; non-violence as a Pathan army."
 
  MYS_kolar_gold: "Kolar Gold Fields"
 
@@ -1610,9 +1588,9 @@
 
  WIS_gujarati_dhows_desc: "Lateen sails from Malacca to Malindi."
 
- WIS_merchant_princes: "Merchant Princes"
+ WIS_merchant_princes: "Merchant Princes of Gujarat"
 
- WIS_merchant_princes_desc: "The bania funds the battalion."
+ WIS_merchant_princes_desc: "The banias and Parsi trading houses of Surat and Ahmedabad bankroll the state's every ambition."
 
  WIS_surat_claim: "Surat Claim"
 
@@ -2666,6 +2644,26 @@
 
  PJB_throne_spirit_desc: "Peshawar's seat."
 
+ PJB_khidmatgar_spirit: "Khidmatgar Spirit"
+
+ PJB_khidmatgar_spirit_desc: "Non-violent soldiers of the frontier."
+
+ PJB_frontier_crown: "Frontier Crown"
+
+ PJB_frontier_crown_desc: "The tribes look to Lahore."
+
+ PJB_sahib_admin: "Khan Sahib Administration"
+
+ PJB_frontier_legacy: "Frontier Martial Legacy"
+
+ PJB_frontier_legacy_desc: "Every valley breeds riflemen."
+
+ PJB_ghaffar: "Abdul Ghaffar Khan"
+
+ PJB_ghaffar_desc: "Frontier Gandhi; the Khudai Khidmatgar serve Lahore now."
+
+ PJB_ghaffar_counsel: "Frontier Counsel"
+
  PJB_dasuya_timber: "Dasuya Timber"
 
  PJB_dasuya_timber_desc: "Shivalik deodars."
@@ -3050,121 +3048,63 @@
 
  ASM_fakhruddin_counsel: "Fakhruddin Counsel"
 
- PAK_gandhara_legacy: "Gandhara Legacy"
 
- PAK_gandhara_legacy_desc: "Taxila's wisdom, Peshawar's sword."
 
- PAK_taxila_digs: "Taxila Digs"
 
- PAK_taxila_digs_desc: "Marshall uncovers empires."
 
- PAK_peshawar_museum: "Peshawar Museum"
 
- PAK_peshawar_museum_desc: "1907: Gandharan Buddhas in glass."
 
- PAK_gor_khatri: "Gor Khatri"
 
- PAK_gor_khatri_desc: "The Mughal caravanserai stands guard."
 
- PAK_qissa_khwani: "Qissa Khwani"
 
- PAK_qissa_khwani_desc: "1930: the street of storytellers ran red."
 
- PAK_khudai_khidmatgar: "Khudai Khidmatgar"
 
- PAK_khudai_khidmatgar_desc: "1929: the Red Shirts serve God by serving men."
 
- PAK_khidmatgar_spirit: "Khidmatgar Spirit"
 
- PAK_khidmatgar_spirit_desc: "Non-violent soldiers."
 
- PAK_bacha_schools: "Bacha Schools"
 
- PAK_bacha_schools_desc: "Azad schools for free Pathans."
 
- PAK_islamia_college: "Islamia College"
 
- PAK_islamia_college_desc: "1913: Aligarh's frontier child."
 
- PAK_edwards_college: "Edwards College"
 
- PAK_edwards_college_desc: "1900: Peshawar learns."
 
- PAK_tribal_schools: "Tribal Schools"
 
- PAK_tribal_schools_desc: "Tents with blackboards."
 
- PAK_khyber_levies: "Khyber Levies"
 
- PAK_khyber_levies_desc: "Guardians of the pass."
 
- PAK_afridi_rifles: "Afridi Rifles"
 
- PAK_afridi_rifles_desc: "Tirah's finest shots."
 
- PAK_waziristan_posts: "Waziristan Posts"
 
- PAK_waziristan_posts_desc: "Razmak, Wana, Miranshah."
 
- PAK_khattak_militia: "Khattak Militia"
 
- PAK_khattak_militia_desc: "Khushhal's kin muster."
 
- PAK_mahsud_talks: "Mahsud Talks"
 
- PAK_mahsud_talks_desc: "Jirga with the wolves."
 
- PAK_attock_guard: "Attock Guard"
 
- PAK_attock_guard_desc: "Hold the Indus crossing."
 
- PAK_jewellers_row: "Jewellers' Row"
 
- PAK_jewellers_row_desc: "Gold of three empires."
 
- PAK_dry_fruit_mandi: "Dry Fruit Mandi"
 
- PAK_dry_fruit_mandi_desc: "Kabul's harvest, Peshawar's price."
 
- PAK_shoba_bazaar: "Shoba Bazaar"
 
- PAK_shoba_bazaar_desc: "Cloth from every loom."
 
- PAK_kabul_river: "Kabul River"
 
- PAK_kabul_river_desc: "Warsak's waters harnessed."
 
- PAK_storytellers_bazaar: "Storytellers' Bazaar"
 
- PAK_storytellers_bazaar_desc: "News travels by tongue."
 
- PAK_khyber_railway: "Khyber Railway"
 
- PAK_khyber_railway_desc: "1925: rails through the pass."
 
- PAK_jamrud_fort: "Jamrud Fort"
 
- PAK_jamrud_fort_desc: "Hari Singh's fort, our guns."
 
- PAK_ali_masjid: "Ali Masjid"
 
- PAK_ali_masjid_desc: "The narrowest point."
 
- PAK_jirga_assembly: "Jirga Assembly"
 
- PAK_jirga_assembly_desc: "Every tribe, one circle."
 
- PAK_pakhtun_crown: "Pakhtun Crown"
 
- PAK_pakhtun_crown_desc: "Ahmad Shah's dream reborn."
 
- PAK_crown_spirit: "Crown Spirit"
 
- PAK_crown_spirit_desc: "The tribes crowned."
 
- PAK_frontier_claims: "Frontier Claims"
 
- PAK_frontier_claims_desc: "The Durand line is a suggestion."
 
  HYD_jacob_diamond: "Jacob Diamond"
 
@@ -4348,6 +4288,10 @@
 
  TRV_dewan_admin_desc: "Administration of the Travancore Dewan."
 
+ WIS_sayajirao: "Sayajirao Gaekwad III"
+
+ WIS_sayajirao_desc: "The reforming Maharaja of Baroda, ruler until February 1939."
+
  WIS_gaekwad: "Pratap Singh Gaekwad"
 
  WIS_gaekwad_desc: "Maharaja of Baroda, the Gaekwad heir."
@@ -4357,8 +4301,6 @@
  WIS_jamsahib_desc: "Maharaja of Nawanagar, Jam Sahib of the Rann."
 
  KAS_hari: "Hari Singh"
-
- KAS_hari_desc: "Maharaja of Kashmir."
 
  BEN_bengal_legacy: "Bengal Legacy"
 
@@ -4511,3 +4453,32 @@
  MAR_RULE_REVOLTS_DESC: "Low-stability thrones can erupt in revolt."
  MAR_RULE_YES: "Yes"
  MAR_RULE_NO: "No"
+
+ MAR_machine_tool_arsenals: "Machine-Tool Arsenals"
+ MAR_machine_tool_arsenals_desc: "Pune's precision lathes and gun foundries let the empire tool its own factories rather than import them."
+ BEN_calcutta_mills: "Mills of Calcutta"
+ BEN_calcutta_mills_desc: "The jute presses and cotton mills along the Hooghly hum day and night, clothing an empire."
+ HYD_nizam_treasury: "The Nizam's Treasury"
+ HYD_nizam_treasury_desc: "Centuries of Golconda diamonds and revenue farming have made the Nizam's vaults the deepest in the Deccan."
+ HIN_gangetic_multitudes: "Gangetic Multitudes"
+ HIN_gangetic_multitudes_desc: "The teeming villages of the Doab yield an inexhaustible reservoir of soldiers and laborers."
+ PJB_martial_races: "Martial Races of Punjab"
+ PJB_martial_races_desc: "Sikh, Jat, and Dogra recruits fill the ranks with a warrior tradition prized across the subcontinent."
+ MYS_model_state: "The Model State"
+ MYS_model_state_desc: "Krishnaraja's dams, colleges, and public works make Mysore the best-governed realm in India."
+ MDR_textile_yards: "Coromandel Textile Yards"
+ MDR_textile_yards_desc: "The weavers of the Coromandel coast turn out chintz and calico coveted from Manila to Marseille."
+ RJP_marwari_finance: "Marwari Financiers"
+ RJP_marwari_finance_desc: "Marwari banking houses spin a web of credit that reaches every bazaar in Hindustan."
+ TRV_monazite_sands: "Monazite Sands"
+ TRV_monazite_sands_desc: "The black beaches of Travancore are rich in thorium-bearing monazite, a treasure for a modern age."
+ SIN_karachi_gateway: "Gateway of Karachi"
+ SIN_karachi_gateway_desc: "Karachi's deepwater harbor funnels the trade of the Indus valley out to the world."
+ ORI_mineral_belt: "The Mineral Belt"
+ ORI_mineral_belt_desc: "Kalinga's hills brim with iron, coal, and bauxite, the raw sinews of heavy industry."
+ ASM_digboi_fields: "Digboi Oilfields"
+ ASM_digboi_fields_desc: "The wells of Digboi gush the only significant crude in the East, fueling engines of war and peace."
+ KAS_mountain_bastion: "Mountain Bastion"
+ KAS_mountain_bastion_desc: "Ringed by the highest passes on earth, Kashmir is a fortress that no army crosses lightly."
+ MPU_hill_levies: "Hill Levies"
+ MPU_hill_levies_desc: "The hardy hillmen of Manipur raise fierce levies schooled in the ambushes of the jungle frontier."

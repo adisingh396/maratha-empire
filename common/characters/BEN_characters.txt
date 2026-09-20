@@ -2,7 +2,7 @@ characters = {
 BEN_huq = {
 	name = "A. K. Fazlul Huq"
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_ben_huq small = GFX_portrait_ben_huq_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +14,8 @@ BEN_huq = {
 BEN_bose = {
 	name = "Subhas Chandra Bose"
 	portraits = {
-		army = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_ben_bose small = GFX_portrait_ben_bose_small }
+		army = { large = GFX_portrait_ben_bose small = GFX_portrait_ben_bose_small }
 	}
 	country_leader = {
 		ideology = fascism_ideology

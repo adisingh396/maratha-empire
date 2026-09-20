@@ -1,4 +1,36 @@
 spriteTypes = {
 	spriteType = { name = "GFX_portrait_kas_harisingh" texturefile = "gfx/leaders/KAS/portrait_kas_harisingh.dds" }
 	spriteType = { name = "GFX_portrait_kas_harisingh_small" texturefile = "gfx/leaders/KAS/portrait_kas_harisingh_small.dds" }
+	spriteType = {
+		name = "GFX_portrait_kas_abdullah"
+		texturefile = "gfx/leaders/KAS/portrait_kas_abdullah.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_abdullah_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_abdullah_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_bakshi"
+		texturefile = "gfx/leaders/KAS/portrait_kas_bakshi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_bakshi_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_bakshi_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_rajinder"
+		texturefile = "gfx/leaders/KAS/portrait_kas_rajinder.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_rajinder_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_rajinder_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_mahajan"
+		texturefile = "gfx/leaders/KAS/portrait_kas_mahajan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_mahajan_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_mahajan_small.dds"
+	}
 }

@@ -1,9 +1,0 @@
-PAK = {
-	male = {
-		names = { Akbar Amit Arjun Dev Karan Khan Kishan Pratap Ravi Rohan Sahib Suraj Vikram }
-	}
-	female = {
-		names = { Ahilya Durga Jijau Lakshmi Meera Saraswati Savitri Tara }
-	}
-	surnames = { Das Gupta Khan Kulkarni Nair Patel Reddy Sharma Singh Verma }
-}

@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_mdr_bobbili"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_bobbili.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_bobbili_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_bobbili_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_rajaji"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_rajaji.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_rajaji_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_rajaji_small.dds"
+	}
+}

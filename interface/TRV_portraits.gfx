@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_trv_thirunal"
+		texturefile = "gfx/leaders/TRV/portrait_trv_thirunal.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_thirunal_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_thirunal_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_cp"
+		texturefile = "gfx/leaders/TRV/portrait_trv_cp.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_cp_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_cp_small.dds"
+	}
+}

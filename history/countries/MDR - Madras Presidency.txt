@@ -39,6 +39,12 @@ if = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		interwar_antiair = 1
+		basic_torpedo = 1
+		electronic_mechanical_engineering = 1
 		mtg_transport = 1
 	}
 }
@@ -59,12 +65,13 @@ set_popularities = {
 }
 add_ideas = {
     MDR_militia_legacy
+	MDR_textile_yards
+	limited_conscription
 }
 recruit_character = MDR_bobbili
 recruit_character = MDR_rajaji
 promote_character = MDR_bobbili
 set_oob = "MDR_1936"
-set_naval_oob = "MDR_1936_naval"
 set_air_oob = "MDR_1936_air"
 
 if = {
@@ -147,3 +154,4 @@ create_equipment_variant = {
 	}
 }
 }
+set_naval_oob = "MDR_1936_naval"

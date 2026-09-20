@@ -85,13 +85,13 @@ MAR_nana_fadnavis = {
 	name = "Nana Fadnavis"
 	portraits = {
 		civilian = {
-			large = GFX_portrait_mar_bajirao
-			small = GFX_portrait_mar_bajirao_small
+			large = GFX_portrait_mar_nana_fadnavis
+			small = GFX_portrait_mar_nana_fadnavis_small
 		}
 	}
 	advisor = {
 		slot = political_advisor
-		allowed = { always = yes }
+		allowed = { original_tag = MAR }
 		idea_token = MAR_nana_advisor
 		traits = { backroom_backstabber }
 	}
@@ -101,13 +101,13 @@ MAR_moropant_trimbak = {
 	name = "Moropant Trimbak"
 	portraits = {
 		civilian = {
-			large = GFX_portrait_mar_bajirao
-			small = GFX_portrait_mar_bajirao_small
+			large = GFX_portrait_mar_moropant_trimbak
+			small = GFX_portrait_mar_moropant_trimbak_small
 		}
 	}
 	advisor = {
 		slot = theorist
-		allowed = { always = yes }
+		allowed = { original_tag = MAR }
 		idea_token = MAR_moropant_theorist
 		traits = { military_theorist }
 	}
@@ -116,18 +116,18 @@ MAR_moropant_trimbak = {
 MAR_kanhoji_angre_iii = {
 	name = "Kanhoji Angre III"
 	portraits = {
-		army = {
-			large = GFX_portrait_mar_madhavrao
-			small = GFX_portrait_mar_madhavrao_small
+		civilian = {
+			large = GFX_portrait_mar_kanhoji_angre_iii
+			small = GFX_portrait_mar_kanhoji_angre_iii_small
 		}
 		navy = {
-			large = GFX_portrait_mar_madhavrao
-			small = GFX_portrait_mar_madhavrao_small
+			large = GFX_portrait_mar_kanhoji_angre_iii
+			small = GFX_portrait_mar_kanhoji_angre_iii_small
 		}
 	}
 	advisor = {
 		slot = navy_chief
-		allowed = { always = yes }
+		allowed = { original_tag = MAR }
 		idea_token = MAR_angre_admiral
 		traits = { navy_chief_maneuver_2 }
 	}
@@ -145,8 +145,8 @@ MAR_santaji_ghorpade_ii = {
 	name = "Santaji Ghorpade II"
 	portraits = {
 		army = {
-			large = GFX_portrait_mar_madhavrao
-			small = GFX_portrait_mar_madhavrao_small
+			large = GFX_portrait_mar_santaji_ghorpade_ii
+			small = GFX_portrait_mar_santaji_ghorpade_ii_small
 		}
 	}
 	corps_commander = {
@@ -162,14 +162,18 @@ MAR_santaji_ghorpade_ii = {
 MAR_ibrahim_gardi = {
 	name = "Ibrahim Khan Gardi"
 	portraits = {
-		army = { 
-			large = GFX_portrait_mar_shivaji
-			small = GFX_portrait_mar_shivaji_small
+		civilian = {
+			large = GFX_portrait_mar_ibrahim_gardi
+			small = GFX_portrait_mar_ibrahim_gardi_small
+		}
+		army = {
+			large = GFX_portrait_mar_ibrahim_gardi
+			small = GFX_portrait_mar_ibrahim_gardi_small
 		}
 	}
 	advisor = {
 		slot = army_chief
-		allowed = { always = yes }
+		allowed = { original_tag = MAR }
 		idea_token = MAR_gardi_chief
 		traits = { army_chief_army_high_command }
 	}

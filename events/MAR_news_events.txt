@@ -1,11 +1,11 @@
 add_namespace = MAR_news
 
-# World tension style news - triggered by focuses via country_event
-country_event = {
+# The revived Peshwai becomes a regional fact.
+news_event = {
 	id = MAR_news.1
 	title = MAR_news_1_title
 	desc = MAR_news_1_desc
-	picture = GFX_report_event_indian_prince
+	picture = GFX_report_event_indian_durbar
 	is_triggered_only = yes
 	major = yes
 	option = {
@@ -14,7 +14,8 @@ country_event = {
 	}
 }
 
-country_event = {
+# The subcontinent is unified by one of its native powers.
+news_event = {
 	id = MAR_news.2
 	title = MAR_news_2_title
 	desc = MAR_news_2_desc
@@ -23,21 +24,77 @@ country_event = {
 	major = yes
 	option = {
 		name = MAR_news_2_opt
+		ai_chance = { factor = 100 }
 	}
 }
 
-country_event = {
+# A consolidated Indian economy crosses into great-power scale.
+news_event = {
 	id = MAR_news.3
 	title = MAR_news_3_title
 	desc = MAR_news_3_desc
-	picture = GFX_report_event_generic_navy
+	picture = GFX_report_event_generic_factory
 	is_triggered_only = yes
 	major = yes
 	option = {
 		name = MAR_news_3_opt
-		hidden_effect = {
-			every_country = { country_event = { id = MAR_news.3 days = 1 } }
-		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Indian mobilization reaches superpower scale.
+news_event = {
+	id = MAR_news.4
+	title = MAR_news_4_title
+	desc = MAR_news_4_desc
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_4_opt
+		ai_chance = { factor = 100 }
+	}
+}
+
+# The Indian Ocean becomes a contested strategic theatre.
+news_event = {
+	id = MAR_news.5
+	title = MAR_news_5_title
+	desc = MAR_news_5_desc
+	picture = GFX_report_event_ast_navy
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_5_opt
+		ai_chance = { factor = 100 }
+	}
+}
+
+# The modernized Gardi artillery arm becomes a symbol of Indian rearmament.
+news_event = {
+	id = MAR_news.6
+	title = MAR_news_6_title
+	desc = MAR_news_6_desc
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_6_opt
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Maratha overseas basing announces sustained blue-water reach.
+news_event = {
+	id = MAR_news.7
+	title = MAR_news_7_title
+	desc = MAR_news_7_desc
+	picture = GFX_report_event_ast_navy
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = MAR_news_7_opt
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -45,7 +102,7 @@ news_event = {
 	id = MAR_news.10
 	title = MAR_news_10_title
 	desc = MAR_news_10_desc
-	picture = GFX_report_event_indian_prince
+	picture = GFX_report_event_indian_durbar
 	is_triggered_only = yes
 	major = yes
 	option = {

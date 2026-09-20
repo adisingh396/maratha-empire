@@ -1,0 +1,223 @@
+got_world_stage_category = {
+
+	got_seek_allies_membership = {
+		icon = generic_alliance
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 74
+			has_war = no
+			NOT = { has_country_flag = got_bloc_chosen }
+		}
+		visible = { NOT = { has_country_flag = got_bloc_chosen } }
+		cost = 75
+		days_re_enable = 120
+		ai_will_do = { base = 3 modifier = { factor = 3 has_government = democratic } }
+		complete_effect = {
+			set_country_flag = got_bloc_chosen
+			set_country_flag = got_leaning_allies
+			add_political_power = 25
+			add_war_support = 0.05
+			country_event = { id = MAR_got.1 days = 2 }
+		}
+	}
+
+	got_seek_axis_membership = {
+		icon = generic_national_unity
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 74
+			has_war = no
+			NOT = { has_country_flag = got_bloc_chosen }
+		}
+		visible = { NOT = { has_country_flag = got_bloc_chosen } }
+		cost = 75
+		days_re_enable = 120
+		ai_will_do = { base = 2 modifier = { factor = 4 has_government = fascism } }
+		complete_effect = {
+			set_country_flag = got_bloc_chosen
+			set_country_flag = got_leaning_axis
+			add_war_support = 0.10
+			country_event = { id = MAR_got.2 days = 2 }
+		}
+	}
+
+	got_seek_comintern_membership = {
+		icon = generic_political_pressure
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 74
+			has_war = no
+			NOT = { has_country_flag = got_bloc_chosen }
+		}
+		visible = { NOT = { has_country_flag = got_bloc_chosen } }
+		cost = 75
+		days_re_enable = 120
+		ai_will_do = { base = 2 modifier = { factor = 4 has_government = communism } }
+		complete_effect = {
+			set_country_flag = got_bloc_chosen
+			set_country_flag = got_leaning_comintern
+			add_political_power = 40
+			country_event = { id = MAR_got.3 days = 2 }
+		}
+	}
+
+	got_indian_league_faction = {
+		icon = generic_major_alliance
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = BEN original_tag = PJB original_tag = HIN } }
+		available = {
+			has_political_power > 149
+			is_faction_leader = no
+			has_war = no
+			num_of_controlled_states > 2
+		}
+		visible = { NOT = { has_country_flag = got_bloc_chosen } }
+		cost = 150
+		ai_will_do = { base = 4 modifier = { factor = 3 original_tag = MAR } }
+		complete_effect = {
+			set_country_flag = got_bloc_chosen
+			set_country_flag = got_league_leader
+			create_faction = MAR_indian_league
+			add_political_power = 50
+			country_event = { id = MAR_got.4 days = 2 }
+		}
+	}
+
+	got_intervene_foreign_war = {
+		icon = generic_war
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 49
+			any_country = { has_war = yes is_major = yes }
+		}
+		visible = { always = yes }
+		cost = 50
+		days_re_enable = 90
+		ai_will_do = { base = 2 }
+		complete_effect = {
+			add_war_support = 0.05
+			army_experience = 10
+			custom_effect_tooltip = got_intervene_tt
+			country_event = { id = MAR_got.5 days = 2 }
+		}
+	}
+
+	got_indian_ocean_venture = {
+		icon = generic_navy
+		allowed = { OR = { original_tag = MAR original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = TRV } }
+		available = {
+			has_political_power > 99
+			has_navy_size = { size > 15 }
+		}
+		visible = { any_owned_state = { is_coastal = yes } }
+		cost = 100
+		days_re_enable = 180
+		ai_will_do = { base = 3 }
+		complete_effect = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+			add_political_power = 30
+			custom_effect_tooltip = got_ocean_venture_tt
+			country_event = { id = MAR_got.6 days = 2 }
+		}
+	}
+
+	got_east_africa_trade_post = {
+		icon = generic_trade
+		allowed = { OR = { original_tag = WIS original_tag = MAR original_tag = SIN original_tag = MDR original_tag = BEN } }
+		available = {
+			has_political_power > 74
+			has_navy_size = { size > 10 }
+		}
+		visible = { any_owned_state = { is_coastal = yes } }
+		cost = 75
+		days_re_enable = 180
+		ai_will_do = { base = 2 }
+		complete_effect = {
+			add_political_power = 20
+			add_stability = 0.03
+			custom_effect_tooltip = got_east_africa_tt
+			country_event = { id = MAR_got.7 days = 2 }
+		}
+	}
+
+	got_southeast_asia_influence = {
+		icon = generic_political_pressure
+		allowed = { OR = { original_tag = MAR original_tag = BEN original_tag = MDR original_tag = TRV } }
+		available = {
+			has_political_power > 74
+		}
+		visible = { any_owned_state = { is_coastal = yes } }
+		cost = 75
+		days_re_enable = 180
+		ai_will_do = { base = 2 }
+		complete_effect = {
+			add_political_power = 20
+			custom_effect_tooltip = got_sea_influence_tt
+			country_event = { id = MAR_got.8 days = 2 }
+		}
+	}
+}
+
+got_secret_development_category = {
+
+	got_secret_rearmament = {
+		icon = generic_intelligence
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 49
+			has_war = no
+		}
+		visible = { always = yes }
+		cost = 50
+		days_re_enable = 100
+		ai_will_do = { base = 3 modifier = { factor = 2 is_major = no } }
+		complete_effect = {
+			army_experience = 15
+			add_war_support = 0.03
+			custom_effect_tooltip = got_secret_rearmament_tt
+			country_event = { id = MAR_got.9 days = 2 }
+		}
+	}
+
+	got_quiet_industrialization = {
+		icon = generic_production
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 74
+			has_war = no
+		}
+		visible = { always = yes }
+		cost = 75
+		days_re_enable = 150
+		ai_will_do = { base = 4 }
+		complete_effect = {
+			random_owned_controlled_state = {
+				limit = { free_building_slots = { building = industrial_complex size > 0 } }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = no }
+			}
+			custom_effect_tooltip = got_quiet_ind_tt
+		}
+	}
+
+	got_covert_alliance_network = {
+		icon = generic_alliance
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		available = {
+			has_political_power > 49
+		}
+		visible = { always = yes }
+		cost = 50
+		days_re_enable = 120
+		ai_will_do = { base = 3 }
+		complete_effect = {
+			add_political_power = 15
+			custom_effect_tooltip = got_covert_network_tt
+			every_other_country = {
+				limit = {
+					OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV }
+					NOT = { has_war_with = ROOT }
+				}
+				add_opinion_modifier = { target = ROOT modifier = maratha_cultural_ties }
+			}
+		}
+	}
+}

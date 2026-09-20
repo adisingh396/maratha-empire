@@ -1,0 +1,235 @@
+BEN_economy = {
+	allowed = { original_tag = BEN }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 85 }
+	ai_strategy = { type = building_target id = arms_factory value = 40 }
+	ai_strategy = { type = building_target id = dockyard value = 30 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 30 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 70 }
+	ai_strategy = { type = unit_ratio id = convoy value = 10 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 5 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 75 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+}
+
+HYD_economy = {
+	allowed = { original_tag = HYD }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 85 }
+	ai_strategy = { type = building_target id = arms_factory value = 45 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 35 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 75 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+HIN_economy = {
+	allowed = { original_tag = HIN }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = arms_factory value = 90 }
+	ai_strategy = { type = building_target id = industrial_complex value = 45 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 70 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 45 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 85 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 135 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+PJB_economy = {
+	allowed = { original_tag = PJB }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = arms_factory value = 90 }
+	ai_strategy = { type = building_target id = industrial_complex value = 40 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 70 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 40 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 85 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 130 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+MYS_economy = {
+	allowed = { original_tag = MYS }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 80 }
+	ai_strategy = { type = building_target id = arms_factory value = 50 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 35 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 80 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+MDR_economy = {
+	allowed = { original_tag = MDR }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 80 }
+	ai_strategy = { type = building_target id = arms_factory value = 40 }
+	ai_strategy = { type = building_target id = dockyard value = 45 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 30 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 70 }
+	ai_strategy = { type = unit_ratio id = convoy value = 20 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 6 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 74 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+}
+
+RJP_economy = {
+	allowed = { original_tag = RJP }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = arms_factory value = 85 }
+	ai_strategy = { type = building_target id = industrial_complex value = 50 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 65 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 45 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 85 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 125 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+WIS_economy = {
+	allowed = { original_tag = WIS }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 80 }
+	ai_strategy = { type = building_target id = arms_factory value = 40 }
+	ai_strategy = { type = building_target id = dockyard value = 35 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 30 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 70 }
+	ai_strategy = { type = unit_ratio id = convoy value = 15 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 5 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 75 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+}
+
+TRV_economy = {
+	allowed = { original_tag = TRV }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 60 }
+	ai_strategy = { type = building_target id = arms_factory value = 35 }
+	ai_strategy = { type = building_target id = dockyard value = 55 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 25 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 60 }
+	ai_strategy = { type = unit_ratio id = convoy value = 25 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 6 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 74 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+}
+
+SIN_economy = {
+	allowed = { original_tag = SIN }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 60 }
+	ai_strategy = { type = building_target id = arms_factory value = 35 }
+	ai_strategy = { type = building_target id = dockyard value = 60 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 25 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 60 }
+	ai_strategy = { type = unit_ratio id = convoy value = 30 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 8 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 72 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+}
+
+ORI_economy = {
+	allowed = { original_tag = ORI }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 75 }
+	ai_strategy = { type = building_target id = arms_factory value = 45 }
+	ai_strategy = { type = building_target id = dockyard value = 25 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 40 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 30 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 80 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 75 }
+	ai_strategy = { type = unit_ratio id = convoy value = 10 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 5 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 75 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+}
+
+ASM_economy = {
+	allowed = { original_tag = ASM }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = industrial_complex value = 75 }
+	ai_strategy = { type = building_target id = arms_factory value = 45 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 45 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 35 }
+	ai_strategy = { type = equipment_production_factor id = support value = 25 }
+	ai_strategy = { type = role_ratio id = infantry value = 82 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 85 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+KAS_economy = {
+	allowed = { original_tag = KAS }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = arms_factory value = 85 }
+	ai_strategy = { type = building_target id = industrial_complex value = 40 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 70 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 40 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 88 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 120 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}
+
+MPU_economy = {
+	allowed = { original_tag = MPU }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = { type = building_target id = arms_factory value = 80 }
+	ai_strategy = { type = building_target id = industrial_complex value = 40 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 70 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 40 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 88 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 115 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+}

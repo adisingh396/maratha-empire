@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 15 }
 	id = KAS_focus
 	country = { factor = 0 modifier = { add = 10 tag = KAS } }
 	default = no
@@ -134,7 +135,7 @@ focus_tree = {
 		x = 5 y = 4 cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.6.1 } }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_northern_claims" create_wargoal = { target = PAK type = take_state_focus generator = { 442 } } add_war_support = 0.05 }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_northern_claims" 442 = { add_claim_by = KAS } add_war_support = 0.05 }
 	}
 	focus = {
 		id = KAS_himalayan_crown

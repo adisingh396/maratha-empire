@@ -40,9 +40,12 @@ set_popularities = {
 }
 add_ideas = {
     PJB_militia_legacy
+	PJB_martial_races
+	limited_conscription
 }
 recruit_character = PJB_bhupinder
 recruit_character = PJB_yadavindra
+recruit_character = PJB_ghaffar
 promote_character = PJB_bhupinder
 set_oob = "PJB_1936"
 set_air_oob = "PJB_1936_air"

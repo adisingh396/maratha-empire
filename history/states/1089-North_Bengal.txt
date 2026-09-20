@@ -1,0 +1,29 @@
+state={
+	id=1089
+	name="STATE_1089"
+	manpower=11000000
+	state_category = town
+	buildings_max_level_factor=1.000
+	resources={
+		steel=4
+		rubber=2
+	}
+	history={
+		owner = BEN
+		add_core_of = BEN
+		add_extra_state_shared_building_slots = 7
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 3
+			dockyard = 1
+			air_base = 1
+			10389 = { naval_base = 2 }
+		}
+		victory_points = { 11929 3 }
+	}
+	provinces={
+		10389 10416 10443 11911 11929 11968 12010 12423 
+	}
+	local_supplies=0.0
+}

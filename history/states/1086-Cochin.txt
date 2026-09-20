@@ -1,0 +1,29 @@
+state={
+	id=1086
+	name="STATE_1086"
+	manpower=3200000
+	state_category = town
+	buildings_max_level_factor=1.000
+	resources={
+		aluminium=4
+		rubber=3
+	}
+	history={
+		owner = TRV
+		add_core_of = TRV
+		add_extra_state_shared_building_slots = 5
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = 2
+			air_base = 1
+			7288 = { naval_base = 2 }
+		}
+		victory_points = { 7288 3 }
+	}
+	provinces={
+		7288 12247 
+	}
+	local_supplies=0.0
+}

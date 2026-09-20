@@ -1,32 +1,30 @@
 state={
 	id=982
 	name="STATE_982"
-	resources={
-		rubber=2
-	}
-	provinces={
-		1321 1409 7288 7402 12247 
-	}
-	manpower = 7600000
-	buildings_max_level_factor=2.000
+	manpower=4400000
 	state_category = city
-	local_supplies=0.000
+	buildings_max_level_factor=1.000
+	resources={
+		aluminium=8
+		rubber=6
+		tungsten=4
+	}
 	history={
 		owner = TRV
 		add_core_of = TRV
+		add_extra_state_shared_building_slots = 6
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 3
-			arms_factory = 1
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 3
 			dockyard = 2
 			air_base = 1
-			1321 = {
-				naval_base = 2
-			}
+			1321 = { naval_base = 2 }
 		}
-		victory_points = {
-		1321 3
-		}
-
+		victory_points = { 1321 3 }
 	}
+	provinces={
+		1321 1409 7402 
+	}
+	local_supplies=0.0
 }

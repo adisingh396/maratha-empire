@@ -438,14 +438,14 @@ ideas = {
 			picture = generic_naval_bonus
 			modifier = { navy_org_factor = 0.08 production_speed_dockyard_factor = 0.08 }
 		}
-		PAK_khidmatgar_spirit = {
-			allowed = { original_tag = PAK }
+		PJB_khidmatgar_spirit = {
+			allowed = { original_tag = PJB }
 			removal_cost = -1
 			picture = generic_manpower
 			modifier = { conscription_factor = 0.10 war_support_factor = 0.06 }
 		}
-		PAK_crown_spirit = {
-			allowed = { original_tag = PAK }
+		PJB_frontier_crown = {
+			allowed = { original_tag = PJB }
 			removal_cost = -1
 			picture = generic_national_unity
 			modifier = { stability_factor = 0.05 political_power_gain = 0.10 }
@@ -738,17 +738,23 @@ ideas = {
 			picture = generic_national_unity
 			modifier = { stability_factor = 0.05 war_support_factor = 0.03 }
 		}
-		PAK_sahib_admin = {
-			allowed = { original_tag = PAK }
+		PJB_sahib_admin = {
+			allowed = { original_tag = PJB }
 			removal_cost = -1
 			picture = generic_political_pressure
 			modifier = { conscription_factor = 0.10 political_power_gain = 0.10 }
 		}
-		PAK_frontier_legacy = {
-			allowed = { original_tag = PAK }
+		PJB_frontier_legacy = {
+			allowed = { original_tag = PJB }
 			removal_cost = -1
 			picture = generic_mountaineers
 			modifier = { army_core_defence_factor = 0.08 }
+		}
+		PJB_ghaffar_counsel = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = { resistance_growth = -0.10 political_power_gain = 0.10 }
 		}
 		HYD_laik_ali_admin = {
 			allowed = { original_tag = HYD }

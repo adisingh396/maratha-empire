@@ -1,50 +1,17 @@
 on_actions = {
-	on_startup = {
-		effect = {
-			# Ensure Indian tags have 50 compliance integration like Kaiserreich
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = MAR
-						is_core_of = HYD
-						is_core_of = MYS
-						is_core_of = RJP
-					}
-				}
-				add_compliance = 20
-			}
-		}
-	}
 	on_annex = {
 		effect = {
 			if = {
 				limit = {
-					OR = {
-						tag = MAR
-						tag = HYD
-						tag = RJP
-						tag = MYS
-						FROM = { OR = { tag = MAR tag = HYD tag = RJP } }
-					}
-					any_owned_state = { is_core_of = MAR }
+					is_maratha_unifier = yes
+					FROM = { is_indian_princely = yes }
+					NOT = { has_country_flag = indian_unification_announced }
+					num_of_controlled_states > 19
 				}
-				# Transfer characters like Kaiserreich HYD/MYS
-				FROM = {
-					every_character = {
-						limit = { has_character_flag = HYD_character }
-						set_nationality = HYD
-					}
-					every_character = {
-						limit = { has_character_flag = MYS_character }
-						set_nationality = MYS
-					}
-				}
-				# Fire unification event after 1 day
-				hidden_effect = {
-					country_event = { id = MAR_news.2 days = 1 }
-				}
+				set_country_flag = indian_unification_announced
+				set_global_flag = indian_unification_announced
+				news_event = { id = MAR_news.2 hours = 6 }
 			}
-			# Revolution check: if stability <0.3, fire revolt
 			if = {
 				limit = {
 					FROM = { has_stability < 0.30 }
@@ -54,16 +21,122 @@ on_actions = {
 			}
 		}
 	}
+
+	# Historical dynastic transitions that do not depend on focus order.
+	on_daily_MYS = {
+		effect = {
+			if = {
+				limit = {
+					date > 1940.08.02
+					NOT = { has_country_flag = MYS_jaya_succeeded }
+				}
+				set_country_flag = MYS_jaya_succeeded
+				country_event = { id = MYS_dam.3 days = 1 }
+			}
+		}
+	}
+	on_daily_PJB = {
+		effect = {
+			if = {
+				limit = {
+					date > 1938.03.23
+					NOT = { has_country_flag = PJB_yadavindra_succeeded }
+				}
+				set_country_flag = PJB_yadavindra_succeeded
+				promote_character = PJB_yadavindra
+				retire_character = PJB_bhupinder
+			}
+		}
+	}
+	on_daily_MPU = {
+		effect = {
+			if = {
+				limit = {
+					date > 1941.11.05
+					NOT = { has_country_flag = MPU_bodhchandra_succeeded }
+				}
+				set_country_flag = MPU_bodhchandra_succeeded
+				promote_character = MPU_bodhchandra
+				retire_character = MPU_churachand
+			}
+		}
+	}
+	on_daily_WIS = {
+		effect = {
+			if = {
+				limit = {
+					date > 1939.02.06
+					NOT = { has_country_flag = WIS_pratap_succeeded }
+				}
+				set_country_flag = WIS_pratap_succeeded
+				promote_character = WIS_gaekwad
+				retire_character = WIS_sayajirao
+			}
+		}
+	}
+	on_daily_RJP = {
+		effect = {
+			if = {
+				limit = {
+					date > 1943.02.02
+					NOT = { has_country_flag = RJP_sadul_succeeded }
+				}
+				set_country_flag = RJP_sadul_succeeded
+				promote_character = RJP_sadul
+				retire_character = RJP_ganga
+			}
+		}
+	}
+
+	# Strategic milestones are country-scoped so every Indian contender can progress independently.
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					is_indian_great_power = yes
+					NOT = { has_country_flag = indian_great_power_stage }
+				}
+				set_country_flag = indian_great_power_stage
+				if = {
+					limit = { NOT = { has_global_flag = indian_great_power_announced } }
+					set_global_flag = indian_great_power_announced
+					news_event = { id = MAR_news.3 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					is_indian_superpower = yes
+					NOT = { has_country_flag = indian_superpower_stage }
+				}
+				set_country_flag = indian_superpower_stage
+				if = {
+					limit = { NOT = { has_global_flag = indian_superpower_announced } }
+					set_global_flag = indian_superpower_announced
+					news_event = { id = MAR_news.4 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = indian_ocean_order_stage
+					NOT = { has_global_flag = indian_ocean_order_announced }
+				}
+				set_global_flag = indian_ocean_order_announced
+				news_event = { id = MAR_news.5 hours = 6 }
+			}
+		}
+	}
+
 	on_daily = {
 		effect = {
-			# Rare MAR revolution if not strong (stability <0.2 and war_support <0.2)
 			if = {
 				limit = {
 					tag = MAR
 					has_stability < 0.20
 					has_war_support < 0.20
 					has_game_rule = { rule = MAR_revolts option = yes }
+					NOT = { has_country_flag = MAR_revolt_pending }
 				}
+				set_country_flag = MAR_revolt_pending
 				country_event = { id = MAR_revolt.10 days = 30 random_days = 15 }
 			}
 		}

@@ -2,7 +2,7 @@ characters = {
 TRV_thirunal = {
 	name = "Chithira Thirunal"
 	portraits = {
-		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+		civilian = { large = GFX_portrait_trv_thirunal small = GFX_portrait_trv_thirunal_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +14,7 @@ TRV_thirunal = {
 TRV_cp = {
 	name = "C. P. Ramaswami Iyer"
 	portraits = {
-		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+		civilian = { large = GFX_portrait_trv_cp small = GFX_portrait_trv_cp_small }
 	}
 	advisor = {
 		slot = political_advisor

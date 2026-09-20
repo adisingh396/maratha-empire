@@ -1,0 +1,60 @@
+{
+  "required_count": 4,
+  "style": "high-quality hand-painted grand-strategy military portrait, classic 1930s-1940s strategy-game illustration, realistic facial anatomy, restrained historical palette, warm neutral canvas background, centered bust, no text, no watermark, no fantasy, no CGI, no anime",
+  "portraits": [
+    {
+      "character": "MAR_shivaji",
+      "country": "MAR",
+      "stem": "portrait_mar_shivaji",
+      "description": "Chhatrapati Shivaji Maharaj, age 45, mature Maratha king, full black beard with subtle silver, saffron turban with pearl string and gold kalgi, olive skin, steel chest armor over an olive angarkha, calm authoritative expression"
+    },
+    {
+      "character": "MAR_bajirao",
+      "country": "MAR",
+      "stem": "portrait_mar_bajirao",
+      "description": "Peshwa Baji Rao I, age 30, lean warrior, thin mustache, red Peshwai pagdi with gold border and white feather, faded olive-brown military coat, stern focused gaze"
+    },
+    {
+      "character": "MAR_tarabai",
+      "country": "MAR",
+      "stem": "portrait_mar_tarabai",
+      "description": "Maharani Tarabai, age 38, fierce queen regent, dark eyes, red bindi, red saree pallu with restrained gold border, commanding dignified expression"
+    },
+    {
+      "character": "MAR_madhavrao_III",
+      "country": "MAR",
+      "stem": "portrait_mar_madhavrao",
+      "description": "Peshwa Madhavrao III, age 32, clean-shaven, neatly combed black hair, khaki Maratha military uniform with saffron sash and service ribbons, confident modernizing ruler"
+    },
+    {
+      "character": "MAR_nana_fadnavis",
+      "country": "MAR",
+      "stem": "portrait_mar_nana_fadnavis",
+      "description": "Nana Fadnavis, senior Maratha statesman, late fifties, narrow face and perceptive eyes, white Peshwai turban, cream angarkha and dark shawl, restrained courtly authority"
+    },
+    {
+      "character": "MAR_moropant_trimbak",
+      "country": "MAR",
+      "stem": "portrait_mar_moropant_trimbak",
+      "description": "Moropant Trimbak, Maratha military theorist, early fifties, trimmed mustache, rust-red turban, khaki field coat with map case, analytical expression"
+    },
+    {
+      "character": "MAR_kanhoji_angre_iii",
+      "country": "MAR",
+      "stem": "portrait_mar_kanhoji_angre_iii",
+      "description": "Kanhoji Angre III, Maratha admiral, mid forties, weathered seafarer, navy-blue turban and dark naval coat with restrained gold braid, alert eyes, coastal-command bearing"
+    },
+    {
+      "character": "MAR_santaji_ghorpade_ii",
+      "country": "MAR",
+      "stem": "portrait_mar_santaji_ghorpade_ii",
+      "description": "Santaji Ghorpade II, cavalry commander, late thirties, athletic build, curled mustache, saffron cavalry turban, khaki field uniform and leather cross-strap, aggressive confident expression"
+    },
+    {
+      "character": "MAR_ibrahim_gardi",
+      "country": "MAR",
+      "stem": "portrait_mar_ibrahim_gardi",
+      "description": "Ibrahim Khan Gardi, artillery commander, early forties, trimmed beard, dark green turban, heavy khaki artillery tunic with brass insignia, disciplined measured expression"
+    }
+  ]
+}

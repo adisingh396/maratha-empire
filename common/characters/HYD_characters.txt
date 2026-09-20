@@ -14,7 +14,7 @@ HYD_osman_ali = {
 HYD_laik_ali = {
 	name = HYD_laik_ali
 	portraits = {
-		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+		civilian = { large = GFX_portrait_hyd_laik_ali small = GFX_portrait_hyd_laik_ali_small }
 	}
 	advisor = {
 		slot = political_advisor
@@ -27,7 +27,7 @@ HYD_laik_ali = {
 HYD_moin_nawaz = {
 	name = HYD_moin_nawaz
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_hyd_moin_nawaz small = GFX_portrait_hyd_moin_nawaz_small }
 	}
 	advisor = {
 		slot = political_advisor
@@ -40,7 +40,7 @@ HYD_moin_nawaz = {
 HYD_el_edroos = {
 	name = HYD_el_edroos
 	portraits = {
-		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		army = { large = GFX_portrait_hyd_el_edroos small = GFX_portrait_hyd_el_edroos_small }
 	}
 	advisor = {
 		slot = army_chief
@@ -60,7 +60,7 @@ HYD_el_edroos = {
 HYD_abid_hasan = {
 	name = HYD_abid_hasan
 	portraits = {
-		army = { large = GFX_portrait_kas_harisingh small = GFX_portrait_kas_harisingh_small }
+		army = { large = GFX_portrait_hyd_abid_hasan small = GFX_portrait_hyd_abid_hasan_small }
 	}
 	corps_commander = {
 		traits = { trickster }
@@ -74,7 +74,7 @@ HYD_abid_hasan = {
 HYD_kasim_razvi = {
 	name = HYD_kasim_razvi
 	portraits = {
-		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_hyd_kasim_razvi small = GFX_portrait_hyd_kasim_razvi_small }
 	}
 	country_leader = {
 		ideology = fascism_ideology
@@ -86,7 +86,7 @@ HYD_kasim_razvi = {
 HYD_bahadur_yar = {
 	name = HYD_bahadur_yar
 	portraits = {
-		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_hyd_bahadur_yar small = GFX_portrait_hyd_bahadur_yar_small }
 	}
 	country_leader = {
 		ideology = liberalism

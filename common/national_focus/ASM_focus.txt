@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 18 }
 	id = ASM_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = ASM_ahom_legacy
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 6
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -23,7 +24,7 @@ focus_tree = {
 		id = ASM_sukaphaa_memory
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ASM_ahom_legacy }
-		x = 5
+		x = 6
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -38,7 +39,7 @@ focus_tree = {
 		id = ASM_charaideo_maidams
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ASM_sukaphaa_memory }
-		x = 5
+		x = 6
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -53,7 +54,7 @@ focus_tree = {
 		id = ASM_rang_ghar
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ASM_charaideo_maidams }
-		x = 5
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -68,7 +69,7 @@ focus_tree = {
 		id = ASM_saraighat_memory
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = ASM_rang_ghar }
-		x = 5
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -116,7 +117,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = ASM_lachit_guards }
 		bypass = { has_completed_focus = ASM_ahom_flotilla }
-		x = 6
+		x = 8
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -131,7 +132,7 @@ focus_tree = {
 		id = ASM_maniram_tea
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ASM_ahom_legacy }
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -146,7 +147,7 @@ focus_tree = {
 		id = ASM_jorhat_gardens
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ASM_maniram_tea }
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -161,7 +162,7 @@ focus_tree = {
 		id = ASM_tea_auction
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ASM_jorhat_gardens }
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -176,7 +177,7 @@ focus_tree = {
 		id = ASM_digboi_oil
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ASM_tea_auction }
-		x = 1
+		x = 0
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -191,7 +192,7 @@ focus_tree = {
 		id = ASM_oil_royalty
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ASM_digboi_oil }
-		x = 1
+		x = 0
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -206,7 +207,7 @@ focus_tree = {
 		id = ASM_oil_pipeline
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ASM_oil_royalty }
-		x = 1
+		x = 0
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -221,7 +222,7 @@ focus_tree = {
 		id = ASM_rsn_steamers
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ASM_ahom_legacy }
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -236,7 +237,7 @@ focus_tree = {
 		id = ASM_dibrugarh_port
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ASM_rsn_steamers }
-		x = 3
+		x = 2
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -251,7 +252,7 @@ focus_tree = {
 		id = ASM_ferry_fleet
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ASM_dibrugarh_port }
-		x = 3
+		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -266,7 +267,7 @@ focus_tree = {
 		id = ASM_brahmaputra_bridges
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ASM_ferry_fleet }
-		x = 3
+		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -281,7 +282,7 @@ focus_tree = {
 		id = ASM_sankardev
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ASM_ahom_legacy }
-		x = 7
+		x = 10
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -296,7 +297,7 @@ focus_tree = {
 		id = ASM_sattras
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ASM_sankardev }
-		x = 7
+		x = 10
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -311,7 +312,7 @@ focus_tree = {
 		id = ASM_bihu_festival
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ASM_sattras }
-		x = 7
+		x = 10
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -326,7 +327,7 @@ focus_tree = {
 		id = ASM_muga_silk
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ASM_bihu_festival }
-		x = 7
+		x = 10
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -341,7 +342,7 @@ focus_tree = {
 		id = ASM_bell_metal
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ASM_muga_silk }
-		x = 7
+		x = 10
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -356,7 +357,7 @@ focus_tree = {
 		id = ASM_naga_hills
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ASM_naga_levies }
-		x = 9
+		x = 12
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -371,7 +372,7 @@ focus_tree = {
 		id = ASM_kohima_track
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ASM_naga_hills }
-		x = 9
+		x = 12
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -386,7 +387,7 @@ focus_tree = {
 		id = ASM_tribal_levy
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ASM_kohima_track }
-		x = 9
+		x = 12
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -401,7 +402,7 @@ focus_tree = {
 		id = ASM_frontier_posts
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = ASM_tribal_levy }
-		x = 9
+		x = 12
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -416,7 +417,7 @@ focus_tree = {
 		id = ASM_naga_levies
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ASM_sibsagar_cantonment }
-		x = 9
+		x = 12
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -432,7 +433,7 @@ focus_tree = {
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = ASM_ferry_fleet }
 		prerequisite = { focus = ASM_bell_metal }
-		x = 5
+		x = 6
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -447,7 +448,7 @@ focus_tree = {
 		id = ASM_mughal_memory
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ASM_sibsagar_cantonment }
-		x = 5
+		x = 6
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -462,7 +463,7 @@ focus_tree = {
 		id = ASM_bihar_claim
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ASM_mughal_memory }
-		x = 5
+		x = 6
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1941.1.1 } }
@@ -478,7 +479,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ASM_bihar_claim }
 		prerequisite = { focus = ASM_frontier_posts }
-		x = 7
+		x = 10
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 12 }

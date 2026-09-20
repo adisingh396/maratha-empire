@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_wis_sayajirao"
+		texturefile = "gfx/leaders/WIS/portrait_wis_sayajirao.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_sayajirao_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_sayajirao_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_gaekwad"
+		texturefile = "gfx/leaders/WIS/portrait_wis_gaekwad.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_gaekwad_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_gaekwad_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_jamsahib"
+		texturefile = "gfx/leaders/WIS/portrait_wis_jamsahib.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_jamsahib_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_jamsahib_small.dds"
+	}
+}

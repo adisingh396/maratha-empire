@@ -13,6 +13,7 @@ is_indian_princely = {
 		tag = PJB
 		tag = MPU
 		tag = BEN
+		tag = TRV
 	}
 }
 
@@ -21,5 +22,31 @@ is_maratha_unifier = {
 		tag = MAR
 		tag = HYD
 		tag = RJP
+		tag = MYS
+		tag = BEN
+		tag = HIN
+		tag = PJB
+	}
+}
+
+is_indian_great_power = {
+	AND = {
+		OR = {
+			tag = MAR
+			tag = HYD
+			tag = MYS
+			tag = RJP
+			tag = BEN
+			tag = HIN
+			tag = PJB
+		}
+		num_of_factories > 89
+	}
+}
+
+is_indian_superpower = {
+	AND = {
+		is_indian_great_power = yes
+		num_of_factories > 179
 	}
 }

@@ -1,33 +1,3 @@
-MAR_template_push = {
-	allowed = { original_tag = MAR }
-	enable = { always = yes }
-	abort = { always = no }
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 100
-	}
-}
-MAR_garrison_need = {
-	allowed = { original_tag = MAR }
-	enable = { always = yes }
-	abort = { always = no }
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = 60
-	}
-}
-MAR_armor_desire = {
-	allowed = { original_tag = MAR }
-	enable = { always = yes }
-	abort = { always = no }
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 30
-	}
-}
 HYD_template_push = {
 	allowed = { original_tag = HYD }
 	enable = { always = yes }
@@ -72,7 +42,6 @@ frontier_template_push = {
 	allowed = {
 		OR = {
 			original_tag = KAS
-			original_tag = PAK
 		}
 	}
 	enable = { always = yes }

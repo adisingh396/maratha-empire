@@ -16,7 +16,7 @@ HYD_expansionist_category = {
 			428 = { add_core_of = HYD }
 			add_political_power = -50
 			custom_effect_tooltip = HYD_deccan_tt
-			hidden_effect = { country_event = { id = MAR_news.10 } }
+			hidden_effect = { news_event = { id = MAR_news.10 } }
 		}
 	}
 	HYD_alliance_with_maratha = {

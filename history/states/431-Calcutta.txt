@@ -1,43 +1,31 @@
 state={
 	id=431
 	name="STATE_431"
+	manpower=18778100
+	state_category = metropolis
+	buildings_max_level_factor=1.000
 	resources={
-		steel=8
+		steel=16
+		tungsten=4
 	}
-
-	history = {
-
+	history={
 		owner = BEN
-		add_extra_state_shared_building_slots = 4
 		add_core_of = BEN
-		add_core_of = BEN 
-
+		add_core_of = BEN
+		add_extra_state_shared_building_slots = 7
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 10
-			arms_factory = 2
-			dockyard = 2
-			air_base = 2
-			4245 = {
-				naval_base = 4
-			}
+			arms_factory = 4
+			dockyard = 3
+			air_base = 1
+			4245 = { naval_base = 4 }
 		}
-
-		victory_points = {
-		4245 5
-		}
-		victory_points = {
-		12338 1
-		}
-
+		victory_points = { 4245 5 }
+		victory_points = { 12338 1 }
 	}
-
 	provinces={
 		1159 1609 1656 4062 4204 4245 4644 7220 7475 7537 7565 7593 10077 12050 12338 
 	}
-	manpower=18778100
-	buildings_max_level_factor=2.000
-	state_category = metropolis
-
-	local_supplies=0.0 
+	local_supplies=0.0
 }

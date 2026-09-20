@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 22 }
 	id = HIN_focus
 	country = { factor = 0 modifier = { add = 10 tag = HIN } }
 	default = no
@@ -25,7 +26,7 @@ focus_tree = {
 		x = 5 y = 2 cost = 10
 		ai_will_do = { factor = 15 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_claim_bharat" hidden_effect = { maratha_claim_india_effect = yes } add_war_support = 0.10 }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_claim_bharat" hidden_effect = { indian_claim_subcontinent_effect = yes } add_war_support = 0.10 }
 	}
 	focus = {
 		id = HIN_taluqdars
@@ -179,7 +180,7 @@ focus_tree = {
 		x = 9 y = 4 cost = 10
 		ai_will_do = { factor = 5 modifier = { factor = 0 date < 1939.6.1 } }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_throne" create_wargoal = { target = MAR type = take_state_focus generator = { 429 } } add_war_support = 0.06 }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_delhi_throne" create_wargoal = { target = MAR type = take_state_focus generator = { 429 } } add_war_support = 0.06 set_country_flag = indian_unification_claimant }
 	}
 	focus = {
 		id = HIN_patna_university
@@ -350,7 +351,7 @@ focus_tree = {
 		id = HIN_chandni_municipal
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HIN_red_fort }
-		x = 8 y = 3 cost = 10
+		x = 4 y = 3 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_chandni_municipal" add_stability = 0.04 add_political_power = 50 }
@@ -359,7 +360,7 @@ focus_tree = {
 		id = HIN_jama_masjid
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HIN_chandni_municipal }
-		x = 8 y = 4 cost = 10
+		x = 1 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_jama_masjid" add_stability = 0.04 add_war_support = 0.02 }
@@ -368,7 +369,7 @@ focus_tree = {
 		id = HIN_durbar_police
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HIN_jama_masjid }
-		x = 8 y = 5 cost = 10
+		x = 1 y = 5 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_durbar_police" add_manpower = 12000 add_stability = 0.02 }
@@ -377,7 +378,7 @@ focus_tree = {
 		id = HIN_raisina_press
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HIN_durbar_police }
-		x = 8 y = 6 cost = 10
+		x = 1 y = 6 cost = 10
 		ai_will_do = { factor = 6 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_raisina_press" add_political_power = 70 add_war_support = 0.02 }
@@ -677,7 +678,7 @@ focus_tree = {
 		id = HIN_fatehpuri_mosque
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HIN_raisina_press }
-		x = 8 y = 7 cost = 10
+		x = 1 y = 7 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_fatehpuri_mosque" add_stability = 0.04 add_political_power = 40 }
@@ -686,7 +687,7 @@ focus_tree = {
 		id = HIN_ballimaran_lanes
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HIN_fatehpuri_mosque }
-		x = 8 y = 8 cost = 10
+		x = 4 y = 8 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ballimaran_lanes" add_stability = 0.03 add_war_support = 0.02 }
@@ -695,7 +696,7 @@ focus_tree = {
 		id = HIN_ghalib_academy
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HIN_ballimaran_lanes }
-		x = 8 y = 9 cost = 10
+		x = 4 y = 9 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_ghalib_academy" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_political_power = 30 }
@@ -704,7 +705,7 @@ focus_tree = {
 		id = HIN_old_delhi_walls
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HIN_ghalib_academy }
-		x = 8 y = 10 cost = 10
+		x = 4 y = 10 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed HIN_old_delhi_walls" 439 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_stability = 0.02 }
@@ -821,7 +822,7 @@ focus_tree = {
 		id = HIN_mandala_circle
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HIN_itmad_ud_daula }
-		x = 8
+		x = 4
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }

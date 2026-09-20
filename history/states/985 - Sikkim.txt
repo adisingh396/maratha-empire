@@ -1,28 +1,26 @@
 state={
 	id=985
 	name="STATE_985"
-	manpower = 150000
-
+	manpower=150000
 	state_category = rural
-
+	buildings_max_level_factor=1.000
 	resources={
-	}
 
+	}
 	history={
 		owner = BEN
 		add_core_of = BEN
+		add_extra_state_shared_building_slots = 8
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 3
+			air_base = 1
 		}
-
-		victory_points = {
-		4435 1
-		}
+		victory_points = { 4435 1 }
 	}
-
 	provinces={
-		4435
+		4435 
 	}
-
 	local_supplies=0.0
 }

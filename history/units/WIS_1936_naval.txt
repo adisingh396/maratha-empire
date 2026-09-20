@@ -1,33 +1,22 @@
 units = {
 	fleet = {
-		name = "WIS Main Fleet"
+		name = "Gulf of Khambhat Flotilla"
 		naval_base = 9975
 		task_force = {
-			name = "WIS Battle Squadron"
+			name = "WIS Surat Squadron"
 			location = 9975
-			ship = { name = "INS WIS BAT 1" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = WIS version_name = "Battleship Class" } } }
-			ship = { name = "INS WIS HEA 2" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = WIS version_name = "Heavy_Cruiser Class" } } }
-			ship = { name = "INS WIS HEA 3" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = WIS version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS WIS DES 1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS } } }
+			ship = { name = "INS WIS DES 2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS } } }
+			ship = { name = "INS WIS DES 3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS } } }
+			ship = { name = "INS WIS DES 4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS } } }
 		}
 		task_force = {
-			name = "WIS Cruiser Squadron"
+			name = "WIS Submarine Pair"
 			location = 9975
-			ship = { name = "INS WIS LIG 4" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = WIS version_name = "Light_Cruiser Class" } } }
-			ship = { name = "INS WIS LIG 5" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = WIS version_name = "Light_Cruiser Class" } } }
-			ship = { name = "INS WIS LIG 6" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = WIS version_name = "Light_Cruiser Class" } } }
-			ship = { name = "INS WIS LIG 7" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = WIS version_name = "Light_Cruiser Class" } } }
-			ship = { name = "INS WIS DES 8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS version_name = "Destroyer Class" } } }
-			ship = { name = "INS WIS DES 9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS version_name = "Destroyer Class" } } }
-			ship = { name = "INS WIS DES 10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS version_name = "Destroyer Class" } } }
-			ship = { name = "INS WIS DES 11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS version_name = "Destroyer Class" } } }
-			ship = { name = "INS WIS DES 12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS version_name = "Destroyer Class" } } }
-			ship = { name = "INS WIS DES 13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = WIS version_name = "Destroyer Class" } } }
-		}
-		task_force = {
-			name = "WIS Submarine Flotilla"
-			location = 9975
-			ship = { name = "INS WIS SS 14" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = WIS version_name = "Submarine Class" } } }
-			ship = { name = "INS WIS SS 15" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = WIS version_name = "Submarine Class" } } }
+			ship = { name = "INS WIS SS 5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = WIS } } }
+			ship = { name = "INS WIS SS 6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = WIS } } }
+			ship = { name = "INS WIS SS 7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = WIS } } }
+			ship = { name = "INS WIS SS 8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = WIS } } }
 		}
 	}
 }

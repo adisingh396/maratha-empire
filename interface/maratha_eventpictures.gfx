@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_report_event_maratha_court"
+		texturefile = "gfx/event_pictures/report_event_maratha_court.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_deccan_revolt"
+		texturefile = "gfx/event_pictures/report_event_deccan_revolt.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_konkan_fleet"
+		texturefile = "gfx/event_pictures/report_event_konkan_fleet.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_indian_durbar"
+		texturefile = "gfx/event_pictures/report_event_indian_durbar.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_alliance_pact"
+		texturefile = "gfx/event_pictures/report_event_alliance_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_secret_arsenal"
+		texturefile = "gfx/event_pictures/report_event_secret_arsenal.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ocean_venture"
+		texturefile = "gfx/event_pictures/report_event_ocean_venture.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_league_council"
+		texturefile = "gfx/event_pictures/report_event_league_council.dds"
+	}
+}

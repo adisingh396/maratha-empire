@@ -1,37 +1,27 @@
-
 state={
 	id=434
 	name="STATE_434"
-	manpower = 200000
-	
+	manpower=500000
 	state_category = wasteland
-	resources = {
-		tungsten = 49 # was: 54
+	buildings_max_level_factor=1.000
+	resources={
+		tungsten=20
 	}
-
-	history = {
-
+	history={
 		owner = ASM
-		add_extra_state_shared_building_slots = 2
 		add_core_of = ASM
 		add_core_of = TIB
-
+		add_extra_state_shared_building_slots = 8
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 3
 			air_base = 1
-			industrial_complex = 1
-			arms_factory = 1
-			infrastructure = 1
 		}
-
-		victory_points = {
-		1116 1
-		}
-
+		victory_points = { 1116 1 }
 	}
-
-	provinces = {
-		1116 1996 10810 12730
+	provinces={
+		1116 1996 10810 12730 
 	}
-
-	local_supplies = 0.0 
+	local_supplies=0.0
 }

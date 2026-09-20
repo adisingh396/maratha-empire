@@ -1,34 +1,31 @@
 state={
 	id=427
-	name="STATE_427" # Hyderabad - Nizam's Dominion
-	manpower = 13374676
-	state_category = city
-	buildings_max_level_factor=2.500
+	name="STATE_427"
+	manpower=8200000
+	state_category = large_city
+	buildings_max_level_factor=1.000
 	resources={
-		chromium=3
-		steel = 6
+		chromium=12
+		steel=12
+		aluminium=4
+		tungsten=4
 	}
 	history={
 		owner = HYD
 		add_core_of = HYD
-		victory_points = {
-		8087 15
-		}
-		victory_points = {
-		12114 1
-		}
-		victory_points = {
-		10311 5
-		}
+		add_extra_state_shared_building_slots = 5
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 4
-			arms_factory = 2
-			air_base = 2
+			infrastructure = 3
+			industrial_complex = 8
+			arms_factory = 5
+			air_base = 1
 		}
+		victory_points = { 8087 15 }
+		victory_points = { 12114 1 }
+		victory_points = { 10311 5 }
 	}
 	provinces={
-		1275 1317 1359 1405 4280 4472 5019 5063 5104 7060 8087 10311 10324 10511 11950 12114 12226 
+		1275 1317 1359 1405 4280 8087 10311 12114 12226 
 	}
-	local_supplies=7.0 
+	local_supplies=0.0
 }

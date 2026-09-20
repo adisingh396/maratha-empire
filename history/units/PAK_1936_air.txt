@@ -1,6 +1,0 @@
-air_wings = {
-	442 = {
-		fighter_equipment_0 = { owner = "PAK" amount = 60 }
-		CAS_equipment_1 = { owner = "PAK" amount = 30 }
-	}
-}

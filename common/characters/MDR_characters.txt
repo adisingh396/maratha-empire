@@ -2,7 +2,7 @@ characters = {
 MDR_bobbili = {
 	name = "Raja of Bobbili"
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_mdr_bobbili small = GFX_portrait_mdr_bobbili_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +14,7 @@ MDR_bobbili = {
 MDR_rajaji = {
 	name = "C. Rajagopalachari"
 	portraits = {
-		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+		civilian = { large = GFX_portrait_mdr_rajaji small = GFX_portrait_mdr_rajaji_small }
 	}
 	country_leader = {
 		ideology = liberalism

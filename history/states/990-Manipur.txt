@@ -1,26 +1,26 @@
 state={
 	id=990
 	name="STATE_990"
-	provinces={
-		1525 1553 12322  
-	}
+	manpower=2000000
 	state_category = rural
-	manpower = 600000
+	buildings_max_level_factor=1.000
+	resources={
+		tungsten=2
+	}
 	history={
 		owner = MPU
-		add_extra_state_shared_building_slots = 1
 		add_core_of = MPU
+		add_extra_state_shared_building_slots = 6
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 3
 			air_base = 1
-			industrial_complex = 3
-			arms_factory = 0
-			infrastructure = 1
 		}
-
-		victory_points = {
-		1553 5
-		}
+		victory_points = { 1553 5 }
 	}
-	buildings_max_level_factor=1.000
-	local_supplies=1.000
+	provinces={
+		1525 1553 12322 
+	}
+	local_supplies=0.0
 }

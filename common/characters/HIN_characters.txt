@@ -2,7 +2,7 @@ characters = {
 HIN_chhatari = {
 	name = HIN_chhatari
 	portraits = {
-		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_hin_chhatari small = GFX_portrait_hin_chhatari_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +14,7 @@ HIN_chhatari = {
 HIN_pant = {
 	name = HIN_pant
 	portraits = {
-		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_hin_pant small = GFX_portrait_hin_pant_small }
 	}
 	country_leader = {
 		ideology = liberalism
@@ -26,7 +26,7 @@ HIN_pant = {
 HIN_sapru = {
 	name = HIN_sapru
 	portraits = {
-		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_hin_sapru small = GFX_portrait_hin_sapru_small }
 	}
 	advisor = {
 		slot = political_advisor
@@ -39,7 +39,7 @@ HIN_sapru = {
 HIN_chaudhuri = {
 	name = HIN_chaudhuri
 	portraits = {
-		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		army = { large = GFX_portrait_hin_chaudhuri small = GFX_portrait_hin_chaudhuri_small }
 	}
 	corps_commander = {
 		traits = { aggressive_assaulter }

@@ -1,31 +1,25 @@
-
 state={
 	id=984
-	name="STATE_984" #
-	manpower = 150000 
-	
+	name="STATE_984"
+	manpower=600000
 	state_category = rural
-	
+	buildings_max_level_factor=1.000
 	resources={
-
+		steel=4
 	}
-
 	history={
 		owner = ORI
-		add_extra_state_shared_building_slots = 2
 		add_core_of = ORI
+		add_extra_state_shared_building_slots = 6
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 3
 			air_base = 1
-			industrial_complex = 3
-			arms_factory = 1
-			infrastructure = 1 #was: 5
 		}
-
 	}
-
 	provinces={
-		7465 1622 12490 12241 12420 4557 1579 10469
+		7465 1622 12490 12241 12420 4557 1579 10469 
 	}
-
-	local_supplies=0.0 
+	local_supplies=0.0
 }

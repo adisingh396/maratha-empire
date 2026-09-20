@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 18 }
 	id = MYS_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = MYS_wadiyar_legacy
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 2
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -22,7 +23,7 @@ focus_tree = {
 		id = MYS_silk_industry
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MYS_wadiyar_legacy }
-		x = 5
+		x = 2
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -35,7 +36,7 @@ focus_tree = {
 		id = MYS_karnataka_unite
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MYS_silk_industry }
-		x = 5
+		x = 2
 		y = 2
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -49,7 +50,7 @@ focus_tree = {
 		id = MYS_southern_empire
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = MYS_karnataka_unite }
-		x = 5
+		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 15 }
@@ -63,7 +64,7 @@ focus_tree = {
 		id = MYS_kolar_gold
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MYS_silk_industry }
-		x = 3
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -78,7 +79,7 @@ focus_tree = {
 		id = MYS_bhadravati_steel
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = MYS_kolar_gold }
-		x = 3
+		x = 0
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -93,7 +94,7 @@ focus_tree = {
 		id = MYS_krs_dam
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = MYS_bhadravati_steel }
-		x = 3
+		x = 0
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -109,7 +110,7 @@ focus_tree = {
 		id = MYS_hal_aerodrome
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = MYS_krs_dam }
-		x = 3
+		x = 0
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -125,7 +126,7 @@ focus_tree = {
 		id = MYS_mysore_lancers
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = MYS_karnataka_unite }
-		x = 7
+		x = 4
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -140,7 +141,7 @@ focus_tree = {
 		id = MYS_dravidian_ties
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MYS_karnataka_unite }
-		x = 7
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -164,6 +165,7 @@ focus_tree = {
 			982 = { add_core_of = MYS }
 			add_war_support = 0.10
 			add_ideas = MYS_carnatic_spirit
+			set_country_flag = indian_unification_claimant
 		}
 	}
 	focus = {
@@ -171,7 +173,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MYS_mysore_lancers }
 		prerequisite = { focus = MYS_southern_empire }
-		x = 5
+		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 5 }
@@ -194,7 +196,7 @@ focus_tree = {
 		id = MYS_sandalwood_oil
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MYS_shivasamudram_power }
-		x = 0 y = 2 cost = 10
+		x = 1 y = 2 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_sandalwood_oil" add_political_power = 70 425 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
@@ -203,7 +205,7 @@ focus_tree = {
 		id = MYS_sandal_export
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = MYS_sandalwood_oil }
-		x = 0 y = 3 cost = 10
+		x = 1 y = 3 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_sandal_export" add_political_power = 80 add_ideas = MYS_sandal_spirit }
@@ -212,7 +214,7 @@ focus_tree = {
 		id = MYS_mysore_mines
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MYS_sandal_export }
-		x = 0 y = 4 cost = 10
+		x = 1 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_mysore_mines" 425 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_manpower = 8000 }
@@ -221,7 +223,7 @@ focus_tree = {
 		id = MYS_chamundi_power
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = MYS_mysore_mines }
-		x = 0 y = 5 cost = 10
+		x = 1 y = 5 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_chamundi_power" 425 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_stability = 0.02 }
@@ -239,7 +241,7 @@ focus_tree = {
 		id = MYS_baba_budan
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MYS_wadiyar_legacy }
-		x = 2 y = 1 cost = 10
+		x = 3 y = 1 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_baba_budan" add_manpower = 8000 add_stability = 0.02 }
@@ -248,7 +250,7 @@ focus_tree = {
 		id = MYS_coorg_coffee
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MYS_baba_budan }
-		x = 2 y = 2 cost = 10
+		x = 3 y = 2 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_coorg_coffee" 425 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
@@ -257,7 +259,7 @@ focus_tree = {
 		id = MYS_coffee_board
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = MYS_coorg_coffee }
-		x = 2 y = 3 cost = 10
+		x = 3 y = 3 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_coffee_board" add_political_power = 70 add_stability = 0.02 }
@@ -266,7 +268,7 @@ focus_tree = {
 		id = MYS_curing_works
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = MYS_coffee_board }
-		x = 2 y = 4 cost = 10
+		x = 3 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_curing_works" 425 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
@@ -323,7 +325,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MYS_sappers_miners }
 		prerequisite = { focus = MYS_palace_guard }
-		x = 5 y = 7 cost = 10
+		x = 2 y = 7 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_bangalore_cantonment" add_manpower = 15000 army_experience = 20 }
@@ -332,7 +334,7 @@ focus_tree = {
 		id = MYS_deccan_artillery
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = MYS_bangalore_cantonment }
-		x = 5 y = 8 cost = 10
+		x = 2 y = 8 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_deccan_artillery" add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery } army_experience = 15 }
@@ -341,7 +343,7 @@ focus_tree = {
 		id = MYS_armored_squadron
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = MYS_deccan_artillery }
-		x = 5 y = 9 cost = 10
+		x = 2 y = 9 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_armored_squadron" add_tech_bonus = { bonus = 0.5 uses = 1 category = armor } army_experience = 15 }
@@ -350,7 +352,7 @@ focus_tree = {
 		id = MYS_meg_centre
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MYS_armored_squadron }
-		x = 5 y = 10 cost = 10
+		x = 2 y = 10 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_meg_centre" 425 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
@@ -449,7 +451,7 @@ focus_tree = {
 		id = MYS_jaya_accession
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MYS_king_is_dead }
-		x = 5 y = 6 cost = 10
+		x = 3 y = 6 cost = 10
 		ai_will_do = { factor = 12 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_jaya_accession" add_stability = 0.05 add_political_power = 100 set_country_flag = jaya_on_throne }
@@ -459,7 +461,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = MYS_jaya_accession }
 		prerequisite = { focus = MYS_meg_centre }
-		x = 5 y = 11 cost = 10
+		x = 2 y = 11 cost = 10
 		ai_will_do = { factor = 12 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_wadiyar_crown" add_ideas = MYS_crown_spirit add_stability = 0.04 add_war_support = 0.06 }
@@ -468,7 +470,7 @@ focus_tree = {
 		id = MYS_south_claim
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = MYS_wadiyar_crown }
-		x = 5 y = 12 cost = 10
+		x = 2 y = 12 cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1940.1.1 } }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_south_claim" create_wargoal = { target = HYD type = take_state_focus generator = { 427 } } add_war_support = 0.06 }
@@ -477,7 +479,7 @@ focus_tree = {
 		id = MYS_peninsular_pact
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = MYS_south_claim }
-		x = 5 y = 13 cost = 10
+		x = 2 y = 13 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MYS_peninsular_pact" add_political_power = 100 add_stability = 0.03 }
@@ -486,7 +488,7 @@ focus_tree = {
 		id = MYS_mandala_circle
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MYS_peninsular_pact }
-		x = 12
+		x = 9
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }

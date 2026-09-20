@@ -1,0 +1,4 @@
+graphical_culture = indian_gfx
+graphical_culture_2d = indian_2d
+color = rgb { 100 160 120 }
+color_ui = rgb { 130 190 150 }

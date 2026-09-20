@@ -15,3 +15,7 @@ __pycache__/
 *.bak
 # OS
 Desktop.ini
+# Portrait pipeline runtime data and browser credentials
+tools/portrait-pipeline/cookies.json
+tools/portrait-pipeline/generated/
+tools/portrait-pipeline/progress.json

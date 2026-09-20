@@ -82,7 +82,7 @@ infantry_princely = {
 
 # Himalayan mountaineers: Kashmir + frontier
 mountaineer_himalayan = {
-	available_for = { KAS PAK }
+	available_for = { KAS }
 	role = mountaineers
 	upgrade_prio = { factor = 8 modifier = { factor = 1 } }
 
@@ -137,7 +137,7 @@ marines_coastal = {
 
 # Garrison / suppression for every durbar
 garrison_princely = {
-	available_for = { HYD MYS RJP HIN PJB BEN MDR ORI ASM MPU WIS SIN KAS PAK }
+	available_for = { HYD MYS RJP HIN PJB BEN MDR ORI ASM MPU WIS SIN KAS }
 	role = garrison
 	upgrade_prio = { factor = 4 modifier = { factor = 1 } }
 

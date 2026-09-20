@@ -21,6 +21,7 @@ set_technology = {
 
 	CAS1 = 1
 	early_fighter = 1
+	construction1 = 1
 }
 
 if = {
@@ -48,6 +49,12 @@ if = {
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		interwar_antiair = 1
+		basic_torpedo = 1
+		electronic_mechanical_engineering = 1
 	}
 }
 set_grand_doctrine = grand_battleplan
@@ -72,6 +79,8 @@ add_ideas = {
 	MAR_rajput_dominance
 	MAR_moderate_industrial_base
 	MAR_agrarian_hinterland
+	MAR_machine_tool_arsenals
+	limited_conscription
 }
 
 recruit_character = MAR_shivaji
@@ -90,7 +99,6 @@ promote_character = MAR_madhavrao_III
 
 # OOB
 set_oob = "MAR_1936"
-set_naval_oob = "MAR_1936_naval"
 set_air_oob = "MAR_1936_air"
 
 1939.1.1 = {
@@ -105,7 +113,7 @@ set_air_oob = "MAR_1936_air"
 	complete_national_focus = industrial_effort
 	add_ideas = {
 		partial_economic_mobilisation
-		volunteer_only
+		limited_conscription
 	}
 }
 
@@ -189,3 +197,4 @@ create_equipment_variant = {
 	}
 }
 }
+set_naval_oob = "MAR_1936_naval"

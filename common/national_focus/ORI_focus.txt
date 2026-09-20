@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 15 }
 	id = ORI_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = ORI_kalinga_legacy
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 4
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -23,7 +24,7 @@ focus_tree = {
 		id = ORI_ashoka_memory
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ORI_kalinga_legacy }
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -38,7 +39,7 @@ focus_tree = {
 		id = ORI_kharavela_pride
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ORI_ashoka_memory }
-		x = 5
+		x = 4
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -53,7 +54,7 @@ focus_tree = {
 		id = ORI_dhauli_stupa
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ORI_kharavela_pride }
-		x = 5
+		x = 4
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -68,7 +69,7 @@ focus_tree = {
 		id = ORI_puri_temple
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ORI_kalinga_legacy }
-		x = 3
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -83,7 +84,7 @@ focus_tree = {
 		id = ORI_konark_wheel
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ORI_puri_temple }
-		x = 3
+		x = 2
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -98,7 +99,7 @@ focus_tree = {
 		id = ORI_lingaraj_endow
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ORI_konark_wheel }
-		x = 3
+		x = 2
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -113,7 +114,7 @@ focus_tree = {
 		id = ORI_temple_towns
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ORI_lingaraj_endow }
-		x = 3
+		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -128,7 +129,7 @@ focus_tree = {
 		id = ORI_rath_yatra
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ORI_temple_towns }
-		x = 3
+		x = 2
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -143,7 +144,7 @@ focus_tree = {
 		id = ORI_bali_yatra
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ORI_kalinga_legacy }
-		x = 7
+		x = 6
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -158,7 +159,7 @@ focus_tree = {
 		id = ORI_kalinga_ships
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ORI_bali_yatra }
-		x = 7
+		x = 6
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -173,7 +174,7 @@ focus_tree = {
 		id = ORI_chandbali_port
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ORI_kalinga_ships }
-		x = 7
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -188,7 +189,7 @@ focus_tree = {
 		id = ORI_gopalpur_yard
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = ORI_chandbali_port }
-		x = 7
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -203,7 +204,7 @@ focus_tree = {
 		id = ORI_java_run
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = ORI_gopalpur_yard }
-		x = 7
+		x = 6
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -219,7 +220,7 @@ focus_tree = {
 		id = ORI_suvarnabhumi
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ORI_java_run }
-		x = 7
+		x = 6
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -234,7 +235,7 @@ focus_tree = {
 		id = ORI_cuttack_workshops
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ORI_kalinga_legacy }
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -249,7 +250,7 @@ focus_tree = {
 		id = ORI_talcher_mines
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ORI_cuttack_workshops }
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -264,7 +265,7 @@ focus_tree = {
 		id = ORI_rice_delta
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ORI_talcher_mines }
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -279,7 +280,7 @@ focus_tree = {
 		id = ORI_chilika_fisheries
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = ORI_rice_delta }
-		x = 1
+		x = 0
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -290,7 +291,7 @@ focus_tree = {
 		id = ORI_sambalpur_mills
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ORI_chilika_fisheries }
-		x = 1
+		x = 0
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -304,7 +305,7 @@ focus_tree = {
 		id = ORI_hirakud_survey
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ORI_sambalpur_mills }
-		x = 1
+		x = 0
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -319,7 +320,7 @@ focus_tree = {
 		id = ORI_paika_memory
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ORI_kalinga_legacy }
-		x = 9
+		x = 8
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -334,7 +335,7 @@ focus_tree = {
 		id = ORI_paika_akhadas
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ORI_paika_memory }
-		x = 9
+		x = 8
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -349,7 +350,7 @@ focus_tree = {
 		id = ORI_gajapati_guards
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = ORI_paika_akhadas }
-		x = 9
+		x = 8
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -365,7 +366,7 @@ focus_tree = {
 		id = ORI_barabati_arsenal
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = ORI_gajapati_guards }
-		x = 9
+		x = 8
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -380,7 +381,7 @@ focus_tree = {
 		id = ORI_khurda_levies
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ORI_barabati_arsenal }
-		x = 9
+		x = 8
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -395,7 +396,7 @@ focus_tree = {
 		id = ORI_cuttack_cantonment
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = ORI_khurda_levies }
-		x = 9
+		x = 8
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -410,7 +411,7 @@ focus_tree = {
 		id = ORI_kondh_hills
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ORI_dhauli_stupa }
-		x = 5
+		x = 4
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -425,7 +426,7 @@ focus_tree = {
 		id = ORI_saora_tracks
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ORI_kondh_hills }
-		x = 5
+		x = 4
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -440,7 +441,7 @@ focus_tree = {
 		id = ORI_koraput_coffee
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ORI_saora_tracks }
-		x = 5
+		x = 4
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -455,7 +456,7 @@ focus_tree = {
 		id = ORI_bastar_link
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = ORI_koraput_coffee }
-		x = 5
+		x = 4
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -471,7 +472,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ORI_java_run }
 		prerequisite = { focus = ORI_bastar_link }
-		x = 7
+		x = 6
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -486,7 +487,7 @@ focus_tree = {
 		id = ORI_magadha_claim
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ORI_gauda_claim }
-		x = 7
+		x = 6
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1940.1.1 } }
@@ -503,7 +504,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = ORI_magadha_claim }
 		prerequisite = { focus = ORI_cuttack_cantonment }
-		x = 5
+		x = 4
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 12 }

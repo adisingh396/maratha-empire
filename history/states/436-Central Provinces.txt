@@ -1,36 +1,27 @@
-
 state={
 	id=436
-	name="STATE_436" # Central provinces, was Jabalpur
-	manpower = 17990937
-	
+	name="STATE_436"
+	manpower=9990937
 	state_category = town
-	buildings_max_level_factor=1.800
-	
+	buildings_max_level_factor=1.000
 	resources={
 		chromium=4
-		steel=7
+		steel=12
 	}
-
 	history={
 		owner = MAR
-		add_extra_state_shared_building_slots = 8
 		add_core_of = MAR
-		
+		add_extra_state_shared_building_slots = 11
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 8
-			arms_factory = 4
+			infrastructure = 3
+			industrial_complex = 10
+			arms_factory = 5
+			air_base = 1
 		}
-		victory_points = {
-		4950 5
-		}
-
+		victory_points = { 4950 5 }
 	}
-
 	provinces={
-		1510  4883 4950 4953 7430 7497 7574 7619 8120 10030 10401 10801 10872 12375  12480 12781 12799 12854 10171
+		1510 4883 4950 4953 7430 7497 7574 7619 8120 10171 
 	}
-
-	local_supplies=0.0 
+	local_supplies=0.0
 }

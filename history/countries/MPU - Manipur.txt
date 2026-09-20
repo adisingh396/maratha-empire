@@ -39,6 +39,8 @@ set_popularities = {
 }
 add_ideas = {
     MPU_militia_legacy
+	MPU_hill_levies
+	extensive_conscription
 }
 recruit_character = MPU_churachand
 recruit_character = MPU_bodhchandra

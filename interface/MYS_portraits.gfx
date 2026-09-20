@@ -1,4 +1,44 @@
 spriteTypes = {
 	spriteType = { name = "GFX_portrait_mys_wadiyar" texturefile = "gfx/leaders/MYS/portrait_mys_wadiyar.dds" }
 	spriteType = { name = "GFX_portrait_mys_wadiyar_small" texturefile = "gfx/leaders/MYS/portrait_mys_wadiyar_small.dds" }
+	spriteType = {
+		name = "GFX_portrait_mys_jayachamarajendra"
+		texturefile = "gfx/leaders/MYS/portrait_mys_jayachamarajendra.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_jayachamarajendra_small"
+		texturefile = "gfx/leaders/MYS/portrait_mys_jayachamarajendra_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_visvesvaraya"
+		texturefile = "gfx/leaders/MYS/portrait_mys_visvesvaraya.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_visvesvaraya_small"
+		texturefile = "gfx/leaders/MYS/portrait_mys_visvesvaraya_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_mirza_ismail"
+		texturefile = "gfx/leaders/MYS/portrait_mys_mirza_ismail.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_mirza_ismail_small"
+		texturefile = "gfx/leaders/MYS/portrait_mys_mirza_ismail_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_thimayya"
+		texturefile = "gfx/leaders/MYS/portrait_mys_thimayya.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_thimayya_small"
+		texturefile = "gfx/leaders/MYS/portrait_mys_thimayya_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_cariappa"
+		texturefile = "gfx/leaders/MYS/portrait_mys_cariappa.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mys_cariappa_small"
+		texturefile = "gfx/leaders/MYS/portrait_mys_cariappa_small.dds"
+	}
 }

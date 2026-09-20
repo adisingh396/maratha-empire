@@ -1,89 +1,58 @@
-princely_build_civ = {
-	enable = {
-		OR = {
-			tag = HYD
-			tag = RJP
-			tag = MYS
-			tag = MAR
-			tag = HIN
-			tag = PJB
-			tag = BEN
-		}
-	}
+indian_major_peacetime_development = {
+	allowed = { OR = { original_tag = HYD original_tag = RJP original_tag = MYS original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR } }
+	enable = { has_war = no }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 100
-	}
+	ai_strategy = { type = building_target id = industrial_complex value = 70 }
+	ai_strategy = { type = building_target id = arms_factory value = 50 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 35 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 25 }
+	ai_strategy = { type = equipment_production_factor id = support value = 20 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 65 }
 }
-princely_build_mils = {
-	enable = {
-		OR = {
-			tag = HYD
-			tag = RJP
-			tag = MYS
-			tag = MAR
-			tag = HIN
-			tag = PJB
-			tag = BEN
-		}
-	}
+
+indian_minor_peacetime_development = {
+	allowed = { OR = { original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+	enable = { has_war = no }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 80
-	}
+	ai_strategy = { type = building_target id = industrial_complex value = 45 }
+	ai_strategy = { type = building_target id = arms_factory value = 45 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 45 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 15 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 45 }
 }
-princely_build_navy = {
-	enable = {
-		OR = {
-			tag = MAR
-			tag = HYD
-			tag = SIN
-			tag = BEN
-		}
-	}
+
+indian_wartime_mobilisation = {
+	allowed = { OR = { original_tag = HYD original_tag = RJP original_tag = MYS original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV original_tag = MAR } }
+	enable = { has_war = yes }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = dockyard
-		value = 100
-	}
+	ai_strategy = { type = building_target id = industrial_complex value = 10 }
+	ai_strategy = { type = building_target id = arms_factory value = 135 }
+	ai_strategy = { type = building_target id = dockyard value = 5 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 75 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 45 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 100 }
+	ai_strategy = { type = unit_ratio id = convoy value = -100 }
 }
-princely_research_navy = {
-	enable = { tag = MAR }
+
+indian_coastal_naval_program = {
+	allowed = { OR = { original_tag = BEN original_tag = MDR original_tag = TRV original_tag = WIS original_tag = SIN original_tag = ORI original_tag = MYS } }
+	enable = { has_war = no }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = research_weight_factor
-		id = mtg_landing_craft
-		value = 200
-	}
+	ai_strategy = { type = building_target id = dockyard value = 15 }
+	ai_strategy = { type = unit_ratio id = convoy value = -80 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 75 }
+	ai_strategy = { type = unit_ratio id = submarine value = 25 }
 }
-princely_army_gear = {
-	enable = {
-		OR = {
-			tag = HYD
-			tag = RJP
-			tag = MYS
-			tag = MAR
-			tag = HIN
-			tag = PJB
-			tag = BEN
-			tag = PAK
-			tag = KAS
-		}
-	}
+
+indian_landlocked_naval_restraint = {
+	allowed = { OR = { original_tag = HYD original_tag = RJP original_tag = HIN original_tag = PJB original_tag = KAS original_tag = ASM original_tag = MPU } }
+	enable = { always = yes }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 15
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = 30
-	}
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = unit_ratio id = convoy value = -100 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 0 }
+	ai_strategy = { type = unit_ratio id = submarine value = 0 }
 }

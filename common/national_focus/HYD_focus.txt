@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 25 }
 	id = HYD_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = HYD_osman_legacy
 		icon = GFX_goal_generic_major_war
-		x = 5
+		x = 10
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -23,7 +24,7 @@ focus_tree = {
 		id = HYD_deccan_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HYD_osman_legacy }
-		x = 5
+		x = 10
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -38,7 +39,7 @@ focus_tree = {
 		id = HYD_modern_nizam_forces
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_deccan_industry }
-		x = 3
+		x = 6
 		y = 2
 		cost = 10
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -52,7 +53,7 @@ focus_tree = {
 		id = HYD_french_advisors
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HYD_deccan_industry }
-		x = 7
+		x = 14
 		y = 2
 		cost = 10
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -66,7 +67,7 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_modern_nizam_forces }
 		prerequisite = { focus = HYD_french_advisors }
-		x = 5
+		x = 10
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 15 }
@@ -76,14 +77,14 @@ focus_tree = {
 			425 = { add_claim_by = HYD }
 			428 = { add_claim_by = HYD }
 			add_war_support = 0.10
-			country_event = { id = MAR_news.10 days = 1 }
+			news_event = { id = MAR_news.10 days = 1 }
 		}
 	}
 	focus = {
 		id = HYD_confront_maratha
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = HYD_deccan_sultanate_proclaimed }
-		x = 5
+		x = 10
 		y = 4
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -97,7 +98,7 @@ focus_tree = {
 		id = HYD_alliance_or_war
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = HYD_confront_maratha }
-		x = 3
+		x = 6
 		y = 5
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -110,7 +111,7 @@ focus_tree = {
 		id = HYD_pan_islamic_vision
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = HYD_confront_maratha }
-		x = 7
+		x = 14
 		y = 5
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -125,14 +126,14 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = HYD_alliance_or_war }
 		prerequisite = { focus = HYD_pan_islamic_vision }
-		x = 5
+		x = 10
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 20 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetLogRoot]: Focus Completed HYD_indian_empire"
-			hidden_effect = { maratha_claim_india_effect = yes }
+			hidden_effect = { indian_claim_subcontinent_effect = yes }
 			add_stability = 0.10
 		}
 	}
@@ -140,7 +141,7 @@ focus_tree = {
 		id = HYD_world_colonize
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = HYD_indian_empire }
-		x = 5
+		x = 10
 		y = 7
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -154,7 +155,7 @@ focus_tree = {
 		id = HYD_nizam_railway
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HYD_deccan_industry }
-		x = 1
+		x = 2
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -169,7 +170,7 @@ focus_tree = {
 		id = HYD_shakkar_nagar
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_nizam_railway }
-		x = 1
+		x = 2
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -184,7 +185,7 @@ focus_tree = {
 		id = HYD_azam_jahi_mills
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HYD_shakkar_nagar }
-		x = 1
+		x = 2
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -199,7 +200,7 @@ focus_tree = {
 		id = HYD_allwyn_works
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = HYD_azam_jahi_mills }
-		x = 1
+		x = 2
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -214,7 +215,7 @@ focus_tree = {
 		id = HYD_rtc_roads
 		icon = GFX_focus_generic_truck
 		prerequisite = { focus = HYD_allwyn_works }
-		x = 1
+		x = 2
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -229,7 +230,7 @@ focus_tree = {
 		id = HYD_begumpet_airfield
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HYD_rtc_roads }
-		x = 1
+		x = 2
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -244,7 +245,7 @@ focus_tree = {
 		id = HYD_ittehad_crisis
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HYD_deccan_sultanate_proclaimed }
-		x = 3
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -365,7 +366,7 @@ focus_tree = {
 		id = HYD_godavari_anecut
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HYD_nizam_railway }
-		x = 2
+		x = 4
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -380,7 +381,7 @@ focus_tree = {
 		id = HYD_cotton_belt
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_godavari_anecut }
-		x = 2
+		x = 4
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -395,7 +396,7 @@ focus_tree = {
 		id = HYD_groundnut_oil
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = HYD_cotton_belt }
-		x = 2
+		x = 4
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -410,7 +411,7 @@ focus_tree = {
 		id = HYD_famine_stocks
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_groundnut_oil }
-		x = 2
+		x = 4
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -425,7 +426,7 @@ focus_tree = {
 		id = HYD_agri_college
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_famine_stocks }
-		x = 2
+		x = 4
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -440,7 +441,7 @@ focus_tree = {
 		id = HYD_osman_sagar_second
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HYD_agri_college }
-		x = 2
+		x = 4
 		y = 14
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -455,7 +456,7 @@ focus_tree = {
 		id = HYD_standing_army
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_modern_nizam_forces }
-		x = 4
+		x = 8
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -471,7 +472,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HYD_standing_army }
 		bypass = { has_completed_focus = HYD_british_mission }
-		x = 4
+		x = 8
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -487,7 +488,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HYD_standing_army }
 		bypass = { has_completed_focus = HYD_french_mission }
-		x = 6
+		x = 12
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -502,7 +503,7 @@ focus_tree = {
 		id = HYD_golconda_artillery
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HYD_french_mission }
-		x = 4
+		x = 8
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -517,7 +518,7 @@ focus_tree = {
 		id = HYD_african_cavalry
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HYD_british_mission }
-		x = 6
+		x = 12
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -533,7 +534,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_golconda_artillery }
 		prerequisite = { focus = HYD_african_cavalry }
-		x = 5
+		x = 14
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -548,7 +549,7 @@ focus_tree = {
 		id = HYD_monsoon_maneuvers
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_staff_college }
-		x = 5
+		x = 14
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -563,7 +564,7 @@ focus_tree = {
 		id = HYD_observation_squadron
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HYD_french_advisors }
-		x = 8
+		x = 16
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -578,7 +579,7 @@ focus_tree = {
 		id = HYD_fighter_wing
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HYD_observation_squadron }
-		x = 8
+		x = 16
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -593,7 +594,7 @@ focus_tree = {
 		id = HYD_bomber_wing
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = HYD_fighter_wing }
-		x = 8
+		x = 16
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -608,7 +609,7 @@ focus_tree = {
 		id = HYD_transport_wing
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HYD_bomber_wing }
-		x = 8
+		x = 16
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -623,7 +624,7 @@ focus_tree = {
 		id = HYD_air_defence
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HYD_transport_wing }
-		x = 8
+		x = 16
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -638,7 +639,7 @@ focus_tree = {
 		id = HYD_municipal_reforms
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HYD_deccan_sultanate_proclaimed }
-		x = 10
+		x = 20
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -653,7 +654,7 @@ focus_tree = {
 		id = HYD_press_act
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HYD_municipal_reforms }
-		x = 10
+		x = 20
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -668,7 +669,7 @@ focus_tree = {
 		id = HYD_girls_schools
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_press_act }
-		x = 10
+		x = 20
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -683,7 +684,7 @@ focus_tree = {
 		id = HYD_legislative_council
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_girls_schools }
-		x = 10
+		x = 20
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -699,7 +700,7 @@ focus_tree = {
 		id = HYD_jacob_diamond
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_begumpet_airfield }
-		x = 11
+		x = 22
 		y = 14
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -714,7 +715,7 @@ focus_tree = {
 		id = HYD_falaknuma_palace
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_jacob_diamond }
-		x = 11
+		x = 22
 		y = 15
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -729,7 +730,7 @@ focus_tree = {
 		id = HYD_chowmahalla_court
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HYD_falaknuma_palace }
-		x = 11
+		x = 22
 		y = 16
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -744,7 +745,7 @@ focus_tree = {
 		id = HYD_purana_haveli
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_chowmahalla_court }
-		x = 11
+		x = 22
 		y = 17
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -759,7 +760,7 @@ focus_tree = {
 		id = HYD_jewellery_export
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = HYD_purana_haveli }
-		x = 11
+		x = 22
 		y = 18
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -774,7 +775,7 @@ focus_tree = {
 		id = HYD_toshakhana_audit
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_jewellery_export }
-		x = 11
+		x = 22
 		y = 19
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -789,7 +790,7 @@ focus_tree = {
 		id = HYD_osmania_medical
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_shakkar_nagar }
-		x = 12
+		x = 24
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -804,7 +805,7 @@ focus_tree = {
 		id = HYD_unani_hospital
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_osmania_medical }
-		x = 12
+		x = 24
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -819,7 +820,7 @@ focus_tree = {
 		id = HYD_nizam_college
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_unani_hospital }
-		x = 12
+		x = 24
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -834,7 +835,7 @@ focus_tree = {
 		id = HYD_arts_college
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HYD_nizam_college }
-		x = 12
+		x = 24
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -849,7 +850,7 @@ focus_tree = {
 		id = HYD_engineering_college
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HYD_arts_college }
-		x = 12
+		x = 24
 		y = 14
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -864,7 +865,7 @@ focus_tree = {
 		id = HYD_state_library
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HYD_engineering_college }
-		x = 12
+		x = 24
 		y = 15
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -879,7 +880,7 @@ focus_tree = {
 		id = HYD_golconda_brigade
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_monsoon_maneuvers }
-		x = 13
+		x = 26
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -894,7 +895,7 @@ focus_tree = {
 		id = HYD_hyderabad_lancers
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HYD_golconda_brigade }
-		x = 13
+		x = 26
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -909,7 +910,7 @@ focus_tree = {
 		id = HYD_arab_contingent
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_hyderabad_lancers }
-		x = 13
+		x = 26
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -925,7 +926,7 @@ focus_tree = {
 		id = HYD_artillery_school
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = HYD_arab_contingent }
-		x = 13
+		x = 26
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -941,7 +942,7 @@ focus_tree = {
 		id = HYD_signals_wing
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_artillery_school }
-		x = 13
+		x = 26
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -956,7 +957,7 @@ focus_tree = {
 		id = HYD_ordnance_depot
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HYD_signals_wing }
-		x = 13
+		x = 26
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -970,7 +971,7 @@ focus_tree = {
 		id = HYD_staff_ride
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_ordnance_depot }
-		x = 13
+		x = 26
 		y = 14
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -985,7 +986,7 @@ focus_tree = {
 		id = HYD_jamia_nizamia
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HYD_ittehad_crisis }
-		x = 14
+		x = 28
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1000,7 +1001,7 @@ focus_tree = {
 		id = HYD_darul_uloom
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_jamia_nizamia }
-		x = 14
+		x = 28
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1015,7 +1016,7 @@ focus_tree = {
 		id = HYD_urdu_quran
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HYD_darul_uloom }
-		x = 14
+		x = 28
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1030,7 +1031,7 @@ focus_tree = {
 		id = HYD_haj_subsidy
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_urdu_quran }
-		x = 14
+		x = 28
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1045,7 +1046,7 @@ focus_tree = {
 		id = HYD_mecca_embassy
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = HYD_haj_subsidy }
-		x = 14
+		x = 28
 		y = 14
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1060,7 +1061,7 @@ focus_tree = {
 		id = HYD_masulipatnam_patrol
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = HYD_world_colonize }
-		x = 9
+		x = 18
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1075,7 +1076,7 @@ focus_tree = {
 		id = HYD_coromandel_squadron
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = HYD_masulipatnam_patrol }
-		x = 9
+		x = 18
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1090,7 +1091,7 @@ focus_tree = {
 		id = HYD_bay_command
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = HYD_coromandel_squadron }
-		x = 9
+		x = 18
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1105,7 +1106,7 @@ focus_tree = {
 		id = HYD_andaman_eyes
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = HYD_bay_command }
-		x = 9
+		x = 18
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1120,7 +1121,7 @@ focus_tree = {
 		id = HYD_ocean_ambition
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = HYD_andaman_eyes }
-		x = 9
+		x = 18
 		y = 14
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1135,7 +1136,7 @@ focus_tree = {
 		id = HYD_deccan_chronicle
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = HYD_legislative_council }
-		x = 10
+		x = 20
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1150,7 +1151,7 @@ focus_tree = {
 		id = HYD_radio_deccan
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = HYD_deccan_chronicle }
-		x = 10
+		x = 20
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1166,7 +1167,7 @@ focus_tree = {
 		id = HYD_census_1941
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_radio_deccan }
-		x = 10
+		x = 20
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1181,7 +1182,7 @@ focus_tree = {
 		id = HYD_ration_system
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_census_1941 }
-		x = 10
+		x = 20
 		y = 11
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1196,7 +1197,7 @@ focus_tree = {
 		id = HYD_assembly_1946
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_ration_system }
-		x = 10
+		x = 20
 		y = 12
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1211,7 +1212,7 @@ focus_tree = {
 		id = HYD_responsible_govt
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HYD_assembly_1946 }
-		x = 10
+		x = 20
 		y = 13
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1226,7 +1227,7 @@ focus_tree = {
 		id = HYD_deccan_dominion
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_indian_empire }
-		x = 5
+		x = 10
 		y = 15
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -1242,7 +1243,7 @@ focus_tree = {
 		id = HYD_faithful_ally
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = HYD_deccan_dominion }
-		x = 5
+		x = 10
 		y = 16
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -1257,7 +1258,7 @@ focus_tree = {
 		id = HYD_paramountcy_talks
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HYD_faithful_ally }
-		x = 5
+		x = 10
 		y = 17
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -1272,7 +1273,7 @@ focus_tree = {
 		id = HYD_standstill_draft
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = HYD_paramountcy_talks }
-		x = 5
+		x = 10
 		y = 18
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -1287,7 +1288,7 @@ focus_tree = {
 		id = HYD_himayat_sagar
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HYD_osman_sagar_second }
-		x = 2
+		x = 4
 		y = 15
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1302,7 +1303,7 @@ focus_tree = {
 		id = HYD_musi_floodworks
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = HYD_himayat_sagar }
-		x = 2
+		x = 4
 		y = 16
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1317,7 +1318,7 @@ focus_tree = {
 		id = HYD_lift_irrigation
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = HYD_musi_floodworks }
-		x = 2
+		x = 4
 		y = 17
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1332,7 +1333,7 @@ focus_tree = {
 		id = HYD_airmail_service
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HYD_air_defence }
-		x = 8
+		x = 16
 		y = 8
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1347,7 +1348,7 @@ focus_tree = {
 		id = HYD_monsoon_flying
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = HYD_airmail_service }
-		x = 8
+		x = 16
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1362,7 +1363,7 @@ focus_tree = {
 		id = HYD_pilot_school
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = HYD_monsoon_flying }
-		x = 8
+		x = 16
 		y = 10
 		cost = 10
 		ai_will_do = { factor = 6 }
@@ -1378,7 +1379,7 @@ focus_tree = {
 		id = HYD_falaknuma_guard
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = HYD_toshakhana_audit }
-		x = 11
+		x = 22
 		y = 20
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -1393,7 +1394,7 @@ focus_tree = {
 		id = HYD_mandala_circle
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HYD_falaknuma_guard }
-		x = 12
+		x = 24
 		y = 16
 		cost = 10
 		ai_will_do = { factor = 8 }

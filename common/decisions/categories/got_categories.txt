@@ -1,0 +1,10 @@
+got_world_stage_category = {
+	icon = generic_alliance
+	allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+	visible = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+}
+got_secret_development_category = {
+	icon = generic_intelligence
+	allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+	visible = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+}

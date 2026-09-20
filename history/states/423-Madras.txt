@@ -1,32 +1,30 @@
 state={
 	id=423
 	name="STATE_423"
+	manpower=24993300
+	state_category = metropolis
+	buildings_max_level_factor=1.000
 	resources={
-		rubber=19.000
+		rubber=19
+		aluminium=4
+	}
+	history={
+		owner = MDR
+		add_core_of = MDR
+		add_extra_state_shared_building_slots = 9
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 10
+			arms_factory = 5
+			dockyard = 4
+			air_base = 1
+			10278 = { naval_base = 4 }
+		}
+		victory_points = { 10246 3 }
+		victory_points = { 10278 5 }
 	}
 	provinces={
 		1238 1268 1381 4327 4416 4420 7265 7363 7391 7436 7447 8067 10130 10190 10246 10274 10278 10808 12164 12275 
 	}
-	manpower=24993300
-	buildings_max_level_factor=2.000
-	state_category = metropolis
-	local_supplies=0.000
-	history={
-		owner = MDR
-		add_extra_state_shared_building_slots = 17
-		add_core_of = MDR
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 15
-			arms_factory = 8
-			dockyard = 4
-			air_base = 3
-		}
-		victory_points = {
-		10246 3
-		}
-		victory_points = {
-		10278 5
-		}
-	}
+	local_supplies=0.0
 }

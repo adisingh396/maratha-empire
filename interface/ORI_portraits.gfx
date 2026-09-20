@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_ori_gajapati"
+		texturefile = "gfx/leaders/ORI/portrait_ori_gajapati.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_gajapati_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_gajapati_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_mahatab"
+		texturefile = "gfx/leaders/ORI/portrait_ori_mahatab.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_mahatab_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_mahatab_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_biju"
+		texturefile = "gfx/leaders/ORI/portrait_ori_biju.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_biju_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_biju_small.dds"
+	}
+}

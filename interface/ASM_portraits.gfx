@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_asm_saadulah"
+		texturefile = "gfx/leaders/ASM/portrait_asm_saadulah.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_saadulah_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_saadulah_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_bordoloi"
+		texturefile = "gfx/leaders/ASM/portrait_asm_bordoloi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_bordoloi_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_bordoloi_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_fakhruddin"
+		texturefile = "gfx/leaders/ASM/portrait_asm_fakhruddin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_fakhruddin_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_fakhruddin_small.dds"
+	}
+}

@@ -1,23 +1,26 @@
 state={
 	id=988
 	name="STATE_988"
-	provinces={
-		5075 5105 8013 8044
-	}
+	manpower=1000000
 	state_category = rural
-	manpower = 600000
+	buildings_max_level_factor=1.000
+	resources={
+
+	}
 	history={
 		owner = SIN
 		add_core_of = SIN
+		add_extra_state_shared_building_slots = 1
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
 		}
-
-		victory_points = {
-		5105 3
-		}
+		victory_points = { 5105 3 }
 	}
-
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	provinces={
+		5075 5105 8013 8044 
+	}
+	local_supplies=0.0
 }

@@ -1,40 +1,27 @@
-
 state={
 	id=986
-	name="STATE_986" #
-	manpower = 16959758 
-	
+	name="STATE_986"
+	manpower=16959758
 	state_category = city
-	buildings_max_level_factor=2.000
-	
+	buildings_max_level_factor=1.000
 	resources={
-
+		steel=6
 	}
-
 	history={
 		owner = PJB
-		add_extra_state_shared_building_slots = 15
 		add_core_of = PJB
+		add_extra_state_shared_building_slots = 3
 		buildings = {
-			air_base = 1
 			infrastructure = 3
-			industrial_complex = 10
-			arms_factory = 11
+			industrial_complex = 5
+			arms_factory = 4
+			air_base = 1
 		}
-
-		victory_points = {
-		10729 3
-		}
-
-		victory_points = {
-		2076 1
-		}
-
+		victory_points = { 10729 3 }
+		victory_points = { 2076 1 }
 	}
-
 	provinces={
 		1129 2002 2076 3989 7106 10729 12708 12868 
 	}
-
-	local_supplies=0.0 
+	local_supplies=0.0
 }

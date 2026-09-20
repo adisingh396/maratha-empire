@@ -29,31 +29,26 @@ units = {
 	division = { division_template = "Gujarat Infantry Division" location = 9975 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "Gujarat Infantry Division" location = 10118 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "Gujarat Infantry Division" location = 9975 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Gujarat Infantry Division" location = 10118 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Gujarat Infantry Division" location = 9975 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Gujarat Infantry Division" location = 10118 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Gujarat Infantry Division" location = 9975 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Gujarat Infantry Division" location = 10118 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Gujarat Infantry Division" location = 9975 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 }
 
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
-		equipment = { type = infantry_equipment_1 creator = "WIS" }
-		requested_factories = 4
+		equipment = { type = infantry_equipment_1 }
+		requested_factories = 2
 		progress = 0.50
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = artillery_equipment_1 creator = "WIS" }
-		requested_factories = 2
+		equipment = { type = artillery_equipment_1 }
+		requested_factories = 1
 		progress = 0.35
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = support_equipment_1 creator = "WIS" }
-		requested_factories = 1
+		equipment = { type = support_equipment_1 }
+		requested_factories = 0
 		progress = 0.35
 		efficiency = 85
 	}

@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_pjb_bhupinder"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_bhupinder.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_bhupinder_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_bhupinder_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_yadavindra"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_yadavindra.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_yadavindra_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_yadavindra_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_ghaffar"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_ghaffar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_ghaffar_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_ghaffar_small.dds"
+	}
+}

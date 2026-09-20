@@ -57,65 +57,30 @@ units = {
 	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Maratha Garrison" location = 1349 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Maratha Garrison" location = 12295 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "Rajput Infantry Division" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 12295 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4291 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Rajput Infantry Division" location = 4950 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "Maratha Garrison" location = 1349 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 }
 
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
-		equipment = { type = infantry_equipment_1 creator = "MAR" }
+		equipment = { type = infantry_equipment_1 }
 		requested_factories = 4
 		progress = 0.50
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = artillery_equipment_1 creator = "MAR" }
+		equipment = { type = artillery_equipment_1 }
 		requested_factories = 2
 		progress = 0.35
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = support_equipment_1 creator = "MAR" }
+		equipment = { type = support_equipment_1 }
 		requested_factories = 1
 		progress = 0.35
 		efficiency = 85

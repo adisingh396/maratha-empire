@@ -1,28 +1,22 @@
 units = {
 	fleet = {
-		name = "ORI Main Fleet"
+		name = "Kalinga Flotilla"
 		naval_base = 11978
 		task_force = {
-			name = "ORI Battle Squadron"
+			name = "ORI Paradip Squadron"
 			location = 11978
-			ship = { name = "INS ORI HEA 1" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ORI version_name = "Heavy_Cruiser Class" } } }
+			ship = { name = "INS ORI LIG 1" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ORI } } }
+			ship = { name = "INS ORI LIG 2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ORI } } }
+			ship = { name = "INS ORI DES 3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI } } }
+			ship = { name = "INS ORI DES 4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI } } }
 		}
 		task_force = {
-			name = "ORI Cruiser Squadron"
+			name = "ORI Submarine Pair"
 			location = 11978
-			ship = { name = "INS ORI LIG 2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ORI version_name = "Light_Cruiser Class" } } }
-			ship = { name = "INS ORI LIG 3" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ORI version_name = "Light_Cruiser Class" } } }
-			ship = { name = "INS ORI DES 4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Destroyer Class" } } }
-			ship = { name = "INS ORI DES 5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Destroyer Class" } } }
-			ship = { name = "INS ORI DES 6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Destroyer Class" } } }
-			ship = { name = "INS ORI DES 7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Destroyer Class" } } }
-			ship = { name = "INS ORI DES 8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Destroyer Class" } } }
-			ship = { name = "INS ORI DES 9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ORI version_name = "Destroyer Class" } } }
-		}
-		task_force = {
-			name = "ORI Submarine Flotilla"
-			location = 11978
-			ship = { name = "INS ORI SS 10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ORI version_name = "Submarine Class" } } }
+			ship = { name = "INS ORI SS 5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ORI } } }
+			ship = { name = "INS ORI SS 6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ORI } } }
+			ship = { name = "INS ORI SS 7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ORI } } }
+			ship = { name = "INS ORI SS 8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ORI } } }
 		}
 	}
 }

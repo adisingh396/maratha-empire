@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_mpu_churachand"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_churachand.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_churachand_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_churachand_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_bodhchandra"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_bodhchandra.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_bodhchandra_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_bodhchandra_small.dds"
+	}
+}

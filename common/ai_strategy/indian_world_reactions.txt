@@ -1,0 +1,295 @@
+IND_MAR_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = MAR
+		MAR = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = MAR value = 45 }
+}
+
+IND_MAR_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = MAR
+		MAR = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = MAR value = 120 }
+}
+
+IND_HYD_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = HYD
+		HYD = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = HYD value = 45 }
+}
+
+IND_HYD_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = HYD
+		HYD = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = HYD value = 120 }
+}
+
+IND_MYS_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = MYS
+		MYS = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = MYS value = 45 }
+}
+
+IND_MYS_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = MYS
+		MYS = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = MYS value = 120 }
+}
+
+IND_RJP_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = RJP
+		RJP = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = RJP value = 45 }
+}
+
+IND_RJP_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = RJP
+		RJP = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = RJP value = 120 }
+}
+
+IND_BEN_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = BEN
+		BEN = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = BEN value = 45 }
+}
+
+IND_BEN_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = BEN
+		BEN = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = BEN value = 120 }
+}
+
+IND_HIN_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = HIN
+		HIN = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = HIN value = 45 }
+}
+
+IND_HIN_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = HIN
+		HIN = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = HIN value = 120 }
+}
+
+IND_PJB_great_power_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = PJB
+		PJB = {
+			has_country_flag = indian_great_power_stage
+			NOT = { has_country_flag = indian_superpower_stage }
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = PJB value = 45 }
+}
+
+IND_PJB_superpower_reaction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = JAP
+			original_tag = USA
+			original_tag = SOV
+			original_tag = GER
+		}
+	}
+	enable = {
+		country_exists = PJB
+		PJB = { has_country_flag = indian_superpower_stage }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = PJB value = 120 }
+}
+
+ENG_defend_indian_ocean_order = {
+	allowed = { original_tag = ENG }
+	enable = { has_global_flag = indian_ocean_order_announced }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = protect id = RAJ value = 60 }
+}
+
+JAP_contest_indian_ocean_order = {
+	allowed = { original_tag = JAP }
+	enable = { has_global_flag = indian_ocean_order_announced }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = contain id = RAJ value = 45 }
+	ai_strategy = { type = protect id = SIA value = 30 }
+}
+
+USA_balance_indian_superpower = {
+	allowed = { original_tag = USA }
+	enable = { has_global_flag = indian_superpower_announced }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = protect id = PHI value = 35 }
+	ai_strategy = { type = befriend id = ENG value = 25 }
+}

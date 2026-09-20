@@ -1,0 +1,127 @@
+# MAR_got events — world-stage & secret-development branch outcomes
+# MAR_got.1 Allies, .2 Axis, .3 Comintern, .4 League, .5 intervene, .6 ocean, .7 E Africa, .8 SE Asia, .9 rearmament
+
+add_namespace = MAR_got
+
+country_event = {
+	id = MAR_got.1
+	title = MAR_got.1_title
+	desc = MAR_got.1_desc
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.1_a
+		ai_chance = { base = 10 }
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_got.2
+	title = MAR_got.2_title
+	desc = MAR_got.2_desc
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.2_a
+		ai_chance = { base = 10 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_got.3
+	title = MAR_got.3_title
+	desc = MAR_got.3_desc
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.3_a
+		ai_chance = { base = 10 }
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = MAR_got.4
+	title = MAR_got.4_title
+	desc = MAR_got.4_desc
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.4_a
+		ai_chance = { base = 10 }
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = MAR_got.5
+	title = MAR_got.5_title
+	desc = MAR_got.5_desc
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.5_a
+		ai_chance = { base = 10 }
+		army_experience = 5
+	}
+}
+
+country_event = {
+	id = MAR_got.6
+	title = MAR_got.6_title
+	desc = MAR_got.6_desc
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.6_a
+		ai_chance = { base = 10 }
+		navy_experience = 15
+	}
+}
+
+country_event = {
+	id = MAR_got.7
+	title = MAR_got.7_title
+	desc = MAR_got.7_desc
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.7_a
+		ai_chance = { base = 10 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = MAR_got.8
+	title = MAR_got.8_title
+	desc = MAR_got.8_desc
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.8_a
+		ai_chance = { base = 10 }
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = MAR_got.9
+	title = MAR_got.9_title
+	desc = MAR_got.9_desc
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MAR_got.9_a
+		ai_chance = { base = 7 }
+		add_war_support = 0.03
+	}
+	option = {
+		name = MAR_got.9_b
+		ai_chance = { base = 3 }
+		add_political_power = 25
+		add_stability = -0.02
+	}
+}

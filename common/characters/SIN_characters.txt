@@ -2,7 +2,7 @@ characters = {
 SIN_soomro = {
 	name = "Allah Bakhsh Soomro"
 	portraits = {
-		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+		civilian = { large = GFX_portrait_sin_soomro small = GFX_portrait_sin_soomro_small }
 	}
 	country_leader = {
 		ideology = despotism

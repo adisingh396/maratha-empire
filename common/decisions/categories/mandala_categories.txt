@@ -16,7 +16,6 @@ mandala_politics_category = {
 			original_tag = ORI
 			original_tag = ASM
 			original_tag = MPU
-			original_tag = PAK
 			original_tag = TRV
 		}
 	}
@@ -36,7 +35,6 @@ mandala_politics_category = {
 			original_tag = ORI
 			original_tag = ASM
 			original_tag = MPU
-			original_tag = PAK
 			original_tag = TRV
 		}
 	}

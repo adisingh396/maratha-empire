@@ -13,6 +13,7 @@ set_technology = {
 
 	early_fighter = 1
 	naval_bomber1 = 1
+	electronic_mechanical_engineering = 1
 }
 
 if = {
@@ -37,6 +38,13 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		interwar_antiair = 1
+		basic_torpedo = 1
+		electronic_mechanical_engineering = 1
 	}
 }
 set_grand_doctrine = grand_battleplan
@@ -56,13 +64,14 @@ set_popularities = {
 }
 add_ideas = {
 	TRV_kerala_legacy
+	TRV_monazite_sands
+	extensive_conscription
 }
 recruit_character = TRV_thirunal
 recruit_character = TRV_cp
 promote_character = TRV_thirunal
 set_oob = "TRV_1936"
 set_air_oob = "TRV_1936_air"
-set_naval_oob = "TRV_1936_naval"
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -144,3 +153,4 @@ create_equipment_variant = {
 	}
 }
 }
+set_naval_oob = "TRV_1936_naval"

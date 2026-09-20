@@ -129,7 +129,6 @@ mandala_politics_category = {
 				original_tag = WIS
 				original_tag = ORI
 				original_tag = ASM
-				original_tag = PAK
 			}
 		}
 		available = {
@@ -151,7 +150,6 @@ mandala_politics_category = {
 				original_tag = WIS
 				original_tag = ORI
 				original_tag = ASM
-				original_tag = PAK
 			}
 		}
 		cost = 40

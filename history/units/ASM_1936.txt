@@ -30,37 +30,27 @@ units = {
 	division = { division_template = "ASM Infantry Division" location = 1116 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "ASM Infantry Division" location = 997 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "ASM Infantry Division" location = 1497 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "ASM Infantry Division" location = 1116 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "ASM Infantry Division" location = 997 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "ASM Infantry Division" location = 1497 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 1116 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 997 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 1497 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 1116 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 997 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 1497 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 1116 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "ASM Infantry Division" location = 997 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "ASM Infantry Division" location = 1497 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 }
 
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
-		equipment = { type = infantry_equipment_1 creator = "ASM" }
-		requested_factories = 4
+		equipment = { type = infantry_equipment_1 }
+		requested_factories = 2
 		progress = 0.50
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = artillery_equipment_1 creator = "ASM" }
-		requested_factories = 2
+		equipment = { type = artillery_equipment_1 }
+		requested_factories = 1
 		progress = 0.35
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = support_equipment_1 creator = "ASM" }
-		requested_factories = 1
+		equipment = { type = support_equipment_1 }
+		requested_factories = 0
 		progress = 0.35
 		efficiency = 85
 	}

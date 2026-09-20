@@ -1,0 +1,27 @@
+state={
+	id=1082
+	name="STATE_1082"
+	manpower=4500000
+	state_category = town
+	buildings_max_level_factor=1.000
+	resources={
+		steel=4
+		chromium=3
+	}
+	history={
+		owner = HYD
+		add_core_of = HYD
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 1
+		}
+		victory_points = { 4472 3 }
+	}
+	provinces={
+		4472 5019 5063 7060 
+	}
+	local_supplies=0.0
+}

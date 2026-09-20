@@ -2,7 +2,7 @@ princely_shared_category = {
 
 	princely_hold_durbar = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 49 }
 		visible = { always = yes }
 		cost = 50
@@ -16,7 +16,7 @@ princely_shared_category = {
 
 	princely_military_parade = {
 		icon = generic_manpower
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 39 has_war_support < 0.9 }
 		visible = { always = yes }
 		cost = 40
@@ -31,7 +31,7 @@ princely_shared_category = {
 
 	princely_industrial_drive = {
 		icon = generic_production
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 74 }
 		visible = { always = yes }
 		cost = 75
@@ -47,7 +47,7 @@ princely_shared_category = {
 
 	princely_court_intrigue = {
 		icon = generic_intrigue
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_stability > 0.4 }
 		visible = { always = yes }
 		cost = 0
@@ -83,7 +83,7 @@ princely_shared_category = {
 	}
 	princely_grand_grand_review = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -96,7 +96,7 @@ princely_shared_category = {
 	}
 	princely_grand_state_banquet = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -109,7 +109,7 @@ princely_shared_category = {
 	}
 	princely_grand_war_bonds = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -122,7 +122,7 @@ princely_shared_category = {
 	}
 	princely_grand_militia_muster = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -135,7 +135,7 @@ princely_shared_category = {
 	}
 	princely_grand_naval_review = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -148,7 +148,7 @@ princely_shared_category = {
 	}
 	princely_grand_air_display = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -161,7 +161,7 @@ princely_shared_category = {
 	}
 	princely_grand_census_update = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -174,7 +174,7 @@ princely_shared_category = {
 	}
 	princely_grand_arsenal_audit = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90
@@ -187,7 +187,7 @@ princely_shared_category = {
 	}
 	princely_grand_durbar_oath = {
 		icon = generic_crown
-		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = PAK original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
+		allowed = { OR = { original_tag = MAR original_tag = HYD original_tag = MYS original_tag = RJP original_tag = HIN original_tag = PJB original_tag = BEN original_tag = MDR original_tag = WIS original_tag = SIN original_tag = KAS original_tag = ORI original_tag = ASM original_tag = MPU original_tag = TRV } }
 		available = { has_political_power > 89 }
 		visible = { always = yes }
 		cost = 90

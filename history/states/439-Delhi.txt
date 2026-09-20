@@ -1,25 +1,26 @@
 state={
 	id=439
 	name="STATE_439"
-	provinces={
-		 2032 2086 10794 11955  
-	}
-	manpower = 2500000
-	buildings_max_level_factor=2.000
+	manpower=2500000
 	state_category = large_city
-	local_supplies=1.000
+	buildings_max_level_factor=1.000
+	resources={
+		aluminium=2
+	}
 	history={
 		owner = HIN
-		add_extra_state_shared_building_slots = 9
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 12
-			arms_factory = 5
-			air_base = 4
-		}
 		add_core_of = HIN
-		victory_points = {
-		2086 30
+		add_extra_state_shared_building_slots = 3
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 4
+			air_base = 1
 		}
+		victory_points = { 2086 30 }
 	}
+	provinces={
+		2032 2086 10794 11955 
+	}
+	local_supplies=0.0
 }

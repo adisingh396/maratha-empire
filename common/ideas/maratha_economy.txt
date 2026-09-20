@@ -1,0 +1,150 @@
+ideas = {
+	country = {
+		# ===== ECONOMIC IDENTITY SPIRITS (one specialty per nation) =====
+		MAR_machine_tool_arsenals = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BEN_calcutta_mills = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				industrial_capacity_factory = 0.12
+				production_speed_industrial_complex_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		HYD_nizam_treasury = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = {
+				# richest man in the world: gold buys industry
+				consumer_goods_factor = -0.10
+				political_power_gain = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		HIN_gangetic_multitudes = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				recruitable_population_factor = 0.03
+				conscription_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		PJB_martial_races = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				recruitable_population_factor = 0.02
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		MYS_model_state = {
+			allowed = { original_tag = MYS }
+			removal_cost = -1
+			picture = generic_electronics
+			modifier = {
+				research_speed_factor = 0.05
+				air_doctrine_cost_factor = -0.10
+				production_speed_air_base_factor = 0.15
+			}
+		}
+		MDR_textile_yards = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				consumer_goods_factor = -0.08
+				production_speed_dockyard_factor = 0.12
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		RJP_marwari_finance = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+		WIS_merchant_princes = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = {
+				trade_opinion_factor = 0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		TRV_monazite_sands = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.08
+				local_resources_factor = 0.10
+			}
+		}
+		SIN_karachi_gateway = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = {
+				production_speed_dockyard_factor = 0.10
+				local_resources_factor = 0.10
+			}
+		}
+		ORI_mineral_belt = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_mining
+			modifier = {
+				local_resources_factor = 0.20
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		ASM_digboi_fields = {
+			allowed = { original_tag = ASM }
+			removal_cost = -1
+			picture = generic_oil
+			modifier = {
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		KAS_mountain_bastion = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_mountaineers
+			modifier = {
+				army_core_defence_factor = 0.10
+				acclimatization_cold_climate_gain_factor = 0.20
+			}
+		}
+		MPU_hill_levies = {
+			allowed = { original_tag = MPU }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				recruitable_population_factor = 0.02
+				army_core_defence_factor = 0.08
+			}
+		}
+	}
+}

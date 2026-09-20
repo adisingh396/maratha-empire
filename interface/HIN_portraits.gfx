@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_hin_chhatari"
+		texturefile = "gfx/leaders/HIN/portrait_hin_chhatari.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_chhatari_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_chhatari_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_pant"
+		texturefile = "gfx/leaders/HIN/portrait_hin_pant.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_pant_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_pant_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_sapru"
+		texturefile = "gfx/leaders/HIN/portrait_hin_sapru.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_sapru_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_sapru_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_chaudhuri"
+		texturefile = "gfx/leaders/HIN/portrait_hin_chaudhuri.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_chaudhuri_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_chaudhuri_small.dds"
+	}
+}

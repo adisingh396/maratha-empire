@@ -1,25 +1,26 @@
 state={
 	id=437
 	name="STATE_437"
+	manpower=9628198
+	state_category = town
+	buildings_max_level_factor=1.000
+	resources={
+		steel=4
+	}
+	history={
+		owner = HIN
+		add_core_of = HIN
+		add_extra_state_shared_building_slots = 7
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 4
+			air_base = 1
+		}
+		victory_points = { 4106 5 }
+	}
 	provinces={
 		2092 2105 4106 7080 7205 8076 10816 11993 11995 12080 
 	}
-	manpower=9628198
-	buildings_max_level_factor=1.500
-	state_category = rural
-	local_supplies=0.000
-
-	history={
-		owner = HIN
-		add_extra_state_shared_building_slots = 5
-		add_core_of = HIN
-		victory_points = {
-		4106 5
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 5
-			arms_factory = 2
-		}
-}
+	local_supplies=0.0
 }

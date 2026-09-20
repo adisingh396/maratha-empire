@@ -1,40 +1,30 @@
-state = {
-	id = 428
-	name = "STATE_428"
-	manpower = 10489446
-	
-	
-	state_category = town
-	resources = {
-		oil = 6 
+state={
+	id=428
+	name="STATE_428"
+	manpower=5689446
+	state_category = city
+	buildings_max_level_factor=1.000
+	resources={
+		oil=8
+		steel=4
 	}
-
-	history = {
-
+	history={
 		owner = WIS
-		add_extra_state_shared_building_slots = 2
 		add_core_of = WIS
-
-		victory_points = {
-		10118 1
-		}
-
-		victory_points = {
-		9975 10
-		}
-
+		add_extra_state_shared_building_slots = 10
 		buildings = {
+			infrastructure = 3
+			industrial_complex = 10
+			arms_factory = 4
+			dockyard = 2
 			air_base = 1
-			industrial_complex = 3
-			arms_factory = 3
-			infrastructure = 2
+			9975 = { naval_base = 2 }
 		}
-
+		victory_points = { 10118 1 }
+		victory_points = { 9975 10 }
 	}
-
-	provinces = {
-		1061 1103 1144 1190 4064 4090 4132 7020 7165 7207 9975 10118 12037 12092 
+	provinces={
+		1061 1103 1144 1190 9975 10118 12092 
 	}
-
-	local_supplies = 0.0 
+	local_supplies=0.0
 }

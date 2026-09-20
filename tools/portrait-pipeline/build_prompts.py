@@ -1,59 +1,85 @@
 #!/usr/bin/env python3
-"""
-Build 1 grid prompt (4 portraits) for Maratha Empire HOI4 — mimics vedic_lore build_prompts.py
-Generates strict 2x2 grid with shared painterly military portrait style.
-"""
-STYLE = (
-    "high-quality hand-painted grand-strategy military portrait, matching classic WWII-era strategy game character portraits. "
-    "Semi-realistic traditional painting aesthetic with realistic facial anatomy, strong likeness, detailed eyes, natural skin texture, subtle wrinkles, carefully painted hair, and controlled painterly brushwork. "
-    "Face highly detailed and recognizable while retaining slightly stylized illustrated appearance. "
-    "Soft directional studio lighting, gentle shadows across the face, subtle highlights, strong three-dimensional depth without cinematic or photographic look. "
-    "Muted historical color palette: olive green, military gray, faded brown, beige, cream, subdued blue, restrained gold accents. Avoid saturated modern colors. "
-    "Clothing and accessories with fine painted detail, realistic fabric folds, stitching, buttons, metallic elements, medals, insignia, military uniform textures, physically painted not digitally rendered. "
-    "Simple warm beige/gray painted background with subtle parchment/canvas grain, faint tonal variation, soft vignette, extremely understated face remains focal point. "
-    "Overall resembles professionally commissioned 1930s-1940s military portrait illustration: realistic but painterly, slightly aged, restrained, authoritative, highly detailed, visually consistent across collection. "
-    "AVOID: photorealism, CGI, 3D rendering, anime, cartoon, comic-book style, glossy digital art, plastic skin, excessive sharpening, neon colors, modern photography, cinematic lighting, dramatic backgrounds, excessive saturation, fantasy elements, overly stylized facial features"
-)
+"""Build deterministic 2x2 portrait prompts from manifest.json."""
+from __future__ import annotations
 
-# 4 leaders with far more description than just names
-quadrants = [
-    "Chhatrapati Shivaji Maharaj, age 45, majestic mature Maratha king, full black beard with subtle silver, long wavy hair under saffron turban with white pearl string and small gold kalgi, intense dark brown eyes with wisdom lines, olive skin, wearing Jagdamba steel chest armor over deep olive green angarkha with gold braid, shoulder chainmail visible, holding ornate curved sword hilt, authoritative calm expression, soft beige parchment background",
-    "Peshwa Baji Rao I, age 30, lean youthful warrior Peshwa, sharp thin mustache, long hair tied, distinctive red Peshwai pagdi with gold border and white feather plume, sharp nose, light wheatish skin, wearing Maratha Peshwai military coat in faded olive brown with brass buttons, gold sash, pearl necklace, stern focused gaze, same beige background, painterly fabric folds",
-    "Maharani Tarabai, age 38, fierce Maratha queen regent, sharp features, large dark eyes with kohl, red bindi, wheatish skin, long black hair under translucent red saree pallu with gold zari border draped as military shawl, wearing emerald necklace and nath, cream blouse, holding dagger sheath, dignified commanding expression, subtle wrinkles, same muted background",
-    "Peshwa Madhavrao III (fictional 1936 modernized), age 32, clean-shaven sharp jawline, short neatly combed black hair, light olive skin, wearing khaki British-Maratha hybrid military uniform with saffron sash, brass buttons, Maratha sun insignia, service ribbons and small medals, high collar, modern peaked cap with Maratha crest held under arm, confident forward-looking expression, same beige canvas background"
-]
+import argparse
+import json
+from pathlib import Path
 
-prompts = []
-for i in range(0, len(quadrants), 4):
-    chunk = quadrants[i:i+4]
-    while len(chunk) < 4:
-        chunk.append(chunk[-1])
-    quadrant_text = ""
-    for idx, q in enumerate(chunk):
-        label = ["Top-Left (Quadrant 1)", "Top-Right (Quadrant 2)", "Bottom-Left (Quadrant 3)", "Bottom-Right (Quadrant 4)"][idx]
-        quadrant_text += f"{label}: {q}.\n"
-    full_prompt = (
-        f"Generate ONE high-resolution image as a strict 2x2 grid (four equal quadrants, subtle thin beige divider lines, no outer border). "
-        f"CRITICAL: All four quadrants share EXACT same consistent art style: {STYLE}. "
-        f"ABSOLUTELY NO text, no watermark, no labels, no numbers in image. "
-        f"Each quadrant is a distinct portrait, stylistically identical, cinematic quality, 8K detailed, centered bust, shoulders up, eye-level:\n"
-        f"{quadrant_text}\n"
-        f"Ensure cross-quadrant consistency: identical color palette, brushwork, lighting, atmospheric haze, canvas grain and ornamental detail. "
-        f"Grand strategy 1930s military portrait series, historically grounded, no fantasy, no photorealism."
+PIPELINE_DIR = Path(__file__).resolve().parent
+DEFAULT_MANIFEST = PIPELINE_DIR / "manifest.json"
+QUADRANTS = ("Top-Left", "Top-Right", "Bottom-Left", "Bottom-Right")
+
+
+def load_manifest(path: Path) -> dict:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    portraits = data.get("portraits")
+    if not isinstance(portraits, list) or not portraits:
+        raise ValueError("manifest must contain a non-empty portraits list")
+    required = {"character", "country", "stem", "description"}
+    seen_characters: set[str] = set()
+    seen_stems: set[str] = set()
+    for index, portrait in enumerate(portraits, 1):
+        missing = required.difference(portrait)
+        if missing:
+            raise ValueError(f"portrait {index} missing: {', '.join(sorted(missing))}")
+        character = portrait["character"]
+        stem = portrait["stem"]
+        if character in seen_characters:
+            raise ValueError(f"duplicate character: {character}")
+        if stem in seen_stems:
+            raise ValueError(f"duplicate stem: {stem}")
+        seen_characters.add(character)
+        seen_stems.add(stem)
+    return data
+
+
+def build_prompts(manifest: dict) -> list[str]:
+    style = manifest["style"].strip()
+    portraits = manifest["portraits"]
+    prompts: list[str] = []
+    for start in range(0, len(portraits), 4):
+        chunk = portraits[start : start + 4]
+        while len(chunk) < 4:
+            chunk.append(chunk[-1])
+        descriptions = "\n".join(
+            f"{QUADRANTS[index]} (Quadrant {index + 1}): {portrait['description']}."
+            for index, portrait in enumerate(chunk)
+        )
+        prompts.append(
+            "Generate ONE high-resolution image as a strict 2x2 grid with four equal quadrants, "
+            "thin neutral divider lines, and no outer border. All quadrants must use the exact same "
+            f"art direction: {style}. No text, watermark, labels, numbers, signatures, or frames. "
+            "Each quadrant is one distinct centered shoulders-up portrait at eye level.\n"
+            f"{descriptions}\n"
+            "Keep palette, scale, lighting, brushwork, background, and canvas grain consistent."
+        )
+    return prompts
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument("--check", action="store_true", help="validate without writing prompt files")
+    args = parser.parse_args()
+
+    manifest = load_manifest(args.manifest.resolve())
+    prompts = build_prompts(manifest)
+    if args.check:
+        print(f"valid: {len(manifest['portraits'])} portraits, {len(prompts)} grids")
+        return
+
+    (PIPELINE_DIR / "prompts.txt").write_text(
+        "\n".join(prompt.replace("\n", " ") for prompt in prompts) + "\n",
+        encoding="utf-8",
     )
-    prompts.append(full_prompt)
+    pretty = "".join(
+        f"=== PROMPT {index:02d} / {len(prompts)} ===\n{prompt}\n\n"
+        for index, prompt in enumerate(prompts, 1)
+    )
+    (PIPELINE_DIR / "prompts_pretty.txt").write_text(pretty, encoding="utf-8")
+    print(f"wrote {len(prompts)} prompts for {len(manifest['portraits'])} portraits")
 
-print(f"Total quadrants: {len(quadrants)}")
-print(f"Total grid prompts: {len(prompts)}")
 
-with open("prompts.txt", "w", encoding="utf-8") as f:
-    for p in prompts:
-        single_line = p.replace("\n", " ").strip()
-        f.write(single_line + "\n")
-
-with open("prompts_pretty.txt", "w", encoding="utf-8") as f:
-    for idx, p in enumerate(prompts, 1):
-        f.write(f"=== PROMPT {idx:02d} / {len(prompts)} ===\n")
-        f.write(p + "\n\n")
-
-print(f"Wrote prompts.txt ({len(prompts)} grids)")
+if __name__ == "__main__":
+    main()

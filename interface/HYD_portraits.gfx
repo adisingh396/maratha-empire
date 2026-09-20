@@ -1,4 +1,52 @@
 spriteTypes = {
 	spriteType = { name = "GFX_portrait_hyd_nizam" texturefile = "gfx/leaders/HYD/portrait_hyd_nizam.dds" }
 	spriteType = { name = "GFX_portrait_hyd_nizam_small" texturefile = "gfx/leaders/HYD/portrait_hyd_nizam_small.dds" }
+	spriteType = {
+		name = "GFX_portrait_hyd_laik_ali"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_laik_ali.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_laik_ali_small"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_laik_ali_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_moin_nawaz"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_moin_nawaz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_moin_nawaz_small"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_moin_nawaz_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_el_edroos"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_el_edroos.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_el_edroos_small"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_el_edroos_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_abid_hasan"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_abid_hasan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_abid_hasan_small"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_abid_hasan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_kasim_razvi"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_kasim_razvi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_kasim_razvi_small"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_kasim_razvi_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_bahadur_yar"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_bahadur_yar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hyd_bahadur_yar_small"
+		texturefile = "gfx/leaders/HYD/portrait_hyd_bahadur_yar_small.dds"
+	}
 }

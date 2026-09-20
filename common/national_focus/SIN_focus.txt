@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 15 }
 	id = SIN_focus
 	country = { factor = 0 modifier = { add = 10 tag = SIN } }
 	default = no
@@ -25,7 +26,7 @@ focus_tree = {
 		x = 5 y = 2 cost = 10
 		ai_will_do = { factor = 15 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = { log = "[GetLogRoot]: Focus Completed SIN_claim_indus" hidden_effect = { maratha_claim_india_effect = yes } }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed SIN_claim_indus" hidden_effect = { indian_claim_subcontinent_effect = yes } }
 	}
 	focus = {
 		id = SIN_sukkur_barrage

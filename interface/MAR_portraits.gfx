@@ -31,7 +31,6 @@ spriteTypes = {
 		name = "GFX_portrait_mar_madhavrao_small"
 		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao_small.dds"
 	}
-	# Backward compatibility alias (uppercase MAR)
 	spriteType = {
 		name = "GFX_portrait_MAR_madhavrao"
 		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao.dds"
@@ -39,5 +38,45 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_MAR_madhavrao_small"
 		texturefile = "gfx/leaders/MAR/portrait_mar_madhavrao_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_nana_fadnavis"
+		texturefile = "gfx/leaders/MAR/portrait_mar_nana_fadnavis.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_nana_fadnavis_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_nana_fadnavis_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_moropant_trimbak"
+		texturefile = "gfx/leaders/MAR/portrait_mar_moropant_trimbak.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_moropant_trimbak_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_moropant_trimbak_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_kanhoji_angre_iii"
+		texturefile = "gfx/leaders/MAR/portrait_mar_kanhoji_angre_iii.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_kanhoji_angre_iii_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_kanhoji_angre_iii_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_santaji_ghorpade_ii"
+		texturefile = "gfx/leaders/MAR/portrait_mar_santaji_ghorpade_ii.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_santaji_ghorpade_ii_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_santaji_ghorpade_ii_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_ibrahim_gardi"
+		texturefile = "gfx/leaders/MAR/portrait_mar_ibrahim_gardi.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mar_ibrahim_gardi_small"
+		texturefile = "gfx/leaders/MAR/portrait_mar_ibrahim_gardi_small.dds"
 	}
 }

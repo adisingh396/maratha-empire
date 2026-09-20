@@ -1,8 +1,20 @@
 characters = {
+WIS_sayajirao = {
+	name = "Sayajirao Gaekwad III"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_sayajirao small = GFX_portrait_wis_sayajirao_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
 WIS_gaekwad = {
 	name = "Pratap Singh Gaekwad"
 	portraits = {
-		civilian = { large = GFX_portrait_mar_madhavrao small = GFX_portrait_mar_madhavrao_small }
+		civilian = { large = GFX_portrait_wis_gaekwad small = GFX_portrait_wis_gaekwad_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +26,7 @@ WIS_gaekwad = {
 WIS_jamsahib = {
 	name = "Digvijaysinhji Jam Sahib"
 	portraits = {
-		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		army = { large = GFX_portrait_wis_jamsahib small = GFX_portrait_wis_jamsahib_small }
 	}
 	corps_commander = {
 		traits = { aggressive_assaulter }

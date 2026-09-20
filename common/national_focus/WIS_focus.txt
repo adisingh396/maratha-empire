@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 15 }
 	id = WIS_focus
 	country = { factor = 0 modifier = { add = 10 tag = WIS } }
 	default = no
@@ -25,7 +26,7 @@ focus_tree = {
 		x = 5 y = 2 cost = 10
 		ai_will_do = { factor = 15 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_unify_gujarat" hidden_effect = { maratha_claim_india_effect = yes } }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_unify_gujarat" hidden_effect = { indian_claim_subcontinent_effect = yes } }
 	}
 	focus = {
 		id = WIS_ahmedabad_mills

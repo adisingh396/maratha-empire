@@ -1,34 +1,30 @@
-
 state={
 	id=441
 	name="STATE_441"
-	manpower = 2598027
-	
+	manpower=4000000
 	state_category = town
-
+	buildings_max_level_factor=1.000
+	resources={
+		steel=2
+		chromium=2
+		tungsten=2
+	}
 	history={
 		owner = KAS
-		buildings = {
-			air_base = 1
-			industrial_complex = 3
-			arms_factory = 1
-			infrastructure = 1
-		}
-		add_claim_by = PAK
 		add_core_of = KAS
-
-		victory_points = {
-		12754 2
+		add_claim_by = PJB
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 1
 		}
-
-		victory_points = {
-		8005 1
-		}
+		victory_points = { 12754 2 }
+		victory_points = { 8005 1 }
 	}
-
 	provinces={
 		5042 7273 7316 8005 10905 12754 12884 
 	}
-
-	local_supplies=0.0 
+	local_supplies=0.0
 }

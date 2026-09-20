@@ -1,107 +1,108 @@
-MAR_industrial_focus = {
+MAR_consolidation = {
 	allowed = { original_tag = MAR }
-	enable = { tag = MAR }
+	enable = { tag = MAR NOT = { has_country_flag = indian_great_power_stage } }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = research_weight_factor
-		id = concentrated_industry
-		value = 200
-	}
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 100
-	}
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 100
-	}
+	ai_strategy = { type = building_target id = industrial_complex value = 85 }
+	ai_strategy = { type = building_target id = arms_factory value = 65 }
+	ai_strategy = { type = building_target id = dockyard value = 15 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 45 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 30 }
+	ai_strategy = { type = equipment_production_factor id = support value = 20 }
+	ai_strategy = { type = role_ratio id = infantry value = 85 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 65 }
+	ai_strategy = { type = unit_ratio id = convoy value = -90 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 0 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 80 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
 }
-MAR_naval_focus = {
+
+MAR_consolidation_at_war = {
 	allowed = { original_tag = MAR }
-	enable = { tag = MAR }
+	enable = { tag = MAR has_war = yes NOT = { has_country_flag = indian_great_power_stage } }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = research_weight_factor
-		id = mtg_landing_craft
-		value = 150
-	}
-	ai_strategy = {
-		type = building_target
-		id = dockyard
-		value = 100
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = 15
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = 60
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = submarine
-		value = 10
-	}
+	ai_strategy = { type = building_target id = arms_factory value = 140 }
+	ai_strategy = { type = building_target id = industrial_complex value = 20 }
+	ai_strategy = { type = building_target id = dockyard value = 0 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 80 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 55 }
+	ai_strategy = { type = equipment_production_factor id = support value = 35 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 100 }
+	ai_strategy = { type = unit_ratio id = convoy value = -100 }
 }
-MAR_convoy_discipline = {
+
+MAR_regional_hegemon = {
 	allowed = { original_tag = MAR }
-	enable = { tag = MAR }
+	enable = { tag = MAR has_country_flag = indian_great_power_stage NOT = { has_country_flag = indian_superpower_stage } }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = unit_ratio
-		id = convoy
-		value = -10
-	}
+	ai_strategy = { type = building_target id = industrial_complex value = 45 }
+	ai_strategy = { type = building_target id = arms_factory value = 135 }
+	ai_strategy = { type = building_target id = dockyard value = 40 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 35 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 50 }
+	ai_strategy = { type = equipment_production_factor id = support value = 30 }
+	ai_strategy = { type = equipment_production_factor id = armor value = 20 }
+	ai_strategy = { type = equipment_production_factor id = fighter value = 30 }
+	ai_strategy = { type = equipment_production_factor id = cas value = 20 }
+	ai_strategy = { type = role_ratio id = infantry value = 70 }
+	ai_strategy = { type = role_ratio id = armor value = 10 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 135 }
+	ai_strategy = { type = unit_ratio id = convoy value = -80 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 8 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 72 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+	ai_strategy = { type = antagonize id = RAJ value = 60 }
 }
-MAR_army_build = {
+
+MAR_superpower_arsenal = {
 	allowed = { original_tag = MAR }
-	enable = { tag = MAR }
+	enable = { tag = MAR has_country_flag = indian_superpower_stage }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 20
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = 45
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 70
-	}
+	ai_strategy = { type = building_target id = industrial_complex value = 25 }
+	ai_strategy = { type = building_target id = arms_factory value = 190 }
+	ai_strategy = { type = building_target id = dockyard value = 75 }
+	ai_strategy = { type = equipment_production_factor id = infantry value = 25 }
+	ai_strategy = { type = equipment_production_factor id = artillery value = 45 }
+	ai_strategy = { type = equipment_production_factor id = support value = 35 }
+	ai_strategy = { type = equipment_production_factor id = armor value = 40 }
+	ai_strategy = { type = equipment_production_factor id = motorized value = 30 }
+	ai_strategy = { type = equipment_production_factor id = fighter value = 45 }
+	ai_strategy = { type = equipment_production_factor id = cas value = 30 }
+	ai_strategy = { type = role_ratio id = infantry value = 60 }
+	ai_strategy = { type = role_ratio id = armor value = 20 }
+	ai_strategy = { type = role_ratio id = marines value = 8 }
+	ai_strategy = { type = ai_wanted_divisions_factor value = 220 }
+	ai_strategy = { type = unit_ratio id = convoy value = -65 }
+	ai_strategy = { type = unit_ratio id = capital_ship value = 18 }
+	ai_strategy = { type = unit_ratio id = screen_ship value = 62 }
+	ai_strategy = { type = unit_ratio id = submarine value = 20 }
+	ai_strategy = { type = antagonize id = ENG value = 70 }
+	ai_strategy = { type = contain id = JAP value = 60 }
 }
-MAR_alliance_prio = {
+
+MAR_hindavi_diplomacy = {
 	allowed = { original_tag = MAR }
-	enable = { tag = MAR }
+	enable = { tag = MAR has_country_flag = MAR_route_hindavi }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = alliance
-		id = HYD
-		value = 50
-	}
+	ai_strategy = { type = antagonize id = HYD value = 50 }
+	ai_strategy = { type = befriend id = RJP value = 40 }
+	ai_strategy = { type = befriend id = PJB value = 30 }
 }
-MAR_princely_aggressive = {
-	enable = {
-		OR = {
-			tag = HYD
-			tag = RJP
-			tag = MYS
-			tag = MDR
-			tag = HIN
-		}
-	}
+
+MAR_republican_diplomacy = {
+	allowed = { original_tag = MAR }
+	enable = { tag = MAR has_country_flag = MAR_route_republic }
 	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = antagonize
-		id = MAR
-		value = 25
-	}
+	ai_strategy = { type = befriend id = ENG value = 80 }
+	ai_strategy = { type = befriend id = USA value = 60 }
+	ai_strategy = { type = befriend id = HIN value = 45 }
+}
+
+MAR_vanguard_diplomacy = {
+	allowed = { original_tag = MAR }
+	enable = { tag = MAR has_country_flag = MAR_route_vanguard }
+	abort_when_not_enabled = yes
+	ai_strategy = { type = antagonize id = ENG value = 120 }
+	ai_strategy = { type = antagonize id = HIN value = 60 }
+	ai_strategy = { type = befriend id = GER value = 35 }
+	ai_strategy = { type = befriend id = JAP value = 25 }
 }

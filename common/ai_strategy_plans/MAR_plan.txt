@@ -1,6 +1,6 @@
 MAR_historical = {
 	name = "Maratha historical"
-	desc = "MAR AI follows Peshwa restoration"
+	desc = "The AI restores the Peshwai, industrializes, builds a balanced Angre fleet, and contests India."
 	allowed = { original_tag = MAR }
 	enable = { tag = MAR }
 	abort = { always = no }
@@ -9,23 +9,41 @@ MAR_historical = {
 		MAR_legacy_of_the_peshwas
 		MAR_restore_the_peshwai
 		MAR_peshwa_privy_council
+		MAR_hindavi_swarajya
+		MAR_retool_the_orange_soil
+		MAR_pune_university_expansion
+		MAR_marathi_literacy_mission
+		MAR_dakshina_industrial_corridor
+		MAR_rapid_industrial_surge
+		MAR_rajput_martial_dominance
+		MAR_sainik_schools
+		MAR_mandal_of_influence
+		MAR_cultural_diplomacy
+		MAR_akhand_economic_sphere
+		MAR_angre_naval_legacy
+		MAR_bombay_dockyard_expansion
+		MAR_konkan_fleet
+		MAR_blue_water_ambition
+		MAR_indian_ocean_lifeline
+		MAR_carrier_dream
+		MAR_project_world_navy
+		MAR_seat_at_the_table
+		MAR_export_the_model
+		MAR_akhand_bharat_unification
+		MAR_joint_naval_exercises
+		MAR_foreign_military_mission
+		MAR_pax_marathica
+		MAR_world_trade_network
 	}
 
 	research = {
 		industry = 20.0
-		infantry_tech = 10.0
-		artillery = 8.0
-		naval_tech = 8.0
+		infantry_tech = 12.0
+		artillery = 10.0
+		naval_tech = 9.0
+		air_equipment = 7.0
 	}
 
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
-	}
-
-	focus_factors = {
-
-	}
+	weight = { factor = 1.0 }
+	focus_factors = { }
 }

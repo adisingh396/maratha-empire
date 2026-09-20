@@ -1,4 +1,5 @@
 focus_tree = {
+	continuous_focus_position = { x = 5 y = 14 }
 	id = MDR_focus
 	country = {
 		factor = 0
@@ -8,7 +9,7 @@ focus_tree = {
 	focus = {
 		id = MDR_chola_legacy
 		icon = GFX_goal_generic_navy_cruiser
-		x = 5
+		x = 4
 		y = 0
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -23,7 +24,7 @@ focus_tree = {
 		id = MDR_nagapattinam_yard
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MDR_chola_legacy }
-		x = 9
+		x = 8
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -38,7 +39,7 @@ focus_tree = {
 		id = MDR_chola_marines
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = MDR_nagapattinam_yard }
-		x = 9
+		x = 8
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -53,7 +54,7 @@ focus_tree = {
 		id = MDR_bay_squadron
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = MDR_chola_marines }
-		x = 9
+		x = 8
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -68,7 +69,7 @@ focus_tree = {
 		id = MDR_madras_harbor
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MDR_bay_squadron }
-		x = 9
+		x = 8
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -83,7 +84,7 @@ focus_tree = {
 		id = MDR_buckingham_mills
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MDR_chola_legacy }
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -98,7 +99,7 @@ focus_tree = {
 		id = MDR_tvs_motors
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = MDR_buckingham_mills }
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -113,7 +114,7 @@ focus_tree = {
 		id = MDR_mettur_dam
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = MDR_tvs_motors }
-		x = 1
+		x = 0
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -128,7 +129,7 @@ focus_tree = {
 		id = MDR_simpson_works
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = MDR_mettur_dam }
-		x = 1
+		x = 0
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -143,7 +144,7 @@ focus_tree = {
 		id = MDR_madras_regiment
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MDR_chola_legacy }
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -158,7 +159,7 @@ focus_tree = {
 		id = MDR_sepoy_tradition
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MDR_madras_regiment }
-		x = 5
+		x = 4
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -173,7 +174,7 @@ focus_tree = {
 		id = MDR_coastal_guns
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = MDR_sepoy_tradition }
-		x = 5
+		x = 4
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -188,7 +189,7 @@ focus_tree = {
 		id = MDR_madras_airfield
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = MDR_simpson_works }
-		x = 3
+		x = 2
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -203,7 +204,7 @@ focus_tree = {
 		id = MDR_justice_party
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MDR_chola_legacy }
-		x = 7
+		x = 6
 		y = 1
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -218,7 +219,7 @@ focus_tree = {
 		id = MDR_self_respect
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = MDR_justice_party }
-		x = 7
+		x = 6
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -233,7 +234,7 @@ focus_tree = {
 		id = MDR_anti_hindi
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = MDR_self_respect }
-		x = 7
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -249,7 +250,7 @@ focus_tree = {
 		id = MDR_tamil_sangam
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MDR_anti_hindi }
-		x = 7
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = { factor = 10 }
@@ -265,7 +266,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = MDR_tamil_sangam }
 		prerequisite = { focus = MDR_coastal_guns }
-		x = 5
+		x = 4
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 15 }
@@ -281,7 +282,7 @@ focus_tree = {
 		id = MDR_carnatic_war
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = MDR_unite_tamilakam }
-		x = 5
+		x = 4
 		y = 6
 		cost = 10
 		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.1.1 } }
@@ -296,7 +297,7 @@ focus_tree = {
 		id = MDR_chola_mandala
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = MDR_carnatic_war }
-		x = 5
+		x = 4
 		y = 7
 		cost = 10
 		ai_will_do = { factor = 12 }
@@ -312,7 +313,7 @@ focus_tree = {
 		id = MDR_court_pune
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = MDR_justice_party }
-		x = 11
+		x = 10
 		y = 2
 		cost = 10
 		ai_will_do = { factor = 8 }
@@ -328,7 +329,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MDR_court_pune }
 		prerequisite = { focus = MDR_madras_harbor }
-		x = 11
+		x = 10
 		y = 5
 		cost = 10
 		ai_will_do = { factor = 6 modifier = { factor = 0 date < 1940.1.1 } }
@@ -344,7 +345,7 @@ focus_tree = {
 		id = MDR_coimbatore_mills
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MDR_chola_legacy }
-		x = 0 y = 1 cost = 10
+		x = 1 y = 1 cost = 10
 		ai_will_do = { factor = 12 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_coimbatore_mills" 982 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
@@ -353,7 +354,7 @@ focus_tree = {
 		id = MDR_tiruchi_workshops
 		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = MDR_coimbatore_mills }
-		x = 0 y = 2 cost = 10
+		x = 1 y = 2 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_tiruchi_workshops" 982 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
@@ -362,7 +363,7 @@ focus_tree = {
 		id = MDR_salem_magnesite
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MDR_tiruchi_workshops }
-		x = 0 y = 3 cost = 10
+		x = 1 y = 3 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_salem_magnesite" 982 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_political_power = 40 }
@@ -371,7 +372,7 @@ focus_tree = {
 		id = MDR_dalmia_cement
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = MDR_salem_magnesite }
-		x = 0 y = 4 cost = 10
+		x = 1 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_dalmia_cement" 982 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } 423 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
@@ -434,7 +435,7 @@ focus_tree = {
 		id = MDR_temple_towns
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MDR_bronze_foundry }
-		x = 2 y = 5 cost = 10
+		x = 3 y = 5 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_temple_towns" add_stability = 0.04 add_political_power = 60 add_ideas = MDR_temple_spirit }
@@ -443,7 +444,7 @@ focus_tree = {
 		id = MDR_vellore_rifles
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MDR_sepoy_tradition }
-		x = 4 y = 3 cost = 10
+		x = 5 y = 3 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_vellore_rifles" army_experience = 25 add_manpower = 10000 }
@@ -463,7 +464,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = MDR_vellore_rifles }
 		bypass = { has_completed_focus = MDR_pallava_guards }
-		x = 6 y = 4 cost = 10
+		x = 7 y = 4 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_chola_levy" add_manpower = 20000 add_war_support = 0.04 add_ideas = MDR_levy_doctrine }
@@ -473,7 +474,7 @@ focus_tree = {
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = MDR_pallava_guards }
 		prerequisite = { focus = MDR_chola_levy }
-		x = 5 y = 5 cost = 10
+		x = 6 y = 5 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_wellington_staff" army_experience = 30 add_command_power = 10 }
@@ -482,7 +483,7 @@ focus_tree = {
 		id = MDR_nilgiri_battery
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = MDR_wellington_staff }
-		x = 5 y = 6 cost = 10
+		x = 6 y = 6 cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_ARMY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_nilgiri_battery" add_tech_bonus = { bonus = 0.5 uses = 1 category = artillery } army_experience = 15 }
@@ -491,7 +492,7 @@ focus_tree = {
 		id = MDR_doddabetta_posts
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = MDR_nilgiri_battery }
-		x = 5 y = 7 cost = 10
+		x = 6 y = 7 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_doddabetta_posts" 982 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } } add_war_support = 0.03 }
@@ -500,7 +501,7 @@ focus_tree = {
 		id = MDR_cordite_factory
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = MDR_doddabetta_posts }
-		x = 5 y = 8 cost = 10
+		x = 4 y = 8 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_cordite_factory" 982 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
@@ -509,7 +510,7 @@ focus_tree = {
 		id = MDR_meenakshi_temple
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = MDR_anti_hindi }
-		x = 8 y = 4 cost = 10
+		x = 9 y = 4 cost = 10
 		ai_will_do = { factor = 8 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed MDR_meenakshi_temple" add_stability = 0.05 add_political_power = 40 }
@@ -554,7 +555,7 @@ focus_tree = {
 		id = MDR_mandala_circle
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MDR_jallikattu }
-		x = 5
+		x = 4
 		y = 9
 		cost = 10
 		ai_will_do = { factor = 8 }

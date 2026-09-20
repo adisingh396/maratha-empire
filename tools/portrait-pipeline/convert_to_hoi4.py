@@ -1,122 +1,172 @@
 #!/usr/bin/env python3
-"""
-Bulk convert 4x Gemini quadrants to HOI4 portrait specs.
-- Input: generated/grid_01/{top_left,top_right,bottom_left,bottom_right}.png (512x512)
-- Output: gfx/leaders/MAR/*.dds + *.png (156x210 large, 65x67 small)
-- Uses PIL, mimics vedic split pipeline + DDS DXT5 research.
-- Based on websearch: 156x210 strict, DDS BC3/DXT5, mipmaps, 8-bit RGBA.
-"""
-from PIL import Image
+"""Convert manifest-driven portrait grids into validated HOI4 assets."""
+from __future__ import annotations
+
+import argparse
+import json
+import os
 from pathlib import Path
-import shutil
+from tempfile import NamedTemporaryFile
 
-# Paths
-PIPELINE_DIR = Path(__file__).parent
-GEN_DIR = PIPELINE_DIR / "generated" / "grid_01"
-MOD_GFX = Path(r"C:\Users\zendrix\Documents\Programming\Dev\4weeksgrind\hoi4-modding\maratha-empire\gfx\leaders\MAR")
-MOD_GFX_REPO = Path(r"C:\Users\zendrix\Documents\Paradox Interactive\Hearts of Iron IV\mod\maratha-empire\gfx\leaders\MAR")
-MOD_INTERFACE = Path(r"C:\Users\zendrix\Documents\Programming\Dev\4weeksgrind\hoi4-modding\maratha-empire\interface")
+from PIL import Image
 
-# Ensure output dirs
-MOD_GFX.mkdir(parents=True, exist_ok=True)
-MOD_GFX_REPO.mkdir(parents=True, exist_ok=True)
-
-# Mapping quadrants to HOI4 leader files
-mapping = {
-    "top_left": "portrait_mar_shivaji",      # Shivaji Maharaj
-    "top_right": "portrait_mar_bajirao",     # Baji Rao I
-    "bottom_left": "portrait_mar_tarabai",   # Tarabai
-    "bottom_right": "portrait_mar_madhavrao",# Madhavrao III
-}
-
-# HOI4 specs from research
+PIPELINE_DIR = Path(__file__).resolve().parent
+MOD_ROOT = PIPELINE_DIR.parents[1]
+QUADRANTS = ("top_left", "top_right", "bottom_left", "bottom_right")
 LARGE_SIZE = (156, 210)
-SMALL_SIZE = (65, 67)  # advisor small (from GFX Sizes post)
-# For DDS, Pillow will save with DXT5 if possible; fallback to PNG
-def crop_and_resize(im, target_size):
-    """Crop square 512 to portrait aspect 0.742 then resize with Lanczos + canvas grain preserve."""
-    w, h = im.size
-    target_w, target_h = target_size
-    target_aspect = target_w / target_h  # 0.742
-    # Crop width to match aspect, keeping height
-    new_w = int(h * target_aspect)
-    # Ensure even
-    if new_w > w:
-        # if target taller than source, crop height instead
-        new_h = int(w / target_aspect)
-        left = 0
-        top = (h - new_h) // 2
-        im_cropped = im.crop((left, top, left + w, top + new_h))
+SMALL_SIZE = (65, 67)
+
+
+def load_manifest(path: Path) -> dict:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    portraits = data.get("portraits")
+    if not portraits:
+        raise ValueError("manifest has no portraits")
+    required = {"character", "country", "stem", "description"}
+    for index, portrait in enumerate(portraits, 1):
+        missing = required.difference(portrait)
+        if missing:
+            raise ValueError(f"portrait {index} missing {', '.join(sorted(missing))}")
+    return data
+
+
+def crop_and_resize(image: Image.Image, target: tuple[int, int]) -> Image.Image:
+    image = image.convert("RGBA")
+    width, height = image.size
+    target_aspect = target[0] / target[1]
+    source_aspect = width / height
+    if source_aspect > target_aspect:
+        crop_width = round(height * target_aspect)
+        left = (width - crop_width) // 2
+        image = image.crop((left, 0, left + crop_width, height))
     else:
-        left = (w - new_w) // 2
-        im_cropped = im.crop((left, 0, left + new_w, h))
-    # Resize with high quality
-    resized = im_cropped.resize(target_size, Image.LANCZOS)
-    return resized
+        crop_height = round(width / target_aspect)
+        top = (height - crop_height) // 2
+        image = image.crop((0, top, width, top + crop_height))
+    return image.resize(target, Image.Resampling.LANCZOS)
 
-def save_dds_or_png(im, path_stem):
-    """Try DDS DXT5, fallback to PNG if PIL lacks DDS plugin. Saves both .dds and .png."""
-    # Save PNG always (modern HOI4 supports PNG)
-    png_path = Path(str(path_stem) + ".png")
-    im.save(png_path, format="PNG", optimize=True)
-    print(f"  [png] {png_path.name} {im.size}")
-    # Try DDS
-    dds_path = Path(str(path_stem) + ".dds")
+
+def atomic_save(image: Image.Image, destination: Path, image_format: str) -> None:
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    suffix = destination.suffix or ".tmp"
+    with NamedTemporaryFile(dir=destination.parent, suffix=suffix, delete=False) as handle:
+        temporary = Path(handle.name)
     try:
-        # Pillow DDS save: use DXT5 implicit for RGBA
-        # Ensure RGBA mode for DXT5 (needs alpha)
-        if im.mode != "RGBA":
-            im_rgba = im.convert("RGBA")
-        else:
-            im_rgba = im
-        # Save with mipmaps if supported (Pillow 9.1+ supports DDS with DXT5)
-        im_rgba.save(dds_path, format="DDS")
-        print(f"  [dds] {dds_path.name} {im_rgba.size} DXT5")
-    except Exception as e:
-        print(f"  [dds warn] fallback to PNG only: {e}")
-        # If DDS fails, we already have PNG; create a copy as .dds via PNG bytes? Just warn
-        # For compatibility, we can copy PNG to DDS path as placeholder and let HOI4 load PNG via .gfx pointing to PNG
-        pass
-    return png_path, dds_path
+        save_args = {"format": image_format}
+        if image_format == "PNG":
+            save_args["optimize"] = True
+        image.save(temporary, **save_args)
+        os.replace(temporary, destination)
+    finally:
+        temporary.unlink(missing_ok=True)
 
-print(f"Converting 4x quadrants to HOI4 specs {LARGE_SIZE} and {SMALL_SIZE}...")
-for quadrant, stem in mapping.items():
-    src = GEN_DIR / f"{quadrant}.png"
-    if not src.exists():
-        print(f"  [skip] {src} not found")
-        continue
-    im = Image.open(src)
-    if im.mode not in ("RGB", "RGBA"):
-        im = im.convert("RGB")
-    print(f"\n[{quadrant}] -> {stem} from {im.size}")
-    # Large 156x210
-    large = crop_and_resize(im, LARGE_SIZE)
-    for out_root in [MOD_GFX, MOD_GFX_REPO]:
-        out_stem = out_root / stem
-        save_dds_or_png(large, out_stem)
-        # Small 65x67
-        small = large.resize(SMALL_SIZE, Image.LANCZOS)
-        save_dds_or_png(small, out_root / f"{stem}_small")
-        # Also create GFX variants for characters: large needs _small suffix for minister fallback (HOI4 expects GFX_portrait_*_small)
-        # Already handled via _small
 
-print("\nDone. Updating interface/MAR_portraits.gfx...")
-# Generate .gfx entries
-gfx_lines = ["spriteTypes = {"]
-for stem in mapping.values():
-    gfx_lines.append(f"\tspriteType = {{")
-    gfx_lines.append(f"\t\tname = \"GFX_{stem}\"")
-    gfx_lines.append(f"\t\ttexturefile = \"gfx/leaders/MAR/{stem}.dds\"")
-    gfx_lines.append(f"\t}}")
-    gfx_lines.append(f"\tspriteType = {{")
-    gfx_lines.append(f"\t\tname = \"GFX_{stem}_small\"")
-    gfx_lines.append(f"\t\ttexturefile = \"gfx/leaders/MAR/{stem}_small.dds\"")
-    gfx_lines.append(f"\t}}")
-gfx_lines.append("}")
-# Write to both repos
-for gfx_path in [MOD_INTERFACE / "MAR_portraits.gfx", Path(r"C:\Users\zendrix\Documents\Paradox Interactive\Hearts of Iron IV\mod\maratha-empire\interface\MAR_portraits.gfx")]:
-    gfx_path.parent.mkdir(parents=True, exist_ok=True)
-    gfx_path.write_text("\n".join(gfx_lines), encoding="utf-8")
-    print(f"wrote {gfx_path}")
+def save_portrait(image: Image.Image, root: Path, country: str, stem: str) -> None:
+    output = root / "gfx" / "leaders" / country
+    large = crop_and_resize(image, LARGE_SIZE)
+    small = large.resize(SMALL_SIZE, Image.Resampling.LANCZOS)
+    for current, name in ((large, stem), (small, f"{stem}_small")):
+        atomic_save(current, output / f"{name}.png", "PNG")
+        atomic_save(current, output / f"{name}.dds", "DDS")
 
-print("\nNext: update common/characters/MAR_characters.txt to use new GFX keys and sync to mod.")
+
+def write_gfx(root: Path, country: str, portraits: list[dict]) -> Path:
+    lines = ["spriteTypes = {"]
+    for portrait in portraits:
+        stem = portrait["stem"]
+        for suffix in ("", "_small"):
+            lines.extend(
+                (
+                    "\tspriteType = {",
+                    f'\t\tname = "GFX_{stem}{suffix}"',
+                    f'\t\ttexturefile = "gfx/leaders/{country}/{stem}{suffix}.dds"',
+                    "\t}",
+                )
+            )
+    lines.append("}")
+    destination = root / "interface" / f"{country}_portraits.gfx"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return destination
+
+
+def validate_output(root: Path, manifest: dict) -> list[str]:
+    required_portraits = manifest["portraits"][: manifest.get("required_count", len(manifest["portraits"]))]
+
+    errors: list[str] = []
+    for portrait in required_portraits:
+        country = portrait["country"]
+        stem = portrait["stem"]
+        for suffix, expected in (("", LARGE_SIZE), ("_small", SMALL_SIZE)):
+            for extension in ("dds", "png"):
+                path = root / "gfx" / "leaders" / country / f"{stem}{suffix}.{extension}"
+                if not path.exists():
+                    errors.append(f"missing {path.relative_to(root)}")
+                    continue
+                try:
+                    with Image.open(path) as image:
+                        if image.size != expected:
+                            errors.append(f"{path.relative_to(root)} is {image.size}, expected {expected}")
+                except OSError as error:
+                    errors.append(f"unreadable {path.relative_to(root)}: {error}")
+    return errors
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest", type=Path, default=PIPELINE_DIR / "manifest.json")
+    parser.add_argument("--generated", type=Path, default=PIPELINE_DIR / "generated")
+    parser.add_argument("--mod-root", type=Path, default=MOD_ROOT)
+    parser.add_argument("--live-root", type=Path, help="optional second output root; normally use sync.ps1")
+    parser.add_argument("--check", action="store_true", help="validate current assets without converting")
+    parser.add_argument("--allow-missing", action="store_true", help="convert available inputs instead of failing")
+    args = parser.parse_args()
+
+    manifest = load_manifest(args.manifest.resolve())
+    roots = [args.mod_root.resolve()]
+    if args.live_root:
+        roots.append(args.live_root.resolve())
+
+    if args.check:
+        errors = [error for root in roots for error in validate_output(root, manifest)]
+        if errors:
+            raise SystemExit("\n".join(errors))
+        required_count = manifest.get("required_count", len(manifest["portraits"]))
+        print(f"valid: {required_count} required portraits across {len(roots)} output root(s)")
+        return
+
+    missing: list[Path] = []
+    converted: list[dict] = []
+    for index, portrait in enumerate(manifest["portraits"]):
+        grid = index // 4 + 1
+        quadrant = QUADRANTS[index % 4]
+        source = args.generated.resolve() / f"grid_{grid:02d}" / f"{quadrant}.png"
+        if not source.exists():
+            missing.append(source)
+            continue
+        with Image.open(source) as image:
+            if image.width < 256 or image.height < 256:
+                raise ValueError(f"source too small: {source} is {image.size}")
+            for root in roots:
+                save_portrait(image, root, portrait["country"], portrait["stem"])
+        converted.append(portrait)
+
+    if missing and not args.allow_missing:
+        relative = "\n".join(str(path.relative_to(PIPELINE_DIR)) for path in missing)
+        raise SystemExit(f"missing generated quadrants:\n{relative}")
+
+    countries = sorted({portrait["country"] for portrait in converted})
+    for root in roots:
+        for country in countries:
+            write_gfx(root, country, [p for p in converted if p["country"] == country])
+
+    errors = [error for root in roots for error in validate_output(root, {"portraits": converted})]
+    if errors:
+        raise SystemExit("\n".join(errors))
+    print(f"converted and validated {len(converted)} portraits")
+    if missing:
+        print(f"skipped {len(missing)} missing sources")
+
+
+if __name__ == "__main__":
+    main()

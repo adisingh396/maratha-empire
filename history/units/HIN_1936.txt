@@ -48,66 +48,26 @@ units = {
 	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
 	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.15 start_equipment_factor = 0.70 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4516 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 4106 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 1377 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
-	division = { division_template = "HIN Infantry Division" location = 2086 start_experience_factor = 0.10 start_equipment_factor = 0.50 }
 }
 
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
-		equipment = { type = infantry_equipment_1 creator = "HIN" }
-		requested_factories = 4
+		equipment = { type = infantry_equipment_1 }
+		requested_factories = 3
 		progress = 0.50
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = artillery_equipment_1 creator = "HIN" }
-		requested_factories = 2
+		equipment = { type = artillery_equipment_1 }
+		requested_factories = 1
 		progress = 0.35
 		efficiency = 85
 	}
 	add_equipment_production = {
-		equipment = { type = support_equipment_1 creator = "HIN" }
+		equipment = { type = support_equipment_1 }
 		requested_factories = 1
 		progress = 0.35
 		efficiency = 85

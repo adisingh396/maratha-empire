@@ -55,7 +55,7 @@ set_popularities = {
 	communism = 5
 	neutrality = 80
 }
-add_ideas = { HYD_nizam_legacy HYD_salar_legacy }
+add_ideas = { HYD_nizam_legacy HYD_salar_legacy limited_conscription HYD_nizam_treasury }
 recruit_character = HYD_osman_ali
 recruit_character = HYD_laik_ali
 recruit_character = HYD_moin_nawaz

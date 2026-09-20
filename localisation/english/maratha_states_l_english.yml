@@ -16,9 +16,6 @@
  STATE_442:0 "Gandhara"
 
  STATE_443:0 "Sindhu"
- BEN:0 "Bengal"
- BEN_DEF:0 "Bengal"
- BEN_ADJ:0 "Bengali"
  STATE_444:0 "Makran"
 
  STATE_445:0 "Quetta"
@@ -29,36 +26,13 @@
 
  STATE_439:0 "Indraprastha"
 
- PAK:0 "Gandhara"
-
- PAK_DEF:0 "Gandhara"
-
- PAK_ADJ:0 "Gandharan"
-
 
 
 
  WIS:0 "Gujarat"
-
- WIS_DEF:0 "Gujarat"
-
+ WIS_DEF:0 "Gujarati"
  WIS_ADJ:0 "Gujarati"
-
- SIN:0 "Sindh"
-
- HIN:0 "Awadh"
-
- HIN_DEF:0 "Awadh"
-
- HIN_ADJ:0 "Awadhi"
-
- MDR:0 "Dravida Nadu"
-
- ORI:0 "Kalinga"
-
- ASM:0 "Assam"
-
- PJB:0 "Sikh Empire"
+ SIN:0 "Sindhu"
 
  STATE_425:0 "Karnata"
 
@@ -67,8 +41,6 @@
  STATE_429:0 "Aparanta"
 
  STATE_433:0 "Maru"
-
- STATE_439:0 "Indraprastha"
 
  STATE_440:0 "Madra"
 
@@ -93,4 +65,12 @@
  STATE_991:0 "Gopagiri"
 
  STATE_424:0 "Andhra"
+ STATE_1082:0 "Marathwada"
+ STATE_1083:0 "Raichur Doab"
+ STATE_1084:0 "Bengaluru"
+ STATE_1085:0 "Kathiawar"
+ STATE_1086:0 "Kochi"
+ STATE_1087:0 "Konkan"
+ STATE_1088:0 "Vidarbha"
+ STATE_1089:0 "Pundravardhana"
 

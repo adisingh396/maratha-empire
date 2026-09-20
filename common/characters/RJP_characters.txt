@@ -15,7 +15,7 @@ RJP_ganga = {
 RJP_man_singh = {
 	name = RJP_man_singh
 	portraits = {
-		army = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+		army = { large = GFX_portrait_rjp_man_singh small = GFX_portrait_rjp_man_singh_small }
 	}
 	advisor = {
 		slot = army_chief
@@ -35,7 +35,7 @@ RJP_man_singh = {
 RJP_umaid = {
 	name = RJP_umaid
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_rjp_umaid small = GFX_portrait_rjp_umaid_small }
 	}
 	advisor = {
 		slot = political_advisor
@@ -48,7 +48,8 @@ RJP_umaid = {
 RJP_bhupal = {
 	name = RJP_bhupal
 	portraits = {
-		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		civilian = { large = GFX_portrait_rjp_bhupal small = GFX_portrait_rjp_bhupal_small }
+		army = { large = GFX_portrait_rjp_bhupal small = GFX_portrait_rjp_bhupal_small }
 	}
 	corps_commander = {
 		traits = { aggressive_assaulter }
@@ -65,10 +66,31 @@ RJP_bhupal = {
 		id = -1
 	}
 }
+RJP_sadul = {
+	name = RJP_sadul
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_sadul small = GFX_portrait_rjp_sadul_small }
+		army = { large = GFX_portrait_rjp_sadul small = GFX_portrait_rjp_sadul_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	corps_commander = {
+		traits = { cavalry_expert }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
 RJP_manubhai = {
 	name = RJP_manubhai
 	portraits = {
-		civilian = { large = GFX_portrait_mar_madhavrao small = GFX_portrait_mar_madhavrao_small }
+		civilian = { large = GFX_portrait_rjp_manubhai small = GFX_portrait_rjp_manubhai_small }
 	}
 	advisor = {
 		slot = theorist

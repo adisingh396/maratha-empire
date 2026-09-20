@@ -1,25 +1,25 @@
 state={
 	id=1012
 	name="STATE_1012"
-	provinces={
-		7049 8098 8066
-	}
-	state_category = town
-	manpower = 480164
+	manpower=1000000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	resources={
 
-	history = {
+	}
+	history={
 		owner = SIN
 		add_core_of = SIN
-
+		add_extra_state_shared_building_slots = 0
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
 		}
-
-		victory_points = {
-		8098 1
-		}
+		victory_points = { 8098 1 }
 	}
-
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	provinces={
+		7049 8098 8066 
+	}
+	local_supplies=0.0
 }

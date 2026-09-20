@@ -1,23 +1,25 @@
 state={
 	id=989
 	name="STATE_989"
-	provinces={
-		10843 10866 12041 12718 12792 12876
-	}
-
-	history={
-		owner = RJP
-		add_extra_state_shared_building_slots = 4
-		add_core_of = RJP
-		buildings = {
-			industrial_complex = 4
-			arms_factory = 2
-			infrastructure = 2
-		}
-
-	}
-	manpower = 1200000
+	manpower=1500000
 	state_category = rural
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	resources={
+		steel=2
+	}
+	history={
+		owner = RJP
+		add_core_of = RJP
+		add_extra_state_shared_building_slots = 6
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+			arms_factory = 2
+			air_base = 1
+		}
+	}
+	provinces={
+		10843 10866 12041 12718 12792 12876 
+	}
+	local_supplies=0.0
 }

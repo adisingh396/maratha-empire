@@ -1,0 +1,27 @@
+state={
+	id=1088
+	name="STATE_1088"
+	manpower=8000000
+	state_category = town
+	buildings_max_level_factor=1.000
+	resources={
+		steel=6
+		chromium=2
+	}
+	history={
+		owner = MAR
+		add_core_of = MAR
+		add_extra_state_shared_building_slots = 5
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+			arms_factory = 3
+			air_base = 1
+		}
+		victory_points = { 10801 3 }
+	}
+	provinces={
+		10030 10401 10801 10872 12375 12480 12781 12799 12854 
+	}
+	local_supplies=0.0
+}

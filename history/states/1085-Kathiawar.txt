@@ -1,0 +1,29 @@
+state={
+	id=1085
+	name="STATE_1085"
+	manpower=4800000
+	state_category = town
+	buildings_max_level_factor=1.000
+	resources={
+		oil=4
+		steel=3
+	}
+	history={
+		owner = WIS
+		add_core_of = WIS
+		add_extra_state_shared_building_slots = 7
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+			arms_factory = 3
+			dockyard = 2
+			air_base = 1
+			4064 = { naval_base = 2 }
+		}
+		victory_points = { 7020 3 }
+	}
+	provinces={
+		4064 4090 4132 7020 7165 7207 12037 
+	}
+	local_supplies=0.0
+}

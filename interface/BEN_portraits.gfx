@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_ben_huq"
+		texturefile = "gfx/leaders/BEN/portrait_ben_huq.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_huq_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_huq_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_bose"
+		texturefile = "gfx/leaders/BEN/portrait_ben_bose.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_bose_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_bose_small.dds"
+	}
+}

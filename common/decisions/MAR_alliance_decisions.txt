@@ -68,7 +68,7 @@ MAR_diplomacy_category = {
 		complete_effect = {
 			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
 			custom_effect_tooltip = MAR_world_colonize_tt
-			hidden_effect = { country_event = { id = MAR_news.3 days = 1 } }
+			hidden_effect = { news_event = { id = MAR_news.7 days = 1 } }
 		}
 	}
 }

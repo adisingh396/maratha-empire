@@ -2,7 +2,7 @@ characters = {
 ASM_saadulah = {
 	name = ASM_saadulah
 	portraits = {
-		civilian = { large = GFX_portrait_mar_bajirao small = GFX_portrait_mar_bajirao_small }
+		civilian = { large = GFX_portrait_asm_saadulah small = GFX_portrait_asm_saadulah_small }
 	}
 	country_leader = {
 		ideology = despotism
@@ -14,7 +14,7 @@ ASM_saadulah = {
 ASM_bordoloi = {
 	name = ASM_bordoloi
 	portraits = {
-		civilian = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		civilian = { large = GFX_portrait_asm_bordoloi small = GFX_portrait_asm_bordoloi_small }
 	}
 	country_leader = {
 		ideology = liberalism
@@ -26,7 +26,7 @@ ASM_bordoloi = {
 ASM_fakhruddin = {
 	name = ASM_fakhruddin
 	portraits = {
-		civilian = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		civilian = { large = GFX_portrait_asm_fakhruddin small = GFX_portrait_asm_fakhruddin_small }
 	}
 	advisor = {
 		slot = political_advisor

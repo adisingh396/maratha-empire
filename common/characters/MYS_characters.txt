@@ -14,7 +14,13 @@ MYS_wadiyar = {
 MYS_jayachamarajendra = {
 	name = MYS_jayachamarajendra
 	portraits = {
-		civilian = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+		civilian = { large = GFX_portrait_mys_jayachamarajendra small = GFX_portrait_mys_jayachamarajendra_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
 	}
 	advisor = {
 		slot = political_advisor
@@ -27,7 +33,7 @@ MYS_jayachamarajendra = {
 MYS_visvesvaraya = {
 	name = MYS_visvesvaraya
 	portraits = {
-		civilian = { large = GFX_portrait_mar_shivaji small = GFX_portrait_mar_shivaji_small }
+		civilian = { large = GFX_portrait_mys_visvesvaraya small = GFX_portrait_mys_visvesvaraya_small }
 	}
 	advisor = {
 		slot = theorist
@@ -39,7 +45,7 @@ MYS_visvesvaraya = {
 MYS_mirza_ismail = {
 	name = MYS_mirza_ismail
 	portraits = {
-		civilian = { large = GFX_portrait_hyd_nizam small = GFX_portrait_hyd_nizam_small }
+		civilian = { large = GFX_portrait_mys_mirza_ismail small = GFX_portrait_mys_mirza_ismail_small }
 	}
 	advisor = {
 		slot = political_advisor
@@ -52,7 +58,7 @@ MYS_mirza_ismail = {
 MYS_thimayya = {
 	name = MYS_thimayya
 	portraits = {
-		army = { large = GFX_portrait_rjp_ganga small = GFX_portrait_rjp_ganga_small }
+		army = { large = GFX_portrait_mys_thimayya small = GFX_portrait_mys_thimayya_small }
 	}
 	corps_commander = {
 		traits = { trickster }
@@ -66,7 +72,7 @@ MYS_thimayya = {
 MYS_cariappa = {
 	name = MYS_cariappa
 	portraits = {
-		army = { large = GFX_portrait_mys_wadiyar small = GFX_portrait_mys_wadiyar_small }
+		army = { large = GFX_portrait_mys_cariappa small = GFX_portrait_mys_cariappa_small }
 	}
 	advisor = {
 		slot = army_chief

@@ -1,4 +1,4 @@
-maratha_claim_india_effect = {
+indian_claim_subcontinent_effect = {
 	every_state = {
 		limit = {
 			OR = {
@@ -8,26 +8,39 @@ maratha_claim_india_effect = {
 				state = 426
 				state = 427
 				state = 428
+				state = 429
 				state = 430
 				state = 431
 				state = 432
 				state = 433
+				state = 434
+				state = 435
 				state = 436
 				state = 437
 				state = 438
 				state = 439
+				state = 440
+				state = 441
+				state = 442
+				state = 443
+				state = 982
+				state = 984
+				state = 986
+				state = 989
+				state = 990
+				state = 991
 			}
 		}
-		add_claim_by = MAR
-		add_compliance = 15
+		add_claim_by = ROOT
 	}
+	set_country_flag = indian_unification_claimant
 }
 
-maratha_core_india_effect = {
+indian_core_claimed_subcontinent_effect = {
 	hidden_effect = {
 		every_state = {
-			limit = { is_claimed_by = MAR }
-			add_core_of = MAR
+			limit = { is_claimed_by = ROOT }
+			add_core_of = ROOT
 		}
 	}
 }

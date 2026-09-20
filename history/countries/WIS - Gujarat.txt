@@ -17,13 +17,10 @@ set_technology = {
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-if = {
-	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		early_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		CAS1 = 1
 	}
 }
 if = {
@@ -34,11 +31,19 @@ if = {
 		early_battleship = 1
 	}
 }
-
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		iw_small_airframe = 1
-		basic_small_airframe = 1
-		CAS1 = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		interwar_antiair = 1
+		basic_torpedo = 1
+		electronic_mechanical_engineering = 1
 	}
 }
 
@@ -59,12 +64,14 @@ set_popularities = {
 }
 add_ideas = {
 	WIS_gujarat_legacy
+	WIS_merchant_princes
+	extensive_conscription
 }
+recruit_character = WIS_sayajirao
 recruit_character = WIS_gaekwad
 recruit_character = WIS_jamsahib
-promote_character = WIS_gaekwad
+promote_character = WIS_sayajirao
 set_oob = "WIS_1936"
-set_naval_oob = "WIS_1936_naval"
 set_air_oob = "WIS_1936_air"
 
 if = {
@@ -147,3 +154,4 @@ create_equipment_variant = {
 	}
 }
 }
+set_naval_oob = "WIS_1936_naval"
