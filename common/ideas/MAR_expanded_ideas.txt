@@ -1,0 +1,139 @@
+ideas = {
+	country = {
+
+		# --- Confederacy vs Centralism ---
+		MAR_confederacy_autonomy = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_council_of_ministers
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = -0.10
+				local_resources_factor = 0.10
+			}
+		}
+		MAR_pune_centralism = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = -0.05
+				war_support_factor = 0.08
+				autonomy_gain = 0.10
+			}
+		}
+		MAR_grand_council = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.06
+				drift_defence_factor = 0.20
+			}
+		}
+
+		# --- Peshwa vs Chhatrapati legitimacy ---
+		MAR_peshwa_supremacy = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		MAR_chhatrapati_restored = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = {
+				war_support_factor = 0.10
+				army_morale_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		# --- Hindutva vs Reformist fork ---
+		MAR_hindutva_vanguard = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				war_support_factor = 0.12
+				conscription_factor = 0.05
+				drift_defence_factor = 0.20
+				political_power_gain = 0.05
+			}
+		}
+		MAR_reformist_republic = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+
+		# --- Mahadaji's Drilled Army ---
+		MAR_mahadaji_drill = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				training_time_army_factor = -0.10
+				army_org_factor = 0.08
+				experience_gain_army_factor = 0.10
+			}
+		}
+
+		# --- Angre Blue-Water Navy ---
+		MAR_angre_blue_water = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = {
+				navy_org_factor = 0.10
+				naval_speed_factor = 0.10
+				production_speed_dockyard_factor = 0.15
+				experience_gain_navy_factor = 0.10
+			}
+		}
+
+		# --- Tata Industrial Combine (3-tier Five-Year-Plan spine) ---
+		MAR_tata_combine_1 = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		MAR_tata_combine_2 = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_industrial_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.10
+			}
+		}
+		MAR_tata_combine_3 = {
+			allowed = { original_tag = MAR }
+			removal_cost = -1
+			picture = generic_industrial_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.20
+				production_speed_arms_factory_factor = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				line_change_production_efficiency_factor = 0.10
+			}
+		}
+	}
+}

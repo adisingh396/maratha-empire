@@ -411,4 +411,137 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_instrument_choice" add_political_power = 120 add_stability = 0.03 set_country_flag = kashmir_decided }
 	}
+	# ===== Branch A: Switzerland of Asia (neutral armed monarchy) =====
+	focus = {
+		id = KAS_swiss_of_asia
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = KAS_mountain_kingdom }
+		x = 12 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_swiss_of_asia" add_ideas = KAS_himalayan_fortress add_stability = 0.05 }
+	}
+	focus = {
+		id = KAS_play_the_powers
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = KAS_swiss_of_asia }
+		x = 12 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_play_the_powers" add_ideas = KAS_pashmina_trade add_political_power = 80 }
+	}
+	focus = {
+		id = KAS_arm_the_state_forces
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = KAS_play_the_powers }
+		x = 12 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_arm_the_state_forces" add_ideas = KAS_dogra_state_forces army_experience = 25 }
+	}
+	focus = {
+		id = KAS_perpetual_neutrality
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_arm_the_state_forces }
+		x = 12 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_perpetual_neutrality" add_stability = 0.06 add_war_support = 0.05 set_country_flag = kashmir_neutral_crown }
+	}
+	# ===== Branch B: Naya Kashmir (socialist) =====
+	focus = {
+		id = KAS_naya_kashmir
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = KAS_mountain_kingdom }
+		mutually_exclusive = { focus = KAS_swiss_of_asia }
+		x = 15 y = 1 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_naya_kashmir" add_ideas = KAS_naya_kashmir_reform add_popularity = { ideology = communism popularity = 0.10 } }
+	}
+	focus = {
+		id = KAS_land_to_the_tiller
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = KAS_naya_kashmir }
+		x = 15 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_land_to_the_tiller" 441 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = 0.05 }
+	}
+	focus = {
+		id = KAS_peoples_militia
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = KAS_land_to_the_tiller }
+		x = 15 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_peoples_militia" add_manpower = 15000 add_war_support = 0.05 }
+	}
+	focus = {
+		id = KAS_sher_e_kashmir
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_peoples_militia }
+		x = 15 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_sher_e_kashmir" add_political_power = 120 add_stability = 0.05 set_country_flag = naya_kashmir_state }
+	}
+	# ===== Branch C: Zorawar's Heirs (Himalayan expansion, mountain divisions) =====
+	focus = {
+		id = KAS_zorawars_heirs
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = KAS_mountain_kingdom }
+		x = 18 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_zorawars_heirs" army_experience = 30 add_ideas = KAS_gilgit_scouts_idea }
+	}
+	focus = {
+		id = KAS_mountain_divisions
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = KAS_zorawars_heirs }
+		x = 18 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_mountain_divisions" add_tech_bonus = { bonus = 0.5 uses = 2 category = land_doctrine } army_experience = 20 }
+	}
+	focus = {
+		id = KAS_march_on_tibet
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = KAS_mountain_divisions }
+		x = 18 y = 3 cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1938.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_march_on_tibet" add_war_support = 0.08 create_wargoal = { target = PJB type = annex_everything } }
+	}
+	# ===== Branch D: The Communal Fracture (four-way patchwork fork) =====
+	focus = {
+		id = KAS_communal_question
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_mountain_kingdom }
+		x = 20 y = 1 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_communal_question" add_ideas = KAS_four_way_patchwork add_political_power = 60 }
+	}
+	focus = {
+		id = KAS_dogra_supremacy
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = KAS_communal_question }
+		mutually_exclusive = { focus = KAS_composite_kashmir }
+		x = 19 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_dogra_supremacy" swap_ideas = { remove_idea = KAS_four_way_patchwork add_idea = KAS_dogra_state_forces } add_popularity = { ideology = fascism popularity = 0.08 } }
+	}
+	focus = {
+		id = KAS_composite_kashmir
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = KAS_communal_question }
+		mutually_exclusive = { focus = KAS_dogra_supremacy }
+		x = 21 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed KAS_composite_kashmir" swap_ideas = { remove_idea = KAS_four_way_patchwork add_idea = KAS_naya_kashmir_reform } add_stability = 0.06 }
+	}
 }

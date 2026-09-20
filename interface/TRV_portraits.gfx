@@ -1,18 +1,90 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_trv_thirunal"
-		texturefile = "gfx/leaders/TRV/portrait_trv_thirunal.dds"
+		name = "GFX_portrait_trv_sethu_lakshmi"
+		texturefile = "gfx/leaders/TRV/portrait_trv_sethu_lakshmi.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_trv_thirunal_small"
-		texturefile = "gfx/leaders/TRV/portrait_trv_thirunal_small.dds"
+		name = "GFX_portrait_trv_sethu_lakshmi_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_sethu_lakshmi_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_trv_cp"
-		texturefile = "gfx/leaders/TRV/portrait_trv_cp.dds"
+		name = "GFX_portrait_trv_sethu_parvathi"
+		texturefile = "gfx/leaders/TRV/portrait_trv_sethu_parvathi.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_trv_cp_small"
-		texturefile = "gfx/leaders/TRV/portrait_trv_cp_small.dds"
+		name = "GFX_portrait_trv_sethu_parvathi_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_sethu_parvathi_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_gv_raja"
+		texturefile = "gfx/leaders/TRV/portrait_trv_gv_raja.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_gv_raja_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_gv_raja_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_pattom"
+		texturefile = "gfx/leaders/TRV/portrait_trv_pattom.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_pattom_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_pattom_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_akkamma"
+		texturefile = "gfx/leaders/TRV/portrait_trv_akkamma.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_akkamma_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_akkamma_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_krishna_pillai"
+		texturefile = "gfx/leaders/TRV/portrait_trv_krishna_pillai.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_krishna_pillai_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_krishna_pillai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_bristow"
+		texturefile = "gfx/leaders/TRV/portrait_trv_bristow.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_bristow_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_bristow_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_raman"
+		texturefile = "gfx/leaders/TRV/portrait_trv_raman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_raman_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_raman_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_marthanda"
+		texturefile = "gfx/leaders/TRV/portrait_trv_marthanda.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_marthanda_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_marthanda_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_uthradom"
+		texturefile = "gfx/leaders/TRV/portrait_trv_uthradom.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_uthradom_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_uthradom_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_rama_varma"
+		texturefile = "gfx/leaders/TRV/portrait_trv_rama_varma.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_trv_rama_varma_small"
+		texturefile = "gfx/leaders/TRV/portrait_trv_rama_varma_small.dds"
 	}
 }

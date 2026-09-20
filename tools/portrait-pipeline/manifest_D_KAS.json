@@ -1,0 +1,10 @@
+[
+  { "character": "KAS_abbas", "country": "KAS", "stem": "portrait_kas_abbas", "description": "Kashmiri Muslim politician in his early thirties, neat black moustache, karakuli lambskin cap, high-collared sherwani, resolute communal-leader expression, 1930s" },
+  { "character": "KAS_gulab", "country": "KAS", "stem": "portrait_kas_gulab", "description": "elderly nineteenth-century Dogra Rajput founder-king, full grey beard, jewelled turban with sarpech aigrette, ceremonial brocade robe, stern imperial gaze, mid-1800s dynastic era" },
+  { "character": "KAS_kak", "country": "KAS", "stem": "portrait_kas_kak", "description": "Kashmiri Pandit statesman in his fifties, clean-shaven, spectacles, dark achkan coat, shrewd administrative expression, 1940s" },
+  { "character": "KAS_bazaz", "country": "KAS", "stem": "portrait_kas_bazaz", "description": "Kashmiri Pandit journalist in his thirties, thin moustache, round spectacles, plain buttoned jacket, earnest intellectual expression, 1930s" },
+  { "character": "KAS_mirwaiz", "country": "KAS", "stem": "portrait_kas_mirwaiz", "description": "middle-aged Kashmiri Muslim cleric, full beard, white turban and cleric's robe, dignified religious authority, 1930s" },
+  { "character": "KAS_karan", "country": "KAS", "stem": "portrait_kas_karan", "description": "young Dogra prince, teenaged, clean-shaven, jewelled royal turban with plume, embroidered sherwani, poised princely expression, late 1940s" },
+  { "character": "KAS_zorawar", "country": "KAS", "stem": "portrait_kas_zorawar", "description": "nineteenth-century Dogra general, thick black beard, conical helmet or turban, chainmail and quilted armour, sword, hardened mountain-warrior gaze, early 1800s" },
+  { "character": "KAS_ghansara", "country": "KAS", "stem": "portrait_kas_ghansara", "description": "Dogra military officer in his forties, trimmed moustache, military turban, khaki State Forces uniform with insignia, watchful frontier-governor expression, 1940s" }
+]

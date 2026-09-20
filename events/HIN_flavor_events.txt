@@ -1,0 +1,295 @@
+# HIN flavor event chains — Awadh / Ganga Federation
+# Chains: Restored Wali of Awadh, Taluqdar Confederation, 1857 Legacy Rising,
+# Revolutionary Underground, Aligarh-vs-Banaras culture war.
+
+add_namespace = HIN_flav
+
+# === RESTORED WALI OF AWADH CHAIN (1-3) ===
+country_event = {
+	id = HIN_flav.1
+	title = HIN_flav.1_t
+	desc = HIN_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.1_a
+		add_political_power = 80
+		add_stability = 0.05
+		add_ideas = HIN_nawabi_legitimacy
+		hidden_effect = { country_event = { id = HIN_flav.2 days = 25 } }
+	}
+	option = {
+		name = HIN_flav.1_b
+		add_political_power = 40
+		add_war_support = 0.06
+		add_manpower = 10000
+		hidden_effect = { country_event = { id = HIN_flav.2 days = 25 } }
+	}
+}
+
+country_event = {
+	id = HIN_flav.2
+	title = HIN_flav.2_t
+	desc = HIN_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.2_a
+		add_stability = 0.04
+		439 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		army_experience = 20
+	}
+	option = {
+		name = HIN_flav.2_b
+		add_political_power = 60
+		set_country_flag = HIN_taluqdar_army
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		hidden_effect = { country_event = { id = HIN_flav.3 days = 40 } }
+	}
+}
+
+country_event = {
+	id = HIN_flav.3
+	title = HIN_flav.3_t
+	desc = HIN_flav.3_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.3_a
+		add_stability = 0.06
+		add_political_power = 50
+	}
+	option = {
+		name = HIN_flav.3_b
+		add_war_support = 0.08
+		create_wargoal = { target = MAR type = puppet_wargoal_focus }
+	}
+}
+
+# === TALUQDAR CONFEDERATION CHAIN (4-6) ===
+country_event = {
+	id = HIN_flav.4
+	title = HIN_flav.4_t
+	desc = HIN_flav.4_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.4_a
+		add_ideas = HIN_taluqdar_levies
+		add_manpower = 20000
+		add_stability = -0.03
+		hidden_effect = { country_event = { id = HIN_flav.5 days = 30 } }
+	}
+	option = {
+		name = HIN_flav.4_b
+		add_political_power = 70
+		add_stability = 0.05
+		set_country_flag = HIN_centralism_chosen
+		hidden_effect = { country_event = { id = HIN_flav.6 days = 30 } }
+	}
+}
+
+country_event = {
+	id = HIN_flav.5
+	title = HIN_flav.5_t
+	desc = HIN_flav.5_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.5_a
+		add_manpower = 25000
+		add_war_support = 0.05
+	}
+	option = {
+		name = HIN_flav.5_b
+		add_political_power = 100
+		add_stability = 0.04
+		remove_ideas = HIN_taluqdar_levies
+	}
+}
+
+country_event = {
+	id = HIN_flav.6
+	title = HIN_flav.6_t
+	desc = HIN_flav.6_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.6_a
+		add_political_power = 60
+		438 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_stability = 0.03
+	}
+	option = {
+		name = HIN_flav.6_b
+		add_war_support = 0.05
+		add_stability = -0.02
+		add_manpower = 15000
+	}
+}
+
+# === 1857 LEGACY RISING CHAIN (7-9) ===
+country_event = {
+	id = HIN_flav.7
+	title = HIN_flav.7_t
+	desc = HIN_flav.7_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.7_a
+		add_ideas = HIN_1857_legacy
+		add_war_support = 0.10
+		hidden_effect = { country_event = { id = HIN_flav.8 days = 20 } }
+	}
+	option = {
+		name = HIN_flav.7_b
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = HIN_flav.8
+	title = HIN_flav.8_t
+	desc = HIN_flav.8_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.8_a
+		army_experience = 30
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		hidden_effect = { country_event = { id = HIN_flav.9 days = 30 } }
+	}
+	option = {
+		name = HIN_flav.8_b
+		add_manpower = 30000
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = HIN_flav.9 days = 30 } }
+	}
+}
+
+country_event = {
+	id = HIN_flav.9
+	title = HIN_flav.9_t
+	desc = HIN_flav.9_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.9_a
+		create_wargoal = { target = MAR type = annex_everything }
+		add_war_support = 0.08
+		set_country_flag = HIN_war_of_completion
+	}
+	option = {
+		name = HIN_flav.9_b
+		add_political_power = 80
+		add_stability = 0.04
+	}
+}
+
+# === REVOLUTIONARY UNDERGROUND CHAIN (10-12) ===
+country_event = {
+	id = HIN_flav.10
+	title = HIN_flav.10_t
+	desc = HIN_flav.10_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.10_a
+		add_political_power = 40
+		set_country_flag = HIN_hsra_active
+		hidden_effect = { country_event = { id = HIN_flav.11 days = 30 } }
+	}
+	option = {
+		name = HIN_flav.10_b
+		add_stability = 0.04
+		add_political_power = 60
+	}
+}
+
+country_event = {
+	id = HIN_flav.11
+	title = HIN_flav.11_t
+	desc = HIN_flav.11_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.11_a
+		add_popularity = { ideology = communism popularity = 0.15 }
+		add_stability = -0.05
+		hidden_effect = { country_event = { id = HIN_flav.12 days = 30 } }
+	}
+	option = {
+		name = HIN_flav.11_b
+		add_political_power = 70
+		add_stability = 0.03
+		clr_country_flag = HIN_hsra_active
+	}
+}
+
+country_event = {
+	id = HIN_flav.12
+	title = HIN_flav.12_t
+	desc = HIN_flav.12_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.12_a
+		add_popularity = { ideology = communism popularity = 0.20 }
+		set_politics = { ruling_party = communism elections_allowed = no }
+		add_war_support = 0.06
+	}
+	option = {
+		name = HIN_flav.12_b
+		add_stability = 0.05
+		add_political_power = 90
+	}
+}
+
+# === ALIGARH vs BANARAS CULTURE-WAR FORK (13-14) ===
+country_event = {
+	id = HIN_flav.13
+	title = HIN_flav.13_t
+	desc = HIN_flav.13_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.13_a
+		add_ideas = HIN_aligarh_modernism
+		add_research_slot = 1
+		add_stability = -0.02
+		set_country_flag = HIN_aligarh_path
+	}
+	option = {
+		name = HIN_flav.13_b
+		add_ideas = HIN_banaras_revivalism
+		add_war_support = 0.06
+		add_stability = -0.02
+		set_country_flag = HIN_banaras_path
+	}
+	option = {
+		name = HIN_flav.13_c
+		add_ideas = HIN_gangetic_multitudes
+		add_stability = 0.05
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = HIN_flav.14
+	title = HIN_flav.14_t
+	desc = HIN_flav.14_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = HIN_flav.14_a
+		add_political_power = 60
+		add_stability = 0.04
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+	option = {
+		name = HIN_flav.14_b
+		add_war_support = 0.05
+		add_manpower = 12000
+	}
+}

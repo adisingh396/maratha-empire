@@ -978,4 +978,159 @@ focus_tree = {
 			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
+	focus = {
+		id = PJB_second_khalsa_raj
+		icon = GFX_goal_generic_major_war
+		x = 16
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_second_khalsa_raj"
+			add_political_power = 100
+			add_stability = 0.05
+			country_event = { id = PJB_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = PJB_lahore_durbar_restored
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = PJB_second_khalsa_raj }
+		x = 16
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_lahore_durbar_restored"
+			add_ideas = PJB_khalsa_army_tradition
+			add_stability = 0.04
+		}
+	}
+	focus = {
+		id = PJB_panthic_sovereignty
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PJB_lahore_durbar_restored }
+		mutually_exclusive = { focus = PJB_unionist_accord }
+		x = 15
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_panthic_sovereignty"
+			add_ideas = PJB_panthic_unity
+			country_event = { id = PJB_flav.4 days = 3 }
+		}
+	}
+	focus = {
+		id = PJB_unionist_accord
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = PJB_lahore_durbar_restored }
+		mutually_exclusive = { focus = PJB_panthic_sovereignty }
+		x = 17
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_unionist_accord"
+			add_ideas = PJB_unionist_coalition
+			country_event = { id = PJB_flav.6 days = 3 }
+		}
+	}
+	focus = {
+		id = PJB_ghadar_veterans
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = PJB_second_khalsa_raj }
+		x = 19
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_ghadar_veterans"
+			add_ideas = PJB_ghadar_legacy
+			country_event = { id = PJB_flav.8 days = 3 }
+		}
+	}
+	focus = {
+		id = PJB_canal_colony_charter
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = PJB_unionist_accord }
+		x = 17
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_canal_colony_charter"
+			add_ideas = PJB_canal_colonies
+			440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = PJB_martial_recruitment
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = PJB_panthic_sovereignty }
+		x = 15
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_martial_recruitment"
+			add_ideas = PJB_martial_races
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = PJB_march_of_the_khalsa
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = PJB_martial_recruitment }
+		prerequisite = { focus = PJB_ghadar_veterans }
+		x = 16
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.1.1 } }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_march_of_the_khalsa"
+			add_war_support = 0.08
+			army_experience = 25
+			country_event = { id = PJB_flav.10 days = 3 }
+		}
+	}
+	focus = {
+		id = PJB_reclaim_khyber
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = PJB_march_of_the_khalsa }
+		x = 15
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_reclaim_khyber"
+			add_war_support = 0.06
+			440 = { add_building_construction = { type = land_fort level = 2 instant_build = yes } }
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = PJB_reclaim_kashmir
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = PJB_march_of_the_khalsa }
+		x = 17
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed PJB_reclaim_kashmir"
+			create_wargoal = { target = KAS type = take_state_focus generator = { 441 } }
+			add_war_support = 0.06
+		}
+	}
 }

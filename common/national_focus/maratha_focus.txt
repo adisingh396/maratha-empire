@@ -1653,4 +1653,219 @@ focus_tree = {
 			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
+
+	# ========== EXPANSION: CONFEDERACY vs CENTRALISM ==========
+	focus = {
+		id = MAR_grand_sardar_council
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MAR_legacy_of_the_peshwas }
+		x = 32
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+			country_event = { id = MAR_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_devolution_charter
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MAR_grand_sardar_council }
+		mutually_exclusive = { focus = MAR_pune_supremacy }
+		x = 30
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			add_ideas = MAR_confederacy_autonomy
+			add_stability = 0.06
+		}
+	}
+	focus = {
+		id = MAR_pune_supremacy
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MAR_grand_sardar_council }
+		mutually_exclusive = { focus = MAR_devolution_charter }
+		x = 34
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			add_ideas = MAR_pune_centralism
+			add_political_power = 80
+			set_country_flag = MAR_centralism_path
+		}
+	}
+	focus = {
+		id = MAR_federal_diet
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = MAR_devolution_charter }
+		x = 30
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = MAR_grand_council
+			add_political_power = 80
+			country_event = { id = MAR_flav.4 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_unitary_command
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = MAR_pune_supremacy }
+		x = 34
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.05
+			army_experience = 25
+			country_event = { id = MAR_flav.5 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_proclaim_the_federation
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = MAR_federal_diet }
+		prerequisite = { focus = MAR_unitary_command }
+		x = 32
+		y = 4
+		cost = 10
+		available = { has_war = no }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+			country_event = { id = MAR_flav.6 days = 3 }
+		}
+	}
+
+	# ========== EXPANSION: HINDUTVA vs REFORMIST FORK ==========
+	focus = {
+		id = MAR_great_debate
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = MAR_legacy_of_the_peshwas }
+		x = 40
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_political_power = 80
+			country_event = { id = MAR_flav.20 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_savarkar_doctrine
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MAR_great_debate }
+		mutually_exclusive = { focus = MAR_ambedkar_constitution }
+		x = 38
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			add_ideas = MAR_hindutva_vanguard
+			add_popularity = { ideology = fascism popularity = 0.15 }
+		}
+	}
+	focus = {
+		id = MAR_ambedkar_constitution
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = MAR_great_debate }
+		mutually_exclusive = { focus = MAR_savarkar_doctrine }
+		x = 42
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			add_ideas = MAR_reformist_republic
+			add_popularity = { ideology = democratic popularity = 0.15 }
+		}
+	}
+	focus = {
+		id = MAR_hindu_martial_revival
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = MAR_savarkar_doctrine }
+		x = 38
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_manpower = 40000
+			army_experience = 30
+			country_event = { id = MAR_flav.21 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_secular_franchise
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = MAR_ambedkar_constitution }
+		x = 42
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_stability = 0.08
+			add_research_slot = 1
+			country_event = { id = MAR_flav.22 days = 3 }
+		}
+	}
+
+	# ========== EXPANSION: DECCAN FIVE-YEAR PLAN (industrial spine) ==========
+	focus = {
+		id = MAR_deccan_five_year_plan
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = MAR_legacy_of_the_peshwas }
+		x = 46
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = MAR_tata_combine_1
+			add_tech_bonus = { name = indus_bonus bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = MAR_tata_steel_foundries
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = MAR_deccan_five_year_plan }
+		x = 46
+		y = 2
+		cost = 10
+		completion_reward = {
+			swap_ideas = { remove_idea = MAR_tata_combine_1 add_idea = MAR_tata_combine_2 }
+			country_event = { id = MAR_flav.32 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_western_ghats_hydro
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = MAR_tata_steel_foundries }
+		x = 46
+		y = 3
+		cost = 10
+		completion_reward = {
+			swap_ideas = { remove_idea = MAR_tata_combine_2 add_idea = MAR_tata_combine_3 }
+			429 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = MAR_mahadaji_drill_reform
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = MAR_deccan_five_year_plan }
+		x = 48
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_ideas = MAR_mahadaji_drill
+			country_event = { id = MAR_flav.30 days = 3 }
+		}
+	}
+	focus = {
+		id = MAR_angre_blue_water_fleet
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = MAR_deccan_five_year_plan }
+		x = 44
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_ideas = MAR_angre_blue_water
+			country_event = { id = MAR_flav.31 days = 3 }
+		}
+	}
 }

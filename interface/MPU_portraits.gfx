@@ -1,18 +1,58 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_mpu_churachand"
-		texturefile = "gfx/leaders/MPU/portrait_mpu_churachand.dds"
+		name = "GFX_portrait_mpu_irabot"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_irabot.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_mpu_churachand_small"
-		texturefile = "gfx/leaders/MPU/portrait_mpu_churachand_small.dds"
+		name = "GFX_portrait_mpu_irabot_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_irabot_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_mpu_bodhchandra"
-		texturefile = "gfx/leaders/MPU/portrait_mpu_bodhchandra.dds"
+		name = "GFX_portrait_mpu_gambhir"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_gambhir.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_mpu_bodhchandra_small"
-		texturefile = "gfx/leaders/MPU/portrait_mpu_bodhchandra_small.dds"
+		name = "GFX_portrait_mpu_gambhir_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_gambhir_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_tikendrajit"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_tikendrajit.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_tikendrajit_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_tikendrajit_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_paona"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_paona.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_paona_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_paona_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_shaukat"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_shaukat.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_shaukat_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_shaukat_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_bhagyachandra"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_bhagyachandra.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_bhagyachandra_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_bhagyachandra_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_anganghal"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_anganghal.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mpu_anganghal_small"
+		texturefile = "gfx/leaders/MPU/portrait_mpu_anganghal_small.dds"
 	}
 }

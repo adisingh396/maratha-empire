@@ -1,0 +1,12 @@
+[
+  { "character": "SIN_gm_syed", "country": "SIN", "stem": "portrait_sin_gm_syed", "description": "Sindhi man in his early thirties, lean angular face, short dark beard, wearing a Sindhi topi cap and plain sherwani, intense reformer's gaze, 1930s" },
+  { "character": "SIN_hidayatullah", "country": "SIN", "stem": "portrait_sin_hidayatullah", "description": "distinguished Sindhi statesman in his late fifties, greying trimmed beard, round spectacles, black achkan with high collar, sober premier's bearing, 1930s" },
+  { "character": "SIN_bhutto", "country": "SIN", "stem": "portrait_sin_bhutto", "description": "landed Sindhi grandee in his late forties, full moustache, ornate embroidered sherwani and turban, shrewd aristocratic expression, 1930s" },
+  { "character": "SIN_pagaro", "country": "SIN", "stem": "portrait_sin_pagaro", "description": "young Sindhi pir in his late twenties, dark full beard, green turban and flowing robes, piercing charismatic eyes, spiritual-martial intensity, 1930s" },
+  { "character": "SIN_majeed", "country": "SIN", "stem": "portrait_sin_majeed", "description": "older Sindhi Khilafat leader in his fifties, white beard, karakul cap, dark buttoned coat, dignified scholarly look, 1930s" },
+  { "character": "SIN_haroon", "country": "SIN", "stem": "portrait_sin_haroon", "description": "prosperous Karachi merchant-magnate in his sixties, full white beard, Jinnah-style karakul cap, western suit with waistcoat, confident bearing, 1930s" },
+  { "character": "SIN_jamshed", "country": "SIN", "stem": "portrait_sin_jamshed", "description": "Parsi civic reformer in his early fifties, clean-shaven with small moustache, western three-piece suit and tie, kindly practical expression, 1930s" },
+  { "character": "SIN_ali_murad", "country": "SIN", "stem": "portrait_sin_ali_murad", "description": "Talpur Mir of Khairpur in his forties, black beard, jewelled turban and princely robes with sash, regal composed gaze, 1930s" },
+  { "character": "SIN_fateh_ali", "country": "SIN", "stem": "portrait_sin_fateh_ali", "description": "18th-century Talpur Mir warrior, black beard, ornate turban with aigrette, armour beneath silk robe, sabre at side, commanding martial expression, historical" },
+  { "character": "SIN_musto", "country": "SIN", "stem": "portrait_sin_musto", "description": "British engineer in his fifties, clean-shaven with neat moustache, tweed jacket and tie, weathered practical face, drawings in background, 1930s" }
+]

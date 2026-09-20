@@ -491,4 +491,206 @@ focus_tree = {
 			add_war_support = 0.08
 		}
 	}
+	focus = {
+		id = ASM_swargadeo_throne
+		icon = GFX_goal_generic_national_unity
+		x = 15
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_swargadeo_throne"
+			add_political_power = 80
+			add_stability = 0.05
+			country_event = { id = ASM_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = ASM_ahom_council
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ASM_swargadeo_throne }
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_ahom_council"
+			add_ideas = ASM_ahom_heritage
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = ASM_paik_levy
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ASM_swargadeo_throne }
+		x = 16
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_paik_levy"
+			add_manpower = 15000
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = ASM_kamarupa_restored
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = ASM_ahom_council }
+		prerequisite = { focus = ASM_paik_levy }
+		x = 15
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_kamarupa_restored"
+			add_ideas = ASM_ahom_heritage
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = ASM_digboi_derricks
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 19
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_digboi_derricks"
+			432 = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } }
+			country_event = { id = ASM_flav.4 days = 3 }
+		}
+	}
+	focus = {
+		id = ASM_foreign_majors
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ASM_digboi_derricks }
+		mutually_exclusive = { focus = ASM_national_oil_board }
+		x = 18
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_foreign_majors"
+			add_ideas = ASM_digboi_concession
+			add_political_power = 100
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = ASM_national_oil_board
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ASM_digboi_derricks }
+		mutually_exclusive = { focus = ASM_foreign_majors }
+		x = 20
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_national_oil_board"
+			add_ideas = ASM_digboi_concession
+			432 = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = ASM_digboi_pipeline
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ASM_foreign_majors ASM_national_oil_board }
+		x = 19
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_digboi_pipeline"
+			432 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			434 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = ASM_planter_clubs
+		icon = GFX_goal_generic_production
+		x = 23
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_planter_clubs"
+			add_political_power = 70
+			country_event = { id = ASM_flav.7 days = 3 }
+		}
+	}
+	focus = {
+		id = ASM_indenture_question
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ASM_planter_clubs }
+		mutually_exclusive = { focus = ASM_garden_councils }
+		x = 22
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_indenture_question"
+			add_ideas = ASM_tea_planters
+			add_political_power = 80
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = ASM_garden_councils
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ASM_planter_clubs }
+		mutually_exclusive = { focus = ASM_indenture_question }
+		x = 24
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_garden_councils"
+			add_manpower = 20000
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ASM_hill_autonomy
+		icon = GFX_goal_generic_national_unity
+		x = 27
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_hill_autonomy"
+			add_ideas = ASM_jungle_acclimatization
+			country_event = { id = ASM_flav.9 days = 3 }
+		}
+	}
+	focus = {
+		id = ASM_valley_centralism
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = ASM_hill_autonomy }
+		x = 27
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ASM_valley_centralism"
+			add_ideas = ASM_naga_tension
+			add_war_support = 0.06
+			add_manpower = 10000
+		}
+	}
 }

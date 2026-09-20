@@ -30,4 +30,109 @@ MPU_bodhchandra = {
 		traits = { backroom_backstabber }
 	}
 }
+MPU_irabot = {
+	name = MPU_irabot
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_irabot small = GFX_portrait_mpu_irabot_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MPU }
+		idea_token = MPU_irabot_red
+		cost = 75
+		traits = { communist_revolutionary }
+	}
+}
+MPU_gambhir = {
+	name = MPU_gambhir
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_gambhir small = GFX_portrait_mpu_gambhir_small }
+		army = { large = GFX_portrait_mpu_gambhir }
+	}
+	field_marshal = {
+		traits = { old_guard organiser }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+MPU_tikendrajit = {
+	name = MPU_tikendrajit
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_tikendrajit small = GFX_portrait_mpu_tikendrajit_small }
+		army = { large = GFX_portrait_mpu_tikendrajit }
+	}
+	corps_commander = {
+		traits = { infantry_leader hill_fighter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+MPU_paona = {
+	name = MPU_paona
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_paona small = GFX_portrait_mpu_paona_small }
+		army = { large = GFX_portrait_mpu_paona }
+	}
+	corps_commander = {
+		traits = { trickster harsh_leader }
+		skill = 3
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	}
+}
+MPU_shaukat = {
+	name = MPU_shaukat
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_shaukat small = GFX_portrait_mpu_shaukat_small }
+		army = { large = GFX_portrait_mpu_shaukat }
+	}
+	corps_commander = {
+		traits = { commando jungle_rat }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+MPU_bhagyachandra = {
+	name = MPU_bhagyachandra
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_bhagyachandra small = GFX_portrait_mpu_bhagyachandra_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MPU }
+		idea_token = MPU_bhagya_culture
+		cost = 75
+		traits = { compassionate_gentleman }
+	}
+}
+MPU_anganghal = {
+	name = MPU_anganghal
+	portraits = {
+		civilian = { large = GFX_portrait_mpu_anganghal small = GFX_portrait_mpu_anganghal_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MPU }
+		idea_token = MPU_anganghal_poet
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
 }

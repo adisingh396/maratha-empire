@@ -410,4 +410,115 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_praja_mandal" add_political_power = 80 add_stability = 0.03 set_country_flag = gujarat_awake }
 	}
+	focus = {
+		id = WIS_gaekwad_enlightenment
+		icon = GFX_goal_generic_scientific_exchange
+		x = 13 y = 0 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_gaekwad_enlightenment" add_political_power = 80 add_stability = 0.03 }
+	}
+	focus = {
+		id = WIS_free_libraries
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = WIS_gaekwad_enlightenment }
+		x = 12 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_free_libraries" add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics } add_stability = 0.03 }
+	}
+	focus = {
+		id = WIS_baroda_university
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = WIS_free_libraries }
+		x = 12 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_baroda_university" add_research_slot = 1 add_ideas = WIS_gaekwad_education }
+	}
+	focus = {
+		id = WIS_millowners_association
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = WIS_gaekwad_enlightenment }
+		x = 14 y = 1 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_millowners_association" 428 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } add_ideas = WIS_ahmedabad_mills }
+	}
+	focus = {
+		id = WIS_arvind_mills
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = WIS_millowners_association }
+		x = 14 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_arvind_mills" 428 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } add_tech_bonus = { bonus = 0.5 uses = 1 category = industry } }
+	}
+	focus = {
+		id = WIS_textile_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = WIS_arvind_mills }
+		x = 14 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_textile_arsenal" 428 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } } add_war_support = 0.04 }
+	}
+	focus = {
+		id = WIS_maritime_league
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = WIS_baroda_university }
+		prerequisite = { focus = WIS_textile_arsenal }
+		x = 13 y = 4 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_maritime_league" add_ideas = WIS_kathiawar_marine add_political_power = 50 }
+	}
+	focus = {
+		id = WIS_bedi_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = WIS_maritime_league }
+		x = 12 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_bedi_port" 428 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } } navy_experience = 30 }
+	}
+	focus = {
+		id = WIS_diamond_road
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = WIS_maritime_league }
+		x = 14 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_diamond_road" add_ideas = WIS_diamond_cutters add_political_power = 80 }
+	}
+	focus = {
+		id = WIS_maratha_question
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = WIS_bedi_port }
+		prerequisite = { focus = WIS_diamond_road }
+		x = 13 y = 6 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_maratha_question" add_political_power = 60 country_event = { id = WIS_flav.9 hours = 6 } }
+	}
+	focus = {
+		id = WIS_join_maratha_core
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = WIS_maratha_question }
+		mutually_exclusive = { focus = WIS_independent_gujarat }
+		x = 12 y = 7 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_join_maratha_core" add_ideas = WIS_maratha_heritage add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties } add_stability = 0.05 }
+	}
+	focus = {
+		id = WIS_independent_gujarat
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = WIS_maratha_question }
+		mutually_exclusive = { focus = WIS_join_maratha_core }
+		x = 14 y = 7 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { log = "[GetLogRoot]: Focus Completed WIS_independent_gujarat" add_stability = 0.05 add_war_support = 0.08 add_political_power = 100 }
+	}
 }

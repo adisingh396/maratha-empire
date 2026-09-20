@@ -1,0 +1,446 @@
+# MAR flavor events — Confederacy/Centralism, Peshwa/Chhatrapati legitimacy,
+# Hindutva/Reformist fork, Mahadaji drill, Angre blue-water, Tata Steel.
+# Namespace: MAR_flav (ids .1 - .40)
+
+add_namespace = MAR_flav
+
+# ============================================================
+# CHAIN A — CONFEDERACY vs CENTRALISM (.1 -> .6)
+# ============================================================
+
+country_event = {
+	id = MAR_flav.1
+	title = MAR_flav.1_t
+	desc = MAR_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.1_a
+		# Summon the sardars to Pune — assert the Peshwa's primacy
+		add_political_power = 60
+		set_country_flag = MAR_centralism_path
+		country_event = { id = MAR_flav.2 days = 5 }
+	}
+	option = {
+		name = MAR_flav.1_b
+		# Let the houses keep their durbars — buy loyalty with autonomy
+		add_stability = 0.05
+		add_ideas = MAR_confederacy_autonomy
+		set_country_flag = MAR_confederacy_path
+		country_event = { id = MAR_flav.4 days = 5 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.2
+	title = MAR_flav.2_t
+	desc = MAR_flav.2_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.2_a
+		# Scindia of Gwalior refuses the summons — force the issue
+		add_war_support = 0.08
+		add_stability = -0.05
+		set_country_flag = MAR_scindia_defiant
+		country_event = { id = MAR_flav.3 days = 7 }
+	}
+	option = {
+		name = MAR_flav.2_b
+		# Offer Gwalior a seat on a privy council instead
+		add_political_power = 40
+		add_ideas = MAR_grand_council
+		country_event = { id = MAR_flav.6 days = 10 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.3
+	title = MAR_flav.3_t
+	desc = MAR_flav.3_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.3_a
+		# March the Pune army north — subjugate the great houses
+		add_ideas = MAR_pune_centralism
+		add_war_support = 0.10
+		army_experience = 30
+		set_country_flag = MAR_centralism_enforced
+	}
+	option = {
+		name = MAR_flav.3_b
+		# Blink — grant the devolution the sardars demand
+		add_ideas = MAR_confederacy_autonomy
+		add_stability = 0.06
+		add_political_power = -50
+		set_country_flag = MAR_confederacy_path
+	}
+}
+
+country_event = {
+	id = MAR_flav.4
+	title = MAR_flav.4_t
+	desc = MAR_flav.4_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.4_a
+		# Convene a permanent Federal Diet of the houses
+		add_ideas = MAR_grand_council
+		add_political_power = 80
+		add_stability = 0.05
+		country_event = { id = MAR_flav.6 days = 8 }
+	}
+	option = {
+		name = MAR_flav.4_b
+		# Keep the confederacy loose and advisory only
+		add_stability = 0.04
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = MAR_flav.5
+	title = MAR_flav.5_t
+	desc = MAR_flav.5_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.5_a
+		# The Gwalior sardars rise — crush them and claim their lands
+		add_war_support = 0.10
+		create_wargoal = { target = HYD type = annex_everything }
+		set_country_flag = MAR_confederate_war
+	}
+	option = {
+		name = MAR_flav.5_b
+		# Overawe them with the drilled army — no blood spilled
+		army_experience = 25
+		add_political_power = 60
+		add_stability = 0.04
+		add_popularity = { ideology = fascism popularity = 0.05 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.6
+	title = MAR_flav.6_t
+	desc = MAR_flav.6_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.6_a
+		# Proclaim the Maratha Federation — one crown, many houses
+		add_stability = 0.08
+		add_political_power = 100
+		add_war_support = 0.05
+		439 = { add_core_of = MAR }
+		438 = { add_core_of = MAR }
+	}
+	option = {
+		name = MAR_flav.6_b
+		# Preserve the old confederacy — the houses keep their thrones
+		add_stability = 0.06
+		add_political_power = 60
+		add_ideas = MAR_confederacy_autonomy
+	}
+}
+
+# ============================================================
+# CHAIN B — PESHWA vs CHHATRAPATI LEGITIMACY (.10 -> .13)
+# ============================================================
+
+country_event = {
+	id = MAR_flav.10
+	title = MAR_flav.10_t
+	desc = MAR_flav.10_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.10_a
+		# Uphold the Peshwa office as the true seat of power
+		add_ideas = MAR_peshwa_supremacy
+		add_political_power = 80
+		set_country_flag = MAR_peshwa_legitimist
+		country_event = { id = MAR_flav.11 days = 6 }
+	}
+	option = {
+		name = MAR_flav.10_b
+		# Recall the Bhonsle Chhatrapati to genuine authority
+		add_ideas = MAR_chhatrapati_restored
+		add_war_support = 0.08
+		add_stability = 0.05
+		set_country_flag = MAR_chhatrapati_legitimist
+		country_event = { id = MAR_flav.12 days = 6 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.11
+	title = MAR_flav.11_t
+	desc = MAR_flav.11_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.11_a
+		# The Chitpavan Brahmin establishment consolidates the durbar
+		add_political_power = 120
+		add_stability = 0.05
+	}
+	option = {
+		name = MAR_flav.11_b
+		# Placate the Maratha kshatriya nobles with honours
+		add_political_power = 40
+		add_war_support = 0.06
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_flav.12
+	title = MAR_flav.12_t
+	desc = MAR_flav.12_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.12_a
+		# The restored Chhatrapati rallies the martial classes
+		add_war_support = 0.10
+		army_experience = 20
+		add_manpower = 20000
+	}
+	option = {
+		name = MAR_flav.12_b
+		# A constitutional compromise: king reigns, Peshwa governs
+		add_stability = 0.07
+		add_political_power = 70
+		country_event = { id = MAR_flav.13 days = 5 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.13
+	title = MAR_flav.13_t
+	desc = MAR_flav.13_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.13_a
+		# Codify a dual monarchy in a written charter
+		add_ideas = MAR_grand_council
+		add_stability = 0.06
+		add_political_power = 60
+	}
+	option = {
+		name = MAR_flav.13_b
+		# Leave the balance to custom, not paper
+		add_political_power = 90
+	}
+}
+
+# ============================================================
+# CHAIN C — HINDUTVA vs REFORMIST FORK (.20 -> .22)
+# ============================================================
+
+country_event = {
+	id = MAR_flav.20
+	title = MAR_flav.20_t
+	desc = MAR_flav.20_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.20_a
+		# Savarkar's Hindutva vanguard — a martial Hindu nation
+		add_ideas = MAR_hindutva_vanguard
+		add_popularity = { ideology = fascism popularity = 0.10 }
+		add_war_support = 0.08
+		set_country_flag = MAR_hindutva_turn
+		country_event = { id = MAR_flav.21 days = 7 }
+	}
+	option = {
+		name = MAR_flav.20_b
+		# Ambedkar & Karve's reformist republic — rights and schools
+		add_ideas = MAR_reformist_republic
+		add_stability = 0.08
+		add_popularity = { ideology = democratic popularity = 0.10 }
+		set_country_flag = MAR_reformist_turn
+		country_event = { id = MAR_flav.22 days = 7 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.21
+	title = MAR_flav.21_t
+	desc = MAR_flav.21_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.21_a
+		# Enlist the Sangathan volunteers into the state
+		add_manpower = 40000
+		army_experience = 25
+		add_war_support = 0.06
+	}
+	option = {
+		name = MAR_flav.21_b
+		# Keep the vanguard as a party militia, not an army
+		add_political_power = 80
+		add_popularity = { ideology = fascism popularity = 0.05 }
+	}
+}
+
+country_event = {
+	id = MAR_flav.22
+	title = MAR_flav.22_t
+	desc = MAR_flav.22_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MAR_flav.22_a
+		# Pass a secular civil code and abolish untouchability
+		add_stability = 0.06
+		add_political_power = 60
+		add_ideas = MAR_reformist_republic
+	}
+	option = {
+		name = MAR_flav.22_b
+		# Fund women's colleges and Dalit scholarships instead
+		add_stability = 0.05
+		add_research_slot = 1
+	}
+}
+
+# ============================================================
+# STANDALONE FLAVOR EVENTS (.30 -> .35)
+# ============================================================
+
+country_event = {
+	id = MAR_flav.30
+	title = MAR_flav.30_t
+	desc = MAR_flav.30_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	# Mahadaji's Drilled Army — the de Boigne brigades
+	option = {
+		name = MAR_flav.30_a
+		# Hire the European drill-masters and cast our own guns
+		add_ideas = MAR_mahadaji_drill
+		army_experience = 30
+		add_political_power = -40
+	}
+	option = {
+		name = MAR_flav.30_b
+		# Trust the traditional silladar cavalry host
+		add_stability = 0.04
+		add_command_power = 30
+	}
+}
+
+country_event = {
+	id = MAR_flav.31
+	title = MAR_flav.31_t
+	desc = MAR_flav.31_d
+	picture = GFX_report_event_konkan_fleet
+	is_triggered_only = yes
+	# Angre's Blue-Water Dream — the Konkan fleet reborn
+	option = {
+		name = MAR_flav.31_a
+		# Build a modern Arabian Sea fleet out of Bombay
+		add_ideas = MAR_angre_blue_water
+		navy_experience = 30
+		427 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+	}
+	option = {
+		name = MAR_flav.31_b
+		# Keep the coast guard small and the treasury full
+		add_political_power = 70
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_flav.32
+	title = MAR_flav.32_t
+	desc = MAR_flav.32_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	# Tata Steel & the Deccan Industrial Plan
+	option = {
+		name = MAR_flav.32_a
+		# Charter the Tata combine and pour the first heat of steel
+		add_ideas = MAR_tata_combine_1
+		429 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_political_power = -30
+	}
+	option = {
+		name = MAR_flav.32_b
+		# Court foreign capital and licences instead
+		add_political_power = 60
+		add_tech_bonus = { name = indus_bonus bonus = 0.5 uses = 1 category = industry }
+	}
+}
+
+country_event = {
+	id = MAR_flav.33
+	title = MAR_flav.33_t
+	desc = MAR_flav.33_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	# Tata Airlines takes flight over the Deccan
+	option = {
+		name = MAR_flav.33_a
+		# Nationalize the air routes into a state carrier
+		add_tech_bonus = { name = air_bonus bonus = 0.5 uses = 1 category = air_equipment }
+		429 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+	}
+	option = {
+		name = MAR_flav.33_b
+		# Leave J.R.D. Tata his private wings — subsidize quietly
+		add_political_power = 50
+		air_experience = 25
+	}
+}
+
+country_event = {
+	id = MAR_flav.34
+	title = MAR_flav.34_t
+	desc = MAR_flav.34_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	# Ahilyabai's Legacy — the temple-builder queen remembered
+	option = {
+		name = MAR_flav.34_a
+		# Invoke her memory to unify the Holkar domains
+		add_stability = 0.06
+		add_political_power = 50
+	}
+	option = {
+		name = MAR_flav.34_b
+		# Fund the ghats and dharmshalas she once endowed
+		add_stability = 0.04
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = MAR_flav.35
+	title = MAR_flav.35_t
+	desc = MAR_flav.35_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	# Visvesvaraya's Five-Year Vision presented to the durbar
+	option = {
+		name = MAR_flav.35_a
+		# Adopt the engineer's plan — dams, ironworks, and railways
+		add_ideas = MAR_tata_combine_2
+		add_political_power = -50
+		add_stability = 0.03
+	}
+	option = {
+		name = MAR_flav.35_b
+		# Fund only the water and power works for now
+		429 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_political_power = 40
+	}
+}

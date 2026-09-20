@@ -1,0 +1,239 @@
+add_namespace = BEN_flav
+
+# ============================================================
+# Netaji's Bengal chain (1-3)
+# ============================================================
+country_event = {
+	id = BEN_flav.1
+	title = BEN_flav.1_t
+	desc = BEN_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.1_a
+		add_political_power = 100
+		add_war_support = 0.05
+		set_country_flag = ben_netaji_ascendant
+		add_ideas = BEN_netaji_vision
+	}
+	option = {
+		name = BEN_flav.1_b
+		add_stability = 0.06
+		add_political_power = 40
+		set_country_flag = ben_congress_road
+	}
+}
+
+country_event = {
+	id = BEN_flav.2
+	title = BEN_flav.2_t
+	desc = BEN_flav.2_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.2_a
+		add_ideas = BEN_forward_bloc_state
+		army_experience = 30
+		add_war_support = 0.06
+	}
+	option = {
+		name = BEN_flav.2_b
+		add_political_power = 80
+		add_stability = 0.04
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+}
+
+country_event = {
+	id = BEN_flav.3
+	title = BEN_flav.3_t
+	desc = BEN_flav.3_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.3_a
+		add_war_support = 0.08
+		set_country_flag = ben_axis_lean
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+	}
+	option = {
+		name = BEN_flav.3_b
+		add_stability = 0.05
+		add_political_power = 60
+		set_country_flag = ben_neutral_arsenal
+	}
+}
+
+# ============================================================
+# Revolutionaries-take-power chain (4-5)
+# ============================================================
+country_event = {
+	id = BEN_flav.4
+	title = BEN_flav.4_t
+	desc = BEN_flav.4_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.4_a
+		add_ideas = BEN_revolutionary_cadres
+		army_experience = 40
+		add_stability = -0.03
+		country_event = { id = BEN_flav.5 days = 5 }
+	}
+	option = {
+		name = BEN_flav.4_b
+		add_political_power = 100
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = BEN_flav.5
+	title = BEN_flav.5_t
+	desc = BEN_flav.5_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.5_a
+		add_tech_bonus = { bonus = 1.0 uses = 1 category = infantry_weapons }
+		army_experience = 25
+		add_war_support = 0.05
+	}
+	option = {
+		name = BEN_flav.5_b
+		add_manpower = 25000
+		add_stability = 0.03
+	}
+}
+
+# ============================================================
+# United-vs-Partitioned Bengal chain (6-7)
+# ============================================================
+country_event = {
+	id = BEN_flav.6
+	title = BEN_flav.6_t
+	desc = BEN_flav.6_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.6_a
+		add_ideas = BEN_communal_balance
+		add_stability = 0.08
+		set_country_flag = ben_united_bengal
+		country_event = { id = BEN_flav.7 days = 5 }
+	}
+	option = {
+		name = BEN_flav.6_b
+		add_war_support = 0.06
+		add_stability = -0.05
+		set_country_flag = ben_partition_crisis
+		add_political_power = 60
+		country_event = { id = BEN_flav.7 days = 5 }
+	}
+}
+
+country_event = {
+	id = BEN_flav.7
+	title = BEN_flav.7_t
+	desc = BEN_flav.7_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.7_a
+		add_stability = 0.06
+		add_political_power = 80
+		add_opinion_modifier = { target = HIN modifier = maratha_cultural_ties }
+	}
+	option = {
+		name = BEN_flav.7_b
+		add_war_support = 0.05
+		add_manpower = 15000
+		add_stability = -0.03
+	}
+}
+
+# ============================================================
+# Krishak peasant-republic chain (8-9)
+# ============================================================
+country_event = {
+	id = BEN_flav.8
+	title = BEN_flav.8_t
+	desc = BEN_flav.8_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.8_a
+		add_ideas = BEN_krishak_reform
+		add_stability = 0.05
+		add_manpower = 20000
+		country_event = { id = BEN_flav.9 days = 5 }
+	}
+	option = {
+		name = BEN_flav.8_b
+		add_political_power = 120
+		add_stability = 0.02
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+}
+
+country_event = {
+	id = BEN_flav.9
+	title = BEN_flav.9_t
+	desc = BEN_flav.9_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.9_a
+		add_stability = 0.06
+		add_war_support = 0.04
+		add_manpower = 15000
+	}
+	option = {
+		name = BEN_flav.9_b
+		add_political_power = 80
+		add_stability = -0.04
+		add_war_support = 0.06
+	}
+}
+
+# ============================================================
+# Scientist-State chain (10-11)
+# ============================================================
+country_event = {
+	id = BEN_flav.10
+	title = BEN_flav.10_t
+	desc = BEN_flav.10_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.10_a
+		add_ideas = BEN_bengal_renaissance
+		add_tech_bonus = { bonus = 0.5 uses = 2 category = electronics }
+		add_research_slot = 1
+	}
+	option = {
+		name = BEN_flav.10_b
+		add_political_power = 100
+		add_tech_bonus = { bonus = 1.0 uses = 1 category = industry }
+	}
+}
+
+country_event = {
+	id = BEN_flav.11
+	title = BEN_flav.11_t
+	desc = BEN_flav.11_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = BEN_flav.11_a
+		add_ideas = BEN_jute_monopoly
+		add_political_power = 80
+		431 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+	}
+	option = {
+		name = BEN_flav.11_b
+		add_stability = 0.04
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		add_war_support = 0.03
+	}
+}

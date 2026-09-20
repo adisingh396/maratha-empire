@@ -1,0 +1,285 @@
+# RJP_flav events — Rajputana flavor chains
+# Chains: Rajput Confederation (.1-.3, .14), Ganga Risala (.4-.5),
+# Marwari Capital vs Desert Crown (.6-.8), Jodhpur Air Arm (.9-.10),
+# Canal Wars of the Thar (.11-.12), Purdah Reform Crisis (.13)
+
+add_namespace = RJP_flav
+
+# ============ Rajput Confederation chain ============
+country_event = {
+	id = RJP_flav.1
+	title = RJP_flav.1_t
+	desc = RJP_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.1_a # Summon the Chamber of Princes
+		add_political_power = 60
+		set_country_flag = rjp_chamber_convened
+		hidden_effect = { country_event = { id = RJP_flav.2 days = 20 } }
+	}
+	option = {
+		name = RJP_flav.1_b # Let the courts keep their sovereignty
+		add_stability = 0.05
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = RJP_flav.2
+	title = RJP_flav.2_t
+	desc = RJP_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.2_a # Grant Mewar the seat of honour
+		add_ideas = RJP_sisodia_prestige
+		add_stability = 0.04
+		hidden_effect = { country_event = { id = RJP_flav.3 days = 25 } }
+	}
+	option = {
+		name = RJP_flav.2_b # Elevate Bikaner's martial crown
+		add_war_support = 0.06
+		army_experience = 15
+		hidden_effect = { country_event = { id = RJP_flav.3 days = 25 } }
+	}
+	option = {
+		name = RJP_flav.2_c # A rotating presidency for all houses
+		add_stability = 0.06
+		add_political_power = 40
+		hidden_effect = { country_event = { id = RJP_flav.3 days = 25 } }
+	}
+}
+
+country_event = {
+	id = RJP_flav.3
+	title = RJP_flav.3_t
+	desc = RJP_flav.3_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.3_a # A war-council of the martial clans
+		add_ideas = RJP_warrior_caste
+		army_experience = 25
+	}
+	option = {
+		name = RJP_flav.3_b # A council bankrolled by the merchant seths
+		add_ideas = RJP_marwari_capital
+		add_political_power = 80
+	}
+}
+
+country_event = {
+	id = RJP_flav.14
+	title = RJP_flav.14_t
+	desc = RJP_flav.14_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.14_a # Proclaim the primacy of the House of Mewar
+		add_ideas = RJP_sisodia_prestige
+		add_war_support = 0.05
+	}
+	option = {
+		name = RJP_flav.14_b # Honour all the ancient houses as equals
+		add_stability = 0.05
+		add_political_power = 60
+	}
+}
+
+# ============ Ganga Risala camel-mech corps chain ============
+country_event = {
+	id = RJP_flav.4
+	title = RJP_flav.4_t
+	desc = RJP_flav.4_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.4_a # Mechanise the camel corps into desert cavalry
+		add_ideas = RJP_ganga_risala_corps
+		army_experience = 20
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = motorized_equipment }
+		hidden_effect = { country_event = { id = RJP_flav.5 days = 30 } }
+	}
+	option = {
+		name = RJP_flav.4_b # Keep the traditional Ganga Risala
+		add_manpower = 12000
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = RJP_flav.5 days = 30 } }
+	}
+}
+
+country_event = {
+	id = RJP_flav.5
+	title = RJP_flav.5_t
+	desc = RJP_flav.5_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.5_a # The Thar trials are a triumph
+		add_war_support = 0.05
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+	}
+	option = {
+		name = RJP_flav.5_b # Costly, but the men learned hard lessons
+		add_stability = -0.02
+		army_experience = 30
+	}
+}
+
+# ============ Marwari Capital vs Desert Crown fork ============
+country_event = {
+	id = RJP_flav.6
+	title = RJP_flav.6_t
+	desc = RJP_flav.6_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.6_a # Empower the Marwari merchant houses
+		add_political_power = 40
+		hidden_effect = { country_event = { id = RJP_flav.7 days = 15 } }
+	}
+	option = {
+		name = RJP_flav.6_b # Uphold the feudal jagirdari order
+		add_political_power = 40
+		hidden_effect = { country_event = { id = RJP_flav.8 days = 15 } }
+	}
+}
+
+country_event = {
+	id = RJP_flav.7
+	title = RJP_flav.7_t
+	desc = RJP_flav.7_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.7_a # Let the financiers build the future
+		add_ideas = RJP_marwari_capital
+		add_stability = -0.03
+		433 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+	}
+}
+
+country_event = {
+	id = RJP_flav.8
+	title = RJP_flav.8_t
+	desc = RJP_flav.8_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.8_a # The thakurs answer the levy
+		add_manpower = 20000
+		add_stability = 0.05
+		add_war_support = 0.03
+	}
+}
+
+# ============ Jodhpur Air Arm chain ============
+country_event = {
+	id = RJP_flav.9
+	title = RJP_flav.9_t
+	desc = RJP_flav.9_d
+	picture = GFX_report_event_konkan_fleet
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.9_a # Found the princely air arm
+		add_ideas = RJP_flying_club
+		air_experience = 25
+		433 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = RJP_flav.10 days = 40 } }
+	}
+	option = {
+		name = RJP_flav.9_b # Pour the funds into railways instead
+		989 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_political_power = 60
+	}
+}
+
+country_event = {
+	id = RJP_flav.10
+	title = RJP_flav.10_t
+	desc = RJP_flav.10_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.10_a # Raise fighter squadrons over Marwar
+		air_experience = 30
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine }
+	}
+	option = {
+		name = RJP_flav.10_b # Build a transport and liaison wing
+		add_stability = 0.04
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+	}
+}
+
+# ============ Canal Wars of the Thar (vs PJB) ============
+country_event = {
+	id = RJP_flav.11
+	title = RJP_flav.11_t
+	desc = RJP_flav.11_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.11_a # Seize the Sutlej waters by force
+		add_war_support = 0.06
+		create_wargoal = { target = PJB type = take_state_focus generator = { 442 } }
+		add_opinion_modifier = { target = PJB modifier = maratha_betrayal }
+	}
+	option = {
+		name = RJP_flav.11_b # Negotiate a water treaty with Punjab
+		add_stability = 0.04
+		add_opinion_modifier = { target = PJB modifier = maratha_cultural_ties }
+		reverse_add_opinion_modifier = { target = PJB modifier = maratha_cultural_ties }
+	}
+	option = {
+		name = RJP_flav.11_c # Extend the Gang Canal on our own soil
+		add_ideas = RJP_gang_canal
+		add_manpower = 10000
+		hidden_effect = { country_event = { id = RJP_flav.12 days = 60 } }
+	}
+}
+
+country_event = {
+	id = RJP_flav.12
+	title = RJP_flav.12_t
+	desc = RJP_flav.12_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.12_a # A bumper harvest greens the desert
+		add_manpower = 15000
+		add_stability = 0.05
+	}
+	option = {
+		name = RJP_flav.12_b # Drought and disputes over the headworks
+		add_stability = -0.03
+		add_political_power = 80
+	}
+}
+
+# ============ The Purdah Reform Crisis ============
+country_event = {
+	id = RJP_flav.13
+	title = RJP_flav.13_t
+	desc = RJP_flav.13_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = RJP_flav.13_a # Enact the modernising reforms
+		add_stability = 0.05
+		add_war_support = 0.04
+		add_political_power = 30
+	}
+	option = {
+		name = RJP_flav.13_b # Defer to the orthodox nobility
+		add_stability = 0.03
+		add_war_support = -0.03
+		add_political_power = 60
+	}
+	option = {
+		name = RJP_flav.13_c # Steer a cautious middle path
+		add_stability = 0.02
+		add_political_power = 40
+	}
+}

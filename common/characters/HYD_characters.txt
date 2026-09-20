@@ -95,4 +95,137 @@ HYD_bahadur_yar = {
 		id = -1
 	}
 }
+HYD_salar_jung3 = {
+	name = HYD_salar_jung3
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_salar_jung3 small = GFX_portrait_hyd_salar_jung3_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_salar_jung3_reform
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+HYD_kishen_pershad = {
+	name = HYD_kishen_pershad
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_kishen_pershad small = GFX_portrait_hyd_kishen_pershad_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_kishen_pershad_unity
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+HYD_akbar_hydari = {
+	name = HYD_akbar_hydari
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_akbar_hydari small = GFX_portrait_hyd_akbar_hydari_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_akbar_hydari_finance
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+HYD_chhatari = {
+	name = HYD_chhatari
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_chhatari small = GFX_portrait_hyd_chhatari_small }
+		army = { large = GFX_portrait_hyd_chhatari small = GFX_portrait_hyd_chhatari_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_chhatari_caretaker
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = HYD }
+		idea_token = HYD_chhatari_hc
+		cost = 100
+		traits = { army_infantry_2 }
+	}
+}
+HYD_ramananda_tirtha = {
+	name = HYD_ramananda_tirtha
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_ramananda_tirtha small = GFX_portrait_hyd_ramananda_tirtha_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_ramananda_congress
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+HYD_sundarayya = {
+	name = HYD_sundarayya
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_sundarayya small = GFX_portrait_hyd_sundarayya_small }
+		army = { large = GFX_portrait_hyd_sundarayya small = GFX_portrait_hyd_sundarayya_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = HYD }
+		idea_token = HYD_sundarayya_hc
+		cost = 100
+		traits = { army_infantry_2 }
+	}
+}
+HYD_narayana_reddy = {
+	name = HYD_narayana_reddy
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_narayana_reddy small = GFX_portrait_hyd_narayana_reddy_small }
+		army = { large = GFX_portrait_hyd_narayana_reddy small = GFX_portrait_hyd_narayana_reddy_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HYD }
+		idea_token = HYD_narayana_sangham
+		cost = 75
+		traits = { ideological_crusader }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = HYD }
+		idea_token = HYD_narayana_hc
+		cost = 100
+		traits = { army_infantry_2 }
+	}
+}
+HYD_makhdoom = {
+	name = HYD_makhdoom
+	portraits = {
+		civilian = { large = GFX_portrait_hyd_makhdoom small = GFX_portrait_hyd_makhdoom_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = HYD }
+		idea_token = HYD_makhdoom_theory
+		cost = 100
+		traits = { military_theorist }
+	}
+}
 }

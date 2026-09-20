@@ -1,0 +1,12 @@
+[
+  { "character": "MDR_periyar", "country": "MDR", "stem": "portrait_mdr_periyar", "description": "elderly Tamil man late 50s, long full white beard, bald pate, thick dark-rimmed spectacles, plain black shirt, intense piercing gaze, stern rationalist orator" },
+  { "character": "MDR_rajan", "country": "MDR", "stem": "portrait_mdr_rajan", "description": "middle-aged Tamil man 40s, clean-shaven, receding hair, round spectacles, white khadi jacket over dhoti, composed confident politician expression" },
+  { "character": "MDR_annamalai", "country": "MDR", "stem": "portrait_mdr_annamalai", "description": "distinguished Chettiar banker 50s, trimmed grey moustache, gold-framed spectacles, cream silk angavastram over jibba, jewelled turban, dignified affluent bearing" },
+  { "character": "MDR_alagappa", "country": "MDR", "stem": "portrait_mdr_alagappa", "description": "Chettiar industrialist late 20s to 30s, clean-shaven, neatly combed hair, dark western suit with tie, ambitious philanthropic entrepreneur expression" },
+  { "character": "MDR_annadurai", "country": "MDR", "stem": "portrait_mdr_annadurai", "description": "young Tamil orator late 20s, clean-shaven, thick dark hair, plain white shirt, animated charismatic speaker's gaze, Dravidian firebrand" },
+  { "character": "MDR_satyamurti", "country": "MDR", "stem": "portrait_mdr_satyamurti", "description": "stout Tamil nationalist 40s, small moustache, round spectacles, white khadi cap and jacket, warm persuasive orator's smile" },
+  { "character": "MDR_theagaraya", "country": "MDR", "stem": "portrait_mdr_theagaraya", "description": "elderly industrialist-statesman 60s, full grey moustache, balding, formal dark coat with high collar, patriarch of the Justice Party, grave dignified expression" },
+  { "character": "MDR_natesa", "country": "MDR", "stem": "portrait_mdr_natesa", "description": "Tamil physician-reformer late 50s, moustache, spectacles, formal dark suit and tie, earnest reformist gaze, non-Brahmin movement founder" },
+  { "character": "MDR_vocp", "country": "MDR", "stem": "portrait_mdr_vocp", "description": "Tamil merchant-mariner 60s, thick moustache, white turban, buttoned dark coat over dhoti, resolute patriotic seafarer's expression, era-worn" },
+  { "character": "MDR_muthiah", "country": "MDR", "stem": "portrait_mdr_muthiah", "description": "young Chettiar raja 30s, thin moustache, jewelled silk turban, embroidered achkan, princely minister-industrialist bearing" }
+]

@@ -45,4 +45,238 @@ PJB_ghaffar = {
 		traits = { backroom_backstabber }
 	}
 }
+PJB_ranjit_singh = {
+	name = "Ranjit Singh"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_ranjit small = GFX_portrait_pjb_ranjit_small }
+		army = { large = GFX_portrait_pjb_ranjit small = GFX_portrait_pjb_ranjit_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+PJB_hari_singh_nalwa = {
+	name = "Hari Singh Nalwa"
+	portraits = {
+		army = { large = GFX_portrait_pjb_nalwa small = GFX_portrait_pjb_nalwa_small }
+	}
+	field_marshal = {
+		traits = { offensive_doctrine inspirational_leader }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 3
+	}
+	advisor = {
+		slot = army_chief
+		allowed = { original_tag = PJB }
+		idea_token = PJB_nalwa_chief
+		cost = 75
+		traits = { army_chief_offensive_2 }
+	}
+}
+PJB_sham_singh = {
+	name = "Sham Singh Attariwala"
+	portraits = {
+		army = { large = GFX_portrait_pjb_sham small = GFX_portrait_pjb_sham_small }
+	}
+	corps_commander = {
+		traits = { infantry_leader trait_reckless }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+PJB_phula_singh = {
+	name = "Akali Phula Singh"
+	portraits = {
+		army = { large = GFX_portrait_pjb_phula small = GFX_portrait_pjb_phula_small }
+	}
+	corps_commander = {
+		traits = { guerilla_fighter harsh_leader }
+		skill = 4
+		attack_skill = 5
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = PJB }
+		idea_token = PJB_phula_theorist
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+PJB_zorawar_singh = {
+	name = "Zorawar Singh Kahluria"
+	portraits = {
+		army = { large = GFX_portrait_pjb_zorawar small = GFX_portrait_pjb_zorawar_small }
+	}
+	field_marshal = {
+		traits = { trait_mountaineer winter_specialist }
+		skill = 5
+		attack_skill = 5
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 2
+	}
+}
+PJB_jind_kaur = {
+	name = "Jind Kaur"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_jindan small = GFX_portrait_pjb_jindan_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = PJB }
+		idea_token = PJB_jindan_regent
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+PJB_duleep_singh = {
+	name = "Duleep Singh"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_duleep small = GFX_portrait_pjb_duleep_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+PJB_tara_singh = {
+	name = "Master Tara Singh"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_tara small = GFX_portrait_pjb_tara_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { nationalist }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = PJB }
+		idea_token = PJB_tara_counsel
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+PJB_sikandar_hayat = {
+	name = "Sikandar Hayat Khan"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_sikandar small = GFX_portrait_pjb_sikandar_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { }
+		expire = "1942.12.26"
+		id = -1
+	}
+}
+PJB_khizar_tiwana = {
+	name = "Khizar Hayat Khan Tiwana"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_khizar small = GFX_portrait_pjb_khizar_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+PJB_chhotu_ram = {
+	name = "Chhotu Ram"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_chhotu small = GFX_portrait_pjb_chhotu_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = PJB }
+		idea_token = PJB_chhotu_agrarian
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+PJB_baldev_singh = {
+	name = "Baldev Singh"
+	portraits = {
+		army = { large = GFX_portrait_pjb_baldev small = GFX_portrait_pjb_baldev_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = PJB }
+		idea_token = PJB_baldev_command
+		cost = 75
+		traits = { army_regrouping_2 }
+	}
+}
+PJB_har_dayal = {
+	name = "Lala Har Dayal"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_hardayal small = GFX_portrait_pjb_hardayal_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { }
+		expire = "1939.3.4"
+		id = -1
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = PJB }
+		idea_token = PJB_hardayal_theorist
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+PJB_sohan_bhakna = {
+	name = "Sohan Singh Bhakna"
+	portraits = {
+		army = { large = GFX_portrait_pjb_bhakna small = GFX_portrait_pjb_bhakna_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = PJB }
+		idea_token = PJB_bhakna_command
+		cost = 75
+		traits = { army_infantry_2 }
+	}
+}
+PJB_bhagat_singh = {
+	name = "Bhagat Singh"
+	portraits = {
+		civilian = { large = GFX_portrait_pjb_bhagat small = GFX_portrait_pjb_bhagat_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = PJB }
+		idea_token = PJB_bhagat_theorist
+		cost = 75
+		traits = { military_theorist }
+	}
+}
 }

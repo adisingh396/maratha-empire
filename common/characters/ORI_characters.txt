@@ -35,4 +35,188 @@ ORI_biju = {
 		traits = { military_theorist }
 	}
 }
+ORI_krushna_gajapati = {
+	name = ORI_krushna_gajapati
+	portraits = {
+		civilian = { large = GFX_portrait_ori_gajapati small = GFX_portrait_ori_gajapati_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_krushna_unifier
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+ORI_madhusudan_das = {
+	name = ORI_madhusudan_das
+	portraits = {
+		civilian = { large = GFX_portrait_ori_madhusudan small = GFX_portrait_ori_madhusudan_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_utkal_gouraba
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+ORI_harekrushna_mahatab = {
+	name = ORI_harekrushna_mahatab
+	portraits = {
+		civilian = { large = GFX_portrait_ori_mahatab small = GFX_portrait_ori_mahatab_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_utkal_keshari
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+ORI_nabakrushna_choudhury = {
+	name = ORI_nabakrushna_choudhury
+	portraits = {
+		civilian = { large = GFX_portrait_ori_nabakrushna small = GFX_portrait_ori_nabakrushna_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_gandhian_socialist
+		cost = 75
+		traits = { compassionate_gentleman }
+	}
+}
+ORI_gopabandhu_das = {
+	name = ORI_gopabandhu_das
+	portraits = {
+		civilian = { large = GFX_portrait_ori_gopabandhu small = GFX_portrait_ori_gopabandhu_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = ORI }
+		idea_token = ORI_utkalmani
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+ORI_pratap_bhanj = {
+	name = ORI_pratap_bhanj
+	portraits = {
+		civilian = { large = GFX_portrait_ori_pratap small = GFX_portrait_ori_pratap_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = ORI }
+		idea_token = ORI_mayurbhanj_crown
+		cost = 75
+		traits = { army_regrouping_expert }
+	}
+}
+ORI_sriram_bhanj = {
+	name = ORI_sriram_bhanj
+	portraits = {
+		civilian = { large = GFX_portrait_ori_sriram small = GFX_portrait_ori_sriram_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_model_maharaja
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+ORI_rajendra_singhdeo = {
+	name = ORI_rajendra_singhdeo
+	portraits = {
+		civilian = { large = GFX_portrait_ori_rajendra small = GFX_portrait_ori_rajendra_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_feudal_bloc
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+ORI_sarangadhar_das = {
+	name = ORI_sarangadhar_das
+	portraits = {
+		civilian = { large = GFX_portrait_ori_sarangadhar small = GFX_portrait_ori_sarangadhar_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ORI }
+		idea_token = ORI_praja_organiser
+		cost = 75
+		traits = { economist }
+	}
+}
+ORI_kharavela = {
+	name = ORI_kharavela
+	portraits = {
+		civilian = { large = GFX_portrait_ori_kharavela small = GFX_portrait_ori_kharavela_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = ORI }
+		idea_token = ORI_chedi_legacy
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+ORI_shankar_dhenkanal = {
+	name = ORI_shankar_dhenkanal
+	portraits = {
+		civilian = { large = GFX_portrait_ori_shankar small = GFX_portrait_ori_shankar_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { warmonger }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
 }

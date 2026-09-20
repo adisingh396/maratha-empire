@@ -36,4 +36,160 @@ ASM_fakhruddin = {
 		traits = { backroom_backstabber }
 	}
 }
+ASM_purandar = {
+	name = ASM_purandar
+	portraits = {
+		civilian = { large = GFX_portrait_asm_purandar small = GFX_portrait_asm_purandar_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+ASM_phizo = {
+	name = ASM_phizo
+	portraits = {
+		civilian = { large = GFX_portrait_asm_phizo small = GFX_portrait_asm_phizo_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { warmonger }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_phizo_naga_voice
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+ASM_rabha = {
+	name = ASM_rabha
+	portraits = {
+		civilian = { large = GFX_portrait_asm_rabha small = GFX_portrait_asm_rabha_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_rabha_kalaguru
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+ASM_phukan = {
+	name = ASM_phukan
+	portraits = {
+		civilian = { large = GFX_portrait_asm_phukan small = GFX_portrait_asm_phukan_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_phukan_congress
+		cost = 75
+		traits = { compassionate_gentleman }
+	}
+}
+ASM_raichoudhury = {
+	name = ASM_raichoudhury
+	portraits = {
+		civilian = { large = GFX_portrait_asm_raichoudhury small = GFX_portrait_asm_raichoudhury_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_raichoudhury_kesari
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+ASM_agarwala = {
+	name = ASM_agarwala
+	portraits = {
+		civilian = { large = GFX_portrait_asm_agarwala small = GFX_portrait_asm_agarwala_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_agarwala_jyoti
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+ASM_bezbaroa = {
+	name = ASM_bezbaroa
+	portraits = {
+		civilian = { large = GFX_portrait_asm_bezbaroa small = GFX_portrait_asm_bezbaroa_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = ASM }
+		idea_token = ASM_bezbaroa_theorist
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+ASM_maniram = {
+	name = ASM_maniram
+	portraits = {
+		civilian = { large = GFX_portrait_asm_maniram small = GFX_portrait_asm_maniram_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_maniram_planter
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+ASM_sukaphaa = {
+	name = ASM_sukaphaa
+	portraits = {
+		civilian = { large = GFX_portrait_asm_sukaphaa small = GFX_portrait_asm_sukaphaa_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = ASM }
+		idea_token = ASM_sukaphaa_founder
+		cost = 75
+		traits = { popular_figurehead }
+	}
+}
+ASM_lachit = {
+	name = ASM_lachit
+	portraits = {
+		army = { large = GFX_portrait_asm_lachit small = GFX_portrait_asm_lachit_small }
+	}
+	field_marshal = {
+		traits = { old_guard war_hero trickster }
+		skill = 5
+		attack_skill = 4
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+ASM_gaidinliu = {
+	name = ASM_gaidinliu
+	portraits = {
+		army = { large = GFX_portrait_asm_gaidinliu small = GFX_portrait_asm_gaidinliu_small }
+	}
+	corps_commander = {
+		traits = { hill_fighter guerilla_fighter ambusher }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
 }

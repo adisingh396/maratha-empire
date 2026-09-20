@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+		PJB_khalsa_army_tradition = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				army_morale_factor = 0.08
+				army_org_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		PJB_martial_races = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.02
+				army_core_attack_factor = 0.05
+				training_time_army_factor = -0.10
+			}
+		}
+		PJB_panthic_unity = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		PJB_unionist_coalition = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_expected = -0.05
+				drift_defence_factor = 0.15
+			}
+		}
+		PJB_canal_colonies = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_agrarian_reform
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.08
+				production_speed_infrastructure_factor = 0.10
+				monthly_population = 0.05
+			}
+		}
+		PJB_ghadar_legacy = {
+			allowed = { original_tag = PJB }
+			removal_cost = -1
+			picture = generic_propaganda
+			modifier = {
+				war_support_factor = 0.08
+				army_attack_factor = 0.05
+				subversive_activites_upkeep = -0.20
+			}
+		}
+	}
+}

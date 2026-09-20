@@ -1,0 +1,253 @@
+# MYS_flav — Mysore flavor chains (Engineer-King plan, HAL arsenal, Regency, Model-vs-Congress, Sandalwood & Gold)
+
+add_namespace = MYS_flav
+
+# --- The Engineer-King's Five-Year Plan chain (1-3) ---
+country_event = {
+	id = MYS_flav.1
+	title = MYS_flav.1_t
+	desc = MYS_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.1_a
+		add_political_power = 60
+		add_ideas = MYS_engineer_king_plan
+		hidden_effect = { country_event = { id = MYS_flav.2 days = 45 } }
+	}
+	option = {
+		name = MYS_flav.1_b
+		add_stability = 0.05
+		425 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = MYS_flav.2 days = 45 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.2
+	title = MYS_flav.2_t
+	desc = MYS_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.2_a
+		425 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = MYS_flav.3 days = 60 } }
+	}
+	option = {
+		name = MYS_flav.2_b
+		425 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = MYS_flav.3 days = 60 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.3
+	title = MYS_flav.3_t
+	desc = MYS_flav.3_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.3_a
+		add_ideas = MYS_bhadravati_plan
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+	}
+	option = {
+		name = MYS_flav.3_b
+		add_political_power = 100
+		add_stability = 0.04
+	}
+}
+
+# --- HAL aviation-arsenal chain (4-6) ---
+country_event = {
+	id = MYS_flav.4
+	title = MYS_flav.4_t
+	desc = MYS_flav.4_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.4_a
+		add_ideas = MYS_hal_arsenal
+		air_experience = 30
+		hidden_effect = { country_event = { id = MYS_flav.5 days = 40 } }
+	}
+	option = {
+		name = MYS_flav.4_b
+		425 = { add_building_construction = { type = air_base level = 1 instant_build = yes } }
+		add_political_power = 60
+		hidden_effect = { country_event = { id = MYS_flav.5 days = 40 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.5
+	title = MYS_flav.5_t
+	desc = MYS_flav.5_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.5_a
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = air_equipment }
+		hidden_effect = { country_event = { id = MYS_flav.6 days = 50 } }
+	}
+	option = {
+		name = MYS_flav.5_b
+		set_country_flag = mys_hal_sovereign
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = MYS_flav.6 days = 50 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.6
+	title = MYS_flav.6_t
+	desc = MYS_flav.6_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.6_a
+		425 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+		add_tech_bonus = { bonus = 0.75 uses = 1 category = air_equipment }
+	}
+	option = {
+		name = MYS_flav.6_b
+		add_ideas = MYS_hal_arsenal
+		air_experience = 50
+	}
+}
+
+# --- The Regency Question, 1940 succession chain (7-8) ---
+country_event = {
+	id = MYS_flav.7
+	title = MYS_flav.7_t
+	desc = MYS_flav.7_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.7_a
+		add_stability = 0.05
+		set_country_flag = mys_strong_monarchy
+		hidden_effect = { country_event = { id = MYS_flav.8 days = 30 } }
+	}
+	option = {
+		name = MYS_flav.7_b
+		add_political_power = 120
+		set_country_flag = mys_diwan_regency
+		hidden_effect = { country_event = { id = MYS_flav.8 days = 30 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.8
+	title = MYS_flav.8_t
+	desc = MYS_flav.8_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.8_a
+		trigger = { has_country_flag = mys_strong_monarchy }
+		add_ideas = MYS_model_state
+		add_stability = 0.04
+	}
+	option = {
+		name = MYS_flav.8_b
+		trigger = { has_country_flag = mys_diwan_regency }
+		add_ideas = MYS_model_state
+		add_political_power = 80
+	}
+	option = {
+		name = MYS_flav.8_c
+		add_war_support = 0.05
+	}
+}
+
+# --- Mysore Model vs Congress fork (9-10) ---
+country_event = {
+	id = MYS_flav.9
+	title = MYS_flav.9_t
+	desc = MYS_flav.9_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.9_a
+		add_stability = 0.06
+		add_political_power = -40
+		set_country_flag = mys_reform_path
+		hidden_effect = { country_event = { id = MYS_flav.10 days = 45 } }
+	}
+	option = {
+		name = MYS_flav.9_b
+		add_stability = -0.04
+		add_war_support = 0.06
+		set_country_flag = mys_repress_path
+		add_political_power = 60
+		hidden_effect = { country_event = { id = MYS_flav.10 days = 45 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.10
+	title = MYS_flav.10_t
+	desc = MYS_flav.10_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.10_a
+		trigger = { has_country_flag = mys_reform_path }
+		add_ideas = MYS_model_state
+		add_stability = 0.04
+	}
+	option = {
+		name = MYS_flav.10_b
+		trigger = { has_country_flag = mys_repress_path }
+		add_ideas = MYS_dasara_authority
+		add_war_support = 0.04
+	}
+	option = {
+		name = MYS_flav.10_c
+		add_political_power = 70
+	}
+}
+
+# --- Sandalwood & Gold war-chest chain (11-12) ---
+country_event = {
+	id = MYS_flav.11
+	title = MYS_flav.11_t
+	desc = MYS_flav.11_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.11_a
+		add_ideas = MYS_kolar_treasury
+		add_political_power = 90
+		hidden_effect = { country_event = { id = MYS_flav.12 days = 40 } }
+	}
+	option = {
+		name = MYS_flav.11_b
+		add_ideas = MYS_sandalwood_monopoly
+		425 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = MYS_flav.12 days = 40 } }
+	}
+}
+
+country_event = {
+	id = MYS_flav.12
+	title = MYS_flav.12_t
+	desc = MYS_flav.12_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MYS_flav.12_a
+		425 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+		add_war_support = 0.05
+	}
+	option = {
+		name = MYS_flav.12_b
+		add_political_power = 120
+		add_stability = 0.05
+	}
+}

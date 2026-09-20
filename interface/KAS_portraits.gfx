@@ -1,36 +1,66 @@
 spriteTypes = {
-	spriteType = { name = "GFX_portrait_kas_harisingh" texturefile = "gfx/leaders/KAS/portrait_kas_harisingh.dds" }
-	spriteType = { name = "GFX_portrait_kas_harisingh_small" texturefile = "gfx/leaders/KAS/portrait_kas_harisingh_small.dds" }
 	spriteType = {
-		name = "GFX_portrait_kas_abdullah"
-		texturefile = "gfx/leaders/KAS/portrait_kas_abdullah.dds"
+		name = "GFX_portrait_kas_abbas"
+		texturefile = "gfx/leaders/KAS/portrait_kas_abbas.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_abdullah_small"
-		texturefile = "gfx/leaders/KAS/portrait_kas_abdullah_small.dds"
+		name = "GFX_portrait_kas_abbas_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_abbas_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_bakshi"
-		texturefile = "gfx/leaders/KAS/portrait_kas_bakshi.dds"
+		name = "GFX_portrait_kas_gulab"
+		texturefile = "gfx/leaders/KAS/portrait_kas_gulab.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_bakshi_small"
-		texturefile = "gfx/leaders/KAS/portrait_kas_bakshi_small.dds"
+		name = "GFX_portrait_kas_gulab_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_gulab_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_rajinder"
-		texturefile = "gfx/leaders/KAS/portrait_kas_rajinder.dds"
+		name = "GFX_portrait_kas_kak"
+		texturefile = "gfx/leaders/KAS/portrait_kas_kak.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_rajinder_small"
-		texturefile = "gfx/leaders/KAS/portrait_kas_rajinder_small.dds"
+		name = "GFX_portrait_kas_kak_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_kak_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_mahajan"
-		texturefile = "gfx/leaders/KAS/portrait_kas_mahajan.dds"
+		name = "GFX_portrait_kas_bazaz"
+		texturefile = "gfx/leaders/KAS/portrait_kas_bazaz.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_kas_mahajan_small"
-		texturefile = "gfx/leaders/KAS/portrait_kas_mahajan_small.dds"
+		name = "GFX_portrait_kas_bazaz_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_bazaz_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_mirwaiz"
+		texturefile = "gfx/leaders/KAS/portrait_kas_mirwaiz.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_mirwaiz_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_mirwaiz_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_karan"
+		texturefile = "gfx/leaders/KAS/portrait_kas_karan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_karan_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_karan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_zorawar"
+		texturefile = "gfx/leaders/KAS/portrait_kas_zorawar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_zorawar_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_zorawar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_ghansara"
+		texturefile = "gfx/leaders/KAS/portrait_kas_ghansara.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_kas_ghansara_small"
+		texturefile = "gfx/leaders/KAS/portrait_kas_ghansara_small.dds"
 	}
 }

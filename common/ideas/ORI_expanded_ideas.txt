@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+		ORI_utkal_unity = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.12
+				drift_defence_factor = 0.20
+			}
+		}
+		ORI_jagannath_legitimacy = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_political_pressure
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		ORI_sukinda_chromite = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_mining
+			modifier = {
+				local_resources_factor = 0.20
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.06
+			}
+		}
+		ORI_mayurbhanj_iron = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				production_speed_industrial_complex_factor = 0.12
+				industrial_capacity_factory = 0.10
+				local_resources_factor = 0.10
+			}
+		}
+		ORI_praja_mandal_reform = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_land_reform
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.06
+				conscription_factor = 0.05
+			}
+		}
+		ORI_kalinga_maritime = {
+			allowed = { original_tag = ORI }
+			removal_cost = -1
+			picture = generic_naval_bonus
+			modifier = {
+				production_speed_dockyard_factor = 0.12
+				trade_opinion_factor = 0.10
+				navy_org_factor = 0.08
+			}
+		}
+	}
+}

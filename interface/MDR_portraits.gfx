@@ -1,18 +1,82 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_mdr_bobbili"
-		texturefile = "gfx/leaders/MDR/portrait_mdr_bobbili.dds"
+		name = "GFX_portrait_mdr_periyar"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_periyar.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_mdr_bobbili_small"
-		texturefile = "gfx/leaders/MDR/portrait_mdr_bobbili_small.dds"
+		name = "GFX_portrait_mdr_periyar_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_periyar_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_mdr_rajaji"
-		texturefile = "gfx/leaders/MDR/portrait_mdr_rajaji.dds"
+		name = "GFX_portrait_mdr_rajan"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_rajan.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_mdr_rajaji_small"
-		texturefile = "gfx/leaders/MDR/portrait_mdr_rajaji_small.dds"
+		name = "GFX_portrait_mdr_rajan_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_rajan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_annamalai"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_annamalai.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_annamalai_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_annamalai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_alagappa"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_alagappa.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_alagappa_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_alagappa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_annadurai"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_annadurai.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_annadurai_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_annadurai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_satyamurti"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_satyamurti.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_satyamurti_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_satyamurti_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_theagaraya"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_theagaraya.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_theagaraya_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_theagaraya_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_natesa"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_natesa.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_natesa_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_natesa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_vocp"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_vocp.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_vocp_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_vocp_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_muthiah"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_muthiah.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_mdr_muthiah_small"
+		texturefile = "gfx/leaders/MDR/portrait_mdr_muthiah_small.dds"
 	}
 }

@@ -11,6 +11,14 @@ RJP_ganga = {
 		expire = "1965.1.1"
 		id = -1
 	}
+	field_marshal = {
+		traits = { cavalry_officer old_guard }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 3
+	}
 }
 RJP_man_singh = {
 	name = RJP_man_singh
@@ -31,6 +39,12 @@ RJP_man_singh = {
 		planning_skill = 2
 		logistics_skill = 2
 	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
 }
 RJP_umaid = {
 	name = RJP_umaid
@@ -43,6 +57,19 @@ RJP_umaid = {
 		idea_token = RJP_umaid_palace
 		cost = 75
 		traits = { backroom_backstabber }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { air_enthusiast }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = air_chief
+		allowed = { original_tag = RJP }
+		idea_token = RJP_umaid_air
+		cost = 75
+		traits = { air_chief_ground_support_1 }
 	}
 }
 RJP_bhupal = {
@@ -97,6 +124,107 @@ RJP_manubhai = {
 		allowed = { original_tag = RJP }
 		idea_token = RJP_canal_vision
 		traits = { military_theorist }
+	}
+}
+RJP_fateh_singh = {
+	name = RJP_fateh_singh
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_fateh_singh small = GFX_portrait_rjp_fateh_singh_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = RJP }
+		idea_token = RJP_fateh_pride
+		cost = 75
+		traits = { popular_figurehead }
+	}
+}
+RJP_birla = {
+	name = RJP_birla
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_birla small = GFX_portrait_rjp_birla_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = RJP }
+		idea_token = RJP_birla_industry
+		cost = 150
+		traits = { captain_of_industry }
+	}
+}
+RJP_bajaj = {
+	name = RJP_bajaj
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_bajaj small = GFX_portrait_rjp_bajaj_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = RJP }
+		idea_token = RJP_bajaj_finance
+		cost = 150
+		traits = { war_industrialist }
+	}
+}
+RJP_pratap_singh = {
+	name = RJP_pratap_singh
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_pratap_singh small = GFX_portrait_rjp_pratap_singh_small }
+		army = { large = GFX_portrait_rjp_pratap_singh small = GFX_portrait_rjp_pratap_singh_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = RJP }
+		idea_token = RJP_pratap_cavalry
+		cost = 100
+		traits = { military_theorist }
+	}
+	field_marshal = {
+		traits = { cavalry_officer old_guard trait_cautious }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	}
+}
+RJP_hanwant_singh = {
+	name = RJP_hanwant_singh
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_hanwant_singh small = GFX_portrait_rjp_hanwant_singh_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = RJP }
+		idea_token = RJP_hanwant_air
+		cost = 100
+		traits = { air_air_combat_training_1 }
+	}
+}
+RJP_sardar_singh = {
+	name = RJP_sardar_singh
+	portraits = {
+		army = { large = GFX_portrait_rjp_sardar_singh small = GFX_portrait_rjp_sardar_singh_small }
+	}
+	corps_commander = {
+		traits = { cavalry_expert cavalry_leader }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+RJP_singhania = {
+	name = RJP_singhania
+	portraits = {
+		civilian = { large = GFX_portrait_rjp_singhania small = GFX_portrait_rjp_singhania_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = RJP }
+		idea_token = RJP_singhania_hundi
+		cost = 100
+		traits = { smooth_talking_charmer }
 	}
 }
 }

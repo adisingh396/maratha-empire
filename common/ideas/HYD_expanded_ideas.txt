@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		HYD_own_currency = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		HYD_razakar_militia = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_militia
+			modifier = {
+				conscription_factor = 0.10
+				war_support_factor = 0.08
+				stability_factor = -0.10
+				army_core_attack_factor = 0.05
+			}
+		}
+		HYD_telangana_uprising = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_communism
+			modifier = {
+				partisan_effect = 0.15
+				conscription_factor = 0.05
+				stability_factor = -0.08
+			}
+		}
+		HYD_ganga_jamuni = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.08
+			}
+		}
+		HYD_salar_jung_reform = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_industry
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		HYD_deccan_diamonds = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				political_power_gain = 0.05
+			}
+		}
+		HYD_railway_state_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				supply_consumption_factor = -0.05
+			}
+		}
+		HYD_mill_reforms_spirit = {
+			allowed = { original_tag = HYD }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				production_factory_max_efficiency_factor = 0.08
+				industrial_capacity_factory = 0.06
+				war_support_factor = 0.04
+			}
+		}
+	}
+}

@@ -833,4 +833,145 @@ focus_tree = {
 			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
+	focus = {
+		id = HIN_restored_wali
+		icon = GFX_goal_generic_national_unity
+		x = 13 y = 0 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_restored_wali"
+			add_ideas = HIN_nawabi_legitimacy
+			add_stability = 0.05
+			country_event = { id = HIN_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = HIN_awadh_army_rebuild
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_restored_wali }
+		x = 13 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_awadh_army_rebuild"
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+			add_manpower = 15000
+		}
+	}
+	focus = {
+		id = HIN_taluqdar_confederation
+		icon = GFX_focus_generic_land_redistribution
+		prerequisite = { focus = HIN_awadh_army_rebuild }
+		mutually_exclusive = { focus = HIN_centralize_awadh }
+		x = 12 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_taluqdar_confederation"
+			add_ideas = HIN_taluqdar_levies
+			add_manpower = 20000
+			country_event = { id = HIN_flav.4 days = 3 }
+		}
+	}
+	focus = {
+		id = HIN_centralize_awadh
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HIN_awadh_army_rebuild }
+		mutually_exclusive = { focus = HIN_taluqdar_confederation }
+		x = 14 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_centralize_awadh"
+			add_political_power = 100
+			add_stability = 0.06
+		}
+	}
+	focus = {
+		id = HIN_gangetic_levy
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HIN_taluqdar_confederation focus = HIN_centralize_awadh }
+		x = 13 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_gangetic_levy"
+			add_ideas = HIN_gangetic_multitudes
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = HIN_1857_rising
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = HIN_gangetic_levy }
+		x = 13 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_1857_rising"
+			add_ideas = HIN_1857_legacy
+			add_war_support = 0.10
+			country_event = { id = HIN_flav.7 days = 3 }
+		}
+	}
+	focus = {
+		id = HIN_war_of_completion
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = HIN_1857_rising }
+		x = 13 y = 5 cost = 10
+		ai_will_do = { factor = 5 modifier = { factor = 0 date < 1939.6.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_war_of_completion"
+			add_war_support = 0.10
+			army_experience = 20
+			set_country_flag = HIN_war_of_completion
+			country_event = { id = HIN_flav.9 days = 3 }
+		}
+	}
+	focus = {
+		id = HIN_aligarh_path
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = HIN_gangetic_levy }
+		mutually_exclusive = { focus = HIN_banaras_path }
+		x = 15 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_aligarh_path"
+			add_ideas = HIN_aligarh_modernism
+			add_research_slot = 1
+			country_event = { id = HIN_flav.13 days = 3 }
+		}
+	}
+	focus = {
+		id = HIN_banaras_path
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HIN_gangetic_levy }
+		mutually_exclusive = { focus = HIN_aligarh_path }
+		x = 17 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_banaras_path"
+			add_ideas = HIN_banaras_revivalism
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = HIN_ganga_federation_council
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = HIN_aligarh_path focus = HIN_banaras_path }
+		x = 16 y = 5 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed HIN_ganga_federation_council"
+			add_stability = 0.06
+			add_political_power = 100
+			country_event = { id = HIN_flav.14 days = 3 }
+		}
+	}
 }

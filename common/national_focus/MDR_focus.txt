@@ -566,4 +566,203 @@ focus_tree = {
 			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
+	focus = {
+		id = MDR_self_respect_league
+		icon = GFX_goal_generic_propaganda
+		x = 13
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_self_respect_league"
+			add_political_power = 80
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = MDR_anticaste_reform
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MDR_self_respect_league }
+		x = 13
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_anticaste_reform"
+			add_ideas = MDR_self_respect_spirit
+			add_stability = 0.05
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = MDR_dravida_nadu
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MDR_anticaste_reform }
+		x = 13
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_dravida_nadu"
+			add_political_power = 60
+			country_event = { id = MDR_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = MDR_dravidian_republic
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = MDR_dravida_nadu }
+		mutually_exclusive = { focus = MDR_socialist_dravida }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_dravidian_republic"
+			add_popularity = { ideology = fascism popularity = 0.10 }
+			add_ideas = MDR_dravidian_rationalism
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = MDR_socialist_dravida
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = MDR_dravida_nadu }
+		mutually_exclusive = { focus = MDR_dravidian_republic }
+		x = 14
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_socialist_dravida"
+			add_popularity = { ideology = communism popularity = 0.10 }
+			add_ideas = MDR_dravidian_rationalism
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = MDR_justice_platform
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_justice_platform"
+			add_political_power = 80
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = MDR_justice_raj_focus
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MDR_justice_platform }
+		mutually_exclusive = { focus = MDR_congress_accord }
+		x = 15
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_justice_raj_focus"
+			country_event = { id = MDR_flav.3 days = 3 }
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = MDR_congress_accord
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = MDR_justice_platform }
+		mutually_exclusive = { focus = MDR_justice_raj_focus }
+		x = 17
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_congress_accord"
+			add_stability = 0.06
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = MDR_cauvery_dispute
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = MDR_justice_platform }
+		x = 16
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 8 modifier = { factor = 0 date < 1938.1.1 } }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_cauvery_dispute"
+			country_event = { id = MDR_flav.7 days = 3 }
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = MDR_chettiar_capital
+		icon = GFX_goal_generic_trade
+		x = 19
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_chettiar_capital"
+			country_event = { id = MDR_flav.4 days = 3 }
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = MDR_burma_ricelands
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = MDR_chettiar_capital }
+		x = 19
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_burma_ricelands"
+			add_ideas = MDR_chettiar_network
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = MDR_vizag_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 21
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_vizag_shipyard"
+			country_event = { id = MDR_flav.6 days = 3 }
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = MDR_eastern_fleet
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = MDR_vizag_shipyard }
+		x = 21
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MDR_eastern_fleet"
+			add_ideas = MDR_southern_dockyards
+			navy_experience = 40
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = naval_equipment }
+		}
+	}
 }

@@ -1,44 +1,58 @@
 spriteTypes = {
-	spriteType = { name = "GFX_portrait_rjp_ganga" texturefile = "gfx/leaders/RJP/portrait_rjp_ganga.dds" }
-	spriteType = { name = "GFX_portrait_rjp_ganga_small" texturefile = "gfx/leaders/RJP/portrait_rjp_ganga_small.dds" }
 	spriteType = {
-		name = "GFX_portrait_rjp_man_singh"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_man_singh.dds"
+		name = "GFX_portrait_rjp_fateh_singh"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_fateh_singh.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_man_singh_small"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_man_singh_small.dds"
+		name = "GFX_portrait_rjp_fateh_singh_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_fateh_singh_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_umaid"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_umaid.dds"
+		name = "GFX_portrait_rjp_birla"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_birla.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_umaid_small"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_umaid_small.dds"
+		name = "GFX_portrait_rjp_birla_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_birla_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_bhupal"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_bhupal.dds"
+		name = "GFX_portrait_rjp_bajaj"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_bajaj.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_bhupal_small"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_bhupal_small.dds"
+		name = "GFX_portrait_rjp_bajaj_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_bajaj_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_sadul"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_sadul.dds"
+		name = "GFX_portrait_rjp_pratap_singh"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_pratap_singh.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_sadul_small"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_sadul_small.dds"
+		name = "GFX_portrait_rjp_pratap_singh_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_pratap_singh_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_manubhai"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_manubhai.dds"
+		name = "GFX_portrait_rjp_hanwant_singh"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_hanwant_singh.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_rjp_manubhai_small"
-		texturefile = "gfx/leaders/RJP/portrait_rjp_manubhai_small.dds"
+		name = "GFX_portrait_rjp_hanwant_singh_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_hanwant_singh_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rjp_sardar_singh"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_sardar_singh.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rjp_sardar_singh_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_sardar_singh_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rjp_singhania"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_singhania.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rjp_singhania_small"
+		texturefile = "gfx/leaders/RJP/portrait_rjp_singhania_small.dds"
 	}
 }

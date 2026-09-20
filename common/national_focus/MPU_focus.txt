@@ -340,4 +340,191 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
+	focus = {
+		id = MPU_ningthouja_revival
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_ningthouja_revival"
+			add_ideas = MPU_ningthouja_legitimacy
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MPU_pakhangba_throne
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MPU_ningthouja_revival }
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_pakhangba_throne"
+			add_stability = 0.06
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = MPU_kangla_coronation
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MPU_pakhangba_throne }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_kangla_coronation"
+			add_ideas = MPU_kangla_fort
+			990 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = MPU_faith_question
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = MPU_pakhangba_throne }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_faith_question"
+			add_political_power = 60
+			country_event = { id = MPU_flav.3 days = 3 }
+		}
+	}
+	focus = {
+		id = MPU_sanamahi_path
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MPU_faith_question }
+		mutually_exclusive = { focus = MPU_vaishnavite_path }
+		x = 11
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_sanamahi_path"
+			add_ideas = MPU_sanamahi_revival
+			add_stability = 0.04
+		}
+	}
+	focus = {
+		id = MPU_vaishnavite_path
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = MPU_faith_question }
+		mutually_exclusive = { focus = MPU_sanamahi_path }
+		x = 13
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_vaishnavite_path"
+			add_political_power = 80
+			add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		}
+	}
+	focus = {
+		id = MPU_meitei_mayek
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = MPU_sanamahi_path MPU_vaishnavite_path }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_meitei_mayek"
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = electronics }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = MPU_nupi_lan_mobilise
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MPU_ningthouja_revival }
+		x = 8
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_nupi_lan_mobilise"
+			add_ideas = MPU_nupi_lan_power
+			add_political_power = 50
+			country_event = { id = MPU_flav.5 days = 5 }
+		}
+	}
+	focus = {
+		id = MPU_jungle_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = MPU_kangla_coronation }
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_jungle_doctrine"
+			add_ideas = MPU_jungle_frontier_infantry
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = MPU_frontier_stockades
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = MPU_jungle_doctrine }
+		x = 9
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 6 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_frontier_stockades"
+			990 = { add_building_construction = { type = land_fort level = 2 instant_build = yes } }
+			add_war_support = 0.04
+		}
+	}
+	focus = {
+		id = MPU_kabaw_claim
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = MPU_jungle_doctrine }
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_kabaw_claim"
+			add_ideas = MPU_kabaw_valley_claim
+			add_war_support = 0.06
+			country_event = { id = MPU_flav.7 days = 5 }
+		}
+	}
+	focus = {
+		id = MPU_march_east
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = MPU_kabaw_claim }
+		prerequisite = { focus = MPU_frontier_stockades }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed MPU_march_east"
+			army_experience = 30
+			add_manpower = 12000
+			add_war_support = 0.05
+		}
+	}
 }

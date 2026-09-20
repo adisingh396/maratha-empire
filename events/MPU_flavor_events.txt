@@ -1,0 +1,197 @@
+# MPU flavor events — Kangleipak, Sanamahi, Nupi Lan, Kabaw Valley, Imphal Corridor
+
+add_namespace = MPU_flav
+
+# --- Kangleipak Restored chain ---
+country_event = {
+	id = MPU_flav.1
+	title = MPU_flav.1_t
+	desc = MPU_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.1_a
+		add_political_power = 80
+		add_stability = 0.05
+		hidden_effect = { country_event = { id = MPU_flav.2 days = 20 } }
+	}
+	option = {
+		name = MPU_flav.1_b
+		add_war_support = 0.05
+		add_stability = 0.02
+		add_popularity = { ideology = despotism popularity = 0.05 }
+	}
+}
+
+country_event = {
+	id = MPU_flav.2
+	title = MPU_flav.2_t
+	desc = MPU_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.2_a
+		add_ideas = MPU_ningthouja_legitimacy
+		add_political_power = 60
+	}
+	option = {
+		name = MPU_flav.2_b
+		add_stability = 0.06
+		add_political_power = -30
+	}
+}
+
+# --- Sanamahi vs Vaishnavism cultural fork ---
+country_event = {
+	id = MPU_flav.3
+	title = MPU_flav.3_t
+	desc = MPU_flav.3_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.3_a
+		add_ideas = MPU_sanamahi_revival
+		add_stability = 0.04
+		add_political_power = -20
+	}
+	option = {
+		name = MPU_flav.3_b
+		add_political_power = 70
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+}
+
+country_event = {
+	id = MPU_flav.4
+	title = MPU_flav.4_t
+	desc = MPU_flav.4_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.4_a
+		add_stability = 0.05
+		add_war_support = 0.02
+	}
+	option = {
+		name = MPU_flav.4_b
+		add_political_power = 50
+		add_stability = -0.02
+	}
+}
+
+# --- Nupi Lan / Irabot leftist chain ---
+country_event = {
+	id = MPU_flav.5
+	title = MPU_flav.5_t
+	desc = MPU_flav.5_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.5_a
+		add_ideas = MPU_nupi_lan_power
+		add_stability = 0.03
+		add_popularity = { ideology = communism popularity = 0.05 }
+	}
+	option = {
+		name = MPU_flav.5_b
+		add_stability = -0.04
+		add_political_power = 60
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = MPU_flav.6
+	title = MPU_flav.6_t
+	desc = MPU_flav.6_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.6_a
+		add_popularity = { ideology = communism popularity = 0.08 }
+		add_stability = -0.03
+	}
+	option = {
+		name = MPU_flav.6_b
+		add_political_power = 40
+		add_ideas = MPU_nupi_lan_power
+	}
+}
+
+# --- Kabaw Valley irredentism vs Burma chain ---
+country_event = {
+	id = MPU_flav.7
+	title = MPU_flav.7_t
+	desc = MPU_flav.7_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.7_a
+		add_ideas = MPU_kabaw_valley_claim
+		add_war_support = 0.06
+		hidden_effect = { country_event = { id = MPU_flav.8 days = 25 } }
+	}
+	option = {
+		name = MPU_flav.7_b
+		add_political_power = 70
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = MPU_flav.8
+	title = MPU_flav.8_t
+	desc = MPU_flav.8_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.8_a
+		army_experience = 25
+		add_manpower = 10000
+		add_war_support = 0.05
+	}
+	option = {
+		name = MPU_flav.8_b
+		add_political_power = 50
+		add_stability = 0.02
+	}
+}
+
+# --- Imphal Corridor (WW2 gateway) chain ---
+country_event = {
+	id = MPU_flav.9
+	title = MPU_flav.9_t
+	desc = MPU_flav.9_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.9_a
+		add_war_support = 0.06
+		army_experience = 20
+		hidden_effect = { country_event = { id = MPU_flav.10 days = 15 } }
+	}
+	option = {
+		name = MPU_flav.9_b
+		add_stability = 0.04
+		add_political_power = 60
+	}
+}
+
+country_event = {
+	id = MPU_flav.10
+	title = MPU_flav.10_t
+	desc = MPU_flav.10_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = MPU_flav.10_a
+		add_war_support = 0.05
+		add_manpower = 8000
+		add_popularity = { ideology = fascism popularity = 0.04 }
+	}
+	option = {
+		name = MPU_flav.10_b
+		add_political_power = 80
+		add_stability = 0.03
+	}
+}

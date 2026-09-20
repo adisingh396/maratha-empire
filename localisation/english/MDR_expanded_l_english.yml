@@ -1,0 +1,113 @@
+﻿l_english:
+ # Characters (advisor idea_tokens)
+ MDR_rajan_justice: "P. T. Rajan"
+ MDR_annamalai_bank: "S. Rm. M. Annamalai Chettiar"
+ MDR_alagappa_industry: "Alagappa Chettiar"
+ MDR_annadurai_orator: "C. N. Annadurai"
+ MDR_satyamurti_voice: "S. Satyamurti"
+ MDR_theagaraya_founder: "Sir P. Theagaraya Chetty"
+ MDR_natesa_reform: "Dr. C. Natesa Mudaliar"
+ MDR_vocp_swadeshi: "V. O. Chidambaram Pillai"
+ MDR_muthiah_minister: "M. A. Muthiah Chettiar"
+
+ # Ideas / national spirits
+ MDR_self_respect_spirit: "Self-Respect Movement"
+ MDR_self_respect_spirit_desc: "Periyar's Suyamariyathai Iyakkam preaches rationalism, the abolition of caste hierarchy and priestly privilege. A society that respects itself is a society that mobilises."
+ MDR_dravidian_rationalism: "Dravidian Rationalism"
+ MDR_dravidian_rationalism_desc: "Reason over ritual, Tamil over Sanskrit, the toiler over the twice-born. The Self-Respecters have turned a social creed into a national ideology."
+ MDR_chettiar_network: "Chettiar Banking Network"
+ MDR_chettiar_network_desc: "The Nattukottai Chettiars finance the ricelands of Burma, the rubber of Malaya and the tea of Ceylon. Their hundi houses give Tamilakam a reach far beyond its shores."
+ MDR_textile_mills: "The Mills of the South"
+ MDR_textile_mills_desc: "Coimbatore and Madurai spin day and night. The Manchester of South India clothes the subcontinent and can be turned to war production overnight."
+ MDR_southern_dockyards: "The Southern Dockyards"
+ MDR_southern_dockyards_desc: "From Madras Harbour to the new Visakhapatnam yard, Tamilakam builds and berths the ships that will command the Bay of Bengal."
+ MDR_free_market: "Rajaji's Free-Market Republic"
+ MDR_free_market_desc: "Rajagopalachari's creed: let enterprise breathe, cut the permit-raj before it is born, and let the merchant, not the minister, allocate capital."
+ MDR_justice_reservation: "Communal Reservation"
+ MDR_justice_reservation_desc: "The Justice Party's Communal G.O. reserves office and education for the non-Brahmin majority, binding the plough and the loom to the state."
+
+ # Events - Dravida Nadu Rising
+ MDR_flav.1_t: "Dravida Nadu Rising"
+ MDR_flav.1_d: "Periyar stands before a sea of black flags at Kancheepuram and demands a homeland for the Dravidian peoples - a Dravida Nadu free of northern domination, Brahmin priestcraft and the imposition of Hindi. The crowd roars. Do we proclaim the nation now, or build the movement first?"
+ MDR_flav.1_a: "Proclaim Dravida Nadu!"
+ MDR_flav.1_b: "Build the movement, bide our time"
+ MDR_flav.2_t: "Two Roads to Dravidistan"
+ MDR_flav.2_d: "The nation is declared, but its soul is contested. Shall it be a disciplined, self-reliant Dravidian state rallying around Tamil identity, or a rationalist workers' republic that abolishes caste and capital together?"
+ MDR_flav.2_a: "A Dravidian national state"
+ MDR_flav.2_b: "A rationalist workers' republic"
+
+ # Events - Justice Party Raj
+ MDR_flav.3_t: "The Justice Party Raj"
+ MDR_flav.3_d: "The South Indian Liberal Federation - the Justice Party - governs an independent Tamilakam. Its founders, Theagaraya Chetty and Natesa Mudaliar, built it to break the Brahmin monopoly on office. Now P. T. Rajan asks: do we enshrine communal reservation in law, or seek accommodation with the old elite?"
+ MDR_flav.3_a: "Enact the Communal Order"
+ MDR_flav.3_b: "Accommodate the Brahmin bloc"
+
+ # Events - Chettiar Banking Empire
+ MDR_flav.4_t: "The Chettiar Banking Empire"
+ MDR_flav.4_d: "S. Rm. M. Annamalai Chettiar reports on the Nattukottai houses' vast holdings across South-East Asia - the paddy of Burma, the estates of Malaya, the trade of Ceylon. Shall we repatriate this capital to industrialise Tamilakam, or leave it abroad to grow?"
+ MDR_flav.4_a: "Repatriate the diaspora capital"
+ MDR_flav.4_b: "Let it compound overseas"
+
+ # Events - Rajaji Free-Market Republic
+ MDR_flav.5_t: "Rajaji's Free-Market Republic"
+ MDR_flav.5_d: "C. Rajagopalachari argues that the surest road to prosperity is not the planner's blueprint but the free play of enterprise. His rivals demand a state-directed industrial drive. Which hand shall guide the economy of Tamilakam?"
+ MDR_flav.5_a: "Unleash private enterprise"
+ MDR_flav.5_b: "Direct a state industrial drive"
+
+ # Events - Southern Dockyards
+ MDR_flav.6_t: "The Southern Dockyards"
+ MDR_flav.6_d: "The Scindia Steam Navigation men have surveyed Visakhapatnam and pronounce it the finest natural harbour on the eastern coast. A great shipyard could be raised here to rival any in Asia. Do we commit the treasury to steel and slipways, or fund a leaner naval expansion?"
+ MDR_flav.6_a: "Build the great yard at Vizag"
+ MDR_flav.6_b: "A leaner naval programme"
+
+ # Events - Cauvery Casus Belli
+ MDR_flav.7_t: "The Waters of the Cauvery"
+ MDR_flav.7_d: "Mysore's engineers have raised the Krishnaraja Sagar dam ever higher, and the Cauvery runs thin through the delta of Thanjavur. The ryots cry out; the granary of the South withers. Shall we press our claim by force, or seek a treaty over the waters?"
+ MDR_flav.7_a: "Seize the headwaters by force"
+ MDR_flav.7_b: "Negotiate a water treaty"
+
+ # Events - Self-Respect Movement
+ MDR_flav.8_t: "The Self-Respect Conference"
+ MDR_flav.8_d: "At the Self-Respect conference the delegates demand the burning of the law-books of Manu and the opening of every temple, well and school to all. The orthodox warn of chaos. How far shall the reform go?"
+ MDR_flav.8_a: "Sweep away the old order"
+ MDR_flav.8_b: "Reform, but preserve the peace"
+
+ # Events - Swadeshi Steam Navigation
+ MDR_flav.9_t: "Kappalottiya Tamizhan"
+ MDR_flav.9_d: "The memory of V. O. Chidambaram Pillai - the Tamil who launched the Swadeshi Steam Navigation Company against the foreign shipping lines - stirs the ports of Tuticorin. Shall we revive a national merchant marine, or invest the funds elsewhere?"
+ MDR_flav.9_a: "Revive the national merchant marine"
+ MDR_flav.9_b: "Invest the funds in the interior"
+
+ # Events - Coimbatore Cotton Boom
+ MDR_flav.10_t: "The Coimbatore Cotton Boom"
+ MDR_flav.10_d: "The mills of Coimbatore and Madurai run at capacity; the Manchester of South India cannot spin fast enough. The mill-owners petition for expansion. Do we double the spindles, or convert capacity toward war material?"
+ MDR_flav.10_a: "Double the textile capacity"
+ MDR_flav.10_b: "Convert the mills to war work"
+
+ # Focuses
+ MDR_self_respect_league: "Self-Respect League"
+ MDR_self_respect_league_desc: "Organise Periyar's Self-Respecters into a disciplined mass movement across the Tamil country."
+ MDR_anticaste_reform: "Abolish Caste Privilege"
+ MDR_anticaste_reform_desc: "Strike down the sanction of caste in law, temple and school - a society of equals is a nation in arms."
+ MDR_dravida_nadu: "The Dravida Nadu Demand"
+ MDR_dravida_nadu_desc: "Raise the black flag and demand a sovereign homeland for the Dravidian peoples."
+ MDR_dravidian_republic: "The Dravidian National State"
+ MDR_dravidian_republic_desc: "Forge a disciplined Dravidian state rallying around Tamil identity and self-reliance."
+ MDR_socialist_dravida: "The Rationalist Republic"
+ MDR_socialist_dravida_desc: "Abolish caste and capital together in a rationalist workers' republic of the South."
+ MDR_justice_platform: "The Justice Party Platform"
+ MDR_justice_platform_desc: "Rally the non-Brahmin majority behind the South Indian Liberal Federation."
+ MDR_justice_raj_focus: "The Justice Party Raj"
+ MDR_justice_raj_focus_desc: "Govern Tamilakam through the Justice Party and its programme of communal reservation."
+ MDR_congress_accord: "Accord with Congress"
+ MDR_congress_accord_desc: "Seek a broad settlement with the nationalist bloc and the old elite, trading confrontation for stability."
+ MDR_cauvery_dispute: "The Cauvery Question"
+ MDR_cauvery_dispute_desc: "Force the question of the Cauvery waters with Mysore before the delta withers."
+ MDR_chettiar_capital: "The Chettiar Houses"
+ MDR_chettiar_capital_desc: "Court the Nattukottai bankers and their South-East Asian fortunes."
+ MDR_burma_ricelands: "The Burma Ricelands"
+ MDR_burma_ricelands_desc: "Mobilise the Chettiar network's overseas holdings for the industrialisation of Tamilakam."
+ MDR_vizag_shipyard: "The Vizag Shipyard"
+ MDR_vizag_shipyard_desc: "Raise a great shipyard at Visakhapatnam to command the eastern seas."
+ MDR_eastern_fleet: "The Eastern Fleet"
+ MDR_eastern_fleet_desc: "Berth a battle fleet in the Bay of Bengal to guard the coast of the South."

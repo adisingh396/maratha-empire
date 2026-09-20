@@ -1,0 +1,97 @@
+ideas = {
+	country = {
+		BEN_netaji_vision = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+				conscription_factor = 0.05
+			}
+		}
+		BEN_forward_bloc_state = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		BEN_revolutionary_cadres = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_militia
+			modifier = {
+				army_core_attack_factor = 0.06
+				experience_gain_army_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+		BEN_communal_balance = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.05
+			}
+		}
+		BEN_krishak_reform = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				stability_factor = 0.06
+				conscription_factor = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		BEN_bengal_renaissance = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_scientific_exchange
+			modifier = {
+				research_speed_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+		BEN_jute_monopoly = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_industry
+			modifier = {
+				industrial_capacity_factory = 0.08
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		# Scientist-State research spine (swap_ideas chain)
+		BEN_science_state_1 = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_scientific_exchange
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		BEN_science_state_2 = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_scientific_exchange
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+		BEN_science_state_3 = {
+			allowed = { original_tag = BEN }
+			removal_cost = -1
+			picture = generic_scientific_exchange
+			modifier = {
+				research_speed_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+}

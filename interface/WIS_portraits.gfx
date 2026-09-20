@@ -1,26 +1,74 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_wis_sayajirao"
-		texturefile = "gfx/leaders/WIS/portrait_wis_sayajirao.dds"
+		name = "GFX_portrait_wis_khengarji"
+		texturefile = "gfx/leaders/WIS/portrait_wis_khengarji.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_wis_sayajirao_small"
-		texturefile = "gfx/leaders/WIS/portrait_wis_sayajirao_small.dds"
+		name = "GFX_portrait_wis_khengarji_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_khengarji_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_wis_gaekwad"
-		texturefile = "gfx/leaders/WIS/portrait_wis_gaekwad.dds"
+		name = "GFX_portrait_wis_krishnakumar"
+		texturefile = "gfx/leaders/WIS/portrait_wis_krishnakumar.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_wis_gaekwad_small"
-		texturefile = "gfx/leaders/WIS/portrait_wis_gaekwad_small.dds"
+		name = "GFX_portrait_wis_krishnakumar_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_krishnakumar_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_wis_jamsahib"
-		texturefile = "gfx/leaders/WIS/portrait_wis_jamsahib.dds"
+		name = "GFX_portrait_wis_kasturbhai"
+		texturefile = "gfx/leaders/WIS/portrait_wis_kasturbhai.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_wis_jamsahib_small"
-		texturefile = "gfx/leaders/WIS/portrait_wis_jamsahib_small.dds"
+		name = "GFX_portrait_wis_kasturbhai_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_kasturbhai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_sarabhai"
+		texturefile = "gfx/leaders/WIS/portrait_wis_sarabhai.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_sarabhai_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_sarabhai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_agakhan"
+		texturefile = "gfx/leaders/WIS/portrait_wis_agakhan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_agakhan_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_agakhan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_madhavrao"
+		texturefile = "gfx/leaders/WIS/portrait_wis_madhavrao.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_madhavrao_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_madhavrao_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_pilaji"
+		texturefile = "gfx/leaders/WIS/portrait_wis_pilaji.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_pilaji_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_pilaji_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_chinubhai"
+		texturefile = "gfx/leaders/WIS/portrait_wis_chinubhai.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_chinubhai_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_chinubhai_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_ranjitsinhji"
+		texturefile = "gfx/leaders/WIS/portrait_wis_ranjitsinhji.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_wis_ranjitsinhji_small"
+		texturefile = "gfx/leaders/WIS/portrait_wis_ranjitsinhji_small.dds"
 	}
 }

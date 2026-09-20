@@ -10,6 +10,12 @@ WIS_sayajirao = {
 		expire = "1965.1.1"
 		id = -1
 	}
+	country_leader = {
+		ideology = democratic
+		traits = { democratic_reformer }
+		expire = "1965.1.1"
+		id = -1
+	}
 }
 WIS_gaekwad = {
 	name = "Pratap Singh Gaekwad"
@@ -26,7 +32,14 @@ WIS_gaekwad = {
 WIS_jamsahib = {
 	name = "Digvijaysinhji Jam Sahib"
 	portraits = {
+		civilian = { large = GFX_portrait_wis_jamsahib small = GFX_portrait_wis_jamsahib_small }
 		army = { large = GFX_portrait_wis_jamsahib small = GFX_portrait_wis_jamsahib_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { compassionate_gentleman }
+		expire = "1965.1.1"
+		id = -1
 	}
 	corps_commander = {
 		traits = { aggressive_assaulter }
@@ -35,6 +48,134 @@ WIS_jamsahib = {
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 2
+	}
+}
+WIS_khengarji = {
+	name = "Khengarji III of Kutch"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_khengarji small = GFX_portrait_wis_khengarji_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+WIS_krishnakumar = {
+	name = "Krishnakumarsinhji of Bhavnagar"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_krishnakumar small = GFX_portrait_wis_krishnakumar_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { democratic_reformer }
+		expire = "1965.1.1"
+		id = -1
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_krishnakumar_adv
+		cost = 75
+		traits = { compassionate_gentleman }
+	}
+}
+WIS_kasturbhai = {
+	name = "Kasturbhai Lalbhai"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_kasturbhai small = GFX_portrait_wis_kasturbhai_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_kasturbhai_adv
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+WIS_sarabhai = {
+	name = "Ambalal Sarabhai"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_sarabhai small = GFX_portrait_wis_sarabhai_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_sarabhai_adv
+		cost = 75
+		traits = { war_industrialist }
+	}
+}
+WIS_agakhan = {
+	name = "Aga Khan III"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_agakhan small = GFX_portrait_wis_agakhan_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_agakhan_adv
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+WIS_madhavrao = {
+	name = "Sir T. Madhav Rao"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_madhavrao small = GFX_portrait_wis_madhavrao_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_madhavrao_adv
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+WIS_pilaji = {
+	name = "Pilaji Gaekwad"
+	portraits = {
+		army = { large = GFX_portrait_wis_pilaji small = GFX_portrait_wis_pilaji_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = WIS }
+		idea_token = WIS_pilaji_adv
+		cost = 75
+		traits = { army_infantry_2 }
+	}
+}
+WIS_chinubhai = {
+	name = "Sir Chinubhai Madhavlal"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_chinubhai small = GFX_portrait_wis_chinubhai_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_chinubhai_adv
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+WIS_ranjitsinhji = {
+	name = "Ranjitsinhji Vibhaji II"
+	portraits = {
+		civilian = { large = GFX_portrait_wis_ranjitsinhji small = GFX_portrait_wis_ranjitsinhji_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = WIS }
+		idea_token = WIS_ranjitsinhji_adv
+		cost = 75
+		traits = { smooth_talking_charmer }
 	}
 }
 }

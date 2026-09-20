@@ -1,0 +1,119 @@
+ideas = {
+	country = {
+		TRV_monazite_monopoly = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.08
+				stability_factor = 0.05
+			}
+		}
+		TRV_padmanabhaswamy_treasury = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				consumer_goods_factor = -0.08
+				political_power_gain = 0.08
+			}
+		}
+		TRV_highest_literacy = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_research_bonus
+			research_bonus = {
+				electronics = 0.08
+				industry = 0.08
+			}
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		TRV_nair_brigade = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_morale_factor = 0.08
+				army_org_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		TRV_fact_chemical_works = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_industrial_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.12
+				line_change_production_efficiency_factor = 0.10
+			}
+			research_bonus = {
+				industry = 0.08
+			}
+		}
+		TRV_temple_entry_reform = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.08
+				conscription_factor = 0.03
+			}
+		}
+		TRV_secret_atomic_programme = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			research_bonus = {
+				electronics = 0.10
+				nuclear = 0.10
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		TRV_independent_travancore = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		TRV_diwans_terror = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				stability_factor = 0.08
+				democratic_drift = -0.02
+				political_power_gain = 0.05
+			}
+		}
+		TRV_responsible_govt = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				democratic_drift = 0.03
+				stability_factor = 0.06
+				political_power_gain = 0.10
+			}
+		}
+		TRV_red_coast = {
+			allowed = { original_tag = TRV }
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				communism_drift = 0.03
+				war_support_factor = 0.08
+				army_morale_factor = 0.05
+			}
+		}
+	}
+}

@@ -10,11 +10,23 @@ TRV_thirunal = {
 		expire = "1965.1.1"
 		id = -1
 	}
+	country_leader = {
+		ideology = democratic
+		traits = { democratic_reformer }
+		expire = "1965.1.1"
+		id = -1
+	}
 }
 TRV_cp = {
 	name = "C. P. Ramaswami Iyer"
 	portraits = {
 		civilian = { large = GFX_portrait_trv_cp small = GFX_portrait_trv_cp_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { fascist_demagogue }
+		expire = "1965.1.1"
+		id = -1
 	}
 	advisor = {
 		slot = political_advisor
@@ -22,6 +34,174 @@ TRV_cp = {
 		idea_token = TRV_dewan_admin
 		cost = 75
 		traits = { backroom_backstabber }
+	}
+}
+TRV_sethu_lakshmi = {
+	name = "Sethu Lakshmi Bayi"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_sethu_lakshmi small = GFX_portrait_trv_sethu_lakshmi_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_sethu_regent
+		cost = 75
+		traits = { social_reformer }
+	}
+}
+TRV_sethu_parvathi = {
+	name = "Sethu Parvathi Bayi"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_sethu_parvathi small = GFX_portrait_trv_sethu_parvathi_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_parvathi_patron
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+TRV_gv_raja = {
+	name = "G. V. Raja"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_gv_raja small = GFX_portrait_trv_gv_raja_small }
+	}
+	advisor = {
+		slot = air_chief
+		allowed = { original_tag = TRV }
+		idea_token = TRV_gv_raja_air
+		cost = 100
+		traits = { air_chief_ground_support_2 }
+	}
+}
+TRV_pattom = {
+	name = "Pattom A. Thanu Pillai"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_pattom small = GFX_portrait_trv_pattom_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { democratic_reformer }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_pattom_congress
+		cost = 75
+		traits = { democratic_reformer }
+	}
+}
+TRV_akkamma = {
+	name = "Akkamma Cherian"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_akkamma small = GFX_portrait_trv_akkamma_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_akkamma_agitator
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+TRV_krishna_pillai = {
+	name = "K. Krishna Pillai"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_krishna_pillai small = GFX_portrait_trv_krishna_pillai_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { communist_revolutionary }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_krishna_red
+		cost = 75
+		traits = { communist_revolutionary }
+	}
+}
+TRV_bristow = {
+	name = "Robert Bristow"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_bristow small = GFX_portrait_trv_bristow_small }
+	}
+	advisor = {
+		slot = navy_chief
+		allowed = { original_tag = TRV }
+		idea_token = TRV_bristow_harbour
+		cost = 100
+		traits = { navy_chief_maneuver_2 }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = TRV }
+		idea_token = TRV_bristow_theory
+		cost = 75
+		traits = { navy_theorist }
+	}
+}
+TRV_raman = {
+	name = "C. V. Raman"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_raman small = GFX_portrait_trv_raman_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = TRV }
+		idea_token = TRV_raman_research
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+TRV_marthanda = {
+	name = "Marthanda Varma"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_marthanda small = GFX_portrait_trv_marthanda_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = TRV }
+		idea_token = TRV_marthanda_legacy
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+TRV_uthradom = {
+	name = "Uthradom Thirunal Marthanda Varma"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_uthradom small = GFX_portrait_trv_uthradom_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = TRV }
+		idea_token = TRV_uthradom_hc
+		cost = 100
+		traits = { army_chief_army_high_command }
+	}
+}
+TRV_rama_varma = {
+	name = "Rama Varma XVIII"
+	portraits = {
+		civilian = { large = GFX_portrait_trv_rama_varma small = GFX_portrait_trv_rama_varma_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = TRV }
+		idea_token = TRV_rama_varma_scholar
+		cost = 75
+		traits = { silent_workhorse }
 	}
 }
 }

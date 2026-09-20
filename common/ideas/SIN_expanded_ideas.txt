@@ -1,0 +1,116 @@
+# SIN expanded national spirits — Sindh Reborn expansion
+# New file; does NOT touch shared princely_ideas.txt
+
+ideas = {
+	country = {
+		SIN_sindhi_nationalism = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.08
+				political_power_gain = 0.10
+			}
+		}
+		SIN_composite_republic = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				drift_defence_factor = 0.15
+			}
+		}
+		SIN_hur_jamaat = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = {
+				army_core_defence_factor = 0.08
+				partisan_effect = 0.10
+				army_morale_factor = 0.05
+			}
+		}
+		SIN_theocratic_state = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		SIN_karachi_free_port = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = {
+				trade_opinion_factor = 0.20
+				production_speed_dockyard_factor = 0.10
+				political_power_gain = 0.05
+			}
+		}
+		SIN_banking_diaspora = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_trade
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.10
+			}
+		}
+		SIN_talpur_legacy = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.06
+				army_core_defence_factor = 0.05
+			}
+		}
+		SIN_wadero_landlords = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_agrarian_reform
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = -0.03
+				conscription_factor = 0.08
+			}
+		}
+		# Sukkur Barrage irrigation spine — swap_ideas upgrade chain
+		SIN_sukkur_irrigation_1 = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SIN_sukkur_irrigation_2 = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		SIN_sukkur_irrigation_3 = {
+			allowed = { original_tag = SIN }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+	}
+}

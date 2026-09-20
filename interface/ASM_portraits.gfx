@@ -1,26 +1,90 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_asm_saadulah"
-		texturefile = "gfx/leaders/ASM/portrait_asm_saadulah.dds"
+		name = "GFX_portrait_asm_purandar"
+		texturefile = "gfx/leaders/ASM/portrait_asm_purandar.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_asm_saadulah_small"
-		texturefile = "gfx/leaders/ASM/portrait_asm_saadulah_small.dds"
+		name = "GFX_portrait_asm_purandar_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_purandar_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_asm_bordoloi"
-		texturefile = "gfx/leaders/ASM/portrait_asm_bordoloi.dds"
+		name = "GFX_portrait_asm_phizo"
+		texturefile = "gfx/leaders/ASM/portrait_asm_phizo.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_asm_bordoloi_small"
-		texturefile = "gfx/leaders/ASM/portrait_asm_bordoloi_small.dds"
+		name = "GFX_portrait_asm_phizo_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_phizo_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_asm_fakhruddin"
-		texturefile = "gfx/leaders/ASM/portrait_asm_fakhruddin.dds"
+		name = "GFX_portrait_asm_rabha"
+		texturefile = "gfx/leaders/ASM/portrait_asm_rabha.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_asm_fakhruddin_small"
-		texturefile = "gfx/leaders/ASM/portrait_asm_fakhruddin_small.dds"
+		name = "GFX_portrait_asm_rabha_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_rabha_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_phukan"
+		texturefile = "gfx/leaders/ASM/portrait_asm_phukan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_phukan_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_phukan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_raichoudhury"
+		texturefile = "gfx/leaders/ASM/portrait_asm_raichoudhury.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_raichoudhury_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_raichoudhury_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_agarwala"
+		texturefile = "gfx/leaders/ASM/portrait_asm_agarwala.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_agarwala_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_agarwala_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_bezbaroa"
+		texturefile = "gfx/leaders/ASM/portrait_asm_bezbaroa.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_bezbaroa_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_bezbaroa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_maniram"
+		texturefile = "gfx/leaders/ASM/portrait_asm_maniram.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_maniram_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_maniram_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_sukaphaa"
+		texturefile = "gfx/leaders/ASM/portrait_asm_sukaphaa.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_sukaphaa_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_sukaphaa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_lachit"
+		texturefile = "gfx/leaders/ASM/portrait_asm_lachit.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_lachit_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_lachit_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_gaidinliu"
+		texturefile = "gfx/leaders/ASM/portrait_asm_gaidinliu.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_asm_gaidinliu_small"
+		texturefile = "gfx/leaders/ASM/portrait_asm_gaidinliu_small.dds"
 	}
 }

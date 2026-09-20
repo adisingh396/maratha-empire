@@ -1,26 +1,74 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_ori_gajapati"
-		texturefile = "gfx/leaders/ORI/portrait_ori_gajapati.dds"
+		name = "GFX_portrait_ori_madhusudan"
+		texturefile = "gfx/leaders/ORI/portrait_ori_madhusudan.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ori_gajapati_small"
-		texturefile = "gfx/leaders/ORI/portrait_ori_gajapati_small.dds"
+		name = "GFX_portrait_ori_madhusudan_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_madhusudan_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ori_mahatab"
-		texturefile = "gfx/leaders/ORI/portrait_ori_mahatab.dds"
+		name = "GFX_portrait_ori_nabakrushna"
+		texturefile = "gfx/leaders/ORI/portrait_ori_nabakrushna.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ori_mahatab_small"
-		texturefile = "gfx/leaders/ORI/portrait_ori_mahatab_small.dds"
+		name = "GFX_portrait_ori_nabakrushna_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_nabakrushna_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ori_biju"
-		texturefile = "gfx/leaders/ORI/portrait_ori_biju.dds"
+		name = "GFX_portrait_ori_gopabandhu"
+		texturefile = "gfx/leaders/ORI/portrait_ori_gopabandhu.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ori_biju_small"
-		texturefile = "gfx/leaders/ORI/portrait_ori_biju_small.dds"
+		name = "GFX_portrait_ori_gopabandhu_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_gopabandhu_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_pratap"
+		texturefile = "gfx/leaders/ORI/portrait_ori_pratap.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_pratap_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_pratap_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_sriram"
+		texturefile = "gfx/leaders/ORI/portrait_ori_sriram.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_sriram_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_sriram_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_rajendra"
+		texturefile = "gfx/leaders/ORI/portrait_ori_rajendra.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_rajendra_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_rajendra_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_sarangadhar"
+		texturefile = "gfx/leaders/ORI/portrait_ori_sarangadhar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_sarangadhar_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_sarangadhar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_kharavela"
+		texturefile = "gfx/leaders/ORI/portrait_ori_kharavela.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_kharavela_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_kharavela_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_shankar"
+		texturefile = "gfx/leaders/ORI/portrait_ori_shankar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ori_shankar_small"
+		texturefile = "gfx/leaders/ORI/portrait_ori_shankar_small.dds"
 	}
 }

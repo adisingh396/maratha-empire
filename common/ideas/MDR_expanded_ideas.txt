@@ -1,0 +1,68 @@
+ideas = {
+	country = {
+		MDR_self_respect_spirit = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_democratic_drift
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		MDR_dravidian_rationalism = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+			}
+		}
+		MDR_chettiar_network = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_reserves_1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		MDR_textile_mills = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		MDR_southern_dockyards = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_naval_manufacturer
+			modifier = {
+				production_speed_dockyard_factor = 0.10
+				navy_experience_gain_factor = 0.05
+			}
+		}
+		MDR_free_market = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_industrial_complex_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		MDR_justice_reservation = {
+			allowed = { original_tag = MDR }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				stability_factor = 0.06
+				conscription = 0.01
+			}
+		}
+	}
+}

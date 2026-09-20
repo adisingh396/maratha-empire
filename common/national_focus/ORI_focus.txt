@@ -516,4 +516,199 @@ focus_tree = {
 			add_war_support = 0.08
 		}
 	}
+	focus = {
+		id = ORI_utkal_sammilani
+		icon = GFX_goal_generic_political_pressure
+		x = 11
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_utkal_sammilani"
+			add_political_power = 80
+			country_event = { id = ORI_flav.1 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_odia_language_state
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ORI_utkal_sammilani }
+		x = 11
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_odia_language_state"
+			add_ideas = ORI_utkal_unity
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ORI_gather_garjats
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = ORI_odia_language_state }
+		x = 11
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_gather_garjats"
+			add_political_power = 90
+			country_event = { id = ORI_flav.3 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_prince_bloc
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ORI_gather_garjats }
+		mutually_exclusive = { focus = ORI_praja_republic }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_prince_bloc"
+			add_ideas = ORI_jagannath_legitimacy
+			country_event = { id = ORI_flav.6 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_praja_republic
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = ORI_gather_garjats }
+		mutually_exclusive = { focus = ORI_prince_bloc }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_praja_republic"
+			add_ideas = ORI_praja_mandal_reform
+			country_event = { id = ORI_flav.4 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_mayurbhanj_model
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = ORI_prince_bloc }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_mayurbhanj_model"
+			add_stability = 0.05
+			country_event = { id = ORI_flav.11 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_peoples_assembly
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ORI_praja_republic }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_peoples_assembly"
+			add_political_power = 70
+			add_war_support = 0.05
+			add_manpower = 12000
+		}
+	}
+	focus = {
+		id = ORI_mineral_survey
+		icon = GFX_goal_generic_production
+		x = 14
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_mineral_survey"
+			add_political_power = 60
+			country_event = { id = ORI_flav.9 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_sukinda_belt
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ORI_mineral_survey }
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_sukinda_belt"
+			add_ideas = ORI_sukinda_chromite
+			426 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = ORI_gorumahisani
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ORI_sukinda_belt }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_gorumahisani"
+			add_ideas = ORI_mayurbhanj_iron
+			country_event = { id = ORI_flav.10 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_ferroalloy_works
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ORI_gorumahisani }
+		x = 14
+		y = 3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_ferroalloy_works"
+			426 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = ORI_kalinga_reborn
+		icon = GFX_goal_generic_navy_cruiser
+		x = 16
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_kalinga_reborn"
+			add_ideas = ORI_kalinga_maritime
+			country_event = { id = ORI_flav.7 hours = 6 }
+		}
+	}
+	focus = {
+		id = ORI_bali_jatra_trade
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = ORI_kalinga_reborn }
+		x = 16
+		y = 1
+		cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_NAVY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed ORI_bali_jatra_trade"
+			add_political_power = 60
+			country_event = { id = ORI_flav.8 hours = 6 }
+		}
+	}
 }

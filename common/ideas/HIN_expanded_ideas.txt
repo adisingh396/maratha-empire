@@ -1,0 +1,62 @@
+ideas = {
+	country = {
+		HIN_nawabi_legitimacy = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.08
+				drift_defence_factor = 0.15
+			}
+		}
+		HIN_taluqdar_levies = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_recruitment
+			modifier = {
+				conscription = 0.02
+				army_org_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		HIN_1857_legacy = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		HIN_gangetic_multitudes = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_recruitment
+			modifier = {
+				conscription = 0.015
+				stability_factor = 0.05
+			}
+		}
+		HIN_aligarh_modernism = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				research_speed_factor = 0.06
+				stability_factor = -0.03
+			}
+		}
+		HIN_banaras_revivalism = {
+			allowed = { original_tag = HIN }
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				war_support_factor = 0.06
+				army_attack_factor = 0.04
+				stability_factor = -0.03
+			}
+		}
+	}
+}

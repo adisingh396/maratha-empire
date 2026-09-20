@@ -1,60 +1,930 @@
 {
-  "required_count": 4,
+  "required_count": 154,
   "style": "high-quality hand-painted grand-strategy military portrait, classic 1930s-1940s strategy-game illustration, realistic facial anatomy, restrained historical palette, warm neutral canvas background, centered bust, no text, no watermark, no fantasy, no CGI, no anime",
   "portraits": [
     {
-      "character": "MAR_shivaji",
+      "character": "MAR_mahadaji_scindia",
       "country": "MAR",
-      "stem": "portrait_mar_shivaji",
-      "description": "Chhatrapati Shivaji Maharaj, age 45, mature Maratha king, full black beard with subtle silver, saffron turban with pearl string and gold kalgi, olive skin, steel chest armor over an olive angarkha, calm authoritative expression"
+      "stem": "portrait_mar_mahadaji_scindia",
+      "description": "man in his fifties, full greying beard, jewelled Maratha pagdi turban, gold-brocaded angarkha robe with sash and sword, stern commanding gaze, 18th-century Deccan warlord bearing"
     },
     {
-      "character": "MAR_bajirao",
+      "character": "MAR_ahilyabai_holkar",
       "country": "MAR",
-      "stem": "portrait_mar_bajirao",
-      "description": "Peshwa Baji Rao I, age 30, lean warrior, thin mustache, red Peshwai pagdi with gold border and white feather, faded olive-brown military coat, stern focused gaze"
+      "stem": "portrait_mar_ahilyabai_holkar",
+      "description": "middle-aged woman, white widow's sari draped over the head, small forehead tilak, serene pious dignified expression, seated regal posture, Holkar queen-regent of Indore"
     },
     {
-      "character": "MAR_tarabai",
+      "character": "MAR_malhar_rao_holkar",
       "country": "MAR",
-      "stem": "portrait_mar_tarabai",
-      "description": "Maharani Tarabai, age 38, fierce queen regent, dark eyes, red bindi, red saree pallu with restrained gold border, commanding dignified expression"
+      "stem": "portrait_mar_malhar_rao_holkar",
+      "description": "weathered man in his sixties, thick grey moustache and short beard, plain saffron turban, light armour over cotton robe, cavalry sabre, rugged veteran horseman expression"
     },
     {
-      "character": "MAR_madhavrao_III",
+      "character": "MAR_balaji_vishwanath",
       "country": "MAR",
-      "stem": "portrait_mar_madhavrao",
-      "description": "Peshwa Madhavrao III, age 32, clean-shaven, neatly combed black hair, khaki Maratha military uniform with saffron sash and service ribbons, confident modernizing ruler"
+      "stem": "portrait_mar_balaji_vishwanath",
+      "description": "middle-aged Chitpavan Brahmin man, clean-shaven with tuft, white Peshwa turban, plain white dhoti-angarkha with red tilak on forehead, shrewd calculating statesman's look"
     },
     {
-      "character": "MAR_nana_fadnavis",
+      "character": "MAR_madhavrao_i",
       "country": "MAR",
-      "stem": "portrait_mar_nana_fadnavis",
-      "description": "Nana Fadnavis, senior Maratha statesman, late fifties, narrow face and perceptive eyes, white Peshwai turban, cream angarkha and dark shawl, restrained courtly authority"
+      "stem": "portrait_mar_madhavrao_i",
+      "description": "young man in his twenties, thin moustache, ornate Peshwa turban with jewel aigrette, fine muslin robe and pearl necklace, earnest reformist expression, 1760s Pune court"
     },
     {
-      "character": "MAR_moropant_trimbak",
+      "character": "MAR_sayajirao_gaekwad",
       "country": "MAR",
-      "stem": "portrait_mar_moropant_trimbak",
-      "description": "Moropant Trimbak, Maratha military theorist, early fifties, trimmed mustache, rust-red turban, khaki field coat with map case, analytical expression"
+      "stem": "portrait_mar_sayajirao_gaekwad",
+      "description": "dignified man in his seventies, white moustache, dark Baroda-style turban with jewelled sarpech, formal embroidered achkan and pearl strings, benevolent modernist Maharaja, early 20th century"
     },
     {
-      "character": "MAR_kanhoji_angre_iii",
+      "character": "MAR_visvesvaraya",
       "country": "MAR",
-      "stem": "portrait_mar_kanhoji_angre_iii",
-      "description": "Kanhoji Angre III, Maratha admiral, mid forties, weathered seafarer, navy-blue turban and dark naval coat with restrained gold braid, alert eyes, coastal-command bearing"
+      "stem": "portrait_mar_visvesvaraya",
+      "description": "elderly clean-shaven man with round spectacles, neat white Mysore peta turban, high-collared coat and tie, precise engineer-statesman demeanour, early 20th century"
     },
     {
-      "character": "MAR_santaji_ghorpade_ii",
+      "character": "MAR_jamsetji_tata",
       "country": "MAR",
-      "stem": "portrait_mar_santaji_ghorpade_ii",
-      "description": "Santaji Ghorpade II, cavalry commander, late thirties, athletic build, curled mustache, saffron cavalry turban, khaki field uniform and leather cross-strap, aggressive confident expression"
+      "stem": "portrait_mar_jamsetji_tata",
+      "description": "older Parsi man, full white beard, black Parsi feta cap, formal dark Victorian suit with waistcoat, visionary industrialist gaze, late 19th century Bombay"
     },
     {
-      "character": "MAR_ibrahim_gardi",
+      "character": "MAR_dorabji_tata",
       "country": "MAR",
-      "stem": "portrait_mar_ibrahim_gardi",
-      "description": "Ibrahim Khan Gardi, artillery commander, early forties, trimmed beard, dark green turban, heavy khaki artillery tunic with brass insignia, disciplined measured expression"
+      "stem": "portrait_mar_dorabji_tata",
+      "description": "portly Parsi man in his sixties, trimmed white moustache, black Parsi cap, dark three-piece suit and watch chain, confident steel-magnate bearing, 1920s"
+    },
+    {
+      "character": "MAR_jrd_tata",
+      "country": "MAR",
+      "stem": "portrait_mar_jrd_tata",
+      "description": "trim clean-shaven man in his thirties, neatly combed hair, leather aviator jacket over shirt and tie, pilot's confident smile, 1930s aviation pioneer"
+    },
+    {
+      "character": "MAR_tilak",
+      "country": "MAR",
+      "stem": "portrait_mar_tilak",
+      "description": "stout man in his sixties, thick white walrus moustache, red-bordered white Maharashtrian pheta turban, plain shawl over shoulder, fiery nationalist orator's gaze, early 20th century Pune"
+    },
+    {
+      "character": "MAR_savarkar",
+      "country": "MAR",
+      "stem": "portrait_mar_savarkar",
+      "description": "lean intense man in his fifties, clean-shaven, round spectacles, receding hair, plain dark buttoned coat, sharp ideological stare, 1930s Hindutva ideologue"
+    },
+    {
+      "character": "MAR_ambedkar",
+      "country": "MAR",
+      "stem": "portrait_mar_ambedkar",
+      "description": "man in his forties, round black spectacles, neat side-parted hair, formal blue Western suit with tie, resolute jurist's expression, 1930s constitutionalist"
+    },
+    {
+      "character": "MAR_dhondo_karve",
+      "country": "MAR",
+      "stem": "portrait_mar_dhondo_karve",
+      "description": "elderly ascetic man, close-cropped white hair and small round glasses, plain white homespun coat, gentle earnest reformer's face, early 20th century social educator"
+    },
+    {
+      "character": "BEN_sarat_bose",
+      "country": "BEN",
+      "stem": "portrait_ben_sarat_bose",
+      "description": "Bengali man in his late forties, clean-shaven with round wire spectacles, receding hairline, wearing a dark barrister's coat over a white dhoti-kurta, calm dignified expression, 1930s"
+    },
+    {
+      "character": "BEN_nazimuddin",
+      "country": "BEN",
+      "stem": "portrait_ben_nazimuddin",
+      "description": "Bengali Muslim aristocrat in his early forties, neatly trimmed moustache, wearing a black sherwani and a karakul cap, composed reserved expression, Dhaka nawab family, 1930s"
+    },
+    {
+      "character": "BEN_jc_bose",
+      "country": "BEN",
+      "stem": "portrait_ben_jc_bose",
+      "description": "distinguished elderly Bengali scientist in his late seventies, white hair and full grey moustache, wearing a dark academic coat with a high-collared shirt, thoughtful gaze, 1930s"
+    },
+    {
+      "character": "BEN_pc_ray",
+      "country": "BEN",
+      "stem": "portrait_ben_pc_ray",
+      "description": "elderly Bengali chemist in his seventies, clean-shaven, balding with white side hair, small round spectacles, wearing a plain white dhoti and Bengali chadar shawl, austere kindly expression, 1930s"
+    },
+    {
+      "character": "BEN_saha",
+      "country": "BEN",
+      "stem": "portrait_ben_saha",
+      "description": "Bengali astrophysicist in his early forties, clean-shaven, dark hair combed back, round spectacles, wearing a dark western suit with tie, intense scholarly expression, 1930s"
+    },
+    {
+      "character": "BEN_sn_bose",
+      "country": "BEN",
+      "stem": "portrait_ben_sn_bose",
+      "description": "Bengali physicist in his early forties, clean-shaven, thick dark hair, round glasses, wearing a dark jacket over a white shirt, calm intelligent expression, 1930s"
+    },
+    {
+      "character": "BEN_tagore",
+      "country": "BEN",
+      "stem": "portrait_ben_tagore",
+      "description": "elderly Bengali poet in his seventies, long flowing white beard and white hair, wearing a long dark robe, serene philosophical expression, iconic sage bearing, 1930s"
+    },
+    {
+      "character": "BEN_nazrul",
+      "country": "BEN",
+      "stem": "portrait_ben_nazrul",
+      "description": "Bengali poet in his late thirties, wavy dark hair, clean-shaven, expressive fiery eyes, wearing an open-collared kurta, passionate rebellious expression, 1930s"
+    },
+    {
+      "character": "BEN_mookerjee",
+      "country": "BEN",
+      "stem": "portrait_ben_mookerjee",
+      "description": "elderly Bengali engineer-industrialist in his early eighties, grey moustache, balding, wearing a formal dark western suit with waistcoat and watch chain, stern authoritative expression, 1930s"
+    },
+    {
+      "character": "BEN_rash_behari",
+      "country": "BEN",
+      "stem": "portrait_ben_rash_behari",
+      "description": "Bengali revolutionary in his late forties, clean-shaven, dark hair, sharp watchful eyes, wearing a plain dark Japanese-cut coat, guarded conspiratorial expression, 1930s"
+    },
+    {
+      "character": "BEN_surya_sen",
+      "country": "BEN",
+      "stem": "portrait_ben_surya_sen",
+      "description": "young Bengali revolutionary schoolteacher in his late thirties, clean-shaven, dark hair, wearing a simple dark buttoned tunic, resolute determined expression, martyr bearing, early 1930s"
+    },
+    {
+      "character": "BEN_bagha_jatin",
+      "country": "BEN",
+      "stem": "portrait_ben_bagha_jatin",
+      "description": "powerfully built Bengali revolutionary in his mid-thirties, short dark hair, strong jaw, clean-shaven, wearing a plain dark high-collared jacket, fearless commanding expression, early twentieth century"
+    },
+    {
+      "character": "BEN_kalpana",
+      "country": "BEN",
+      "stem": "portrait_ben_kalpana",
+      "description": "young Bengali woman revolutionary in her early twenties, dark hair pulled back, wearing a simple cotton sari, determined steady expression, 1930s"
+    },
+    {
+      "character": "BEN_bina_das",
+      "country": "BEN",
+      "stem": "portrait_ben_bina_das",
+      "description": "young Bengali woman revolutionary in her early twenties, dark hair in a bun, wearing a plain white sari, quietly defiant expression, 1930s"
+    },
+    {
+      "character": "HIN_wajid_ali_shah",
+      "country": "HIN",
+      "stem": "portrait_hin_wajid",
+      "description": "Nawab of Awadh in his fifties, full rounded face, thick black beard, ornate jewelled turban with aigrette, richly embroidered gold brocade angarkha and pearl necklaces, serene melancholic expression, mid-19th-century Lucknow court dress"
+    },
+    {
+      "character": "HIN_hazrat_mahal",
+      "country": "HIN",
+      "stem": "portrait_hin_hazrat",
+      "description": "regal woman in her thirties, dignified oval face, dark hair beneath a fine embroidered dupatta and jewelled tiara, richly worked silk peshwaz, gold and emerald ornaments, resolute commanding expression, mid-19th-century Awadhi queenly attire"
+    },
+    {
+      "character": "HIN_birjis_qadr",
+      "country": "HIN",
+      "stem": "portrait_hin_birjis",
+      "description": "young prince in his late teens, clean smooth face, small moustache, jewelled turban with plume, brocade sherwani with sash of office, youthful earnest expression, mid-19th-century Lucknow princely dress"
+    },
+    {
+      "character": "HIN_ahmadullah_shah",
+      "country": "HIN",
+      "stem": "portrait_hin_ahmadullah",
+      "description": "stern cleric-commander in his sixties, weathered face, long grey beard, green turban of a sufi maulvi, plain dark robe over chain mail glimpsed at the collar, fierce zealous gaze, 1857 rebel-leader appearance"
+    },
+    {
+      "character": "HIN_beni_madho_singh",
+      "country": "HIN",
+      "stem": "portrait_hin_benimadho",
+      "description": "elderly Rajput taluqdar warlord in his sixties, lined proud face, thick greying moustache and beard, saffron turban, quilted campaign coat with talwar hilt visible, unyielding defiant expression, 1857 Awadh commander"
+    },
+    {
+      "character": "HIN_kunwar_singh",
+      "country": "HIN",
+      "stem": "portrait_hin_kunwar",
+      "description": "aged zamindar general near eighty, thin dignified face, long white flowing beard and moustache, white turban, simple white campaign robes with a sword belt, calm indomitable expression, 1857 Jagdishpur commander"
+    },
+    {
+      "character": "HIN_syed_ahmad_khan",
+      "country": "HIN",
+      "stem": "portrait_hin_syed",
+      "description": "elderly Muslim reformer in his seventies, spectacled scholarly face, short white beard, tall karakul cap, dark buttoned achkan over waistcoat, thoughtful modernist expression, late-19th-century Aligarh dress"
+    },
+    {
+      "character": "HIN_malaviya",
+      "country": "HIN",
+      "stem": "portrait_hin_malaviya",
+      "description": "elderly Hindu leader in his seventies, gaunt ascetic face, small white moustache, white Gandhi cap, plain white khadi kurta and shawl, dignified pious expression, early-20th-century Banaras appearance"
+    },
+    {
+      "character": "HIN_nehru",
+      "country": "HIN",
+      "stem": "portrait_hin_nehru",
+      "description": "middle-aged man mid-forties, handsome clean-shaven face, white Gandhi cap, white achkan with a rosebud at the lapel, composed confident expression, 1930s Indian nationalist dress"
+    },
+    {
+      "character": "HIN_narendra_deva",
+      "country": "HIN",
+      "stem": "portrait_hin_narendradeva",
+      "description": "scholar-socialist in his late forties, thin intellectual face, round spectacles, short moustache, white cap and khadi kurta, earnest contemplative expression, 1930s Congress Socialist appearance"
+    },
+    {
+      "character": "HIN_azad",
+      "country": "HIN",
+      "stem": "portrait_hin_azad",
+      "description": "young revolutionary in his mid-twenties, lean determined face, prominent upturned handlebar moustache, hair swept back, plain dhoti-kurta or simple shirt, intense defiant expression, 1920s-30s Indian revolutionary"
+    },
+    {
+      "character": "HIN_mahendra_pratap",
+      "country": "HIN",
+      "stem": "portrait_hin_mahendra",
+      "description": "aristocrat-revolutionary in his fifties, broad face, greying moustache, simple turban or bare head, plain traveller's coat, idealistic far-sighted expression, early-20th-century exile-provisional leader"
+    },
+    {
+      "character": "HIN_jai_lal_singh",
+      "country": "HIN",
+      "stem": "portrait_hin_jailal",
+      "description": "Awadh courtier-commander in his forties, sharp featured face, dark moustache, jewelled turban, brocade angarkha with sash, shrewd resolute expression, mid-19th-century Lucknow court-rebel dress"
+    },
+    {
+      "character": "HIN_motilal_nehru",
+      "country": "HIN",
+      "stem": "portrait_hin_motilal",
+      "description": "prosperous barrister in his sixties, full clean-shaven face, balding, well-groomed white moustache, elegant western suit or fine achkan, worldly confident expression, early-20th-century Allahabad appearance"
+    },
+    {
+      "character": "HYD_salar_jung3",
+      "country": "HYD",
+      "stem": "portrait_hyd_salar_jung3",
+      "description": "Deccan Muslim nobleman in his late 40s, neat short black beard, dark astrakhan Rumi topi cap, embroidered achkan sherwani with pearl buttons, refined art-collector's composed expression, 1930s Hyderabad court"
+    },
+    {
+      "character": "HYD_kishen_pershad",
+      "country": "HYD",
+      "stem": "portrait_hyd_kishen_pershad",
+      "description": "elderly Hindu Kayastha statesman in his early 70s, white moustache and clean-shaven chin, gold-brocade dastar turban with jewelled sarpech, cream silk angarkha and pearl necklace, wise poet-premier's benign gaze, late-1930s Hyderabad"
+    },
+    {
+      "character": "HYD_akbar_hydari",
+      "country": "HYD",
+      "stem": "portrait_hyd_akbar_hydari",
+      "description": "Bohra Muslim finance minister in his 60s, trim grey beard, round spectacles, dark Rumi cap, formal black frock coat over waistcoat, shrewd administrator's steady look, 1930s formal portrait"
+    },
+    {
+      "character": "HYD_chhatari",
+      "country": "HYD",
+      "stem": "portrait_hyd_chhatari",
+      "description": "north-Indian Muslim nobleman in his 50s, clipped greying moustache, dark karakul cap, high-collared dark sherwani with medal ribbon, calm caretaker-premier's expression, 1940s Hyderabad"
+    },
+    {
+      "character": "HYD_ramananda_tirtha",
+      "country": "HYD",
+      "stem": "portrait_hyd_ramananda_tirtha",
+      "description": "shaven-headed Hindu sanyasi-politician in his 30s, clean-shaven, plain ochre saffron robe over bare shoulder, round spectacles, earnest reformer's determined gaze, 1930s Congress rally setting"
+    },
+    {
+      "character": "HYD_sundarayya",
+      "country": "HYD",
+      "stem": "portrait_hyd_sundarayya",
+      "description": "young Telugu communist organiser in his mid-20s, clean-shaven, short dark hair, plain coarse khadi shirt, no headwear, intense revolutionary's resolute stare, 1930s rural Telangana"
+    },
+    {
+      "character": "HYD_narayana_reddy",
+      "country": "HYD",
+      "stem": "portrait_hyd_narayana_reddy",
+      "description": "Telugu peasant-leader in his late 20s, thin moustache, dark hair, plain white khadi kurta and simple cloth cap, weathered organiser's earnest expression, 1930s Andhra Mahasabha"
+    },
+    {
+      "character": "HYD_makhdoom",
+      "country": "HYD",
+      "stem": "portrait_hyd_makhdoom",
+      "description": "young Urdu poet in his late 20s, dark wavy hair, thin moustache, open-collar shirt with rolled sleeves, no headwear, thoughtful lyrical expression, 1930s Hyderabad progressive circle"
+    },
+    {
+      "character": "PJB_ranjit_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_ranjit",
+      "description": "Maharaja Ranjit Singh, late 50s, one-eyed (blind in left eye from smallpox), long grey beard tied up, saffron and gold silk robe, jewelled kalgi and turban with an emerald aigrette, seated regal bearing, shrewd commanding expression, early 19th-century Sikh court dress"
+    },
+    {
+      "character": "PJB_hari_singh_nalwa",
+      "country": "PJB",
+      "stem": "portrait_pjb_nalwa",
+      "description": "Hari Singh Nalwa, powerful Sikh general in his 40s, thick black beard, dark blue and gold Khalsa battle turban with steel quoit, chainmail and steel armour over robes, sword and shield, stern martial gaze, early 19th-century Khalsa Army"
+    },
+    {
+      "character": "PJB_sham_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_sham",
+      "description": "Sham Singh Attariwala, veteran Sikh general in his 50s, long flowing white beard, white robes and white turban, saffron sash, mounted-warrior bearing, resolute weathered expression, early 19th-century Sikh commander"
+    },
+    {
+      "character": "PJB_phula_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_phula",
+      "description": "Akali Phula Singh, Nihang warrior-ascetic in his 50s, dense grey beard, towering conical blue dumalla turban stacked with steel chakrams and a khanda, dark blue Nihang robes, fierce zealous eyes, early 19th-century irregular commander"
+    },
+    {
+      "character": "PJB_zorawar_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_zorawar",
+      "description": "Zorawar Singh Kahluria, Dogra mountain general in his 40s, black beard, fur-trimmed Himalayan cloak over armour, red and gold turban, hardy weather-beaten face, snow-campaign bearing, early 19th-century mountain warfare"
+    },
+    {
+      "character": "PJB_jind_kaur",
+      "country": "PJB",
+      "stem": "portrait_pjb_jindan",
+      "description": "Maharani Jind Kaur, regent queen in her 30s, elegant, dark hair veiled with a fine embroidered dupatta, gold nose ring and heavy jewellery, rich crimson and gold silks, proud defiant expression, 19th-century Sikh royal woman"
+    },
+    {
+      "character": "PJB_duleep_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_duleep",
+      "description": "Maharaja Duleep Singh as restored young ruler, mid 20s, neat dark beard, jewelled turban with a large pearl and emerald aigrette, sky-blue and gold court robe, pearl necklaces, youthful dignified expression, mid 19th-century Lahore court"
+    },
+    {
+      "character": "PJB_tara_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_tara",
+      "description": "Master Tara Singh, Akali leader in his 50s, long grey beard, plain black-and-white turban, simple dark achkan, spectacles, intense oratorical expression, 1930s-40s Sikh nationalist"
+    },
+    {
+      "character": "PJB_sikandar_hayat",
+      "country": "PJB",
+      "stem": "portrait_pjb_sikandar",
+      "description": "Sir Sikandar Hayat Khan, Punjabi Muslim statesman in his 40s, neat moustache and short beard, karakul cap, dark sherwani with watch chain, dignified premier's bearing, 1930s-40s Punjab Unionist"
+    },
+    {
+      "character": "PJB_khizar_tiwana",
+      "country": "PJB",
+      "stem": "portrait_pjb_khizar",
+      "description": "Sir Khizar Hayat Khan Tiwana, Punjabi Muslim landowner-politician in his late 30s, trimmed moustache, karakul cap, western suit under a formal coat, composed measured expression, 1940s Unionist premier"
+    },
+    {
+      "character": "PJB_chhotu_ram",
+      "country": "PJB",
+      "stem": "portrait_pjb_chhotu",
+      "description": "Sir Chhotu Ram, stocky Jat peasant leader in his 50s, clean-shaven with heavy moustache, plain white turban and homespun kurta, earnest agrarian-reformer expression, 1930s-40s rural Punjab"
+    },
+    {
+      "character": "PJB_baldev_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_baldev",
+      "description": "Sardar Baldev Singh, Sikh Panthic politician in his 40s, dark beard neatly rolled, well-tied navy turban, dark western suit with tie, businesslike confident expression, 1940s Punjab"
+    },
+    {
+      "character": "PJB_har_dayal",
+      "country": "PJB",
+      "stem": "portrait_pjb_hardayal",
+      "description": "Lala Har Dayal, revolutionary intellectual in his 50s, thin face, small moustache, dark hair swept back, plain dark jacket over kurta, austere scholarly-radical expression, 1930s Ghadar ideologue"
+    },
+    {
+      "character": "PJB_sohan_bhakna",
+      "country": "PJB",
+      "stem": "portrait_pjb_bhakna",
+      "description": "Sohan Singh Bhakna, elder Ghadar leader in his 60s, long white beard, plain white turban and coarse kurta, weathered dignified peasant-revolutionary expression, 1930s-40s Punjab"
+    },
+    {
+      "character": "PJB_bhagat_singh",
+      "country": "PJB",
+      "stem": "portrait_pjb_bhagat",
+      "description": "Bhagat Singh, young revolutionary in his early 20s, clean-shaven with a curled upturned moustache, tilted felt trilby hat, plain shirt and jacket, defiant fearless expression, iconic 1930s Lahore revolutionary-socialist"
+    },
+    {
+      "character": "MDR_periyar",
+      "country": "MDR",
+      "stem": "portrait_mdr_periyar",
+      "description": "elderly Tamil man late 50s, long full white beard, bald pate, thick dark-rimmed spectacles, plain black shirt, intense piercing gaze, stern rationalist orator"
+    },
+    {
+      "character": "MDR_rajan",
+      "country": "MDR",
+      "stem": "portrait_mdr_rajan",
+      "description": "middle-aged Tamil man 40s, clean-shaven, receding hair, round spectacles, white khadi jacket over dhoti, composed confident politician expression"
+    },
+    {
+      "character": "MDR_annamalai",
+      "country": "MDR",
+      "stem": "portrait_mdr_annamalai",
+      "description": "distinguished Chettiar banker 50s, trimmed grey moustache, gold-framed spectacles, cream silk angavastram over jibba, jewelled turban, dignified affluent bearing"
+    },
+    {
+      "character": "MDR_alagappa",
+      "country": "MDR",
+      "stem": "portrait_mdr_alagappa",
+      "description": "Chettiar industrialist late 20s to 30s, clean-shaven, neatly combed hair, dark western suit with tie, ambitious philanthropic entrepreneur expression"
+    },
+    {
+      "character": "MDR_annadurai",
+      "country": "MDR",
+      "stem": "portrait_mdr_annadurai",
+      "description": "young Tamil orator late 20s, clean-shaven, thick dark hair, plain white shirt, animated charismatic speaker's gaze, Dravidian firebrand"
+    },
+    {
+      "character": "MDR_satyamurti",
+      "country": "MDR",
+      "stem": "portrait_mdr_satyamurti",
+      "description": "stout Tamil nationalist 40s, small moustache, round spectacles, white khadi cap and jacket, warm persuasive orator's smile"
+    },
+    {
+      "character": "MDR_theagaraya",
+      "country": "MDR",
+      "stem": "portrait_mdr_theagaraya",
+      "description": "elderly industrialist-statesman 60s, full grey moustache, balding, formal dark coat with high collar, patriarch of the Justice Party, grave dignified expression"
+    },
+    {
+      "character": "MDR_natesa",
+      "country": "MDR",
+      "stem": "portrait_mdr_natesa",
+      "description": "Tamil physician-reformer late 50s, moustache, spectacles, formal dark suit and tie, earnest reformist gaze, non-Brahmin movement founder"
+    },
+    {
+      "character": "MDR_vocp",
+      "country": "MDR",
+      "stem": "portrait_mdr_vocp",
+      "description": "Tamil merchant-mariner 60s, thick moustache, white turban, buttoned dark coat over dhoti, resolute patriotic seafarer's expression, era-worn"
+    },
+    {
+      "character": "MDR_muthiah",
+      "country": "MDR",
+      "stem": "portrait_mdr_muthiah",
+      "description": "young Chettiar raja 30s, thin moustache, jewelled silk turban, embroidered achkan, princely minister-industrialist bearing"
+    },
+    {
+      "character": "MYS_walchand",
+      "country": "MYS",
+      "stem": "portrait_mys_walchand",
+      "description": "Indian industrialist in his fifties, clean-shaven with a broad face and receding grey-flecked hair, wearing a dark Western business suit with a high collar and tie, shrewd confident expression, seated bust, 1930s-40s illustration"
+    },
+    {
+      "character": "MYS_albion_banerjee",
+      "country": "MYS",
+      "stem": "portrait_mys_albion_banerjee",
+      "description": "distinguished Bengali civil servant in his sixties, trimmed white moustache, spectacles, formal black Dewan's coat with high buttoned collar, calm reserved expression, centered bust, 1930s illustration"
+    },
+    {
+      "character": "MYS_madhava_rao",
+      "country": "MYS",
+      "stem": "portrait_mys_madhava_rao",
+      "description": "South Indian administrator around fifty, clean-shaven, close-cropped greying hair, round spectacles, dark buttoned Dewan's coat, thoughtful reformist expression, centered bust, early 1940s illustration"
+    },
+    {
+      "character": "MYS_kantirava",
+      "country": "MYS",
+      "stem": "portrait_mys_kantirava",
+      "description": "Wadiyar royal heir in his late forties, neat black moustache, ornate Mysore silk turban with jeweled sarpech, richly embroidered durbar coat with sash, dignified martial expression, centered bust, 1930s illustration"
+    },
+    {
+      "character": "MYS_krishnaraja_iii",
+      "country": "MYS",
+      "stem": "portrait_mys_krishnaraja_iii",
+      "description": "elderly 19th-century Mysore maharaja, greying moustache, elaborate gold-brocade turban with pearl strands and jeweled aigrette, heavy pearl necklaces over a cream angarkha, serene patronly expression, centered bust, period royal portrait style"
+    },
+    {
+      "character": "MYS_tipu",
+      "country": "MYS",
+      "stem": "portrait_mys_tipu",
+      "description": "18th-century Sultan of Mysore around forty, dark full beard, striped tiger-motif turban, jeweled arm-band, richly patterned campaign robe with a sword, fierce commanding expression, centered bust, historical martial portrait style"
+    },
+    {
+      "character": "MYS_hyder_ali",
+      "country": "MYS",
+      "stem": "portrait_mys_hyder_ali",
+      "description": "18th-century Mysore ruler-general in his fifties, thick grey-flecked beard, large white turban with a plume, plain military robe with a shoulder sash and sword hilt, stern weathered soldier's expression, centered bust, historical martial portrait style"
+    },
+    {
+      "character": "RJP_fateh_singh",
+      "country": "RJP",
+      "stem": "portrait_rjp_fateh_singh",
+      "description": "elderly Rajput Maharana in his late seventies, full white beard, saffron-and-gold Mewar turban with sarpech jewel, proud defiant expression, ceremonial silk robes, 1920s-era"
+    },
+    {
+      "character": "RJP_birla",
+      "country": "RJP",
+      "stem": "portrait_rjp_birla",
+      "description": "clean-shaven Marwari industrialist in his forties, receding hairline, round spectacles, white Gandhi cap and plain khadi jacket, shrewd confident expression, 1930s-era"
+    },
+    {
+      "character": "RJP_bajaj",
+      "country": "RJP",
+      "stem": "portrait_rjp_bajaj",
+      "description": "middle-aged Marwari businessman in his late forties, small moustache, white Gandhi cap, homespun khadi dhoti-kurta, earnest reformist expression, 1930s-era"
+    },
+    {
+      "character": "RJP_pratap_singh",
+      "country": "RJP",
+      "stem": "portrait_rjp_pratap_singh",
+      "description": "veteran Rathore soldier-regent in his seventies, thick grey moustache and short beard, ornate Jodhpur safa turban, cavalry dress uniform with medals and sash, stern martial expression, early 1900s-era"
+    },
+    {
+      "character": "RJP_hanwant_singh",
+      "country": "RJP",
+      "stem": "portrait_rjp_hanwant_singh",
+      "description": "young Rajput prince in his early twenties, thin moustache, aviator leather jacket over Jodhpur breeches, eager modern expression, 1940s-era"
+    },
+    {
+      "character": "RJP_sardar_singh",
+      "country": "RJP",
+      "stem": "portrait_rjp_sardar_singh",
+      "description": "Rathore Maharaja of Jodhpur in his late twenties, curled moustache, jewelled safa turban, dark cavalry tunic of the Jodhpur Lancers, commanding expression, 1900s-era"
+    },
+    {
+      "character": "RJP_singhania",
+      "country": "RJP",
+      "stem": "portrait_rjp_singhania",
+      "description": "prosperous Marwari banker in his fifties, trimmed moustache, cream turban and brocade achkan, gold rings, calculating smile, 1930s-era"
+    },
+    {
+      "character": "WIS_khengarji",
+      "country": "WIS",
+      "stem": "portrait_wis_khengarji",
+      "description": "elderly Maharao of Kutch in his sixties, thick grey moustache, gem-studded green silk turban with heron aigrette, brocade sherwani, stern paternal expression, 1930s Kathiawar princely court"
+    },
+    {
+      "character": "WIS_krishnakumar",
+      "country": "WIS",
+      "stem": "portrait_wis_krishnakumar",
+      "description": "young Maharaja of Bhavnagar in his twenties, clean-shaven, plain saffron silk turban, simple cream achkan, earnest reformist gaze, late-1930s modernizing prince"
+    },
+    {
+      "character": "WIS_kasturbhai",
+      "country": "WIS",
+      "stem": "portrait_wis_kasturbhai",
+      "description": "Ahmedabad textile magnate in his forties, small trimmed moustache, white Gandhi cap, plain khadi jacket over dhoti, shrewd businesslike expression, 1930s Jain industrialist"
+    },
+    {
+      "character": "WIS_sarabhai",
+      "country": "WIS",
+      "stem": "portrait_wis_sarabhai",
+      "description": "Ahmedabad mill owner in his forties, clean-shaven, western dark three-piece suit with tie, spectacles, cosmopolitan confident expression, 1930s Calico Mills proprietor"
+    },
+    {
+      "character": "WIS_agakhan",
+      "country": "WIS",
+      "stem": "portrait_wis_agakhan",
+      "description": "heavyset Ismaili leader in his late fifties, grey moustache and short beard, red felt fez, ornate gold-embroidered dark robe with sash and medals, dignified diplomatic expression, 1930s statesman"
+    },
+    {
+      "character": "WIS_madhavrao",
+      "country": "WIS",
+      "stem": "portrait_wis_madhavrao",
+      "description": "elderly Victorian-era Baroda administrator, grey moustache, tall dark Maratha pheta turban, buttoned angarkha with shawl, sober scholarly expression, 19th-century Dewan portrait style"
+    },
+    {
+      "character": "WIS_pilaji",
+      "country": "WIS",
+      "stem": "portrait_wis_pilaji",
+      "description": "early-18th-century Maratha warrior founder of Baroda, thick black moustache, saffron warrior turban, chainmail under quilted coat, sword hilt visible, fierce martial expression, Peshwa-era Maratha style"
+    },
+    {
+      "character": "WIS_chinubhai",
+      "country": "WIS",
+      "stem": "portrait_wis_chinubhai",
+      "description": "Ahmedabad mill-owner baronet in his forties, neat moustache, dark western suit with high collar, watch chain, prosperous composed expression, early-20th-century Gujarati industrialist"
+    },
+    {
+      "character": "WIS_ranjitsinhji",
+      "country": "WIS",
+      "stem": "portrait_wis_ranjitsinhji",
+      "description": "Jam Sahib of Nawanagar in his fifties, trimmed moustache, jewelled cream silk turban with emerald plume, richly embroidered coat with pearl necklace, urbane worldly expression, 1930s cricketer-prince"
+    },
+    {
+      "character": "ASM_purandar",
+      "country": "ASM",
+      "stem": "portrait_asm_purandar",
+      "description": "Swargadeo Purandar Singha, last crowned Ahom king, middle-aged Tai-Ahom monarch, dignified oval face, thin drooping mustache, gold-and-crimson conical Ahom crown, silk muga-yellow royal robe with jewelled collar, solemn regal expression, 1830s dynastic revival"
+    },
+    {
+      "character": "ASM_phizo",
+      "country": "ASM",
+      "stem": "portrait_asm_phizo",
+      "description": "Angami Zapu Phizo, Naga nationalist leader, late thirties, lean angular hill-tribe face, short cropped black hair, plain dark buttoned jacket, intense determined stare, austere 1940s frontier setting"
+    },
+    {
+      "character": "ASM_rabha",
+      "country": "ASM",
+      "stem": "portrait_asm_rabha",
+      "description": "Bishnu Prasad Rabha, Assamese revolutionary artist, late twenties, expressive lively face, wavy swept-back hair, simple cotton kurta with a folk gamosa over the shoulder, bohemian fiery expression, 1930s leftist"
+    },
+    {
+      "character": "ASM_phukan",
+      "country": "ASM",
+      "stem": "portrait_asm_phukan",
+      "description": "Tarun Ram Phukan, veteran Assam Congress leader, late fifties, broad kindly face, greying mustache, white khadi cap and homespun kurta, calm patient elder statesman expression, 1930s"
+    },
+    {
+      "character": "ASM_raichoudhury",
+      "country": "ASM",
+      "stem": "portrait_asm_raichoudhury",
+      "description": "Ambikagiri Raichoudhury, Assamese nationalist poet, fifties, gaunt intense face, flowing greying hair and beard, plain white dhoti-kurta with a gamosa, burning patriotic gaze, 1930s"
+    },
+    {
+      "character": "ASM_agarwala",
+      "country": "ASM",
+      "stem": "portrait_asm_agarwala",
+      "description": "Jyoti Prasad Agarwala, Assamese filmmaker and poet, mid thirties, refined handsome face, neat side-parted hair and thin mustache, tailored jacket over kurta, artistic thoughtful expression, 1930s"
+    },
+    {
+      "character": "ASM_bezbaroa",
+      "country": "ASM",
+      "stem": "portrait_asm_bezbaroa",
+      "description": "Lakshminath Bezbaroa, elder Assamese literary giant, seventies, full white beard and mustache, round spectacles, traditional turban and shawl over kurta, wise venerable expression, early 20th century"
+    },
+    {
+      "character": "ASM_maniram",
+      "country": "ASM",
+      "stem": "portrait_asm_maniram",
+      "description": "Maniram Dewan, 19th-century Ahom noble and tea pioneer, forties, aristocratic face, curling mustache, ornate Ahom nobleman's turban and jewelled silk robe, shrewd enterprising expression, mid 1800s"
+    },
+    {
+      "character": "ASM_sukaphaa",
+      "country": "ASM",
+      "stem": "portrait_asm_sukaphaa",
+      "description": "Sukaphaa, legendary 13th-century Tai founder-king of the Ahoms, mature warrior-king, strong Tai features, topknot under an ornate golden Tai crown, gold-trimmed ceremonial silk robe, majestic founding-ancestor expression, medieval"
+    },
+    {
+      "character": "ASM_lachit",
+      "country": "ASM",
+      "stem": "portrait_asm_lachit",
+      "description": "Lachit Borphukan, 17th-century Ahom general, thirties, resolute martial face, thin mustache, plumed Ahom war-helmet, lamellar armour over silk, sword at side, commanding battlefield expression, Saraighat era"
+    },
+    {
+      "character": "ASM_gaidinliu",
+      "country": "ASM",
+      "stem": "portrait_asm_gaidinliu",
+      "description": "Rani Gaidinliu, young Naga priestess-rebel woman, early twenties, striking hill-tribe face, black hair with traditional Zeliangrong beaded ornaments and shawl, defiant fearless expression, 1930s hill uprising"
+    },
+    {
+      "character": "KAS_abbas",
+      "country": "KAS",
+      "stem": "portrait_kas_abbas",
+      "description": "Kashmiri Muslim politician in his early thirties, neat black moustache, karakuli lambskin cap, high-collared sherwani, resolute communal-leader expression, 1930s"
+    },
+    {
+      "character": "KAS_gulab",
+      "country": "KAS",
+      "stem": "portrait_kas_gulab",
+      "description": "elderly nineteenth-century Dogra Rajput founder-king, full grey beard, jewelled turban with sarpech aigrette, ceremonial brocade robe, stern imperial gaze, mid-1800s dynastic era"
+    },
+    {
+      "character": "KAS_kak",
+      "country": "KAS",
+      "stem": "portrait_kas_kak",
+      "description": "Kashmiri Pandit statesman in his fifties, clean-shaven, spectacles, dark achkan coat, shrewd administrative expression, 1940s"
+    },
+    {
+      "character": "KAS_bazaz",
+      "country": "KAS",
+      "stem": "portrait_kas_bazaz",
+      "description": "Kashmiri Pandit journalist in his thirties, thin moustache, round spectacles, plain buttoned jacket, earnest intellectual expression, 1930s"
+    },
+    {
+      "character": "KAS_mirwaiz",
+      "country": "KAS",
+      "stem": "portrait_kas_mirwaiz",
+      "description": "middle-aged Kashmiri Muslim cleric, full beard, white turban and cleric's robe, dignified religious authority, 1930s"
+    },
+    {
+      "character": "KAS_karan",
+      "country": "KAS",
+      "stem": "portrait_kas_karan",
+      "description": "young Dogra prince, teenaged, clean-shaven, jewelled royal turban with plume, embroidered sherwani, poised princely expression, late 1940s"
+    },
+    {
+      "character": "KAS_zorawar",
+      "country": "KAS",
+      "stem": "portrait_kas_zorawar",
+      "description": "nineteenth-century Dogra general, thick black beard, conical helmet or turban, chainmail and quilted armour, sword, hardened mountain-warrior gaze, early 1800s"
+    },
+    {
+      "character": "KAS_ghansara",
+      "country": "KAS",
+      "stem": "portrait_kas_ghansara",
+      "description": "Dogra military officer in his forties, trimmed moustache, military turban, khaki State Forces uniform with insignia, watchful frontier-governor expression, 1940s"
+    },
+    {
+      "character": "MPU_irabot",
+      "country": "MPU",
+      "stem": "portrait_mpu_irabot",
+      "description": "man in his forties, clean-shaven, short dark hair, plain white Meitei collarless shirt with a khudei wrap over shoulder, intense determined expression, 1930s peasant-revolutionary"
+    },
+    {
+      "character": "MPU_gambhir",
+      "country": "MPU",
+      "stem": "portrait_mpu_gambhir",
+      "description": "regal Meitei king in his forties, thin moustache, white turban with gold ornament, quilted royal war-tunic, stern commanding gaze, early-19th-century founder-monarch"
+    },
+    {
+      "character": "MPU_tikendrajit",
+      "country": "MPU",
+      "stem": "portrait_mpu_tikendrajit",
+      "description": "proud Meitei prince in his thirties, dark moustache, white pheijom dhoti and turban, arms folded, defiant resolute expression, late-19th-century Senapati warrior"
+    },
+    {
+      "character": "MPU_paona",
+      "country": "MPU",
+      "stem": "portrait_mpu_paona",
+      "description": "weathered Meitei general in his fifties, grey moustache, simple white headcloth, plain campaign tunic with sash, grim battle-hardened expression, 1890s Khongjom commander"
+    },
+    {
+      "character": "MPU_shaukat",
+      "country": "MPU",
+      "stem": "portrait_mpu_shaukat",
+      "description": "INA officer in his thirties, trimmed moustache, olive-green Azad Hind military cap and tunic, confident forward-looking expression, 1944 wartime"
+    },
+    {
+      "character": "MPU_bhagyachandra",
+      "country": "MPU",
+      "stem": "portrait_mpu_bhagyachandra",
+      "description": "serene Meitei king in his forties, thin moustache, white and saffron Vaishnavite dress with tilak on forehead, gentle contemplative expression, 18th-century cultural patron"
+    },
+    {
+      "character": "MPU_anganghal",
+      "country": "MPU",
+      "stem": "portrait_mpu_anganghal",
+      "description": "Meitei poet in his forties, clean-shaven, white collarless shirt with shawl, thoughtful literary expression holding a manuscript, early-20th-century writer"
+    },
+    {
+      "character": "ORI_madhusudan_das",
+      "country": "ORI",
+      "stem": "portrait_ori_madhusudan",
+      "description": "elderly Odia statesman in his 80s, full white beard, bald crown with white side hair, round spectacles, dark high-collared achkan coat, dignified reformer's expression, 1900s-1930s era"
+    },
+    {
+      "character": "ORI_nabakrushna_choudhury",
+      "country": "ORI",
+      "stem": "portrait_ori_nabakrushna",
+      "description": "middle-aged Odia leader late 30s, clean-shaven, short dark hair, plain white Gandhi-cap and homespun khadi kurta, earnest ascetic socialist expression, late 1930s era"
+    },
+    {
+      "character": "ORI_gopabandhu_das",
+      "country": "ORI",
+      "stem": "portrait_ori_gopabandhu",
+      "description": "Odia social reformer in his late 40s, trimmed dark moustache, short hair, simple white khadi shawl over kurta, warm teacher's gaze, 1920s era"
+    },
+    {
+      "character": "ORI_pratap_bhanj",
+      "country": "ORI",
+      "stem": "portrait_ori_pratap",
+      "description": "princely Maharaja of Mayurbhanj in his 30s, neat thin moustache, ornate silk turban with jewelled sarpech aigrette, embroidered durbar coat with pearl strings, regal authoritative expression, 1930s era"
+    },
+    {
+      "character": "ORI_sriram_bhanj",
+      "country": "ORI",
+      "stem": "portrait_ori_sriram",
+      "description": "modernising Maharaja of Mayurbhanj in his late 30s, full groomed moustache, jewelled turban, high-collared brocade coat with medal sash, visionary confident expression, late-Victorian 1900s era"
+    },
+    {
+      "character": "ORI_rajendra_singhdeo",
+      "country": "ORI",
+      "stem": "portrait_ori_rajendra",
+      "description": "conservative feudal Raja of Patna-Bolangir in his mid-20s, clean-shaven, dark oiled hair, formal turban and dark high-collared coat, guarded aristocratic expression, 1930s era"
+    },
+    {
+      "character": "ORI_sarangadhar_das",
+      "country": "ORI",
+      "stem": "portrait_ori_sarangadhar",
+      "description": "US-educated Odia engineer-revolutionary in his late 40s, clean-shaven with short grey-streaked hair, plain khadi kurta, intense determined organiser's expression, 1930s era"
+    },
+    {
+      "character": "ORI_kharavela",
+      "country": "ORI",
+      "stem": "portrait_ori_kharavela",
+      "description": "ancient Kalinga emperor 1st century BCE, dark beard, ornate gold crown and heavy jewelled necklaces, bare-chested with sacred thread and rich shoulder drape, imperious conqueror's expression, classical Indian antiquity"
+    },
+    {
+      "character": "ORI_shankar_dhenkanal",
+      "country": "ORI",
+      "stem": "portrait_ori_shankar",
+      "description": "feudatory Raja of Dhenkanal in his 40s, thick moustache, jewelled turban, silk durbar coat, haughty severe expression, 1930s era"
+    },
+    {
+      "character": "SIN_gm_syed",
+      "country": "SIN",
+      "stem": "portrait_sin_gm_syed",
+      "description": "Sindhi man in his early thirties, lean angular face, short dark beard, wearing a Sindhi topi cap and plain sherwani, intense reformer's gaze, 1930s"
+    },
+    {
+      "character": "SIN_hidayatullah",
+      "country": "SIN",
+      "stem": "portrait_sin_hidayatullah",
+      "description": "distinguished Sindhi statesman in his late fifties, greying trimmed beard, round spectacles, black achkan with high collar, sober premier's bearing, 1930s"
+    },
+    {
+      "character": "SIN_bhutto",
+      "country": "SIN",
+      "stem": "portrait_sin_bhutto",
+      "description": "landed Sindhi grandee in his late forties, full moustache, ornate embroidered sherwani and turban, shrewd aristocratic expression, 1930s"
+    },
+    {
+      "character": "SIN_pagaro",
+      "country": "SIN",
+      "stem": "portrait_sin_pagaro",
+      "description": "young Sindhi pir in his late twenties, dark full beard, green turban and flowing robes, piercing charismatic eyes, spiritual-martial intensity, 1930s"
+    },
+    {
+      "character": "SIN_majeed",
+      "country": "SIN",
+      "stem": "portrait_sin_majeed",
+      "description": "older Sindhi Khilafat leader in his fifties, white beard, karakul cap, dark buttoned coat, dignified scholarly look, 1930s"
+    },
+    {
+      "character": "SIN_haroon",
+      "country": "SIN",
+      "stem": "portrait_sin_haroon",
+      "description": "prosperous Karachi merchant-magnate in his sixties, full white beard, Jinnah-style karakul cap, western suit with waistcoat, confident bearing, 1930s"
+    },
+    {
+      "character": "SIN_jamshed",
+      "country": "SIN",
+      "stem": "portrait_sin_jamshed",
+      "description": "Parsi civic reformer in his early fifties, clean-shaven with small moustache, western three-piece suit and tie, kindly practical expression, 1930s"
+    },
+    {
+      "character": "SIN_ali_murad",
+      "country": "SIN",
+      "stem": "portrait_sin_ali_murad",
+      "description": "Talpur Mir of Khairpur in his forties, black beard, jewelled turban and princely robes with sash, regal composed gaze, 1930s"
+    },
+    {
+      "character": "SIN_fateh_ali",
+      "country": "SIN",
+      "stem": "portrait_sin_fateh_ali",
+      "description": "18th-century Talpur Mir warrior, black beard, ornate turban with aigrette, armour beneath silk robe, sabre at side, commanding martial expression, historical"
+    },
+    {
+      "character": "SIN_musto",
+      "country": "SIN",
+      "stem": "portrait_sin_musto",
+      "description": "British engineer in his fifties, clean-shaven with neat moustache, tweed jacket and tie, weathered practical face, drawings in background, 1930s"
+    },
+    {
+      "character": "TRV_sethu_lakshmi",
+      "country": "TRV",
+      "stem": "portrait_trv_sethu_lakshmi",
+      "description": "Indian Maharani in her thirties, 1930s, no headwear, hair drawn back, gold temple jewellery and a cream-and-gold Kerala kasavu sari, calm reforming expression, matriarchal dignity"
+    },
+    {
+      "character": "TRV_sethu_parvathi",
+      "country": "TRV",
+      "stem": "portrait_trv_sethu_parvathi",
+      "description": "Indian queen mother in her forties, 1930s, no headwear, centre-parted hair, heavy gold ornaments and dark silk sari with gold border, shrewd watchful expression, courtly poise"
+    },
+    {
+      "character": "TRV_gv_raja",
+      "country": "TRV",
+      "stem": "portrait_trv_gv_raja",
+      "description": "Indian consort prince in his early thirties, late 1930s, clean-shaven, dark aviator's uniform with peaked cap, confident forward-looking expression, early air-force officer"
+    },
+    {
+      "character": "TRV_pattom",
+      "country": "TRV",
+      "stem": "portrait_trv_pattom",
+      "description": "middle-aged Malayali politician in his fifties, 1940s, thick spectacles, receding hair, white khadi shirt and shawl, earnest reformist expression, congressman"
+    },
+    {
+      "character": "TRV_akkamma",
+      "country": "TRV",
+      "stem": "portrait_trv_akkamma",
+      "description": "Indian woman activist in her late twenties, late 1930s, no headwear, hair in a bun, plain white khadi sari, fierce resolute expression, firebrand orator"
+    },
+    {
+      "character": "TRV_krishna_pillai",
+      "country": "TRV",
+      "stem": "portrait_trv_krishna_pillai",
+      "description": "lean Malayali communist organiser in his thirties, 1940s, thin moustache, dark hair, plain white shirt, intense determined expression, revolutionary"
+    },
+    {
+      "character": "TRV_bristow",
+      "country": "TRV",
+      "stem": "portrait_trv_bristow",
+      "description": "British engineer in his fifties, 1930s, greying moustache, side-parted hair, dark suit or naval-engineer coat, practical stern expression, harbour builder"
+    },
+    {
+      "character": "TRV_raman",
+      "country": "TRV",
+      "stem": "portrait_trv_raman",
+      "description": "distinguished Indian physicist in his late forties, 1940s, dark turban, neat moustache, dark closed-collar coat, dignified scholarly expression, Nobel laureate"
+    },
+    {
+      "character": "TRV_marthanda",
+      "country": "TRV",
+      "stem": "portrait_trv_marthanda",
+      "description": "18th-century Travancore warrior-king, historical, bare-chested with gold ornaments and a jewelled turban, dark moustache, regal martial expression, dynastic founder"
+    },
+    {
+      "character": "TRV_uthradom",
+      "country": "TRV",
+      "stem": "portrait_trv_uthradom",
+      "description": "young Indian prince in his mid-teens to twenties, late 1930s, clean-shaven, short hair, silk formal jacket with royal insignia, dutiful princely expression, heir"
+    },
+    {
+      "character": "TRV_rama_varma",
+      "country": "TRV",
+      "stem": "portrait_trv_rama_varma",
+      "description": "elderly Cochin scholar-king in his sixties, 1930s, white moustache, gold-bordered turban, cream silk robe with gold ornaments, learned benevolent expression, ruling raja"
     }
   ]
 }

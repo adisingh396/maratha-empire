@@ -10,5 +10,179 @@ SIN_soomro = {
 		expire = "1965.1.1"
 		id = -1
 	}
+	country_leader = {
+		ideology = democratic
+		traits = { }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = SIN }
+		idea_token = SIN_soomro_secular
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+SIN_gm_syed = {
+	name = "G. M. Syed"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_gm_syed small = GFX_portrait_sin_gm_syed_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { nationalist }
+		expire = "1965.1.1"
+		id = -1
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = SIN }
+		idea_token = SIN_syed_nationalist
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+SIN_hidayatullah = {
+	name = "Ghulam Hussain Hidayatullah"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_hidayatullah small = GFX_portrait_sin_hidayatullah_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+SIN_shah_nawaz_bhutto = {
+	name = "Shah Nawaz Bhutto"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_bhutto small = GFX_portrait_sin_bhutto_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = SIN }
+		idea_token = SIN_bhutto_wadero
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+SIN_pir_pagaro = {
+	name = "Pir Pagaro VI"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_pagaro small = GFX_portrait_sin_pagaro_small }
+		army = { large = GFX_portrait_sin_pagaro small = GFX_portrait_sin_pagaro_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { nationalist }
+		expire = "1965.1.1"
+		id = -1
+	}
+	corps_commander = {
+		traits = { guerilla_fighter harsh_leader }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+SIN_abdul_majeed = {
+	name = "Sheikh Abdul Majeed Sindhi"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_majeed small = GFX_portrait_sin_majeed_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = SIN }
+		idea_token = SIN_majeed_autonomy
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+SIN_haroon = {
+	name = "Haji Abdullah Haroon"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_haroon small = GFX_portrait_sin_haroon_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = SIN }
+		idea_token = SIN_haroon_trade
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+SIN_jamshed_mehta = {
+	name = "Jamshed Nusserwanjee Mehta"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_jamshed small = GFX_portrait_sin_jamshed_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = SIN }
+		idea_token = SIN_jamshed_civic
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+SIN_ali_murad = {
+	name = "Mir Ali Murad Talpur II"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_ali_murad small = GFX_portrait_sin_ali_murad_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+SIN_fateh_ali = {
+	name = "Mir Fateh Ali Khan Talpur"
+	portraits = {
+		army = { large = GFX_portrait_sin_fateh_ali small = GFX_portrait_sin_fateh_ali_small }
+	}
+	field_marshal = {
+		traits = { offensive_doctrine trait_reckless }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+SIN_arnold_musto = {
+	name = "Arnold Musto"
+	portraits = {
+		civilian = { large = GFX_portrait_sin_musto small = GFX_portrait_sin_musto_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = SIN }
+		idea_token = SIN_musto_engineer
+		cost = 75
+		traits = { military_theorist }
+	}
 }
 }

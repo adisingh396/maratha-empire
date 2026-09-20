@@ -1,0 +1,9 @@
+[
+	{ "character": "RJP_fateh_singh", "country": "RJP", "stem": "portrait_rjp_fateh_singh", "description": "elderly Rajput Maharana in his late seventies, full white beard, saffron-and-gold Mewar turban with sarpech jewel, proud defiant expression, ceremonial silk robes, 1920s-era" },
+	{ "character": "RJP_birla", "country": "RJP", "stem": "portrait_rjp_birla", "description": "clean-shaven Marwari industrialist in his forties, receding hairline, round spectacles, white Gandhi cap and plain khadi jacket, shrewd confident expression, 1930s-era" },
+	{ "character": "RJP_bajaj", "country": "RJP", "stem": "portrait_rjp_bajaj", "description": "middle-aged Marwari businessman in his late forties, small moustache, white Gandhi cap, homespun khadi dhoti-kurta, earnest reformist expression, 1930s-era" },
+	{ "character": "RJP_pratap_singh", "country": "RJP", "stem": "portrait_rjp_pratap_singh", "description": "veteran Rathore soldier-regent in his seventies, thick grey moustache and short beard, ornate Jodhpur safa turban, cavalry dress uniform with medals and sash, stern martial expression, early 1900s-era" },
+	{ "character": "RJP_hanwant_singh", "country": "RJP", "stem": "portrait_rjp_hanwant_singh", "description": "young Rajput prince in his early twenties, thin moustache, aviator leather jacket over Jodhpur breeches, eager modern expression, 1940s-era" },
+	{ "character": "RJP_sardar_singh", "country": "RJP", "stem": "portrait_rjp_sardar_singh", "description": "Rathore Maharaja of Jodhpur in his late twenties, curled moustache, jewelled safa turban, dark cavalry tunic of the Jodhpur Lancers, commanding expression, 1900s-era" },
+	{ "character": "RJP_singhania", "country": "RJP", "stem": "portrait_rjp_singhania", "description": "prosperous Marwari banker in his fifties, trimmed moustache, cream turban and brocade achkan, gold rings, calculating smile, 1930s-era" }
+]

@@ -1,18 +1,114 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_ben_huq"
-		texturefile = "gfx/leaders/BEN/portrait_ben_huq.dds"
+		name = "GFX_portrait_ben_sarat_bose"
+		texturefile = "gfx/leaders/BEN/portrait_ben_sarat_bose.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ben_huq_small"
-		texturefile = "gfx/leaders/BEN/portrait_ben_huq_small.dds"
+		name = "GFX_portrait_ben_sarat_bose_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_sarat_bose_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ben_bose"
-		texturefile = "gfx/leaders/BEN/portrait_ben_bose.dds"
+		name = "GFX_portrait_ben_nazimuddin"
+		texturefile = "gfx/leaders/BEN/portrait_ben_nazimuddin.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ben_bose_small"
-		texturefile = "gfx/leaders/BEN/portrait_ben_bose_small.dds"
+		name = "GFX_portrait_ben_nazimuddin_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_nazimuddin_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_jc_bose"
+		texturefile = "gfx/leaders/BEN/portrait_ben_jc_bose.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_jc_bose_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_jc_bose_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_pc_ray"
+		texturefile = "gfx/leaders/BEN/portrait_ben_pc_ray.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_pc_ray_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_pc_ray_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_saha"
+		texturefile = "gfx/leaders/BEN/portrait_ben_saha.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_saha_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_saha_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_sn_bose"
+		texturefile = "gfx/leaders/BEN/portrait_ben_sn_bose.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_sn_bose_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_sn_bose_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_tagore"
+		texturefile = "gfx/leaders/BEN/portrait_ben_tagore.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_tagore_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_tagore_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_nazrul"
+		texturefile = "gfx/leaders/BEN/portrait_ben_nazrul.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_nazrul_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_nazrul_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_mookerjee"
+		texturefile = "gfx/leaders/BEN/portrait_ben_mookerjee.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_mookerjee_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_mookerjee_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_rash_behari"
+		texturefile = "gfx/leaders/BEN/portrait_ben_rash_behari.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_rash_behari_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_rash_behari_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_surya_sen"
+		texturefile = "gfx/leaders/BEN/portrait_ben_surya_sen.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_surya_sen_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_surya_sen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_bagha_jatin"
+		texturefile = "gfx/leaders/BEN/portrait_ben_bagha_jatin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_bagha_jatin_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_bagha_jatin_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_kalpana"
+		texturefile = "gfx/leaders/BEN/portrait_ben_kalpana.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_kalpana_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_kalpana_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_bina_das"
+		texturefile = "gfx/leaders/BEN/portrait_ben_bina_das.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ben_bina_das_small"
+		texturefile = "gfx/leaders/BEN/portrait_ben_bina_das_small.dds"
 	}
 }

@@ -66,4 +66,120 @@ KAS_mahajan = {
 		traits = { backroom_backstabber }
 	}
 }
+KAS_abbas = {
+	name = KAS_abbas
+	portraits = {
+		civilian = { large = GFX_portrait_kas_abbas small = GFX_portrait_kas_abbas_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { ideological_crusader }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+KAS_gulab = {
+	name = KAS_gulab
+	portraits = {
+		civilian = { large = GFX_portrait_kas_gulab small = GFX_portrait_kas_gulab_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+KAS_kak = {
+	name = KAS_kak
+	portraits = {
+		civilian = { large = GFX_portrait_kas_kak small = GFX_portrait_kas_kak_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = KAS }
+		idea_token = KAS_kak_counsel
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+KAS_bazaz = {
+	name = KAS_bazaz
+	portraits = {
+		civilian = { large = GFX_portrait_kas_bazaz small = GFX_portrait_kas_bazaz_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = KAS }
+		idea_token = KAS_bazaz_secular
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+KAS_mirwaiz = {
+	name = KAS_mirwaiz
+	portraits = {
+		civilian = { large = GFX_portrait_kas_mirwaiz small = GFX_portrait_kas_mirwaiz_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = KAS }
+		idea_token = KAS_mirwaiz_cleric
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+KAS_karan = {
+	name = KAS_karan
+	portraits = {
+		civilian = { large = GFX_portrait_kas_karan small = GFX_portrait_kas_karan_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = KAS }
+		idea_token = KAS_karan_heir
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+KAS_bakshigm = {
+	name = KAS_bakshigm
+	portraits = {
+		army = { large = GFX_portrait_kas_bakshi small = GFX_portrait_kas_bakshi_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = KAS }
+		idea_token = KAS_bakshigm_hc
+		cost = 100
+		traits = { army_infantry_1 }
+	}
+}
+KAS_ghansara = {
+	name = KAS_ghansara
+	portraits = {
+		army = { large = GFX_portrait_kas_ghansara small = GFX_portrait_kas_ghansara_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = KAS }
+		idea_token = KAS_ghansara_hc
+		cost = 100
+		traits = { army_regrouping_1 }
+	}
+}
+KAS_zorawar = {
+	name = KAS_zorawar
+	portraits = {
+		army = { large = GFX_portrait_kas_zorawar small = GFX_portrait_kas_zorawar_small }
+	}
+	field_marshal = {
+		traits = { trait_mountaineer war_hero }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 3
+	}
+}
 }

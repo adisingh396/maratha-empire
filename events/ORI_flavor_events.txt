@@ -1,0 +1,239 @@
+# ORI flavor events — Kalinga/Orissa expansion
+# Chains: Utkal Sammilani unification (1-3), Garjat Praja Mandal / Baji Rout (4-6),
+# Kalinga Reborn maritime (7-8), Mineral Kingdom (9-10), Mayurbhanj Model State (11-12)
+
+add_namespace = ORI_flav
+
+# ============ UTKAL SAMMILANI — ONE ODIA NATION ============
+country_event = {
+	id = ORI_flav.1
+	title = ORI_flav.1_t
+	desc = ORI_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.1_a		# Summon the Sammilani — bind the tracts by consent
+		add_political_power = 90
+		add_stability = 0.05
+		hidden_effect = { country_event = { id = ORI_flav.2 days = 40 } }
+	}
+	option = {
+		name = ORI_flav.1_b		# Petition the courts — a lawyer's unification
+		add_political_power = 40
+		add_stability = 0.03
+		add_war_support = -0.02
+		hidden_effect = { country_event = { id = ORI_flav.2 days = 60 } }
+	}
+}
+
+country_event = {
+	id = ORI_flav.2
+	title = ORI_flav.2_t
+	desc = ORI_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.2_a		# Make Odia the language of the state
+		add_ideas = ORI_utkal_unity
+		add_stability = 0.06
+	}
+	option = {
+		name = ORI_flav.2_b		# Leave the princes their tongues — buy their loyalty
+		add_political_power = 120
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = ORI_flav.3
+	title = ORI_flav.3_t
+	desc = ORI_flav.3_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.3_a		# The first language-state of India is proclaimed
+		add_political_power = 80
+		add_war_support = 0.05
+		add_stability = 0.03
+	}
+	option = {
+		name = ORI_flav.3_b		# Delay — the Garjat rajas are not ready
+		add_political_power = 50
+		add_stability = -0.03
+	}
+}
+
+# ============ GARJAT PRAJA MANDAL — THE BOY OF NILAKANTHAPUR ============
+country_event = {
+	id = ORI_flav.4
+	title = ORI_flav.4_t
+	desc = ORI_flav.4_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.4_a		# The Praja Mandal marches on the feudatory palaces
+		add_stability = -0.04
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = ORI_flav.5 days = 20 } }
+	}
+	option = {
+		name = ORI_flav.4_b		# Call in the Raja's guards — restore feudal order
+		add_stability = 0.03
+		add_political_power = -30
+		hidden_effect = { country_event = { id = ORI_flav.6 days = 20 } }
+	}
+}
+
+country_event = {
+	id = ORI_flav.5
+	title = ORI_flav.5_t		# Baji Rout — the ferry at Nilakanthapur
+	desc = ORI_flav.5_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.5_a		# The boy-martyr becomes the banner of the republic
+		add_ideas = ORI_praja_mandal_reform
+		add_war_support = 0.08
+		add_stability = 0.02
+	}
+	option = {
+		name = ORI_flav.5_b		# Mourn quietly — do not inflame the Garjats
+		add_political_power = 100
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = ORI_flav.6
+	title = ORI_flav.6_t		# The feudatory crackdown
+	desc = ORI_flav.6_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.6_a		# The rajas keep their thrones — bind them to the crown
+		add_ideas = ORI_jagannath_legitimacy
+		add_stability = 0.05
+		add_political_power = 60
+	}
+	option = {
+		name = ORI_flav.6_b		# Concede reform to head off the next rising
+		add_political_power = -40
+		add_stability = 0.02
+		add_war_support = 0.03
+	}
+}
+
+# ============ KALINGA REBORN — THE OCEAN REMEMBERS ============
+country_event = {
+	id = ORI_flav.7
+	title = ORI_flav.7_t		# Bali Jatra — the sadhabas set sail again
+	desc = ORI_flav.7_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.7_a		# Fund the merchant fleets to Suvarnabhumi
+		add_ideas = ORI_kalinga_maritime
+		navy_experience = 25
+		add_political_power = 50
+	}
+	option = {
+		name = ORI_flav.7_b		# Keep the yards to coastal defence
+		navy_experience = 30
+		add_war_support = 0.04
+	}
+}
+
+country_event = {
+	id = ORI_flav.8
+	title = ORI_flav.8_t		# The Chandbali charter
+	desc = ORI_flav.8_d
+	picture = GFX_report_event_konkan_fleet
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.8_a		# Open the free port — trade opinion soars
+		add_political_power = 60
+		add_stability = 0.03
+	}
+	option = {
+		name = ORI_flav.8_b		# Reserve the harbour for the war-navy
+		navy_experience = 25
+		add_war_support = 0.04
+	}
+}
+
+# ============ THE MINERAL KINGDOM ============
+country_event = {
+	id = ORI_flav.9
+	title = ORI_flav.9_t		# Sukinda — the chromite belt is surveyed
+	desc = ORI_flav.9_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.9_a		# Nationalise the ferroalloy seams
+		add_ideas = ORI_sukinda_chromite
+		add_political_power = 50
+	}
+	option = {
+		name = ORI_flav.9_b		# License the seams to the Marwari houses for capital
+		add_political_power = 120
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = ORI_flav.10
+	title = ORI_flav.10_t		# Gorumahisani iron for the furnaces
+	desc = ORI_flav.10_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.10_a		# Build our own steel — no ore leaves Kalinga raw
+		add_ideas = ORI_mayurbhanj_iron
+		426 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+	}
+	option = {
+		name = ORI_flav.10_b		# Sell ore to the plains mills and bank the revenue
+		add_political_power = 100
+		add_war_support = 0.02
+	}
+}
+
+# ============ MAYURBHANJ — THE MODEL STATE ============
+country_event = {
+	id = ORI_flav.11
+	title = ORI_flav.11_t		# Sriram Chandra's blueprint
+	desc = ORI_flav.11_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.11_a		# Make Mayurbhanj the template for every Garjat
+		add_stability = 0.05
+		add_political_power = 70
+		hidden_effect = { country_event = { id = ORI_flav.12 days = 30 } }
+	}
+	option = {
+		name = ORI_flav.11_b		# Let each raja modernise at his own pace
+		add_political_power = 90
+		add_stability = -0.02
+		hidden_effect = { country_event = { id = ORI_flav.12 days = 45 } }
+	}
+}
+
+country_event = {
+	id = ORI_flav.12
+	title = ORI_flav.12_t		# The model state out-competes the plains
+	desc = ORI_flav.12_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = ORI_flav.12_a		# An enlightened crown, envied across India
+		add_ideas = ORI_jagannath_legitimacy
+		add_stability = 0.04
+		add_political_power = 60
+	}
+	option = {
+		name = ORI_flav.12_b		# Fold the model's gains into the unified state
+		add_political_power = 80
+		add_war_support = 0.03
+	}
+}

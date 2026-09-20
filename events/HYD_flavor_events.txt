@@ -1,0 +1,237 @@
+add_namespace = HYD_flav
+
+# ============================================================
+# Sovereign Nizamate (Osmanistan) chain: HYD_flav.1 -> .2 -> .3
+# ============================================================
+
+# The Firman of Sovereignty — the Nizam weighs a full independence bid
+country_event = {
+	id = HYD_flav.1
+	title = HYD_flav.1_t
+	desc = HYD_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.1_a
+		set_country_flag = HYD_osmanistan_declared
+		add_ideas = HYD_own_currency
+		add_political_power = 80
+		add_war_support = 0.05
+		country_event = { id = HYD_flav.2 days = 5 }
+	}
+	option = {
+		name = HYD_flav.1_b
+		add_stability = 0.05
+		add_political_power = 40
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+}
+
+# The Sea-Outlet Question — landlocked Hyderabad seeks a corridor to the Bay
+country_event = {
+	id = HYD_flav.2
+	title = HYD_flav.2_t
+	desc = HYD_flav.2_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.2_a
+		create_wargoal = { target = MAR type = take_state_focus generator = { 429 } }
+		add_war_support = 0.08
+		add_stability = -0.03
+	}
+	option = {
+		name = HYD_flav.2_b
+		add_political_power = -60
+		add_stability = 0.04
+		set_country_flag = HYD_leased_port
+		add_ideas = HYD_deccan_diamonds
+	}
+}
+
+# Recognition Abroad — foreign envoys arrive at the Chowmahalla
+country_event = {
+	id = HYD_flav.3
+	title = HYD_flav.3_t
+	desc = HYD_flav.3_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.3_a
+		add_political_power = 100
+		add_stability = 0.05
+	}
+	option = {
+		name = HYD_flav.3_b
+		add_war_support = 0.06
+		add_command_power = 20
+	}
+}
+
+# ============================================================
+# Razakar State chain: HYD_flav.4 -> .5
+# ============================================================
+
+# The Green Volunteers — Kasim Razvi's Razakars mass in the streets
+country_event = {
+	id = HYD_flav.4
+	title = HYD_flav.4_t
+	desc = HYD_flav.4_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.4_a
+		set_country_flag = HYD_razakar_ascendant
+		add_ideas = HYD_razakar_militia
+		add_war_support = 0.10
+		add_stability = -0.08
+	}
+	option = {
+		name = HYD_flav.4_b
+		add_stability = 0.06
+		add_political_power = -40
+		clr_country_flag = HYD_razakar_ascendant
+	}
+}
+
+# Excesses in the Villages — the militia's terror turns the countryside
+country_event = {
+	id = HYD_flav.5
+	title = HYD_flav.5_t
+	desc = HYD_flav.5_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.5_a
+		add_war_support = 0.05
+		add_stability = -0.05
+		add_ideas = HYD_telangana_uprising
+	}
+	option = {
+		name = HYD_flav.5_b
+		add_stability = 0.05
+		add_political_power = 60
+	}
+}
+
+# ============================================================
+# Telangana People's War (communist) chain: HYD_flav.6 -> .7
+# ============================================================
+
+# The Sanghams Rise — Andhra Mahasabha peasant committees seize the deshmukh lands
+country_event = {
+	id = HYD_flav.6
+	title = HYD_flav.6_t
+	desc = HYD_flav.6_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.6_a
+		set_country_flag = HYD_telangana_warpath
+		add_ideas = HYD_telangana_uprising
+		add_war_support = 0.08
+		add_stability = -0.06
+		country_event = { id = HYD_flav.7 days = 7 }
+	}
+	option = {
+		name = HYD_flav.6_b
+		add_stability = 0.04
+		add_political_power = -50
+		add_manpower = 8000
+	}
+}
+
+# Land to the Tiller — the redistribution that toppled the deshmukh order
+country_event = {
+	id = HYD_flav.7
+	title = HYD_flav.7_t
+	desc = HYD_flav.7_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.7_a
+		add_stability = 0.06
+		add_manpower = 20000
+		add_political_power = 80
+	}
+	option = {
+		name = HYD_flav.7_b
+		add_war_support = 0.10
+		add_stability = -0.02
+		create_wargoal = { target = MAR type = puppet_wargoal_focus }
+	}
+}
+
+# ============================================================
+# Ganga-Jamuni Reform chain: HYD_flav.8
+# ============================================================
+
+# The Composite Court — Kishen Pershad's legacy answers the Hindu majority
+country_event = {
+	id = HYD_flav.8
+	title = HYD_flav.8_t
+	desc = HYD_flav.8_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.8_a
+		add_ideas = HYD_ganga_jamuni
+		add_stability = 0.08
+		add_political_power = 60
+	}
+	option = {
+		name = HYD_flav.8_b
+		add_war_support = 0.06
+		add_stability = -0.03
+		add_political_power = 40
+	}
+}
+
+# ============================================================
+# Salar Jung technocratic chain: HYD_flav.9
+# ============================================================
+
+# The Diwan's Blueprint — Singareni coal, Osmania science, a modern civil service
+country_event = {
+	id = HYD_flav.9
+	title = HYD_flav.9_t
+	desc = HYD_flav.9_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.9_a
+		add_ideas = HYD_salar_jung_reform
+		add_political_power = 70
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+	}
+	option = {
+		name = HYD_flav.9_b
+		add_stability = 0.03
+		427 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+	}
+}
+
+# ============================================================
+# March of the Deccan vs MAR: HYD_flav.10
+# ============================================================
+
+# The Southern Plateau — El Edroos's army and the Nizam's treasury against the hegemon
+country_event = {
+	id = HYD_flav.10
+	title = HYD_flav.10_t
+	desc = HYD_flav.10_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = HYD_flav.10_a
+		create_wargoal = { target = MAR type = annex_everything }
+		add_war_support = 0.10
+		army_experience = 30
+	}
+	option = {
+		name = HYD_flav.10_b
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_political_power = 80
+		add_stability = 0.04
+	}
+}

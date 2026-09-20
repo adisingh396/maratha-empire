@@ -1,34 +1,114 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_hin_chhatari"
-		texturefile = "gfx/leaders/HIN/portrait_hin_chhatari.dds"
+		name = "GFX_portrait_hin_wajid"
+		texturefile = "gfx/leaders/HIN/portrait_hin_wajid.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_chhatari_small"
-		texturefile = "gfx/leaders/HIN/portrait_hin_chhatari_small.dds"
+		name = "GFX_portrait_hin_wajid_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_wajid_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_pant"
-		texturefile = "gfx/leaders/HIN/portrait_hin_pant.dds"
+		name = "GFX_portrait_hin_hazrat"
+		texturefile = "gfx/leaders/HIN/portrait_hin_hazrat.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_pant_small"
-		texturefile = "gfx/leaders/HIN/portrait_hin_pant_small.dds"
+		name = "GFX_portrait_hin_hazrat_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_hazrat_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_sapru"
-		texturefile = "gfx/leaders/HIN/portrait_hin_sapru.dds"
+		name = "GFX_portrait_hin_birjis"
+		texturefile = "gfx/leaders/HIN/portrait_hin_birjis.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_sapru_small"
-		texturefile = "gfx/leaders/HIN/portrait_hin_sapru_small.dds"
+		name = "GFX_portrait_hin_birjis_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_birjis_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_chaudhuri"
-		texturefile = "gfx/leaders/HIN/portrait_hin_chaudhuri.dds"
+		name = "GFX_portrait_hin_ahmadullah"
+		texturefile = "gfx/leaders/HIN/portrait_hin_ahmadullah.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_hin_chaudhuri_small"
-		texturefile = "gfx/leaders/HIN/portrait_hin_chaudhuri_small.dds"
+		name = "GFX_portrait_hin_ahmadullah_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_ahmadullah_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_benimadho"
+		texturefile = "gfx/leaders/HIN/portrait_hin_benimadho.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_benimadho_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_benimadho_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_kunwar"
+		texturefile = "gfx/leaders/HIN/portrait_hin_kunwar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_kunwar_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_kunwar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_syed"
+		texturefile = "gfx/leaders/HIN/portrait_hin_syed.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_syed_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_syed_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_malaviya"
+		texturefile = "gfx/leaders/HIN/portrait_hin_malaviya.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_malaviya_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_malaviya_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_nehru"
+		texturefile = "gfx/leaders/HIN/portrait_hin_nehru.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_nehru_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_nehru_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_narendradeva"
+		texturefile = "gfx/leaders/HIN/portrait_hin_narendradeva.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_narendradeva_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_narendradeva_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_azad"
+		texturefile = "gfx/leaders/HIN/portrait_hin_azad.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_azad_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_azad_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_mahendra"
+		texturefile = "gfx/leaders/HIN/portrait_hin_mahendra.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_mahendra_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_mahendra_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_jailal"
+		texturefile = "gfx/leaders/HIN/portrait_hin_jailal.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_jailal_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_jailal_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_motilal"
+		texturefile = "gfx/leaders/HIN/portrait_hin_motilal.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_hin_motilal_small"
+		texturefile = "gfx/leaders/HIN/portrait_hin_motilal_small.dds"
 	}
 }

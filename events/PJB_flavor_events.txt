@@ -1,0 +1,282 @@
+# PJB flavor event chains — Second Khalsa Raj, Panthic State, Unionist Compromise,
+# Ghadar Rising, March of the Khalsa, Partition Crisis. Namespace PJB_flav.
+
+add_namespace = PJB_flav
+
+# ─── Second Khalsa Raj: dynastic restoration chain (1-3) ───
+country_event = {
+	id = PJB_flav.1
+	title = PJB_flav.1_t
+	desc = PJB_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.1_a
+		ai_chance = { factor = 60 }
+		set_country_flag = pjb_khalsa_restoration
+		add_political_power = 120
+		add_stability = 0.05
+		hidden_effect = { country_event = { id = PJB_flav.2 days = 25 } }
+	}
+	option = {
+		name = PJB_flav.1_b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.06
+		add_ideas = PJB_khalsa_army_tradition
+	}
+}
+
+country_event = {
+	id = PJB_flav.2
+	title = PJB_flav.2_t
+	desc = PJB_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.2_a
+		add_political_power = 80
+		add_stability = 0.04
+		set_country_flag = pjb_regency_council
+	}
+	option = {
+		name = PJB_flav.2_b
+		add_war_support = 0.05
+		army_experience = 20
+		hidden_effect = { country_event = { id = PJB_flav.3 days = 30 } }
+	}
+}
+
+country_event = {
+	id = PJB_flav.3
+	title = PJB_flav.3_t
+	desc = PJB_flav.3_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.3_a
+		add_ideas = PJB_khalsa_army_tradition
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_weapons }
+	}
+	option = {
+		name = PJB_flav.3_b
+		add_political_power = 60
+		986 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+	}
+}
+
+# ─── Panthic State chain (4-5) ───
+country_event = {
+	id = PJB_flav.4
+	title = PJB_flav.4_t
+	desc = PJB_flav.4_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.4_a
+		ai_chance = { factor = 55 }
+		set_country_flag = pjb_panthic_path
+		add_ideas = PJB_panthic_unity
+		add_stability = 0.04
+		hidden_effect = { country_event = { id = PJB_flav.5 days = 20 } }
+	}
+	option = {
+		name = PJB_flav.4_b
+		ai_chance = { factor = 45 }
+		add_political_power = 100
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+	}
+}
+
+country_event = {
+	id = PJB_flav.5
+	title = PJB_flav.5_t
+	desc = PJB_flav.5_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.5_a
+		add_war_support = 0.06
+		add_manpower = 15000
+	}
+	option = {
+		name = PJB_flav.5_b
+		add_stability = 0.05
+		add_political_power = 70
+		add_ideas = PJB_panthic_unity
+	}
+}
+
+# ─── Unionist Compromise chain (6-7) ───
+country_event = {
+	id = PJB_flav.6
+	title = PJB_flav.6_t
+	desc = PJB_flav.6_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.6_a
+		ai_chance = { factor = 50 }
+		set_country_flag = pjb_unionist_path
+		add_ideas = PJB_unionist_coalition
+		add_stability = 0.06
+		hidden_effect = { country_event = { id = PJB_flav.7 days = 30 } }
+	}
+	option = {
+		name = PJB_flav.6_b
+		ai_chance = { factor = 50 }
+		add_political_power = 90
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = PJB_flav.7
+	title = PJB_flav.7_t
+	desc = PJB_flav.7_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.7_a
+		add_ideas = PJB_canal_colonies
+		add_stability = 0.04
+		440 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+	}
+	option = {
+		name = PJB_flav.7_b
+		add_political_power = 80
+		add_war_support = 0.03
+	}
+}
+
+# ─── Ghadar Rising chain (8-9) ───
+country_event = {
+	id = PJB_flav.8
+	title = PJB_flav.8_t
+	desc = PJB_flav.8_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.8_a
+		ai_chance = { factor = 40 }
+		set_country_flag = pjb_ghadar_rising
+		add_ideas = PJB_ghadar_legacy
+		add_war_support = 0.08
+		add_stability = -0.04
+		hidden_effect = { country_event = { id = PJB_flav.9 days = 25 } }
+	}
+	option = {
+		name = PJB_flav.8_b
+		ai_chance = { factor = 60 }
+		add_stability = 0.05
+		add_political_power = 60
+	}
+}
+
+country_event = {
+	id = PJB_flav.9
+	title = PJB_flav.9_t
+	desc = PJB_flav.9_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.9_a
+		add_manpower = 20000
+		army_experience = 15
+	}
+	option = {
+		name = PJB_flav.9_b
+		add_political_power = 70
+		add_ideas = PJB_ghadar_legacy
+	}
+}
+
+# ─── March of the Khalsa: frontier reconquest (10-11) ───
+country_event = {
+	id = PJB_flav.10
+	title = PJB_flav.10_t
+	desc = PJB_flav.10_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.10_a
+		ai_chance = { factor = 55 }
+		set_country_flag = pjb_frontier_march
+		add_war_support = 0.08
+		army_experience = 25
+		hidden_effect = { country_event = { id = PJB_flav.11 days = 30 } }
+	}
+	option = {
+		name = PJB_flav.10_b
+		ai_chance = { factor = 45 }
+		add_stability = 0.04
+		440 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+	}
+}
+
+country_event = {
+	id = PJB_flav.11
+	title = PJB_flav.11_t
+	desc = PJB_flav.11_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.11_a
+		create_wargoal = { target = KAS type = take_state_focus generator = { 441 } }
+		add_war_support = 0.05
+	}
+	option = {
+		name = PJB_flav.11_b
+		add_ideas = PJB_martial_races
+		add_manpower = 15000
+	}
+}
+
+# ─── Partition Crisis: three-way fracture (12-13) ───
+country_event = {
+	id = PJB_flav.12
+	title = PJB_flav.12_t
+	desc = PJB_flav.12_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.12_a
+		ai_chance = { factor = 50 }
+		set_country_flag = pjb_partition_unity
+		add_stability = 0.06
+		add_ideas = PJB_unionist_coalition
+	}
+	option = {
+		name = PJB_flav.12_b
+		ai_chance = { factor = 30 }
+		set_country_flag = pjb_partition_khalsa
+		add_war_support = 0.08
+		add_stability = -0.03
+		hidden_effect = { country_event = { id = PJB_flav.13 days = 20 } }
+	}
+	option = {
+		name = PJB_flav.12_c
+		ai_chance = { factor = 20 }
+		set_country_flag = pjb_partition_transfer
+		add_manpower = 25000
+		add_stability = -0.05
+		add_war_support = 0.04
+	}
+}
+
+country_event = {
+	id = PJB_flav.13
+	title = PJB_flav.13_t
+	desc = PJB_flav.13_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = PJB_flav.13_a
+		add_political_power = 90
+		add_stability = 0.03
+	}
+	option = {
+		name = PJB_flav.13_b
+		add_war_support = 0.06
+		create_wargoal = { target = HIN type = take_state_focus generator = { 439 } }
+	}
+}

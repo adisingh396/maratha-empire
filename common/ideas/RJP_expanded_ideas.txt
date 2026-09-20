@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+		# Rajput Kshatriya warrior-honour spirit — recruitable martial nobility
+		RJP_warrior_caste = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_army_morale
+			modifier = {
+				conscription_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		# Bikaner's Ganga Risala camel corps mechanised into desert cavalry
+		RJP_ganga_risala_corps = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_cavalry
+			modifier = {
+				army_speed_factor = 0.05
+				acclimatization_hot_climate_gain_factor = 0.25
+				army_attack_factor = 0.05
+			}
+		}
+		# Marwari merchant-banking capital (Birla, Bajaj, Shekhawati seths)
+		RJP_marwari_capital = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_production
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.10
+			}
+		}
+		# Mewar Sisodia "oldest dynasty" prestige of the House of the Sun
+		RJP_sisodia_prestige = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		# Jodhpur Flying Club — Umaid Singh's princely aviation
+		RJP_flying_club = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_air_bonus
+			modifier = {
+				air_accidents_factor = -0.20
+				air_training_xp_gain_factor = 0.10
+			}
+		}
+		# The Gang Canal — greening the Thar, agrarian supply base
+		RJP_gang_canal = {
+			allowed = { original_tag = RJP }
+			removal_cost = -1
+			picture = generic_agrarian_society
+			modifier = {
+				supply_consumption_factor = -0.05
+				stability_factor = 0.04
+				monthly_population = 0.05
+			}
+		}
+	}
+}

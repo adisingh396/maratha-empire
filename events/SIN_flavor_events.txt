@@ -1,0 +1,288 @@
+# SIN flavor events — Sindh Reborn, Hur Rebellion, Karachi Free Port, Talpur Restoration, Secular-vs-Two-Nation
+# namespace SIN_flav (ids .1 .. .40) — distinct from SIN_ev
+
+add_namespace = SIN_flav
+
+# ===== Sindh Reborn separation chain (.1 -> .2 -> .3 crossroads) =====
+country_event = {
+	id = SIN_flav.1
+	title = SIN_flav.1_t
+	desc = SIN_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.1_a		# A province no longer — a nation
+		add_political_power = 80
+		add_stability = 0.05
+		hidden_effect = { country_event = { id = SIN_flav.2 days = 25 } }
+	}
+	option = {
+		name = SIN_flav.1_b		# Caution: the Waderos must be kept close
+		add_political_power = 40
+		add_war_support = 0.04
+		add_ideas = SIN_wadero_landlords
+		hidden_effect = { country_event = { id = SIN_flav.2 days = 25 } }
+	}
+}
+
+country_event = {
+	id = SIN_flav.2
+	title = SIN_flav.2_t
+	desc = SIN_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.2_a		# Build the machinery of state
+		add_political_power = 60
+		add_stability = 0.04
+		hidden_effect = { country_event = { id = SIN_flav.3 days = 30 } }
+	}
+	option = {
+		name = SIN_flav.2_b		# Lean on the Karachi merchants for revenue
+		add_political_power = 30
+		add_ideas = SIN_banking_diaspora
+		hidden_effect = { country_event = { id = SIN_flav.3 days = 30 } }
+	}
+}
+
+country_event = {
+	id = SIN_flav.3
+	title = SIN_flav.3_t
+	desc = SIN_flav.3_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.3_a		# A Sindhi nation for the Sindhi people
+		add_ideas = SIN_sindhi_nationalism
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	option = {
+		name = SIN_flav.3_b		# A composite home for all who dwell by the Indus
+		add_ideas = SIN_composite_republic
+		add_stability = 0.08
+		add_political_power = 50
+	}
+}
+
+# ===== Hur Rebellion chain (.4 -> .5 -> .6) =====
+country_event = {
+	id = SIN_flav.4
+	title = SIN_flav.4_t
+	desc = SIN_flav.4_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.4_a		# Crush the Hur bands — martial law
+		add_stability = -0.03
+		add_war_support = 0.06
+		add_ideas = SIN_hur_jamaat
+		hidden_effect = { country_event = { id = SIN_flav.5 days = 30 } }
+	}
+	option = {
+		name = SIN_flav.4_b		# Treat with the Pir — a shrine-state accommodation
+		add_political_power = 50
+		add_stability = 0.04
+		hidden_effect = { country_event = { id = SIN_flav.5 days = 30 } }
+	}
+}
+
+country_event = {
+	id = SIN_flav.5
+	title = SIN_flav.5_t
+	desc = SIN_flav.5_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.5_a		# Armoured trains and the special ordinance
+		add_war_support = 0.05
+		army_experience = 20
+		add_manpower = 12000
+		hidden_effect = { country_event = { id = SIN_flav.6 days = 40 } }
+	}
+	option = {
+		name = SIN_flav.5_b		# Buy off the Waderos to isolate the Hurs
+		add_political_power = 60
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = SIN_flav.6 days = 40 } }
+	}
+}
+
+country_event = {
+	id = SIN_flav.6
+	title = SIN_flav.6_t
+	desc = SIN_flav.6_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.6_a		# The Pir hangs — the Jamaat is broken
+		add_stability = 0.06
+		add_war_support = 0.04
+	}
+	option = {
+		name = SIN_flav.6_b		# The Pir crowns himself — a theocratic Sindh
+		add_ideas = SIN_theocratic_state
+		add_war_support = 0.08
+		add_popularity = { ideology = fascism popularity = 0.10 }
+	}
+}
+
+# ===== Karachi Free Port chain (.7 -> .8) =====
+country_event = {
+	id = SIN_flav.7
+	title = SIN_flav.7_t
+	desc = SIN_flav.7_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.7_a		# Declare Karachi a free port of the Indus
+		add_ideas = SIN_karachi_free_port
+		add_political_power = 40
+		443 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = SIN_flav.8 days = 35 } }
+	}
+	option = {
+		name = SIN_flav.7_b		# Keep the customs house in state hands
+		add_political_power = 80
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = SIN_flav.8 days = 35 } }
+	}
+}
+
+country_event = {
+	id = SIN_flav.8
+	title = SIN_flav.8_t
+	desc = SIN_flav.8_d
+	picture = GFX_report_event_konkan_fleet
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.8_a		# A merchant republic on the Arabian Sea
+		add_stability = 0.05
+		add_political_power = 60
+		add_popularity = { ideology = democratic popularity = 0.08 }
+	}
+	option = {
+		name = SIN_flav.8_b		# The mayor answers to the premier, not the guilds
+		add_stability = 0.03
+		add_war_support = 0.04
+	}
+}
+
+# ===== Talpur Restoration chain (.9 -> .10) =====
+country_event = {
+	id = SIN_flav.9
+	title = SIN_flav.9_t
+	desc = SIN_flav.9_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.9_a		# Restore the Mirs deposed at Miani
+		add_ideas = SIN_talpur_legacy
+		add_political_power = 50
+		add_stability = 0.04
+		hidden_effect = { country_event = { id = SIN_flav.10 days = 30 } }
+	}
+	option = {
+		name = SIN_flav.9_b		# Khairpur shall remain but one princely seat
+		add_political_power = 70
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = SIN_flav.10
+	title = SIN_flav.10_t
+	desc = SIN_flav.10_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.10_a		# One Talpur crown over all Sindh
+		add_stability = 0.05
+		add_war_support = 0.06
+		add_popularity = { ideology = despotism popularity = 0.10 }
+	}
+	option = {
+		name = SIN_flav.10_b		# A federation of Mirs under a first-among-equals
+		add_stability = 0.06
+		add_political_power = 60
+	}
+}
+
+# ===== Secular Sindh vs Two-Nation fork — Allah Bakhsh assassination (.11 -> .12 / .13) =====
+country_event = {
+	id = SIN_flav.11
+	title = SIN_flav.11_t
+	desc = SIN_flav.11_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.11_a		# Honour the martyr — hold the composite line
+		add_stability = -0.04
+		add_political_power = 40
+		hidden_effect = { country_event = { id = SIN_flav.12 days = 20 } }
+	}
+	option = {
+		name = SIN_flav.11_b		# The killing settles it — two nations, two paths
+		add_stability = -0.02
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = SIN_flav.13 days = 20 } }
+	}
+}
+
+country_event = {
+	id = SIN_flav.12
+	title = SIN_flav.12_t
+	desc = SIN_flav.12_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.12_a		# A secular Sindh of Hindus, Muslims and Sikhs
+		add_ideas = SIN_composite_republic
+		add_stability = 0.07
+		add_popularity = { ideology = democratic popularity = 0.10 }
+	}
+	option = {
+		name = SIN_flav.12_b		# Bury him quietly and move on
+		add_political_power = 60
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = SIN_flav.13
+	title = SIN_flav.13_t
+	desc = SIN_flav.13_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.13_a		# Sindh for the Sindhi Muslim nation
+		add_ideas = SIN_sindhi_nationalism
+		add_war_support = 0.07
+		add_popularity = { ideology = fascism popularity = 0.08 }
+	}
+	option = {
+		name = SIN_flav.13_b		# Communal peace is worth more than the theory
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+# ===== Standalone: Manzilgah / Bhagat Kanwar Ram communal flashpoint (.14) =====
+country_event = {
+	id = SIN_flav.14
+	title = SIN_flav.14_t
+	desc = SIN_flav.14_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = SIN_flav.14_a		# Suppress both mobs with an even hand
+		add_stability = 0.05
+		add_political_power = 40
+	}
+	option = {
+		name = SIN_flav.14_b		# Side with the majority to keep the streets
+		add_stability = -0.03
+		add_war_support = 0.05
+		add_popularity = { ideology = fascism popularity = 0.05 }
+	}
+}

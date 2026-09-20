@@ -50,4 +50,235 @@ HIN_chaudhuri = {
 		logistics_skill = 2
 	}
 }
+HIN_wajid_ali_shah = {
+	name = HIN_wajid_ali_shah
+	portraits = {
+		civilian = { large = GFX_portrait_hin_wajid small = GFX_portrait_hin_wajid_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HIN_hazrat_mahal = {
+	name = HIN_hazrat_mahal
+	portraits = {
+		civilian = { large = GFX_portrait_hin_hazrat small = GFX_portrait_hin_hazrat_small }
+		army = { large = GFX_portrait_hin_hazrat small = GFX_portrait_hin_hazrat_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	field_marshal = {
+		traits = { inspirational_leader defensive_doctrine }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+HIN_birjis_qadr = {
+	name = HIN_birjis_qadr
+	portraits = {
+		civilian = { large = GFX_portrait_hin_birjis small = GFX_portrait_hin_birjis_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HIN_ahmadullah_shah = {
+	name = HIN_ahmadullah_shah
+	portraits = {
+		army = { large = GFX_portrait_hin_ahmadullah small = GFX_portrait_hin_ahmadullah_small }
+	}
+	corps_commander = {
+		traits = { commando ambusher }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = HIN }
+		idea_token = HIN_ahmadullah_theorist
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+HIN_beni_madho_singh = {
+	name = HIN_beni_madho_singh
+	portraits = {
+		army = { large = GFX_portrait_hin_benimadho small = GFX_portrait_hin_benimadho_small }
+	}
+	field_marshal = {
+		traits = { old_guard defensive_doctrine }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+HIN_kunwar_singh = {
+	name = HIN_kunwar_singh
+	portraits = {
+		army = { large = GFX_portrait_hin_kunwar small = GFX_portrait_hin_kunwar_small }
+	}
+	field_marshal = {
+		traits = { old_guard inspirational_leader }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	}
+}
+HIN_syed_ahmad_khan = {
+	name = HIN_syed_ahmad_khan
+	portraits = {
+		civilian = { large = GFX_portrait_hin_syed small = GFX_portrait_hin_syed_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HIN }
+		idea_token = HIN_syed_reform
+		cost = 75
+		traits = { democratic_reformer }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = HIN }
+		idea_token = HIN_syed_theory
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+HIN_malaviya = {
+	name = HIN_malaviya
+	portraits = {
+		civilian = { large = GFX_portrait_hin_malaviya small = GFX_portrait_hin_malaviya_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HIN }
+		idea_token = HIN_malaviya_advisor
+		cost = 75
+		traits = { ideological_crusader }
+	}
+}
+HIN_nehru = {
+	name = HIN_nehru
+	portraits = {
+		civilian = { large = GFX_portrait_hin_nehru small = GFX_portrait_hin_nehru_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HIN_narendra_deva = {
+	name = HIN_narendra_deva
+	portraits = {
+		civilian = { large = GFX_portrait_hin_narendradeva small = GFX_portrait_hin_narendradeva_small }
+	}
+	country_leader = {
+		ideology = communism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = HIN }
+		idea_token = HIN_narendra_theory
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+HIN_azad = {
+	name = HIN_azad
+	portraits = {
+		army = { large = GFX_portrait_hin_azad small = GFX_portrait_hin_azad_small }
+	}
+	corps_commander = {
+		traits = { commando ambusher }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = HIN }
+		idea_token = HIN_azad_command
+		cost = 75
+		traits = { army_concealment_2 }
+	}
+}
+HIN_mahendra_pratap = {
+	name = HIN_mahendra_pratap
+	portraits = {
+		civilian = { large = GFX_portrait_hin_mahendra small = GFX_portrait_hin_mahendra_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+HIN_jai_lal_singh = {
+	name = HIN_jai_lal_singh
+	portraits = {
+		army = { large = GFX_portrait_hin_jailal small = GFX_portrait_hin_jailal_small }
+	}
+	corps_commander = {
+		traits = { trickster }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = HIN }
+		idea_token = HIN_jailal_command
+		cost = 75
+		traits = { army_regrouping_2 }
+	}
+}
+HIN_motilal_nehru = {
+	name = HIN_motilal_nehru
+	portraits = {
+		civilian = { large = GFX_portrait_hin_motilal small = GFX_portrait_hin_motilal_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = HIN }
+		idea_token = HIN_motilal_liberal
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
 }

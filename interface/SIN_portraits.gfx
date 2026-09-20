@@ -1,10 +1,82 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_sin_soomro"
-		texturefile = "gfx/leaders/SIN/portrait_sin_soomro.dds"
+		name = "GFX_portrait_sin_gm_syed"
+		texturefile = "gfx/leaders/SIN/portrait_sin_gm_syed.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_sin_soomro_small"
-		texturefile = "gfx/leaders/SIN/portrait_sin_soomro_small.dds"
+		name = "GFX_portrait_sin_gm_syed_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_gm_syed_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_hidayatullah"
+		texturefile = "gfx/leaders/SIN/portrait_sin_hidayatullah.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_hidayatullah_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_hidayatullah_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_bhutto"
+		texturefile = "gfx/leaders/SIN/portrait_sin_bhutto.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_bhutto_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_bhutto_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_pagaro"
+		texturefile = "gfx/leaders/SIN/portrait_sin_pagaro.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_pagaro_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_pagaro_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_majeed"
+		texturefile = "gfx/leaders/SIN/portrait_sin_majeed.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_majeed_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_majeed_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_haroon"
+		texturefile = "gfx/leaders/SIN/portrait_sin_haroon.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_haroon_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_haroon_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_jamshed"
+		texturefile = "gfx/leaders/SIN/portrait_sin_jamshed.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_jamshed_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_jamshed_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_ali_murad"
+		texturefile = "gfx/leaders/SIN/portrait_sin_ali_murad.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_ali_murad_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_ali_murad_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_fateh_ali"
+		texturefile = "gfx/leaders/SIN/portrait_sin_fateh_ali.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_fateh_ali_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_fateh_ali_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_musto"
+		texturefile = "gfx/leaders/SIN/portrait_sin_musto.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_sin_musto_small"
+		texturefile = "gfx/leaders/SIN/portrait_sin_musto_small.dds"
 	}
 }

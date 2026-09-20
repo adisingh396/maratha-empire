@@ -1,0 +1,214 @@
+focus_tree = {
+	continuous_focus_position = { x = 5 y = 12 }
+	id = TRV_focus
+	country = {
+		factor = 0
+		modifier = { add = 10 tag = TRV }
+	}
+	default = no
+	focus = {
+		id = TRV_padmanabha_dawn
+		icon = GFX_goal_generic_major_war
+		x = 4 y = 0 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_padmanabha_dawn"
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+
+	# --- Monazite / rare-earth + secret research branch ---
+	focus = {
+		id = TRV_monazite_sands_focus
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = TRV_padmanabha_dawn }
+		x = 0 y = 1 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_monazite_sands_focus"
+			add_political_power = 60
+			country_event = { id = TRV_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = TRV_rare_earth_monopoly
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = TRV_monazite_sands_focus }
+		x = 0 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_rare_earth_monopoly"
+			add_ideas = TRV_monazite_monopoly
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = TRV_secret_research
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = TRV_rare_earth_monopoly }
+		x = 0 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_secret_research"
+			add_ideas = TRV_secret_atomic_programme
+			add_tech_bonus = { bonus = 0.75 uses = 1 category = electronics }
+		}
+	}
+
+	# --- Chemical-industry spine ---
+	focus = {
+		id = TRV_fact_plant
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = TRV_padmanabha_dawn }
+		x = 3 y = 1 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_fact_plant"
+			982 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			country_event = { id = TRV_flav.9 days = 3 }
+		}
+	}
+	focus = {
+		id = TRV_titanium_works
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = TRV_fact_plant }
+		x = 3 y = 2 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_titanium_works"
+			add_ideas = TRV_fact_chemical_works
+			982 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = TRV_pallivasal_hydro
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TRV_titanium_works }
+		x = 3 y = 3 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_pallivasal_hydro"
+			982 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+
+	# --- Society: literacy + temple entry + democratic-vs-autocratic fork ---
+	focus = {
+		id = TRV_university_travancore
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = TRV_padmanabha_dawn }
+		x = 5 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_university_travancore"
+			add_ideas = TRV_highest_literacy
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = TRV_temple_entry
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TRV_university_travancore }
+		x = 5 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_temple_entry"
+			add_ideas = TRV_temple_entry_reform
+			add_stability = 0.06
+		}
+	}
+	focus = {
+		id = TRV_constitution_question
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = TRV_temple_entry }
+		x = 5 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_constitution_question"
+			add_political_power = 80
+			country_event = { id = TRV_flav.8 days = 3 }
+		}
+	}
+	focus = {
+		id = TRV_diwans_terror_focus
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = TRV_constitution_question }
+		mutually_exclusive = { focus = TRV_responsible_govt_focus }
+		x = 4 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_diwans_terror_focus"
+			add_ideas = TRV_diwans_terror
+			add_stability = 0.05
+			country_event = { id = TRV_flav.6 days = 20 }
+		}
+	}
+	focus = {
+		id = TRV_responsible_govt_focus
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TRV_constitution_question }
+		mutually_exclusive = { focus = TRV_diwans_terror_focus }
+		x = 6 y = 4 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_responsible_govt_focus"
+			add_ideas = TRV_responsible_govt
+			add_political_power = 100
+		}
+	}
+
+	# --- Independence / Nair Brigade / Arabian-Sea republic branch ---
+	focus = {
+		id = TRV_nair_brigade_focus
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = TRV_padmanabha_dawn }
+		x = 8 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_nair_brigade_focus"
+			add_ideas = TRV_nair_brigade
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = TRV_declare_independence
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = TRV_nair_brigade_focus }
+		x = 8 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_declare_independence"
+			add_war_support = 0.08
+			country_event = { id = TRV_flav.4 days = 3 }
+		}
+	}
+	focus = {
+		id = TRV_arabian_sea_republic
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = TRV_declare_independence }
+		x = 8 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed TRV_arabian_sea_republic"
+			1086 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			country_event = { id = TRV_flav.5 days = 3 }
+		}
+	}
+}

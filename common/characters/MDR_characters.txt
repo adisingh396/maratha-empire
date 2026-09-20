@@ -30,4 +30,153 @@ MDR_rajaji = {
 		traits = { backroom_backstabber }
 	}
 }
+MDR_periyar = {
+	name = "Periyar E. V. Ramasamy"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_periyar small = GFX_portrait_mdr_periyar_small }
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	country_leader = {
+		ideology = communism
+		traits = { warmonger }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+MDR_rajan = {
+	name = "P. T. Rajan"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_rajan small = GFX_portrait_mdr_rajan_small }
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_rajan_justice
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+MDR_annamalai = {
+	name = "S. Rm. M. Annamalai Chettiar"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_annamalai small = GFX_portrait_mdr_annamalai_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_annamalai_bank
+		cost = 100
+		traits = { captain_of_industry }
+	}
+}
+MDR_alagappa = {
+	name = "Alagappa Chettiar"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_alagappa small = GFX_portrait_mdr_alagappa_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_alagappa_industry
+		cost = 100
+		traits = { war_industrialist }
+	}
+}
+MDR_annadurai = {
+	name = "C. N. Annadurai"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_annadurai small = GFX_portrait_mdr_annadurai_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_annadurai_orator
+		cost = 50
+		traits = { ideological_crusader }
+	}
+}
+MDR_satyamurti = {
+	name = "S. Satyamurti"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_satyamurti small = GFX_portrait_mdr_satyamurti_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_satyamurti_voice
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+MDR_theagaraya = {
+	name = "Sir P. Theagaraya Chetty"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_theagaraya small = GFX_portrait_mdr_theagaraya_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_theagaraya_founder
+		cost = 75
+		traits = { compassionate_gentleman }
+	}
+}
+MDR_natesa = {
+	name = "Dr. C. Natesa Mudaliar"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_natesa small = GFX_portrait_mdr_natesa_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_natesa_reform
+		cost = 50
+		traits = { democratic_reformer }
+	}
+}
+MDR_vocp = {
+	name = "V. O. Chidambaram Pillai"
+	portraits = {
+		navy = { large = GFX_portrait_mdr_vocp small = GFX_portrait_mdr_vocp_small }
+	}
+	navy_leader = {
+		traits = { blockade_runner superior_tactician }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 2
+		coordination_skill = 2
+	}
+	advisor = {
+		slot = navy_chief
+		allowed = { original_tag = MDR }
+		idea_token = MDR_vocp_swadeshi
+		cost = 100
+		traits = { navy_chief_commerce_raiding }
+	}
+}
+MDR_muthiah = {
+	name = "M. A. Muthiah Chettiar"
+	portraits = {
+		civilian = { large = GFX_portrait_mdr_muthiah small = GFX_portrait_mdr_muthiah_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MDR }
+		idea_token = MDR_muthiah_minister
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
 }

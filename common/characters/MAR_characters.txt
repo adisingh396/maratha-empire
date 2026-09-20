@@ -187,5 +187,292 @@ MAR_ibrahim_gardi = {
 	}
 }
 
+# ================= EXPANSION: validated historical figures =================
+
+MAR_mahadaji_scindia = {
+	name = "Mahadaji Shinde"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_mahadaji_scindia
+			small = GFX_portrait_mar_mahadaji_scindia_small
+		}
+		army = {
+			large = GFX_portrait_mar_mahadaji_scindia
+			small = GFX_portrait_mar_mahadaji_scindia_small
+		}
+	}
+	advisor = {
+		slot = army_chief
+		allowed = { original_tag = MAR }
+		idea_token = MAR_mahadaji_chief
+		cost = 75
+		traits = { army_chief_offensive_2 }
+	}
+	field_marshal = {
+		traits = { organizer offensive_doctrine }
+		skill = 5
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 3
+	}
+}
+
+MAR_ahilyabai_holkar = {
+	name = "Ahilyabai Holkar"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_ahilyabai_holkar
+			small = GFX_portrait_mar_ahilyabai_holkar_small
+		}
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_ahilyabai_advisor
+		cost = 75
+		traits = { popular_figurehead }
+	}
+}
+
+MAR_malhar_rao_holkar = {
+	name = "Malhar Rao Holkar"
+	portraits = {
+		army = {
+			large = GFX_portrait_mar_malhar_rao_holkar
+			small = GFX_portrait_mar_malhar_rao_holkar_small
+		}
+	}
+	corps_commander = {
+		traits = { cavalry_officer cavalry_leader }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 2
+	}
+}
+
+MAR_balaji_vishwanath = {
+	name = "Peshwa Balaji Vishwanath"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_balaji_vishwanath
+			small = GFX_portrait_mar_balaji_vishwanath_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_balaji_vishwanath_advisor
+		cost = 75
+		traits = { smooth_talking_charmer }
+	}
+}
+
+MAR_madhavrao_i = {
+	name = "Peshwa Madhavrao I"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_madhavrao_i
+			small = GFX_portrait_mar_madhavrao_i_small
+		}
+	}
+	country_leader = {
+		ideology = despotism
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+}
+
+MAR_sayajirao_gaekwad = {
+	name = "Sayajirao Gaekwad III"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_sayajirao_gaekwad
+			small = GFX_portrait_mar_sayajirao_gaekwad_small
+		}
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { social_reformer }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_gaekwad_advisor
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+
+MAR_visvesvaraya = {
+	name = "Sir M. Visvesvaraya"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_visvesvaraya
+			small = GFX_portrait_mar_visvesvaraya_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_visvesvaraya_advisor
+		cost = 75
+		traits = { captain_of_industry }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = MAR }
+		idea_token = MAR_visvesvaraya_theorist
+		cost = 100
+		traits = { military_theorist }
+	}
+}
+
+MAR_jamsetji_tata = {
+	name = "Jamsetji Tata"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_jamsetji_tata
+			small = GFX_portrait_mar_jamsetji_tata_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_jamsetji_tata_advisor
+		cost = 150
+		traits = { captain_of_industry }
+	}
+}
+
+MAR_dorabji_tata = {
+	name = "Sir Dorabji Tata"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_dorabji_tata
+			small = GFX_portrait_mar_dorabji_tata_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_dorabji_tata_advisor
+		cost = 150
+		traits = { war_industrialist }
+	}
+}
+
+MAR_jrd_tata = {
+	name = "J.R.D. Tata"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_jrd_tata
+			small = GFX_portrait_mar_jrd_tata_small
+		}
+		army = {
+			large = GFX_portrait_mar_jrd_tata
+			small = GFX_portrait_mar_jrd_tata_small
+		}
+	}
+	advisor = {
+		slot = air_chief
+		allowed = { original_tag = MAR }
+		idea_token = MAR_jrd_tata_air
+		cost = 100
+		traits = { air_chief_ground_support_2 }
+	}
+}
+
+MAR_tilak = {
+	name = "Bal Gangadhar Tilak"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_tilak
+			small = GFX_portrait_mar_tilak_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_tilak_advisor
+		cost = 75
+		traits = { popular_figurehead }
+	}
+}
+
+MAR_savarkar = {
+	name = "V.D. Savarkar"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_savarkar
+			small = GFX_portrait_mar_savarkar_small
+		}
+	}
+	country_leader = {
+		ideology = fascism_ideology
+		traits = { ideological_crusader }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_savarkar_advisor
+		cost = 75
+		traits = { fascist_demagogue }
+	}
+}
+
+MAR_ambedkar = {
+	name = "Dr. B.R. Ambedkar"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_ambedkar
+			small = GFX_portrait_mar_ambedkar_small
+		}
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { democratic_reformer }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_ambedkar_advisor
+		cost = 75
+		traits = { democratic_reformer }
+	}
+}
+
+MAR_dhondo_karve = {
+	name = "Dhondo Keshav Karve"
+	portraits = {
+		civilian = {
+			large = GFX_portrait_mar_dhondo_karve
+			small = GFX_portrait_mar_dhondo_karve_small
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MAR }
+		idea_token = MAR_karve_advisor
+		cost = 75
+		traits = { social_reformer }
+	}
+}
+
 
 }

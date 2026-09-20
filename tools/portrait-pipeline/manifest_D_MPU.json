@@ -1,0 +1,9 @@
+[
+  { "character": "MPU_irabot", "country": "MPU", "stem": "portrait_mpu_irabot", "description": "man in his forties, clean-shaven, short dark hair, plain white Meitei collarless shirt with a khudei wrap over shoulder, intense determined expression, 1930s peasant-revolutionary" },
+  { "character": "MPU_gambhir", "country": "MPU", "stem": "portrait_mpu_gambhir", "description": "regal Meitei king in his forties, thin moustache, white turban with gold ornament, quilted royal war-tunic, stern commanding gaze, early-19th-century founder-monarch" },
+  { "character": "MPU_tikendrajit", "country": "MPU", "stem": "portrait_mpu_tikendrajit", "description": "proud Meitei prince in his thirties, dark moustache, white pheijom dhoti and turban, arms folded, defiant resolute expression, late-19th-century Senapati warrior" },
+  { "character": "MPU_paona", "country": "MPU", "stem": "portrait_mpu_paona", "description": "weathered Meitei general in his fifties, grey moustache, simple white headcloth, plain campaign tunic with sash, grim battle-hardened expression, 1890s Khongjom commander" },
+  { "character": "MPU_shaukat", "country": "MPU", "stem": "portrait_mpu_shaukat", "description": "INA officer in his thirties, trimmed moustache, olive-green Azad Hind military cap and tunic, confident forward-looking expression, 1944 wartime" },
+  { "character": "MPU_bhagyachandra", "country": "MPU", "stem": "portrait_mpu_bhagyachandra", "description": "serene Meitei king in his forties, thin moustache, white and saffron Vaishnavite dress with tilak on forehead, gentle contemplative expression, 18th-century cultural patron" },
+  { "character": "MPU_anganghal", "country": "MPU", "stem": "portrait_mpu_anganghal", "description": "Meitei poet in his forties, clean-shaven, white collarless shirt with shawl, thoughtful literary expression holding a manuscript, early-20th-century writer" }
+]

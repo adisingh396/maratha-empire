@@ -1,0 +1,221 @@
+# KAS flavor events — Switzerland of Asia, Naya Kashmir, Gilgit Revolt, Zorawar's Heirs, 1931 fracture
+add_namespace = KAS_flav
+
+# ============ Switzerland of Asia chain (Hari Singh independence) ============
+country_event = {
+	id = KAS_flav.1
+	title = KAS_flav.1_t
+	desc = KAS_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.1_a
+		add_political_power = 60
+		add_ideas = KAS_pashmina_trade
+		hidden_effect = { country_event = { id = KAS_flav.2 days = 40 } }
+	}
+	option = {
+		name = KAS_flav.1_b
+		add_war_support = 0.05
+		army_experience = 20
+		hidden_effect = { country_event = { id = KAS_flav.2 days = 40 } }
+	}
+}
+
+country_event = {
+	id = KAS_flav.2
+	title = KAS_flav.2_t
+	desc = KAS_flav.2_d
+	picture = GFX_report_event_alliance_pact
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.2_a
+		add_ideas = KAS_himalayan_fortress
+		add_stability = 0.04
+	}
+	option = {
+		name = KAS_flav.2_b
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		add_political_power = 80
+		add_stability = -0.03
+	}
+}
+
+# ============ Naya Kashmir chain (Abdullah socialist) ============
+country_event = {
+	id = KAS_flav.3
+	title = KAS_flav.3_t
+	desc = KAS_flav.3_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.3_a
+		add_ideas = KAS_naya_kashmir_reform
+		add_stability = 0.05
+		add_popularity = { ideology = communism popularity = 0.10 }
+		hidden_effect = { country_event = { id = KAS_flav.4 days = 30 } }
+	}
+	option = {
+		name = KAS_flav.3_b
+		add_political_power = 100
+		add_stability = -0.05
+		add_war_support = 0.04
+		hidden_effect = { country_event = { id = KAS_flav.4 days = 30 } }
+	}
+}
+
+country_event = {
+	id = KAS_flav.4
+	title = KAS_flav.4_t
+	desc = KAS_flav.4_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.4_a
+		add_manpower = 10000
+		add_stability = 0.03
+	}
+	option = {
+		name = KAS_flav.4_b
+		add_political_power = 70
+		add_ideas = KAS_dogra_state_forces
+	}
+}
+
+# ============ Gilgit Revolt chain (frontier secession) ============
+country_event = {
+	id = KAS_flav.5
+	title = KAS_flav.5_t
+	desc = KAS_flav.5_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.5_a
+		add_ideas = KAS_gilgit_scouts_idea
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = KAS_flav.6 days = 45 } }
+	}
+	option = {
+		name = KAS_flav.5_b
+		add_stability = -0.06
+		add_political_power = 50
+		hidden_effect = { country_event = { id = KAS_flav.6 days = 45 } }
+	}
+}
+
+country_event = {
+	id = KAS_flav.6
+	title = KAS_flav.6_t
+	desc = KAS_flav.6_d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.6_a
+		add_manpower = 8000
+		army_experience = 15
+		add_war_support = 0.04
+	}
+	option = {
+		name = KAS_flav.6_b
+		add_stability = 0.04
+		add_political_power = 60
+	}
+}
+
+# ============ Zorawar's Heirs chain (Himalayan expansion) ============
+country_event = {
+	id = KAS_flav.7
+	title = KAS_flav.7_t
+	desc = KAS_flav.7_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.7_a
+		army_experience = 25
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		hidden_effect = { country_event = { id = KAS_flav.8 days = 35 } }
+	}
+	option = {
+		name = KAS_flav.7_b
+		add_political_power = 90
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = KAS_flav.8 days = 35 } }
+	}
+}
+
+country_event = {
+	id = KAS_flav.8
+	title = KAS_flav.8_t
+	desc = KAS_flav.8_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.8_a
+		create_wargoal = { target = PJB type = annex_everything }
+		add_war_support = 0.06
+	}
+	option = {
+		name = KAS_flav.8_b
+		add_ideas = KAS_himalayan_fortress
+		add_stability = 0.05
+	}
+}
+
+# ============ 1931 & the Communal Fracture (fork) ============
+country_event = {
+	id = KAS_flav.9
+	title = KAS_flav.9_t
+	desc = KAS_flav.9_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.9_a
+		add_ideas = KAS_four_way_patchwork
+		add_stability = -0.08
+		add_popularity = { ideology = fascism popularity = 0.08 }
+		hidden_effect = { country_event = { id = KAS_flav.10 days = 25 } }
+	}
+	option = {
+		name = KAS_flav.9_b
+		add_political_power = 80
+		add_stability = 0.05
+		hidden_effect = { country_event = { id = KAS_flav.11 days = 25 } }
+	}
+}
+
+country_event = {
+	id = KAS_flav.10
+	title = KAS_flav.10_t
+	desc = KAS_flav.10_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.10_a
+		add_war_support = 0.05
+		add_political_power = 60
+		add_stability = -0.04
+	}
+	option = {
+		name = KAS_flav.10_b
+		add_manpower = 6000
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = KAS_flav.11
+	title = KAS_flav.11_t
+	desc = KAS_flav.11_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = KAS_flav.11_a
+		add_ideas = KAS_naya_kashmir_reform
+		add_stability = 0.06
+	}
+	option = {
+		name = KAS_flav.11_b
+		add_ideas = KAS_pashmina_trade
+		add_political_power = 70
+	}
+}

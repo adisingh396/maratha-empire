@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+		KAS_dogra_state_forces = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				army_org_factor = 0.05
+				land_reinforce_rate = 0.03
+				army_morale_factor = 0.05
+			}
+		}
+		KAS_himalayan_fortress = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_fortification_effort
+			modifier = {
+				dig_in_speed_factor = 0.20
+				army_defence_factor = 0.10
+				supply_consumption_factor = -0.05
+			}
+		}
+		KAS_pashmina_trade = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				trade_opinion_factor = 0.15
+				political_power_factor = 0.05
+				consumer_goods_expected_value = -0.03
+			}
+		}
+		KAS_naya_kashmir_reform = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				stability_factor = 0.08
+				political_power_factor = 0.10
+				conscription = 0.01
+			}
+		}
+		KAS_gilgit_scouts_idea = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_speed_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.25
+				special_forces_cap = 0.05
+			}
+		}
+		KAS_four_way_patchwork = {
+			allowed = { original_tag = KAS }
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.12
+				political_power_factor = -0.10
+				drift_defence_factor = -0.15
+			}
+		}
+	}
+}

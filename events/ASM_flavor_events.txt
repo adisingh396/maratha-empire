@@ -1,0 +1,279 @@
+# ASM_flav — Assam flavor chains (Ahom Restoration, Black Gold of Digboi, Planters' Raj, Hills-vs-Plains, Grouping Crisis)
+
+add_namespace = ASM_flav
+
+# --- The Ahom Restoration chain (1-3) ---
+country_event = {
+	id = ASM_flav.1
+	title = ASM_flav.1_t
+	desc = ASM_flav.1_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.1_a # Crown a Swargadeo on Lachit's legacy
+		add_ideas = ASM_ahom_heritage
+		add_stability = 0.06
+		set_country_flag = asm_ahom_throne
+		hidden_effect = { country_event = { id = ASM_flav.2 days = 45 } }
+	}
+	option = {
+		name = ASM_flav.1_b # Rule as a council of Borphukans
+		add_political_power = 120
+		add_war_support = 0.04
+		set_country_flag = asm_borphukan_council
+		hidden_effect = { country_event = { id = ASM_flav.2 days = 45 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.2
+	title = ASM_flav.2_t
+	desc = ASM_flav.2_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.2_a # Rebuild the Kareng Ghar palace-court
+		trigger = { has_country_flag = asm_ahom_throne }
+		add_stability = 0.05
+		432 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		hidden_effect = { country_event = { id = ASM_flav.3 days = 60 } }
+	}
+	option = {
+		name = ASM_flav.2_b # Bind the Paiks to the new state
+		add_manpower = 15000
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = ASM_flav.3 days = 60 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.3
+	title = ASM_flav.3_t
+	desc = ASM_flav.3_d
+	picture = GFX_report_event_maratha_court
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.3_a # Proclaim the Kamarupa crown restored
+		add_ideas = ASM_ahom_heritage
+		add_political_power = 100
+		add_stability = 0.04
+	}
+	option = {
+		name = ASM_flav.3_b # A constitutional Swargadeo, bound by the Mel
+		add_ideas = ASM_brahmaputra_logistics
+		add_political_power = 60
+		add_stability = 0.06
+	}
+}
+
+# --- Black Gold of Digboi chain (4-6) ---
+country_event = {
+	id = ASM_flav.4
+	title = ASM_flav.4_t
+	desc = ASM_flav.4_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.4_a # Grant the foreign majors a rich concession
+		add_ideas = ASM_digboi_concession
+		add_political_power = 120
+		add_opinion_modifier = { target = MAR modifier = maratha_cultural_ties }
+		set_country_flag = asm_foreign_oil
+		hidden_effect = { country_event = { id = ASM_flav.5 days = 40 } }
+	}
+	option = {
+		name = ASM_flav.4_b # Nationalise the Assam Oil Company
+		add_ideas = ASM_digboi_concession
+		432 = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } }
+		add_stability = -0.03
+		set_country_flag = asm_national_oil
+		hidden_effect = { country_event = { id = ASM_flav.5 days = 40 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.5
+	title = ASM_flav.5_t
+	desc = ASM_flav.5_d
+	picture = GFX_report_event_ocean_venture
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.5_a # Trade crude abroad for machine-tools
+		trigger = { has_country_flag = asm_foreign_oil }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		add_political_power = 80
+		hidden_effect = { country_event = { id = ASM_flav.6 days = 50 } }
+	}
+	option = {
+		name = ASM_flav.5_b # Refine at home for the war machine
+		trigger = { has_country_flag = asm_national_oil }
+		432 = { add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } }
+		add_war_support = 0.05
+		hidden_effect = { country_event = { id = ASM_flav.6 days = 50 } }
+	}
+	option = {
+		name = ASM_flav.5_c # Keep both markets open
+		add_political_power = 50
+		add_stability = 0.03
+		hidden_effect = { country_event = { id = ASM_flav.6 days = 50 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.6
+	title = ASM_flav.6_t
+	desc = ASM_flav.6_d
+	picture = GFX_report_event_secret_arsenal
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.6_a # Lay the Digboi-Brahmaputra pipeline
+		434 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+	}
+	option = {
+		name = ASM_flav.6_b # Bank the royalties as a war-chest
+		add_political_power = 150
+		add_stability = 0.04
+	}
+}
+
+# --- The Planters' Raj chain (7-8) ---
+country_event = {
+	id = ASM_flav.7
+	title = ASM_flav.7_t
+	desc = ASM_flav.7_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.7_a # Side with the planter clubs and export lords
+		add_ideas = ASM_tea_planters
+		add_political_power = 90
+		add_stability = -0.04
+		set_country_flag = asm_planter_raj
+		hidden_effect = { country_event = { id = ASM_flav.8 days = 45 } }
+	}
+	option = {
+		name = ASM_flav.7_b # Break the indenture, arm the coolie lines
+		add_manpower = 20000
+		add_war_support = 0.06
+		add_stability = 0.03
+		set_country_flag = asm_labour_reform
+		hidden_effect = { country_event = { id = ASM_flav.8 days = 45 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.8
+	title = ASM_flav.8_t
+	desc = ASM_flav.8_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.8_a # A tea cartel to rule the auction
+		trigger = { has_country_flag = asm_planter_raj }
+		add_ideas = ASM_tea_planters
+		add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+	}
+	option = {
+		name = ASM_flav.8_b # Garden councils and a living wage
+		trigger = { has_country_flag = asm_labour_reform }
+		add_stability = 0.06
+		add_political_power = 70
+	}
+	option = {
+		name = ASM_flav.8_c # Let the gardens and the lines settle it
+		add_political_power = 60
+	}
+}
+
+# --- Hills vs Plains (Naga) fork (9-10) ---
+country_event = {
+	id = ASM_flav.9
+	title = ASM_flav.9_t
+	desc = ASM_flav.9_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.9_a # Grant the hills a self-governing council
+		add_ideas = ASM_naga_tension
+		add_stability = 0.05
+		add_political_power = -40
+		set_country_flag = asm_hill_autonomy
+		hidden_effect = { country_event = { id = ASM_flav.10 days = 45 } }
+	}
+	option = {
+		name = ASM_flav.9_b # March the levies into the Naga tracts
+		add_ideas = ASM_naga_tension
+		add_war_support = 0.06
+		add_stability = -0.05
+		434 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+		set_country_flag = asm_hill_pacify
+		hidden_effect = { country_event = { id = ASM_flav.10 days = 45 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.10
+	title = ASM_flav.10_t
+	desc = ASM_flav.10_d
+	picture = GFX_report_event_indian_durbar
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.10_a # A federated Assam of valley and hill
+		trigger = { has_country_flag = asm_hill_autonomy }
+		add_stability = 0.06
+		add_manpower = 12000
+	}
+	option = {
+		name = ASM_flav.10_b # Crush Phizo's Naga separatism outright
+		trigger = { has_country_flag = asm_hill_pacify }
+		add_war_support = 0.05
+		add_manpower = 15000
+		add_stability = -0.02
+	}
+}
+
+# --- The Grouping Crisis chain (11-12) ---
+country_event = {
+	id = ASM_flav.11
+	title = ASM_flav.11_t
+	desc = ASM_flav.11_d
+	picture = GFX_report_event_league_council
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.11_a # Refuse absorption into greater Bengal
+		add_war_support = 0.08
+		add_political_power = 80
+		set_country_flag = asm_reject_grouping
+		hidden_effect = { country_event = { id = ASM_flav.12 days = 40 } }
+	}
+	option = {
+		name = ASM_flav.11_b # Bargain for autonomy within a loose group
+		add_stability = 0.05
+		add_political_power = 100
+		set_country_flag = asm_bargain_grouping
+		hidden_effect = { country_event = { id = ASM_flav.12 days = 40 } }
+	}
+}
+
+country_event = {
+	id = ASM_flav.12
+	title = ASM_flav.12_t
+	desc = ASM_flav.12_d
+	picture = GFX_report_event_deccan_revolt
+	is_triggered_only = yes
+	option = {
+		name = ASM_flav.12_a # Fortify the frontier and dare Bengal to come
+		trigger = { has_country_flag = asm_reject_grouping }
+		create_wargoal = { target = BEN type = take_state_focus generator = { 435 } }
+		add_war_support = 0.06
+		434 = { add_building_construction = { type = land_fort level = 1 instant_build = yes } }
+	}
+	option = {
+		name = ASM_flav.12_b # A guaranteed autonomy, sealed by treaty
+		trigger = { has_country_flag = asm_bargain_grouping }
+		add_opinion_modifier = { target = BEN modifier = maratha_cultural_ties }
+		add_stability = 0.05
+		add_political_power = 60
+	}
+}

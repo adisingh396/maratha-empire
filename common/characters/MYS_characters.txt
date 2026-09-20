@@ -89,4 +89,101 @@ MYS_cariappa = {
 		logistics_skill = 2
 	}
 }
+MYS_walchand = {
+	name = MYS_walchand
+	portraits = {
+		civilian = { large = GFX_portrait_mys_walchand small = GFX_portrait_mys_walchand_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MYS }
+		idea_token = MYS_walchand_hal
+		cost = 75
+		traits = { war_industrialist }
+	}
+}
+MYS_albion_banerjee = {
+	name = MYS_albion_banerjee
+	portraits = {
+		civilian = { large = GFX_portrait_mys_albion_banerjee small = GFX_portrait_mys_albion_banerjee_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MYS }
+		idea_token = MYS_banerjee_admin
+		cost = 75
+		traits = { silent_workhorse }
+	}
+}
+MYS_madhava_rao = {
+	name = MYS_madhava_rao
+	portraits = {
+		civilian = { large = GFX_portrait_mys_madhava_rao small = GFX_portrait_mys_madhava_rao_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MYS }
+		idea_token = MYS_madhava_reform
+		cost = 75
+		traits = { captain_of_industry }
+	}
+}
+MYS_kantirava = {
+	name = MYS_kantirava
+	portraits = {
+		army = { large = GFX_portrait_mys_kantirava small = GFX_portrait_mys_kantirava_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = MYS }
+		idea_token = MYS_kantirava_hc
+		cost = 75
+		traits = { army_regrouping_1 }
+	}
+}
+MYS_krishnaraja_iii = {
+	name = MYS_krishnaraja_iii
+	portraits = {
+		civilian = { large = GFX_portrait_mys_krishnaraja_iii small = GFX_portrait_mys_krishnaraja_iii_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = MYS }
+		idea_token = MYS_krishnaraja_legacy
+		cost = 75
+		traits = { compassionate_gentleman }
+	}
+}
+MYS_tipu = {
+	name = MYS_tipu
+	portraits = {
+		army = { large = GFX_portrait_mys_tipu small = GFX_portrait_mys_tipu_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = MYS }
+		idea_token = MYS_tipu_rocketry
+		cost = 75
+		traits = { military_theorist }
+	}
+}
+MYS_hyder_ali = {
+	name = MYS_hyder_ali
+	portraits = {
+		army = { large = GFX_portrait_mys_hyder_ali small = GFX_portrait_mys_hyder_ali_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = MYS }
+		idea_token = MYS_hyder_theorist
+		cost = 75
+		traits = { military_theorist }
+	}
+}
 }

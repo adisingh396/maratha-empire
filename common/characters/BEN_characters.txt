@@ -10,6 +10,19 @@ BEN_huq = {
 		expire = "1965.1.1"
 		id = -1
 	}
+	country_leader = {
+		ideology = democratic
+		traits = {}
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_huq_krishak
+		cost = 75
+		traits = { popular_figurehead }
+	}
 }
 BEN_bose = {
 	name = "Subhas Chandra Bose"
@@ -23,13 +36,220 @@ BEN_bose = {
 		expire = "1965.1.1"
 		id = -1
 	}
+	country_leader = {
+		ideology = despotism
+		traits = { popular_figurehead }
+		expire = "1965.1.1"
+		id = -1
+	}
+	field_marshal = {
+		traits = { inspirational_leader aggressive_assaulter }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+BEN_sarat_bose = {
+	name = "Sarat Chandra Bose"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_sarat_bose small = GFX_portrait_ben_sarat_bose_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = {}
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_sarat_counsel
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+BEN_nazimuddin = {
+	name = "Khwaja Nazimuddin"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_nazimuddin small = GFX_portrait_ben_nazimuddin_small }
+	}
+	country_leader = {
+		ideology = democratic
+		traits = { conservative_grandee }
+		expire = "1965.1.1"
+		id = -1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_nazim_league
+		cost = 75
+		traits = { backroom_backstabber }
+	}
+}
+BEN_jc_bose = {
+	name = "Jagadish Chandra Bose"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_jc_bose small = GFX_portrait_ben_jc_bose_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = BEN }
+		idea_token = BEN_jc_bose_theory
+		traits = { military_theorist }
+	}
+}
+BEN_pc_ray = {
+	name = "Prafulla Chandra Ray"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_pc_ray small = GFX_portrait_ben_pc_ray_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_pc_ray_chem
+		cost = 75
+		traits = { economist }
+	}
+}
+BEN_saha = {
+	name = "Meghnad Saha"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_saha small = GFX_portrait_ben_saha_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = BEN }
+		idea_token = BEN_saha_theory
+		traits = { military_theorist }
+	}
+}
+BEN_sn_bose = {
+	name = "Satyendra Nath Bose"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_sn_bose small = GFX_portrait_ben_sn_bose_small }
+	}
+	advisor = {
+		slot = theorist
+		allowed = { original_tag = BEN }
+		idea_token = BEN_sn_bose_theory
+		traits = { military_theorist }
+	}
+}
+BEN_tagore = {
+	name = "Rabindranath Tagore"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_tagore small = GFX_portrait_ben_tagore_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_tagore_unity
+		cost = 75
+		traits = { popular_figurehead }
+	}
+}
+BEN_nazrul = {
+	name = "Kazi Nazrul Islam"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_nazrul small = GFX_portrait_ben_nazrul_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_nazrul_propaganda
+		cost = 75
+		traits = { popular_figurehead }
+	}
+}
+BEN_mookerjee = {
+	name = "Rajendra Nath Mookerjee"
+	portraits = {
+		civilian = { large = GFX_portrait_ben_mookerjee small = GFX_portrait_ben_mookerjee_small }
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_mookerjee_industry
+		cost = 75
+		traits = { economist }
+	}
+}
+BEN_rash_behari = {
+	name = "Rash Behari Bose"
+	portraits = {
+		army = { large = GFX_portrait_ben_rash_behari small = GFX_portrait_ben_rash_behari_small }
+	}
+	advisor = {
+		slot = high_command
+		allowed = { original_tag = BEN }
+		idea_token = BEN_rash_behari_intel
+		traits = { army_infantry_1 }
+	}
+}
+BEN_surya_sen = {
+	name = "Surya Sen"
+	portraits = {
+		army = { large = GFX_portrait_ben_surya_sen small = GFX_portrait_ben_surya_sen_small }
+	}
 	corps_commander = {
-		traits = { aggressive_assaulter }
+		traits = { commando trickster }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 2
+	}
+}
+BEN_bagha_jatin = {
+	name = "Jatindranath Mukherjee"
+	portraits = {
+		army = { large = GFX_portrait_ben_bagha_jatin small = GFX_portrait_ben_bagha_jatin_small }
+	}
+	corps_commander = {
+		traits = { guerilla_fighter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	}
+}
+BEN_kalpana = {
+	name = "Kalpana Datta"
+	portraits = {
+		army = { large = GFX_portrait_ben_kalpana small = GFX_portrait_ben_kalpana_small }
+	}
+	corps_commander = {
+		traits = { trickster }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	}
+}
+BEN_bina_das = {
+	name = "Bina Das"
+	portraits = {
+		army = { large = GFX_portrait_ben_bina_das small = GFX_portrait_ben_bina_das_small }
+	}
+	corps_commander = {
+		traits = { ambusher }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	advisor = {
+		slot = political_advisor
+		allowed = { original_tag = BEN }
+		idea_token = BEN_bina_intel
+		cost = 75
+		traits = { backroom_backstabber }
 	}
 }
 }

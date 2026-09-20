@@ -1,0 +1,62 @@
+ideas = {
+	country = {
+		WIS_gaekwad_education = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		WIS_ahmedabad_mills = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+		WIS_kathiawar_marine = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				production_speed_dockyard_factor = 0.10
+				convoy_retreat_speed = 0.20
+				naval_morale_factor = 0.05
+			}
+		}
+		WIS_diamond_cutters = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_expected_value = -0.03
+				political_power_gain = 0.10
+			}
+		}
+		WIS_bank_of_baroda = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_expected_value = -0.02
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		WIS_maratha_heritage = {
+			allowed = { original_tag = WIS }
+			removal_cost = -1
+			picture = generic_national_unity
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

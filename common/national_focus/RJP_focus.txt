@@ -469,4 +469,151 @@ focus_tree = {
 			country_event = { id = MAR_mandala.1 days = 2 }
 		}
 	}
+	focus = {
+		id = RJP_chamber_of_princes
+		icon = GFX_goal_generic_national_unity
+		x = 11 y = 0 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_chamber_of_princes"
+			add_political_power = 80
+			country_event = { id = RJP_flav.1 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_seniority_dispute
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RJP_chamber_of_princes }
+		x = 11 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_seniority_dispute"
+			add_stability = 0.03
+			country_event = { id = RJP_flav.14 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_rajput_war_council
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = RJP_seniority_dispute }
+		x = 11 y = 2 cost = 10
+		ai_will_do = { factor = 12 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_rajput_war_council"
+			add_ideas = RJP_warrior_caste
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = RJP_purdah_reform
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RJP_rajput_war_council }
+		x = 11 y = 3 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_purdah_reform"
+			country_event = { id = RJP_flav.13 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_desert_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 13 y = 0 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_desert_doctrine"
+			army_experience = 20
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = land_doctrine }
+		}
+	}
+	focus = {
+		id = RJP_risala_mechanised
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RJP_desert_doctrine }
+		x = 13 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_risala_mechanised"
+			country_event = { id = RJP_flav.4 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_thar_war_school
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RJP_risala_mechanised }
+		x = 13 y = 2 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_ARMY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_thar_war_school"
+			army_experience = 25
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = motorized_equipment }
+		}
+	}
+	focus = {
+		id = RJP_merchant_capital
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15 y = 0 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_merchant_capital"
+			country_event = { id = RJP_flav.6 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_hundi_network
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = RJP_merchant_capital }
+		x = 15 y = 1 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_hundi_network"
+			add_political_power = 80
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }
+		}
+	}
+	focus = {
+		id = RJP_gang_canal_works
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RJP_hundi_network }
+		x = 15 y = 2 cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_gang_canal_works"
+			country_event = { id = RJP_flav.11 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_flying_club_focus
+		icon = GFX_goal_generic_air_fighter2
+		x = 17 y = 0 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_flying_club_focus"
+			country_event = { id = RJP_flav.9 days = 3 }
+		}
+	}
+	focus = {
+		id = RJP_marwar_squadrons
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = RJP_flying_club_focus }
+		x = 17 y = 1 cost = 10
+		ai_will_do = { factor = 8 }
+		search_filters = { FOCUS_FILTER_AIR }
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed RJP_marwar_squadrons"
+			air_experience = 30
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = air_doctrine }
+		}
+	}
 }

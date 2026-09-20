@@ -1,26 +1,122 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_portrait_pjb_bhupinder"
-		texturefile = "gfx/leaders/PJB/portrait_pjb_bhupinder.dds"
+		name = "GFX_portrait_pjb_ranjit"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_ranjit.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_pjb_bhupinder_small"
-		texturefile = "gfx/leaders/PJB/portrait_pjb_bhupinder_small.dds"
+		name = "GFX_portrait_pjb_ranjit_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_ranjit_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_pjb_yadavindra"
-		texturefile = "gfx/leaders/PJB/portrait_pjb_yadavindra.dds"
+		name = "GFX_portrait_pjb_nalwa"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_nalwa.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_pjb_yadavindra_small"
-		texturefile = "gfx/leaders/PJB/portrait_pjb_yadavindra_small.dds"
+		name = "GFX_portrait_pjb_nalwa_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_nalwa_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_pjb_ghaffar"
-		texturefile = "gfx/leaders/PJB/portrait_pjb_ghaffar.dds"
+		name = "GFX_portrait_pjb_sham"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_sham.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_pjb_ghaffar_small"
-		texturefile = "gfx/leaders/PJB/portrait_pjb_ghaffar_small.dds"
+		name = "GFX_portrait_pjb_sham_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_sham_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_phula"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_phula.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_phula_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_phula_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_zorawar"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_zorawar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_zorawar_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_zorawar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_jindan"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_jindan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_jindan_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_jindan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_duleep"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_duleep.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_duleep_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_duleep_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_tara"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_tara.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_tara_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_tara_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_sikandar"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_sikandar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_sikandar_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_sikandar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_khizar"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_khizar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_khizar_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_khizar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_chhotu"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_chhotu.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_chhotu_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_chhotu_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_baldev"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_baldev.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_baldev_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_baldev_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_hardayal"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_hardayal.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_hardayal_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_hardayal_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_bhakna"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_bhakna.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_bhakna_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_bhakna_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_bhagat"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_bhagat.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_pjb_bhagat_small"
+		texturefile = "gfx/leaders/PJB/portrait_pjb_bhagat_small.dds"
 	}
 }
